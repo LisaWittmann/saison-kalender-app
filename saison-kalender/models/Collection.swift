@@ -2,29 +2,23 @@
 //  Collection.swift
 //  saison-kalender
 //
-//  Created by Lisa Wittmann on 24.03.22.
+//  Created by Lisa Wittmann on 27.03.22.
 //
 
 import Foundation
 
-class Collection: RepresentableData {
-    var id = UUID()
+extension Collection {
     
-    @Published var name: String
-    @Published var recipes: Set<Recipe>
-    
-    init(name: String, recipes: Set<Recipe>) {
-        self.name = name
-        self.recipes = recipes
+    var recipes: Set<Recipe> {
+        get { (recipes_ as? Set<Recipe>) ?? [] }
+        set { recipes_ = newValue as NSSet }
     }
+}
+
+extension Collection: Representable {
     
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
-        hasher.combine(recipes)
-    }
-    
-    static func == (lhs: Collection, rhs: Collection) -> Bool {
-        return lhs.id == rhs.id
+    var name: String {
+        get { name_! }
+        set { name_ = newValue }
     }
 }

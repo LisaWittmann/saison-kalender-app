@@ -34,10 +34,10 @@ struct SectionLayout: ViewModifier {
         content
             .padding(
                 EdgeInsets(
-                    top: spacingLarge * 2,
+                    top: spacingExtraLarge,
                     leading: spacingLarge,
                     bottom: spacingLarge,
-                    trailing: spacingExtraLarge
+                    trailing: spacingLarge
                 )
             )
     }

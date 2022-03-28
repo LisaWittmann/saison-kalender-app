@@ -2,99 +2,74 @@
 //  Recipe.swift
 //  saison-kalender
 //
-//  Created by Lisa Wittmann on 24.03.22.
+//  Created by Lisa Wittmann on 27.03.22.
 //
 
 import Foundation
+import CoreData
 
-enum Category: String, CaseIterable {
-    case Frühstück, Mittagessen, Abendessen, Snacks, Salate, Beilagen, Suppen, Backen
-}
-
-enum Unit: String, CaseIterable {
-    case MG, G, KG, ML, L, EL, TL
-}
-
-class Ingredient {
-    var quantity: Double
-    var unit: Unit
-    var name: String
+extension Recipe {
     
-    init(quantity: Double, unit: Unit, name: String) {
-        self.quantity = quantity
-        self.unit = unit
-        self.name = name
+    var ingredients: Set<Ingredient> {
+        get { (ingredients_ as? Set<Ingredient>) ?? [] }
+        set { ingredients_ = newValue as NSSet }
+    }
+    
+    var seasonals: Set<Seasonal> {
+        get { (seasonals_ as? Set<Seasonal>) ?? [] }
+        set { seasonals_ = newValue as NSSet }
+    }
+    
+    var preparations: Set<Preparation> {
+        get { (preparations_ as? Set<Preparation>) ?? [] }
+        set { preparations_ = newValue as NSSet }
+    }
+    
+    var categories: Set<Category> {
+        get { (categories_ as? Set<Category>) ?? [] }
+        set { categories_ = newValue as NSSet }
     }
 }
 
-class Preparation {
-    var title: String?
-    var description: String
-    var addition: String?
+extension Recipe {
     
-    init(description: String, title: String?, addition: String?) {
-        self.description = description
-        self.title = title
-        self.addition = addition
-    }
-}
-
-class Nutrition {
-    var calories: Int
-    var carbs: Double
-    var protein: Double
-    var fat: Double
-    
-    init(calories: Int, carbs: Double, protein: Double, fat: Double) {
-        self.calories = calories
-        self.carbs = carbs
-        self.protein = protein
-        self.fat = fat
-    }
-}
-
-class Recipe: RepresentableData {
-    @Published var name: String
-    @Published var seasonals: [Seasonal]
-    
-    @Published var ingredients: [Ingredient]
-    @Published var preparations: [Preparation]
-    @Published var categories: [Category]
-    @Published var nutrition: Nutrition?
-    
-    var id = UUID()
-    
-    init(
-        name: String,
-        seasonals: [Seasonal],
-        ingredients: [Ingredient],
-        preparations: [Preparation],
-        categories: [Category],
-        nutrition: Nutrition?
-    ) {
-        self.name = name
-        self.seasonals = seasonals
-        self.ingredients = ingredients
-        self.preparations = preparations
-        self.categories = categories
-        self.nutrition = nutrition
+    private var seasons: Set<Season> {
+        get {
+            var seasons_ = Set<Season>()
+            for seasonal in seasonals {
+                seasons_ = seasons_.union(seasonal.seasons)
+            }
+            return seasons_
+        }
     }
     
-    func isSeasonal(in month: Month) -> Bool {
-        for seasonal in self.seasonals {
-            if (seasonal.seasons.contains(month)) {
-                return true
+    func isInSeason(_ season: Season) -> Bool {
+        return seasons.contains(season)
+    }
+    
+    static func forSeason(season: Season, context: NSManagedObjectContext) -> [Recipe] {
+        let request = NSFetchRequest<Recipe>(entityName: "Recipe")
+        let recipes = (try? context.fetch(request)) ?? []
+        var seasonalRecipes: [Recipe] = []
+        for recipe in recipes {
+            if recipe.isInSeason(season) {
+                seasonalRecipes.append(recipe)
             }
         }
-        return false
+        return seasonalRecipes
     }
     
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-        hasher.combine(name)
+    static func current(context: NSManagedObjectContext) -> [Recipe] {
+        return Recipe.forSeason(season: Season.current(context: context), context: context)
+    }
+}
+
+extension Recipe: Representable {
+    
+    var name: String {
+        get { name_! }
+        set { name_ = newValue }
     }
     
-    static func == (lhs: Recipe, rhs: Recipe) -> Bool {
-        return lhs.id == rhs.id && lhs.name == rhs.name
-    }
+    public var id: String { name }
 }

@@ -9,42 +9,35 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @Environment(\.managedObjectContext) var viewContext
+    @ObservedObject var viewRouter: ViewRouter = ViewRouter()
+   
+    var season: Season {
+        get { Season.current(context: self.viewContext) }
+    }
     
-    @State var viewRouter = ViewRouter()
-    @State var user: User?
+    var recipes: [Recipe] {
+        get { Recipe.current(context: self.viewContext) }
+    }
 
     var body: some View {
         ZStack {
             switch viewRouter.currentView {
             case .home:
-                HomeView()
+                HomeView(season: season, recipes: recipes, viewRouter: viewRouter)
             case .season:
-                SeasonView(seasonals: [
-                    Seasonal(
-                        name: "Mangold",
-                        seasons: [.März, .April]
-                    ),
-                    Seasonal(
-                        name: "Radieschen",
-                        seasons: [.März, .April]
-                    )
-                ])
+                SeasonView(season: season)
             case .recipes:
-                RecipesView()
+                RecipesView(season: season, recipes: recipes)
             case .account:
-                if user != nil {
-                    AccountView()
-                }
-                else {
-                    LoginView()
-                }
+                LoginView()
             }
-   
+
             Menu(viewRouter: viewRouter)
-                .padding(.bottom, spacingMedium)
+                .padding(.bottom, spacingLarge)
                 .frame(height: UIScreen.screenHeight, alignment: .bottom)
-        }
+                
+        }.frame(height: UIScreen.screenHeight)
     }
 }
 

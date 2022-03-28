@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentSlider<Data>: View where Data: RepresentableData {
+struct ContentSlider<Data> : View where Data : Representable {
     var headline: String
     var elements: [Data]
     
-    var route: Route
-    var viewRouter: ViewRouter
+    var route: Route?
+    var viewRouter: ViewRouter?
     var onTapGesture: (Data) -> () = {_ in }
 
     var body: some View {
@@ -21,20 +21,22 @@ struct ContentSlider<Data>: View where Data: RepresentableData {
                 .modifier(FontH2())
                 .foregroundColor(colorGrey)
             
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: spacingMedium) {
                     ForEach(Array(elements)) { element in
                         ContentCard<Data>(data: element)
                             .frame(alignment: .leading)
                             .onTapGesture { onTapGesture(element) }
                     }
-                    ContentTeaser(viewRouter: viewRouter, route: route)
+                    if viewRouter != nil && route != nil {
+                        ContentTeaser(viewRouter: viewRouter!, route: route!)
+                    }
                 }
             }
             .padding(.top, spacingExtraSmall)
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(spacingLarge)
+        .frame(width: contentWidth, alignment: .leading)
     }
 }
 
@@ -68,18 +70,9 @@ struct ContentTeaser: View {
 
 struct ContentSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ContentSlider(
+        ContentSlider<Seasonal>(
             headline: "Die neuen Stars der Saison",
-            elements: [
-                Seasonal(
-                    name: "Mangold",
-                    seasons: [.März, .April, .Mai]
-                ),
-                Seasonal(
-                    name: "Radieschen",
-                    seasons: [.März, .April, .Mai]
-                )
-            ],
+            elements: Array(Season.current(context: PersistenceController.preview.container.viewContext).seasonals),
             route: .season,
             viewRouter: ViewRouter()
         )

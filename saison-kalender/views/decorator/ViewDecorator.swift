@@ -8,15 +8,16 @@
 import SwiftUI
 
 extension View {
-    func underlineView() -> some View {
+    func underlineView(color: Color = colorGreen, opacity: Double = 0.2) -> some View {
         self
             .overlay(
                 Rectangle()
                     .frame(height: 2)
                     .padding(.top, 55)
-                    .opacity(0.2)
+                    .opacity(opacity)
             )
-            .foregroundColor(colorGreen)
-            .padding(spacingExtraSmall)
+            .foregroundColor(color)
+            .padding(.top, spacingExtraSmall)
+            .padding(.bottom, spacingExtraSmall)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Seasonal.swift
+//  Category.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 27.03.22.
@@ -8,12 +8,7 @@
 import Foundation
 import CoreData
 
-extension Seasonal {
-    
-    var seasons: Set<Season> {
-        get { (seasons_ as? Set<Season>) ?? [] }
-        set { seasons_ = newValue as NSSet }
-    }
+extension Category {
     
     var recipes: Set<Recipe> {
         get { (recipes_ as? Set<Recipe>) ?? [] }
@@ -21,7 +16,7 @@ extension Seasonal {
     }
 }
 
-extension Seasonal: Representable {
+extension Category: Representable {
     
     var name: String {
         get { name_! }

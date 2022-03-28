@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContentCard<Data>: View where Data : RepresentableData {
-    @ObservedObject var data: Data
+struct ContentCard<Data>: View where Data : Representable {
+    var data: Data
     
     var body: some View {
         ZStack {
@@ -41,11 +41,11 @@ struct ContentCard<Data>: View where Data : RepresentableData {
         }
     }
     
-    let imageOpacity: Double = 0.7
+    let imageOpacity: Double = 0.2
 }
 
 struct ContentCell_Previews: PreviewProvider {
     static var previews: some View {
-        ContentCard<Seasonal>(data: Seasonal(name: "Mangold", seasons: []))
+        ContentCard<Seasonal>(data: Seasonal())
     }
 }

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct SeasonView: View {
-    var seasonals: [Seasonal]
+    var season: Season
     
     var body: some View {
         ScrollView {
             TabView {
-                ForEach(Array(seasonals)) { item in
-                    SeasonItem(seasonal: item)
+                ForEach(Array(season.seasonals)) { item in
+                    SeasonItem(seasonal: item, season: season)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -26,12 +26,13 @@ struct SeasonView: View {
 
 struct SeasonItem: View {
     var seasonal: Seasonal
+    var season: Season
     
     var body: some View {
         VStack {
             Headline(
                 title: seasonal.name,
-                subtitle: "Saisonal im März",
+                subtitle: "Saisonal im \(season.name)",
                 color: colorBlack
             )
             ZStack {
@@ -67,15 +68,6 @@ struct SeasonItem: View {
 
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonView(seasonals: [
-            Seasonal(
-                name: "Mangold",
-                seasons: [.März, .April, .Mai]
-            ),
-            Seasonal(
-                name: "Radieschen",
-                seasons: [.März, .April, .Mai]
-            )
-        ])
+        SeasonView(season: Season.current(context: PersistenceController.preview.container.viewContext))
     }
 }

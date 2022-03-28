@@ -36,6 +36,7 @@ let fontSizeTitle: CGFloat = 45
 let fontSizeSubtitle: CGFloat = 26
 let fontSizeHeadline1: CGFloat = 22
 let fontSizeHeadline2: CGFloat = 18
+let fontSizeLabel: CGFloat = 16
 let fontSizeText: CGFloat = 14
 
 let colorGrey = Color("Grey")
