@@ -8,6 +8,37 @@
 import SwiftUI
 
 struct NutritionCard: View {
+    var nutrition: Nutrition
+    var layout = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
+    var body: some View {
+        LazyVGrid(columns: layout) {
+            NutritionCardItem(
+                description: "Kalorien",
+                value: "\(nutrition.calories.description)"
+            )
+            NutritionCardItem(
+                description: "Eiweiß",
+                value: "\(nutrition.protein.description) g"
+            )
+            NutritionCardItem(
+                description: "Fett",
+                value: "\(nutrition.fat.description) g"
+            )
+            NutritionCardItem(
+                description: "Kohlenhydrate",
+                value: "\(nutrition.carbs.description) g"
+            )
+        }
+    }
+}
+
+struct NutritionCardItem: View {
     var description: String
     var value: String
     
@@ -15,8 +46,7 @@ struct NutritionCard: View {
         ZStack {
             RoundedRectangle(cornerRadius: cornerRadiusSmall)
                 .frame(
-                    width: cardWidth,
-                    height: cardHeight
+                    width: cardWidth
                 )
                 .foregroundColor(colorLightGreen)
             VStack(alignment: .center) {
@@ -43,7 +73,6 @@ struct NutritionCard: View {
                     .padding(.trailing, 5)
             }
             .frame(
-                width: cardWidth,
                 height: cardHeight,
                 alignment: .top
             )
@@ -55,15 +84,4 @@ struct NutritionCard: View {
     let cardHeight: CGFloat = 100
     let textWidth = quarterContentWidth - 10
     let textHeight: CGFloat = 40
-}
-
-struct NutritionCard_Previews: PreviewProvider {
-    static var previews: some View {
-        HStack(spacing: spacingExtraSmall) {
-            NutritionCard(description: "Kalorien", value: "555")
-            NutritionCard(description: "Eiweiß", value: "22 g")
-            NutritionCard(description: "Fett", value: "10 g")
-            NutritionCard(description: "Kohlenhydrate", value: "92 g")
-        }
-    }
 }

@@ -58,7 +58,7 @@ struct SplitScreen<Content: View>: View {
                 minHeight: UIScreen.screenHeight,
                 alignment: .topLeading
             )
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .edgesIgnoringSafeArea(.all)
         }
         .modifier(PageLayout())
     }
