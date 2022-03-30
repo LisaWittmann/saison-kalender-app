@@ -8,22 +8,18 @@
 import SwiftUI
 
 struct AccountView: View {
+    @Binding var user: User?
+    
     var body: some View {
         ScrollView {
             VStack {
                 Headline(
-                    title: "Username",
+                    title: "\(user!.name)",
                     subtitle: "Dein Bereich",
                     color: colorBlack
                 )
             }
         }
         .modifier(PageLayout())
-    }
-}
-
-struct AccountView_Previews: PreviewProvider {
-    static var previews: some View {
-        AccountView()
     }
 }

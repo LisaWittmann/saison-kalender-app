@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentCard<Data>: View where Data : Representable {
     var data: Data
+    var onTap: (Data) -> () = {_ in }
     
     var body: some View {
         ZStack {
@@ -38,7 +39,7 @@ struct ContentCard<Data>: View where Data : Representable {
                     height: halfContentWidth,
                     alignment: .bottomLeading
                 )
-        }
+        }.onTapGesture { onTap(data) }
     }
     
     let imageOpacity: Double = 0.2
@@ -46,6 +47,6 @@ struct ContentCard<Data>: View where Data : Representable {
 
 struct ContentCell_Previews: PreviewProvider {
     static var previews: some View {
-        ContentCard<Seasonal>(data: Seasonal())
+        ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!)
     }
 }

@@ -5,7 +5,6 @@
 //  Created by Lisa Wittmann on 27.03.22.
 //
 
-import Foundation
 import CoreData
 
 extension Recipe {
@@ -31,39 +30,6 @@ extension Recipe {
     }
 }
 
-extension Recipe {
-    
-    private var seasons: Set<Season> {
-        get {
-            var seasons_ = Set<Season>()
-            for seasonal in seasonals {
-                seasons_ = seasons_.union(seasonal.seasons)
-            }
-            return seasons_
-        }
-    }
-    
-    func isInSeason(_ season: Season) -> Bool {
-        return seasons.contains(season)
-    }
-    
-    static func forSeason(season: Season, context: NSManagedObjectContext) -> [Recipe] {
-        let request = NSFetchRequest<Recipe>(entityName: "Recipe")
-        let recipes = (try? context.fetch(request)) ?? []
-        var seasonalRecipes: [Recipe] = []
-        for recipe in recipes {
-            if recipe.isInSeason(season) {
-                seasonalRecipes.append(recipe)
-            }
-        }
-        return seasonalRecipes
-    }
-    
-    static func current(context: NSManagedObjectContext) -> [Recipe] {
-        return Recipe.forSeason(season: Season.current(context: context), context: context)
-    }
-}
-
 extension Recipe: Representable {
     
     var name: String {
@@ -72,4 +38,73 @@ extension Recipe: Representable {
     }
     
     public var id: String { name }
+}
+
+extension Recipe {
+    
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Recipe> {
+        let request = NSFetchRequest<Recipe>(entityName: "Recipe")
+        request.sortDescriptors = [NSSortDescriptor(key: "name_", ascending: true)]
+        request.predicate = predicate
+        return request
+    }
+    
+    static func create(name: String, intro: String?, in context: NSManagedObjectContext) -> Recipe? {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let recipes = (try? context.fetch(Recipe.fetchRequest(predicate))) ?? []
+        if recipes.first != nil {
+            return nil
+        }
+        let newRecipe = Recipe(context: context)
+        newRecipe.name = name
+        newRecipe.intro = intro
+        do {
+            try context.save()
+        } catch {
+            return nil
+        }
+        return newRecipe
+    }
+    
+    func addPreparation(title: String?, text: String, info: String?) {
+        let preparation = Preparation.create(title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
+        if preparation != nil {
+            self.preparations.insert(preparation!)
+        }
+    }
+    
+    func addNutrition(calories: Float, protein: Float, fat: Float, carbs: Float) {
+        self.nutrition = Nutrition.create(calories: calories, protein: protein, fat: fat, carbs: carbs, recipe: self, in: self.managedObjectContext!)
+    }
+    
+    func addIngredient(name: String, quantity: Float, unit: String?) {
+        let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
+        if ingredient != nil {
+            self.ingredients.insert(ingredient!)
+        }
+    }
+}
+
+extension Recipe {
+    
+    private var seasons: Set<Season> {
+        var seasons_ = Set<Season>()
+        for seasonal in seasonals {
+            seasons_ = seasons_.union(seasonal.seasons)
+        }
+        return seasons_
+    }
+    
+    func seasonalsFor(season: Season) -> [Seasonal] {
+        return seasonals.filter({ $0.inSeason(season) })
+    }
+
+    static func inSeason(season: Season, context: NSManagedObjectContext) -> [Recipe] {
+        let recipes: [Recipe] = (try? context.fetch(Recipe.fetchRequest())) ?? []
+        return recipes.filter({ $0.seasons.contains(season) })
+    }
+    
+    static func current(context: NSManagedObjectContext) -> [Recipe] {
+        return Recipe.inSeason(season: Season.current, context: context)
+    }
 }

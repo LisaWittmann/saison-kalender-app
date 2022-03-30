@@ -5,7 +5,6 @@
 //  Created by Lisa Wittmann on 27.03.22.
 //
 
-import Foundation
 import CoreData
 
 extension User {
@@ -43,6 +42,41 @@ extension User: Representable {
 
 extension User {
     
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<User> {
+        let request = NSFetchRequest<User>(entityName: "User")
+        request.sortDescriptors = [NSSortDescriptor(key: "name_", ascending: true)]
+        request.predicate = predicate
+        return request
+    }
+    
+    static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        if users.first != nil {
+            return nil
+        }
+        let newUser = User(context: context)
+        newUser.name = name
+        newUser.email = email
+        newUser.password = password
+        do {
+            try context.save()
+        } catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
+        return newUser
+    }
+    
+    static func getBy(name: String, password: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
+}
+
+extension User {
+    
     func favor(recipe: Recipe) {
         favorites.insert(recipe)
     }
@@ -63,14 +97,6 @@ extension User {
             remove(recipe: recipe, from: collection)
         }
         favorites.remove(recipe)
-    }
-        
-    func add(collection: Collection) -> Bool {
-        if (collection.name == "") {
-            return false
-        }
-        self.collections.insert(collection)
-        return true
     }
         
     func remove(collection: Collection) {

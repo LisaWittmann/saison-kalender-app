@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct SeasonView: View {
-    var season: Season
+    @Environment(\.managedObjectContext) var viewContext
+    
+    var seasonals: [Seasonal] {
+        return Seasonal.current(context: viewContext)
+    }
     
     var body: some View {
         ScrollView {
             TabView {
-                ForEach(Array(season.seasonals)) { item in
-                    SeasonItem(seasonal: item, season: season)
+                ForEach(Array(seasonals)) { item in
+                    SeasonItem(seasonal: item)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -26,13 +30,14 @@ struct SeasonView: View {
 
 struct SeasonItem: View {
     var seasonal: Seasonal
-    var season: Season
+    
+    @State var showDetail: Bool = false
     
     var body: some View {
         VStack {
             Headline(
                 title: seasonal.name,
-                subtitle: "Saisonal im \(season.name)",
+                subtitle: "Saisonal im \(Season.current.name)",
                 color: colorBlack
             )
             ZStack {
@@ -55,7 +60,12 @@ struct SeasonItem: View {
                     .shadow(radius: shadowRadius)
             }
             Spacer()
-        }.ignoresSafeArea()
+        }
+        .ignoresSafeArea()
+        .onTapGesture { onTap() }
+        .fullScreenCover(isPresented: $showDetail, content: {
+            SeasonalDetail(seasonal: seasonal)
+        })
     }
     
     let circleSize: CGFloat = contentWidth
@@ -64,10 +74,14 @@ struct SeasonItem: View {
     let buttonSize: CGFloat = 60
     let animationDuration: Double = 1
     let shadowRadius: CGFloat = 40
+    
+    func onTap() {
+        showDetail = !showDetail
+    }
 }
 
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonView(season: Season.current(context: PersistenceController.preview.container.viewContext))
+        SeasonView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

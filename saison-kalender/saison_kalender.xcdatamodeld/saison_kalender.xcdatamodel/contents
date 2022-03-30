@@ -11,6 +11,7 @@
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="collections_" inverseEntity="User"/>
     </entity>
     <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="quantity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="unit" optional="YES" attributeType="String"/>
@@ -20,10 +21,12 @@
         <attribute name="calories" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="carbs" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="fat" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="protein" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="recipe" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="nutrition" inverseEntity="Recipe"/>
     </entity>
     <entity name="Preparation" representedClassName="Preparation" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="info" optional="YES" attributeType="String"/>
         <attribute name="text_" attributeType="String" defaultValueString=""/>
         <attribute name="title" optional="YES" attributeType="String"/>
@@ -40,15 +43,10 @@
         <relationship name="preparations_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Preparation" inverseName="recipe" inverseEntity="Preparation"/>
         <relationship name="seasonals_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Seasonal" inverseName="recipes_" inverseEntity="Seasonal"/>
     </entity>
-    <entity name="Season" representedClassName="Season" syncable="YES" codeGenerationType="class">
-        <attribute name="month_" attributeType="Integer 16" minValueString="1" maxValueString="12" defaultValueString="1" usesScalarValueType="NO"/>
-        <attribute name="name_" optional="YES" attributeType="String"/>
-        <relationship name="seasonals_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Seasonal" inverseName="seasons_" inverseEntity="Seasonal"/>
-    </entity>
     <entity name="Seasonal" representedClassName="Seasonal" syncable="YES" codeGenerationType="class">
         <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="seasons_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <relationship name="recipes_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Recipe" inverseName="seasonals_" inverseEntity="Recipe"/>
-        <relationship name="seasons_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Season" inverseName="seasonals_" inverseEntity="Season"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="email_" attributeType="String" defaultValueString=""/>
@@ -60,11 +58,10 @@
     <elements>
         <element name="Category" positionX="-9" positionY="63" width="128" height="59"/>
         <element name="Collection" positionX="-9" positionY="108" width="128" height="89"/>
-        <element name="Ingredient" positionX="0" positionY="45" width="128" height="89"/>
-        <element name="Nutrition" positionX="-36" positionY="27" width="128" height="104"/>
-        <element name="Preparation" positionX="-18" positionY="36" width="128" height="89"/>
+        <element name="Ingredient" positionX="0" positionY="45" width="128" height="104"/>
+        <element name="Nutrition" positionX="-36" positionY="27" width="128" height="119"/>
+        <element name="Preparation" positionX="-18" positionY="36" width="128" height="104"/>
         <element name="Recipe" positionX="36" positionY="90" width="128" height="164"/>
-        <element name="Season" positionX="-54" positionY="9" width="128" height="74"/>
         <element name="Seasonal" positionX="-63" positionY="-9" width="128" height="74"/>
         <element name="User" positionX="0" positionY="117" width="128" height="104"/>
     </elements>

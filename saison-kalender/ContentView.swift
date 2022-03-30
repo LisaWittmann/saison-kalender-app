@@ -11,33 +11,43 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) var viewContext
     @ObservedObject var viewRouter: ViewRouter = ViewRouter()
-   
-    var season: Season {
-        get { Season.current(context: self.viewContext) }
-    }
-    
-    var recipes: [Recipe] {
-        get { Recipe.current(context: self.viewContext) }
-    }
+
+    @State var user: User? = nil
 
     var body: some View {
         ZStack {
             switch viewRouter.currentView {
             case .home:
-                HomeView(season: season, recipes: recipes, viewRouter: viewRouter)
+                HomeView(
+                    user: $user,
+                    viewRouter: viewRouter
+                )
+                    .environment(\.managedObjectContext, viewContext)
             case .season:
-                SeasonView(season: season)
+                SeasonView()
+                    .environment(\.managedObjectContext, viewContext)
             case .recipes:
-                RecipesView(season: season, recipes: recipes)
+                RecipesView()
+                    .environment(\.managedObjectContext, viewContext)
             case .account:
-                LoginView()
+                if user != nil {
+                    AccountView(user: $user)
+                        .environment(\.managedObjectContext, viewContext)
+                } else {
+                    LoginView(user: $user)
+                        .environment(\.managedObjectContext, viewContext)
+                }
             }
 
             Menu(viewRouter: viewRouter)
                 .padding(.bottom, spacingLarge)
-                .frame(height: UIScreen.screenHeight, alignment: .bottom)
+                .frame(
+                    height: UIScreen.screenHeight,
+                    alignment: .bottom
+                )
                 
-        }.frame(height: UIScreen.screenHeight)
+        }
+        .frame(height: UIScreen.screenHeight)
     }
 }
 

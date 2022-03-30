@@ -9,12 +9,28 @@ import SwiftUI
 
 struct SplitScreen<Content: View>: View {
     var image: String
-    var headline: String = ""
-    var subline: String = ""
-    var icon: String = ""
-    var onIconTap: () -> () = {}
+    var headline: String
+    var subline: String
+    var icon: String
+    var onIconTap: () -> ()
     
     var content: () -> Content
+    
+    init(
+        image: String,
+        headline: String = "",
+        subline: String = "",
+        icon: String = "",
+        onIconTap: @escaping () -> () = {},
+        @ViewBuilder content: @escaping () -> Content
+    ) {
+        self.image = image
+        self.headline = headline
+        self.subline = subline
+        self.icon = icon
+        self.onIconTap = onIconTap
+        self.content = content
+    }
     
     var body: some View {
         ScrollView {
@@ -126,22 +142,23 @@ struct SplitScreenHeader: View {
 
 struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SplitScreen(image: "Mangold", headline: "Mangold", subline: "Saisonal im März", icon: "heart") {
-            Group {
-                Text("Steckbrief")
-                    .modifier(FontH1())
-                Text("Wissenswertes")
-                    .modifier(FontH2())
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ")
-                    .modifier(FontText())
-                Text("Ernte")
-                    .modifier(FontH2())
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing.")
-                    .modifier(FontText())
-                Text("Anbauregion")
-                    .modifier(FontH2())
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ")
-                    .modifier(FontText())
+        SplitScreen(
+            image: "Mangold",
+            headline: "Mangold",
+            subline: "Saisonal im März",
+            icon: "heart"
+        ) {
+            
+            Text("Steckbrief")
+                .modifier(FontH1())
+            Section("Wissenswertes") {
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontText())
+            }
+            Section("Ernte") {
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing.").modifier(FontText())
+            }
+            Section("Anbauregion") {
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontText())
             }
         }
     }

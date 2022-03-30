@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentSlider<Data> : View where Data : Representable {
-    var headline: String
     var elements: [Data]
     
     var route: Route?
@@ -16,27 +15,24 @@ struct ContentSlider<Data> : View where Data : Representable {
     var onTapGesture: (Data) -> () = {_ in }
 
     var body: some View {
-        VStack {
-            Text(headline)
-                .modifier(FontH2())
-                .foregroundColor(colorGrey)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: spacingMedium) {
-                    ForEach(Array(elements)) { element in
-                        ContentCard<Data>(data: element)
-                            .frame(alignment: .leading)
-                            .onTapGesture { onTapGesture(element) }
-                    }
-                    if viewRouter != nil && route != nil {
-                        ContentTeaser(viewRouter: viewRouter!, route: route!)
-                    }
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: spacingMedium) {
+                ForEach(Array(elements)) { element in
+                    ContentCard<Data>(
+                        data: element,
+                        onTap: onTapGesture
+                    ).frame(alignment: .leading)
+                }
+                if viewRouter != nil && route != nil {
+                    ContentTeaser(
+                        viewRouter: viewRouter!,
+                        route: route!
+                    )
                 }
             }
-            .padding(.top, spacingExtraSmall)
-            .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .frame(width: contentWidth, alignment: .leading)
+        .padding(.top, spacingExtraSmall)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
@@ -71,8 +67,7 @@ struct ContentTeaser: View {
 struct ContentSlider_Previews: PreviewProvider {
     static var previews: some View {
         ContentSlider<Seasonal>(
-            headline: "Die neuen Stars der Saison",
-            elements: Array(Season.current(context: PersistenceController.preview.container.viewContext).seasonals),
+            elements: [],
             route: .season,
             viewRouter: ViewRouter()
         )
