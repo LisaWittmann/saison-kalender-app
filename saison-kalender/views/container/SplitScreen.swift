@@ -11,6 +11,7 @@ struct SplitScreen<Content: View>: View {
     var image: String
     var headline: String
     var subline: String
+    var back: () -> ()
     var icon: String
     var onIconTap: () -> ()
     
@@ -20,6 +21,7 @@ struct SplitScreen<Content: View>: View {
         image: String,
         headline: String = "",
         subline: String = "",
+        back: @escaping () -> (),
         icon: String = "",
         onIconTap: @escaping () -> () = {},
         @ViewBuilder content: @escaping () -> Content
@@ -27,6 +29,7 @@ struct SplitScreen<Content: View>: View {
         self.image = image
         self.headline = headline
         self.subline = subline
+        self.back = back
         self.icon = icon
         self.onIconTap = onIconTap
         self.content = content
@@ -35,20 +38,19 @@ struct SplitScreen<Content: View>: View {
     var body: some View {
         ScrollView {
             ZStack {
-                ZStack {
+                VStack {
                     SplitScreenHeader(
                         image: image,
+                        back: back,
                         headline: headline,
                         subline: subline,
                         icon: icon,
                         onIconTap: onIconTap
                     )
+                    Spacer()
                 }
-                .modifier(FullScreenLayout())
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .background(colorGreen)
-                .offset(y: -imageOffset)
-
             
                 ZStack {
                     VStack(spacing: spacingLarge, content: content)
@@ -80,12 +82,12 @@ struct SplitScreen<Content: View>: View {
     }
     
     let headerHeight: CGFloat = 300
-    let imageOffset: CGFloat = 270
     let contentCornerRadius: CGFloat = 60
 }
 
 struct SplitScreenHeader: View {
     var image: String
+    var back: () -> ()
     var headline: String = ""
     var subline: String = ""
     var icon: String = ""
@@ -102,39 +104,56 @@ struct SplitScreenHeader: View {
                     height: imageHeight,
                     alignment: .center
                 )
-        
-            HStack {
+            
                 VStack {
-                    Text(subline)
-                        .modifier(FontSubtitle())
-                        .foregroundColor(colorWhite)
-                    Text(headline)
-                        .modifier(FontTitle())
-                        .foregroundColor(colorWhite)
+                    HStack {
+                        Image(systemName: "arrow.left")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: iconWidth)
+                            .foregroundColor(colorWhite)
+                            .onTapGesture { back() }
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        VStack {
+                            Text(subline)
+                                .modifier(FontSubtitle())
+                                .foregroundColor(colorWhite)
+                            Text(headline)
+                                .modifier(FontTitle())
+                                .foregroundColor(colorWhite)
+                        }
+                        .frame(
+                            height: headerHeight,
+                            alignment: .bottom
+                        )
+                        VStack {
+                            Image(systemName: icon)
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(colorWhite)
+                                .onTapGesture { onIconTap() }
+                                .frame(width: iconWidth)
+                        }.frame(
+                            height: headerHeight,
+                            alignment: .bottom
+                        )
+                        .padding(.bottom, spacingExtraSmall)
+                    }
+                    Spacer()
                 }
-                .frame(
-                    maxHeight: .infinity,
-                    alignment: .bottomLeading
-                )
-              
-                Image(systemName: icon)
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(colorBeige)
-                    .onTapGesture { onIconTap() }
-                    .frame(width: iconWidth)
-                    .frame(maxHeight: .infinity, alignment: .bottom)
-                    .padding(.bottom, spacingExtraSmall)
+                .modifier(SectionLayout())
             }
             .frame(
-                width: contentWidth,
-                height: headerHeight,
-                alignment: .bottomLeading
+                width: UIScreen.screenWidth,
+                height: imageHeight,
+                alignment: .topLeading
             )
-        }
     }
     
-    let headerHeight: CGFloat = 300
+    let headerHeight: CGFloat = 200
     let imageHeight: CGFloat = 400
     let imageOpacity: Double = 0.2
     let iconWidth: CGFloat = 30
@@ -146,6 +165,7 @@ struct SplitScreen_Previews: PreviewProvider {
             image: "Mangold",
             headline: "Mangold",
             subline: "Saisonal im März",
+            back: {},
             icon: "heart"
         ) {
             

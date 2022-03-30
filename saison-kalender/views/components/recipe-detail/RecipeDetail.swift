@@ -9,15 +9,16 @@ import SwiftUI
 
 struct RecipeDetail: View {
     @ObservedObject var recipe: Recipe
+    var back: () -> ()
     var user: User?
     
     @State var selectedSeasonal: Seasonal?
-    @State var showSeasonal: Bool = false
     
     var body: some View {
         SplitScreen(
             image: recipe.name,
             headline: recipe.name,
+            back: back,
             icon: icon,
             onIconTap: onIconTap
         ) {
@@ -67,22 +68,21 @@ struct RecipeDetail: View {
             }
         }
         .fullScreenCover(
-        isPresented: $showSeasonal,
-            content: {
-                SeasonalDetailSheet(
-                    seasonal: $selectedSeasonal
+            item: $selectedSeasonal,
+            content: { seasonal in
+                SeasonalDetail(
+                    seasonal: seasonal,
+                    back: hideSeasonalDetail
                 )
             }
         )
     }
     
     var icon: String {
-        get {
-            if user?.favorites.contains(recipe) != nil {
-                return "heart.fill"
-            }
-            return "heart"
+        if user?.favorites.contains(recipe) != nil {
+            return "heart.fill"
         }
+        return "heart"
     }
     
     func onIconTap() {
@@ -91,26 +91,18 @@ struct RecipeDetail: View {
     
     func showSeasonalDetail(_ seasonal: Seasonal) {
         self.selectedSeasonal = seasonal
-        self.showSeasonal = selectedSeasonal != nil
     }
-}
-
-struct RecipeDetailSheet: View {
-    @Binding var recipe: Recipe?
     
-    var body: some View {
-        Group {
-            if recipe != nil {
-                RecipeDetail(recipe: recipe!)
-            }
-        }
+    func hideSeasonalDetail() {
+        self.selectedSeasonal = nil
     }
 }
 
 struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
         RecipeDetail(
-            recipe: Recipe.current(context: PersistenceController.preview.container.viewContext).first!
+            recipe: Recipe.current(context: PersistenceController.preview.container.viewContext).first!,
+            back: {}
         )
     }
 }

@@ -62,9 +62,9 @@ struct SeasonItem: View {
             Spacer()
         }
         .ignoresSafeArea()
-        .onTapGesture { onTap() }
+        .onTapGesture { showDetail.toggle() }
         .fullScreenCover(isPresented: $showDetail, content: {
-            SeasonalDetail(seasonal: seasonal)
+            SeasonalDetail(seasonal: seasonal, back: { showDetail.toggle() })
         })
     }
     
@@ -74,10 +74,6 @@ struct SeasonItem: View {
     let buttonSize: CGFloat = 60
     let animationDuration: Double = 1
     let shadowRadius: CGFloat = 40
-    
-    func onTap() {
-        showDetail = !showDetail
-    }
 }
 
 struct SeasonView_Previews: PreviewProvider {

@@ -9,15 +9,16 @@ import SwiftUI
 
 struct SeasonalDetail: View {
     var seasonal: Seasonal
+    var back: () -> ()
     
     @State var selectedRecipe: Recipe?
-    @State var showRecipe: Bool = false
     
     var body: some View {
         SplitScreen(
             image: seasonal.name,
             headline: seasonal.name,
-            subline: "Saisonal im \(Season.current.name)"
+            subline: "Saisonal im \(Season.current.name)",
+            back: back
         ) {
             Text("Steckbrief")
                 .modifier(FontH1())
@@ -43,8 +44,13 @@ struct SeasonalDetail: View {
                 }
             }
         }
-        .fullScreenCover(isPresented: $showRecipe, content: {
-            RecipeDetailSheet(recipe: $selectedRecipe)
+        .fullScreenCover(
+            item: $selectedRecipe,
+            content: { recipe in
+                RecipeDetail(
+                    recipe: recipe,
+                    back: hideRecipeDetail
+                )
         })
     }
     
@@ -55,25 +61,18 @@ struct SeasonalDetail: View {
     
     func showRecipeDetail(_ recipe: Recipe) {
         self.selectedRecipe = recipe
-        self.showRecipe = true
     }
-}
-
-struct SeasonalDetailSheet: View {
-    @Binding var seasonal: Seasonal?
     
-    var body: some View {
-        Group {
-            if seasonal != nil {
-                SeasonalDetail(seasonal: seasonal!)
-            }
-        }
+    func hideRecipeDetail() {
+        self.selectedRecipe = nil
     }
 }
 
 struct SeasonalDetail_Previews: PreviewProvider {
     static var previews: some View {
         SeasonalDetail(
-            seasonal: Seasonal.current(context: PersistenceController.preview.container.viewContext).first!)
+            seasonal: Seasonal.current(context: PersistenceController.preview.container.viewContext).first!,
+            back: {}
+        )
     }
 }

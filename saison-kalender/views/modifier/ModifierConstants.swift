@@ -32,9 +32,9 @@ let fontSemiBold = "Manrope-SemiBold"
 let fontBold = "Manrope-Bold"
 let fontMedium = "Manrope-Medium"
 
-let fontSizeTitle: CGFloat = 45
-let fontSizeSubtitle: CGFloat = 26
-let fontSizeHeadline1: CGFloat = 22
+let fontSizeTitle: CGFloat = 40
+let fontSizeSubtitle: CGFloat = 24
+let fontSizeHeadline1: CGFloat = 20
 let fontSizeHeadline2: CGFloat = 18
 let fontSizeLabel: CGFloat = 16
 let fontSizeText: CGFloat = 14

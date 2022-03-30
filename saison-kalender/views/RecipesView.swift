@@ -9,9 +9,7 @@ import SwiftUI
 
 struct RecipesView: View {
     @Environment(\.managedObjectContext) var viewContext
-    
     @State var selectedRecipe: Recipe? = nil
-    @State var showRecipe: Bool = false
     
     var recipes: [Recipe] {
         return Recipe.current(context: viewContext)
@@ -37,10 +35,11 @@ struct RecipesView: View {
         }
         .modifier(PageLayout())
         .fullScreenCover(
-            isPresented: $showRecipe,
-            content: {
-                RecipeDetailSheet(
-                    recipe: $selectedRecipe
+            item: $selectedRecipe,
+            content: { recipe in
+                RecipeDetail(
+                    recipe: recipe,
+                    back: hideRecipeDetail
                 )
             }
         )
@@ -53,7 +52,10 @@ struct RecipesView: View {
     
     func showRecipeDetail(_ recipe: Recipe) {
         self.selectedRecipe = recipe
-        self.showRecipe = self.selectedRecipe != nil
+    }
+    
+    func hideRecipeDetail() {
+        self.selectedRecipe = nil
     }
 }
 
