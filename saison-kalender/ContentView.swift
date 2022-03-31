@@ -10,49 +10,53 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var viewContext
-    @ObservedObject var viewRouter: ViewRouter = ViewRouter()
-
-    @State var user: User? = nil
+    @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var user: LoggedInUser
 
     var body: some View {
         ZStack {
             switch viewRouter.currentView {
             case .home:
-                HomeView(
-                    user: $user,
-                    viewRouter: viewRouter
-                )
+                HomeView(viewRouter: viewRouter)
                     .environment(\.managedObjectContext, viewContext)
+                    .environmentObject(user)
             case .season:
                 SeasonView()
                     .environment(\.managedObjectContext, viewContext)
+                    .environmentObject(user)
             case .recipes:
                 RecipesView()
                     .environment(\.managedObjectContext, viewContext)
+                    .environmentObject(user)
             case .account:
-                if user != nil {
-                    AccountView(user: $user)
+                if user.isPresent {
+                    AccountView()
                         .environment(\.managedObjectContext, viewContext)
+                        .environmentObject(user)
                 } else {
-                    LoginView(user: $user)
+                    LoginView()
                         .environment(\.managedObjectContext, viewContext)
+                        .environmentObject(user)
                 }
             }
 
             Menu(viewRouter: viewRouter)
                 .padding(.bottom, spacingLarge)
                 .frame(
-                    height: UIScreen.screenHeight,
+                    height: screenHeight,
                     alignment: .bottom
                 )
-                
         }
-        .frame(height: UIScreen.screenHeight)
+    
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
     }
 }

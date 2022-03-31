@@ -62,46 +62,18 @@ extension User {
         do {
             try context.save()
         } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            return nil
         }
         return newUser
     }
     
-    static func getBy(name: String, password: String, from context: NSManagedObjectContext) -> User? {
+    static func with(name: String, password: String, from context: NSManagedObjectContext) -> User? {
         let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
         let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         return matchingUsers.first
     }
-}
-
-extension User {
     
-    func favor(recipe: Recipe) {
-        favorites.insert(recipe)
-    }
-    
-    func add(recipe: Recipe, to collection: Collection) {
-        favor(recipe: recipe)
-        collection.recipes.insert(recipe)
-    }
-        
-    func remove(recipe: Recipe, from collection: Collection) {
-        if (collection.recipes.contains(recipe)) {
-            collection.recipes.remove(recipe)
-        }
-    }
-        
-    func remove(recipe: Recipe) {
-        for collection in self.collections {
-            remove(recipe: recipe, from: collection)
-        }
-        favorites.remove(recipe)
-    }
-        
-    func remove(collection: Collection) {
-        self.collections.remove(collection)
+    func save() {
+        try? managedObjectContext?.save()
     }
 }
-
-

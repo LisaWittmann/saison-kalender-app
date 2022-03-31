@@ -10,18 +10,27 @@ import CoreData
 
 struct HomeView: View {
     @Environment(\.managedObjectContext) var viewContext
-    @Binding var user: User?
-    var viewRouter: ViewRouter
+    @EnvironmentObject var user: LoggedInUser
+    @ObservedObject var viewRouter: ViewRouter
 
     var seasonals: [Seasonal] {
-        return Seasonal.current(context: viewContext)
+        let allSeasonals = Seasonal.current(context: viewContext)
+        if allSeasonals.count > teaserLength {
+            return Array(allSeasonals[0...teaserLength])
+        }
+        return allSeasonals
     }
+    
     var recipes: [Recipe] {
-        return Recipe.current(context: viewContext)
+        let allRecipes = Recipe.current(context: viewContext)
+        if allRecipes.count > teaserLength {
+            return Array(allRecipes[0...teaserLength])
+        }
+        return allRecipes
     }
     
     var greeting: String {
-        return user != nil ? "Hallo \(user!.name)" : "Willkommen"
+        return user.name != nil ? "Hallo \(user.name!)" : "Willkommen"
     }
     
     var body: some View {
@@ -36,38 +45,38 @@ struct HomeView: View {
                 VStack(spacing: spacingLarge) {
                     if !seasonals.isEmpty {
                         Section("Die neuen Stars der Saison") {
-                            ContentSlider<Seasonal>(
-                                elements: Array(seasonals),
-                                route: .season,
+                            SeasonalSlider(
+                                seasonals: Array(seasonals),
                                 viewRouter: viewRouter
                             )
+                            .environmentObject(user)
                         }
                     }
                     
                     if !recipes.isEmpty {
                         Section("Entdecke die neusten Rezepte") {
-                            ContentSlider<Recipe>(
-                                elements: Array(recipes),
-                                route: .season,
+                            RecipeSlider(
+                                recipes: Array(recipes),
                                 viewRouter: viewRouter
                             )
+                            .environmentObject(user)
                         }
                     }
                 }
                 .padding(.leading, spacingLarge)
                 .padding(.trailing, spacingLarge)
-                
             }
         }
         .modifier(PageLayout())
     }
+    
+    let teaserLength = 4
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(
-            user: .constant(nil),
-            viewRouter: ViewRouter()
-        ).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        HomeView(viewRouter: ViewRouter())
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(LoggedInUser())
     }
 }

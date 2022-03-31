@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct SplitScreen<Content: View>: View {
+struct Detail<Content: View>: View {
     var image: String
     var headline: String
     var subline: String
-    var back: () -> ()
+    var close: () -> ()
     var icon: String
     var onIconTap: () -> ()
     
@@ -21,7 +21,7 @@ struct SplitScreen<Content: View>: View {
         image: String,
         headline: String = "",
         subline: String = "",
-        back: @escaping () -> (),
+        close: @escaping () -> (),
         icon: String = "",
         onIconTap: @escaping () -> () = {},
         @ViewBuilder content: @escaping () -> Content
@@ -29,7 +29,7 @@ struct SplitScreen<Content: View>: View {
         self.image = image
         self.headline = headline
         self.subline = subline
-        self.back = back
+        self.close = close
         self.icon = icon
         self.onIconTap = onIconTap
         self.content = content
@@ -39,9 +39,9 @@ struct SplitScreen<Content: View>: View {
         ScrollView {
             ZStack {
                 VStack {
-                    SplitScreenHeader(
+                    DetailHeader(
                         image: image,
-                        back: back,
+                        close: close,
                         headline: headline,
                         subline: subline,
                         icon: icon,
@@ -56,24 +56,22 @@ struct SplitScreen<Content: View>: View {
                     VStack(spacing: spacingLarge, content: content)
                         .frame(width: .infinity)
                         .frame(
-                            minHeight: UIScreen.screenHeight,
+                            minHeight: screenHeight - headerHeight,
                             alignment: .topLeading
                         )
                         .modifier(SectionLayout())
                 }
                 .frame(
-                    width: UIScreen.screenWidth,
+                    width: screenWidth,
                     alignment: .topLeading
                 )
                 .background(colorBeige)
-                .clipShape(RoundedRectangle(
-                    cornerRadius: contentCornerRadius
-                ))
+                .cornerRadius(contentCornerRadius, corners: [.topLeft, .topRight])
                 .padding(.top, headerHeight)
                 
             }
             .frame(
-                minHeight: UIScreen.screenHeight,
+                minHeight: screenHeight,
                 alignment: .topLeading
             )
             .edgesIgnoringSafeArea(.all)
@@ -85,9 +83,9 @@ struct SplitScreen<Content: View>: View {
     let contentCornerRadius: CGFloat = 60
 }
 
-struct SplitScreenHeader: View {
+struct DetailHeader: View {
     var image: String
-    var back: () -> ()
+    var close: () -> ()
     var headline: String = ""
     var subline: String = ""
     var icon: String = ""
@@ -100,7 +98,7 @@ struct SplitScreenHeader: View {
                 .scaledToFill()
                 .opacity(imageOpacity)
                 .frame(
-                    width: UIScreen.screenWidth,
+                    width: screenWidth,
                     height: imageHeight,
                     alignment: .center
                 )
@@ -112,7 +110,7 @@ struct SplitScreenHeader: View {
                             .scaledToFit()
                             .frame(width: iconWidth)
                             .foregroundColor(colorWhite)
-                            .onTapGesture { back() }
+                            .onTapGesture { close() }
                         Spacer()
                     }
                     
@@ -147,7 +145,7 @@ struct SplitScreenHeader: View {
                 .modifier(SectionLayout())
             }
             .frame(
-                width: UIScreen.screenWidth,
+                width: screenWidth,
                 height: imageHeight,
                 alignment: .topLeading
             )
@@ -161,11 +159,11 @@ struct SplitScreenHeader: View {
 
 struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SplitScreen(
+        Detail(
             image: "Mangold",
             headline: "Mangold",
             subline: "Saisonal im März",
-            back: {},
+            close: {},
             icon: "heart"
         ) {
             

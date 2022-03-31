@@ -6,24 +6,31 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct RecipeDetail: View {
     @ObservedObject var recipe: Recipe
-    var back: () -> ()
-    var user: User?
-    
-    @State var selectedSeasonal: Seasonal?
+    @EnvironmentObject var user: LoggedInUser
+    var close: () -> ()
     
     var body: some View {
-        SplitScreen(
+        Detail(
             image: recipe.name,
             headline: recipe.name,
-            back: back,
+            close: close,
             icon: icon,
             onIconTap: onIconTap
         ) {
             
             Text(recipe.name).modifier(FontH1())
+            
+            if !recipe.categories.isEmpty {
+                WrappingHStack(Array(recipe.categories)) { category in
+                    Tag(category.name)
+                        .padding(.bottom, spacingExtraSmall)
+                }
+                .padding(.bottom, -spacingExtraSmall)
+            }
                             
             if recipe.intro != nil {
                 Text(recipe.intro!)
@@ -60,41 +67,30 @@ struct RecipeDetail: View {
             
             if !recipe.seasonals.isEmpty {
                 Section("Saisonale Stars") {
-                    ContentSlider<Seasonal>(
-                        elements: recipe.seasonalsFor(season: Season.current),
-                        onTapGesture: showSeasonalDetail
-                    )
+                    SeasonalSlider(
+                        seasonals: recipe.seasonalsFor(season: Season.current)
+                    ).environmentObject(user)
                 }
             }
         }
-        .fullScreenCover(
-            item: $selectedSeasonal,
-            content: { seasonal in
-                SeasonalDetail(
-                    seasonal: seasonal,
-                    back: hideSeasonalDetail
-                )
-            }
-        )
     }
     
     var icon: String {
-        if user?.favorites.contains(recipe) != nil {
+        if !user.isPresent {
+            return ""
+        }
+        if user.favorites.contains(recipe) {
             return "heart.fill"
         }
         return "heart"
     }
     
     func onIconTap() {
-        user?.favor(recipe: recipe)
-    }
-    
-    func showSeasonalDetail(_ seasonal: Seasonal) {
-        self.selectedSeasonal = seasonal
-    }
-    
-    func hideSeasonalDetail() {
-        self.selectedSeasonal = nil
+        if user.favorites.contains(recipe) {
+            user.remove(recipe: recipe)
+        } else {
+            user.favor(recipe: recipe)
+        }
     }
 }
 
@@ -102,7 +98,7 @@ struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
         RecipeDetail(
             recipe: Recipe.current(context: PersistenceController.preview.container.viewContext).first!,
-            back: {}
-        )
+            close: {}
+        ).environmentObject(LoggedInUser())
     }
 }

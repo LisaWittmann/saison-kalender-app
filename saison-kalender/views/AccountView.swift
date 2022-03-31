@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct AccountView: View {
-    @Binding var user: User?
+    @EnvironmentObject var user: LoggedInUser
     
     var body: some View {
         ScrollView {
             VStack {
                 Headline(
-                    title: "\(user!.name)",
+                    title: "\(user.name ?? "")",
                     subtitle: "Dein Bereich",
                     color: colorBlack
                 )
+                if user.favorites.isEmpty {
+                    RecipeMasonry(
+                        recipes: Array(user.favorites)
+                    )
+                    .environmentObject(user)
+                    .frame(
+                        width: contentWidth,
+                        height: screenHeight,
+                        alignment: .topLeading
+                    )
+                }
             }
         }
         .modifier(PageLayout())

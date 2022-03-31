@@ -7,14 +7,9 @@
 
 import SwiftUI
 
-extension UIScreen {
-    static var screenWidth = UIScreen.main.bounds.size.width
-    static var screenHeight = UIScreen.main.bounds.size.height
-    static var screenSize =
-        UIScreen.main.bounds.size
-}
-
-let contentWidth = UIScreen.screenWidth - spacingLarge * 2
+let screenWidth = UIScreen.main.bounds.size.width
+let screenHeight = UIScreen.main.bounds.size.height
+let contentWidth = screenWidth - spacingLarge * 2
 let halfContentWidth = (contentWidth - spacingMedium) / 2
 let quarterContentWidth = (contentWidth - spacingSmall) / 4
 

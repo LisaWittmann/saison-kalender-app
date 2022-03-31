@@ -24,7 +24,7 @@ struct Toolbar: View {
                 .padding(.leading, spacingSmall)
                 .foregroundColor(colorBlack)
                 .frame(
-                    width: UIScreen.screenWidth,
+                    width: screenWidth,
                     alignment: .leading
                 )
             Text(header)
@@ -36,11 +36,11 @@ struct Toolbar: View {
                 .padding(.trailing, spacingSmall)
                 .foregroundColor(colorBlack)
                 .frame(
-                    width: UIScreen.screenWidth,
+                    width: screenWidth,
                     alignment: .trailing
                 )
         }
-        .frame(width: UIScreen.screenWidth)
+        .frame(width: screenWidth)
         .underlineView()
     }
 }

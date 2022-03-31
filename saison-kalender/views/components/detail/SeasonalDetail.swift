@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct SeasonalDetail: View {
-    var seasonal: Seasonal
-    var back: () -> ()
-    
-    @State var selectedRecipe: Recipe?
+    @ObservedObject var seasonal: Seasonal
+    @EnvironmentObject var user: LoggedInUser
+    var close: () -> ()
     
     var body: some View {
-        SplitScreen(
+        Detail(
             image: seasonal.name,
             headline: seasonal.name,
             subline: "Saisonal im \(Season.current.name)",
-            back: back
+            close: close
         ) {
             Text("Steckbrief")
                 .modifier(FontH1())
@@ -34,37 +33,11 @@ struct SeasonalDetail: View {
             }
             
             if !seasonal.recipes.isEmpty {
-                Text("Rezepte")
-                    .modifier(FontH1())
-                
-                LazyVGrid(columns: gridLayout) {
-                    ForEach(Array(seasonal.recipes)) { recipe in
-                        ContentCard<Recipe>(data: recipe, onTap: showRecipeDetail)
-                    }
-                }
+                Text("Rezepte").modifier(FontH1())
+                RecipeMasonry(recipes: Array(seasonal.recipes))
+                    .environmentObject(user)
             }
         }
-        .fullScreenCover(
-            item: $selectedRecipe,
-            content: { recipe in
-                RecipeDetail(
-                    recipe: recipe,
-                    back: hideRecipeDetail
-                )
-        })
-    }
-    
-    let gridLayout = [
-        GridItem(.flexible()),
-        GridItem(.flexible()),
-    ]
-    
-    func showRecipeDetail(_ recipe: Recipe) {
-        self.selectedRecipe = recipe
-    }
-    
-    func hideRecipeDetail() {
-        self.selectedRecipe = nil
     }
 }
 
@@ -72,7 +45,7 @@ struct SeasonalDetail_Previews: PreviewProvider {
     static var previews: some View {
         SeasonalDetail(
             seasonal: Seasonal.current(context: PersistenceController.preview.container.viewContext).first!,
-            back: {}
-        )
+            close: {}
+        ).environmentObject(LoggedInUser())
     }
 }

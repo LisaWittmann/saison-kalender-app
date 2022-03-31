@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentCard<Data>: View where Data : Representable {
     var data: Data
     var onTap: (Data) -> () = {_ in }
+    var rect = false
     
     var body: some View {
         ZStack {
@@ -19,7 +20,7 @@ struct ContentCard<Data>: View where Data : Representable {
                 .opacity(imageOpacity)
                 .frame(
                     width: halfContentWidth,
-                    height: halfContentWidth
+                    height: contentHeight
                 )
                 .background(colorGreen)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
@@ -36,17 +37,24 @@ struct ContentCard<Data>: View where Data : Representable {
                 )
                 .frame(
                     width: halfContentWidth,
-                    height: halfContentWidth,
+                    height: contentHeight,
                     alignment: .bottomLeading
                 )
         }.onTapGesture { onTap(data) }
     }
     
     let imageOpacity: Double = 0.2
+    var contentHeight: CGFloat {
+        rect ? halfContentWidth + 30 : halfContentWidth
+    }
 }
+
 
 struct ContentCell_Previews: PreviewProvider {
     static var previews: some View {
-        ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!)
+        HStack {
+            ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!)
+            ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!, rect: true)
+        }.frame(alignment: .bottom)
     }
 }

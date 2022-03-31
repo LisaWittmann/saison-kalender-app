@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SeasonView: View {
     @Environment(\.managedObjectContext) var viewContext
+    @EnvironmentObject var user: LoggedInUser
     
     var seasonals: [Seasonal] {
         return Seasonal.current(context: viewContext)
@@ -18,7 +19,7 @@ struct SeasonView: View {
         ScrollView {
             TabView {
                 ForEach(Array(seasonals)) { item in
-                    SeasonItem(seasonal: item)
+                    SeasonItem(seasonal: item).environmentObject(user)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -29,8 +30,8 @@ struct SeasonView: View {
 }
 
 struct SeasonItem: View {
-    var seasonal: Seasonal
-    
+    @ObservedObject var seasonal: Seasonal
+    @EnvironmentObject var user: LoggedInUser
     @State var showDetail: Bool = false
     
     var body: some View {
@@ -51,7 +52,7 @@ struct SeasonItem: View {
                     .resizable()
                     .scaledToFill()
                     .frame(
-                        width: UIScreen.screenWidth,
+                        width: screenWidth,
                         height: imageHeight,
                         alignment: .center
                     )
@@ -64,7 +65,10 @@ struct SeasonItem: View {
         .ignoresSafeArea()
         .onTapGesture { showDetail.toggle() }
         .fullScreenCover(isPresented: $showDetail, content: {
-            SeasonalDetail(seasonal: seasonal, back: { showDetail.toggle() })
+            SeasonalDetail(
+                seasonal: seasonal,
+                close: { showDetail.toggle() }
+            ).environmentObject(user)
         })
     }
     
@@ -78,6 +82,8 @@ struct SeasonItem: View {
 
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        SeasonView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(LoggedInUser())
     }
 }

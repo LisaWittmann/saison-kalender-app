@@ -21,9 +21,10 @@ struct IngredientDetail: View {
             Text(name)
                 .font(.custom(fontSemiBold, size: fontSizeLabel))
                 .foregroundColor(colorBlack)
+            Spacer()
             Text("\(quantity.description) \(unit ?? "")")
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .modifier(FontText())
+                .font(.custom(fontMedium, size: fontSizeText))
+                .foregroundColor(colorBlack)
         }.underlineView(opacity: 0.8)
     }
     

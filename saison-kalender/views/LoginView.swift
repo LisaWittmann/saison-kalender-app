@@ -9,31 +9,25 @@ import SwiftUI
 
 struct LoginView: View {
     @Environment(\.managedObjectContext) var viewContext
-    @Binding var user: User?
-    
+    @EnvironmentObject var user: LoggedInUser
     @State var loginMode = true
     
     var body: some View {
-        ZStack {
-            if loginMode {
-                LoginForm(
-                    user: $user,
-                    mode: $loginMode
-                )
-                    .environment(\.managedObjectContext, viewContext)
-            } else {
-                RegisterForm(mode: $loginMode)
-                    .environment(\.managedObjectContext, viewContext)
-            }
+        if loginMode {
+            LoginForm(mode: $loginMode)
+            .environment(\.managedObjectContext, viewContext)
+            .environmentObject(user)
         }
-        .modifier(FullScreenLayout())
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        else {
+            RegisterForm(mode: $loginMode)
+                .environment(\.managedObjectContext, viewContext)
+        }
     }
 }
 
 struct LoginForm: View {
     @Environment(\.managedObjectContext) var viewContext
-    @Binding var user: User?
+    @EnvironmentObject var user: LoggedInUser
     @Binding var mode: Bool
 
     @State private var name = ""
@@ -80,7 +74,7 @@ struct LoginForm: View {
     }
     
     func login() {
-        self.user = User.getBy(name: name, password: password, from: viewContext)
+        user.login(user: User.with(name: name, password: password, from: viewContext))
     }
 }
 
@@ -168,6 +162,8 @@ struct RegisterForm: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(user: .constant(nil)).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        LoginView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environmentObject(LoggedInUser())
     }
 }

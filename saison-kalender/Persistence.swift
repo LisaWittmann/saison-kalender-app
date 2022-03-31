@@ -28,6 +28,8 @@ struct PersistenceController {
     }()
     
     static func initTestValues(context: NSManagedObjectContext) {
+        User.create(name: "Lisa", email: "lisa@mail.de", password: "test", in: context)
+        
         let s1 = Seasonal(context: context)
         s1.name = "Mangold"
         s1.seasons = [.März, .April]
@@ -66,10 +68,35 @@ struct PersistenceController {
         rec2?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
         rec2?.addToCategories_(cat2)
         rec2?.addToCategories_(cat3)
+        rec2?.addToCategories_(cat1)
+        rec2?.addToCategories_(cat4)
         rec2?.addToSeasonals_(s1)
-
         rec2?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
         rec2?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        
+        let rec3 = Recipe.create(name: "Mangold Pfanne", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
+        rec3?.addIngredient(name: "Mangold", quantity: 1, unit: nil)
+        rec3?.addIngredient(name: "Tomaten", quantity: 500, unit: "g")
+        rec3?.addIngredient(name: "Sahne", quantity: 250, unit: "ml")
+        rec3?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
+        rec3?.addToCategories_(cat2)
+        rec3?.addToCategories_(cat3)
+        rec3?.addToSeasonals_(s1)
+        rec3?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        rec3?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        
+        let rec4 = Recipe.create(name: "Mangold Salat", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
+        rec4?.addIngredient(name: "Mangold", quantity: 1, unit: nil)
+        rec4?.addIngredient(name: "Radieschen", quantity: 100, unit: "g")
+        rec4?.addIngredient(name: "Joghurt Dressing", quantity: 50, unit: "ml")
+        rec4?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
+        rec4?.addToCategories_(cat2)
+        rec4?.addToCategories_(cat3)
+        rec4?.addToSeasonals_(s1)
+        rec4?.addToSeasonals_(s2)
+        rec4?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        rec4?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        
     }
 
     let container: NSPersistentCloudKitContainer

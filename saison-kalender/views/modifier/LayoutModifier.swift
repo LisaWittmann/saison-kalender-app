@@ -13,8 +13,8 @@ struct FullScreenLayout: ViewModifier {
     func body(content: Content) -> some View {
         content
             .frame(
-                width: UIScreen.screenWidth,
-                height: UIScreen.screenHeight,
+                width: screenWidth,
+                height: screenHeight,
                 alignment: .topLeading
             )
     }
