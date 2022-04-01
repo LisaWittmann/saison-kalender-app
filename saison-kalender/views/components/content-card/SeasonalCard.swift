@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct SeasonalCard: View {
-    @ObservedObject var seasonal: Seasonal
     @EnvironmentObject var user: LoggedInUser
-    @State var showDetail = false
+    @ObservedObject var seasonal: Seasonal
+    @State private var showDetail = false
+    
+    init(_ seasonal: Seasonal) {
+        self.seasonal = seasonal
+    }
     
     var body: some View {
-        ContentCard(data: seasonal, onTap: {_ in showDetail.toggle() })
+        ContentCard(seasonal, onTap: { showDetail.toggle() })
             .fullScreenCover(isPresented: $showDetail, content: {
-                SeasonalDetail(seasonal: seasonal, close: {
+                SeasonalDetail(seasonal, close: {
                     showDetail.toggle()
                 }).environmentObject(user)
             })
@@ -24,7 +28,9 @@ struct SeasonalCard: View {
 
 struct SeasonalCard_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonalCard(seasonal: Seasonal.current(context: PersistenceController.preview.container.viewContext).first!)
+        let context = PersistenceController.preview.container.viewContext
+        
+        SeasonalCard(Seasonal.current(from: context).first!)
             .environmentObject(LoggedInUser())
     }
 }

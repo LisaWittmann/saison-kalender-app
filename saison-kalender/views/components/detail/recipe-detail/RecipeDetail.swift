@@ -13,6 +13,11 @@ struct RecipeDetail: View {
     @EnvironmentObject var user: LoggedInUser
     var close: () -> ()
     
+    init(_ recipe: Recipe, close: @escaping () -> ()) {
+        self.recipe = recipe
+        self.close = close
+    }
+    
     var body: some View {
         Detail(
             image: recipe.name,
@@ -25,11 +30,7 @@ struct RecipeDetail: View {
             Text(recipe.name).modifier(FontH1())
             
             if !recipe.categories.isEmpty {
-                WrappingHStack(Array(recipe.categories)) { category in
-                    Tag(category.name)
-                        .padding(.bottom, spacingExtraSmall)
-                }
-                .padding(.bottom, -spacingExtraSmall)
+                TagList(Array(recipe.categories))
             }
                             
             if recipe.intro != nil {
@@ -38,17 +39,13 @@ struct RecipeDetail: View {
             }
             
             if recipe.nutrition != nil {
-                NutritionCard(nutrition: recipe.nutrition!)
+                NutritionDetail(recipe.nutrition!)
             }
             
             if !recipe.ingredients.isEmpty {
                 Section("Zutaten") {
                     ForEach(Array(recipe.ingredients)) { ingredient in
-                        IngredientDetail(
-                            name: ingredient.name,
-                            quantity: ingredient.quantity,
-                            unit: ingredient.unit
-                        )
+                        IngredientDetail(ingredient)
                     }
                 }
             }
@@ -56,20 +53,15 @@ struct RecipeDetail: View {
             if !recipe.preparations.isEmpty {
                 Section("Zubereitung") {
                     ForEach(Array(recipe.preparations)) { preparation in
-                        PreparationDetail(
-                            title: preparation.title,
-                            text: preparation.text,
-                            info: preparation.info
-                        )
+                        PreparationDetail(preparation)
                     }
                 }
             }
             
             if !recipe.seasonals.isEmpty {
                 Section("Saisonale Stars") {
-                    SeasonalSlider(
-                        seasonals: recipe.seasonalsFor(season: Season.current)
-                    ).environmentObject(user)
+                    SeasonalSlider(recipe.seasonalsFor(season: Season.current))
+                        .environmentObject(user)
                 }
             }
         }
@@ -96,9 +88,9 @@ struct RecipeDetail: View {
 
 struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetail(
-            recipe: Recipe.current(context: PersistenceController.preview.container.viewContext).first!,
-            close: {}
-        ).environmentObject(LoggedInUser())
+        let context = PersistenceController.preview.container.viewContext
+        
+        RecipeDetail(Recipe.current(from: context).first!, close: {})
+            .environmentObject(LoggedInUser())
     }
 }

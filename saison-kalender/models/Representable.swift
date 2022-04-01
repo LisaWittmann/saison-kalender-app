@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Representable: Identifiable {
+protocol Representable: Identifiable, ObservableObject {
     
     var name: String { get set }
     

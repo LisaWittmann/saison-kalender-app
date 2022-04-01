@@ -33,4 +33,9 @@ extension Category {
         request.predicate = predicate
         return request
     }
+    
+    static func all(from context: NSManagedObjectContext) -> [Category] {
+        let categories: [Category] = (try? context.fetch(Category.fetchRequest())) ?? []
+        return categories
+    }
 }

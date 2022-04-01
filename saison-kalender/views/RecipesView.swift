@@ -12,18 +12,14 @@ struct RecipesView: View {
     @EnvironmentObject var user: LoggedInUser
     
     var recipes: [Recipe] {
-        return Recipe.current(context: viewContext)
+        return Recipe.current(from: viewContext)
     }
     
     var body: some View {
         VStack {
-            Headline(
-                title: "Rezepte",
-                subtitle: "Saisonal im \(Season.current.name)",
-                color: colorBlack
-            )
+            Headline("Rezepte", "Saisonal im \(Season.current.name)")
             
-            RecipeMasonry(recipes: recipes)
+            RecipeMasonry(recipes)
                 .environmentObject(user)
                 .frame(
                     width: contentWidth,

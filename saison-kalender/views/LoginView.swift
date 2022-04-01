@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
-    @State var loginMode = true
+    @State private var loginMode = true
     
     var body: some View {
         if loginMode {
@@ -36,11 +36,8 @@ struct LoginForm: View {
     var body: some View {
         ScrollView {
             VStack {
-                Headline(
-                    title: "Anmelden",
-                    subtitle: "Dein Bereich",
-                    color: colorBlack
-                )
+                Headline("Anmelden", "Dein Bereich")
+                
                 VStack(spacing: spacingMedium) {
                     InputField(
                         input: $name,
@@ -74,7 +71,7 @@ struct LoginForm: View {
     }
     
     func login() {
-        user.login(user: User.with(name: name, password: password, from: viewContext))
+        user.login(User.with(name: name, password: password, from: viewContext))
     }
 }
 
@@ -90,11 +87,8 @@ struct RegisterForm: View {
     var body: some View {
         ScrollView {
             VStack {
-                Headline(
-                    title: "Registrieren",
-                    subtitle: "Dein Bereich",
-                    color: colorBlack
-                )
+                Headline("Registrieren", "Dein Bereich")
+                
                 VStack(spacing: spacingMedium) {
                     InputField(
                         input: $registerEmail,

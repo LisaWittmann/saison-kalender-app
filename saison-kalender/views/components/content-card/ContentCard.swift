@@ -7,14 +7,20 @@
 
 import SwiftUI
 
-struct ContentCard<Data>: View where Data : Representable {
-    var data: Data
-    var onTap: (Data) -> () = {_ in }
-    var rect = false
+struct ContentCard<Content: Representable>: View {
+    @ObservedObject var item: Content
+    var onTap: () -> ()
+    var rect: Bool
+    
+    init(_ item: Content, onTap: @escaping () -> () = {}, rect: Bool = false) {
+        self.item = item
+        self.onTap = onTap
+        self.rect = rect
+    }
     
     var body: some View {
         ZStack {
-            Image(data.name)
+            Image(item.name)
                 .resizable()
                 .scaledToFill()
                 .opacity(imageOpacity)
@@ -24,7 +30,7 @@ struct ContentCard<Data>: View where Data : Representable {
                 )
                 .background(colorGreen)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
-            Text(data.name)
+            Text(item.name)
                 .font(.custom(fontExtraBold, size: fontSizeHeadline2))
                 .foregroundColor(colorWhite)
                 .padding(
@@ -40,7 +46,7 @@ struct ContentCard<Data>: View where Data : Representable {
                     height: contentHeight,
                     alignment: .bottomLeading
                 )
-        }.onTapGesture { onTap(data) }
+        }.onTapGesture { onTap() }
     }
     
     let imageOpacity: Double = 0.2
@@ -52,9 +58,11 @@ struct ContentCard<Data>: View where Data : Representable {
 
 struct ContentCell_Previews: PreviewProvider {
     static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        
         HStack {
-            ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!)
-            ContentCard<Recipe>(data: Recipe.current(context: PersistenceController.preview.container.viewContext).first!, rect: true)
+            ContentCard<Recipe>(Recipe.current(from: context).first!)
+            ContentCard<Recipe>(Recipe.current(from: context).last!, rect: true)
         }.frame(alignment: .bottom)
     }
 }

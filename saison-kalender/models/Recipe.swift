@@ -104,7 +104,7 @@ extension Recipe {
         return recipes.filter({ $0.seasons.contains(season) })
     }
     
-    static func current(context: NSManagedObjectContext) -> [Recipe] {
+    static func current(from context: NSManagedObjectContext) -> [Recipe] {
         return Recipe.inSeason(season: Season.current, context: context)
     }
 }

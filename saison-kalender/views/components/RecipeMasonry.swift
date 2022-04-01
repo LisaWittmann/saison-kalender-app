@@ -7,27 +7,18 @@
 
 import SwiftUI
 
-struct Masonry<Content: View, Data: Identifiable>: View {
-    var elements: [Data]
-    var content: (Data) -> Content
-    
-    var body: some View {
-        Grid {
-            ForEach(Array(elements)) { element in
-                content(element)
-            }
-        }
-    }
-}
-
 struct RecipeMasonry: View {
     @EnvironmentObject var user: LoggedInUser
     var recipes: [Recipe]
     
+    init(_ recipes: [Recipe]) {
+        self.recipes = recipes
+    }
+    
     var body: some View {
         Grid {
             ForEach(Array(recipes)) { recipe in
-                RecipeCard(recipe: recipe, rect: isRectangle(recipe))
+                RecipeCard(recipe, rect: isRectangle(recipe))
                     .environmentObject(user)
                     .padding(.top, getPadding(recipe))
             }
@@ -50,7 +41,9 @@ struct RecipeMasonry: View {
 
 struct RecipeMasonry_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeMasonry(recipes: Recipe.current(context: PersistenceController.preview.container.viewContext))
+        let context = PersistenceController.preview.container.viewContext
+
+        RecipeMasonry(Recipe.current(from: context))
             .environmentObject(LoggedInUser())
             .frame(width: contentWidth)
     }

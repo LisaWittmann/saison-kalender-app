@@ -12,7 +12,7 @@ struct SeasonView: View {
     @EnvironmentObject var user: LoggedInUser
     
     var seasonals: [Seasonal] {
-        return Seasonal.current(context: viewContext)
+        return Seasonal.current(from: viewContext)
     }
     
     var body: some View {
@@ -32,15 +32,12 @@ struct SeasonView: View {
 struct SeasonItem: View {
     @ObservedObject var seasonal: Seasonal
     @EnvironmentObject var user: LoggedInUser
-    @State var showDetail: Bool = false
+    @State private var showDetail: Bool = false
     
     var body: some View {
         VStack {
-            Headline(
-                title: seasonal.name,
-                subtitle: "Saisonal im \(Season.current.name)",
-                color: colorBlack
-            )
+            Headline(seasonal.name,"Saisonal im \(Season.current.name)")
+            
             ZStack {
                 Circle()
                     .fill(colorGreen)
@@ -65,10 +62,8 @@ struct SeasonItem: View {
         .ignoresSafeArea()
         .onTapGesture { showDetail.toggle() }
         .fullScreenCover(isPresented: $showDetail, content: {
-            SeasonalDetail(
-                seasonal: seasonal,
-                close: { showDetail.toggle() }
-            ).environmentObject(user)
+            SeasonalDetail(seasonal, close: { showDetail.toggle() })
+                .environmentObject(user)
         })
     }
     

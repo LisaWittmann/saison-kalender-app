@@ -12,9 +12,11 @@ struct HomeView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
     @ObservedObject var viewRouter: ViewRouter
+    
+    let teaserLength = 4
 
     var seasonals: [Seasonal] {
-        let allSeasonals = Seasonal.current(context: viewContext)
+        let allSeasonals = Seasonal.current(from: viewContext)
         if allSeasonals.count > teaserLength {
             return Array(allSeasonals[0...teaserLength])
         }
@@ -22,7 +24,7 @@ struct HomeView: View {
     }
     
     var recipes: [Recipe] {
-        let allRecipes = Recipe.current(context: viewContext)
+        let allRecipes = Recipe.current(from: viewContext)
         if allRecipes.count > teaserLength {
             return Array(allRecipes[0...teaserLength])
         }
@@ -36,30 +38,22 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Headline(
-                    title: greeting,
-                    subtitle: "Saisonal im \(Season.current.name)",
-                    color: colorBlack
-                )
+                Headline(greeting,"Saisonal im \(Season.current.name)")
                 
                 VStack(spacing: spacingLarge) {
                     if !seasonals.isEmpty {
                         Section("Die neuen Stars der Saison") {
-                            SeasonalSlider(
-                                seasonals: Array(seasonals),
-                                viewRouter: viewRouter
-                            )
-                            .environmentObject(user)
+                            SeasonalSlider(Array(seasonals), link: .season)
+                                .environmentObject(user)
+                                .environmentObject(viewRouter)
                         }
                     }
                     
                     if !recipes.isEmpty {
                         Section("Entdecke die neusten Rezepte") {
-                            RecipeSlider(
-                                recipes: Array(recipes),
-                                viewRouter: viewRouter
-                            )
-                            .environmentObject(user)
+                            RecipeSlider(Array(recipes), link: .recipes)
+                                .environmentObject(user)
+                                .environmentObject(viewRouter)
                         }
                     }
                 }
@@ -69,8 +63,6 @@ struct HomeView: View {
         }
         .modifier(PageLayout())
     }
-    
-    let teaserLength = 4
 }
 
 struct HomeView_Previews: PreviewProvider {

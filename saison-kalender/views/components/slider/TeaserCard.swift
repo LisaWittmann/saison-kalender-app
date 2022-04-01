@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct TeaserCard: View {
-    var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     var route: Route
+    
+    init(to route: Route) {
+        self.route = route
+    }
     
     var body: some View {
         ZStack {
@@ -37,6 +41,7 @@ struct TeaserCard: View {
 
 struct TeaserCard_Previews: PreviewProvider {
     static var previews: some View {
-        TeaserCard(viewRouter: ViewRouter(), route: .home)
+        TeaserCard(to: .home)
+            .environmentObject(ViewRouter())
     }
 }

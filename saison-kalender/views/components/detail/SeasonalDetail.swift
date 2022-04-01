@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct SeasonalDetail: View {
-    @ObservedObject var seasonal: Seasonal
     @EnvironmentObject var user: LoggedInUser
+    @ObservedObject var seasonal: Seasonal
     var close: () -> ()
+    
+    init(_ seasonal: Seasonal, close: @escaping () -> ()) {
+        self.seasonal = seasonal
+        self.close = close
+    }
     
     var body: some View {
         Detail(
@@ -34,7 +39,7 @@ struct SeasonalDetail: View {
             
             if !seasonal.recipes.isEmpty {
                 Text("Rezepte").modifier(FontH1())
-                RecipeMasonry(recipes: Array(seasonal.recipes))
+                RecipeMasonry(Array(seasonal.recipes))
                     .environmentObject(user)
             }
         }
@@ -43,9 +48,9 @@ struct SeasonalDetail: View {
 
 struct SeasonalDetail_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonalDetail(
-            seasonal: Seasonal.current(context: PersistenceController.preview.container.viewContext).first!,
-            close: {}
-        ).environmentObject(LoggedInUser())
+        let context = PersistenceController.preview.container.viewContext
+        
+        SeasonalDetail(Seasonal.current(from: context).first!, close: {})
+            .environmentObject(LoggedInUser())
     }
 }

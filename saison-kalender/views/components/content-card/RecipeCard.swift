@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct RecipeCard: View {
-    @ObservedObject var recipe: Recipe
     @EnvironmentObject var user: LoggedInUser
-    var rect = false
+    @ObservedObject var recipe: Recipe
+    var rect: Bool
     
-    @State var showDetail = false
+    init(_ recipe: Recipe, rect: Bool = false) {
+        self.recipe = recipe
+        self.rect = rect
+    }
+    
+    @State private var showDetail = false
     
     var body: some View {
-        ContentCard(data: recipe, onTap: {_ in showDetail.toggle() }, rect: rect)
+        ContentCard<Recipe>(recipe, onTap: { showDetail.toggle() }, rect: rect)
             .fullScreenCover(isPresented: $showDetail, content: {
-                RecipeDetail(recipe: recipe, close: {
+                RecipeDetail(recipe, close: {
                     showDetail.toggle()
                 }).environmentObject(user)
             })
@@ -26,7 +31,9 @@ struct RecipeCard: View {
 
 struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCard(recipe: Recipe.current(context: PersistenceController.preview.container.viewContext).first!)
+        let context = PersistenceController.preview.container.viewContext
+        
+        RecipeCard(Recipe.current(from: context).first!)
             .environmentObject(LoggedInUser())
     }
 }

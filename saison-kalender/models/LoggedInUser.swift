@@ -28,7 +28,7 @@ class LoggedInUser: ObservableObject {
         user != nil
     }
     
-    func login(user: User?) {
+    func login(_ user: User?) {
         self.user = user
     }
     

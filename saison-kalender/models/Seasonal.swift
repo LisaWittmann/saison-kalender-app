@@ -64,7 +64,7 @@ extension Seasonal {
         return self.seasons.contains(season)
     }
     
-    static func current(context: NSManagedObjectContext) -> [Seasonal] {
+    static func current(from context: NSManagedObjectContext) -> [Seasonal] {
         let seasonals: [Seasonal] = (try? context.fetch(Seasonal.fetchRequest())) ?? []
         return seasonals.filter({ $0.inSeason(Season.current) })
     }

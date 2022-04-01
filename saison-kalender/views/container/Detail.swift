@@ -157,7 +157,7 @@ struct DetailHeader: View {
     let iconWidth: CGFloat = 30
 }
 
-struct SplitScreen_Previews: PreviewProvider {
+struct Detail_Previews: PreviewProvider {
     static var previews: some View {
         Detail(
             image: "Mangold",

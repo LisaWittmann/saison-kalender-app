@@ -7,25 +7,26 @@
 
 import SwiftUI
 
-struct ContentSlider<Data> : View where Data : Representable {
-    var elements: [Data]
+struct ContentSlider<Content: Representable>: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    var items: [Content]
     var route: Route?
-    var viewRouter: ViewRouter?
-    var onTapGesture: (Data) -> () = {_ in }
+    var onTap: (Content) -> () = {_ in }
+    
+    init(_ items: [Content], link route: Route? = nil, onTap: @escaping (Content) -> () = {_ in}) {
+        self.items = items
+        self.route = route
+        self.onTap = onTap
+    }
 
     var body: some View {
         Slider {
-            ForEach(Array(elements)) { element in
-                ContentCard<Data>(
-                    data: element,
-                    onTap: onTapGesture
-                ).frame(alignment: .leading)
+            ForEach(Array(items)) { item in
+                ContentCard<Content>(item, onTap: { onTap(item) })
             }
-            if viewRouter != nil && route != nil {
-                TeaserCard(
-                    viewRouter: viewRouter!,
-                    route: route!
-                )
+            if route != nil {
+                TeaserCard(to: route!)
+                    .environmentObject(viewRouter)
             }
         }
     }
@@ -33,10 +34,7 @@ struct ContentSlider<Data> : View where Data : Representable {
 
 struct ContentSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ContentSlider<Seasonal>(
-            elements: [],
-            route: .season,
-            viewRouter: ViewRouter()
-        )
+        ContentSlider<Seasonal>([], link: .season)
+            .environmentObject(ViewRouter())
     }
 }

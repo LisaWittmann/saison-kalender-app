@@ -7,38 +7,43 @@
 
 import SwiftUI
 
-struct NutritionCard: View {
+struct NutritionDetail: View {
     var nutrition: Nutrition
+    
+    init(_ nutrition: Nutrition) {
+        self.nutrition = nutrition
+    }
+    
+    var body: some View {
+        LazyVGrid(columns: layout) {
+            NutritionItem(
+                description: "Kalorien",
+                value: "\(nutrition.calories.description)"
+            )
+            NutritionItem(
+                description: "Eiweiß",
+                value: "\(nutrition.protein.description) g"
+            )
+            NutritionItem(
+                description: "Fett",
+                value: "\(nutrition.fat.description) g"
+            )
+            NutritionItem(
+                description: "Kohlenhydrate",
+                value: "\(nutrition.carbs.description) g"
+            )
+        }
+    }
+    
     var layout = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    
-    var body: some View {
-        LazyVGrid(columns: layout) {
-            NutritionCardItem(
-                description: "Kalorien",
-                value: "\(nutrition.calories.description)"
-            )
-            NutritionCardItem(
-                description: "Eiweiß",
-                value: "\(nutrition.protein.description) g"
-            )
-            NutritionCardItem(
-                description: "Fett",
-                value: "\(nutrition.fat.description) g"
-            )
-            NutritionCardItem(
-                description: "Kohlenhydrate",
-                value: "\(nutrition.carbs.description) g"
-            )
-        }
-    }
 }
 
-struct NutritionCardItem: View {
+struct NutritionItem: View {
     var description: String
     var value: String
     

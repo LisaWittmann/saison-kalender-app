@@ -9,17 +9,24 @@ import SwiftUI
 
 struct RecipeSlider: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var viewRouter: ViewRouter
     var recipes: [Recipe]
-    var viewRouter: ViewRouter?
+    var route: Route?
+    
+    init(_ recipes: [Recipe], link route: Route? = nil) {
+        self.recipes = recipes
+        self.route = route
+    }
     
     var body: some View {
         Slider {
             ForEach(Array(recipes)) { recipe in
-                RecipeCard(recipe: recipe)
+                RecipeCard(recipe)
                     .environmentObject(user)
             }
-            if viewRouter != nil {
-                TeaserCard(viewRouter: viewRouter!, route: .recipes)
+            if route != nil {
+                TeaserCard(to: route!)
+                    .environmentObject(viewRouter)
             }
         }
     }
@@ -27,9 +34,10 @@ struct RecipeSlider: View {
 
 struct RecipeSlider_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeSlider(
-            recipes: Recipe.current(context: PersistenceController.preview.container.viewContext),
-            viewRouter: ViewRouter()
-        ).environmentObject(LoggedInUser())
+        let context = PersistenceController.preview.container.viewContext
+        
+        RecipeSlider(Recipe.current(from: context), link: .recipes)
+            .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
     }
 }

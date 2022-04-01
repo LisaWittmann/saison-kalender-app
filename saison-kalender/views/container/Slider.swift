@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct Slider<Content: View>: View {
+    var spacing: CGFloat
     var content: () -> Content
     
-    init(@ViewBuilder content: @escaping () -> Content) {
+    init(spacing: CGFloat = spacingMedium, @ViewBuilder content: @escaping () -> Content) {
+        self.spacing = spacing
         self.content = content
     }
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: spacingMedium, content: content)
+            HStack(spacing: spacing, content: content)
         }
         .padding(.top, spacingExtraSmall)
         .frame(maxWidth: .infinity, alignment: .leading)

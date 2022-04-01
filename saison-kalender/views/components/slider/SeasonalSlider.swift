@@ -9,17 +9,24 @@ import SwiftUI
 
 struct SeasonalSlider: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var viewRouter: ViewRouter
     var seasonals: [Seasonal]
-    var viewRouter: ViewRouter?
+    var route: Route?
+    
+    init(_ seasonals: [Seasonal], link route: Route? = nil) {
+        self.seasonals = seasonals
+        self.route = route
+    }
     
     var body: some View {
         Slider {
             ForEach(Array(seasonals)) { seasonal in
-                SeasonalCard(seasonal: seasonal)
+                SeasonalCard(seasonal)
                     .environmentObject(user)
             }
-            if viewRouter != nil {
-                TeaserCard(viewRouter: viewRouter!, route: .season)
+            if route != nil {
+                TeaserCard(to: route!)
+                    .environmentObject(viewRouter)
             }
         }
     }
@@ -27,9 +34,10 @@ struct SeasonalSlider: View {
 
 struct SeasonalSlider_Previews: PreviewProvider {
     static var previews: some View {
-        SeasonalSlider(
-            seasonals: Seasonal.current(context: PersistenceController.preview.container.viewContext),
-            viewRouter: ViewRouter()
-        ).environmentObject(LoggedInUser())
+        let context = PersistenceController.preview.container.viewContext
+        
+        SeasonalSlider(Seasonal.current(from: context), link: .season)
+            .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
     }
 }

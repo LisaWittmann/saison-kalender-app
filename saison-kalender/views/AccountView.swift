@@ -13,15 +13,10 @@ struct AccountView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Headline(
-                    title: "\(user.name ?? "")",
-                    subtitle: "Dein Bereich",
-                    color: colorBlack
-                )
-                if user.favorites.isEmpty {
-                    RecipeMasonry(
-                        recipes: Array(user.favorites)
-                    )
+                Headline("\(user.name ?? "")", "Dein Bereich")
+                
+                if !user.favorites.isEmpty {
+                    RecipeMasonry(Array(user.favorites))
                     .environmentObject(user)
                     .frame(
                         width: contentWidth,
