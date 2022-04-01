@@ -34,12 +34,12 @@ struct RecipeMasonry: View {
         GridItem(.flexible())
     ]
     
-    func isRectangle(_ recipe: Recipe) -> Bool {
+    private func isRectangle(_ recipe: Recipe) -> Bool {
         let index = recipes.firstIndex(of: recipe)!
         return index % 4 == 0 || (index+1) % 4 == 0
     }
     
-    func getPadding(_ recipe: Recipe) -> CGFloat {
+    private func getPadding(_ recipe: Recipe) -> CGFloat {
         let index = recipes.firstIndex(of: recipe)!
         if (index+1) % 2 == 0 {
             return -30

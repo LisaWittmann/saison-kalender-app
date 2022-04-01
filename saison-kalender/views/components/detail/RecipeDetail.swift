@@ -19,7 +19,7 @@ struct RecipeDetail: View {
     }
     
     var body: some View {
-        Card(
+        SplitScreen(
             images: [recipe.name],
             headline: recipe.name,
             close: close,
@@ -60,8 +60,12 @@ struct RecipeDetail: View {
             
             if !recipe.seasonals.isEmpty {
                 Section("Saisonale Stars") {
-                    SeasonalSlider(recipe.seasonalsFor(season: Season.current))
-                        .environmentObject(user)
+                    Slider {
+                        ForEach(Array(recipe.seasonalsFor(season: Season.current))) { seasonal in
+                            SeasonalTeaser(seasonal)
+                                .environmentObject(user)
+                        }
+                    }
                 }
             }
         }
@@ -77,7 +81,7 @@ struct RecipeDetail: View {
         return "heart"
     }
     
-    func onIconTap() {
+    private func onIconTap() {
         if user.favorites.contains(recipe) {
             user.remove(recipe: recipe)
         } else {

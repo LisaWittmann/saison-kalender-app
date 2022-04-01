@@ -19,7 +19,7 @@ struct CollectionDetail: View {
     }
     
     var body: some View {
-       Card(
+       SplitScreen(
         images: collection.recipes.map({ $0.name }),
         headline: collection.name,
         close: close

@@ -23,23 +23,19 @@ struct Menu: View {
                     x: shadowOffsetX,
                     y: shadowOffsetY
                 )
-            HStack(
-                spacing: getIconSpacing()
-            ) {
-                ForEach(0..<Route.allCases.count, id: \.self) { i in
+            HStack(spacing: getIconSpacing()) {
+                ForEach(Route.allCases, id: \.self) { route in
                     Button(action: {
-                        viewRouter.currentView = Route.allCases[i]
+                        viewRouter.currentView = route
                     }, label: {
-                        Image(
-                            systemName: viewRouter.imageName(route: Route.allCases[i])
-                        )
+                        Image(systemName: viewRouter.imageName(route: route))
                             .resizable()
                             .frame(
                                 width: tabItemSize,
                                 height: tabItemSize,
                                 alignment: .center
                             )
-                        .foregroundColor(getIconColor(route: Route.allCases[i]))
+                        .foregroundColor(getIconColor(route: route))
                             .animation(.easeInOut)
                     })
                 }

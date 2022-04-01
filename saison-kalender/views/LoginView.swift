@@ -38,14 +38,11 @@ struct LoginForm: View {
             Headline("Anmelden", "Dein Bereich")
             
             VStack(spacing: spacingMedium) {
-                InputField(
-                    input: $name,
+                InputField($name,
                     placeholder: "Nutzername",
-                    icon: "person.fill",
-                    secure: false
+                    icon: "person.fill"
                 )
-                InputField(
-                    input: $password,
+                InputField($password,
                     placeholder: "Passwort",
                     icon: "lock.fill",
                     secure: true
@@ -53,10 +50,7 @@ struct LoginForm: View {
                 Button("Anmelden", action: login)
                     .frame(width: contentWidth)
                     .modifier(ButtonStyle())
-                Button(
-                    "Noch kein Konto?",
-                    action: { mode.toggle() }
-                )
+                Button("Noch kein Konto?", action: { mode.toggle() })
                     .frame(
                         width: contentWidth,
                         alignment: .trailing
@@ -85,26 +79,19 @@ struct RegisterForm: View {
             Headline("Registrieren", "Dein Bereich")
             
             VStack(spacing: spacingMedium) {
-                InputField(
-                    input: $registerEmail,
+                InputField($registerEmail,
                     placeholder: "E-Mail",
-                    icon: "envelope.fill",
-                    secure: false
+                    icon: "envelope.fill"
                 )
-                InputField(
-                    input: $registerName,
+                InputField($registerName,
                     placeholder: "Nutzername",
-                    icon: "person.fill",
-                    secure: false
+                    icon: "person.fill"
                 )
-                InputField(
-                    input: $registerPassword,
+                InputField($registerPassword,
                     placeholder: "Passwort",
-                    icon: "lock.fill",
-                    secure: true
+                    icon: "lock.fill"
                 )
-                InputField(
-                    input: $registerPasswordRepeat,
+                InputField($registerPasswordRepeat,
                     placeholder: "Passwort wiederholen",
                     icon: "lock.fill",
                     secure: true
@@ -112,10 +99,7 @@ struct RegisterForm: View {
                 Button("Registrieren", action: register)
                     .frame(width: contentWidth)
                     .modifier(ButtonStyle())
-                Button(
-                    "Du hast bereits ein Konto?",
-                    action: { mode.toggle() }
-                )
+                Button("Jetzt anmelden", action: { mode.toggle() })
                     .frame(
                         width: contentWidth,
                         alignment: .trailing
@@ -127,9 +111,9 @@ struct RegisterForm: View {
 
     func register() {
         let user = User.create(
-            name: self.registerName,
-            email: self.registerEmail,
-            password: self.registerPassword,
+            name: registerName,
+            email: registerEmail,
+            password: registerPassword,
             in: viewContext
         )
         if user != nil {

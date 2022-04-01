@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Card<Content: View>: View {
+struct SplitScreen<Content: View>: View {
     var images: [String]
     var headline: String
     var subline: String
@@ -39,7 +39,7 @@ struct Card<Content: View>: View {
         ScrollView {
             ZStack {
                 VStack {
-                    DetailHeader(
+                    SplitScreenHeader(
                         images: images,
                         close: close,
                         headline: headline,
@@ -80,7 +80,7 @@ struct Card<Content: View>: View {
     let contentCornerRadius: CGFloat = 60
 }
 
-struct DetailHeader: View {
+struct SplitScreenHeader: View {
     var images: [String]
     var close: () -> ()
     var headline: String = ""
@@ -146,9 +146,9 @@ struct DetailHeader: View {
     let iconWidth: CGFloat = 30
 }
 
-struct Detail_Previews: PreviewProvider {
+struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
-        Card(
+        SplitScreen(
             images: ["Mangold"],
             headline: "Mangold",
             subline: "Saisonal im März",

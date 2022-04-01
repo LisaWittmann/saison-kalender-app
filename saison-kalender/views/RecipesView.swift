@@ -29,7 +29,8 @@ struct RecipesView: View {
             Headline("Rezepte", "Saisonal im \(Season.current.name)")
 
             if !categories.isEmpty {
-                TagSlider(categories, onSelect: { category in selectedCategory = category })
+                TagSlider(categories, onSelect: { category in
+                    selectedCategory = category })
             }
             
             RecipeMasonry(recipes)

@@ -11,7 +11,6 @@ struct AccountView: View {
     @EnvironmentObject var user: LoggedInUser
     
     var body: some View {
-        
         Page {
             Headline("\(user.name ?? "")", "Dein Bereich")
             if !user.favorites.isEmpty {

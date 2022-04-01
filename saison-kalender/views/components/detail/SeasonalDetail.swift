@@ -18,7 +18,7 @@ struct SeasonalDetail: View {
     }
     
     var body: some View {
-        Card(
+        SplitScreen(
             images: [seasonal.name],
             headline: seasonal.name,
             subline: "Saisonal im \(Season.current.name)",

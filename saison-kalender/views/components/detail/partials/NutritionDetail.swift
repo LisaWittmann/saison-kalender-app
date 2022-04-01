@@ -1,5 +1,5 @@
 //
-//  InfoCell.swift
+//  NutritionDetail.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 24.03.22.
@@ -35,7 +35,7 @@ struct NutritionDetail: View {
         }
     }
     
-    var layout = [
+    let layout = [
         GridItem(.flexible()),
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -81,7 +81,6 @@ struct NutritionItem: View {
                 height: cardHeight,
                 alignment: .top
             )
-      
         }
     }
     
@@ -90,6 +89,7 @@ struct NutritionItem: View {
     let textWidth = quarterContentWidth - 10
     let textHeight: CGFloat = 40
 }
+
 
 
 struct NutritionDetail_Previews: PreviewProvider {

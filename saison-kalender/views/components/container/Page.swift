@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  Page.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 01.04.22.

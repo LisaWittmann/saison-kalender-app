@@ -1,5 +1,5 @@
 //
-//  Toolbar.swift
+//  ContextNavigation.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 25.03.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Toolbar: View {
+struct ContextNavigation: View {
     var iconLeft: String = ""
     var iconRight: String = ""
     
@@ -45,17 +45,17 @@ struct Toolbar: View {
     }
 }
 
-struct Toolbar_Previews: PreviewProvider {
+struct ContextNavigation_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: spacingLarge) {
-            Toolbar(
+            ContextNavigation(
                 iconLeft: "chevron.left",
                 iconRight: "chevron.right",
-                header: "Navigation Toolbar"
+                header: "Context Navigation"
             )
-            Toolbar(
+            ContextNavigation(
                 iconRight: "xmark",
-                header: "Overlay Toolbar"
+                header: "Context Navigation"
             )
         }
     }

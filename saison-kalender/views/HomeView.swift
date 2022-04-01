@@ -13,12 +13,12 @@ struct HomeView: View {
     @EnvironmentObject var user: LoggedInUser
     @ObservedObject var viewRouter: ViewRouter
     
-    let teaserLength = 4
+    let teaserLength = 3
 
     var seasonals: [Seasonal] {
         let allSeasonals = Seasonal.current(from: viewContext)
         if allSeasonals.count > teaserLength {
-            return Array(allSeasonals[0...teaserLength])
+            return Array(allSeasonals[0...teaserLength-1])
         }
         return allSeasonals
     }
@@ -26,7 +26,7 @@ struct HomeView: View {
     var recipes: [Recipe] {
         let allRecipes = Recipe.current(from: viewContext)
         if allRecipes.count > teaserLength {
-            return Array(allRecipes[0...teaserLength])
+            return Array(allRecipes[0...teaserLength-1])
         }
         return allRecipes
     }
@@ -42,17 +42,27 @@ struct HomeView: View {
             VStack(spacing: spacingLarge) {
                 if !seasonals.isEmpty {
                     Section("Die neuen Stars der Saison") {
-                        SeasonalSlider(Array(seasonals), link: .season)
-                            .environmentObject(user)
-                            .environmentObject(viewRouter)
+                        Slider {
+                            ForEach(Array(seasonals)) { seasonal in
+                                SeasonalTeaser(seasonal)
+                                    .environmentObject(user)
+                            }
+                            LinkTeaser(to: .season)
+                                .environmentObject(viewRouter)
+                        }
                     }
                 }
                 
                 if !recipes.isEmpty {
                     Section("Entdecke die neusten Rezepte") {
-                        RecipeSlider(Array(recipes), link: .recipes)
-                            .environmentObject(user)
-                            .environmentObject(viewRouter)
+                        Slider {
+                            ForEach(Array(recipes)) { recipe in
+                                RecipeTeaser(recipe)
+                                    .environmentObject(user)
+                            }
+                            LinkTeaser(to: .recipes)
+                                .environmentObject(viewRouter)
+                        }
                     }
                 }
             }
