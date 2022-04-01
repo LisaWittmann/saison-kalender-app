@@ -25,25 +25,16 @@ struct RecipesView: View {
     }
 
     var body: some View {
-        VStack {
+        Page {
             Headline("Rezepte", "Saisonal im \(Season.current.name)")
 
             if !categories.isEmpty {
                 TagSlider(categories, onSelect: { category in selectedCategory = category })
-                    .padding(.leading, spacingLarge)
-                    .padding(.bottom, spacingLarge)
             }
             
             RecipeMasonry(recipes)
                 .environmentObject(user)
-                .frame(
-                    width: contentWidth,
-                    height: screenHeight,
-                    alignment: .topLeading
-                )
-            
         }
-        .modifier(PageLayout())
     }
 }
 

@@ -28,7 +28,7 @@ struct PersistenceController {
     }()
     
     static func initTestValues(context: NSManagedObjectContext) {
-        User.create(name: "Lisa", email: "lisa@mail.de", password: "test", in: context)
+        let u1 = User.create(name: "Lisa", email: "lisa@mail.de", password: "test", in: context)
         
         let s1 = Seasonal(context: context)
         s1.name = "Mangold"
@@ -62,7 +62,7 @@ struct PersistenceController {
         rec1?.addToSeasonals_(s3)
         
         let rec2 = Recipe.create(name: "Linguine mit Mangold", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
-        rec2?.addIngredient(name: "Mangold", quantity: 1, unit: nil)
+        rec2?.addIngredient(name: "Mangold", quantity: 1)
         rec2?.addIngredient(name: "Linguine", quantity: 500, unit: "g")
         rec2?.addIngredient(name: "Sahne", quantity: 250, unit: "ml")
         rec2?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
@@ -71,22 +71,22 @@ struct PersistenceController {
         rec2?.addToCategories_(cat1)
         rec2?.addToCategories_(cat4)
         rec2?.addToSeasonals_(s1)
-        rec2?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
-        rec2?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        rec2?.addPreparation(title: "Wasser kochen", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
+        rec2?.addPreparation(title: "Mangold dünsten", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
         
         let rec3 = Recipe.create(name: "Mangold Pfanne", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
-        rec3?.addIngredient(name: "Mangold", quantity: 1, unit: nil)
+        rec3?.addIngredient(name: "Mangold", quantity: 1)
         rec3?.addIngredient(name: "Tomaten", quantity: 500, unit: "g")
         rec3?.addIngredient(name: "Sahne", quantity: 250, unit: "ml")
         rec3?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
         rec3?.addToCategories_(cat2)
         rec3?.addToCategories_(cat3)
         rec3?.addToSeasonals_(s1)
-        rec3?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
-        rec3?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        rec3?.addPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Tipp: Lorem Ipsum")
+        rec3?.addPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
         
         let rec4 = Recipe.create(name: "Mangold Salat", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
-        rec4?.addIngredient(name: "Mangold", quantity: 1, unit: nil)
+        rec4?.addIngredient(name: "Mangold", quantity: 1)
         rec4?.addIngredient(name: "Radieschen", quantity: 100, unit: "g")
         rec4?.addIngredient(name: "Joghurt Dressing", quantity: 50, unit: "ml")
         rec4?.addNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
@@ -94,9 +94,19 @@ struct PersistenceController {
         rec4?.addToCategories_(cat3)
         rec4?.addToSeasonals_(s1)
         rec4?.addToSeasonals_(s2)
-        rec4?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
-        rec4?.addPreparation(title: nil, text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: nil)
+        rec4?.addPreparation(title: "Lorem Ipsum", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Vorsicht: Lorem Ipsum")
+        rec4?.addPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Servier Tipp: Lorem Ipsum")
         
+        let c1 = Collection(context: context)
+        c1.name = "April Favoriten"
+        c1.addToRecipes_(rec1!)
+        c1.addToRecipes_(rec2!)
+        c1.addToRecipes_(rec3!)
+        c1.user = u1
+        
+        u1?.addToFavorites_(rec1!)
+        u1?.addToFavorites_(rec2!)
+        u1?.addToFavorites_(rec3!)
     }
 
     let container: NSPersistentCloudKitContainer

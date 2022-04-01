@@ -49,7 +49,7 @@ extension Recipe {
         return request
     }
     
-    static func create(name: String, intro: String?, in context: NSManagedObjectContext) -> Recipe? {
+    static func create(name: String, intro: String? = nil, in context: NSManagedObjectContext) -> Recipe? {
         let predicate = NSPredicate(format: "name_ = %@", name)
         let recipes = (try? context.fetch(Recipe.fetchRequest(predicate))) ?? []
         if recipes.first != nil {
@@ -66,7 +66,7 @@ extension Recipe {
         return newRecipe
     }
     
-    func addPreparation(title: String?, text: String, info: String?) {
+    func addPreparation(title: String? = nil, text: String, info: String? = nil) {
         let preparation = Preparation.create(title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
         if preparation != nil {
             self.preparations.insert(preparation!)
@@ -77,7 +77,7 @@ extension Recipe {
         self.nutrition = Nutrition.create(calories: calories, protein: protein, fat: fat, carbs: carbs, recipe: self, in: self.managedObjectContext!)
     }
     
-    func addIngredient(name: String, quantity: Float, unit: String?) {
+    func addIngredient(name: String, quantity: Float, unit: String? = nil) {
         let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
         if ingredient != nil {
             self.ingredients.insert(ingredient!)

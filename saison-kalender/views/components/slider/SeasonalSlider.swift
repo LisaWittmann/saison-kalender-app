@@ -21,11 +21,11 @@ struct SeasonalSlider: View {
     var body: some View {
         Slider {
             ForEach(Array(seasonals)) { seasonal in
-                SeasonalCard(seasonal)
+                SeasonalTeaser(seasonal)
                     .environmentObject(user)
             }
             if route != nil {
-                TeaserCard(to: route!)
+                LinkTeaser(to: route!)
                     .environmentObject(viewRouter)
             }
         }

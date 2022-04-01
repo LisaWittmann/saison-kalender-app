@@ -16,14 +16,23 @@ struct RecipeMasonry: View {
     }
     
     var body: some View {
-        Grid {
+        LazyVGrid(
+            columns: gridLayout,
+            alignment: .center,
+            spacing: spacingSmall
+        ) {
             ForEach(Array(recipes)) { recipe in
-                RecipeCard(recipe, rect: isRectangle(recipe))
+                RecipeTeaser(recipe, rect: isRectangle(recipe))
                     .environmentObject(user)
                     .padding(.top, getPadding(recipe))
             }
         }
     }
+    
+    let gridLayout = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
     
     func isRectangle(_ recipe: Recipe) -> Bool {
         let index = recipes.firstIndex(of: recipe)!
@@ -46,5 +55,6 @@ struct RecipeMasonry_Previews: PreviewProvider {
         RecipeMasonry(Recipe.current(from: context))
             .environmentObject(LoggedInUser())
             .frame(width: contentWidth)
+
     }
 }

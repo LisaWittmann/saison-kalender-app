@@ -11,21 +11,23 @@ struct AccountView: View {
     @EnvironmentObject var user: LoggedInUser
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Headline("\(user.name ?? "")", "Dein Bereich")
-                
-                if !user.favorites.isEmpty {
-                    RecipeMasonry(Array(user.favorites))
+        
+        Page {
+            Headline("\(user.name ?? "")", "Dein Bereich")
+            if !user.favorites.isEmpty {
+                RecipeMasonry(Array(user.favorites))
                     .environmentObject(user)
-                    .frame(
-                        width: contentWidth,
-                        height: screenHeight,
-                        alignment: .topLeading
-                    )
-                }
             }
         }
-        .modifier(PageLayout())
+    }
+}
+
+struct AccountView_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        let users: [User] = try! context.fetch(User.fetchRequest())
+            
+        AccountView()
+            .environmentObject(LoggedInUser(users.first))
     }
 }

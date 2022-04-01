@@ -34,3 +34,22 @@ struct PreparationDetail: View {
         }
     }
 }
+
+struct PreparationDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        let preparations: [Preparation] = try! context.fetch(Preparation.fetchRequest())
+        
+        ScrollView {
+            VStack(spacing: spacingSmall) {
+                ForEach(Array(preparations)) { preparation in
+                    PreparationDetail(preparation)
+                        .padding(.leading, spacingLarge)
+                        .padding(.trailing, spacingLarge)
+                }
+            }
+        }
+        
+    }
+}
+

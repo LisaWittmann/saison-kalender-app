@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct Detail<Content: View>: View {
-    var image: String
+struct Card<Content: View>: View {
+    var images: [String]
     var headline: String
     var subline: String
     var close: () -> ()
@@ -18,7 +18,7 @@ struct Detail<Content: View>: View {
     var content: () -> Content
     
     init(
-        image: String,
+        images: [String],
         headline: String = "",
         subline: String = "",
         close: @escaping () -> (),
@@ -26,7 +26,7 @@ struct Detail<Content: View>: View {
         onIconTap: @escaping () -> () = {},
         @ViewBuilder content: @escaping () -> Content
     ) {
-        self.image = image
+        self.images = images
         self.headline = headline
         self.subline = subline
         self.close = close
@@ -40,7 +40,7 @@ struct Detail<Content: View>: View {
             ZStack {
                 VStack {
                     DetailHeader(
-                        image: image,
+                        images: images,
                         close: close,
                         headline: headline,
                         subline: subline,
@@ -49,7 +49,6 @@ struct Detail<Content: View>: View {
                     )
                     Spacer()
                 }
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 .background(colorGreen)
             
                 ZStack {
@@ -68,13 +67,11 @@ struct Detail<Content: View>: View {
                 .background(colorBeige)
                 .cornerRadius(contentCornerRadius, corners: [.topLeft, .topRight])
                 .padding(.top, headerHeight)
-                
             }
             .frame(
                 minHeight: screenHeight,
                 alignment: .topLeading
             )
-            .edgesIgnoringSafeArea(.all)
         }
         .modifier(PageLayout())
     }
@@ -84,7 +81,7 @@ struct Detail<Content: View>: View {
 }
 
 struct DetailHeader: View {
-    var image: String
+    var images: [String]
     var close: () -> ()
     var headline: String = ""
     var subline: String = ""
@@ -93,15 +90,7 @@ struct DetailHeader: View {
     
     var body: some View {
         ZStack {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .opacity(imageOpacity)
-                .frame(
-                    width: screenWidth,
-                    height: imageHeight,
-                    alignment: .center
-                )
+            ImageGroup(images, height: imageHeight)
             
                 VStack {
                     HStack {
@@ -159,8 +148,8 @@ struct DetailHeader: View {
 
 struct Detail_Previews: PreviewProvider {
     static var previews: some View {
-        Detail(
-            image: "Mangold",
+        Card(
+            images: ["Mangold"],
             headline: "Mangold",
             subline: "Saisonal im März",
             close: {},

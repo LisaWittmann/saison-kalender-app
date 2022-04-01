@@ -36,32 +36,27 @@ struct HomeView: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Headline(greeting,"Saisonal im \(Season.current.name)")
-                
-                VStack(spacing: spacingLarge) {
-                    if !seasonals.isEmpty {
-                        Section("Die neuen Stars der Saison") {
-                            SeasonalSlider(Array(seasonals), link: .season)
-                                .environmentObject(user)
-                                .environmentObject(viewRouter)
-                        }
-                    }
-                    
-                    if !recipes.isEmpty {
-                        Section("Entdecke die neusten Rezepte") {
-                            RecipeSlider(Array(recipes), link: .recipes)
-                                .environmentObject(user)
-                                .environmentObject(viewRouter)
-                        }
+        Page {
+            Headline(greeting,"Saisonal im \(Season.current.name)")
+            
+            VStack(spacing: spacingLarge) {
+                if !seasonals.isEmpty {
+                    Section("Die neuen Stars der Saison") {
+                        SeasonalSlider(Array(seasonals), link: .season)
+                            .environmentObject(user)
+                            .environmentObject(viewRouter)
                     }
                 }
-                .padding(.leading, spacingLarge)
-                .padding(.trailing, spacingLarge)
+                
+                if !recipes.isEmpty {
+                    Section("Entdecke die neusten Rezepte") {
+                        RecipeSlider(Array(recipes), link: .recipes)
+                            .environmentObject(user)
+                            .environmentObject(viewRouter)
+                    }
+                }
             }
         }
-        .modifier(PageLayout())
     }
 }
 

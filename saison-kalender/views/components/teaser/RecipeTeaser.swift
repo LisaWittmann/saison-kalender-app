@@ -1,5 +1,5 @@
 //
-//  SeasonalCard.swift
+//  RecipeTeaser.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 31.03.22.
@@ -7,30 +7,33 @@
 
 import SwiftUI
 
-struct SeasonalCard: View {
+struct RecipeTeaser: View {
     @EnvironmentObject var user: LoggedInUser
-    @ObservedObject var seasonal: Seasonal
+    @ObservedObject var recipe: Recipe
     @State private var showDetail = false
+    var rect: Bool
     
-    init(_ seasonal: Seasonal) {
-        self.seasonal = seasonal
+    init(_ recipe: Recipe, rect: Bool = false) {
+        self.recipe = recipe
+        self.rect = rect
     }
     
     var body: some View {
-        ContentCard(seasonal, onTap: { showDetail.toggle() })
+        ContentTeaser(recipe, rect: rect)
+            .onTapGesture { showDetail.toggle() }
             .fullScreenCover(isPresented: $showDetail, content: {
-                SeasonalDetail(seasonal, close: {
+                RecipeDetail(recipe, close: {
                     showDetail.toggle()
                 }).environmentObject(user)
             })
     }
 }
 
-struct SeasonalCard_Previews: PreviewProvider {
+struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
         let context = PersistenceController.preview.container.viewContext
         
-        SeasonalCard(Seasonal.current(from: context).first!)
+        RecipeTeaser(Recipe.current(from: context).first!)
             .environmentObject(LoggedInUser())
     }
 }

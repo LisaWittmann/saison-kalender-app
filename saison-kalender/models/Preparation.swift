@@ -18,6 +18,13 @@ extension Preparation {
 
 extension Preparation {
     
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Preparation> {
+        let request = NSFetchRequest<Preparation>(entityName: "Preparation")
+        request.sortDescriptors = [NSSortDescriptor(key: "recipe_", ascending: true)]
+        request.predicate = predicate
+        return request
+    }
+    
     static func create(title: String?, text: String, info: String?, recipe: Recipe?, in context: NSManagedObjectContext) -> Preparation? {
         let preparation = Preparation(context: context)
         preparation.id = UUID()

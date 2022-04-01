@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Menu: View {
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         ZStack {
@@ -73,6 +73,6 @@ struct Menu: View {
 
 struct Menu_Previews: PreviewProvider {
     static var previews: some View {
-        Menu(viewRouter: ViewRouter() )
+        Menu().environmentObject(ViewRouter())
     }
 }

@@ -21,11 +21,11 @@ struct RecipeSlider: View {
     var body: some View {
         Slider {
             ForEach(Array(recipes)) { recipe in
-                RecipeCard(recipe)
+                RecipeTeaser(recipe)
                     .environmentObject(user)
             }
             if route != nil {
-                TeaserCard(to: route!)
+                LinkTeaser(to: route!)
                     .environmentObject(viewRouter)
             }
         }

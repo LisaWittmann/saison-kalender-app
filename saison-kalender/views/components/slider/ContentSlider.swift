@@ -11,21 +11,19 @@ struct ContentSlider<Content: Representable>: View {
     @EnvironmentObject var viewRouter: ViewRouter
     var items: [Content]
     var route: Route?
-    var onTap: (Content) -> () = {_ in }
-    
-    init(_ items: [Content], link route: Route? = nil, onTap: @escaping (Content) -> () = {_ in}) {
+
+    init(_ items: [Content], link route: Route? = nil) {
         self.items = items
         self.route = route
-        self.onTap = onTap
     }
 
     var body: some View {
         Slider {
             ForEach(Array(items)) { item in
-                ContentCard<Content>(item, onTap: { onTap(item) })
+                ContentTeaser<Content>(item)
             }
             if route != nil {
-                TeaserCard(to: route!)
+                LinkTeaser(to: route!)
                     .environmentObject(viewRouter)
             }
         }

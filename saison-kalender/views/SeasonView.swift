@@ -37,6 +37,7 @@ struct SeasonItem: View {
     var body: some View {
         VStack {
             Headline(seasonal.name,"Saisonal im \(Season.current.name)")
+                .modifier(SectionLayout())
             
             ZStack {
                 Circle()

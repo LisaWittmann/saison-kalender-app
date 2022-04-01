@@ -13,6 +13,16 @@ extension Ingredient {
         get { name_! }
         set { name_ = newValue }
     }
+}
+
+extension Ingredient {
+    
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Ingredient> {
+        let request = NSFetchRequest<Ingredient>(entityName: "Ingredient")
+        request.sortDescriptors = [NSSortDescriptor(key: "recipe_", ascending: true)]
+        request.predicate = predicate
+        return request
+    }
     
     static func create(name: String, quanity: Float, unit: String?, recipe: Recipe?, in context: NSManagedObjectContext) -> Ingredient? {
         let ingredient = Ingredient(context: context)

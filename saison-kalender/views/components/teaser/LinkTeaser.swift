@@ -1,5 +1,5 @@
 //
-//  TeaserCard.swift
+//  LinkTeaser.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 31.03.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TeaserCard: View {
+struct LinkTeaser: View {
     @EnvironmentObject var viewRouter: ViewRouter
     var route: Route
     
@@ -39,9 +39,9 @@ struct TeaserCard: View {
     }
 }
 
-struct TeaserCard_Previews: PreviewProvider {
+struct LinkTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        TeaserCard(to: .home)
+        LinkTeaser(to: .home)
             .environmentObject(ViewRouter())
     }
 }

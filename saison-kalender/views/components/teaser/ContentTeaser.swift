@@ -1,5 +1,5 @@
 //
-//  ContentCell.swift
+//  ContentTeaser.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 24.03.22.
@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-struct ContentCard<Content: Representable>: View {
+struct ContentTeaser<Content: Representable>: View {
     @ObservedObject var item: Content
-    var onTap: () -> ()
     var rect: Bool
     
-    init(_ item: Content, onTap: @escaping () -> () = {}, rect: Bool = false) {
+    init(_ item: Content, rect: Bool = false) {
         self.item = item
-        self.onTap = onTap
         self.rect = rect
     }
     
@@ -46,7 +44,7 @@ struct ContentCard<Content: Representable>: View {
                     height: contentHeight,
                     alignment: .bottomLeading
                 )
-        }.onTapGesture { onTap() }
+        }
     }
     
     let imageOpacity: Double = 0.2
@@ -56,13 +54,13 @@ struct ContentCard<Content: Representable>: View {
 }
 
 
-struct ContentCell_Previews: PreviewProvider {
+struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
         let context = PersistenceController.preview.container.viewContext
         
         HStack {
-            ContentCard<Recipe>(Recipe.current(from: context).first!)
-            ContentCard<Recipe>(Recipe.current(from: context).last!, rect: true)
+            ContentTeaser<Recipe>(Recipe.current(from: context).first!)
+            ContentTeaser<Recipe>(Recipe.current(from: context).last!, rect: true)
         }.frame(alignment: .bottom)
     }
 }

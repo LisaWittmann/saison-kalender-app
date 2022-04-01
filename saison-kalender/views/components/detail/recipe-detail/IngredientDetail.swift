@@ -33,3 +33,21 @@ struct IngredientDetail: View {
     let imageWidth: CGFloat = 40
     let imageHeight: CGFloat = 30
 }
+
+struct IngredientDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        let ingredients: [Ingredient] = try! context.fetch(Ingredient.fetchRequest())
+        
+        ScrollView {
+            VStack {
+                ForEach(Array(ingredients)) { ingredient in
+                    IngredientDetail(ingredient)
+                        .padding(.leading, spacingLarge)
+                        .padding(.trailing, spacingLarge)
+                }
+            }
+            
+        }
+    }
+}

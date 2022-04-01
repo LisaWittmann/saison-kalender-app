@@ -9,6 +9,13 @@ import CoreData
 
 extension Nutrition {
     
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Nutrition> {
+        let request = NSFetchRequest<Nutrition>(entityName: "Nutrition")
+        request.sortDescriptors = [NSSortDescriptor(key: "recipe_", ascending: true)]
+        request.predicate = predicate
+        return request
+    }
+    
     static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe?, in context: NSManagedObjectContext) -> Nutrition? {
         let nutrition = Nutrition(context: context)
         nutrition.id = UUID()

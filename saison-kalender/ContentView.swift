@@ -40,7 +40,8 @@ struct ContentView: View {
                 }
             }
 
-            Menu(viewRouter: viewRouter)
+            Menu()
+                .environmentObject(viewRouter)
                 .padding(.bottom, spacingLarge)
                 .frame(
                     height: screenHeight,

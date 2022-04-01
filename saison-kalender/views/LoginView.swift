@@ -34,40 +34,36 @@ struct LoginForm: View {
     @State private var password = ""
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Headline("Anmelden", "Dein Bereich")
-                
-                VStack(spacing: spacingMedium) {
-                    InputField(
-                        input: $name,
-                        placeholder: "Nutzername",
-                        icon: "person.fill",
-                        secure: false
+        Page {
+            Headline("Anmelden", "Dein Bereich")
+            
+            VStack(spacing: spacingMedium) {
+                InputField(
+                    input: $name,
+                    placeholder: "Nutzername",
+                    icon: "person.fill",
+                    secure: false
+                )
+                InputField(
+                    input: $password,
+                    placeholder: "Passwort",
+                    icon: "lock.fill",
+                    secure: true
+                )
+                Button("Anmelden", action: login)
+                    .frame(width: contentWidth)
+                    .modifier(ButtonStyle())
+                Button(
+                    "Noch kein Konto?",
+                    action: { mode.toggle() }
+                )
+                    .frame(
+                        width: contentWidth,
+                        alignment: .trailing
                     )
-                    InputField(
-                        input: $password,
-                        placeholder: "Passwort",
-                        icon: "lock.fill",
-                        secure: true
-                    )
-                    Button("Anmelden", action: login)
-                        .frame(width: contentWidth)
-                        .modifier(ButtonStyle())
-                    Button(
-                        "Noch kein Konto?",
-                        action: { mode.toggle() }
-                    )
-                        .frame(
-                            width: contentWidth,
-                            alignment: .trailing
-                        )
-                        .modifier(TextButtonStyle())
-                }
-                .padding(spacingLarge)
+                    .modifier(TextButtonStyle())
             }
         }
-        .modifier(PageLayout())
     }
     
     func login() {
@@ -85,52 +81,48 @@ struct RegisterForm: View {
     @State private var registerPasswordRepeat = ""
     
     var body: some View {
-        ScrollView {
-            VStack {
-                Headline("Registrieren", "Dein Bereich")
-                
-                VStack(spacing: spacingMedium) {
-                    InputField(
-                        input: $registerEmail,
-                        placeholder: "E-Mail",
-                        icon: "envelope.fill",
-                        secure: false
+        Page {
+            Headline("Registrieren", "Dein Bereich")
+            
+            VStack(spacing: spacingMedium) {
+                InputField(
+                    input: $registerEmail,
+                    placeholder: "E-Mail",
+                    icon: "envelope.fill",
+                    secure: false
+                )
+                InputField(
+                    input: $registerName,
+                    placeholder: "Nutzername",
+                    icon: "person.fill",
+                    secure: false
+                )
+                InputField(
+                    input: $registerPassword,
+                    placeholder: "Passwort",
+                    icon: "lock.fill",
+                    secure: true
+                )
+                InputField(
+                    input: $registerPasswordRepeat,
+                    placeholder: "Passwort wiederholen",
+                    icon: "lock.fill",
+                    secure: true
+                )
+                Button("Registrieren", action: register)
+                    .frame(width: contentWidth)
+                    .modifier(ButtonStyle())
+                Button(
+                    "Du hast bereits ein Konto?",
+                    action: { mode.toggle() }
+                )
+                    .frame(
+                        width: contentWidth,
+                        alignment: .trailing
                     )
-                    InputField(
-                        input: $registerName,
-                        placeholder: "Nutzername",
-                        icon: "person.fill",
-                        secure: false
-                    )
-                    InputField(
-                        input: $registerPassword,
-                        placeholder: "Passwort",
-                        icon: "lock.fill",
-                        secure: true
-                    )
-                    InputField(
-                        input: $registerPasswordRepeat,
-                        placeholder: "Passwort wiederholen",
-                        icon: "lock.fill",
-                        secure: true
-                    )
-                    Button("Registrieren", action: register)
-                        .frame(width: contentWidth)
-                        .modifier(ButtonStyle())
-                    Button(
-                        "Du hast bereits ein Konto?",
-                        action: { mode.toggle() }
-                    )
-                        .frame(
-                            width: contentWidth,
-                            alignment: .trailing
-                        )
-                        .modifier(TextButtonStyle())
-                }
-                .padding(spacingLarge)
+                    .modifier(TextButtonStyle())
             }
         }
-        .modifier(PageLayout())
     }
 
     func register() {

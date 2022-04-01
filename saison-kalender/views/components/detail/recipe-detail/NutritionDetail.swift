@@ -90,3 +90,16 @@ struct NutritionItem: View {
     let textWidth = quarterContentWidth - 10
     let textHeight: CGFloat = 40
 }
+
+
+struct NutritionDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let context = PersistenceController.preview.container.viewContext
+        let nutritions: [Nutrition] = try! context.fetch(Nutrition.fetchRequest())
+        
+        VStack {
+            NutritionDetail(nutritions.first!)
+                .modifier(SectionLayout())
+        }.modifier(PageLayout())
+    }
+}

@@ -28,7 +28,6 @@ struct Headline: View {
                 .foregroundColor(color)
                 .padding(.top, -spacingExtraSmall)
         }
-        .modifier(SectionLayout())
     }
 }
 

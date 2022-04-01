@@ -19,8 +19,8 @@ struct RecipeDetail: View {
     }
     
     var body: some View {
-        Detail(
-            image: recipe.name,
+        Card(
+            images: [recipe.name],
             headline: recipe.name,
             close: close,
             icon: icon,

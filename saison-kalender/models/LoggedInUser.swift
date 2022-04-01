@@ -10,6 +10,10 @@ import Foundation
 class LoggedInUser: ObservableObject {
     @Published var user: User?
     
+    init(_ user: User? = nil) {
+        self.user = user
+    }
+    
     var name: String? {
         user?.name
     }

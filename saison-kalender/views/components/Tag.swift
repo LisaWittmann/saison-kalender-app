@@ -51,11 +51,11 @@ struct TagSlider<Content: Representable>: View {
         }
     }
     
-    func isSelected(_ item: Content) -> Bool {
+    private func isSelected(_ item: Content) -> Bool {
         return selectedItem?.name == item.name
     }
     
-    func select(item: Content?) {
+    private func select(item: Content?) {
         if selectedItem?.name != item?.name {
             selectedItem = item
             onSelect(item)
@@ -87,13 +87,13 @@ struct Tag_Previews: PreviewProvider {
         let context = PersistenceController.preview.container.viewContext
         let categories = RecipeCategory.all(from: context)
         
-        VStack(alignment: .leading, spacing: spacingSmall) {
+        VStack(spacing: spacingSmall) {
             Section("Tag List") {
                 TagList(categories)
             }
             Section("Tag Slider") {
                 TagSlider(categories)
             }
-        }.modifier(SectionLayout())
+        }.padding()
     }
 }

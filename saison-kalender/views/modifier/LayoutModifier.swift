@@ -36,7 +36,7 @@ struct SectionLayout: ViewModifier {
                 EdgeInsets(
                     top: spacingExtraLarge,
                     leading: spacingLarge,
-                    bottom: spacingLarge,
+                    bottom: spacingExtraLarge,
                     trailing: spacingLarge
                 )
             )

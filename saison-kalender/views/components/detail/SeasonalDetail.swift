@@ -18,8 +18,8 @@ struct SeasonalDetail: View {
     }
     
     var body: some View {
-        Detail(
-            image: seasonal.name,
+        Card(
+            images: [seasonal.name],
             headline: seasonal.name,
             subline: "Saisonal im \(Season.current.name)",
             close: close
