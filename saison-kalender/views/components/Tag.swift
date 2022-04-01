@@ -85,7 +85,7 @@ struct TagList<Content: Representable>: View {
 struct Tag_Previews: PreviewProvider {
     static var previews: some View {
         let context = PersistenceController.preview.container.viewContext
-        let categories = Category.all(from: context)
+        let categories = RecipeCategory.all(from: context)
         
         VStack(alignment: .leading, spacing: spacingSmall) {
             Section("Tag List") {

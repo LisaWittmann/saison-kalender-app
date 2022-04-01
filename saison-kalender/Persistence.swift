@@ -42,16 +42,16 @@ struct PersistenceController {
         s3.name = "Erdbeeren"
         s3.seasons = [.März, .April]
         
-        let cat1 = Category(context: context)
+        let cat1 = RecipeCategory(context: context)
         cat1.name = "Frühstück"
         
-        let cat2 = Category(context: context)
+        let cat2 = RecipeCategory(context: context)
         cat2.name = "Mittagsessen"
         
-        let cat3 = Category(context: context)
+        let cat3 = RecipeCategory(context: context)
         cat3.name = "Abendessen"
         
-        let cat4 = Category(context: context)
+        let cat4 = RecipeCategory(context: context)
         cat4.name = "Backen"
         
         let rec1 = Recipe.create(name: "Erdbeer Tarteletts", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)

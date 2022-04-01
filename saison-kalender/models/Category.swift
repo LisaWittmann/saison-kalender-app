@@ -7,7 +7,7 @@
 
 import CoreData
 
-extension Category {
+extension RecipeCategory {
     
     var recipes: Set<Recipe> {
         get { (recipes_ as? Set<Recipe>) ?? [] }
@@ -15,7 +15,7 @@ extension Category {
     }
 }
 
-extension Category: Representable {
+extension RecipeCategory: Representable {
     
     var name: String {
         get { name_! }
@@ -25,17 +25,16 @@ extension Category: Representable {
     public var id: String { name }
 }
 
-extension Category {
+extension RecipeCategory {
     
-    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Category> {
-        let request = NSFetchRequest<Category>(entityName: "Category")
+    static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<RecipeCategory> {
+        let request = NSFetchRequest<RecipeCategory>(entityName: "RecipeCategory")
         request.sortDescriptors = [NSSortDescriptor(key: "name_", ascending: true)]
         request.predicate = predicate
         return request
     }
     
-    static func all(from context: NSManagedObjectContext) -> [Category] {
-        let categories: [Category] = (try? context.fetch(Category.fetchRequest())) ?? []
-        return categories
+    static func all(from context: NSManagedObjectContext) -> [RecipeCategory] {
+        return (try? context.fetch(RecipeCategory.fetchRequest())) ?? []
     }
 }

@@ -24,8 +24,8 @@ extension Recipe {
         set { preparations_ = newValue as NSSet }
     }
     
-    var categories: Set<Category> {
-        get { (categories_ as? Set<Category>) ?? [] }
+    var categories: Set<RecipeCategory> {
+        get { (categories_ as? Set<RecipeCategory>) ?? [] }
         set { categories_ = newValue as NSSet }
     }
 }
@@ -93,6 +93,10 @@ extension Recipe {
             seasons_ = seasons_.union(seasonal.seasons)
         }
         return seasons_
+    }
+    
+    func isSeasonal() -> Bool {
+        return seasons.contains(Season.current)
     }
     
     func seasonalsFor(season: Season) -> [Seasonal] {
