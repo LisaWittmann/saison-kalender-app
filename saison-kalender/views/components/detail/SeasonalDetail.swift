@@ -24,17 +24,14 @@ struct SeasonalDetail: View {
             subline: "Saisonal im \(Season.current.name)",
             close: close
         ) {
-            Text("Steckbrief")
-                .modifier(FontH1())
             
-            Section("Wissenswertes") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontText())
-            }
-            Section("Anbau") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing. Aenean commodo ligula eget dolor.").modifier(FontText())
-            }
-            Section("Ernte") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing.").modifier(FontText())
+            if !seasonal.characteristics.isEmpty {
+                Text("Steckbrief").modifier(FontH1())
+                ForEach(Array(seasonal.characteristics)) { characteristic in
+                    Section(characteristic.name) {
+                        Text(characteristic.value).modifier(FontText())
+                    }
+                }
             }
             
             if !seasonal.recipes.isEmpty {

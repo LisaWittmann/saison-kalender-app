@@ -33,14 +33,22 @@ struct PersistenceController {
         let s1 = Seasonal(context: context)
         s1.name = "Mangold"
         s1.seasons = [.März, .April]
+        let c1 = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
+        let c2 = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
+        let c3 = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
         
         let s2 = Seasonal(context: context)
         s2.name = "Radieschen"
         s2.seasons = [.März, .April]
+        let c4 = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s2, in: context)
+        let c5 = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s2, in: context)
         
         let s3 = Seasonal(context: context)
         s3.name = "Erdbeeren"
         s3.seasons = [.März, .April]
+        let c6 = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
+        let c7 = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
+        let c8 = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
         
         let cat1 = RecipeCategory(context: context)
         cat1.name = "Frühstück"
@@ -97,13 +105,13 @@ struct PersistenceController {
         rec4?.addPreparation(title: "Lorem Ipsum", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Vorsicht: Lorem Ipsum")
         rec4?.addPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Servier Tipp: Lorem Ipsum")
         
-        let c1 = Collection(context: context)
-        c1.name = "April Favoriten"
-        c1.id = UUID()
-        c1.addToRecipes_(rec1!)
-        c1.addToRecipes_(rec2!)
-        c1.addToRecipes_(rec3!)
-        c1.user = u1
+        let col1 = Collection(context: context)
+        col1.name = "April Favoriten"
+        col1.id = UUID()
+        col1.addToRecipes_(rec1!)
+        col1.addToRecipes_(rec2!)
+        col1.addToRecipes_(rec3!)
+        col1.user = u1
         
         u1?.addToFavorites_(rec1!)
         u1?.addToFavorites_(rec2!)

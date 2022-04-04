@@ -19,6 +19,11 @@ extension Seasonal {
         get { (recipes_ as? Set<Recipe>) ?? [] }
         set { recipes_ = newValue as NSSet }
     }
+    
+    var characteristics: Set<Characteristic> {
+        get { (characteristics_ as? Set<Characteristic>) ?? [] }
+        set { characteristics_ = newValue as NSSet }
+    }
 }
 
 extension Seasonal: Representable {
