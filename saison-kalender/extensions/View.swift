@@ -1,8 +1,8 @@
 //
-//  ViewDecorator.swift
+//  View.swift
 //  saison-kalender
 //
-//  Created by Lisa Wittmann on 24.03.22.
+//  Created by Lisa Wittmann on 04.04.22.
 //
 
 import SwiftUI

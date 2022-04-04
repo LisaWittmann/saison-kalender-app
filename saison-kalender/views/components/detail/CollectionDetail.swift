@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CollectionDetail: View {
-    @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
+    @StateObject var manager = CollectionManager()
     @ObservedObject var collection: Collection
     var close: () -> ()
     
@@ -26,7 +28,6 @@ struct CollectionDetail: View {
        ) {
             if !collection.recipes.isEmpty {
                 RecipeMasonry(Array(collection.recipes))
-                    .environmentObject(user)
             }
         }
     }
@@ -38,9 +39,7 @@ struct CollectionDetail_Previews: PreviewProvider {
         let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
         CollectionDetail(collections.first!, close: {})
-            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
-            .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }
 }

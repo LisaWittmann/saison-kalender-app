@@ -14,10 +14,10 @@ class SeasonCalendar: ObservableObject {
     static let preview = SeasonCalendar(controller: PersistenceController.preview)
     
     private let persistenceController: PersistenceController
+    
     @Published private(set) var season: Season
     @Published private(set) var recipes: [Recipe]
     @Published private(set) var seasonals: [Seasonal]
-    @Published private(set) var categories: [RecipeCategory]
     
     var context: NSManagedObjectContext {
         persistenceController.container.viewContext
@@ -25,10 +25,17 @@ class SeasonCalendar: ObservableObject {
     
     private init(controller: PersistenceController) {
         persistenceController = controller
+        
         season = SeasonCalendar.getSeason()
-        recipes = SeasonCalendar.getRecipes(for: SeasonCalendar.getSeason(), from: controller.container.viewContext)
-        seasonals = SeasonCalendar.getSeasonals(for: SeasonCalendar.getSeason(), from: controller.container.viewContext)
-        categories = (try? controller.container.viewContext.fetch(RecipeCategory.fetchRequest())) ?? []
+        
+        recipes = SeasonCalendar.getRecipes(
+            for: SeasonCalendar.getSeason(),
+            from: controller.container.viewContext
+        )
+        seasonals = SeasonCalendar.getSeasonals(
+            for: SeasonCalendar.getSeason(),
+            from: controller.container.viewContext
+        )
     }
     
     private static func getSeason() -> Season {
@@ -39,7 +46,7 @@ class SeasonCalendar: ObservableObject {
     
     private static func getRecipes(for season: Season, from context: NSManagedObjectContext) -> [Recipe] {
         let recipes: [Recipe] = (try? context.fetch(Recipe.fetchRequest())) ?? []
-        return recipes.filter({ $0.inSeason(season) })
+        return recipes.filter({ $0.seasons.contains(season) })
     }
     
     private static func getSeasonals(for season: Season, from context: NSManagedObjectContext) -> [Seasonal] {
@@ -52,14 +59,5 @@ class SeasonCalendar: ObservableObject {
             return recipes.filter({ $0.categories.contains(filter) })
         }
         return recipes
-    }
-}
-
-extension Array {
-    func teaser(_ count: Int) -> Array {
-        if self.count > count {
-            return Array(self[0...count-1])
-        }
-        return self
     }
 }

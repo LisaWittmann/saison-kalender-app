@@ -7,7 +7,7 @@
 
 import CoreData
 
-extension Ingredient {
+extension Ingredient: Representable {
     
     var name: String {
         get { name_! }
@@ -23,6 +23,9 @@ extension Ingredient {
         request.predicate = predicate
         return request
     }
+}
+
+extension Ingredient {
     
     static func create(name: String, quanity: Float, unit: String?, recipe: Recipe?, in context: NSManagedObjectContext) -> Ingredient? {
         let ingredient = Ingredient(context: context)

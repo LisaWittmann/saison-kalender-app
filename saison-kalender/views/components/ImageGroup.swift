@@ -75,7 +75,7 @@ struct ImageGroup: View {
         return .center
     }
     
-    let imageOpacity: Double = 0.2
+    let imageOpacity: Double = 0.5
 }
 
 

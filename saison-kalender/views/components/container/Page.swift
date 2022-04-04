@@ -17,7 +17,7 @@ struct Page<Content: View>: View {
     var body: some View {
         ScrollView {
             VStack(spacing: spacingLarge, content: content)
-                .modifier(SectionLayout())
+                .modifier(ContentLayout())
         }.modifier(PageLayout())
     }
 }

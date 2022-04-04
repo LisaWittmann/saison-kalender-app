@@ -22,6 +22,8 @@ extension User {
 
 extension User: Representable {
     
+    public var id: String { name }
+    
     var email: String {
         get { email_! }
         set { email_ = newValue }
@@ -36,8 +38,6 @@ extension User: Representable {
         get { password_! }
         set { password_ = newValue }
     }
-    
-    public var id: String { name }
 }
 
 extension User {
@@ -48,6 +48,9 @@ extension User {
         request.predicate = predicate
         return request
     }
+}
+ 
+extension User {
     
     static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
         let predicate = NSPredicate(format: "name_ = %@", name)
@@ -71,9 +74,5 @@ extension User {
         let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
         let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         return matchingUsers.first
-    }
-    
-    func save() {
-        try? managedObjectContext?.save()
     }
 }

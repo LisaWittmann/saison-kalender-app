@@ -40,21 +40,16 @@ struct SplitScreen<Content: View>: View {
                 VStack {
                     header
                     Spacer()
-                }
-                .background(colorGreen)
+                }.background(colorGreen)
             
-                ZStack {
+                Group {
                     VStack {
                         VStack(spacing: spacingLarge, content: content)
-                            .frame(width: .infinity)
-                            .modifier(SectionLayout())
+                            .modifier(ContentLayout())
                         Spacer()
                     }
                 }
-                .frame(
-                    width: screenWidth,
-                    alignment: .topLeading
-                )
+                .frame(width: screenWidth, alignment: .topLeading)
                 .background(colorBeige)
                 .cornerRadius(contentCornerRadius, corners: [.topLeft, .topRight])
                 .padding(.top, headerHeight)
@@ -66,52 +61,60 @@ struct SplitScreen<Content: View>: View {
     
     var header: some View {
         ZStack {
-            ImageGroup(images, height: imageHeight)
-                VStack {
-                    HStack {
-                        Image(systemName: "arrow.left")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: iconWidth)
-                            .foregroundColor(colorWhite)
-                            .onTapGesture { close() }
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Headline(headline, subline, color: colorWhite)
-                        .frame(
-                            height: imageHeight/2,
-                            alignment: .bottom
-                        )
-                        VStack {
-                            Image(systemName: icon)
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundColor(colorWhite)
-                                .onTapGesture { onIconTap() }
-                                .frame(width: iconWidth)
-                        }.frame(
-                            height: imageHeight/2,
-                            alignment: .bottom
-                        )
-                        .padding(.bottom, spacingExtraSmall)
-                    }
-                    Spacer()
-                }
-                .modifier(SectionLayout())
+            VStack {
+                ImageGroup(images, height: imageHeight)
+                Spacer()
             }
-            .frame(
-                width: screenWidth,
-                height: imageHeight,
-                alignment: .topLeading
-            )
+            VStack {
+                navigationBar()
+                headerContent()
+                Spacer()
+            }
+            .modifier(SectionLayout())
+        }
+        .frame(
+            width: screenWidth,
+            height: imageHeight,
+            alignment: .topLeading
+        )
     }
     
+    @ViewBuilder
+    private func navigationBar() -> some View {
+        HStack {
+            Image(systemName: "arrow.left")
+                .resizable()
+                .scaledToFit()
+                .frame(height: iconWidth)
+                .foregroundColor(colorWhite)
+                .onTapGesture { close() }
+            Spacer()
+        }
+    }
+    
+    @ViewBuilder
+    private func headerContent() -> some View {
+        HStack {
+            Headline(headline, subline, color: colorWhite)
+                .frame(height: textHeight, alignment: .bottom)
+            VStack {
+                Image(systemName: icon)
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundColor(colorWhite)
+                    .onTapGesture { onIconTap() }
+                    .frame(width: iconWidth)
+            }
+            .frame(height: textHeight, alignment: .bottom)
+            .padding(.bottom, spacingMedium)
+        }
+    }
+    
+    let textHeight: CGFloat = 180
     let headerHeight: CGFloat = 300
     let contentCornerRadius: CGFloat = 60
     let imageHeight: CGFloat = 400
-    let imageOpacity: Double = 0.2
+    let imageOpacity: Double = 0.5
     let iconWidth: CGFloat = 30
 }
 

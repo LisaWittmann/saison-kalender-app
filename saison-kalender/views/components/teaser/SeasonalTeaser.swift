@@ -9,21 +9,31 @@ import SwiftUI
 
 struct SeasonalTeaser: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
     @ObservedObject var seasonal: Seasonal
-    @State private var showDetail = false
+    @State var showDetail = false
     
     init(_ seasonal: Seasonal) {
         self.seasonal = seasonal
     }
     
     var body: some View {
-        ContentTeaser(seasonal)
-            .onTapGesture { showDetail.toggle() }
-            .fullScreenCover(isPresented: $showDetail) {
-                SeasonalDetail(seasonal, close: {
-                    showDetail.toggle()
-                })
-            }
+        NavigationLink(
+            destination: detail(for: seasonal),
+            isActive: $showDetail
+        ) {
+            ContentTeaser(seasonal.name)
+                .onTapGesture { showDetail.toggle() }
+        }.isDetailLink(false)
+    }
+    
+    @ViewBuilder
+    private func detail(for seasonal: Seasonal) -> some View {
+        SeasonalDetail(seasonal, close: { showDetail.toggle() })
+            .environmentObject(user)
+            .environmentObject(seasonCalendar)
+            .navigationBarHidden(true)
     }
 }
 
@@ -31,7 +41,10 @@ struct SeasonalTeaser_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        SeasonalTeaser(calendar.seasonals.randomElement()!)
-            .environmentObject(LoggedInUser())
+        NavigationView {
+            SeasonalTeaser(calendar.seasonals.randomElement()!)
+                .environmentObject(LoggedInUser())
+                .environmentObject(calendar)
+        }
     }
 }

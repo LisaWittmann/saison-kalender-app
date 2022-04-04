@@ -1,5 +1,5 @@
 //
-//  SaveRecipeContextMenu.swift
+//  RecipeContextMenu.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 25.03.22.
@@ -7,25 +7,24 @@
 
 import SwiftUI
 
-struct SaveRecipeContextMenu: View {
-    @Environment(\.managedObjectContext) var viewContext
+struct RecipeContextMenu: View {
     @EnvironmentObject var user: LoggedInUser
     @ObservedObject var manager: CollectionManager
-    @ObservedObject var recipe: Recipe
     @State var newCollectionName: String = ""
     
     var body: some View {
-        ContextMenu {
-            if manager.editing {
+        VStack {
+            switch(manager.mode) {
+            case .add:
                 ContextNavigation(
                     iconLeft: "chevron.left",
                     iconRight: saveIcon,
-                    functionLeft: { manager.editing.toggle() },
-                    functionRight: createCollection,
+                    functionLeft: { manager.mode = .save },
+                    functionRight: { manager.createCollection(newCollectionName, for: user) },
                     header: "Neue Collection"
                 )
                 VStack {
-                    Image(recipe.name)
+                    Image(manager.recipe!.name)
                         .resizable()
                         .scaledToFill()
                         .opacity(imageOpacity)
@@ -37,10 +36,10 @@ struct SaveRecipeContextMenu: View {
                         .font(.custom(fontMedium, size: fontSizeText))
                         .foregroundColor(colorBlack)
                 }.padding(spacingExtraSmall)
-            } else {
+            case .save:
                 ContextNavigation(
                     iconRight: "plus",
-                    functionRight: { manager.editing.toggle() },
+                    functionRight: { manager.mode = .add },
                     header: "Speichern in"
                 )
                 ScrollView(.horizontal) {
@@ -50,8 +49,24 @@ struct SaveRecipeContextMenu: View {
                         }
                     }.padding(spacingSmall)
                 }
+            case .delete:
+                ContextNavigation(
+                    iconRight: "xmark",
+                    functionRight: manager.close,
+                    header: "Rezept entfernen"
+                )
+                VStack {
+                    Text("Entfernen")
+                        .onTapGesture {
+                            user.remove(recipe: manager.recipe!)
+                            manager.close()
+                        }
+                }
+            case .none:
+                VStack {}
             }
         }
+        .padding(spacingSmall)
     }
     
     @ViewBuilder
@@ -71,20 +86,16 @@ struct SaveRecipeContextMenu: View {
                 .foregroundColor(colorBlack)
         }
         .frame(width: previewWidth)
-        .onTapGesture { manager.add(recipe, to: collection) }
+        .onTapGesture { manager.add(to: collection) }
     }
     
     private var saveIcon: String {
         newCollectionName != "" ? "arrow.right" : ""
     }
     
-    private func createCollection() {
-        manager.createCollection(newCollectionName, for: user, with: recipe)
-    }
-    
     let previewWidth: CGFloat = 100
     let previewHeight: CGFloat = 100
-    let imageOpacity = 0.2
+    let imageOpacity = 0.5
     let previewRadius: CGFloat = 20
 }
 
@@ -93,11 +104,7 @@ struct SaveRecipeContextMenu_Previews: PreviewProvider {
         let calendar = SeasonCalendar.preview
         let users: [User] = try! calendar.context.fetch(User.fetchRequest())
         
-        SaveRecipeContextMenu(
-            manager: CollectionManager(),
-            recipe: calendar.recipes.randomElement()!
-        )
-        .environment(\.managedObjectContext, calendar.context)
+        RecipeContextMenu(manager: CollectionManager(recipe: calendar.recipes.randomElement()))
             .environmentObject(LoggedInUser(users.first))
     }
 }

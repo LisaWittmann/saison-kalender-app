@@ -44,7 +44,7 @@ struct TagSlider<Content: Representable>: View {
 struct TagSlider_Previews: PreviewProvider {
     static var previews: some View {
         let context = PersistenceController.preview.container.viewContext
-        let categories = RecipeCategory.all(from: context)
+        let categories = try! context.fetch(RecipeCategory.fetchRequest())
         
         TagSlider(categories)
     }

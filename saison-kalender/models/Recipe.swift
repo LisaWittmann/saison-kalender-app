@@ -32,13 +32,29 @@ extension Recipe {
 
 extension Recipe: Representable {
     
+    public var id: String { name }
+    
     var name: String {
         get { name_! }
         set { name_ = newValue }
     }
-    
-    public var id: String { name }
 }
+
+extension Recipe {
+    
+    var seasons: Set<Season> {
+        var seasons_ = Set<Season>()
+        for seasonal in seasonals {
+            seasons_ = seasons_.union(seasonal.seasons)
+        }
+        return seasons_
+    }
+    
+    func seasonalsFor(_ season: Season) -> [Seasonal] {
+        return seasonals.filter({ $0.seasons.contains(season) })
+    }
+}
+
 
 extension Recipe {
     
@@ -48,6 +64,9 @@ extension Recipe {
         request.predicate = predicate
         return request
     }
+}
+    
+extension Recipe {
     
     static func create(name: String, intro: String? = nil, in context: NSManagedObjectContext) -> Recipe? {
         let predicate = NSPredicate(format: "name_ = %@", name)
@@ -66,40 +85,21 @@ extension Recipe {
         return newRecipe
     }
     
-    func addPreparation(title: String? = nil, text: String, info: String? = nil) {
+    func createPreparation(title: String? = nil, text: String, info: String? = nil) {
         let preparation = Preparation.create(title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
         if preparation != nil {
             self.preparations.insert(preparation!)
         }
     }
     
-    func addNutrition(calories: Float, protein: Float, fat: Float, carbs: Float) {
+    func createNutrition(calories: Float, protein: Float, fat: Float, carbs: Float) {
         self.nutrition = Nutrition.create(calories: calories, protein: protein, fat: fat, carbs: carbs, recipe: self, in: self.managedObjectContext!)
     }
     
-    func addIngredient(name: String, quantity: Float, unit: String? = nil) {
+    func createIngredient(name: String, quantity: Float, unit: String? = nil) {
         let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
         if ingredient != nil {
             self.ingredients.insert(ingredient!)
         }
-    }
-}
-
-extension Recipe {
-    
-    private var seasons: Set<Season> {
-        var seasons_ = Set<Season>()
-        for seasonal in seasonals {
-            seasons_ = seasons_.union(seasonal.seasons)
-        }
-        return seasons_
-    }
-    
-    func inSeason(_ season: Season) -> Bool {
-        return seasons.contains(season)
-    }
-    
-    func seasonalsFor(season: Season) -> [Seasonal] {
-        return seasonals.filter({ $0.seasons.contains(season) })
     }
 }

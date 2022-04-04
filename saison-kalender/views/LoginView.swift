@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
     @State private var loginMode = true
     
     var body: some View {
         if loginMode {
             LoginForm(mode: $loginMode)
-            .environment(\.managedObjectContext, viewContext)
         }
         else {
             RegisterForm(mode: $loginMode)
-                .environment(\.managedObjectContext, viewContext)
         }
     }
 }
@@ -35,7 +32,7 @@ struct LoginForm: View {
     var body: some View {
         Page {
             Headline("Anmelden", "Dein Bereich")
-            
+            Spacer()
             VStack(spacing: spacingMedium) {
                 InputField($name,
                     placeholder: "Nutzername",
@@ -77,7 +74,7 @@ struct RegisterForm: View {
     var body: some View {
         Page {
             Headline("Registrieren", "Dein Bereich")
-            
+            Spacer()
             VStack(spacing: spacingMedium) {
                 InputField($registerEmail,
                     placeholder: "E-Mail",
@@ -118,16 +115,8 @@ struct RegisterForm: View {
             in: viewContext
         )
         if user != nil {
-            clear()
             mode.toggle()
         }
-    }
-    
-    func clear() {
-        registerName = ""
-        registerEmail = ""
-        registerPassword = ""
-        registerPasswordRepeat = ""
     }
 }
 

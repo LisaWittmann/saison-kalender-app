@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecipeTeaser: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
     @ObservedObject var recipe: Recipe
     @State private var showDetail = false
     var rect: Bool
@@ -19,13 +21,21 @@ struct RecipeTeaser: View {
     }
     
     var body: some View {
-        ContentTeaser(recipe, rect: rect)
-            .onTapGesture { showDetail.toggle() }
-            .fullScreenCover(isPresented: $showDetail, content: {
-                RecipeDetail(recipe, close: {
-                    showDetail.toggle()
-                })
-            })
+        NavigationLink(
+            destination: detail(for: recipe),
+            isActive: $showDetail
+        ) {
+            ContentTeaser(recipe.name, rect: rect)
+                .onTapGesture { showDetail.toggle() }
+        }.isDetailLink(false)
+    }
+    
+    @ViewBuilder
+    private func detail(for recipe: Recipe) -> some View {
+        RecipeDetail(recipe, close: { showDetail.toggle() })
+            .environmentObject(user)
+            .environmentObject(seasonCalendar)
+            .navigationBarHidden(true)
     }
 }
 
@@ -33,7 +43,10 @@ struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        RecipeTeaser(calendar.recipes.first!)
-            .environmentObject(LoggedInUser())
+        NavigationView {
+            RecipeTeaser(calendar.recipes.first!)
+                .environmentObject(LoggedInUser())
+                .environmentObject(calendar)
+        }
     }
 }

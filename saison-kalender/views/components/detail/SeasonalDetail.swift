@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SeasonalDetail: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
     @ObservedObject var seasonal: Seasonal
     var close: () -> ()
     
@@ -21,25 +23,34 @@ struct SeasonalDetail: View {
         SplitScreen(
             images: [seasonal.name],
             headline: seasonal.name,
-            subline: "Saisonal im \(Season.current.name)",
+            subline: "Saisonal im \(seasonCalendar.season.name)",
             close: close
         ) {
             
             if !seasonal.characteristics.isEmpty {
-                Text("Steckbrief").modifier(FontH1())
-                ForEach(Array(seasonal.characteristics)) { characteristic in
-                    Section(characteristic.name) {
-                        Text(characteristic.value).modifier(FontText())
-                    }
-                }
+                body(for: Array(seasonal.characteristics))
             }
             
             if !seasonal.recipes.isEmpty {
-                Text("Rezepte").modifier(FontH1())
-                RecipeMasonry(Array(seasonal.recipes))
-                    .environmentObject(user)
+                body(for: Array(seasonal.recipes))
             }
         }
+    }
+    
+    @ViewBuilder
+    private func body(for characteristics: Array<Characteristic>) -> some View {
+        Text("Steckbrief").modifier(FontH1())
+        ForEach(characteristics) { characteristic in
+            Section(characteristic.name) {
+                Text(characteristic.value).modifier(FontText())
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func body(for recipes: Array<Recipe>) -> some View {
+        Text("Rezepte").modifier(FontH1())
+        RecipeMasonry(recipes)
     }
 }
 
@@ -48,9 +59,7 @@ struct SeasonalDetail_Previews: PreviewProvider {
         let calendar = SeasonCalendar.preview
         
         SeasonalDetail(calendar.seasonals.first!, close: {})
-            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
-            .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }
 }

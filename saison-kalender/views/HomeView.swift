@@ -9,7 +9,6 @@ import SwiftUI
 import CoreData
 
 struct HomeView: View {
-    @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var seasonCalendar: SeasonCalendar
@@ -22,33 +21,47 @@ struct HomeView: View {
     
     var body: some View {
         Page {
-            Headline(greeting,"Saisonal im \(Season.current.name)")
+            Headline(
+                greeting,
+                "Saisonal im \(seasonCalendar.season.name)"
+            )
             
             VStack(spacing: spacingLarge) {
                 if !seasonCalendar.seasonals.isEmpty {
                     Section("Die neuen Stars der Saison") {
-                        Carousel {
-                            ForEach(seasonCalendar.seasonals.teaser(teaserLength)) {
-                                seasonal in SeasonalTeaser(seasonal)
-                            }
-                            LinkTeaser(to: .season)
-                        }
+                        teasers(for: seasonCalendar.seasonals)
                     }
                 }
                 
                 if !seasonCalendar.recipes.isEmpty {
                     Section("Entdecke die neusten Rezepte") {
-                        Carousel {
-                            ForEach(seasonCalendar.recipes.teaser(teaserLength)) { recipe in RecipeTeaser(recipe)
-                            }
-                            LinkTeaser(to: .recipes)
-                        }
+                        teasers(for: seasonCalendar.recipes)
                     }
                 }
             }
             Spacer()
         }
     }
+    
+    @ViewBuilder
+    private func teasers(for recipes: [Recipe]) -> some View {
+        Carousel {
+            ForEach(recipes.teaser(teaserLength)) { recipe in
+                RecipeTeaser(recipe)
+            }
+            LinkTeaser(to: .recipes)
+        }
+    }
+    
+    @ViewBuilder
+    private func teasers(for seasonals: [Seasonal]) -> some View {
+        Carousel {
+            ForEach(seasonals.teaser(teaserLength)) { seasonal in SeasonalTeaser(seasonal)
+            }
+            LinkTeaser(to: .season)
+        }
+    }
+
 }
 
 struct HomeView_Previews: PreviewProvider {

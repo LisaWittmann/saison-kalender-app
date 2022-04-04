@@ -7,18 +7,20 @@
 
 import SwiftUI
 
-struct ContentTeaser<Content: Representable>: View {
-    @ObservedObject var item: Content
+struct ContentTeaser: View {
+    var image: String
+    var title: String
     var rect: Bool
     
-    init(_ item: Content, rect: Bool = false) {
-        self.item = item
+    init(_ title: String, image: String? = nil, rect: Bool = false) {
+        self.title = title
+        self.image = image ?? title
         self.rect = rect
     }
     
     var body: some View {
         ZStack {
-            Image(item.name)
+            Image(image)
                 .resizable()
                 .scaledToFill()
                 .opacity(imageOpacity)
@@ -28,9 +30,10 @@ struct ContentTeaser<Content: Representable>: View {
                 )
                 .background(colorGreen)
                 .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
-            Text(item.name)
+            Text(title)
                 .font(.custom(fontExtraBold, size: fontSizeHeadline2))
                 .foregroundColor(colorWhite)
+                .multilineTextAlignment(.leading)
                 .padding(
                     EdgeInsets(
                         top: 0,
@@ -47,7 +50,7 @@ struct ContentTeaser<Content: Representable>: View {
         }
     }
     
-    let imageOpacity: Double = 0.2
+    let imageOpacity: Double = 0.4
     var contentHeight: CGFloat {
         rect ? halfContentWidth + 30 : halfContentWidth
     }
@@ -56,11 +59,9 @@ struct ContentTeaser<Content: Representable>: View {
 
 struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        
         HStack {
-            ContentTeaser<Recipe>(calendar.recipes.first!)
-            ContentTeaser<Recipe>(calendar.recipes.last!, rect: true)
+            ContentTeaser("Mangold")
+            ContentTeaser("Linguine mit Mangold", rect: true)
         }.frame(alignment: .bottom)
     }
 }

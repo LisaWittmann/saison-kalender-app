@@ -18,13 +18,11 @@ struct LinkTeaser: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: cornerRadiusSmall)
-                    .fill(colorLightGreen)
-                    .frame(width: halfContentWidth)
-                    .aspectRatio(1/1, contentMode: .fit)
+                .fill(colorLightGreen)
+                .frame(width: halfContentWidth)
+                .aspectRatio(1/1, contentMode: .fit)
             
-            Button(action: {
-                viewRouter.currentView = route
-            }, label: {
+            Button(action: { viewRouter.currentView = route }) {
                 Image(systemName: "arrow.right")
                     .resizable()
                     .scaledToFill()
@@ -34,8 +32,7 @@ struct LinkTeaser: View {
                         width: quarterContentWidth,
                         alignment: .center
                     )
-                    
-            })
+            }
         }
     }
 }

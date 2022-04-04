@@ -17,7 +17,7 @@ let spacingExtraSmall: CGFloat = 10
 let spacingSmall: CGFloat = 15
 let spacingMedium: CGFloat = 20
 let spacingLarge: CGFloat = 35
-let spacingExtraLarge: CGFloat = 45
+let spacingExtraLarge: CGFloat = 50
 
 let cornerRadiusSmall: CGFloat = 20
 let cornerRadiusMedium: CGFloat = 22

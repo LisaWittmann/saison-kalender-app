@@ -11,6 +11,10 @@ struct RecipesView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
+    @FetchRequest(entity: RecipeCategory.entity(), sortDescriptors: [ NSSortDescriptor(key: "name_", ascending: true) ])
+    var categories: FetchedResults<RecipeCategory>
+    
     @State var selectedCategory: RecipeCategory?
 
     var body: some View {
@@ -20,9 +24,11 @@ struct RecipesView: View {
                 "Saisonal im \(seasonCalendar.season.name)"
             )
 
-            if !seasonCalendar.categories.isEmpty {
-                TagSlider(seasonCalendar.categories,
-                    onSelect: { category in selectedCategory = category })
+            if !categories.isEmpty {
+                TagSlider(
+                    Array(categories),
+                    onSelect: { category in selectedCategory = category }
+                )
             }
             
             RecipeMasonry(seasonCalendar.filterRecipes(by: selectedCategory))

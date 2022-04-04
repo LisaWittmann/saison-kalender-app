@@ -15,6 +15,9 @@ extension Nutrition {
         request.predicate = predicate
         return request
     }
+}
+
+extension Nutrition {
     
     static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe?, in context: NSManagedObjectContext) -> Nutrition? {
         let nutrition = Nutrition(context: context)

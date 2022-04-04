@@ -11,48 +11,47 @@ struct Menu: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: cornerRadiusSmall)
-                .frame(
-                    width: tabSizeWidth,
-                    height: tabSizeHeight
-                )
-                .foregroundColor(colorBeige)
-                .shadow(
-                    radius: shadowRadius,
-                    x: shadowOffsetX,
-                    y: shadowOffsetY
-                )
-            HStack(spacing: getIconSpacing()) {
-                ForEach(Route.allCases, id: \.self) { route in
-                    Button(action: {
-                        viewRouter.currentView = route
-                    }, label: {
-                        Image(systemName: viewRouter.imageName(route: route))
-                            .resizable()
-                            .frame(
-                                width: tabItemSize,
-                                height: tabItemSize,
-                                alignment: .center
-                            )
-                        .foregroundColor(getIconColor(route: route))
-                            .animation(.easeInOut)
-                    })
+        VStack {
+            Spacer()
+            ZStack {
+                RoundedRectangle(cornerRadius: cornerRadiusSmall)
+                    .frame(
+                        width: tabSizeWidth,
+                        height: tabSizeHeight
+                    )
+                    .foregroundColor(colorBeige)
+                    .shadow(
+                        radius: shadowRadius,
+                        x: shadowOffsetX,
+                        y: shadowOffsetY
+                    )
+                HStack(spacing: getIconSpacing()) {
+                    ForEach(Route.allCases, id: \.self) { route in
+                        menuItem(for: route)
+                    }
                 }
             }
-        }
+        }.padding(.bottom, spacingLarge)
     }
     
-    let tabSizeWidth: CGFloat = contentWidth
-    let tabSizeHeight: CGFloat = 60
-    let tabItemSize: CGFloat = 30
+    @ViewBuilder
+    private func background() -> some View {
+        
+    }
     
-    let shadowRadius: CGFloat = 15
-    let shadowOffsetX: CGFloat = 0
-    let shadowOffsetY: CGFloat = 5
-    
-    let colorIcon = colorGreen
-    let colorIconActive = colorCurry
+    @ViewBuilder
+    private func menuItem(for route: Route) -> some View {
+        Button(action: { viewRouter.currentView = route }) {
+            Image(systemName: viewRouter.imageName(route: route))
+                .resizable()
+                .foregroundColor(getIconColor(route: route))
+                .frame(
+                    width: tabItemSize,
+                    height: tabItemSize,
+                    alignment: .center
+                )
+        }
+    }
     
     private func getIconSpacing() -> CGFloat {
         return (tabSizeWidth - tabItemSize * CGFloat(Route.allCases.count))
@@ -65,6 +64,17 @@ struct Menu: View {
         }
         return colorIcon
     }
+    
+    let tabSizeWidth: CGFloat = contentWidth
+    let tabSizeHeight: CGFloat = 60
+    let tabItemSize: CGFloat = 30
+    
+    let shadowRadius: CGFloat = 15
+    let shadowOffsetX: CGFloat = 0
+    let shadowOffsetY: CGFloat = 5
+    
+    let colorIcon = colorGreen
+    let colorIconActive = colorCurry
 }
 
 struct Menu_Previews: PreviewProvider {

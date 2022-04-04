@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct SeasonView: View {
-    @Environment(\.managedObjectContext) var viewContext
-    @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     var body: some View {
@@ -29,6 +27,7 @@ struct SeasonView: View {
 struct SeasonItem: View {
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
     @ObservedObject var seasonal: Seasonal
     @State private var showDetail: Bool = false
     
@@ -37,38 +36,53 @@ struct SeasonItem: View {
             Headline(
                 seasonal.name,
                 "Saisonal im \(seasonCalendar.season.name)"
-            ).modifier(SectionLayout())
+            )
+            .modifier(SectionLayout())
             
-            ZStack {
-                Circle()
-                    .fill(colorGreen)
-                    .frame(
-                        width: circleSize,
-                        height: circleSize
-                    )
-                Image(seasonal.name)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(
-                        width: screenWidth,
-                        height: imageHeight,
-                        alignment: .center
-                    )
-                    .opacity(imageOpacity)
-                    .clipped()
-                    .shadow(radius: shadowRadius)
+            NavigationLink(
+                destination: detail(for: seasonal),
+                isActive: $showDetail
+            ) {
+                hightlight()
             }
+            .isDetailLink(false)
+           
             Spacer()
         }
         .onTapGesture { showDetail.toggle() }
-        .fullScreenCover(isPresented: $showDetail, content: {
-            SeasonalDetail(seasonal, close: { showDetail.toggle() })
-        })
+    }
+    
+    @ViewBuilder
+    private func hightlight() -> some View {
+        ZStack {
+            Circle()
+                .fill(colorGreen)
+                .frame(width: circleSize, height: circleSize)
+            Image(seasonal.name)
+                .resizable()
+                .scaledToFill()
+                .frame(
+                    width: screenWidth,
+                    height: imageHeight,
+                    alignment: .center
+                )
+                .opacity(imageOpacity)
+                .clipped()
+                .shadow(radius: shadowRadius)
+        }
+    }
+    
+    @ViewBuilder
+    private func detail(for seasonal: Seasonal) -> some View {
+        SeasonalDetail(seasonal, close: { showDetail.toggle() })
+            .environmentObject(user)
+            .environmentObject(seasonCalendar)
+            .navigationBarHidden(true)
     }
     
     let circleSize: CGFloat = contentWidth
     let imageHeight: CGFloat = contentWidth * 1.5
-    let imageOpacity: Double = 0.7
+    let imageOpacity: Double = 0.9
     let buttonSize: CGFloat = 60
     let animationDuration: Double = 1
     let shadowRadius: CGFloat = 40

@@ -17,12 +17,12 @@ extension RecipeCategory {
 
 extension RecipeCategory: Representable {
     
+    public var id: String { name }
+    
     var name: String {
         get { name_! }
         set { name_ = newValue }
     }
-    
-    public var id: String { name }
 }
 
 extension RecipeCategory {
@@ -32,9 +32,5 @@ extension RecipeCategory {
         request.sortDescriptors = [NSSortDescriptor(key: "name_", ascending: true)]
         request.predicate = predicate
         return request
-    }
-    
-    static func all(from context: NSManagedObjectContext) -> [RecipeCategory] {
-        return (try? context.fetch(RecipeCategory.fetchRequest())) ?? []
     }
 }

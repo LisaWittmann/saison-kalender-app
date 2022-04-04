@@ -6,6 +6,8 @@
 	<string>Light</string>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIImageName</key>
+		<string>LaunchImage</string>
 		<key>UIColorName</key>
 		<string>Beige</string>
 	</dict>

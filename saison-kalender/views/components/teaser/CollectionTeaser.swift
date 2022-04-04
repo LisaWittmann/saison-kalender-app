@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CollectionTeaser: View {
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    
     @ObservedObject var collection: Collection
     @State var showDetail = false
     
@@ -17,35 +19,45 @@ struct CollectionTeaser: View {
     }
     
     var body: some View {
-        ZStack {
-            ImageGroup(
-                collection.recipes.map({ $0.name }),
-                width: contentWidth,
-                height: contentHeight
-            )
-            Text(collection.name)
-                .font(.custom(fontExtraBold, size: 30))
-                .foregroundColor(colorWhite)
-                .padding(
-                    EdgeInsets(
-                        top: 0,
-                        leading: spacingSmall,
-                        bottom: spacingSmall,
-                        trailing: spacingSmall
-                    )
-                )
-                .frame(
+        NavigationLink(
+            destination: detail(for: collection),
+            isActive: $showDetail
+        ) {
+            ZStack {
+                ImageGroup(
+                    collection.recipes.map({ $0.name }),
                     width: contentWidth,
-                    height: contentHeight,
-                    alignment: .bottomLeading
+                    height: contentHeight
                 )
-        }
-        .frame(width: contentWidth)
-        .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
-        .onTapGesture { showDetail.toggle() }
-        .fullScreenCover(isPresented: $showDetail) {
-            CollectionDetail(collection, close: { showDetail.toggle() })
-        }
+                Text(collection.name)
+                    .font(.custom(fontExtraBold, size: 30))
+                    .foregroundColor(colorWhite)
+                    .padding(
+                        EdgeInsets(
+                            top: 0,
+                            leading: spacingSmall,
+                            bottom: spacingSmall,
+                            trailing: spacingSmall
+                        )
+                    )
+                    .frame(
+                        width: contentWidth,
+                        height: contentHeight,
+                        alignment: .bottomLeading
+                    )
+            }
+            .frame(width: contentWidth)
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
+            .onTapGesture { showDetail.toggle() }
+        }.isDetailLink(false)
+    }
+    
+    @ViewBuilder
+    private func detail(for collection: Collection) -> some View {
+        CollectionDetail(collection, close: { showDetail.toggle() })
+            .environmentObject(user)
+            .environmentObject(seasonCalendar)
+            .navigationBarHidden(true)
     }
     
     let contentHeight: CGFloat = 215
@@ -53,10 +65,13 @@ struct CollectionTeaser: View {
 
 struct CollectionTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
-        let collections: [Collection] = (try? context.fetch(Collection.fetchRequest())) ?? []
+        let calendar = SeasonCalendar.preview
+        let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
-        CollectionTeaser(collections.first!)
-            .environmentObject(LoggedInUser())
+        NavigationView {
+            CollectionTeaser(collections.first!)
+                .environmentObject(LoggedInUser())
+                .environmentObject(calendar)
+        }
     }
 }

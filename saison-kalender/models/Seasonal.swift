@@ -28,12 +28,12 @@ extension Seasonal {
 
 extension Seasonal: Representable {
     
+    public var id: String { name }
+    
     var name: String {
         get { name_! }
         set { name_ = newValue }
     }
-    
-    public var id: String { name }
 }
 
 extension Seasonal {
@@ -44,6 +44,9 @@ extension Seasonal {
         request.predicate = predicate
         return request
     }
+}
+
+extension Seasonal {
     
     static func create(name: String, seasons: [Season], recipe: Recipe?, in context: NSManagedObjectContext) -> Seasonal? {
         let predicate = NSPredicate(format: "name_ = %@", name)

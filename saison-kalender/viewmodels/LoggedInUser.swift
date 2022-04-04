@@ -8,6 +8,7 @@
 import Foundation
 
 class LoggedInUser: ObservableObject {
+    
     @Published var user: User?
     
     init(_ user: User? = nil) {
@@ -73,7 +74,11 @@ class LoggedInUser: ObservableObject {
     }
     
     func save() {
-        user?.save()
+        do {
+            try user?.managedObjectContext?.save()
+        } catch {
+            return
+        }
         objectWillChange.send()
     }
 }

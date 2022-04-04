@@ -7,41 +7,37 @@
 
 import SwiftUI
 import CoreData
+import PartialSheet
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: LoggedInUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
 
     var body: some View {
         ZStack {
-            switch viewRouter.currentView {
-            case .home:
-                HomeView()
-                    .environment(\.managedObjectContext, viewContext)
-            case .season:
-                SeasonView()
-                    .environment(\.managedObjectContext, viewContext)
-            case .recipes:
-                RecipesView()
-                    .environment(\.managedObjectContext, viewContext)
-            case .account:
-                if user.isPresent {
-                    AccountView()
-                        .environment(\.managedObjectContext, viewContext)
-                } else {
-                    LoginView()
-                        .environment(\.managedObjectContext, viewContext)
+            NavigationView {
+                switch viewRouter.currentView {
+                case .home:
+                    HomeView()
+                        .navigationItem("Home")
+                case .season:
+                    SeasonView()
+                        .navigationItem("Season")
+                case .recipes:
+                    RecipesView()
+                        .navigationItem("Recipes")
+                case .account:
+                    if user.isPresent {
+                        AccountView()
+                            .navigationItem("Account")
+                    } else {
+                        LoginView()
+                            .navigationItem("Login")
+                    }
                 }
             }
-            VStack {
-                Spacer()
-                Menu()
-            }
-            .padding(.bottom, spacingLarge)
+            Menu()
         }.edgesIgnoringSafeArea(.all)
-    
     }
 
 }
@@ -55,5 +51,6 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
+            .attachPartialSheetToRoot()
     }
 }

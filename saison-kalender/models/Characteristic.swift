@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-extension Characteristic {
+extension Characteristic: Representable {
     
     var name: String {
         get { name_!}
