@@ -56,11 +56,11 @@ struct ContentTeaser<Content: Representable>: View {
 
 struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let calendar = SeasonCalendar.preview
         
         HStack {
-            ContentTeaser<Recipe>(Recipe.current(from: context).first!)
-            ContentTeaser<Recipe>(Recipe.current(from: context).last!, rect: true)
+            ContentTeaser<Recipe>(calendar.recipes.first!)
+            ContentTeaser<Recipe>(calendar.recipes.last!, rect: true)
         }.frame(alignment: .bottom)
     }
 }

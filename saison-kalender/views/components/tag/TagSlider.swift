@@ -18,7 +18,7 @@ struct TagSlider<Content: Representable>: View {
     }
     
     var body: some View {
-        Slider(spacing: spacingExtraSmall) {
+        Carousel(spacing: spacingExtraSmall) {
             ForEach(Array(items)) { item in
                 Tag(item.name, selected: isSelected(item))
                     .onTapGesture { select(item: item)}

@@ -12,42 +12,35 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
 
     var body: some View {
         ZStack {
             switch viewRouter.currentView {
             case .home:
-                HomeView(viewRouter: viewRouter)
+                HomeView()
                     .environment(\.managedObjectContext, viewContext)
-                    .environmentObject(user)
             case .season:
                 SeasonView()
                     .environment(\.managedObjectContext, viewContext)
-                    .environmentObject(user)
             case .recipes:
                 RecipesView()
                     .environment(\.managedObjectContext, viewContext)
-                    .environmentObject(user)
             case .account:
                 if user.isPresent {
                     AccountView()
                         .environment(\.managedObjectContext, viewContext)
-                        .environmentObject(user)
                 } else {
                     LoginView()
                         .environment(\.managedObjectContext, viewContext)
-                        .environmentObject(user)
                 }
             }
-
-            Menu()
-                .environmentObject(viewRouter)
-                .padding(.bottom, spacingLarge)
-                .frame(
-                    height: screenHeight,
-                    alignment: .bottom
-                )
-        }
+            VStack {
+                Spacer()
+                Menu()
+            }
+            .padding(.bottom, spacingLarge)
+        }.edgesIgnoringSafeArea(.all)
     
     }
 
@@ -55,9 +48,12 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        let calendar = SeasonCalendar.preview
+        
         ContentView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

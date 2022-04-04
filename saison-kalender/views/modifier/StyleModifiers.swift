@@ -13,18 +13,19 @@ struct InputFieldStyle: ViewModifier {
             .padding(spacingSmall)
             .background(colorLightGreen)
             .cornerRadius(cornerRadiusMedium)
+            .foregroundColor(colorBlack)
     }
 }
 
 struct TextFieldStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .foregroundColor(colorBlack)
             .disableAutocorrection(true)
             .autocapitalization(.none)
             .font(.custom(fontMedium,
                 size: fontSizeHeadline2
             ))
+            .foregroundColor(colorBlack)
     }
 }
 

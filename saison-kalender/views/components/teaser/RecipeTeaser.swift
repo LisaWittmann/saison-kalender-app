@@ -24,16 +24,16 @@ struct RecipeTeaser: View {
             .fullScreenCover(isPresented: $showDetail, content: {
                 RecipeDetail(recipe, close: {
                     showDetail.toggle()
-                }).environmentObject(user)
+                })
             })
     }
 }
 
 struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let calendar = SeasonCalendar.preview
         
-        RecipeTeaser(Recipe.current(from: context).first!)
+        RecipeTeaser(calendar.recipes.first!)
             .environmentObject(LoggedInUser())
     }
 }

@@ -16,7 +16,6 @@ struct LoginView: View {
         if loginMode {
             LoginForm(mode: $loginMode)
             .environment(\.managedObjectContext, viewContext)
-            .environmentObject(user)
         }
         else {
             RegisterForm(mode: $loginMode)
@@ -57,6 +56,7 @@ struct LoginForm: View {
                     )
                     .modifier(TextButtonStyle())
             }
+            Spacer()
         }
     }
     
@@ -106,6 +106,7 @@ struct RegisterForm: View {
                     )
                     .modifier(TextButtonStyle())
             }
+            Spacer()
         }
     }
 
@@ -132,8 +133,11 @@ struct RegisterForm: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
+        let calendar = SeasonCalendar.preview
         LoginView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

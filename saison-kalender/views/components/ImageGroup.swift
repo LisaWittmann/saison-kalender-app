@@ -12,7 +12,7 @@ struct ImageGroup: View {
     var width: CGFloat
     var height: CGFloat
     
-    init(_ images: [String], width: CGFloat = screenWidth, height: CGFloat = screenHeight / 3) {
+    init(_ images: [String], width: CGFloat = screenWidth, height: CGFloat = 300) {
         self.images = images
         self.width = width
         self.height = height
@@ -29,6 +29,7 @@ struct ImageGroup: View {
                     height: height,
                     alignment: firstImageAlignment
                 )
+                .clipped()
             
             if images.count >= 3 {
                 VStack(spacing: 0) {
@@ -42,6 +43,7 @@ struct ImageGroup: View {
                             height: height / 2,
                             alignment: .leading
                         )
+                        .clipped()
                     
                     Image(images[2])
                         .resizable()
@@ -52,6 +54,7 @@ struct ImageGroup: View {
                             height: height / 2,
                             alignment: .leading
                         )
+                        .clipped()
                     
                 }
             }
@@ -78,8 +81,8 @@ struct ImageGroup: View {
 
 struct ImageGroup_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
-        let images = Recipe.current(from: context).map({ $0.name })
+        let calendar = SeasonCalendar.preview
+        let images = calendar.recipes.map({ $0.name })
         
         ScrollView {
             VStack {

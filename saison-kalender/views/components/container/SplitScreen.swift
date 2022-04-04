@@ -13,17 +13,16 @@ struct SplitScreen<Content: View>: View {
     var subline: String
     var close: () -> ()
     var icon: String
-    var onIconTap: () -> ()
-    
+    var onIconTap: () -> Void
     var content: () -> Content
     
     init(
         images: [String],
         headline: String = "",
         subline: String = "",
-        close: @escaping () -> (),
+        close: @escaping () -> Void,
         icon: String = "",
-        onIconTap: @escaping () -> () = {},
+        onIconTap: @escaping () -> Void = {},
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.images = images
@@ -39,26 +38,18 @@ struct SplitScreen<Content: View>: View {
         ScrollView {
             ZStack {
                 VStack {
-                    SplitScreenHeader(
-                        images: images,
-                        close: close,
-                        headline: headline,
-                        subline: subline,
-                        icon: icon,
-                        onIconTap: onIconTap
-                    )
+                    header
                     Spacer()
                 }
                 .background(colorGreen)
             
                 ZStack {
-                    VStack(spacing: spacingLarge, content: content)
-                        .frame(width: .infinity)
-                        .frame(
-                            minHeight: screenHeight - headerHeight,
-                            alignment: .topLeading
-                        )
-                        .modifier(SectionLayout())
+                    VStack {
+                        VStack(spacing: spacingLarge, content: content)
+                            .frame(width: .infinity)
+                            .modifier(SectionLayout())
+                        Spacer()
+                    }
                 }
                 .frame(
                     width: screenWidth,
@@ -68,30 +59,14 @@ struct SplitScreen<Content: View>: View {
                 .cornerRadius(contentCornerRadius, corners: [.topLeft, .topRight])
                 .padding(.top, headerHeight)
             }
-            .frame(
-                minHeight: screenHeight,
-                alignment: .topLeading
-            )
         }
         .modifier(PageLayout())
     }
     
-    let headerHeight: CGFloat = 300
-    let contentCornerRadius: CGFloat = 60
-}
-
-struct SplitScreenHeader: View {
-    var images: [String]
-    var close: () -> ()
-    var headline: String = ""
-    var subline: String = ""
-    var icon: String = ""
-    var onIconTap: () -> () = {}
     
-    var body: some View {
+    var header: some View {
         ZStack {
             ImageGroup(images, height: imageHeight)
-            
                 VStack {
                     HStack {
                         Image(systemName: "arrow.left")
@@ -104,16 +79,9 @@ struct SplitScreenHeader: View {
                     }
                     
                     HStack {
-                        VStack {
-                            Text(subline)
-                                .modifier(FontSubtitle())
-                                .foregroundColor(colorWhite)
-                            Text(headline)
-                                .modifier(FontTitle())
-                                .foregroundColor(colorWhite)
-                        }
+                        Headline(headline, subline, color: colorWhite)
                         .frame(
-                            height: headerHeight,
+                            height: imageHeight/2,
                             alignment: .bottom
                         )
                         VStack {
@@ -124,7 +92,7 @@ struct SplitScreenHeader: View {
                                 .onTapGesture { onIconTap() }
                                 .frame(width: iconWidth)
                         }.frame(
-                            height: headerHeight,
+                            height: imageHeight/2,
                             alignment: .bottom
                         )
                         .padding(.bottom, spacingExtraSmall)
@@ -140,7 +108,8 @@ struct SplitScreenHeader: View {
             )
     }
     
-    let headerHeight: CGFloat = 200
+    let headerHeight: CGFloat = 300
+    let contentCornerRadius: CGFloat = 60
     let imageHeight: CGFloat = 400
     let imageOpacity: Double = 0.2
     let iconWidth: CGFloat = 30

@@ -6,19 +6,21 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct SaisonKalenderApp: App {
-    let persistenceController = PersistenceController.shared
-    @StateObject var viewRouter: ViewRouter = ViewRouter()
-    @StateObject var user: LoggedInUser = LoggedInUser()
+    @StateObject var viewRouter = ViewRouter()
+    @StateObject var user = LoggedInUser()
+    @StateObject var seasonCalendar = SeasonCalendar.preview
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, seasonCalendar.context)
                 .environmentObject(user)
                 .environmentObject(viewRouter)
+                .environmentObject(seasonCalendar)
         }
     }
 }

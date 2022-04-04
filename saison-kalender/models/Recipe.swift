@@ -95,20 +95,11 @@ extension Recipe {
         return seasons_
     }
     
-    func isSeasonal() -> Bool {
-        return seasons.contains(Season.current)
+    func inSeason(_ season: Season) -> Bool {
+        return seasons.contains(season)
     }
     
     func seasonalsFor(season: Season) -> [Seasonal] {
-        return seasonals.filter({ $0.inSeason(season) })
-    }
-
-    static func inSeason(season: Season, context: NSManagedObjectContext) -> [Recipe] {
-        let recipes: [Recipe] = (try? context.fetch(Recipe.fetchRequest())) ?? []
-        return recipes.filter({ $0.seasons.contains(season) })
-    }
-    
-    static func current(from context: NSManagedObjectContext) -> [Recipe] {
-        return Recipe.inSeason(season: Season.current, context: context)
+        return seasonals.filter({ $0.seasons.contains(season) })
     }
 }

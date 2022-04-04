@@ -29,6 +29,7 @@ struct LinkTeaser: View {
                     .resizable()
                     .scaledToFill()
                     .aspectRatio(1/1, contentMode: .fit)
+                    .foregroundColor(colorGreen)
                     .frame(
                         width: quarterContentWidth,
                         alignment: .center

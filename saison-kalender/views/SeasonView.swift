@@ -10,34 +10,34 @@ import SwiftUI
 struct SeasonView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
-    
-    var seasonals: [Seasonal] {
-        return Seasonal.current(from: viewContext)
-    }
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     var body: some View {
         ScrollView {
             TabView {
-                ForEach(Array(seasonals)) { item in
-                    SeasonItem(seasonal: item).environmentObject(user)
+                ForEach(Array(seasonCalendar.seasonals)) { item in
+                    SeasonItem(seasonal: item)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            .modifier(FullScreenLayout())
+            .frame(height: UIScreen.main.bounds.height)
         }
         .modifier(PageLayout())
     }
 }
 
 struct SeasonItem: View {
-    @ObservedObject var seasonal: Seasonal
     @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    @ObservedObject var seasonal: Seasonal
     @State private var showDetail: Bool = false
     
     var body: some View {
         VStack {
-            Headline(seasonal.name,"Saisonal im \(Season.current.name)")
-                .modifier(SectionLayout())
+            Headline(
+                seasonal.name,
+                "Saisonal im \(seasonCalendar.season.name)"
+            ).modifier(SectionLayout())
             
             ZStack {
                 Circle()
@@ -60,11 +60,9 @@ struct SeasonItem: View {
             }
             Spacer()
         }
-        .ignoresSafeArea()
         .onTapGesture { showDetail.toggle() }
         .fullScreenCover(isPresented: $showDetail, content: {
             SeasonalDetail(seasonal, close: { showDetail.toggle() })
-                .environmentObject(user)
         })
     }
     
@@ -78,8 +76,12 @@ struct SeasonItem: View {
 
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
+        let calendar = SeasonCalendar.preview
+        
         SeasonView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

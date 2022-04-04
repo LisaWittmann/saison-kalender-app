@@ -34,10 +34,13 @@ struct CollectionDetail: View {
 
 struct CollectionDetail_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
-        let collections: [Collection] = try! context.fetch(Collection.fetchRequest())
+        let calendar = SeasonCalendar.preview
+        let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
         CollectionDetail(collections.first!, close: {})
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

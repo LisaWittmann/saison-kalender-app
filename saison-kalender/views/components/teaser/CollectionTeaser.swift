@@ -22,7 +22,7 @@ struct CollectionTeaser: View {
                 collection.recipes.map({ $0.name }),
                 width: contentWidth,
                 height: contentHeight
-            ).clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
+            )
             Text(collection.name)
                 .font(.custom(fontExtraBold, size: 30))
                 .foregroundColor(colorWhite)
@@ -40,10 +40,11 @@ struct CollectionTeaser: View {
                     alignment: .bottomLeading
                 )
         }
+        .frame(width: contentWidth)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
         .onTapGesture { showDetail.toggle() }
         .fullScreenCover(isPresented: $showDetail) {
             CollectionDetail(collection, close: { showDetail.toggle() })
-                .environmentObject(user)
         }
     }
     

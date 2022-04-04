@@ -50,9 +50,9 @@ struct RecipeMasonry: View {
 
 struct RecipeMasonry_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let calendar = SeasonCalendar.preview
 
-        RecipeMasonry(Recipe.current(from: context))
+        RecipeMasonry(calendar.recipes)
             .environmentObject(LoggedInUser())
             .frame(width: contentWidth)
 

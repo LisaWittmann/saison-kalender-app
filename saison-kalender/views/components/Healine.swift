@@ -23,10 +23,11 @@ struct Headline: View {
             Text(subline)
                 .modifier(FontSubtitle())
                 .foregroundColor(color)
+                .padding(.bottom, -spacingMedium)
             Text(headline)
                 .modifier(FontTitle())
                 .foregroundColor(color)
-                .padding(.top, -spacingExtraSmall)
+                
         }
     }
 }

@@ -22,16 +22,16 @@ struct SeasonalTeaser: View {
             .fullScreenCover(isPresented: $showDetail) {
                 SeasonalDetail(seasonal, close: {
                     showDetail.toggle()
-                }).environmentObject(user)
+                })
             }
     }
 }
 
 struct SeasonalTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let calendar = SeasonCalendar.preview
         
-        SeasonalTeaser(Seasonal.current(from: context).first!)
+        SeasonalTeaser(calendar.seasonals.randomElement()!)
             .environmentObject(LoggedInUser())
     }
 }

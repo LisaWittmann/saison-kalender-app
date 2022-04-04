@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Slider<Content: View>: View {
+struct Carousel<Content: View>: View {
     var spacing: CGFloat
     var content: () -> Content
     

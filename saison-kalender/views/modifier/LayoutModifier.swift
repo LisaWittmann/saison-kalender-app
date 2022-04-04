@@ -8,24 +8,12 @@
 import SwiftUI
 
 
-
-struct FullScreenLayout: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .frame(
-                width: screenWidth,
-                height: screenHeight,
-                alignment: .topLeading
-            )
-    }
-}
-
 struct PageLayout: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .modifier(FullScreenLayout())
             .background(colorBeige)
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: screenWidth, alignment: .topLeading)
     }
 }
 

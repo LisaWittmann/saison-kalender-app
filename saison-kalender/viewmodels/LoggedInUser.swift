@@ -37,21 +37,26 @@ class LoggedInUser: ObservableObject {
     }
     
     func favor(recipe: Recipe) {
-        user?.favorites.insert(recipe)
-        user?.save()
+        user?.addToFavorites_(recipe)
+        save()
     }
     
     func add(recipe: Recipe, to collection: Collection) {
         favor(recipe: recipe)
-        collection.recipes.insert(recipe)
-        user?.save()
+        collection.addToRecipes_(recipe)
+        save()
+    }
+    
+    func add(collection: Collection) {
+        user?.addToCollections_(collection)
+        save()
     }
         
     func remove(recipe: Recipe, from collection: Collection) {
         if (collection.recipes.contains(recipe)) {
             collection.recipes.remove(recipe)
         }
-        user?.save()
+        save()
     }
         
     func remove(recipe: Recipe) {
@@ -59,11 +64,16 @@ class LoggedInUser: ObservableObject {
             remove(recipe: recipe, from: collection)
         }
         favorites.remove(recipe)
-        user?.save()
+        save()
     }
         
     func remove(collection: Collection) {
         collections.remove(collection)
+        save()
+    }
+    
+    func save() {
         user?.save()
+        objectWillChange.send()
     }
 }

@@ -11,25 +11,10 @@ import CoreData
 struct HomeView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: LoggedInUser
-    @ObservedObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
+    @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     let teaserLength = 3
-
-    var seasonals: [Seasonal] {
-        let allSeasonals = Seasonal.current(from: viewContext)
-        if allSeasonals.count > teaserLength {
-            return Array(allSeasonals[0...teaserLength-1])
-        }
-        return allSeasonals
-    }
-    
-    var recipes: [Recipe] {
-        let allRecipes = Recipe.current(from: viewContext)
-        if allRecipes.count > teaserLength {
-            return Array(allRecipes[0...teaserLength-1])
-        }
-        return allRecipes
-    }
     
     var greeting: String {
         return user.name != nil ? "Hallo \(user.name!)" : "Willkommen"
@@ -40,40 +25,40 @@ struct HomeView: View {
             Headline(greeting,"Saisonal im \(Season.current.name)")
             
             VStack(spacing: spacingLarge) {
-                if !seasonals.isEmpty {
+                if !seasonCalendar.seasonals.isEmpty {
                     Section("Die neuen Stars der Saison") {
-                        Slider {
-                            ForEach(Array(seasonals)) { seasonal in
-                                SeasonalTeaser(seasonal)
-                                    .environmentObject(user)
+                        Carousel {
+                            ForEach(seasonCalendar.seasonals.teaser(teaserLength)) {
+                                seasonal in SeasonalTeaser(seasonal)
                             }
                             LinkTeaser(to: .season)
-                                .environmentObject(viewRouter)
                         }
                     }
                 }
                 
-                if !recipes.isEmpty {
+                if !seasonCalendar.recipes.isEmpty {
                     Section("Entdecke die neusten Rezepte") {
-                        Slider {
-                            ForEach(Array(recipes)) { recipe in
-                                RecipeTeaser(recipe)
-                                    .environmentObject(user)
+                        Carousel {
+                            ForEach(seasonCalendar.recipes.teaser(teaserLength)) { recipe in RecipeTeaser(recipe)
                             }
                             LinkTeaser(to: .recipes)
-                                .environmentObject(viewRouter)
                         }
                     }
                 }
             }
+            Spacer()
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewRouter: ViewRouter())
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        let calendar = SeasonCalendar.preview
+        
+        HomeView()
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

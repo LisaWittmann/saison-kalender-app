@@ -48,9 +48,12 @@ struct SeasonalDetail: View {
 
 struct SeasonalDetail_Previews: PreviewProvider {
     static var previews: some View {
-        let context = PersistenceController.preview.container.viewContext
+        let calendar = SeasonCalendar.preview
         
-        SeasonalDetail(Seasonal.current(from: context).first!, close: {})
+        SeasonalDetail(calendar.seasonals.first!, close: {})
+            .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

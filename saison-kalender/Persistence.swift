@@ -99,6 +99,7 @@ struct PersistenceController {
         
         let c1 = Collection(context: context)
         c1.name = "April Favoriten"
+        c1.id = UUID()
         c1.addToRecipes_(rec1!)
         c1.addToRecipes_(rec2!)
         c1.addToRecipes_(rec3!)
