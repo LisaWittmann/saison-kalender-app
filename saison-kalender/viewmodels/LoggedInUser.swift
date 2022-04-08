@@ -6,13 +6,22 @@
 //
 
 import Foundation
+import CoreData
 
 class LoggedInUser: ObservableObject {
     
+    private let defaults = UserDefaults.standard
     @Published var user: User?
     
     init(_ user: User? = nil) {
         self.user = user
+    }
+    
+    func getStoredSession(_ context: NSManagedObjectContext) {
+        let defaultName = defaults.object(forKey: "username") as? String
+        if defaultName != nil {
+            user = User.with(name: defaultName!, from: context)
+        }
     }
     
     var name: String? {
@@ -35,6 +44,9 @@ class LoggedInUser: ObservableObject {
     
     func login(_ user: User?) {
         self.user = user
+        if user != nil {
+            defaults.set(user?.name, forKey: "username")
+        }
     }
     
     func favor(recipe: Recipe) {

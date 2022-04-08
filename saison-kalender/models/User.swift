@@ -75,4 +75,10 @@ extension User {
         let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         return matchingUsers.first
     }
+    
+    static func with(name: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
 }

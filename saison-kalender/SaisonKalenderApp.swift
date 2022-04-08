@@ -23,6 +23,7 @@ struct SaisonKalenderApp: App {
                 .environmentObject(user)
                 .environmentObject(viewRouter)
                 .environmentObject(seasonCalendar)
+                .onAppear { user.getStoredSession(seasonCalendar.context) }
         }
     }
 }
