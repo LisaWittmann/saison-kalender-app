@@ -1,25 +1,30 @@
 //
-//  Slider.swift
+//  TeaserCarousel.swift
 //  saison-kalender
 //
-//  Created by Lisa Wittmann on 31.03.22.
+//  Created by Lisa Wittmann on 06.04.22.
 //
 
 import SwiftUI
 
-struct Carousel<Data, Content> : View where Data : Identifiable, Content: View {
+struct TeaserCarousel<Data, Content, Teaser> : View
+    where Data : Identifiable, Content : View, Teaser : View {
+    
     var spacing: CGFloat
-    var data: [Data]
+    var data: Array<Data>
     var content: (Data) -> Content
+    var teaser: () -> Teaser
     
     init(
-        _ data: [Data],
+        _ data: Array<Data>,
         spacing: CGFloat = spacingMedium,
+        @ViewBuilder teaser: @escaping () -> Teaser,
         @ViewBuilder content: @escaping (Data) -> Content
     ) {
         self.spacing = spacing
         self.data = data
         self.content = content
+        self.teaser = teaser
     }
 
     var body: some View {
@@ -27,9 +32,10 @@ struct Carousel<Data, Content> : View where Data : Identifiable, Content: View {
             HStack(spacing: spacing) {
                 ForEach(data) { data in
                     content(data)
-                        .padding(.leading, getPaddingLeft(data))
-                        .padding(.trailing, getPaddingRight(data))
+                        .padding(.leading, getPadding(data))
                 }
+                teaser()
+                    .padding(.trailing, spacingLarge)
             }
         }
         .padding(.top, spacingExtraSmall)
@@ -38,17 +44,16 @@ struct Carousel<Data, Content> : View where Data : Identifiable, Content: View {
         .padding(.trailing, -spacingLarge)
     }
     
-    private func getPaddingLeft(_ data: Data) -> CGFloat {
+    private func getPadding(_ data: Data) -> CGFloat {
         if self.data.first?.id == data.id {
             return spacingLarge
         }
         return 0
     }
-    
-    private func getPaddingRight(_ data: Data) -> CGFloat{
-        if self.data.last?.id == data.id {
-            return spacingLarge
-        }
-        return 0
-    }
 }
+
+/*struct TeaserCarousel_Previews: PreviewProvider {
+    static var previews: some View {
+        TeaserCarousel()
+    }
+}*/

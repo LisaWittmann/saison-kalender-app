@@ -18,21 +18,16 @@ struct ContentView: View {
             NavigationView {
                 switch viewRouter.currentView {
                 case .home:
-                    HomeView()
-                        .navigationItem("Home")
+                    HomeView().navigationItem("Home")
                 case .season:
-                    SeasonView()
-                        .navigationItem("Season")
+                    SeasonView().navigationItem("Season")
                 case .recipes:
-                    RecipesView()
-                        .navigationItem("Recipes")
+                    RecipesView().navigationItem("Recipes")
                 case .account:
                     if user.isPresent {
-                        AccountView()
-                            .navigationItem("Account")
+                        AccountView().navigationItem("Account")
                     } else {
-                        LoginView()
-                            .navigationItem("Login")
+                        LoginView().navigationItem("Login")
                     }
                 }
             }

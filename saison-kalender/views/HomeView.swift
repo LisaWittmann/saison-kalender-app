@@ -45,20 +45,18 @@ struct HomeView: View {
     
     @ViewBuilder
     private func teasers(for recipes: [Recipe]) -> some View {
-        Carousel {
-            ForEach(recipes.teaser(teaserLength)) { recipe in
-                RecipeTeaser(recipe)
-            }
+        TeaserCarousel(recipes.teaser(teaserLength), teaser: {
             LinkTeaser(to: .recipes)
+        }) { recipe in
+            RecipeTeaser(recipe)
         }
     }
     
     @ViewBuilder
     private func teasers(for seasonals: [Seasonal]) -> some View {
-        Carousel {
-            ForEach(seasonals.teaser(teaserLength)) { seasonal in SeasonalTeaser(seasonal)
-            }
+        TeaserCarousel(seasonals.teaser(teaserLength), teaser: {
             LinkTeaser(to: .season)
+        }) { seasonal in SeasonalTeaser(seasonal)
         }
     }
 

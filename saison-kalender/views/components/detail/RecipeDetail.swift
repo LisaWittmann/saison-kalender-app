@@ -149,10 +149,8 @@ struct RecipeDetail: View {
     @ViewBuilder
     private func body(for seasonals: Array<Seasonal>) -> some View {
         Section("Saisonale Stars") {
-            Carousel {
-                ForEach(seasonals) { seasonal in
-                    SeasonalTeaser(seasonal)
-                }
+            Carousel(seasonals) { seasonal in
+                SeasonalTeaser(seasonal)
             }
         }
     }
