@@ -9,6 +9,16 @@ import CoreData
 
 extension Nutrition {
     
+    public var id: String { recipe.name }
+    
+    var recipe: Recipe {
+        get { recipe_! }
+        set { recipe_ = newValue }
+    }
+}
+
+extension Nutrition {
+    
     static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Nutrition> {
         let request = NSFetchRequest<Nutrition>(entityName: "Nutrition")
         request.sortDescriptors = [NSSortDescriptor(key: "recipe_", ascending: true)]
@@ -19,9 +29,8 @@ extension Nutrition {
 
 extension Nutrition {
     
-    static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe?, in context: NSManagedObjectContext) -> Nutrition? {
+    static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition? {
         let nutrition = Nutrition(context: context)
-        nutrition.id = UUID()
         nutrition.calories = calories
         nutrition.carbs = carbs
         nutrition.fat = fat

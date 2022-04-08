@@ -9,24 +9,24 @@ import CoreData
 
 extension Recipe {
     
-    var ingredients: Set<Ingredient> {
-        get { (ingredients_ as? Set<Ingredient>) ?? [] }
-        set { ingredients_ = newValue as NSSet }
+    var ingredients: Array<Ingredient> {
+        get { (ingredients_ as? Set<Ingredient>)?.sorted() ?? [] }
+        set { ingredients_ = Set(newValue) as NSSet }
     }
     
-    var seasonals: Set<Seasonal> {
-        get { (seasonals_ as? Set<Seasonal>) ?? [] }
-        set { seasonals_ = newValue as NSSet }
+    var seasonals: Array<Seasonal> {
+        get { (seasonals_ as? Set<Seasonal>)?.sorted() ?? [] }
+        set { seasonals_ = Set(newValue) as NSSet }
     }
     
-    var preparations: Set<Preparation> {
-        get { (preparations_ as? Set<Preparation>) ?? [] }
-        set { preparations_ = newValue as NSSet }
+    var preparations: Array<Preparation> {
+        get { (preparations_ as? Set<Preparation>)?.sorted() ?? [] }
+        set { preparations_ = Set(newValue) as NSSet }
     }
     
-    var categories: Set<RecipeCategory> {
-        get { (categories_ as? Set<RecipeCategory>) ?? [] }
-        set { categories_ = newValue as NSSet }
+    var categories: Array<RecipeCategory> {
+        get { (categories_ as? Set<RecipeCategory>)?.sorted() ?? [] }
+        set { categories_ = Set(newValue) as NSSet }
     }
 }
 
@@ -37,6 +37,13 @@ extension Recipe: Representable {
     var name: String {
         get { name_! }
         set { name_ = newValue }
+    }
+}
+
+extension Recipe: Comparable {
+    
+    public static func < (lhs: Recipe, rhs: Recipe) -> Bool {
+        lhs.id < rhs.id
     }
 }
 
@@ -85,10 +92,10 @@ extension Recipe {
         return newRecipe
     }
     
-    func createPreparation(title: String? = nil, text: String, info: String? = nil) {
-        let preparation = Preparation.create(title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
+    func createPreparation(title: String? = nil, text: String, info: String? = nil, order: Int16) {
+        let preparation = Preparation.create(title: title, text: text, info: info, order: order, recipe: self, in: self.managedObjectContext!)
         if preparation != nil {
-            self.preparations.insert(preparation!)
+            self.preparations.append(preparation!)
         }
     }
     
@@ -99,7 +106,7 @@ extension Recipe {
     func createIngredient(name: String, quantity: Float, unit: String? = nil) {
         let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
         if ingredient != nil {
-            self.ingredients.insert(ingredient!)
+            self.ingredients.append(ingredient!)
         }
     }
 }

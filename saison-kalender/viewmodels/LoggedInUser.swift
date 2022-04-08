@@ -34,8 +34,8 @@ class LoggedInUser: ObservableObject {
     }
     
     var collections: Set<Collection> {
-        get { user?.collections ?? [] }
-        set { user?.collections = newValue }
+        get { Set(user?.collections ?? []) }
+        set { user?.collections = Array(newValue) }
     }
     
     var isPresent: Bool {

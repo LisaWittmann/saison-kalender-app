@@ -10,6 +10,8 @@ import CoreData
 
 extension Characteristic: Representable {
     
+    public var id: String { seasonal.name + name }
+    
     var name: String {
         get { name_!}
         set { name_ = newValue}
@@ -19,22 +21,35 @@ extension Characteristic: Representable {
         get { value_! }
         set { value_ = newValue }
     }
+    
+    var seasonal: Seasonal {
+        get { seasonal_! }
+        set { seasonal_ = newValue }
+    }
+}
+
+extension Characteristic: Comparable {
+    
+    public static func < (lhs: Characteristic, rhs: Characteristic) -> Bool {
+        return lhs.order < rhs.order
+    }
+    
 }
 
 extension Characteristic {
     
     static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Characteristic> {
         let request = NSFetchRequest<Characteristic>(entityName: "Characteristic")
-        request.sortDescriptors = [NSSortDescriptor(key: "seasonal", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "order", ascending: true)]
         request.predicate = predicate
         return request
     }
     
-    static func create(name: String, value: String, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic? {
+    static func create(name: String, value: String, order: Int16, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic? {
         let characteristic = Characteristic(context: context)
-        characteristic.id = UUID()
         characteristic.name = name
         characteristic.value = value
+        characteristic.order = order
         characteristic.seasonal = seasonal
         do {
             try context.save()

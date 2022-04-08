@@ -32,7 +32,7 @@ struct RecipeDetail: View {
             Text(recipe.name).modifier(FontH1())
             
             if !recipe.categories.isEmpty {
-                TagList(Array(recipe.categories))
+                TagList(recipe.categories)
             }
                             
             if let intro = recipe.intro {
@@ -44,15 +44,15 @@ struct RecipeDetail: View {
             }
             
             if !recipe.ingredients.isEmpty {
-                body(for: Array(recipe.ingredients))
+                body(for: recipe.ingredients)
             }
             
             if !recipe.preparations.isEmpty {
-                body(for: Array(recipe.preparations))
+                body(for: recipe.preparations)
             }
             
             if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
-                body(for: Array(seasonals))
+                body(for: seasonals)
             }
         }
         .onAppear { manager.set(recipe: recipe) }
@@ -171,13 +171,13 @@ struct RecipeDetail: View {
     }
 }
 
-struct RecipeDetail_Previews: PreviewProvider {
+/*struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         let users = try! calendar.context.fetch(User.fetchRequest())
         
         RecipeDetail(calendar.recipes.randomElement()!, close: {})
-            .environmentObject(LoggedInUser(users.first))
             .environmentObject(calendar)
+            .environmentObject(LoggedInUser(users.first))
     }
-}
+}*/

@@ -28,7 +28,7 @@ struct SeasonalDetail: View {
         ) {
             
             if !seasonal.characteristics.isEmpty {
-                body(for: Array(seasonal.characteristics))
+                body(for: seasonal.characteristics)
             }
             
             if !seasonal.recipes.isEmpty {

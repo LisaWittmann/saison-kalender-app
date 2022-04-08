@@ -9,5 +9,5 @@ import Foundation
 
 protocol Representable: Identifiable {
     
-    var name: String { get set }
+    var name: String { get }
 }

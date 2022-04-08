@@ -20,9 +20,9 @@ extension Seasonal {
         set { recipes_ = newValue as NSSet }
     }
     
-    var characteristics: Set<Characteristic> {
-        get { (characteristics_ as? Set<Characteristic>) ?? [] }
-        set { characteristics_ = newValue as NSSet }
+    var characteristics: Array<Characteristic> {
+        get { (characteristics_ as? Set<Characteristic>)?.sorted() ?? [] }
+        set { characteristics_ = Set(newValue) as NSSet }
     }
 }
 
@@ -33,6 +33,13 @@ extension Seasonal: Representable {
     var name: String {
         get { name_! }
         set { name_ = newValue }
+    }
+}
+
+extension Seasonal: Comparable {
+    
+    public static func < (lhs: Seasonal, rhs: Seasonal) -> Bool {
+        lhs.id < rhs.id
     }
 }
 

@@ -33,22 +33,22 @@ struct PersistenceController {
         let s1 = Seasonal(context: context)
         s1.name = "Mangold"
         s1.seasons = [.März, .April]
-        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
-        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
-        _ = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s1, in: context)
+        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 1, seasonal: s1, in: context)
+        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2, seasonal: s1, in: context)
+        _ = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 3, seasonal: s1, in: context)
         
         let s2 = Seasonal(context: context)
         s2.name = "Radieschen"
         s2.seasons = [.März, .April]
-        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s2, in: context)
-        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s2, in: context)
+        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 3, seasonal: s2, in: context)
+        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2, seasonal: s2, in: context)
         
         let s3 = Seasonal(context: context)
         s3.name = "Erdbeeren"
         s3.seasons = [.März, .April]
-        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
-        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
-        _ = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", seasonal: s3, in: context)
+        _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 1, seasonal: s3, in: context)
+        _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2, seasonal: s3, in: context)
+        _ = Characteristic.create(name: "Anbau", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 3, seasonal: s3, in: context)
         
         let cat1 = RecipeCategory(context: context)
         cat1.name = "Frühstück"
@@ -79,8 +79,8 @@ struct PersistenceController {
         rec2?.addToCategories_(cat1)
         rec2?.addToCategories_(cat4)
         rec2?.addToSeasonals_(s1)
-        rec2?.createPreparation(title: "Wasser kochen", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
-        rec2?.createPreparation(title: "Mangold dünsten", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
+        rec2?.createPreparation(title: "Wasser kochen", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 1)
+        rec2?.createPreparation(title: "Mangold dünsten", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2)
         
         let rec3 = Recipe.create(name: "Mangold Pfanne", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
         rec3?.createIngredient(name: "Mangold", quantity: 1)
@@ -90,8 +90,8 @@ struct PersistenceController {
         rec3?.addToCategories_(cat2)
         rec3?.addToCategories_(cat3)
         rec3?.addToSeasonals_(s1)
-        rec3?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Tipp: Lorem Ipsum")
-        rec3?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.")
+        rec3?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Tipp: Lorem Ipsum", order: 1)
+        rec3?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2)
         
         let rec4 = Recipe.create(name: "Mangold Salat", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
         rec4?.createIngredient(name: "Mangold", quantity: 1)
@@ -102,16 +102,15 @@ struct PersistenceController {
         rec4?.addToCategories_(cat3)
         rec4?.addToSeasonals_(s1)
         rec4?.addToSeasonals_(s2)
-        rec4?.createPreparation(title: "Lorem Ipsum", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Vorsicht: Lorem Ipsum")
-        rec4?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Servier Tipp: Lorem Ipsum")
+        rec4?.createPreparation(title: "Lorem Ipsum", text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Vorsicht: Lorem Ipsum", order: 1)
+        rec4?.createPreparation(text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", info: "Servier Tipp: Lorem Ipsum", order: 2)
         
         let col1 = Collection(context: context)
         col1.name = "April Favoriten"
-        col1.id = UUID()
         col1.addToRecipes_(rec1!)
         col1.addToRecipes_(rec2!)
         col1.addToRecipes_(rec3!)
-        col1.user = u1
+        col1.user = u1!
         
         u1?.addToFavorites_(rec1!)
         u1?.addToFavorites_(rec2!)

@@ -58,7 +58,6 @@ class CollectionManager: ObservableObject {
         if let recipe = self.recipe {
             let context = recipe.managedObjectContext!
             let createdCollection = Collection(context: context)
-            createdCollection.id = UUID()
             createdCollection.name = name
             createdCollection.addToRecipes_(recipe)
             user.add(collection: createdCollection)

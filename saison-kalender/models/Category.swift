@@ -25,6 +25,13 @@ extension RecipeCategory: Representable {
     }
 }
 
+extension RecipeCategory: Comparable {
+    
+    public static func < (lhs: RecipeCategory, rhs: RecipeCategory) -> Bool {
+        lhs.id < rhs.id
+    }
+}
+
 extension RecipeCategory {
     
     static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<RecipeCategory> {

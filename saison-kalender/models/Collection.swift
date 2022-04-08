@@ -13,13 +13,27 @@ extension Collection {
         get { (recipes_ as? Set<Recipe>) ?? [] }
         set { recipes_ = newValue as NSSet }
     }
+    
+    var user: User {
+        get { user_! }
+        set { user_ = newValue }
+    }
 }
 
 extension Collection: Representable {
     
+    public var id: String { user.name + name }
+    
     var name: String {
         get { name_! }
         set { name_ = newValue }
+    }
+}
+
+extension Collection: Comparable {
+    
+    public static func < (lhs: Collection, rhs: Collection) -> Bool {
+        lhs.id < rhs.id
     }
 }
 

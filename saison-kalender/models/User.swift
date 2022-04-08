@@ -14,9 +14,9 @@ extension User {
         set { favorites_ = newValue as NSSet }
     }
     
-    var collections: Set<Collection> {
-        get { (collections_ as? Set<Collection>) ?? [] }
-        set { collections_ = newValue as NSSet }
+    var collections: Array<Collection> {
+        get { (collections_ as? Set<Collection>)?.sorted() ?? [] }
+        set { collections_ = Set(newValue) as NSSet }
     }
 }
 
@@ -37,6 +37,13 @@ extension User: Representable {
     var password: String {
         get { password_! }
         set { password_ = newValue }
+    }
+}
+
+extension User: Comparable {
+    
+    public static func < (lhs: User, rhs: User) -> Bool {
+        lhs.id < rhs.id
     }
 }
 
