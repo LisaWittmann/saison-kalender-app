@@ -23,16 +23,18 @@ struct ContentTeaser: View {
             Image(image)
                 .resizable()
                 .scaledToFill()
-                .opacity(imageOpacity)
+                .opacity(0.7)
+                .blur(radius: 0.5)
                 .frame(
                     width: halfContentWidth,
                     height: contentHeight
                 )
-                .background(colorGreen)
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
+                .background(colorLightGreen)
+                .modifier(BlurredImageStyle())
             Text(title)
                 .font(.custom(fontExtraBold, size: fontSizeHeadline2))
                 .foregroundColor(colorWhite)
+                .shadow(color: colorGrey, radius: 15, x: 1, y: 1)
                 .multilineTextAlignment(.leading)
                 .padding(
                     EdgeInsets(
@@ -47,6 +49,7 @@ struct ContentTeaser: View {
                     height: contentHeight,
                     alignment: .bottomLeading
                 )
+                
         }
     }
     

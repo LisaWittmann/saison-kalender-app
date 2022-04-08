@@ -29,6 +29,7 @@ struct CollectionTeaser: View {
                     width: contentWidth,
                     height: contentHeight
                 )
+                .modifier(BlurredImageStyle())
                 Text(collection.name)
                     .font(.custom(fontExtraBold, size: 30))
                     .foregroundColor(colorWhite)
@@ -47,7 +48,7 @@ struct CollectionTeaser: View {
                     )
             }
             .frame(width: contentWidth)
-            .clipShape(RoundedRectangle(cornerRadius: cornerRadiusSmall))
+            .cornerRadius(cornerRadiusSmall)
             .onTapGesture { showDetail.toggle() }
         }.isDetailLink(false)
     }

@@ -24,6 +24,7 @@ struct CollectionDetail: View {
        SplitScreen(
         images: collection.recipes.map({ $0.name }),
         headline: collection.name,
+        subline: "\(collection.recipes.count) Rezepte",
         close: close
        ) {
             if !collection.recipes.isEmpty {

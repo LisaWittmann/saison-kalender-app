@@ -63,6 +63,7 @@ struct SplitScreen<Content: View>: View {
         ZStack {
             VStack {
                 ImageGroup(images, height: imageHeight)
+                    .modifier(BlurredImageStyle())
                 Spacer()
             }
             VStack {

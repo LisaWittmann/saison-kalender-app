@@ -30,7 +30,6 @@ struct ImageGroup: View {
                     alignment: firstImageAlignment
                 )
                 .clipped()
-            
             if images.count >= 3 {
                 VStack(spacing: 0) {
                     
@@ -58,7 +57,8 @@ struct ImageGroup: View {
                     
                 }
             }
-        }.background(colorGreen)
+        }
+        .background(colorLightGreen)        
     }
     
     var firstImageWidth: CGFloat {
@@ -75,7 +75,7 @@ struct ImageGroup: View {
         return .center
     }
     
-    let imageOpacity: Double = 0.5
+    let imageOpacity: Double = 0.7
 }
 
 

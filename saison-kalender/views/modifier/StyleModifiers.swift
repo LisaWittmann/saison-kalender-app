@@ -54,3 +54,16 @@ struct TextButtonStyle: ViewModifier {
     }
 }
 
+struct BlurredImageStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .blur(radius: 0.5)
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadiusSmall)
+                    .fill(colorBlack)
+                    .opacity(0.3)
+            )
+            .cornerRadius(cornerRadiusSmall)
+    }
+}
+
