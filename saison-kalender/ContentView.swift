@@ -7,7 +7,6 @@
 
 import SwiftUI
 import CoreData
-import PartialSheet
 
 struct ContentView: View {
     @EnvironmentObject var viewRouter: ViewRouter
@@ -47,6 +46,5 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
-            .attachPartialSheetToRoot()
     }
 }
