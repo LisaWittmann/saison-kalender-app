@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct RecipeTeaser: View {
     @EnvironmentObject var user: LoggedInUser
@@ -36,6 +37,7 @@ struct RecipeTeaser: View {
             .environmentObject(user)
             .environmentObject(seasonCalendar)
             .navigationBarHidden(true)
+            .attachPartialSheetToRoot()
     }
 }
 

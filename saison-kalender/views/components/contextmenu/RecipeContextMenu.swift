@@ -13,7 +13,7 @@ struct RecipeContextMenu: View {
     @State var newCollectionName: String = ""
     
     var body: some View {
-        VStack {
+        ContextMenu {
             switch(manager.mode) {
             case .add:
                 ContextNavigation(
@@ -66,7 +66,6 @@ struct RecipeContextMenu: View {
                 VStack {}
             }
         }
-        .padding(spacingSmall)
     }
     
     @ViewBuilder

@@ -22,52 +22,50 @@ struct RecipeDetail: View {
     }
     
     var body: some View {
-        SplitScreen(
-            images: [recipe.name],
-            headline: recipe.name,
-            close: close,
-            icon: icon,
-            onIconTap: onIconTap
-        ) {
-            Text(recipe.name).modifier(FontH1())
+        ZStack {
+            SplitScreen(
+                images: [recipe.name],
+                headline: recipe.name,
+                close: close,
+                icon: icon,
+                onIconTap: onIconTap
+            ) {
+                Text(recipe.name).modifier(FontH1())
+                
+                if !recipe.categories.isEmpty {
+                    TagList(recipe.categories)
+                }
+                                
+                if let intro = recipe.intro {
+                    Text(intro).modifier(FontText())
+                }
             
-            if !recipe.categories.isEmpty {
-                TagList(recipe.categories)
+                if let nutrition = recipe.nutrition {
+                    body(for: nutrition)
+                }
+                
+                if !recipe.ingredients.isEmpty {
+                    body(for: recipe.ingredients)
+                }
+                
+                if !recipe.preparations.isEmpty {
+                    body(for: recipe.preparations)
+                }
+                
+                if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
+                    body(for: seasonals)
+                }
             }
-                            
-            if let intro = recipe.intro {
-                Text(intro).modifier(FontText())
-            }
-        
-            if let nutrition = recipe.nutrition {
-                body(for: nutrition)
-            }
-            
-            if !recipe.ingredients.isEmpty {
-                body(for: recipe.ingredients)
-            }
-            
-            if !recipe.preparations.isEmpty {
-                body(for: recipe.preparations)
-            }
-            
-            if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
-                body(for: seasonals)
+            if manager.isPresented {
+                VStack {
+                    Spacer()
+                    RecipeContextMenu(manager: manager)
+                        .zIndex(.infinity)
+                }
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .onAppear { manager.set(recipe: recipe) }
-        .partialSheet(
-            isPresented: $manager.isPresented,
-            iPhoneStyle: .init(
-                background: .solid(colorBeige),
-                handleBarStyle: .none,
-                cover: .disabled,
-                cornerRadius: 40
-            )
-        ) {
-            RecipeContextMenu(manager: manager)
-                .environmentObject(user)
-        }
     }
     
     @ViewBuilder

@@ -7,7 +7,6 @@
 
 import SwiftUI
 import CoreData
-import PartialSheet
 
 @main
 struct SaisonKalenderApp: App {
@@ -19,7 +18,6 @@ struct SaisonKalenderApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, seasonCalendar.context)
-                .attachPartialSheetToRoot()
                 .environmentObject(user)
                 .environmentObject(viewRouter)
                 .environmentObject(seasonCalendar)
