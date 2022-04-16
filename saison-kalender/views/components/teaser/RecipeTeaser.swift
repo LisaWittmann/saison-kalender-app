@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PartialSheet
 
 struct RecipeTeaser: View {
     @EnvironmentObject var user: LoggedInUser
@@ -26,7 +25,7 @@ struct RecipeTeaser: View {
             destination: detail(for: recipe),
             isActive: $showDetail
         ) {
-            ContentTeaser(recipe.name, rect: rect)
+            ContentTeaser(recipe.name, image: recipe.slot, rect: rect)
                 .onTapGesture { showDetail.toggle() }
         }.isDetailLink(false)
     }
@@ -37,7 +36,6 @@ struct RecipeTeaser: View {
             .environmentObject(user)
             .environmentObject(seasonCalendar)
             .navigationBarHidden(true)
-            .attachPartialSheetToRoot()
     }
 }
 

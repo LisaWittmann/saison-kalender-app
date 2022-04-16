@@ -21,7 +21,7 @@ struct SeasonalDetail: View {
     
     var body: some View {
         SplitScreen(
-            images: [seasonal.name],
+            images: [seasonal.slot],
             headline: seasonal.name,
             subline: "Saisonal im \(seasonCalendar.season.name)",
             close: close

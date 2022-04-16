@@ -38,6 +38,15 @@ extension Recipe: Representable {
         get { name_! }
         set { name_ = newValue }
     }
+    
+    var slot: String {
+        return name.replacingOccurrences(of: "ö", with: "oe")
+            .replacingOccurrences(of: "ä", with: "ae")
+            .replacingOccurrences(of: "ü", with: "ue")
+            .replacingOccurrences(of: "ß", with: "ss")
+            .replacingOccurrences(of: " ", with: "-")
+            .lowercased()
+    }
 }
 
 extension Recipe: Comparable {

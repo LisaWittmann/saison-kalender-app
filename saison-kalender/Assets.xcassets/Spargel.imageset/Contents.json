@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "spargel.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Spargel.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

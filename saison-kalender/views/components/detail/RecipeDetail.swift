@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import PartialSheet
 
 struct RecipeDetail: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
@@ -24,7 +23,7 @@ struct RecipeDetail: View {
     var body: some View {
         ZStack {
             SplitScreen(
-                images: [recipe.name],
+                images: [recipe.slot],
                 headline: recipe.name,
                 close: close,
                 icon: icon,
@@ -102,7 +101,7 @@ struct RecipeDetail: View {
     @ViewBuilder
     private func detail(for ingredient: Ingredient) -> some View {
         HStack(spacing: spacingSmall) {
-            Image(ingredient.name)
+            Image(ingredient.slot)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 30)

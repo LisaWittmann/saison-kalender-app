@@ -9,14 +9,16 @@ import SwiftUI
 import SwiftUIMasonry
 
 struct RecipeMasonry: View {
+    var columns: Int
     var recipes: [Recipe]
     
-    init(_ recipes: [Recipe]) {
+    init(_ recipes: [Recipe], columns: Int = 2) {
         self.recipes = recipes
+        self.columns = columns
     }
     
     var body: some View {
-        VMasonry(columns: 2, spacing: spacingMedium) {
+        VMasonry(columns: columns, spacing: spacingMedium) {
             ForEach(Array(recipes)) { recipe in
                 RecipeTeaser(recipe, rect: isRectangle(recipe))
             }
@@ -25,7 +27,8 @@ struct RecipeMasonry: View {
     
     private func isRectangle(_ recipe: Recipe) -> Bool {
         let index = recipes.firstIndex(of: recipe)!
-        return !(index % 4 == 0 || (index+1) % 4 == 0)
+        let factor = columns * 2
+        return !(index % factor == 0 || (index+1) % factor == 0)
     }
 }
 

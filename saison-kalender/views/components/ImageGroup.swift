@@ -82,7 +82,7 @@ struct ImageGroup: View {
 struct ImageGroup_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
-        let images = calendar.recipes.map({ $0.name })
+        let images = calendar.recipes.map({ $0.slot })
         
         ScrollView {
             VStack {

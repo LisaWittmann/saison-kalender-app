@@ -44,7 +44,7 @@ struct PersistenceController {
         _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2, seasonal: s2, in: context)
         
         let s3 = Seasonal(context: context)
-        s3.name = "Erdbeeren"
+        s3.name = "Erdbeere"
         s3.seasons = [.März, .April]
         _ = Characteristic.create(name: "Wissenswertes", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 1, seasonal: s3, in: context)
         _ = Characteristic.create(name: "Ernte", value: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", order: 2, seasonal: s3, in: context)
@@ -63,7 +63,7 @@ struct PersistenceController {
         cat4.name = "Backen"
         
         let rec1 = Recipe.create(name: "Erdbeer Tarteletts", intro: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.", in: context)
-        rec1?.createIngredient(name: "Erdbeeren", quantity: 500, unit: "g")
+        rec1?.createIngredient(name: "Erdbeere", quantity: 500, unit: "g")
         rec1?.createIngredient(name: "Mehl", quantity: 1, unit: "kg")
         rec1?.createNutrition(calories: 555, protein: 67, fat: 0.6, carbs: 2.5)
         rec1?.addToCategories_(cat4)

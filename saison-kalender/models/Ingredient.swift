@@ -20,6 +20,15 @@ extension Ingredient: Representable {
         get { recipe_! }
         set { recipe_ = newValue }
     }
+    
+    var slot: String {
+        return name.replacingOccurrences(of: "ö", with: "oe")
+            .replacingOccurrences(of: "ä", with: "ae")
+            .replacingOccurrences(of: "ü", with: "ue")
+            .replacingOccurrences(of: "ß", with: "ss")
+            .replacingOccurrences(of: " ", with: "-")
+            .lowercased()
+    }
 }
 
 extension Ingredient: Comparable {

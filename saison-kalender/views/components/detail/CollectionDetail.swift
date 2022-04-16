@@ -22,7 +22,7 @@ struct CollectionDetail: View {
     
     var body: some View {
        SplitScreen(
-        images: collection.recipes.map({ $0.name }),
+        images: collection.recipes.map({ $0.slot }),
         headline: collection.name,
         subline: "\(collection.recipes.count) Rezepte",
         close: close

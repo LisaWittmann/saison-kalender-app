@@ -122,7 +122,7 @@ struct SplitScreen<Content: View>: View {
 struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
         SplitScreen(
-            images: ["Mangold"],
+            images: ["mangold"],
             headline: "Mangold",
             subline: "Saisonal im März",
             close: {},
