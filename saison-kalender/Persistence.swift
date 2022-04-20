@@ -398,6 +398,7 @@ struct PersistenceController {
         r9.createPreparation(text: "Möhren schälen und in feine Stifte schneiden. Mango schälen, Fruchtfleisch vom Kern lösen und würfeln. Avocado halbieren, entkernen, Fruchtfleisch aus der Schale heben, in Würfel schneiden. Sprossen und Limette waschen und trocknen.", order: 4)
         r9.createPreparation(text: "Nudeln nach Packungsanleitung in kochendem Salzwasser bissfest garen; mit kaltem Wasser ab- schrecken. Inzwischen Spinat und Radieschen putzen und waschen, Radieschen in Scheiben schneiden.", order: 5)
         
+        
         let user = User.create(name: "Lisa", email: "lisa@mail.com", password: "test", in: context)
         let collection = Collection.create(name: "April Favoriten", user: user, recipes: Set([r1, r3, r6]), in: context)
     }

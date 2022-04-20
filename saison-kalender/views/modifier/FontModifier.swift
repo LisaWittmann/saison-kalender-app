@@ -50,12 +50,19 @@ struct FontText: ViewModifier {
     }
 }
 
+struct FontError: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom(fontMedium, size: fontSizeHeadline2))
+            .foregroundColor(.red)
+            .frame(maxWidth: .infinity, alignment: .center)
+    }
+}
+
 struct FontLabel: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom(fontMedium,
-                size: fontSizeHeadline2
-            ))
+            .font(.custom(fontMedium, size: fontSizeHeadline2))
     }
 }
 

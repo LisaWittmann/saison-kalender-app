@@ -7,14 +7,8 @@
 
 import Foundation
 
-struct LoginModel {
-    var name: String = ""
-    var password: String = ""
-}
-
-struct RegisterModel {
+struct UserFormModel {
     var name: String = ""
     var email: String = ""
     var password: String = ""
-    var passwordRepeat: String = ""
 }

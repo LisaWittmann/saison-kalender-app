@@ -7,33 +7,18 @@
 
 import SwiftUI
 
-struct InputField: View {
-    @Binding var input: String
-    var placeholder: String
-    var icon: String
-    var secure: Bool
-    
-    init(_ input: Binding<String>, placeholder: String, icon: String = "", secure: Bool = false) {
-        self._input = input
-        self.placeholder = placeholder
-        self.icon = icon
-        self.secure = secure
-    }
+struct InputField<Content: View>: View {
+    var icon: String? = nil
+    var error: Bool = false
+    var content: () -> Content
 
     var body: some View {
         HStack(spacing: spacingMedium) {
-            if icon != "" {
-                Image(systemName: icon)
+            if let systemName = icon {
+                Image(systemName: systemName)
                     .foregroundColor(colorGreen)
             }
-            if secure {
-                SecureField(placeholder, text: $input)
-                    .modifier(TextFieldStyle())
-            }
-            else {
-                TextField(placeholder, text: $input)
-                    .modifier(TextFieldStyle())
-            }
+            content().modifier(TextFieldStyle())
         }
         .modifier(InputFieldStyle())
     }
@@ -42,17 +27,15 @@ struct InputField: View {
 struct InputField_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: spacingMedium) {
-            InputField(.constant(""),
-                placeholder:  "E-Mail",
-                icon: "envelope.fill"
-            )
-            InputField(.constant("Nutzername124"),
-                placeholder: "Nutzername",
-                icon: "person.fill"
-            )
-            InputField(.constant(""),
-                placeholder: "Passwort"
-            )
+            InputField(icon: "envelope.fill") {
+                TextField("E-Mail", text: .constant(""))
+            }
+            InputField(icon: "person.fill") {
+                TextField("Nutzername", text: .constant("Nutzername1234"))
+            }
+            InputField {
+                SecureField("Passwort", text: .constant(""))
+            }
         }.padding()
     }
 }

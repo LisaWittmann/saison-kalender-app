@@ -22,9 +22,7 @@ struct TextFieldStyle: ViewModifier {
         content
             .disableAutocorrection(true)
             .autocapitalization(.none)
-            .font(.custom(fontMedium,
-                size: fontSizeHeadline2
-            ))
+            .font(.custom(fontMedium, size: fontSizeHeadline2))
             .foregroundColor(colorBlack)
     }
 }
@@ -37,9 +35,7 @@ struct ButtonStyle: ViewModifier {
             .padding(.bottom, spacingSmall)
             .background(colorGreen)
             .cornerRadius(cornerRadiusMedium)
-            .font(.custom(fontBold,
-                size: fontSizeHeadline2
-            ))
+            .font(.custom(fontBold, size: fontSizeHeadline2))
     }
 }
 
@@ -48,9 +44,7 @@ struct TextButtonStyle: ViewModifier {
         content
             .foregroundColor(colorGreen)
             .padding(.top, spacingExtraSmall)
-            .font(.custom(fontBold,
-                size: fontSizeHeadline2
-            ))
+            .font(.custom(fontBold, size: fontSizeHeadline2))
     }
 }
 

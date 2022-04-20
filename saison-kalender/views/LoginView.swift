@@ -12,8 +12,8 @@ struct LoginView: View {
     @EnvironmentObject var user: LoggedInUser
     
     @State var inLoginMode = true
-    @State var loginModel = LoginModel()
-    @State var registerModel = RegisterModel()
+    @State var formModel = UserFormModel()
+    @State var errorMessage: String? = nil
     
     var body: some View {
         Page {
@@ -29,25 +29,33 @@ struct LoginView: View {
                 registerForm()
             }
             Spacer()
+            if let error = errorMessage {
+                Text(error).modifier(FontError())
+                    
+            }
+            Spacer()
         }
     }
     
     @ViewBuilder
     private func loginForm() -> some View {
         VStack(spacing: spacingMedium) {
-            InputField($loginModel.name,
-                placeholder: "Nutzername",
-                icon: "person.fill"
-            )
-            InputField($loginModel.password,
-                placeholder: "Passwort",
-                icon: "lock.fill",
-                secure: true
-            )
+            InputField(icon: "person.fill") {
+                TextField(
+                    "Nutzername",
+                    text: $formModel.name
+                )
+            }
+            InputField(icon: "lock.fill") {
+                SecureField(
+                    "Passwort",
+                    text: $formModel.password
+                )
+            }
             Button("Anmelden", action: login)
                 .frame(width: contentWidth)
                 .modifier(ButtonStyle())
-            Button("Noch kein Konto?", action: { inLoginMode.toggle() })
+            Button("Noch kein Konto?", action: { switchMode() })
                 .frame(
                     width: contentWidth,
                     alignment: .trailing
@@ -59,27 +67,28 @@ struct LoginView: View {
     @ViewBuilder
     private func registerForm() -> some View {
         VStack(spacing: spacingMedium) {
-            InputField($registerModel.email,
-                placeholder: "E-Mail",
-                icon: "envelope.fill"
-            )
-            InputField($registerModel.name,
-                placeholder: "Nutzername",
-                icon: "person.fill"
-            )
-            InputField($registerModel.password,
-                placeholder: "Passwort",
-                icon: "lock.fill"
-            )
-            InputField($registerModel.passwordRepeat,
-                placeholder: "Passwort wiederholen",
-                icon: "lock.fill",
-                secure: true
-            )
+            InputField(icon: "envelope.fill") {
+                TextField(
+                    "E-Mail",
+                    text: $formModel.email
+                )
+            }
+            InputField(icon: "person.fill") {
+                TextField(
+                    "Nutzername",
+                    text: $formModel.name
+                )
+            }
+            InputField(icon: "lock.fill") {
+                SecureField(
+                    "Passwort",
+                    text: $formModel.password
+                )
+            }
             Button("Registrieren", action: register)
                 .frame(width: contentWidth)
                 .modifier(ButtonStyle())
-            Button("Jetzt anmelden", action: { inLoginMode.toggle() })
+            Button("Jetzt anmelden", action: { switchMode() })
                 .frame(
                     width: contentWidth,
                     alignment: .trailing
@@ -88,24 +97,38 @@ struct LoginView: View {
         }
     }
     
+    private func switchMode() {
+        inLoginMode.toggle()
+        formModel = UserFormModel()
+        errorMessage = nil
+    }
+    
     private func login() {
         let user = User.with(
-            name: loginModel.name,
-            password: loginModel.password,
+            name: formModel.name,
+            password: formModel.password,
             from: viewContext
         )
         self.user.login(user)
+        
+        if self.user.isPresent {
+            errorMessage = nil
+        } else {
+            errorMessage = "Login fehlgeschlagen"
+        }
     }
     
     private func register() {
         let user = User.register(
-            name: registerModel.name,
-            email: registerModel.email,
-            password: registerModel.password,
+            name: formModel.name,
+            email: formModel.email,
+            password: formModel.password,
             in: viewContext
         )
         if user != nil {
-            inLoginMode.toggle()
+            switchMode()
+        } else {
+            errorMessage = "Registrierung fehlgeschlagen"
         }
     }
 }
