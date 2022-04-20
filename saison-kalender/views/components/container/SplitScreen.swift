@@ -9,19 +9,19 @@ import SwiftUI
 
 struct SplitScreen<Content: View>: View {
     var images: [String]
-    var headline: String
-    var subline: String
+    var headline: String?
+    var subline: String?
     var close: () -> ()
-    var icon: String
+    var icon: String?
     var onIconTap: () -> Void
     var content: () -> Content
     
     init(
         images: [String],
-        headline: String = "",
-        subline: String = "",
+        headline: String? = nil,
+        subline: String? = nil,
         close: @escaping () -> Void,
-        icon: String = "",
+        icon: String? = nil,
         onIconTap: @escaping () -> Void = {},
         @ViewBuilder content: @escaping () -> Content
     ) {
@@ -96,18 +96,33 @@ struct SplitScreen<Content: View>: View {
     @ViewBuilder
     private func headerContent() -> some View {
         HStack {
-            Headline(headline, subline, color: colorWhite)
-                .frame(height: textHeight, alignment: .bottom)
             VStack {
-                Image(systemName: icon)
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundColor(colorWhite)
-                    .onTapGesture { onIconTap() }
-                    .frame(width: iconWidth)
+                if let subtitle = subline {
+                    Text(subtitle)
+                        .modifier(FontSubtitle())
+                        .foregroundColor(colorWhite)
+                        .padding(.bottom, -spacingMedium)
+                }
+                if let title = headline {
+                    Text(title)
+                        .modifier(FontTitle())
+                        .foregroundColor(colorWhite)
+                }
+                    
+            }.frame(height: textHeight, alignment: .bottom)
+            
+            if let systemName = icon {
+                VStack {
+                    Image(systemName: systemName)
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundColor(colorWhite)
+                        .onTapGesture { onIconTap() }
+                        .frame(width: iconWidth)
+                }
+                .frame(height: textHeight, alignment: .bottom)
+                .padding(.bottom, spacingMedium)
             }
-            .frame(height: textHeight, alignment: .bottom)
-            .padding(.bottom, spacingMedium)
         }
     }
     
@@ -124,7 +139,7 @@ struct SplitScreen_Previews: PreviewProvider {
         SplitScreen(
             images: ["mangold"],
             headline: "Mangold",
-            subline: "Saisonal im März",
+            subline: "Saisonal im Mai",
             close: {},
             icon: "heart"
         ) {

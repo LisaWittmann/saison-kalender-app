@@ -59,7 +59,33 @@ extension User {
  
 extension User {
     
-    static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
+    static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        if let user = users.first {
+            return user
+        }
+        let newUser = User(context: context)
+        newUser.name = name
+        newUser.email = email
+        newUser.password = password
+        try? context.save()
+        return newUser
+    }
+    
+    static func with(name: String, password: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
+    
+    static func with(name: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
+    
+    static func register(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
         let predicate = NSPredicate(format: "name_ = %@", name)
         let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         if users.first != nil {
@@ -75,17 +101,5 @@ extension User {
             return nil
         }
         return newUser
-    }
-    
-    static func with(name: String, password: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
-        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        return matchingUsers.first
-    }
-    
-    static func with(name: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "name_ = %@", name)
-        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        return matchingUsers.first
     }
 }

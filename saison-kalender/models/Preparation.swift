@@ -33,7 +33,7 @@ extension Preparation: Comparable {
 extension Preparation {
     
     static func fetchRequest(_ predicate: NSPredicate?) -> NSFetchRequest<Preparation> {
-        let request = NSFetchRequest<Preparation>(entityName: "Precipe.namereparation")
+        let request = NSFetchRequest<Preparation>(entityName: "Preparation")
         request.sortDescriptors = [NSSortDescriptor(key: "order", ascending: true)]
         request.predicate = predicate
         return request
@@ -42,18 +42,21 @@ extension Preparation {
 
 extension Preparation {
     
-    static func create(title: String?, text: String, info: String?, order: Int16, recipe: Recipe, in context: NSManagedObjectContext) -> Preparation? {
-        let preparation = Preparation(context: context)
-        preparation.title = title
-        preparation.order = order
-        preparation.info = info
-        preparation.text = text
-        preparation.recipe = recipe
-        do {
-            try context.save()
-        } catch {
-            return nil
+    static func create(_ order: Int16, title: String? = nil, text: String, info: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
+        if let preparation = recipe.preparations.filter({ $0.order == order }).first {
+            preparation.title = title
+            preparation.text = text
+            preparation.info = info
+            try? context.save()
+            return preparation
         }
-        return preparation
+        let newPreparation = Preparation(context: context)
+        newPreparation.title = title
+        newPreparation.order = order
+        newPreparation.info = info
+        newPreparation.text = text
+        newPreparation.recipe = recipe
+        try? context.save()
+        return newPreparation
     }
 }

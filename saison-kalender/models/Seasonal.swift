@@ -35,7 +35,7 @@ extension Seasonal: Representable {
         set { name_ = newValue }
     }
     
-    var slot: String {
+    var slug: String {
         return name.replacingOccurrences(of: "ö", with: "oe")
             .replacingOccurrences(of: "ä", with: "ae")
             .replacingOccurrences(of: "ü", with: "ue")
@@ -64,20 +64,23 @@ extension Seasonal {
 
 extension Seasonal {
     
-    static func create(name: String, seasons: [Season], recipe: Recipe?, in context: NSManagedObjectContext) -> Seasonal? {
+    static func create(name: String, seasons: [Season], in context: NSManagedObjectContext) -> Seasonal {
         let predicate = NSPredicate(format: "name_ = %@", name)
         let seasonals = (try? context.fetch(Seasonal.fetchRequest(predicate))) ?? []
-        if seasonals.first != nil {
-            return nil
+        if let seasonal = seasonals.first {
+            seasonal.seasons = seasons
+            try? context.save()
+            return seasonal
         }
         let newSeasonal = Seasonal(context: context)
         newSeasonal.name = name
         newSeasonal.seasons = seasons
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
+        try? context.save()
         return newSeasonal
+    }
+    
+    func createCharacteristic(_ order: Int16, name: String, value: String) {
+        let characteristic = Characteristic.create(name: name, value: value, order: order, seasonal: self, in: self.managedObjectContext!)
+        self.characteristics.append(characteristic)
     }
 }

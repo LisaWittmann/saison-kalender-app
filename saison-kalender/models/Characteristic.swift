@@ -45,17 +45,19 @@ extension Characteristic {
         return request
     }
     
-    static func create(name: String, value: String, order: Int16, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic? {
+    static func create(name: String, value: String, order: Int16, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
+        if let characteristic = seasonal.characteristics.filter({ $0.order == order }).first {
+            characteristic.name = name
+            characteristic.value = value
+            try? context.save()
+            return characteristic
+        }
         let characteristic = Characteristic(context: context)
         characteristic.name = name
         characteristic.value = value
         characteristic.order = order
         characteristic.seasonal = seasonal
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
+        try? context.save()
         return characteristic
     }
 }

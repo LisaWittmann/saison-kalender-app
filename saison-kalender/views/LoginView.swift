@@ -98,7 +98,7 @@ struct LoginView: View {
     }
     
     private func register() {
-        let user = User.create(
+        let user = User.register(
             name: registerModel.name,
             email: registerModel.email,
             password: registerModel.password,

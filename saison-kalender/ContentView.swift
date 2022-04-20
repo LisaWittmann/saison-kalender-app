@@ -31,7 +31,6 @@ struct ContentView: View {
                 }
             }
             Menu()
-                .zIndex(1)
         }.edgesIgnoringSafeArea(.all)
     }
 

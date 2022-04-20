@@ -23,7 +23,7 @@ struct RecipeDetail: View {
     var body: some View {
         ZStack {
             SplitScreen(
-                images: [recipe.slot],
+                images: [recipe.slug],
                 headline: recipe.name,
                 close: close,
                 icon: icon,
@@ -55,16 +55,15 @@ struct RecipeDetail: View {
                     body(for: seasonals)
                 }
             }
-            if manager.isPresented {
-                VStack {
-                    Spacer()
-                    RecipeContextMenu(manager: manager)
-                        .zIndex(.infinity)
-                }
-            }
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear { manager.set(recipe: recipe) }
+        .sheet(isPresented: $manager.isPresented) {
+            VStack {
+                Spacer()
+                RecipeContextMenu(manager: manager)
+            }
+        }
     }
     
     @ViewBuilder
@@ -101,7 +100,7 @@ struct RecipeDetail: View {
     @ViewBuilder
     private func detail(for ingredient: Ingredient) -> some View {
         HStack(spacing: spacingSmall) {
-            Image(ingredient.slot)
+            Image(ingredient.slug)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 30)
@@ -168,13 +167,12 @@ struct RecipeDetail: View {
     }
 }
 
-/*struct RecipeDetail_Previews: PreviewProvider {
+struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
-        let users = try! calendar.context.fetch(User.fetchRequest())
         
-        RecipeDetail(calendar.recipes.randomElement()!, close: {})
+        RecipeDetail(calendar.recipes.first!, close: {})
             .environmentObject(calendar)
-            .environmentObject(LoggedInUser(users.first))
+            .environmentObject(LoggedInUser())
     }
-}*/
+}

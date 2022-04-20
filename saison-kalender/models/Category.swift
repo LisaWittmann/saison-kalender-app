@@ -40,4 +40,17 @@ extension RecipeCategory {
         request.predicate = predicate
         return request
     }
+    
+    static func create(name: String, in context: NSManagedObjectContext) -> RecipeCategory {
+        let predicate = NSPredicate(format: "name_ = %@", name)
+        let categories = (try? context.fetch(RecipeCategory.fetchRequest(predicate))) ?? []
+        if let category = categories.first {
+            return category
+        }
+        let newCategory = RecipeCategory(context: context)
+        newCategory.name = name
+        try? context.save()
+        return newCategory
+        
+    }
 }

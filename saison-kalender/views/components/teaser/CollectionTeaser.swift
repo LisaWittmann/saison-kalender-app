@@ -25,7 +25,7 @@ struct CollectionTeaser: View {
         ) {
             ZStack {
                 ImageGroup(
-                    collection.recipes.map({ $0.name }),
+                    collection.recipes.map({ $0.slug }),
                     width: contentWidth,
                     height: contentHeight
                 )

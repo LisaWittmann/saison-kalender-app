@@ -23,7 +23,7 @@ struct SeasonalTeaser: View {
             destination: detail(for: seasonal),
             isActive: $showDetail
         ) {
-            ContentTeaser(seasonal.name, image: seasonal.slot)
+            ContentTeaser(seasonal.name, image: seasonal.slug)
                 .onTapGesture { showDetail.toggle() }
         }.isDetailLink(false)
     }

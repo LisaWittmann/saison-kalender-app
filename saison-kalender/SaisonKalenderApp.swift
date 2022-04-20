@@ -12,7 +12,7 @@ import CoreData
 struct SaisonKalenderApp: App {
     @StateObject var viewRouter = ViewRouter()
     @StateObject var user = LoggedInUser()
-    @StateObject var seasonCalendar = SeasonCalendar.preview
+    @StateObject var seasonCalendar = SeasonCalendar.shared
 
     var body: some Scene {
         WindowGroup {

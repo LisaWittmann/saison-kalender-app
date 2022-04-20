@@ -6,6 +6,7 @@
 //
 
 import CoreData
+import SwiftUI
 
 extension Collection {
     
@@ -44,5 +45,19 @@ extension Collection {
         request.sortDescriptors = [NSSortDescriptor(key: "name_", ascending: true)]
         request.predicate = predicate
         return request
+    }
+    
+    static func create(name: String, user: User, recipes: Set<Recipe>, in context: NSManagedObjectContext) -> Collection {
+        if let collection = user.collections.filter({ $0.name == name }).first {
+            collection.recipes = recipes
+            try? context.save()
+            return collection
+        }
+        let newCollection = Collection(context: context)
+        newCollection.name = name
+        newCollection.user = user
+        newCollection.recipes = recipes
+        try? context.save()
+        return newCollection
     }
 }

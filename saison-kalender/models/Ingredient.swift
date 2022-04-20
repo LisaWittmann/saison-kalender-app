@@ -21,7 +21,7 @@ extension Ingredient: Representable {
         set { recipe_ = newValue }
     }
     
-    var slot: String {
+    var slug: String {
         return name.replacingOccurrences(of: "ö", with: "oe")
             .replacingOccurrences(of: "ä", with: "ae")
             .replacingOccurrences(of: "ü", with: "ue")
@@ -50,17 +50,19 @@ extension Ingredient {
 
 extension Ingredient {
     
-    static func create(name: String, quanity: Float, unit: String?, recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient? {
+    static func create(name: String, quanity: Float, unit: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
+        if let ingredient = recipe.ingredients.filter({ $0.name == name }).first {
+            ingredient.quantity = quanity
+            ingredient.unit = unit
+            try? context.save()
+            return ingredient
+        }
         let ingredient = Ingredient(context: context)
         ingredient.name = name
         ingredient.quantity = quanity
         ingredient.unit = unit
         ingredient.recipe = recipe
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
+        try? context.save()
         return ingredient
     }
 }

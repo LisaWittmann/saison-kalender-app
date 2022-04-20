@@ -58,7 +58,7 @@ struct SeasonItem: View {
             Circle()
                 .fill(colorGreen)
                 .frame(width: circleSize, height: circleSize)
-            Image(seasonal.name)
+            Image(seasonal.slug)
                 .resizable()
                 .scaledToFill()
                 .frame(

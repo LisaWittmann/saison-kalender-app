@@ -29,18 +29,22 @@ extension Nutrition {
 
 extension Nutrition {
     
-    static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition? {
+    static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition {
+        if let nutrition = recipe.nutrition {
+            nutrition.calories = calories
+            nutrition.carbs = carbs
+            nutrition.protein = protein
+            nutrition.fat = fat
+            try? context.save()
+            return nutrition
+        }
         let nutrition = Nutrition(context: context)
         nutrition.calories = calories
         nutrition.carbs = carbs
         nutrition.fat = fat
         nutrition.protein = protein
         nutrition.recipe = recipe
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
+        try? context.save()
         return nutrition
     }
 }

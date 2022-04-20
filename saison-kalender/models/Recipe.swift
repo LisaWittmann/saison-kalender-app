@@ -39,7 +39,7 @@ extension Recipe: Representable {
         set { name_ = newValue }
     }
     
-    var slot: String {
+    var slug: String {
         return name.replacingOccurrences(of: "ö", with: "oe")
             .replacingOccurrences(of: "ä", with: "ae")
             .replacingOccurrences(of: "ü", with: "ue")
@@ -84,28 +84,24 @@ extension Recipe {
     
 extension Recipe {
     
-    static func create(name: String, intro: String? = nil, in context: NSManagedObjectContext) -> Recipe? {
+    static func create(name: String, intro: String? = nil, in context: NSManagedObjectContext) -> Recipe {
         let predicate = NSPredicate(format: "name_ = %@", name)
         let recipes = (try? context.fetch(Recipe.fetchRequest(predicate))) ?? []
-        if recipes.first != nil {
-            return nil
+        if let recipe = recipes.first {
+            recipe.intro = intro
+            try? context.save()
+            return recipe
         }
         let newRecipe = Recipe(context: context)
         newRecipe.name = name
         newRecipe.intro = intro
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
+        try? context.save()
         return newRecipe
     }
     
     func createPreparation(title: String? = nil, text: String, info: String? = nil, order: Int16) {
-        let preparation = Preparation.create(title: title, text: text, info: info, order: order, recipe: self, in: self.managedObjectContext!)
-        if preparation != nil {
-            self.preparations.append(preparation!)
-        }
+        let preparation = Preparation.create(order, title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
+        self.preparations.append(preparation)
     }
     
     func createNutrition(calories: Float, protein: Float, fat: Float, carbs: Float) {
@@ -114,8 +110,6 @@ extension Recipe {
     
     func createIngredient(name: String, quantity: Float, unit: String? = nil) {
         let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
-        if ingredient != nil {
-            self.ingredients.append(ingredient!)
-        }
+        self.ingredients.append(ingredient)
     }
 }

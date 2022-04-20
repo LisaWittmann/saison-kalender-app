@@ -25,7 +25,7 @@ struct RecipeTeaser: View {
             destination: detail(for: recipe),
             isActive: $showDetail
         ) {
-            ContentTeaser(recipe.name, image: recipe.slot, rect: rect)
+            ContentTeaser(recipe.name, image: recipe.slug, rect: rect)
                 .onTapGesture { showDetail.toggle() }
         }.isDetailLink(false)
     }
