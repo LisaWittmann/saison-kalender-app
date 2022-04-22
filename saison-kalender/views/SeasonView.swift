@@ -96,6 +96,7 @@ struct SeasonView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
+            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

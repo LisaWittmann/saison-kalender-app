@@ -58,11 +58,8 @@ struct RecipeDetail: View {
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear { manager.set(recipe: recipe) }
-        .sheet(isPresented: $manager.isPresented) {
-            VStack {
-                Spacer()
-                RecipeContextMenu(manager: manager)
-            }
+        .contextMenuSheet(isPresented: $manager.isPresented, menuStyle: .init(background: colorBeige, cornerRadius: cornerRadiusMedium)) {
+            RecipeContextMenu(manager: manager)
         }
     }
     
@@ -172,7 +169,9 @@ struct RecipeDetail_Previews: PreviewProvider {
         let calendar = SeasonCalendar.preview
         
         RecipeDetail(calendar.recipes.first!, close: {})
-            .environmentObject(calendar)
+            .modifier(ContextMenu())
             .environmentObject(LoggedInUser())
+            .environmentObject(ContextMenuManager())
+            .environmentObject(calendar)
     }
 }

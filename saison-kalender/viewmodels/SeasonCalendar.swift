@@ -40,23 +40,23 @@ class SeasonCalendar: ObservableObject {
     
     private static func getSeason() -> Season {
         let currentMonth = Calendar.current.component(.month, from: Date())
-        let currentSeason = Season.allCases.filter({ $0.month == currentMonth }).first!
+        let currentSeason = Season.allCases.filter{ $0.month == currentMonth }.first!
         return currentSeason
     }
     
     private static func getRecipes(for season: Season, from context: NSManagedObjectContext) -> [Recipe] {
         let recipes: [Recipe] = (try? context.fetch(Recipe.fetchRequest())) ?? []
-        return recipes.filter({ $0.seasons.contains(season) })
+        return recipes.filter{ $0.seasons.contains(season) }
     }
     
     private static func getSeasonals(for season: Season, from context: NSManagedObjectContext) -> [Seasonal] {
         let seasonals: [Seasonal] = (try? context.fetch(Seasonal.fetchRequest())) ?? []
-        return seasonals.filter({ $0.seasons.contains(season) })
+        return seasonals.filter{ $0.seasons.contains(season) }
     }
     
     func filterRecipes(by category: RecipeCategory?) -> [Recipe] {
         if let filter = category {
-            return recipes.filter({ $0.categories.contains(filter) })
+            return recipes.filter{ $0.categories.contains(filter) }
         }
         return recipes
     }

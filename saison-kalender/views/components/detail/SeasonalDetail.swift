@@ -60,6 +60,7 @@ struct SeasonalDetail_Previews: PreviewProvider {
         
         SeasonalDetail(calendar.seasonals.first!, close: {})
             .environmentObject(LoggedInUser())
+            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

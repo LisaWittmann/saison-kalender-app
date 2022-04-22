@@ -13,11 +13,14 @@ struct SaisonKalenderApp: App {
     @StateObject var viewRouter = ViewRouter()
     @StateObject var user = LoggedInUser()
     @StateObject var seasonCalendar = SeasonCalendar.shared
+    @StateObject var contextMenuManager = ContextMenuManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, seasonCalendar.context)
+                .modifier(ContextMenu())
+                .environmentObject(contextMenuManager)
                 .environmentObject(user)
                 .environmentObject(viewRouter)
                 .environmentObject(seasonCalendar)

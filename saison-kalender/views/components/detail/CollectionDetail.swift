@@ -11,7 +11,6 @@ struct CollectionDetail: View {
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
-    @StateObject var manager = CollectionManager()
     @ObservedObject var collection: Collection
     var close: () -> ()
     
@@ -22,7 +21,7 @@ struct CollectionDetail: View {
     
     var body: some View {
        SplitScreen(
-        images: collection.recipes.map({ $0.slug }),
+        images: collection.recipes.map{ $0.slug },
         headline: collection.name,
         subline: "\(collection.recipes.count) Rezepte",
         close: close
@@ -41,6 +40,7 @@ struct CollectionDetail_Previews: PreviewProvider {
         
         CollectionDetail(collections.first!, close: {})
             .environmentObject(LoggedInUser())
+            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

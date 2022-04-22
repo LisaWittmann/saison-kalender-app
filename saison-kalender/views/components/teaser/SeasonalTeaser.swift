@@ -10,6 +10,7 @@ import SwiftUI
 struct SeasonalTeaser: View {
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
+    @EnvironmentObject var contextMenuManager: ContextMenuManager
     
     @ObservedObject var seasonal: Seasonal
     @State var showDetail = false
@@ -33,6 +34,7 @@ struct SeasonalTeaser: View {
         SeasonalDetail(seasonal, close: { showDetail.toggle() })
             .environmentObject(user)
             .environmentObject(seasonCalendar)
+            .environmentObject(contextMenuManager)
             .navigationBarHidden(true)
     }
 }
@@ -44,6 +46,7 @@ struct SeasonalTeaser_Previews: PreviewProvider {
         NavigationView {
             SeasonalTeaser(calendar.seasonals.randomElement()!)
                 .environmentObject(LoggedInUser())
+                .environmentObject(ContextMenuManager())
                 .environmentObject(calendar)
         }
     }

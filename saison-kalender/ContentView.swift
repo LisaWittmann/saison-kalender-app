@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @EnvironmentObject var contextMenuManager: ContextMenuManager
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: LoggedInUser
 
@@ -42,8 +43,11 @@ struct ContentView_Previews: PreviewProvider {
         
         ContentView()
             .environment(\.managedObjectContext, calendar.context)
+            .modifier(ContextMenu())
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
+            .environmentObject(ContextMenuManager())
+            
     }
 }

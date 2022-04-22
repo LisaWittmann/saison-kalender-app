@@ -17,13 +17,6 @@ class LoggedInUser: ObservableObject {
         self.user = user
     }
     
-    func getStoredSession(_ context: NSManagedObjectContext) {
-        let defaultName = defaults.object(forKey: "username") as? String
-        if defaultName != nil {
-            user = User.with(name: defaultName!, from: context)
-        }
-    }
-    
     var name: String? {
         user?.name
     }
@@ -42,11 +35,23 @@ class LoggedInUser: ObservableObject {
         user != nil
     }
     
+    func getStoredSession(_ context: NSManagedObjectContext) {
+        let defaultName = defaults.object(forKey: "username") as? String
+        if defaultName != nil {
+            user = User.with(name: defaultName!, from: context)
+        }
+    }
+    
     func login(_ user: User?) {
         self.user = user
         if user != nil {
             defaults.set(user?.name, forKey: "username")
         }
+    }
+    
+    func logout() {
+        user = nil
+        defaults.set(nil, forKey: "username")
     }
     
     func favor(recipe: Recipe) {
@@ -86,11 +91,7 @@ class LoggedInUser: ObservableObject {
     }
     
     func save() {
-        do {
-            try user?.managedObjectContext?.save()
-        } catch {
-            return
-        }
+        try? user?.managedObjectContext?.save()
         objectWillChange.send()
     }
 }

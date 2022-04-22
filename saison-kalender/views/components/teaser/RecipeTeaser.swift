@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeTeaser: View {
     @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
+    @EnvironmentObject var contextMenuManager: ContextMenuManager
     
     @ObservedObject var recipe: Recipe
     @State private var showDetail = false
@@ -35,6 +36,7 @@ struct RecipeTeaser: View {
         RecipeDetail(recipe, close: { showDetail.toggle() })
             .environmentObject(user)
             .environmentObject(seasonCalendar)
+            .environmentObject(contextMenuManager)
             .navigationBarHidden(true)
     }
 }
@@ -46,6 +48,7 @@ struct RecipeCard_Previews: PreviewProvider {
         NavigationView {
             RecipeTeaser(calendar.recipes.first!)
                 .environmentObject(LoggedInUser())
+                .environmentObject(ContextMenuManager())
                 .environmentObject(calendar)
         }
     }

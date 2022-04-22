@@ -13,7 +13,7 @@ struct RecipeContextMenu: View {
     @State var newCollectionName: String = ""
     
     var body: some View {
-        ContextMenu {
+        VStack {
             switch(manager.mode) {
             case .add:
                 ContextNavigation(
@@ -63,7 +63,7 @@ struct RecipeContextMenu: View {
                         }
                 }
             case .none:
-                VStack {}
+                EmptyView()
             }
         }
     }
@@ -102,8 +102,13 @@ struct SaveRecipeContextMenu_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         let users: [User] = try! calendar.context.fetch(User.fetchRequest())
+        let manager = CollectionManager(recipe: calendar.recipes.randomElement())
         
-        RecipeContextMenu(manager: CollectionManager(recipe: calendar.recipes.randomElement()))
+        RecipeContextMenu(manager: manager)
             .environmentObject(LoggedInUser(users.first))
+            .onAppear {
+                manager.mode = .save
+                manager.isPresented = true
+            }
     }
 }

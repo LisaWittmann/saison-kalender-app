@@ -52,8 +52,20 @@ struct TeaserCarousel<Data, Content, Teaser> : View
     }
 }
 
-/*struct TeaserCarousel_Previews: PreviewProvider {
+struct TeaserCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        TeaserCarousel()
+        let calendar = SeasonCalendar.preview
+        
+        TeaserCarousel(calendar.recipes.teaser(3), teaser: {
+            LinkTeaser(to: .recipes)
+        }) { recipe in
+            RecipeTeaser(recipe)
+        }
+        .environment(\.managedObjectContext, calendar.context)
+        .environmentObject(LoggedInUser())
+        .environmentObject(ViewRouter())
+        .environmentObject(ContextMenuManager())
+        .environmentObject(calendar)
+        
     }
-}*/
+}
