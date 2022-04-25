@@ -11,16 +11,18 @@ import SwiftUIMasonry
 struct RecipeMasonry: View {
     var columns: Int
     var recipes: [Recipe]
+    var collection: Collection?
     
-    init(_ recipes: [Recipe], columns: Int = 2) {
+    init(_ recipes: [Recipe], in collection: Collection? = nil, columns: Int = 2) {
         self.recipes = recipes
+        self.collection = collection
         self.columns = columns
     }
     
     var body: some View {
         VMasonry(columns: columns, spacing: spacingMedium) {
             ForEach(Array(recipes)) { recipe in
-                RecipeTeaser(recipe, rect: isRectangle(recipe))
+                RecipeTeaser(recipe, collection: collection, rect: isRectangle(recipe))
             }
         }
     }

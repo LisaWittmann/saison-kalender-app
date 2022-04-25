@@ -34,6 +34,7 @@ let fontSizeHeadline2: CGFloat = 18
 let fontSizeLabel: CGFloat = 16
 let fontSizeText: CGFloat = 14
 
+let colorRed = Color("Red")
 let colorGrey = Color("Grey")
 let colorCurry = Color("Curry")
 let colorBeige = Color("Beige")

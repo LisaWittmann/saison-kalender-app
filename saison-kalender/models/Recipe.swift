@@ -67,7 +67,7 @@ extension Recipe {
     }
     
     func seasonalsFor(_ season: Season) -> [Seasonal] {
-        return seasonals.filter({ $0.seasons.contains(season) })
+        return seasonals.filter { $0.seasons.contains(season) }
     }
 }
 

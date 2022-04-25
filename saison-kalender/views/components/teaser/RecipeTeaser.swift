@@ -6,17 +6,16 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct RecipeTeaser: View {
-    @EnvironmentObject var user: LoggedInUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
-    @EnvironmentObject var contextMenuManager: ContextMenuManager
+    @State private var showDetail = false
     
     @ObservedObject var recipe: Recipe
-    @State private var showDetail = false
+    var collection: Collection?
     var rect: Bool
     
-    init(_ recipe: Recipe, rect: Bool = false) {
+    init(_ recipe: Recipe, collection: Collection? = nil, rect: Bool = false) {
         self.recipe = recipe
         self.rect = rect
     }
@@ -33,10 +32,7 @@ struct RecipeTeaser: View {
     
     @ViewBuilder
     private func detail(for recipe: Recipe) -> some View {
-        RecipeDetail(recipe, close: { showDetail.toggle() })
-            .environmentObject(user)
-            .environmentObject(seasonCalendar)
-            .environmentObject(contextMenuManager)
+        RecipeDetail(recipe, collection: collection, close: { showDetail.toggle() })
             .navigationBarHidden(true)
     }
 }
@@ -48,7 +44,6 @@ struct RecipeCard_Previews: PreviewProvider {
         NavigationView {
             RecipeTeaser(calendar.recipes.first!)
                 .environmentObject(LoggedInUser())
-                .environmentObject(ContextMenuManager())
                 .environmentObject(calendar)
         }
     }

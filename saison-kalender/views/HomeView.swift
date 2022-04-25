@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct HomeView: View {
     @EnvironmentObject var user: LoggedInUser
@@ -41,6 +40,7 @@ struct HomeView: View {
             }
             Spacer()
         }
+
     }
     
     @ViewBuilder
@@ -56,7 +56,8 @@ struct HomeView: View {
     private func teasers(for seasonals: [Seasonal]) -> some View {
         TeaserCarousel(seasonals.teaser(teaserLength), teaser: {
             LinkTeaser(to: .season)
-        }) { seasonal in SeasonalTeaser(seasonal)
+        }) { seasonal in
+            SeasonalTeaser(seasonal)
         }
     }
 
@@ -70,7 +71,6 @@ struct HomeView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
-            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

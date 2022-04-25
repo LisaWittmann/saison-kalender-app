@@ -27,7 +27,7 @@ struct Section<Content: View>: View {
 struct Section_Previews: PreviewProvider {
     static var previews: some View {
         Section("Lorem Ipsum") {
-            Text("Lorem Ipsum").modifier(FontText())
+            Text("Lorem Ipsum").modifier(FontParagraph())
         }
     }
 }

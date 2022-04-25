@@ -1,5 +1,5 @@
 //
-//  SplitScreen.swift
+//  DetailPage.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 25.03.22.
@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct SplitScreen<Content: View>: View {
+struct DetailPage<Content: View>: View {
     var images: [String]
     var headline: String?
     var subline: String?
     var close: () -> ()
     var icon: String?
     var onIconTap: () -> Void
+    var onIconPressed: () -> Void
     var content: () -> Content
+    
+    @GestureState var press = false
     
     init(
         images: [String],
@@ -23,6 +26,7 @@ struct SplitScreen<Content: View>: View {
         close: @escaping () -> Void,
         icon: String? = nil,
         onIconTap: @escaping () -> Void = {},
+        onIconPressed: @escaping () -> Void = {},
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.images = images
@@ -31,6 +35,7 @@ struct SplitScreen<Content: View>: View {
         self.close = close
         self.icon = icon
         self.onIconTap = onIconTap
+        self.onIconPressed = onIconPressed
         self.content = content
     }
     
@@ -119,6 +124,15 @@ struct SplitScreen<Content: View>: View {
                         .foregroundColor(colorWhite)
                         .onTapGesture { onIconTap() }
                         .frame(width: iconWidth)
+                        .gesture(
+                           LongPressGesture(minimumDuration: 0.5)
+                               .updating($press) { currentState, gestureState, transaction in
+                                   gestureState = currentState
+                               }
+                               .onEnded { value in
+                                   onIconPressed()
+                               }
+                       )
                 }
                 .frame(height: textHeight, alignment: .bottom)
                 .padding(.bottom, spacingMedium)
@@ -136,7 +150,7 @@ struct SplitScreen<Content: View>: View {
 
 struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
-        SplitScreen(
+        DetailPage(
             images: ["mangold"],
             headline: "Mangold",
             subline: "Saisonal im Mai",
@@ -147,13 +161,13 @@ struct SplitScreen_Previews: PreviewProvider {
             Text("Steckbrief")
                 .modifier(FontH1())
             Section("Wissenswertes") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontText())
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontParagraph())
             }
             Section("Ernte") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing.").modifier(FontText())
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing.").modifier(FontParagraph())
             }
             Section("Anbauregion") {
-                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontText())
+                Text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ").modifier(FontParagraph())
             }
         }
     }

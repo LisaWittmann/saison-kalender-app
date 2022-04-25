@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct SeasonalDetail: View {
-    @EnvironmentObject var user: LoggedInUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
-    
     @ObservedObject var seasonal: Seasonal
     var close: () -> ()
     
@@ -20,13 +18,12 @@ struct SeasonalDetail: View {
     }
     
     var body: some View {
-        SplitScreen(
+        DetailPage(
             images: [seasonal.slug],
             headline: seasonal.name,
             subline: "Saisonal im \(seasonCalendar.season.name)",
             close: close
         ) {
-            
             if !seasonal.characteristics.isEmpty {
                 body(for: seasonal.characteristics)
             }
@@ -42,14 +39,15 @@ struct SeasonalDetail: View {
         Text("Steckbrief").modifier(FontH1())
         ForEach(characteristics) { characteristic in
             Section(characteristic.name) {
-                Text(characteristic.value).modifier(FontText())
+                Text(characteristic.value).modifier(FontParagraph())
             }
         }
     }
     
     @ViewBuilder
     private func body(for recipes: Array<Recipe>) -> some View {
-        Text("Rezepte").modifier(FontH1())
+        Text("Rezepte mit \(seasonal.name)")
+            .modifier(FontH1())
         RecipeMasonry(recipes)
     }
 }
@@ -58,9 +56,8 @@ struct SeasonalDetail_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        SeasonalDetail(calendar.seasonals.first!, close: {})
+        SeasonalDetail(calendar.seasonals.randomElement()!, close: {})
             .environmentObject(LoggedInUser())
-            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

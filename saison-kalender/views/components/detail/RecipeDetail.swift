@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 struct RecipeDetail: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
@@ -13,21 +14,26 @@ struct RecipeDetail: View {
     
     @StateObject var manager = CollectionManager()
     @ObservedObject var recipe: Recipe
+    var collection: Collection?
     var close: () -> ()
     
-    init(_ recipe: Recipe, close: @escaping () -> ()) {
+    @State var isPresented = false
+    
+    init(_ recipe: Recipe, collection: Collection? = nil, close: @escaping () -> ()) {
         self.recipe = recipe
+        self.collection = collection
         self.close = close
     }
     
     var body: some View {
         ZStack {
-            SplitScreen(
+            DetailPage(
                 images: [recipe.slug],
                 headline: recipe.name,
                 close: close,
                 icon: icon,
-                onIconTap: onIconTap
+                onIconTap: onIconTap,
+                onIconPressed: onIconPressed
             ) {
                 Text(recipe.name).modifier(FontH1())
                 
@@ -36,7 +42,7 @@ struct RecipeDetail: View {
                 }
                                 
                 if let intro = recipe.intro {
-                    Text(intro).modifier(FontText())
+                    Text(intro).modifier(FontParagraph())
                 }
             
                 if let nutrition = recipe.nutrition {
@@ -57,10 +63,16 @@ struct RecipeDetail: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .onAppear { manager.set(recipe: recipe) }
-        .contextMenuSheet(isPresented: $manager.isPresented, menuStyle: .init(background: colorBeige, cornerRadius: cornerRadiusMedium)) {
-            RecipeContextMenu(manager: manager)
-        }
+        .onAppear { manager.set(recipe: recipe, with: collection) }
+        .partialSheet(
+            isPresented: $manager.isPresented,
+            type: .dynamic,
+            iPhoneStyle: .init(
+                background: .solid(colorBeige),
+                handleBarStyle: .none,
+                cover: .disabled,
+                cornerRadius: cornerRadiusMedium
+            )) { RecipeContextMenu(manager: manager) }
     }
     
     @ViewBuilder
@@ -106,8 +118,7 @@ struct RecipeDetail: View {
                 .foregroundColor(colorBlack)
             Spacer()
             Text("\(ingredient.quantity.description) \(ingredient.unit ?? "")")
-                .font(.custom(fontMedium, size: fontSizeText))
-                .foregroundColor(colorBlack)
+                .modifier(FontText())
         }.underlineView(opacity: 0.8)
     }
     
@@ -129,7 +140,7 @@ struct RecipeDetail: View {
                     .foregroundColor(colorBlack)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-            Text(preparation.text).modifier(FontText())
+            Text(preparation.text).modifier(FontParagraph())
             if preparation.info != nil {
                 Text(preparation.info!)
                     .font(.custom(fontBold, size: fontSizeText))
@@ -156,22 +167,31 @@ struct RecipeDetail: View {
     
     private func onIconTap() {
         if user.favorites.contains(recipe) {
-            user.remove(recipe: recipe)
+            if collection != nil {
+                manager.open(with: .delete)
+            } else {
+                user.remove(recipe: recipe)
+            }
         } else {
             user.favor(recipe: recipe)
+        }
+    }
+    
+    private func onIconPressed() {
+        if !user.favorites.contains(recipe) {
             manager.open(with: .save)
         }
     }
 }
 
-struct RecipeDetail_Previews: PreviewProvider {
+/*struct RecipeDetail_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
+        let recipe = calendar.recipes.randomElement()
         
-        RecipeDetail(calendar.recipes.first!, close: {})
-            .modifier(ContextMenu())
+        RecipeDetail(recipe!, close: {})
+            .attachPartialSheetToRoot()
             .environmentObject(LoggedInUser())
-            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
-}
+}*/

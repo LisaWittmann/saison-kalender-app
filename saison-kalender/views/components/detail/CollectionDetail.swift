@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct CollectionDetail: View {
-    @EnvironmentObject var user: LoggedInUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
-    
     @ObservedObject var collection: Collection
     var close: () -> ()
     
@@ -20,14 +17,14 @@ struct CollectionDetail: View {
     }
     
     var body: some View {
-       SplitScreen(
-        images: collection.recipes.map{ $0.slug },
-        headline: collection.name,
-        subline: "\(collection.recipes.count) Rezepte",
-        close: close
-       ) {
+        DetailPage(
+            images: collection.recipes.map { $0.slug },
+            headline: collection.name,
+            subline: "\(collection.recipes.count) Rezepte",
+            close: close
+        ) {
             if !collection.recipes.isEmpty {
-                RecipeMasonry(Array(collection.recipes))
+                RecipeMasonry(Array(collection.recipes), in: collection)
             }
         }
     }
@@ -40,7 +37,6 @@ struct CollectionDetail_Previews: PreviewProvider {
         
         CollectionDetail(collections.first!, close: {})
             .environmentObject(LoggedInUser())
-            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

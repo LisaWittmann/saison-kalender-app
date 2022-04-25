@@ -46,7 +46,7 @@ extension Characteristic {
     }
     
     static func create(name: String, value: String, order: Int16, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
-        if let characteristic = seasonal.characteristics.filter({ $0.order == order }).first {
+        if let characteristic = seasonal.characteristics.filter { $0.order == order }.first {
             characteristic.name = name
             characteristic.value = value
             try? context.save()

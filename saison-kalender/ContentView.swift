@@ -7,9 +7,9 @@
 
 import SwiftUI
 import CoreData
+import PartialSheet
 
 struct ContentView: View {
-    @EnvironmentObject var contextMenuManager: ContextMenuManager
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: LoggedInUser
 
@@ -32,7 +32,8 @@ struct ContentView: View {
                 }
             }
             Menu()
-        }.edgesIgnoringSafeArea(.all)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 
 }
@@ -43,11 +44,10 @@ struct ContentView_Previews: PreviewProvider {
         
         ContentView()
             .environment(\.managedObjectContext, calendar.context)
-            .modifier(ContextMenu())
+            .attachPartialSheetToRoot()
             .environmentObject(LoggedInUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
-            .environmentObject(ContextMenuManager())
             
     }
 }

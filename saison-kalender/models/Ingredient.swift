@@ -51,7 +51,7 @@ extension Ingredient {
 extension Ingredient {
     
     static func create(name: String, quanity: Float, unit: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
-        if let ingredient = recipe.ingredients.filter({ $0.name == name }).first {
+        if let ingredient = recipe.ingredients.filter { $0.name == name }.first {
             ingredient.quantity = quanity
             ingredient.unit = unit
             try? context.save()

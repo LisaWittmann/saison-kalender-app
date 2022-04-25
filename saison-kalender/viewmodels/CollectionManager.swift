@@ -11,6 +11,8 @@ import CoreData
 class CollectionManager: ObservableObject {
     
     @Published var recipe: Recipe?
+    @Published var collection: Collection?
+    
     @Published var isPresented: Bool
     @Published var mode: ManagerMode?
     
@@ -26,13 +28,15 @@ class CollectionManager: ObservableObject {
         self.isPresented = false
     }
     
-    func set(recipe: Recipe) {
+    func set(recipe: Recipe, with collection: Collection? = nil) {
         self.recipe = recipe
+        self.collection = collection
     }
     
     func open(with mode: ManagerMode) {
         self.mode = mode
         self.isPresented = true
+        objectWillChange.send()
     }
     
     func close() {
@@ -40,17 +44,15 @@ class CollectionManager: ObservableObject {
         self.isPresented = false
     }
     
-    func add(to collection: Collection) {
+    func add(to collection: Collection, of user: LoggedInUser) {
         if let recipe = self.recipe {
-            collection.recipes.insert(recipe)
-            do {
-                try collection.managedObjectContext?.save()
-            } catch {
+            user.add(recipe: recipe, to: collection)
+            if collection.recipes.contains(recipe) {
+                isPresented = false
+            } else {
                 mode = .save
                 isPresented = true
             }
-            mode = nil
-            isPresented = false
         }
     }
     
@@ -67,7 +69,23 @@ class CollectionManager: ObservableObject {
                 mode = .add
                 isPresented = true
             }
-            mode = nil
+            isPresented = false
+        }
+    }
+    
+    func remove(for user: LoggedInUser) {
+        if recipe != nil {
+            user.remove(recipe: recipe!)
+            isPresented = false
+        }
+    }
+    
+    func removeFromCollection(for user: LoggedInUser) {
+        if collection != nil && recipe != nil {
+            user.remove(recipe: recipe!, from: collection!)
+            collection = nil
+        } else {
+            remove(for: user)
             isPresented = false
         }
     }

@@ -30,11 +30,10 @@ struct RecipeContextMenu: View {
                         .opacity(imageOpacity)
                         .frame(width: previewWidth, height: previewHeight)
                         .background(colorGreen)
-                        .clipShape(RoundedRectangle(cornerRadius: previewRadius))
+                        .modifier(BlurredImageStyle())
                     TextField("Name", text: $newCollectionName)
                         .frame(width: previewWidth, alignment: .center)
-                        .font(.custom(fontMedium, size: fontSizeText))
-                        .foregroundColor(colorBlack)
+                        .modifier(FontText())
                 }.padding(spacingExtraSmall)
             case .save:
                 ContextNavigation(
@@ -55,47 +54,58 @@ struct RecipeContextMenu: View {
                     functionRight: manager.close,
                     header: "Rezept entfernen"
                 )
-                VStack {
+                VStack(spacing: spacingSmall) {
+                    if manager.collection != nil {
+                        Text("Aus Sammlungen entfernen")
+                            .modifier(FontLabel())
+                            .foregroundColor(colorBlack)
+                            .onTapGesture {
+                                manager.removeFromCollection(for: user)
+                                manager.close()
+                            }
+                    }
                     Text("Entfernen")
+                        .modifier(FontError())
                         .onTapGesture {
-                            user.remove(recipe: manager.recipe!)
+                            manager.remove(for: user)
                             manager.close()
                         }
-                }
+                }.padding(.top, spacingSmall)
             case .none:
                 EmptyView()
             }
         }
+        .frame(height: menuHeight, alignment: .top)
+        .padding(.top, spacingSmall)
     }
     
     @ViewBuilder
     func preview(for collection: Collection) -> some View {
         VStack {
-            Image(collection.recipes.randomElement()!.slug)
+            Image(collection.recipes.randomElement()?.slug ?? "")
                 .resizable()
                 .scaledToFill()
                 .opacity(imageOpacity)
                 .frame(width: previewWidth, height: previewHeight)
                 .background(colorGreen)
-                .clipShape(RoundedRectangle(cornerRadius: previewRadius))
+                .modifier(BlurredImageStyle())
             Text(collection.name)
                 .frame(width: previewWidth, alignment: .center)
                 .multilineTextAlignment(.center)
-                .font(.custom(fontMedium, size: fontSizeText))
-                .foregroundColor(colorBlack)
+                .modifier(FontText())
         }
         .frame(width: previewWidth)
-        .onTapGesture { manager.add(to: collection) }
+        .onTapGesture { manager.add(to: collection, of: user) }
     }
     
     private var saveIcon: String {
         newCollectionName != "" ? "arrow.right" : ""
     }
     
+    let menuHeight: CGFloat = 200
     let previewWidth: CGFloat = 100
     let previewHeight: CGFloat = 100
     let imageOpacity = 0.5
-    let previewRadius: CGFloat = 20
 }
 
 struct SaveRecipeContextMenu_Previews: PreviewProvider {

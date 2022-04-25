@@ -24,8 +24,7 @@ struct Tag: View {
                 bottom: 5,
                 trailing: spacingSmall
             ))
-            .font(.custom(fontMedium, size: fontSizeText))
-            .foregroundColor(colorBlack)
+            .modifier(FontText())
             .background(selected ? colorGreen : colorLightGreen)
             .cornerRadius(cornerRadiusMedium)
     }

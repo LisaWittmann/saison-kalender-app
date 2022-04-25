@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct CollectionTeaser: View {
-    @EnvironmentObject var user: LoggedInUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
-    
     @ObservedObject var collection: Collection
     @State var showDetail = false
     
@@ -25,7 +22,7 @@ struct CollectionTeaser: View {
         ) {
             ZStack {
                 ImageGroup(
-                    collection.recipes.map({ $0.slug }),
+                    collection.recipes.map { $0.slug },
                     width: contentWidth,
                     height: contentHeight
                 )
@@ -56,8 +53,6 @@ struct CollectionTeaser: View {
     @ViewBuilder
     private func detail(for collection: Collection) -> some View {
         CollectionDetail(collection, close: { showDetail.toggle() })
-            .environmentObject(user)
-            .environmentObject(seasonCalendar)
             .navigationBarHidden(true)
     }
     

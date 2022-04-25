@@ -48,7 +48,7 @@ extension Collection {
     }
     
     static func create(name: String, user: User, recipes: Set<Recipe>, in context: NSManagedObjectContext) -> Collection {
-        if let collection = user.collections.filter({ $0.name == name }).first {
+        if let collection = user.collections.filter { $0.name == name }.first {
             collection.recipes = recipes
             try? context.save()
             return collection

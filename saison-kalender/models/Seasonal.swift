@@ -11,8 +11,8 @@ import CoreData
 extension Seasonal {
     
     var seasons: [Season] {
-        get { seasons_?.map({ Season(rawValue: $0)! }) ?? [] }
-        set { seasons_ = newValue.map({ $0.rawValue }) }
+        get { seasons_?.map { Season(rawValue: $0)! } ?? [] }
+        set { seasons_ = newValue.map { $0.rawValue } }
     }
     
     var recipes: Set<Recipe> {

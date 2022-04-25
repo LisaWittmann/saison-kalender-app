@@ -63,8 +63,8 @@ struct ContentTeaser: View {
 struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
-            ContentTeaser("Mangold")
-            ContentTeaser("Linguine mit Mangold", rect: true)
+            ContentTeaser("Mangold", image: "mangold")
+            ContentTeaser("Linguine mit Mangold", image: "linguine-mit-mangold", rect: true)
         }.frame(alignment: .bottom)
     }
 }

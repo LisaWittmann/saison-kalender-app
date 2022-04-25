@@ -62,7 +62,6 @@ struct AccountView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, calendar.context)
             .environmentObject(LoggedInUser(users.first))
             .environmentObject(ViewRouter())
-            .environmentObject(ContextMenuManager())
             .environmentObject(calendar)
     }
 }

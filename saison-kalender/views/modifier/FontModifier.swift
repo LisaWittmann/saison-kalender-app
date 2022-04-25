@@ -46,15 +46,25 @@ struct FontText: ViewModifier {
         content
             .font(.custom(fontMedium, size: fontSizeText))
             .foregroundColor(colorBlack)
+    }
+}
+
+struct FontParagraph: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom(fontMedium, size: fontSizeText))
+            .foregroundColor(colorBlack)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
+
+
 
 struct FontError: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.custom(fontMedium, size: fontSizeHeadline2))
-            .foregroundColor(.red)
+            .foregroundColor(colorRed)
             .frame(maxWidth: .infinity, alignment: .center)
     }
 }

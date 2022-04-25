@@ -23,8 +23,7 @@ struct ContentPill: View {
                         height: textHeight,
                         alignment: .center
                     )
-                    .font(.custom(fontMedium, size: fontSizeText))
-                    .foregroundColor(colorBlack)
+                    .modifier(FontText())
                     .multilineTextAlignment(.center)
                     .padding(.top, spacingExtraSmall)
                     .padding(.leading, padding)

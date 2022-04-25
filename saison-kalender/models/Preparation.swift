@@ -43,7 +43,7 @@ extension Preparation {
 extension Preparation {
     
     static func create(_ order: Int16, title: String? = nil, text: String, info: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
-        if let preparation = recipe.preparations.filter({ $0.order == order }).first {
+        if let preparation = recipe.preparations.filter { $0.order == order }.first {
             preparation.title = title
             preparation.text = text
             preparation.info = info
