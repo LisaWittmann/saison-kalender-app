@@ -178,9 +178,7 @@ struct RecipeDetail: View {
     }
     
     private func onIconPressed() {
-        if !user.favorites.contains(recipe) {
-            manager.open(with: .save)
-        }
+        manager.open(with: .save)
     }
 }
 

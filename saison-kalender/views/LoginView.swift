@@ -40,26 +40,24 @@ struct LoginView: View {
     @ViewBuilder
     private func loginForm() -> some View {
         VStack(spacing: spacingMedium) {
-            InputField(icon: "person.fill") {
-                TextField(
-                    "Nutzername",
-                    text: $formModel.name
-                )
-            }
-            InputField(icon: "lock.fill") {
-                SecureField(
-                    "Passwort",
-                    text: $formModel.password
-                )
-            }
-            Button("Anmelden", action: login)
-                .frame(width: contentWidth)
-                .modifier(ButtonStyle())
-            Button("Noch kein Konto?", action: { switchMode() })
-                .frame(
-                    width: contentWidth,
-                    alignment: .trailing
-                )
+            InputField(
+                "Nutzername",
+                text: $formModel.name,
+                icon: "person.fill"
+            )
+            InputField(
+                "Passwort",
+                text: $formModel.password,
+                icon: "lock.fill",
+                secure: true
+            )
+            SubmitButton(
+                "Anmelden",
+                onSubmit: login,
+                disabled: !formModel.isValidForLogin()
+            )
+            Button("Noch kein Konto?", action: switchMode)
+                .frame(width: contentWidth, alignment: .trailing)
                 .modifier(TextButtonStyle())
         }
     }
@@ -67,32 +65,39 @@ struct LoginView: View {
     @ViewBuilder
     private func registerForm() -> some View {
         VStack(spacing: spacingMedium) {
-            InputField(icon: "envelope.fill") {
-                TextField(
-                    "E-Mail",
-                    text: $formModel.email
-                )
-            }
-            InputField(icon: "person.fill") {
-                TextField(
-                    "Nutzername",
-                    text: $formModel.name
-                )
-            }
-            InputField(icon: "lock.fill") {
-                SecureField(
-                    "Passwort",
-                    text: $formModel.password
-                )
-            }
-            Button("Registrieren", action: register)
-                .frame(width: contentWidth)
-                .modifier(ButtonStyle())
-            Button("Jetzt anmelden", action: { switchMode() })
-                .frame(
-                    width: contentWidth,
-                    alignment: .trailing
-                )
+            InputField(
+                "E-Mail",
+                text: $formModel.email,
+                icon: "envelope.fill",
+                validate: formModel.isValidEmail
+            )
+            InputField(
+                "Nutzername",
+                text: $formModel.name,
+                icon: "person.fill",
+                validate: formModel.isValidName
+            )
+            InputField(
+                "Passwort",
+                text: $formModel.password,
+                icon: "lock.fill",
+                secure: true,
+                validate: formModel.isValidPassword
+            )
+            InputField(
+                "Passwort wiederholen",
+                text: $formModel.passwordRepeat,
+                icon: "lock.fill",
+                secure: true,
+                validate: formModel.isValidPasswordRepeat
+            )
+            SubmitButton(
+                "Registrieren",
+                onSubmit: register,
+                disabled: !formModel.isValidForRegister()
+            )
+            Button("Jetzt anmelden", action: switchMode)
+                .frame(width: contentWidth, alignment: .trailing)
                 .modifier(TextButtonStyle())
         }
     }

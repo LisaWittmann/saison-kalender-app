@@ -7,10 +7,22 @@
 
 import SwiftUI
 
-struct InputField<Content: View>: View {
+struct InputField: View {
+    @Binding var text: String
+    var placeholder: String
     var icon: String? = nil
-    var error: Bool = false
-    var content: () -> Content
+    var secure: Bool = false
+    var validate: ((String) -> Bool)?
+    
+    @State var error = false
+    
+    init(_ placeholder: String, text: Binding<String>, icon: String? = nil, secure: Bool = false, validate: ((String) -> Bool)? = nil) {
+        self.placeholder = placeholder
+        self._text = text
+        self.icon = icon
+        self.secure = secure
+        self.validate = validate
+    }
 
     var body: some View {
         HStack(spacing: spacingMedium) {
@@ -18,24 +30,37 @@ struct InputField<Content: View>: View {
                 Image(systemName: systemName)
                     .foregroundColor(colorGreen)
             }
-            content().modifier(TextFieldStyle())
+            Group {
+                if secure {
+                    SecureField(placeholder, text: $text)
+                } else {
+                    TextField(placeholder, text: $text)
+                }
+            }
+            .foregroundColor(error ? colorRed : colorBlack)
+            .modifier(TextFieldStyle())
+            .onChange(of: text, perform: { text in onChange(of: text) })
         }
         .modifier(InputFieldStyle())
+        .overlay(
+            Capsule(style: .continuous)
+                .stroke(colorRed, lineWidth: error ? 2 : 0)
+        )
+    }
+    
+    private func onChange(of text: String) {
+        if let validateFunc = validate  {
+            error = !validateFunc(text)
+        }
     }
 }
 
 struct InputField_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: spacingMedium) {
-            InputField(icon: "envelope.fill") {
-                TextField("E-Mail", text: .constant(""))
-            }
-            InputField(icon: "person.fill") {
-                TextField("Nutzername", text: .constant("Nutzername1234"))
-            }
-            InputField {
-                SecureField("Passwort", text: .constant(""))
-            }
+            InputField("E-Mail", text: .constant(""), icon: "envelope.fill")
+            InputField("Nutzername", text: .constant("Nutzername123"), icon: "person.fill")
+            InputField("Passwort", text: .constant(""), secure: true)
         }.padding()
     }
 }
