@@ -36,7 +36,6 @@ class CollectionManager: ObservableObject {
     func open(with mode: ManagerMode) {
         self.mode = mode
         self.isPresented = true
-        objectWillChange.send()
     }
     
     func close() {

@@ -5,21 +5,22 @@
 //  Created by Lisa Wittmann on 31.03.22.
 //
 
-import Foundation
 import CoreData
 
 class LoggedInUser: ObservableObject {
     
-    private let defaults = UserDefaults.standard
     @Published var user: User?
+    
+    private let defaults = UserDefaults.standard
+    private let storeKey = "userName"
     
     init(_ user: User? = nil) {
         self.user = user
     }
     
-    var name: String? {
-        user?.name
-    }
+    var name: String? { user?.name }
+    
+    var isPresent: Bool { user != nil }
     
     var favorites: Set<Recipe> {
         get { user?.favorites ?? [] }
@@ -31,12 +32,8 @@ class LoggedInUser: ObservableObject {
         set { user?.collections = Array(newValue) }
     }
     
-    var isPresent: Bool {
-        user != nil
-    }
-    
     func getStoredSession(_ context: NSManagedObjectContext) {
-        let defaultName = defaults.object(forKey: "username") as? String
+        let defaultName = defaults.object(forKey: storeKey) as? String
         if defaultName != nil {
             user = User.with(name: defaultName!, from: context)
         }
@@ -45,13 +42,13 @@ class LoggedInUser: ObservableObject {
     func login(_ user: User?) {
         self.user = user
         if user != nil {
-            defaults.set(user?.name, forKey: "username")
+            defaults.set(user?.name, forKey: storeKey)
         }
     }
     
     func logout() {
         user = nil
-        defaults.set(nil, forKey: "username")
+        defaults.set(nil, forKey: storeKey)
     }
     
     func favor(recipe: Recipe) {
@@ -73,6 +70,10 @@ class LoggedInUser: ObservableObject {
     func remove(recipe: Recipe, from collection: Collection) {
         if (collection.recipes.contains(recipe)) {
             collection.recipes.remove(recipe)
+            // remove empty collections
+            if collection.recipes.count < 1 {
+                remove(collection: collection)
+            }
         }
         save()
     }

@@ -13,17 +13,6 @@ struct UserFormModel {
     var password: String = ""
     var passwordRepeat: String = ""
     
-    func isValidForLogin() -> Bool {
-        return (name != "") && (password != "")
-    }
-    
-    func isValidForRegister() -> Bool {
-        return isValidName(name) &&
-            isValidEmail(email) &&
-            isValidPassword(password) &&
-            isValidPasswordRepeat(passwordRepeat)
-    }
-    
     func isValidName(_ name: String) -> Bool {
         let nameFormat = "[A-Z0-9a-z]([A-Z0-9a-z._%+-]{0,30}[A-Z0-9a-z])?"
         let namePredicate = NSPredicate(format: "SELF MATCHES %@", nameFormat)
@@ -46,5 +35,16 @@ struct UserFormModel {
     
     func isValidPasswordRepeat(_ passwordRepeat: String) -> Bool {
         return password == passwordRepeat
+    }
+    
+    func isValidForLogin() -> Bool {
+        return (name != "") && (password != "")
+    }
+    
+    func isValidForRegister() -> Bool {
+        return isValidName(name) &&
+            isValidEmail(email) &&
+            isValidPassword(password) &&
+            isValidPasswordRepeat(passwordRepeat)
     }
 }

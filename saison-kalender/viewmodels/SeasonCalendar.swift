@@ -13,15 +13,12 @@ class SeasonCalendar: ObservableObject {
     static let shared = SeasonCalendar(controller: PersistenceController.shared)
     static let preview = SeasonCalendar(controller: PersistenceController.preview)
     
-    private let persistenceController: PersistenceController
-    
     @Published private(set) var season: Season
     @Published private(set) var recipes: [Recipe]
     @Published private(set) var seasonals: [Seasonal]
     
-    var context: NSManagedObjectContext {
-        persistenceController.container.viewContext
-    }
+    private let persistenceController: PersistenceController
+    var context: NSManagedObjectContext { persistenceController.container.viewContext }
     
     private init(controller: PersistenceController) {
         persistenceController = controller

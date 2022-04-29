@@ -8,6 +8,7 @@
 import SwiftUI
 
 class ViewRouter: ObservableObject {
+
     @Published var currentView: Route = Route.home
     
     func imageName(route: Route) -> String {

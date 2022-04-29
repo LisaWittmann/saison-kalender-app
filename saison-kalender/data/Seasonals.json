@@ -1,0 +1,1314 @@
+[
+    {
+        "name": "Apfel",
+        "seasons": ["August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Als Urahn des Apfels gilt unter Botanikern der sogenannte Holzapfel – auch Wilder Apfel genannt – aus Zentral- und Westasien. Aus seinen sehr kleinen und herben Früchten entstanden im Lauf vieler Jahrhunderte weltweit mehrere tausend verschiedene Sorten. Die ersten kultivierten Äpfel gab es im antiken Griechenland und im alten Rom; aber erst im 16. Jahrhundert wurden Äpfel in Europa allmählich zum Volksnahrungsmittel. Gut zu wissen: Mit dem Granatapfel ist er trotz Namensvetterschaft botanisch nicht verwandt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Als Urahn des Apfels gilt unter Botanikern der sogenannte Holzapfel – auch Wilder Apfel genannt – aus Zentral- und Westasien. Aus seinen sehr kleinen und herben Früchten entstanden im Lauf vieler Jahrhunderte weltweit mehrere tausend verschiedene Sorten. Die ersten kultivierten Äpfel gab es im antiken Griechenland und im alten Rom; aber erst im 16. Jahrhundert wurden Äpfel in Europa allmählich zum Volksnahrungsmittel. Gut zu wissen: Mit dem Granatapfel ist er trotz Namensvetterschaft botanisch nicht verwandt."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Erntezeit für heimische Äpfel startet im Juli und geht bei einigen Sorten bis in den November hinein."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Viele Äpfel, besonders aus Importen, schmecken hauptsächlich leicht süß und sonst wenig typisch; heimische und alte Sorten haben häufig einen kräftigen bis sehr intensiven Geschmack. Zu den alten Sorten gehören Boskop, Cox Orange, Goldparmäne oder der Danziger Kantapfel. Manche Apfelsorten wie z.B. Granny Smith oder Boskop schmecken leicht bis deutlich säuerlich und wieder andere (etwa Red Delicious oder Starking) haben ein parfümartiges Aroma. Alte Sorten sind wegen der sekundären Pflanzenstoffe, der Polyphenole, sogar ein Geheimtipp für Allergiker: Die Polyphenole binden die Allergene, deshalb werden sie oft besser vertragen. Sie sind aus den neuen Sorten herausgezüchtet, sodass diese süßer schmecken."
+            }
+        ]
+    },
+    {
+        "name": "Aprikose",
+        "seasons": ["Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Sonne brauchen die feinen Früchtchen, die botanisch zum Steinobst gehören, auf jeden Fall reichlich: Sie wachsen nur bei warmem und trockenem Klima wirklich gut. Es gibt zahlreiche Aprikosensorten, die man vor allem je nach ihrer Reifezeit in frühe, mittelfrühe und späten Sorten aufteilt. Je nach Sorte unterscheiden sich Aprikosen in Größe und Farbe von Fruchtfleisch und Schale. Die Schale ist zwar häufig orange gefärbt, kann aber auch gelb sein und bei manchen Sorten rote \"Sommersprossen\" haben. Das Fruchtfleisch ist ebenfalls variabel: Es kann fast weiß, gelb oder tieforangefarben sein. Aber unabhängig von der Farbe - bei optimaler Reife ist das Fleisch der Aprikose auf jeden Fall sehr saftig.\n\nIn vielen Ländern wirft man die steinharten Kerne der Aprikose nicht etwa weg, sondern stellt wegen des mandelähnlichen Aromas daraus den Marzipanersatz Persipan und Liköre her."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich kommt die Aprikose aus China und aus dem Hochland zwischen Kaspischem und Schwarzem Meer. Sie wächst aber heute auch in vielen anderen Ländern bzw. fast überall dort, wo es schön warm ist. Die meisten bei uns verkauften Aprikosen stammen aus Italien, Frankreich, Spanien, der Türkei und Griechenland. Im Sommer gibt es aber auch Aprikosen aus deutschem Anbau, die überwiegend in Süddeutschland gedeihen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Saison für Aprikosen beginnt in den Ländern rund ums Mittelmeer im Mai, in Deutschland erntet man dann Aprikosen ab Juli. Frische Aprikosen bekommen Sie bis in den Spätherbst hinein."
+            }
+        ]
+    },
+    {
+        "name": "Artischocke",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Dass Artischocken linienfreundlich sind, hat sich herumgesprochen. Dass sie nicht ganz billig sind, auch. Doch das aufwändige Ernten der Blütenköpfe dieser Distelart Pflanze rechtfertigt das voll und ganz, denn gepflückt werden Artischocken unter meist sengender Sonne mühsam von Hand und wandern in hohe Kiepen, die von den Erntearbeiterinnen und –arbeitern auf dem Rücken getragen werden. Das war schon 500 v. Chr. kaum anders, als man Artischocken im alten Rom und Ägypten als wahrhaft königliches Gemüse hoch schätzte. Noch im 18. und 19. Jahrhundert kamen sie in Frankreich und Italien nur in adeligen Häusern auf den Tisch. Heutzutage können auch wir normal Sterblichen uns das feine Gemüse leisten – zum Glück, denn Artischocken schmeicheln nicht nur dem Gaumen, sie nützen auch der Gesundheit.\n\nZugegeben, bei Artischocken gilt: Ohne Fleiß kein Preis. Um an das zarte Herz der eng mit der gemeinen Distel verwandten Leckerei zu kommen, sind Arbeit und Geduld gefragt. Wer den Aufwand scheut, greift darum auch gern zu Artischockenböden und -herzen aus Glas oder Dose. Doch gerade zur Hauptsaison des Edelgemüses lohnt es sich, ein wenig Mühe zu investieren und es eigenhändig zu entblättern. Denn die unter zahlreichen ungenießbar harten Blättern und dem so genannten Heu versteckten Herzen und Blütenböden zeichnen sich durch ein ungemein feines Aroma aus, das in Begleitung von feinen Soßen wie Hollandaise, Bearnaise oder einfach Vinaigrette hervorragend zur Geltung kommt.\n\nIm Hochsommer kommen die ganz kleinen Artischocken auf den Markt – und die haben einen unschätzbaren Vorzug: Sie können im Ganzen gekocht und mit Stumpf und Stiel genossen werden! Wer schon mal in Frankreich, Italien oder Spanien war, kennt sie von den dortigen Märkten sicherlich, wo sie in Hülle und Fülle auf kundige Hausfrauen warten. Die greifen gerne zu, denn sie wissen: Je kleiner, desto zarter und schmackhafter sind Artischocken."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ganz geklärt ist zwar nicht, wo der Ursprung von Artischocken liegt. Botaniker vermuten Arabien, Iran und den Mittelmeerraum als Heimat. Heute kommen Artischocken unter anderem aus Spanien, Italien, Frankreich, Marokko, Ägypten und anderen südlichen Ländern zu uns."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Irgendwo in einem der Erzeugerländer ist immer gerade Erntezeit, sodass man Artischocken fast das ganze Jahr über bekommt."
+            }
+        ]
+    },
+    {
+        "name": "Aubergine",
+        "seasons": ["Juni","Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Rund ums Mittelmeer gehört die Aubergine so selbstverständlich zur Alltagsküche wie Tomaten oder Knoblauch. Während die Frucht eines Nachtschattengewächses hierzulande noch bis vor etwa 20 Jahren fast als Exot galt, die kaum jemand kannte, schätzt man sie in Südeuropa bereits seit dem 13. Jahrhundert. In Indien und China sind Auberginen sogar schon seit Jahrtausenden Bestandteil des Speisezettels.\n\nDass sie ihr europäisches Coming Out zuerst in Italien und anderen Mittelmeerländern hatten und vor allem dort heimisch wurden, ist leicht zu erklären: Auberginen brauchen viel Sonne und Wärme zum Gedeihen. "
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Botaniker vermuten die ursprüngliche Heimat der Auberginen in Asien. Für diese Theorie spricht, dass man dort das Nachtschattengewächs bereits seit gut 4000 Jahren anbaut. Heute werden Auberginen auch in den USA und ganz Europa kultiviert. In Südeuropa wachsen sie auf Freiland, in nördlichen Ländern vorwiegend im Treibhaus."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Da Auberginen weltweit und auch im Treibhaus angebaut werden, sind sie das ganze Jahr über zu haben. Spezielle Sorten wie zum Beispiel Baby-Auberginen oder gelbe Auberginen bekommt man allerdings vorwiegend im Hoch- und Spätsommer."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "In Südeuropa und Asien kommen übrigens keineswegs nur die bei uns bekannten violetten Auberginen auf den Tisch. Dort kennt man schlanke, lange, hellgrüne oder gestreifte Exemplare ebenso wie kleine eiförmige, die in weiß, gelb, orangerot oder grün-weiß gestreift zu haben sind. Entsprechend existieren weltweit auch die verschiedensten Arten der Zubereitung."
+            }
+        ]
+    },
+    {
+        "name": "Birne",
+        "seasons": ["Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Uralt und doch immer noch extrem aktuell: Birnen gab es schon um 3.000 v. Chr., und bis heute gehören sie zu den besonders beliebten Obstsorten. Bei uns beginnt die Birnenzeit im Frühherbst, anderswo auf der Welt gelten andere Regeln, denn zu den Hauptanbaugebieten gehören neben Italien, Spanien, Frankreich und anderen EU-Staaten Länder in Übersee und Asien. In den USA, Chile, Argentinien, China und Südafrika findet die Ernte zu anderen Jahreszeiten statt, sodass wir Birnen das ganze Jahr genießen können.\n\n"
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Weltmeister im Anbau von Birnen ist China, das etwa 40 % der gesamten Welternte liefert. Die ursprüngliche Heimat der Birne liegt aber vermutlich in Anatolien und im Kaukasus."
+            }
+        ]
+    },
+    {
+        "name": "Blumenkohl",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Schon vor rund 250 Jahren genoss der Blumenkohl dank seiner vornehmen Blässe und seiner damaligen Seltenheit einen hervorragenden Ruf. Seine Beliebtheit am Hof von Ludwig XIV. war so groß, dass ein nach des Königs Mätresse Madame Dubarry benanntes Gericht bis heute zu den Klassikern der Haute Cuisine gehört. Den überbackenen Blumenkohl Dubarry gibt es in zahlreichen Versionen und auch die Crème Dubarry – ein feines Süppchen aus Blumenkohl – steht oft auf feinen Speiseplänen. Und wie Frankreich-Urlauber wissen: Immer, wenn ein Gericht den Namen Dubarry trägt, ist das feine weiße Gemüse im Spiel.\n\nGanz in weiß – so schätzen auch die Deutschen den Edelkohl am meisten. Um diese Vorliebe zu erfüllen, scheuen die Gemüsebauern keine Mühen. Damit sie sich nicht durch das Sonnenlicht verfärben, knicken die Bauern ein bis zwei der inneren Hüllblätter über die lichtempfindlichen Köpfe oder binden die Blätter zusammen. Mittlerweile setzen sich allerdings pflegeleichtere Züchtungen durch, bei denen sich die Herzblätter von allein nach innen drehen und quasi als Sonnenschirm fungieren, womit sich aufwendige Handarbeit erübrigt.\n\nIn anderen Ländern hingegen ist es übrigens durchaus erwünscht, dass der Blumenkohl Farbe bekennt. Gelb-grüne bis sattgrüne Köpfe kommen im Sommer aus Italien, Belgien und Frankreich. In Süditalien schätzt man Blumenkohl nicht nur der Optik wegen auch in violett: Je intensiver die Farbe, desto ausgeprägter auch das Aroma. Ebenfalls aus Italien kommt übrigens auch eine spezielle Spielart der grünen Blumenkohlsorten, der dekorative Romanesco."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Wie alle Kohlarten stammt Blumenkohl von einer Wildform ab, deren ursprüngliche Heimat im Mittelmeerraum und im westlichen Europa liegt. Heute baut man Blumenkohl vor allem in Italien, Belgien und den Niederlanden an. Aber auch in Indien weiß man das Gemüse zu schätzen, denn dort liegt das größte Anbaugebiet für Blumenkohl in ganz Asien."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Blumenkohl frisch vom Feld aus deutschen Landen bekommt man bei uns von Mai bis November. Aber auch andere Länder bauen das Gemüse an, sodass Blumenkohl inzwischen das ganze Jahr über erhältlich ist."
+            }
+        ]
+    },
+    {
+        "name": "Brokkoli",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Unsere Eltern und Großeltern beäugten den Ende der 70-iger bei uns erstmals aufgetauchten Brokkoli ziemlich skeptisch. Blumenkohl kannten sie, aber dieses Gebilde ganz in Grün noch nicht. Es dauerte allerdings nicht lange, bis sich herumsprach, dass der kulinarische Import aus Italien das Zeug zum Kultgemüse hat. Schon wenig später trat er seinen Siegeszug vom Exoten zum Allerweltsgemüse an. Nicht mal 20 Jahre brauchte der Brokkoli, um es vom absoluten Geheimtipp in die Regale der Discountmärkte zu schaffen. Längst kommt er nicht nur beim Italiener auf den Tisch, sondern in praktischem jedem deutschen Haushalt.\n\nEine ebenso steile wie verdiente Karriere, wie sowohl Ernährungsexperten als auch Genießer finden: Ein so ausgewogener Mix aus gutem Aussehen, gutem Geschmack und guten Inhaltsstoffen ist sogar bei Gemüse eine kleine Sensation. Brokkoli mauserte sich zum Trend, der bis heute ungebrochen anhält. Ihre typisch dunkelgrüne, manchmal fast bläulich schimmernde Farbe verdanken die leckeren Blütenknospen übrigens dem hohen Gehalt an Chlorophyll beziehungsweise der intensiven Bestrahlung mit Sonnenlicht. Falls trotzdem jemand finden sollte, so langsam könnte mal was Neues kommen, unterschätzt den Brokkoli. Der mittlerweile in die Jahre gekommene Newcomer hat nämlich noch neue Überraschungen in petto: Vor allem im Sommer kann man auf Wochenmärkten und in gut sortierten Gemüseläden auch weißen, gelben und violetten bis fast schwarzen Brokkoli finden.\n\nAber ob bunt oder grün: Brokkoli ist der unbestrittener Star der weitverzweigten Kohlfamilie, in der er wie Kohlrabi und Blumenkohl botanisch eine Sonderrolle einnimmt, weil sein essbarer Teil nicht aus Blättern, sondern aus der Blume, also den Blütenstielen und -knospen, besteht."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich in Kleinasien beheimatet, wächst Brokkoli inzwischen praktisch auf der ganzen Welt. Man baut ihn in fast ganz Europa, in den USA und in Asien an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Haupterntezeit für Brokkoli aus Deutschland ist der Sommer: Von Ende Juli bis Oktober kommt Brokkoli vom Freiland, zum Beispiel aus den Vierlanden bei Hamburg. Zum Glück ist aber mit dem Herbst nicht Schluss, denn dann exportiert besonders Italien bis ins später Frühjahr Brokkoli zu uns."
+            }
+        ]
+    },
+    {
+        "name": "Brombeere",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Aus gutem Grund nennt man Brombeeren auch Krotzbeeren oder Kratzbeeren: Sie sitzen an extrem dornigen, bis zu zwei Meter hohen Sträuchern. Das gilt zumindest für die alten und die wild wachsenden Brombeeren. Neu gezüchtete Kultursorten haben meist keine Dornen mehr. Ob der Ausdruck Brummelbeere mit den bösen Ratschern zu tun hat, die man sich beim Sammeln von Brombeeren zuziehen kann, ist nicht bekannt. Möglich wäre es jedenfalls.\n\nRein botanisch gesehen handelt es sich bei Brombeeren übrigens um sogenannte Sammelfrüchte. Diese Bezeichnung kommt aber nicht etwa daher, dass man sie selbst sammeln kann. Gemeint ist vielmehr, dass Brombeeren aus vielen kleinen, eng zusammenhängenden Steinfrüchtchen bestehen, die auf dem zapfenförmigen Fruchtboden sitzen.\n\nWilde Brombeeren sind wesentlich kleiner als Brombeeren aus dem Anbau, dafür schmecken sie aromatischer. Sie eignen sich darum besonders für den klassischen Brombeerlikör namens Kroatbeere und zum Brennen von Brombeergeist."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat von Brombeeren liegt in den unendlichen Wäldern Nordamerikas und Eurasiens. Mittlerweile wachsen Brombeeren aber sowohl wild als auch in Kulturen in ganz Europa und Asien sowie in Süd- und Nordamerika. Die meisten Kulturen für Brombeeren aus Deutschland liegen in den wärmeren Bundesländern und Weinbaugebieten wie Baden-Württemberg, Rheinland-Pfalz und Hessen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die ersten Brombeeren reifen bei uns im Juli, die letzten werden dann je nach Wetterlage Mitte bis Ende Oktober geerntet. In guten Jahren kann man sogar noch bis zu den ersten Frostnächten Brombeeren pflücken."
+            }
+        ]
+    },
+    {
+        "name": "Butternut Kürbis",
+        "seasons": ["September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Seinem Namen macht der Butternutkürbis alle Ehre, wie seine Fans längst wissen. Sein zartes hellorangefarbenes Fruchtfleisch betört mit buttrigem Aroma. Auch die Kürbiskerne des Birnenkürbis sind essbar und schmecken angenehm nach Nuss. Man kann sie roh knabbern oder kurz in der Pfanne anrösten und leicht salzen.\n\nMan muss nicht gleich mehrere Kilo Kürbis kaufen, wenn man Lust auf Butternut hat, denn diese Sorte gibt es schon ab etwa 200 Gramm pro Stück. Zu erkennen ist der Butternut-Kürbis auf den ersten Blick an seiner birnenähnlichen Form mit langem Hals und dickem Boden, die ihm seinen Zweitnamen Birnenkürbis eingetragen hat. Seine Schale ist hellgelb und kann sowohl genoppt als auch ganz glatt sein. Kerne hat der Butternusskürbis sehr wenige. Das macht seine Verarbeitung besonders leicht."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich stammt der Butternut-Kürbis aus Südamerika. Inzwischen wächst er an den typischen hohen Reben auch in vielen anderen Ländern mit warmem Klima beziehungsweise teilweise in Treibhäusern."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "In Europa ist die Haupterntezeit für Butternusskürbis im Herbst. Wer mag, kann das beliebte Herbstgemüse das ganze Jahr über kaufen – Importe kommen auch außerhalb unserer Saison zum Beispiel aus Uruguay, Argentinien und Südafrika."
+            }
+        ]
+    },
+    {
+        "name": "Champignons",
+        "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Champignons werden in speziell dafür angelegten Tunneln mit Klimakontrolle gezüchtet. Die Pilze reifen je nach gewünschter Größe innerhalb von 4-5 Wochen. Geerntet wird täglich und zwar per Hand, denn diese Methode garantiert, dass  die Champignons makellos und ohne Reste von Erde aus den Beeten kommen. Trotzdem liegen die Preise für Champignons erfreulich niedrig, denn ein geübter Pflücker schafft pro Stunde bis zu 30 Kilogramm. Die Pflücker sortieren auch gleich nach der Ernte nach Qualität, Gewicht und Größe."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Champignons stehen in der Hitliste der beliebten Speisepilze ganz oben: Der Pro-Kopf-Verbrauch liegt in Deutschland bei rund 2,9 Kilogramm – das ist mehr als in Frankreich, woher die feinen Pilze ursprünglich stammen. Dort kam ein Melonenzüchter in der Mitte des 17. Jahrhunderts durch einen Zufall auf die Idee, weiße Champignons auf dem Düngerabfall seiner Melonenzucht züchtete. Der erste Zuchtpilz Europas wurde auch darum als \"Pariser Pilz\" bekannt, weil er schon wenig später vor dem Bau der Metro in den Katakomben der französischen Hauptstadt im großen Stil gezüchtet wurde. Dort herrschte das ideale Klima für den Anbau von Champignons, die es feucht lieben."
+            },
+            {
+                "order": 3,
+                "name": "Braune Champignons",
+                "value": "In Größe und Form unterscheiden sich braune Champignons nicht von ihren weißen Geschwistern – wohl aber, was Farbe und Geschmack angeht. Braune Champignons haben ein intensiveres, leicht nussiges Aroma. Außerdem schätzen viele an diesen Champignons, dass sie etwas weniger Wasser enthalten und darum beim Garen weniger schrumpfen und angenehm fest bleiben."
+            },
+            {
+                "order": 4,
+                "name": "Weiße Champignons",
+                "value": "Sie sind noch immer am beliebtesten und in drei Varianten zu haben: Miniatur-Champignons haben nur einen Durchmesser von 2 Centimetern und eine besonders feste Konsistenz. Geschlossene Champignons mittlerer Größe erreichen etwa 2,5 bis 3 Centimeter und geöffnete Champignons mit dunkelbraunen Lamellen bis zu 5 Centimeter.\n\nTipp: Damit die kleinen und mittleren Champignons ihre schöne schneeweiße Farbe behalten, beträufelt man sie am besten nach dem Putzen und Schneiden mit etwas Zitronensaft."
+            },
+            {
+                "order": 5,
+                "name": "Riesenchampignons",
+                "value": "Damit diese Sorte ihrem Namen alle Ehre macht, lässt man weiße Champignons länger wachsen, sodass ihr Hut einen Durchmesser von etwa 12 Centimeter erreicht. Die Maxi-Version in braun heißt Portobello, weil sie in England besonders begehrt ist. Beide Varianten eignen sich mit ihrer Größe perfekt zum Füllen und Überbacken. Ein leckeres Beispiel sind gefüllte Portobello-Pilze oder gefüllte Riesenchampignons. Man kann Riesenchampignons beziehungsweise Portobello-Pilze aber auch prima wie ein vegetarisches \"Schnitzel\" braten."
+            }
+        ]
+    },
+    {
+        "name": "Chinakohl",
+        "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Nomen est Omen: Der Chinakohl stammt tatsächlich ursprünglich aus China, wo man das knackige Gemüse schon seit dem 5. Jahrhundert kennt. Aber auch im übrigen Asien ist Chinakohl ein Gemüse mit VIP-Status: Die Koreaner stellen daraus zum Beispiel ihr berühmtes Kimchi (scharf gewürzten und eingelegten Kohl) her. In thailändischen Garküchen schnippelt man Chinakohl in die Nudelsuppe. Die Japaner schätzen das Gemüse ebenfalls und haben sogar eine ganz neue Sorte gezüchtet."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die bei uns kultivierte und am meisten verkaufte Sorte stammt von einem chinesischen Urahnen mit dem Namen Zahn des weißen Drachen ab. Trotz des deutschen Namens ist der vermutlich aus einer Kreuzung von Speiserübe und Pak Choi (einer asiatischen Kohlart) entstandene Chinakohl botanisch mit unserem Kohl übrigens nur sehr entfernt verwandt."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Chinakohl gibt es das ganze Jahr über."
+            },
+            {
+                "order": 4,
+                "name": "Verwendung",
+                "value": "Die Blattrippen von Chinakohl sind so zart, dass man sie problemlos mitessen kann. Das Putzen und Vorbereiten geht darum ganz fix. Welke äußere Blätter entfernen, den Chinakohl kurz waschen und in einem Sieb abtropfen lassen. Anschließend je nach Rezept zerkleinern."
+            }
+        ]
+    },
+    {
+        "name": "Eisbergsalat",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Der Eisbergsalat zählt zu den zahlreichen Trends aus den USA, die bei uns begeistert aufgegriffen wurden. Warum das so ist, deuten nicht zuletzt die Namen an, die man ihm hierzulande auch manchmal gibt: Krachsalat oder Knacksalat drücken perfekt aus, was den Eisbergsalat vor allem auszeichnet – er ist knackig. Sein Name, oft auch einfach zu Eissalat abgekürzt und stammt aus der Vergangenheit, als er zum Transport von Küste zu Küste mit Eis frisch gehalten wurde. So überstand Eisbergsalat selbst lange Transportwege ohne an Knackigkeit und Geschmack zu verlieren.\n\nGenau diese gute Haltbarkeit unterscheidet den Eisbergsalat besonders von anderen Blattsalaten, die sowohl auf Wärme als auch auf Kälte empfindlich reagieren. Vor allem im Sommer oder bei Partys erfreut sich Eisbergsalat deshalb großer Beliebtheit: Er bleibt auch dann knackig und macht nicht schlapp, wenn er mehrere Stunden auf einem Buffet steht oder das Thermometer nach oben schnellt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der erste Eisbergsalat wurde in Kalifornien geerntet. Heute baut man ihn aber auch in Spanien, Frankreich, den Niederlanden, Belgien, Israel, Italien und Deutschland an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Eisbergsalat ist zwar im Sommer wegen seiner Robustheit gegen Hitze besonders beliebt, hat aber das ganze Jahr über Saison. Vom Spätherbst bis zum Frühjahr kommt Eisbergsalat überwiegend aus dem Treibhausanbau."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Es gibt übrigens diverse Sorten beim Eisbergsalat. Besonders bemerkenswert sind darunter roter Eisbergsalat und der aus niederländischen Züchtungen entstandene Crisp-Salat. Er hat im Unterschied zu anderen Eisbergsalaten gekräuselte Außenblätter und eine intensiver grüne Farbe."
+            }
+        ]
+    },
+    {
+        "name": "Endiviensalat",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Es kommt ja eher selten vor, dass Franzosen und Amerikaner kulinarische Vorlieben teilen – aber zumindest Endivien haben dieses kleine Wunder vollbracht. Sowohl im Gourmetland als auch im Land der unbegrenzten Möglichkeiten gehört diese Salatsorte zu den beliebtesten. Allerdings bevorzugt man dort die krause Endivie, auch als Frisée bekannt. Ihr Erkennungsmerkmal sind die langen, fein gefiederten und stark gekräuselten Blätter, die oben grün sind und dann bis zum Herz hin immer heller und gelb werden.\n\nGelb ist auch das Innere der glatten Endivie, vielen eher als Eskariol ein Begriff. Die beiden Sorten unterscheiden sich überhaupt nur in der Form des Kopfs und der Blätter beziehungsweise durch ihr Äußeres; Abstammung und Inhaltsstoffe sind gleich."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich stammt die Endivie aus dem Mittelmeerraum bis nach Zentralasien und aus Indien. Die größten Anbaugebiete liegen heute in Italien, den USA, Frankreich und den Niederlanden."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Endivien gibt es inzwischen aus dem Gewächshaus das ganze Jahr hindurch. Im Spätsommer beginnt bei uns die Erntezeit vom Freiland; da Endivien bei Frost nicht gleich schlappmachen, läuft die Ernte bis etwa Mitte Dezember."
+            }
+        ]
+    },
+    {
+        "name": "Erbsen",
+        "seasons": ["Juni", "Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wenn das kein echter Evergreen ist: Erbsen gelten als eine der ältesten Kulturpflanzen überhaupt – die frühesten Funde von Erbsenpflanzen gehen zurück auf die Zeit um 7000 vor Christus. In China baute man Erbsen schon vor 4000 Jahren an. Und bis heute liebt die kleinen grünen Kügelchen beinahe jeder zwischen 9 Monaten und 99 Jahren. Bei uns Europäern ist es allerdings eine eher späte Liebe, denn auf unserem Kontinent blühte sie erst im 17. Jahrhundert richtig auf. Kulinarische Trendsetter waren mal wieder die Franzosen, deren König Ludwig der XIV. die grünen Kugeln mit dem delikaten Geschmack besonders schätzte und daher in Versailles pflanzen ließ. Erst er brachte die Sitte, Erbsen jung und frisch zu essen statt wie bis dahin nur getrocknet, in Mode.\n\nKurz, Erbsen avancierten vom billigen Sattmacher zum Gaumenkitzel, den sich lange nur adelige Gourmets schmecken ließen. Das ist heute anders: Erbsen sind zum Allerweltsgemüse aufgestiegen, das kaum wegzudenken und in Dosen oder aus der Tiefkühltruhe jederzeit zu kaufen und dazu erschwinglich ist. Aber die meisten sind sich trotzdem einig: Am allerbesten schmecken Erbsen, wenn sie frisch, jung und zart sind."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat des wild wachsenden Urahnen unserer heutigen Erbsen liegt in Vorder- und Mittelasien sowie im östlichen Mittelmeerraum."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Zeit für frische junge Erbsen ist kurz und reicht nur von Juni bis Ende August."
+            }
+        ]
+    },
+    {
+        "name": "Erdbeere",
+        "seasons": ["Mai", "Juni", "Juli"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Rund drei Kilo essen wir durchschnittlich pro Jahr und Kopf. Echte Erdbeerfans verdrücken auch weit mehr. Auf jeden Fall steht die Erdbeere seit vielen Jahrzehnten unangefochten ganz oben in den Charts der bei uns beliebtesten Früchte.\n\nWie die einzelne Erdbeere genannt wird, ist Erdbeerfans im Übrigen ebenso egal wie die Tatsache, dass es sich streng genommen gar nicht um Beeren handelt. Auch wenn man sie traditionell als \"Königin der Beerenfrüchte\" hofiert – vom rein botanischen Standpunkt aus gesehen ist die aromatische Erdbeere eine sogenannte \"Sammelfrucht\". Hinter diesem Namen steckt aber nicht etwa, dass man Erdbeeren sammeln kann, sondern vielmehr, dass sie sich aus mehreren Samen zusammensetzt. Man kann das sogar auf den ersten Blick sehen. Die kleinen, gelben Kernchen, die in der roten Oberfläche stecken, sind die eigentlichen Früchte.\n\nWer weiß, dass die süßen Objekte der kulinarischen Begierde zu rund 90 Prozent aus Wasser bestehen, wundert sich vielleicht, dass sie dabei so köstlich schmecken. Doch die übrigen 10 Prozent haben es in sich. Je mehr Sonne die Erdbeeren tanken durften, desto höher ihr Gehalt an Fruchtsäuren, Fruchtzucker und Aromastoffen und umso intensiver ist auch ihr Geschmack."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die Urahnen unserer Gartenerdbeere waren die kleine Scharlach-Erdbeere und die große Chili-Erdbeere, die vor über 200 Jahren in Amerika gekreuzt wurden. Bei uns züchtet man Erdbeeren erst seit Ende des 19. Jahrhunderts. Vorher kannte man nur die besonders aromatische, kleine Walderdbeere."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Erdbeeren im März oder April? Schön und gut, aber echte Fans warten lieber, bis die Saison startet. Bei uns geht die Saison von etwa Ende Mai bis August. Es ist keineswegs Einbildung, dass frühreife Erdbeeren, die aus Mittelmeerländern und Israel zu uns kommen, nicht so süß und \"erdbeerig\" wie einheimische Sommer-Erdbeeren schmecken. Tatsächlich kultivieren deutsche Anbauer andere, aromatischere Erdbeersorten."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Allein in Deutschland gibt es rund 1.000 verschiedene Sorten Erdbeeren mit teilweise kuriosen Namen wie \"Mieze Schindler\", \"Pegasus\", \"Lambada\" oder \"Polka\". Je nach Sorte sind sie hell- bis dunkelrot gefärbt und rundlich oder oval bis spitz geformt. Von Bedeutung sind die Sorten meist nur für Leute mit Garten, die ihre Erdbeeren selbst züchten – im Verkauf spielen die unzähligen Sortennamen oft keine Rolle."
+            }
+        ]
+    },
+    {
+        "name": "Feldsalat",
+        "seasons": ["Januar", "Februar", "März", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Klein, aber oho: Die Blättchen von Feldsalat mögen bescheidene Ausmaße haben, doch dafür können sie mit jeder Menge Power für unsere Gesundheit punkten. Wozu den oft nitratbelasteten Treibhaussalat oder teure Importe aus exotischen Gefilden auf den Teller bringen – auch hierzulande gibt es schließlich im Herbst und Winter frisches Grün. Die von den Österreichern liebevoll Vogerlsalat getauften Pflänzchen punkten mit einem besonders delikaten Geschmack.\n\nGanz billig ist das bei uns je nach Gegend auch Ackersalat oder Rapunzelsalat genannte Blattgemüse nicht und das kann es auch kaum sein, denn nach wie vor müssen die zarten Pflanzen mühsam per Hand geerntet werden. Auf den Markt kommt Feldsalat büschelweise und zwar mitsamt den feinen Wurzeln. Sie machen zwar beim Putzen etwas Arbeit, sorgen aber dafür, dass Feldsalat so schön knackig bleibt wie wir ihn kennen und lieben.\n\nWie sein Name schon verrät, kommt Feldsalat tatsächlich frisch vom Feld. Unter den Blattsalaten ist er schon wegen seiner Robustheit einzigartig, denn im Gegensatz zu all seinen Konkurrenten verträgt er problemlos Temperaturen bis zu minus 15 Grad. Dennoch baut man Feldsalat längst auch unter Glas beziehungsweise unter Folie an."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Auch wenn Feldsalat längst in beinahe ganz Nord- und Osteuropa bekannt und beliebt ist – seine eigentliche Heimat liegt in Eurasien. In diesem Gebiet, das von den Kanaren über Nordafrika bis zum Kaukasus reicht, wächst der Feldsalat bis heute wild am Wegesrand. Kultiviert wird Feldsalat erst seit dem vorigen Jahrhundert.\n\nDie Hauptanbaugebiete für Feldsalat vom Freiland liegen bei uns in Deutschland vor allem in Baden-Württemberg, gefolgt von Rheinland-Pfalz und Nordrhein-Westfalen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Feldsalat vom Freiland bekommt man von Oktober bis etwa März oder April, je nach Witterung."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Generell unterscheidet man bei Feldsalat zwei Sortengruppen: Die eine besteht aus Sorten mit relativ großen Blättern, die andere – von Kennern am meisten geschätzt – hat kleine Blättchen und häufig eine besonders intensiv dunkelgrüne Farbe."
+            }
+        ]
+    },
+    {
+        "name": "Fenchel",
+        "seasons": ["Juni", "Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Bei Fenchel scheiden sich die Geister: Sein intensiver Geschmack ist nicht jedermanns Sache. Probieren lohnt sich aber, denn Knollenfenchel ist eine Wohltat für den gesamten Organismus und passt einfach perfekt zu mediterranen Gerichten.\n\nItalienurlauber kommen um Fenchel kaum herum, denn im Land wo die Zitronen blühen gehört das Gemüse zu den absoluten Stars in der Küche. Die weißen bis grünlich-weißen sogenannten Scheinknollen können flach bis kugelrund wachsen und wiegen je nach Sorte zwischen etwa 250 und 400 Gramm pro Stück. Apropos Sorte: Die Italiener unterscheiden zwei Varianten. Der große Bologneser Fenchel (Finocchio grosso) kommt bevorzugt roh auf den Tisch, den kleinen und zarten Florentiner Fenchel (Finocchio nostrale) isst man am liebsten gedünstet oder gekocht."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der Urahn des Fenchels soll seine Heimat in Vorderasien und im Mittelmeerraum haben. Heute liegen die Hauptanbaugebiete für Fenchel in Italien, Spanien, Südfrankreich, Griechenland und Nordafrika. Importe kommen aber auch aus den Niederlanden zu uns; hierzulande wächst Fenchel in kleinen Mengen vor allem in Süddeutschland."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Fenchel vom Freiland kommt von Oktober bis Mai aus in Italien, Spanien und Frankreich zu uns. Ab Mai bis in den November hinein exportieren vor allem die Niederlande frischen Fenchel."
+            }
+        ]
+    },
+    {
+        "name": "Frühlingszwiebel",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Nicht immer ist der Name auch Omen – Frühlingszwiebeln sind zwar so schön grün und weiß wie der Frühling, aber es gibt sie zu jeder Jahreszeit. Viel zutreffender ist darum ihr eigentlich korrekter Name Lauchzwiebel, der zu Recht vermuten lässt, dass die schlanke kleine Schwester der dicken Haushaltszwiebel ebenfalls zur Familie der Lauchgewächse gehört. Dass sich ihr eigentlich falscher Name trotzdem so beharrlich hält, liegt vermutlich nicht nur an ihren frühlingshaften Farben, sondern auch daran, dass man mit der Frühlingszwiebel beziehungsweise Lauchzwiebel so wunderbar leicht und frisch kochen kann.\n\nMit der kleinen Zwiebelförmigen Verdickung verraten sie ihre enge Verwandtschaft mit der großen, robusteren Schwester auf den ersten Blick. Ohne die Verdickung – botanisch eine sogenannte Bulbe – sehen Frühlingszwiebeln dem Babylauch zum Verwechseln ähnlich. Nur wer genauer hinguckt, sieht den kleinen, aber entscheidenden Unterschied: Das Grün hat nicht wie beim Lauch eine flache Blatt-, sondern die für Zwiebeln typische Röhrenform."
+            },
+            {
+                "order": 2,
+                "name": "Saison",
+                "value": "Frühlingszwiebeln beziehungsweise Lauchzwiebeln schmecken zwar vielen am besten, wenn sie von April bis September aus Freilandanbau kommen, aber sie sind das ganze Jahr über erhältlich. Im Herbst und Winter wachsen sie dann im Treibhaus."
+            }
+        ]
+    },
+    {
+        "name": "Gurke",
+        "seasons": ["Mai", "Juni", "Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Die verschiedenen Gurkensorten unterscheiden sich in ihrer Länge, Dicke, sowie in der Farbe und Beschaffenheit ihrer Schale. Für manche Menschen sind Gurken schwer verdaulich und blähend. Bei Treibhausgurken werden regelmäßig Fungizide gespritzt, deren Rückstände oft noch nachweisbar sind."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Gurken gehören zu den Kürbisgewächsen. Sie haben ihren Ursprung vermutlich in Indien. Heute wachsen Gurken überall dort, wo es warm ist und Wasser gibt. In den Tropen genauso wie in gemäßigten Klimazonen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Am aromatischsten schmecken Freilandgurken, diese werden im Sommer von Mai bis September geerntet"
+            }
+        ]
+    },
+    {
+        "name": "Grünkohl",
+        "seasons": ["Januar", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Als \"Sabellinischer Kohl\" galt Grünkohl im alten Rom als Delikatesse und war derart begehrt, dass Bauern, die ihn anbauten, dadurch zu Reichtum kamen. Bis heute genießt ein enger Verwandter des Kreuzblütler-Gewächses unter dem Namen \"Cavolo Nero\" einen guten Ruf in Italien. Dennoch ist es wahr, dass der Grün- oder auch Braunkohl längst das restliche Europa erobert hat und speziell im Westen und Norden besonders gern aufgetischt wird. Um das Prädikat \"Hauptanbaugebiet\" streiten sich seit geraumer Zeit die Bremer und die Oldenburger. Fest steht aber immerhin, dass Chronisten den ersten offiziellen Grünkohlschmaus im Jahre 1545 verzeichnet haben. Dafür verdankt der Grünkohl den um die Vorherrschaft ringenden Oldenburgern den schönen Namen \"Friesische Palme\".\n\nEchte Fans scheuen keine Mühen und lassen es sich nicht nehmen, frischen Grünkohl zu verwenden. Das ist ein kleines Opfer, denn das Putzen, waschen und vorbereiten nimmt Zeit in Anspruch, da sich zwischen den krausen Blättern gern reichlich Sand versteckt. Weniger puristisch Veranlagte greifen darum lieber zum Kohl aus der Dose, der sich geschmacklich auch nicht allzu sehr von frischem unterscheidet und fertig vorbereitet wurde. Auch tiefgefrorener Grünkohl ist eine super Alternative für Eilige. Bei frischem oder solchem aus der Konserve hat das bereits die Natur beziehungsweise der Winterfrost erledigt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Auch wenn Grünkohl als typisch norddeutsch gilt – seine ursprüngliche Heimat liegt nicht im kalten Norden, sondern im östlichen Mittelmeerraum."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Frisch vom Feld kommt Grünkohl etwa von Ende September bis in den Februar hinein. In der übrigen Zeit des Jahres kann man auf tief gefrorenen Grünkohl oder auf Grünkohl aus der Konserve zurückgreifen. Guter Grünkohl wird nach dem ersten Frost geerntet, weil sich durch die Kälte sein Zuckergehalt erhöht und so der Geschmack noch intensiviert wird."
+            }
+        ]
+    },
+    {
+        "name": "Heidelbeere",
+        "seasons": ["Juni", "Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Heidelbeeren – je nach Landstrich und Mundart auch Blau- , Schwarz- oder Bickbeeren genannt – findet man wild in Wäldern, Moorlandschaften sowie der Heide. Sie wachsen an sogenannten Kleinsträuchern, die nur etwa 50 Centimeter hoch werden und zu den Heidekrautgewächsen zählen. Die Markenzeichen wild wachsender Heidelbeeren sind ihre geringe Größe und ihr köstliches Aroma, bei dem die sehr viel größeren Heidelbeeren aus der Zucht nicht ganz mithalten können.\n\nUnerfahrene sollten dennoch ihre Heidelbeeren im Zweifelsfall lieber aus Kulturanbau kaufen statt sie selbst im Wald zu sammeln, denn optisch sind Heidelbeeren ziemlich leicht mit der Rauschbeere zu verwechseln, der man gesundheitsschädliche Eigenschaften nachsagt.\n\nWilde Heidelbeeren sind allerdings sogar während der Saison nur selten zu bekommen, wenn man nicht selbst sammeln geht. Findet man auf dem Wochenmarkt oder im Gemüseladen doch mal Waldheidelbeeren, stammen sie in der Regel aus Polen oder anderen osteuropäischen Ländern. Das muss keineswegs ein Mangel sein, die teilweise sehr lange Transportwege können aber Nachteile mit sich bringen."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat der Heidelbeeren liegt in Nord-, Mittel- und Osteuropa."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Heidelbeeren bekommt man zwar das ganze Jahr über als Importware, die heimische Saison dauert aber von Juli bis September."
+            }
+        ]
+    },
+    {
+        "name": "Hokkaido",
+        "seasons": ["August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Mit einem Gewicht von ein bis zwei Kilogramm sind Hokkaido-Kürbisse deutlich kleiner als die meisten ihrer Verwandten und darum ideal für Mini-Haushalte. Außerdem lässt sich Hokkaido-Kürbis im Gegensatz zu Muskatkürbis oder Butternut-Kürbis besonders einfach und schnell zubereiten, denn die in der Regel kräftig orangefarbene (seltener auch grüne) Schale vom Hokkaido-Kürbis kann man problemlos mitessen. Ein echter Klassiker ist die Kürbissuppe."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Seinen Namen verdankt der Hokkaido-Kürbis seiner ursprünglichen Heimat – einer gleichnamigen Insel in Japan. Die Inselbewohner züchteten ihn aus dem gegen Ende des 19. Jahrhunderts von den Amerikanern dort eingeführten Reisnusskürbis. Erst seit etwa 20 Jahren wird der Hokkaido-Kürbis auch in Europa und bei uns in Deutschland angebaut und gehört inzwischen zu den beliebtesten Gemüsesorten im Herbst."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Schon Ende August lassen sich die ersten Kürbisse blicken, die eigentliche Saison startet dann ab September und reicht bis weit in den Winter. Selbst wenn die Erntezeit vorbei ist, kann man frischen Hokkaido-Kürbis finden, da er sich bei optimaler Lagerung bis zu einem Jahr hält."
+            }
+        ]
+    },
+    {
+        "name": "Holunderbeere",
+        "seasons": ["August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Früher pflanzte man Holunder auf jedem Bauernhof. Er galt als Baum des Lebens und der Sippen, ihm wurden magische, beschützende Kräfte für Menschen und Tiere zugesprochen. Ob man an solche Legenden nun glaubt oder nicht, fest steht: Der zu den Gänsefußgewächsen gehörende Holunder kann jedenfalls dazu beitragen, Zwei- und Vierbeiner zu ernähren und gesund zu halten. Schon die Menschen der Jungsteinzeit sollen Holunderbeeren als Nahrungs- und Heilmittel genutzt haben. Vor allem seine herb-aromatischen Früchte sind seit Urzeiten besonders beliebt, denn aus Holunderbeeren, die oft auch Fliederbeeren genannt werden, lässt sich ein leckerer Saft kochen."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der Holunderstrauch ist in Mitteleuropa seit vielen Jahrhunderten heimisch."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Zeit für Holunderbeeren beginnt im September und dauert rund einen Monat."
+            }
+        ]
+    },
+    {
+        "name": "Kartoffel",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Kartoffeln sind unentbehrliche Grundnahrungsmittel und so wichtig wie das tägliche Brot. Die in den USA gern als Dickmacher verpönten Knollen sind tatsächlich echte Schlankmacher, sozusagen natürliche \"Light-Produkte\". Ohne Fett zubereitet liefern Kartoffeln wenig Kalorien und sättigen trotzdem angenehm und anhaltend. Das Eiweiß der Kartoffeln ist so hochwertig, dass es in Kombination mit Milch oder Eiern den Wert von Fleisch bei Weitem übersteigt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Bereits vor tausenden von Jahren bauten die Inkas aus Südamerika Kartoffeln an, bevor die Kartoffeln Mitte des 16. Jahrhunderts von spanischen Eroberern nach Europa gebracht wurden. König Friedrich II. machte die Kartoffel dann auch hierzulande bekannt, indem er nach einer großen Hungersnot im Jahr 1756 Bauern zum Anbau zwang. Die Kartoffel setzte sich nach und nach durch und wurde im Laufe des 19. Jahrhunderts zu einem wichtigen Grundnahrungsmittel, als die Städte immer bevölkerungsreicher wurden."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Deutsche Frühkartoffeln gibt es ab Ende Mai oder Anfang Juni, mittelfrühe Sorten kommen Anfang August hinzu. Spätkartoffeln gehören hierzulande zu den am meisten angebauten Sorten, die auch hervorragend gelagert werden können."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Viel Farbe bringen exotische Neulinge auf unseren Teller. Da sind die fast schwarze Trüffelkartoffel, der blaue Schwede, Highland Red Burgundy oder Pink Fir Apple. Sie verlieren allerdings etwas Farbe beim Kochen. Wer das vermeiden möchte, kann zur Vitelotte, Violetta und der Roten Emma greifen. Ein bunter Kartoffelsalat bringt Ihre Gäste garantiert zum Staunen."
+            }
+        ]
+    },
+    {
+        "name": "Kirsche",
+        "seasons": ["Juni", "Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Bei Kirschen werden sogar diejenigen schwach, die süßes Obst weniger schätzen, denn für sie gibt es eine säuerliche Variante. Süßkirschen sind allerdings die ersten, die ab Juni an den Bäumen hängen. Zunächst werden die sogenannten Herzkirschen geerntet, die mit besonders weichem und saftigem Fruchtfleisch locken. Danach warten die festfleischigen Knubber- oder Knorpelkirschen auf fleißige Pflücker. Sie reifen bis in den Hochsommer hinein.\n\nUnterschiede gibt es bei Süßkirschen übrigens nicht nur bei der Konsistenz des Fruchtfleischs, auch in der Farbe können sich Süßkirschen erheblich unterscheiden. Die meisten sind dunkelrot bis beinahe schwarz, aber es gibt auch hellrote und sogar gelbe beziehungsweise gelbrote Kirschen.\n\nSind die letzten späten süßen Kirschen geerntet, schlägt die Stunde der Sauerkirschen. Anders als ihre süßen Schwestern vertragen sie niedrige Temperaturen gut und wachsen darum auch in Gebieten mit kühlerem Klima. Zu den Sauerkirschen gehören unter anderem die berühmten Weichselkirschen, die Schattenmorellen, die kaum bekannten Amarellen sowie die sogenannten Glaskirschen. Der Name ist bei Sauerkirschen auf jeden Fall Programm: Da sie erheblich mehr Fruchtsäure als süße Kirschen enthalten, schmecken sie je nach Sorte entsprechend säuerlich bis sehr sauer.\n\nÜbrigens: Die sehr dunklen und sehr süßen Amarenakirschen gehören keiner speziellen Sorte an, sondern sind tatsächlich schwarze Süßkirschen, die man in Italien in einen Mix aus Zuckersirup und Mandellikör einlegt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Botanisch gehören süße und saure Kirschen unterschiedlichen Arten an, sind aber sehr eng miteinander verwandt. Beide Sorten zählen zum Steinobst und zu den Rosengewächsen. Süße Kirschen stammen ursprünglich von der im Kaukasus wild wachsenden Vogelkirsche ab."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Zeit für Kirschen startet im Juni und dauert bis Mitte, Ende August – je nach Wetterlage."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Die milde Süßkirsche landet meist direkt im Mund, während sich die herbere Sauerkirsche perfekt zum Kochen, Backen und Einmachen eignet – rundum smart sind sie beide.\n\nSüsskirsche-Grosse Prinzessin: Große Spätkirsche, festfleischig, süß, gelbe, rotgestreifte Frucht, alte Obstsorte\n\nSüsskirsche-Hedelfinger Riesenkirsche: Sehr große Kirsche, kleiner Stein, glänzend, dunkelrotschwarze Frucht\n\nSauerkirsche-Schattenmorelle: In der Regel kräftig rot, aber auch von hellrot bis fast schwarz erhältlich. Glänzend, große Frucht mit sehr saftreichem Fruchtfleisch, angenehm säuerlicher Geschmack"
+            }
+        ]
+    },
+    {
+        "name": "Kohlrabi",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wie der Name schon andeutet, gehört Kohlrabi zwar botanisch zur Familie der Kohlgewächse, erinnert geschmacklich aber nur entfernt an die deftigen Verwandten. Im Gegensatz zu anderen Kohlarten entsteht Kohlrabi übrigens nicht aus den Blättern oder Blüten der Pflanze, sondern durch eine oberirdische Verdickung des Pflanzenstiels. Entstanden ist Kohlrabi durch eine Kreuzung aus wildem Kohl und wilden weißen Rüben, dementsprechend ist seine ursprüngliche Farbe ein helles Grün. Inzwischen kennt man aber auch violetten Kohlrabi, der sich aber im Geschmack und in den Inhaltsstoffen nicht von der grünen Sorte unterscheidet."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der Urahn des Kopfsalats ist nach Ansicht von Botanikern der wilde Zaunlattich, der seine ursprüngliche Heimat in Südeuropa, Westasien und Nordafrika hat."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Den ersten jungen Kopfsalat vom Feld bekommt man bei uns ab Mai und dann den ganzen Sommer über. Kopfsalat aus dem Treibhaus ist das ganze Jahr über zu haben."
+            }
+        ]
+    },
+    {
+        "name": "Kopfsalat",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wie der Name schon andeutet, gehört Kohlrabi zwar botanisch zur Familie der Kohlgewächse, erinnert geschmacklich aber nur entfernt an die deftigen Verwandten. Im Gegensatz zu anderen Kohlarten entsteht Kohlrabi übrigens nicht aus den Blättern oder Blüten der Pflanze, sondern durch eine oberirdische Verdickung des Pflanzenstiels. Entstanden ist Kohlrabi durch eine Kreuzung aus wildem Kohl und wilden weißen Rüben, dementsprechend ist seine ursprüngliche Farbe ein helles Grün. Inzwischen kennt man aber auch violetten Kohlrabi, der sich aber im Geschmack und in den Inhaltsstoffen nicht von der grünen Sorte unterscheidet."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der Urahn des Kopfsalats ist nach Ansicht von Botanikern der wilde Zaunlattich, der seine ursprüngliche Heimat in Südeuropa, Westasien und Nordafrika hat."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Den ersten jungen Kopfsalat vom Feld bekommt man bei uns ab Mai und dann den ganzen Sommer über. Kopfsalat aus dem Treibhaus ist das ganze Jahr über zu haben."
+            }
+        ]
+    },
+    {
+        "name": "Lollo Rosso",
+        "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Der gute alte Kopfsalat wird bei uns inzwischen häufig links liegen gelassen. Das mag zum Einen daran liegen, dass er in den vielen neueren Salatsorten aus den Mittelmeerländern und besonders durch den Eisbergsalat mächtige Konkurrenten bekommen hat. Zum Anderen hat ihn auch der Anbau unter Glas etwas in Verruf gebracht. Tatsächlich stimmt es, dass bei Kopfsalat aus dem Treibhaus sehr häufig hohe Nitratwerte gefunden werden. Experten raten darum, Kopfsalat möglichst während der Freilandsaison zu essen.\n\nDer Kopfsalat aus Freilandanbau hat ein Comeback absolut verdient, denn er punktet mit feinem Geschmack und durchaus wertvollen Inhaltsstoffen. Die Franzosen wissen seine Qualitäten besonders zu schätzen und verwenden ihn sogar als Gemüse. In Frankreich liebt man übrigens besonders den roten Kopfsalat, eine bei uns immer noch eher seltene Sorte. Roter Kopfsalat hat etwas zartere Blätter als der übliche grüne.\n\nAm beliebtesten sind bei Feinschmeckern aller Länder die gleichzeitig knackigen und zarten Herzen des Kopfsalats. Allerdings stecken die meisten gesunden Nährstoffe in den dunkleren und etwas kräftigeren Außenblättern."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der Name verrät es eigentlich schon: Der Lollo rosso stammt aus Italien. Man baut ihn inzwischen aber auch in Frankreich, Deutschland, der Schweiz und in den Niederlanden an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Saison für Lollo rosso vom Freiland ist erfreulich lang: sie dauert von Mai bis Oktober. In den übrigen Monaten können Sie Lollo rosso aber auch aus Treibhausanbau bekommen."
+            }
+        ]
+    },
+    {
+        "name": "Mais",
+        "seasons": ["Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wer Mais als Gemüsemahlzeit einplant, liegt nur zum Teil richtig. Tatsächlich gehört Mais nämlich zu den Sommergetreiden, ist also streng genommen gar kein Gemüse. Trotzdem kommt Mais in vielen Küchen der Welt so in Topf und Pfanne. Und das schon ziemlich lange: Bereits vor rund 5000 Jahren baute man die zu den Süßgräsern zählende Pflanze systematisch an und nutzte ihre nahrhaften Eigenschaften – zuerst als Tierfutter, später auch für die Herstellung von Mehl und Grieß für Brot und Tortillas.Bis heute sind Maismehl und Maisgrieß (Polenta) ein besonders wichtiges Produkt aus Mais, aber seit Mitte des 19. Jahrhunderts kam in Amerika auch der süße Zuckermais in Mode, den man wie Gemüse essen kann. Bis dieser Genuss auch bei uns zu haben war, vergingen allerdings noch mal rund 100 Jahre. Erst die amerikanischen Sieger brachten nach 1945 die hierzulande bis dahin unbekannten Kolben mit ins Land und die Deutschen auf den Geschmack."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die Heimat der leckeren Kolbens liegt im Land der Maya und Azteken. Archäologen fanden in Mexiko die Spuren der dem heutigen Mais sehr ähnlichen Pflanzen, die aus dem Jahr 3000 vor Christus stammen. Bis heute ist Amerika das Hauptanbauland. Die USA ernten pro Jahr etwa 2,5 Millionen Tonnen Mais. Nach Europa kam der Mais erst um 1520 als kulinarisches Souvenir der spanischen Eroberer. Außer aus den USA kommen Importe vor allem aus Spanien, Italien und Südfrankreich zu uns. Hierzulande wächst fast ausschließlich Futtermais, denn für den leckeren Zuckermais ist es schlicht nicht warm genug."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Frische Maiskolben gibt es bei uns von Juli bis Ende Oktober zu kaufen. In der übrigen Zeit kann man auf tief gefrorenen Mais, Mais aus der Konserve oder in Folie verschweißte Maiskolben zurückgreifen."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Für Mais gibt es die zwei Hauptkategorien: Gemüsemais beziehungsweise Zuckermais und Körnermais beziehungsweise Feldmais. Der bei uns so beliebte gelbe Mais ist nur eine von den weltweit etwa 300 bekannten Sorten. In den Anbauländern, vor allem in Südamerika, kennt man auch Maissorten mit weißen, orangefarbenen, roten, blauen oder sogar violetten bis schwarzen Körnern. Der angesagte Baby-Mais ist übrigens keine spezielle Sorte: Um das Miniformat zu bekommen, erntet man den ganz normalen Zuckermais einfach schon in einem frühen Wachstumsstadium."
+            }
+        ]
+    },
+    {
+        "name": "Mangold",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Neuerdings sieht man Mangold wieder häufiger – zur Freude aller Feinschmecker, denn er schmeckt richtig gut. Daran kann es also nicht liegen, dass dieses Gemüse bei uns fast völlig in Vergessenheit geraten ist! Tatsächlich war Mangold denn auch noch bis zum Ersten Weltkrieg weitaus bekannter und beliebter als Spinat. Dann allerdings setzte sich der damalige Newcomer als \"feiner\" mehr und mehr durch. Völlig zu Unrecht, wie jeder weiß, der den neuen alten Bekannten mal gekostet hat! Denn der botanisch zu den Gänsefuß-Gewächsen zählende Mangold erinnert zwar äußerlich ganz entfernt an Spinat, er schmeckt auch ähnlich – nur weitaus aromatischer und würziger.\n\nGrundsätzlich unterscheidet man zwei Hauptsorten: Der sogenannte Schnitt- oder Blattmangold hat eher schmale Stiele und große, breite Blätter; sogenannter Stielmangold besitzt hingegen nur schmale Blätter und dafür besonders fleischige, ausgeprägte Stiele. So oder so – die knackigen Stiele isst man bei Mangold grundsätzlich mit. In der Regel sind sie weiß, es gibt aber auch eine rote Variante. Wer sie sieht, sollte schleunigst zugreifen! Denn diese Sorte ist nicht umsonst in Italien und Frankreich besonders begehrt: Sie sieht nicht nur besonders dekorativ aus, sondern schmeckt auch besonders würzig."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Mangold wuchs schon im Altertum wild in den Küstengebieten rund ums Mittelmeer. Seit einigen Jahrhunderten baut man das Gemüse aber auch in Kultur an, und das nicht mehr nur in seiner Heimat Südeuropa: Inzwischen wächst Mangold unter anderem auch in den Niederlanden und in der Schweiz. Bei uns gibt es nur sehr kleine Anbauflächen für Mangold, weshalb die deutsche Statistik die Ernte kurioserweise auch einfach unter dem Stichwort \"Spargel\" mit erfasst und verbucht."
+            }
+        ]
+    },
+    {
+        "name": "Mirabelle",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Mal ehrlich: Kennen Sie Mirabellen, außer vom Hörensagen? Falls nicht, lohnt sich ein \"Date\" mit ihnen aber unbedingt. In Frankreich liebt man sie schon seit rund 600 Jahren, bei uns sind sie \"erst\" rund 300 Jahre heimisch.\n\nWas die meisten nicht wissen: Mirabellen gehören zu den weltweit mehr als 2000 verschiedenen Pflaumensorten und damit zur Familie der Rosengewächse. Mirabellen sind gleichzeitig die kleinsten und auch die feinsten Verwandten aus der Familie. Pro Stück nur etwa 10 g leicht, erkennt man sie auf den ersten Blick an ihrer kugelrunden Form und der ins Orange spielenden goldgelben Farbe.\n\nDas je nach Sorte und Reife grüngelbe bis goldgelbe Fruchtfleisch von Mirabellen ist besonders saftig und wird darum speziell in Frankreich besonders gerne für Kompott, Konfitüren, Tortenbelag und als Basis für feinen Obstbrand genommen."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat der Mirabellen soll in Westasien liegen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Zeit für Mirabellen ist relativ kurz und dauert von Juli bis maximal Mitte September."
+            }
+        ]
+    },
+    {
+        "name": "Möhre",
+        "seasons": ["Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Schon die Vielzahl der verschiedenen Namen für Möhren zeigt, dass es sich um ein ausgesprochen beliebtes und allgemein bekanntes Gemüse handelt: Je nach Region nennt man es auch Gelbe Rübe, Karotte, Wurzel, Mohrrübe, Gelbe Wurzel, Gelbrübe, Woddel, Rübe, Rübli oder Feldrübli. Verwunderlich ist diese Beliebtheit kaum, denn Möhren schmecken gut, sind sehr kalorienarm, kosten wenig und haben hohen gesundheitlichen Wert.\n\nZu schätzen wusste man die vielen Vorteile der Möhre offenbar schon weit zurückliegend: Die ältesten Möhrensamen fanden Forscher bisher in Schweizer Pfahlbauen aus der Zeit um 2000 v. Chr., und bereits im Altertum hatte das Gemüse einen guten Ruf sowohl als Gemüse- als auch als Arzneipflanze. Während Möhren in alten Zeiten wild wuchsen, hat man sie längst \"gezähmt\" und baut sie in Kulturen an. Ganz verleugnen kann die Möhre ihren Stammbaum aber nicht: Unsere heutigen Sorten sind im Lauf der Jahrtausende und Jahrhunderte durch die Kreuzung der verschiedenen Wildformen entstanden.\n\nDie Vielfalt ist riesig: Immer häufiger sieht man das Gemüse nicht nur in der typischen Farbe Orange, sondern auch in den traditionellen Farben wie Hellgelb, Gelb, Dunkelorange, Hellrot, Rot und sogar Dunkelviolett bis Schwarz. Schwarz sind auch Möhren, die im Moor wachsen - allerdings liegt das nicht an Zuchtmethoden, sondern an der tiefschwarzen Moorerde. Jedenfalls gelten diese Möhren als besonders aromatisch.\n\nMöhre und Karotte sind übrigens botanisch das Gleiche, trotzdem bezeichnet man in der Lebensmittelindustrie und im Großhandel nur die kurzen, eher stumpfen Exemplare als Karotte."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Botaniker vermuten die ursprüngliche Heimat in Südeuropa und Asien."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Möhren sind das ganze Jahr über aus einheimischem Anbau erhältlich; zwischen Oktober und Dezember ist das Angebot besonders groß. Im Frühjahr und Sommer sind die sogenannten Bundmöhren erhältlich. Ab dem Sommer bis in den Winter hinein gibt es dann die Waschmöhren, die nach der Ernte in Waschanlagen vorgewaschen werden und dann verpackt im Handel liegen. Waschmöhren enthalten mehr Ballaststoffe und weniger Zucker als die etwas süßeren Bundmöhren. "
+            }
+        ]
+    },
+    {
+        "name": "Nektarine",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "\"Nacktpfirsich\" oder \"Glattpfirsich\" – die Zweitnamen der Nektarine verraten es: Nektarinen sind sehr eng verwandt mit dem Pfirsich. Tatsächlich ähneln sich Farbe, Form und Fruchtfleisch bei beiden Steinobstarten auch stark. Verwechslungsgefahr besteht trotzdem nicht, denn wie ihre Zweitnamen schon sagen: Im Gegensatz zum flaumigen Pirsich glänzt die Nektarine mit einer glatten Haut.\n\nBekannt ist die Nektarine bei uns erst seit ein paar Jahrzehnten. In den Anbauländern wachsen rund 40 verschiedene Sorten mit so klingenden Namen wie z.B. \"Crimson Gold\", \"Red June\" oder \"Stark Sungloo\". Vergleichsweise neu auf dem Markt sind sogenannte Wild-Nektarinen: Sie haben eine platte, flache Form."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Der mutmaßliche Vorfahre der Nektarine – der Pfirsich – stammt aus Asien. Die Hauptanbaugebiete für Nektarinen liegen aber in Italien, Frankreich, Spanien, Griechenland sowie in Kalifornien, Chile und Südafrika."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die ersten frischen Nektarinen kommen schon ab April aus Spanien und Italien zu uns. Richtig los geht es aber mit der Ernte auch in südlichen Ländern erst im Sommer: Von Juli bis September dauert die Hochsaison. Wer danach noch frischen Nektarine möchte, kann im Winter auch Früchte aus Südafrika, Chile und Argentinien bekommen."
+            }
+        ]
+    },
+    {
+        "name": "Pak Choi",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Bis vor rund 20 Jahren kannten bei uns höchstens diejenigen Pak Choi, die vor Ort in den Garküchen Chinas, Thailands oder anderer asiatischer Länder davon probiert hatten. Auch heute noch kommt er hierzulande meistens in den Woks von Asia-Restaurants und -Imbissen zum Einsatz. In Europa ist der auch Paksoi genannte Kohl eben noch fast ein Newcomer. Äußerlich ähnelt er am ehesten dem Stielmangold, von der Konsistenz her ist Pak Choi mit dem etwas bekannteren Chinakohl vergleichbar.\n\nDie knackigen Köpfe mit den kräftigen weißen Blattrippen wiegen zwischen 200 und 600 Gramm. Pak Choi wächst zwar auch bei uns, wird aber hierzulande selten angebaut – fast immer kommt der exotische Kohl aus Thailand oder aus den Niederlanden, wo er teils auf dem Freiland, teils im Treibhaus wächst."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Wie sein deutscher Zweitname Chinesischer Senfkohl bereits vermuten lässt, stammt Pak Choi aus Asien. In China, Korea und Japan kennt man das botanisch eng mit dem Chinakohl verwandte Gemüse schon lange."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Da Pak Choi sowohl auf dem Feld als auch im Treibhaus gedeiht, kann man ihn das ganze Jahr über kaufen."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "In Asien kennt man verschiedene Varianten von Pak Choi, zum Beispiel auch Sorten mit hellgrünen statt weißen Blattrippen. Ziemlich beliebt sind auch der sogenannte Baby Pak Choi und der Shanghai Pak Choi – beide Sorten sind sehr viel kleiner und zarter als der herkömmliche Pak Choi, aber während Baby Pak Choi besonders mild schmeckt, hat Shanghai Pak Choi einen besonders würzigen Geschmack."
+            }
+        ]
+    },
+    {
+        "name": "Paprika",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wer die Farbenvielfalt von Paprikaschoten sieht, könnte meinen, verschiedene Sorten vor sich zu haben. Das ist aber keineswegs der Fall: Die verschiedenen Farben zeigen nur, in welchem Reifezustand die Früchte des Paprikastrauchs geerntet wurden. Grüne Paprikaschoten sind noch unreif, gelbe und orangefarbene Exemplare hängen etwas länger am Strauch. Rote Paprikaschoten haben die Vollreife erreicht.\n\nNeben diesen schon klänger bekannten Farben und der typischen runden Form sieht man mittlerweile im Supermarkt oder Gemüseladen auch einige Newcomer: Tomaten-Paprika sehen einer großen Fleischtomate täuschend ähnlich. Sie sind vor allem in Ungarn beliebt und zeichnen sich durch ein intensives süß-würziges Aroma aus. Spitzpaprika kannte vor zehn Jahren kaum jemand – heute gibt es sie sogar beim Discounter. Sie haben eine lange, schmale Form, ähneln aber farblich und geschmacklich herkömmlichen Paprikaschoten. Schokoladen-Paprika macht seinem Namen alle Ehre: Diese vor allem in Rumänien angebaute Sorte schmeckt süß und sieht mit ihrer dunkelbraunen Schale aus, als wäre sie mit Schokolade überzogen. Am besten isst man sie roh, denn beim Garen geht die interessante Farbe leider verloren."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat von Paprikaschoten liegt in Südamerika, heute baut man sie aber weltweit an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Aus einheimischem Anbau kommen Paprikaschoten bei uns von Juli bis Oktober. In den übrigen Monaten herrscht aber auch kein Mangel, denn dann importieren wir sie unter anderem aus den Ländern rund ums Mittelmeer, vor allem Spanien und aus den Niederlanden."
+            }
+        ]
+    },
+    {
+        "name": "Pastinake",
+        "seasons": ["Januar", "Februar", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Obwohl die Pastinake bei uns auch Germanenwurzel heißt, kennt man sie in Großbritannien, den USA und Frankreich viel besser als in Deutschland. Hierzulande ist die Wurzel lange in Vergessenheit geraten gewesen: Während Pastinaken in früheren Zeiten häufig auf den Tisch kamen, gerieten sie sozusagen aus der Mode, nachdem unsere Vorfahren auf den Geschmack von Kartoffeln gekommen waren. Erst seit ein paar Jahren liegen Pastinaken wieder im kulinarischen Trend – nicht zuletzt bei Sterneköchen übrigens, denn aus dem würzigen Wurzelgemüse lassen sich sowohl deftige Eintöpfe als auch feine Suppen und Pürees zubereiten.\n\nDie äußerliche Ähnlichkeit mit Petersilienwurzeln ist übrigens keineswegs zufällig: Pastinaken gelten bei Botanikern als Kreuzung aus Karotte und Petersilie."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "In ihrer Wildform ist die Pastinake in ganz Europa bis hin nach Eurasien seit vielen Jahrhunderten bekannt. Heute baut man sie in Kulturen vor allem in Skandinavien, den Niederlanden, England, Frankreich und in den USA an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Pastinaken gehören zu den typischen Herbst- und Wintergemüsen; man bekommt sie ab Oktober bis Mitte März."
+            }
+        ]
+    },
+    {
+        "name": "Pfirsich",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Mal ehrlich: \"Du hast eine Haut wie ein Pfirsich\", das Kompliment haben wir alle gern. Schließlich ist eine der typischsten Eigenschaften vom Pfirsich, dass seine mit feinstem Flaum besetzte Haut sich wunderbar samtig anfühlt. Doch wie sich das für eine wahre Schönheit gehört, hat der zum Steinobst zählende Pfirsich neben seinem tollen Aussehen auch eine Menge innerer Werte zu bieten.\n\nEine besondere Spezialität unter den Pfirsichen ist eine bei uns noch neue Sorte: Seit wenigen Jahren sieht man immer öfter flach und breit geformte Pfirsiche, die unter dem Namen Weinbergpfirsich verkauft werden. Sie sehen auf den ersten Blick zwar nicht ganz so toll aus wie ihre runden Verwandten, gelten aber zu Recht als ganz besonders aromatisch und eignen sich darum vor allem für Kompotte und Marmeladen."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich kommt der Pfirsich aus China. Heute wachsen die Rosengewächse aber in allen Ländern der Erde, in denen warmes und trockenes Klima herrscht. Bei uns in Deutschland gedeihen die Bäume allerdings nur in Gegenden mit Weinanbau wie zum Beispiel im Rheinland oder in der Pfalz."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die ersten frischen Pfirsiche kommen etwa ab Mai aus Spanien und Italien zu uns. Richtig los geht es aber mit der Ernte auch in südlichen Ländern erst im Sommer: Von Juli bis September dauert die Hochsaison. Wer danach noch frischen Pfirsich möchte, kann im Winter auch Früchte aus Südafrika, Chile und Argentinien bekommen."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Die Zahl der verschiedenen Sorten bei Pfirsichen ist dermaßen groß, dass selbst die meisten Fachleute sie nicht genau nennen können. Gemeinsam haben die meisten davon ihre rundliche, manchmal auch leicht spitz zulaufende Form mit einer Längsfurche und einem vertieften Stielansatz. Unabhängig von der Sorte verbirgt sich im Inneren immer ein sehr harter, ungenießbarer Stein. Aber schon bei der Farbe von Schale und Fruchtfleisch wird es schnell unübersichtlich: Pfirsiche können eine grün-gelbe, kräftig gelbe oder rote Schale haben, das Fruchtfleisch variiert farblich von fast weiß über zartgelb bis hin zu dunklem Orange oder sogar hellem Rot."
+            }
+        ]
+    },
+    {
+        "name": "Porree",
+        "seasons": ["August", "September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Obwohl die Pastinake bei uns auch Germanenwurzel heißt, kennt man sie in Großbritannien, den USA und Frankreich viel besser als in Deutschland. Hierzulande ist die Wurzel lange in Vergessenheit geraten gewesen: Während Pastinaken in früheren Zeiten häufig auf den Tisch kamen, gerieten sie sozusagen aus der Mode, nachdem unsere Vorfahren auf den Geschmack von Kartoffeln gekommen waren. Erst seit ein paar Jahren liegen Pastinaken wieder im kulinarischen Trend – nicht zuletzt bei Sterneköchen übrigens, denn aus dem würzigen Wurzelgemüse lassen sich sowohl deftige Eintöpfe als auch feine Suppen und Pürees zubereiten.\n\nDie äußerliche Ähnlichkeit mit Petersilienwurzeln ist übrigens keineswegs zufällig: Pastinaken gelten bei Botanikern als Kreuzung aus Karotte und Petersilie."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Porree gehört zu den wenigen Gemüsesorten, bei denen die Botaniker die ursprüngliche Heimat nicht kennen, sondern nur vermuten – und zwar im Mittelmeerraum."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Porree aus Freilandanbau hat von Juni bis März Saison. In der kurzen Zwischenzeit kommt er aus Frühkulturen, die unter Glas oder Folie liegen."
+            }
+        ]
+    },
+    {
+        "name": "Quitte",
+        "seasons": ["November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Quitten sind die Urgroßmütter der Marmelade. In Portugal heißt sie aus gutem Grund marmelo, denn dort kocht man aus den meist steinharten Früchten mit dem von Natur aus hohen Pektingehalt besonders gern süßen Brotaufstrich. Auch hierzulande wandern Quitten meistens in den Einmachtopf.\n\nWas allerdings viele zögern lässt, Quitten zu kaufen, ist die Tatsache, dass sowohl Schale als auch Fruchtfleisch extrem hart sind. Roh kann man Quitten nicht essen, aber Ausnahmen bestätigen auch hier die Regel, denn einige der weltweit etwa 200 Quittensorten kann man auch wie einen Apfel direkt vom Baum vernaschen. Bei den meisten der bei uns erhältlichen Quitten wäre das beherzte Reinbeißen allerdings fatal, denn sie sind steinhart und müssen grundsätzlich gekocht werden, um genießbar zu sein."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die Quitte ist eine echte Kosmopolitin. Ursprünglich sind die aromatischen Früchte in Zentralasien, im Iran, Südost-Arabien, Japan, einigen Teilen Nordamerikas und auf Kreta zuhause. Die meisten der bei uns erhältlichen Quitten kommen aus Spanien, Italien, Portugal, Nordafrika oder anderen Mittelmeerländern."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Erntezeit von Quitten ist kurz: Sie startet Anfang September und endet bereits Ende Oktober beziehungsweise Anfang November."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Bei uns sind die etwas weichere Birnenquitte und die sehr harte Apfelquitte sehr bekannt, die ihren Namen jeweils von der Form haben. Beide können bis zu einem Kilogramm schwer werden und die Farbe der Schale variiert je nach Sorte von hellgelb bis dunkelgelb."
+            }
+        ]
+    },
+    {
+        "name": "Radicchio",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Nomen est omen: Seinen Zweitnamen „Roter Chicorée“ trägt der Radicchio aus gutem Grund, denn abgesehen von einer sehr engen botanischen Verwandtschaft ähneln sich auch die Anbaumethoden und im Geschmack gibt es ebenfalls Parallelen. Im Aussehen unterscheiden sich die beiden Salatgemüse allerdings: Radicchio hat im Gegensatz zum Chicorée eine runde und etwa faustgroße Form, längliche bis runde Außenblätter und ein kompaktes Herz. Die äußeren Blätter werden bereits auf dem Feld entfernt und auf den Markt kommen nur die fest geschlossenen Innenköpfe."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "n seiner ursprünglichen Heimat Italien verspeiste man den ersten Radicchio aus regelrechtem Anbau schon im 16. Jahrhundert. Bis heute liegt das Hauptanbaugebiet in Italien, mittlerweile baut man Radicchio aber auch in vielen anderen Ländern an – bei mildem Klima im Freiland, in kälteren Gebieten beziehungsweise zur kalten Jahreszeit auch unter Glas."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Bei uns kommt Radicchio in der Zeit von Juni bis Oktober frisch vom Feld. Es gibt ihn aber fast rund ums Jahr sowohl aus Freilandanbau als aus dem Treibhaus."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Bekannt sind zahlreiche verschiedene Sorten, als besonders gut gelten unter anderem Radicchio di Verona und der Radicchio di Trevese."
+            }
+        ]
+    },
+    {
+        "name": "Radieschen",
+        "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Sie meinen, Radieschen seien ein typisch deutsches Gemüse? Das stimmt und stimmt auch wieder nicht: Zwar sind die kleinen Knollen vor allem in Süddeutschland ein beliebtes Schmankerl und wachsen auch in ganz Deutschland. Doch die Heimat der botanisch zu den Kreuzblütlern gehörenden Radieschen liegt eigentlich im Fernen Osten. Von dort, wo sie bereits im Altertum als Zierpflanzen japanische und chinesische Gärten verschönerten, kamen sie erst vor rund 500 Jahren nach Mitteleuropa. Heute werden sie weltweit angebaut, und das keineswegs nur in ihrer allgemein bekannten Farbe.\n\nAußer den runden knallroten Radieschen gibt es auch solche mit weißen Spitzen; sogar durch und durch ganz weiße Radieschen kommen vor. Form und Größe können ebenfalls variieren: Zu haben sind Radieschen von haselnussgroß und kugelrund bis pflaumengroß oder langoval. Nur das Innere von Radieschen ist immer gleich, nämlich schneeweiß."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Über die ursprüngliche Heimat von Radieschen sind sich Botaniker nicht ganz einig – fest steht, dass sie in Wildform bereits im Altertum in China und Japan wuchsen. Auch die alten Ägypter und Griechen der Antike kannten die Urform des Radieschens. In Europa wachsen Radieschen erst seit dem 16. Jahrhundert; damals kamen sie zuerst in Frankreich in Mode."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Radieschen können Sie das ganze Jahr über frisch kaufen, da sie auch im Unterglasanbau gut gedeihen. Viele mögen aber Radieschen vom Freiland lieber – dort startet die Erntezeit im Frühjahr und dauert bis in den Herbst."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Ob rund und rot, zylindrisch und weiß oder oval und zweifarbig – gerade auf dem Wochenmarkt finden sich viele verschiedene Radieschensorten. Das Fleisch ist allerdings stets weiß."
+            }
+        ]
+    },
+    {
+        "name": "Rhabarber",
+        "seasons": ["März", "April", "Mai", "Juni", "Juli"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Er leitet sich vom lateinischen \"Rheum rhabarbarum\" ab – was übersetzt nichts anderes heißt als \"Wurzel der Barbaren\". So nannten die alten Römer die Pflanze, die von den bei ihnen als Barbaren angesehenen Tataren an den Ufern der Wolga (damals \"Rha\" genannt) angebaut wurde. Deren heutige Nachfahren denken über Rhabarber längst ähnlich wie die Römer: \"In Russland gilt Rhabarber eigentlich als nicht essbar. Weil er nicht schmeckt. Das ist doch absurd!\" macht sich zum Beispiel Wladimir Kaminer lustig über die Begeisterung für das saure Frühlingsgemüse, die hierzulande jedes Frühjahr herrscht.\n\nAuch wenn wir Rhabarber fast ausschließlich süß zubereitet kennen und essen, gehört er botanisch nicht zum Obst, sondern zum Gemüse. Sein Anbau erfordert relativ viel Aufwand. Schon im Januar spannen die Bauern Folie über die Felder, sodass eine Art natürliches Treibhaus entsteht, in dem der Rhabarber besonders schnell wächst. Etwa Anfang März entfernt man dann die Folie und lässt den Rhabarber ohne Frostschutz wachsen. Lässt man ihn länger auf dem Feld, werden die Stangen dicker, faseriger und saurer. Meist erntet man Rhabarber aber schon, wenn er noch jung und zart ist."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat von Rhabarber liegt in Tibet und in der Mongolei."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Den ersten jungen Rhabarber bekommt man schon Ende März oder – je nach Wetter – Anfang April. Von da an dauert seine Saison rund drei Monate. Spätestens Ende Juni ist Schluss. Dann brauchen die Pflanzen eine Ruhephase, um sich für die Ernte im nächsten Jahr zu erholen."
+            }
+        ]
+    },
+    {
+        "name": "Rosenkohl",
+        "seasons": ["März", "April", "Mai", "Juni", "Juli"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Aus unserer Herbst- und Winterküche ist Rosenkohl kaum wegzudenken. Dabei sind die kleinen Köpfchen fast ein kulinarischer Newcomer: Bei uns kennt man Rosenkohl erst seit etwa Mitte des 19. Jahrhunderts. Heute wird Rosenkohl vor allem in den Niederlanden, Frankreich und Großbritannien angebaut. Nur rund 15 Prozent der bei uns gegessenen Röschen stammen aus heimischem Anbau.\n\nDas, was früher manchen eher die Nase rümpfen als das Wasser im Mund zusammen laufen ließ, nämlich der leicht bittere Geschmack, ist inzwischen kein Thema mehr. Die neueren Züchtungen schmecken kaum noch bitter. Und spätestens nach dem ersten Frost schmeckt Rosenkohl dann garantiert mild, denn dadurch erhöht sich der Zuckergehalt in den Röschen und macht sie nicht nur süßer, sondern auch bekömmlicher."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Gegen Ende des 16. Jahrhunderts begannen belgische Gemüsebauern aus der Gegend bei Brüssel mit dem Anbau von Rosenkohl. Von dort aus verbreitete sich das Gemüse in ganz Europa und bis in die USA. In den meisten Sprachen heißt Rosenkohl seiner Herkunft entsprechend bis heute auf Deutsch übersetzt Brüsseler Kohl oder Brüsseler Sprossen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Seine Hochsaison hat Rosenkohl von Oktober bis Januar, aber man bekommt ihn auch noch bis in frühen Frühling hinein. Ähnlich wie beim Grünkohl entfaltet sich der Geschmack von Rosenkohl übrigens nach dem ersten Nachtfrost am besten, darum genießen ihn viele am liebsten ab November."
+            }
+        ]
+    },
+    {
+        "name": "Rote Bete",
+        "seasons": ["September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Eine besonders große Rolle spielt Rote Bete in der nord- und osteuropäischen und in etwas geringerem Ausmaß teilweise auch in der norddeutschen Küche. Die berühmte polnische Suppe Borschtsch hat das auch Rote Rübe genannte Gemüse als Basis; das Hamburger Gericht Labskaus kommt nicht ohne Rote Bete aus, und dem klassischen roten Heringssalat gibt sie ebenfalls Farbe und Geschmack.\n\nApropos Farbe: Wegen seiner intensiven Färbekraft wird der in Roter Bete enthaltene natürliche Stoff Betanin auch seit langem als "E 162" bei der Lebensmittelherstellung eingesetzt und macht unter anderem Eis, Süßspeisen, Konfitüren und Nektare attraktiver.\n\nBesonders beliebt ist sauer eingelegte Rote Bete aus dem Glas. Große Rüben werden dafür in Scheiben oder Streifen geschnitten; kleine Exemplare bekommt man auch im Ganzen eingemacht. Viel Zeit lässt sich mit vakuumverpackter Rote Bete sparen, denn sie ist bereits vorgegart. Man bekommt sie in der Gemüseabteilung von praktisch jedem Super- und Discountermarkt."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Wie so viele Gemüsesorten kam auch die Rote Bete mit den Römern nach Europa. Heute wächst sie problemlos auch in kälteren Gefilden wie zum Beispiel in Russland, Polen, Skandinavien sowie in vielen anderen europäischen Ländern – und natürlich auch bei uns."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Frische Rote Bete findet man im Spätherbst und Winter bis weit ins Frühjahr hinein in jedem Supermarkt, beim Gemüsehändler oder auf dem Wochenmarkt."
+            }
+        ]
+    },
+    {
+        "name": "Rotkohl",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Blaukraut, Rotkraut, Rotkohl – auch wenn der beliebte Kohl je nach Region ein bisschen anders heißt: immer steckt im Namen der deutliche Hinweis auf seine typische Farbe, die je nach Bodenbeschaffenheit und Zubereitung von rot bis violett reicht. Vereinfacht kann man sagen: Süße Zutaten färben den Rotkohl ins Blauviolette, säurereiche Zutaten dagegen machen ihn rötlicher. Grund sind die natürlichen Farbstoffe namens Anthocyane im Kohl, die auf das Säure-Base-Verhältnis mit farblichen Veränderungen reagieren."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Rotkohl gehört vor allem in Nord- und Osteuropa zu den kulinarischen Hits im Herbst und Winter. Das größte zusammenhängende Kohlanbaugebiet in ganz Europa liegt allerdings an Deutschlands Nordseeküste in Dithmarschen. Seine ursprüngliche Heimat hat der Rotkohl im Mittelmeerraum und in Kleinasien."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Frischen Rotkohl kann man das ganze Jahr über kaufen, denn frühe Sorten werden schon ab Juni geerntet. Die Hauptsaison für Rotkohl startet dann im Herbst: Von August bis November kommt der sogenannte Dauerkohl frisch von den Feldern und wird anschließend als Lagerware verkauft."
+            }
+        ]
+    },
+    {
+        "name": "Rucola",
+        "seasons": ["März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wenn Deutschland einen Gemüse-Superstar suchen würde, hätte Rucola erstklassige Chancen, ganz oben auf dem Treppchen zu landen. Keine Frage, Rucola gehört zu den kulinarischen Aufsteigern der letzten 20 Jahre und geht ohne Übertreibung als Trendkraut durch. Das aromatische Blattgemüse hat sich einen festen Platz in den Feinschmeckerherzen erobert.\n\nRauke, wie Rucola hierzulande auch genannt wird, bekommt man im Bund oder verpackt in durchsichtigen Kunststoffschalen. Meistens handelt es sich um Rucola aus der Zucht beziehungsweise um sogenannte Gartenrauke. Die Wilde Rauke, die an besonders schmalen, dunkelgrünen Blättern zu erkennen ist, schmeckt intensiver, ist aber seltener zu bekommen."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Ursprünglich stammt Rucola aus dem südlichen Mitteleuropa und den Mittelmeerländern. Schon im alten Rom ließ man sich Rucola schmecken und bis heute liegt eines der weltweiten Hauptanbaugebiete in Italien. Aber sogar in Ägypten, im Sudan und in Indien kennt und schätzt man die Rauke schon seit vielen Jahrhunderten. Bei uns wächst sie ebenfalls, auf dem Freiland allerdings nur in den milderen Regionen im Süden Deutschlands."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Mittlerweile bekommen wir, dank des Anbaus unter Glas, Rucola zu jeder Jahreszeit im Supermarkt oder im Gemüseladen. Normalerweise ist frischer Rucola ist von Mai bis Oktober erhältlich. Besonders aromatisch schmeckt das Kraut allerdings, wenn es im Sommer richtig Sonne tanken konnte."
+            }
+        ]
+    },
+    {
+        "name": "Sellerie",
+        "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Was seine Pluspunkte für die Figur angeht, hat Staudensellerie seinem runden großen Bruder etwas voraus: Er gehört zu den kalorienärmsten Gemüsesorten überhaupt und enthält zudem kein Fett. Aber auch der dicke Knollensellerie kann sich als Schlankmacher durchaus sehen lassen, denn seine Kalorien- und Fettwerte liegen kaum höher.\n\nAber ob Staude oder Knolle: Seinen typischen Geschmack verdankt Sellerie den reichlich darin enthaltenen ätherischen Ölen, die ihn bekömmlich machen und den Stoffwechsel anregen sowie sanft entwässernd wirken. Generell hat Sellerie nennenswerte Mengen an Vitamin A, B, C und Vitamin E zu bieten. Auch der Gehalt an Ballaststoffen macht speziell Knollensellerie zu einem gesunden Genuss.\n\nForscher konnten nachweisen, dass Sellerie dazu beiträgt, den Blutfett- und Blutzuckerspiegel in der Balance zu halten. Außerdem wirken die Inhaltsstoffe von Sellerie antioxidativ. Sie schützen also die Körperzellen vor schädigenden freien Radikalen."
+            },
+            {
+                "order": 2,
+                "name": "Lagerung",
+                "value": "Knollensellerie bleibt im Kühlschrank oder im Keller mehrere Wochen oder sogar Monate frisch. Staudensellerie ist sensibler und bleibt im Kühlschrank maximal zwei Wochen knackig."
+            }
+        ]
+    },
+    {
+        "name": "Spargel",
+        "seasons": ["April", "Mai", "Juni"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Schon der mittelalterliche Maler Hieronymus Bosch soll gesagt haben, dass Spargel eine \"liebliche Speis für Leckermäuler\" sei und der Dichter Carl Zuckmayer meinte: \"Wenn Du Kartoffeln oder Spargel isst, schmeckst Du den Sand der Felder und den Wurzelsegen, des Himmels Hitze und den kühlen Regen, kühles Wasser und den warmen Mist\". So oder ähnlich sehen es die meisten von uns und der Start in die Spargel-Saison ist für nicht wenige Genießer ein Freudenfest, das durch die Tatsache, dass zeitgleich die jungen Kartoffeln aus der Erde kommen, noch bedeutsamer wird. Beides zusammen gilt nicht erst seit gestern als Gipfel der kulinarischen Frühjahrs-Lust. Was wir so gerne essen, ist der junge Spross der eigentlichen Pflanze.\n\nAlle Jahre wieder findet traditionell Europas führender Spargel-Erzeugermarkt in Bruchsal statt. Der Ort liegt als Ziel an der sogenannten \"Spargelstraße\", die in Baden-Württemberg über Orte wie Ketsch, Hockenheim und Hambrücken führt. Ebenfalls in dieser Region liegt Schwetzingen, wo der zu Recht berühmte Schwetzinger Spargel zuhause ist. Schwetzingen steht unangefochten an der Spitze der für ihren Spargel berühmten Städte und gilt als eine Art kulinarisches Mekka für Spargelfans. Doch auch Spargel aus Niedersachsen beziehungsweise aus der Lüneburger Heide ist bei Kennern als ganz besonders lecker bekannt. Wichtige deutsche Anbaugebiete für das königliche Gemüse liegen bei uns außerdem in Hessen, Rheinland-Pfalz, Bayern und Nordrhein-Westfalen.\n\nObwohl viele Spargelfans nichts auf Stangen aus Deutschland kommen lassen, gibt es immer häufiger auch weißen und grünen Spargel aus anderen EU-Ländern wie Belgien, Frankreich, Spanien, den Niederlanden, Griechenland und Ungarn bei uns zu kaufen. Puristen bemängeln allerdings, dass diese Stangen selten so schneeweiß sind wie diejenigen, die in Deutschland gestochen werden. Ausländische Spargelimporte fallen oft dadurch auf, dass ihre Köpfe mehr oder weniger violett schimmern und die Stangen in der Regel einen weit geringeren Durchmesser haben als einheimische."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Wo genau die ursprüngliche Heimat von Spargel liegt, ist bis heute nicht wirklich geklärt. Man vermutet sie aber in Osteuropa, Vorder- und Mittelasien. Fest steht, dass Spargel heute in ganz Europa, in Nordafrika und auch im Norden der Vereinigten Staaten heimisch ist."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die traditionelle Saison für Spargel beginnt hierzulande je nach Wetterlage Anfang bis Mitte Mai und endet nach dem Motto \"Kirschen rot, Spargel tot\" Ende Juni. Da aber inzwischen auch aus anderen Ländern Spargelimporte kommen, hat sich die Saison verlängert und beginnt schon Ende März."
+            }
+        ]
+    },
+    {
+        "name": "Spinat",
+        "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Wer gerne Spinat isst, kann sich kaum vorstellen, dass ganze Generationen wegen dieses köstlichen Gemüses ungute Erinnerungen an die Mahlzeiten ihrer Kindheit hatten. Das liegt daran, dass wir heute ganz andere Sorten auf den Tisch bekommen. Früher enthielt Spinat mehr Bitterstoffe und Oxalsäure als heute, schmeckte entsprechend herb und hinterließ ein unangenehmes pelziges Gefühl im Mund. Das ist dank moderner Zuchtmethoden aber endgültig Geschichte. Was sich jedoch noch nicht geändert hat: Spinat speichert sehr viel Nitrat, das sich während der Lagerung sich Nitrit umwandelt, das insbesondere in großen Mengen ungesund ist. Daher am besten auf frischen Biospinat zurückgreifen möglichst schnell verzehren. Auch die früher übliche, nicht unbedingt appetitliche Zubereitung von Spinat als gehacktem und zerkochtem Brei, ist kaum noch üblich. Stattdessen kommt inzwischen immer häufiger Spinat in seiner leckersten Form – also als Blattspinat – auf den Tisch."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Botaniker vermuten die ursprüngliche Heimat von Spinat in Südwestasien, wo bis heute eine wild wachsende Urform vorkommt."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Vom Freiland kommt Spinat bei uns ab April bis Ende Oktober auf den Teller. In der übrigen Zeit gibt es Spinat aus Treibhauskulturen und als Importware zu kaufen."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Grundsätzlich existieren zwar rund 50 verschiedene, in der Praxis unterteilt man aber nur in Frühjahrs-, Sommer- und Winterspinat. Junger Frühjahrs- und Sommerspinat hat kleinere, zarte und hellgrüne Blätter. Spinat aus später Ernte dagegen ist dunkelgrün, hat große und feste, fleischige Blätter.\n\nBesonders beliebt ist momentan der sogenannte Baby-Spinat mit seinen kleinen, zarten Blättchen und einem milderen Geschmack."
+            }
+        ]
+    },
+    {
+        "name": "Spitzkohl",
+        "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Er gilt als Krone der Kohl-Schöpfung, denn Spitzkohl zeichnet sich durch höchsten Wohlgeschmack aus. Der Name ist hier Programm, denn diese feine Sorte ist zwar direkt verwandt mit dem Weißkohl, hat aber buchstäblich ihren eigenen Kopf, der eher klein bleibt und nach oben hin spitz zuläuft. Die einzelnen Blätter liegen locker übereinander und der Kohlkopf ist nicht so schwer wie der übliche Weißkohl.\n\nIn Baden-Württemberg kennt und liebt man vor allem das Filder-Spitzkraut: Diese größer gewachsene Variante des Spitzkohls wird in der Region um Fildern bei Stuttgart seit Jahrhunderten für die Verarbeitung zu Sauerkraut bevorzugt. Weil es immer seltener angebaut wird, gehört es zu den Passagieren der Arche für aussterbende Lebensmittel von Slow Food Deutschland."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "So ganz sicher sind sich selbst Botaniker nicht, wo der Spitzkohl zum allerersten Mal aufgetaucht ist – seine ursprüngliche Heimat vermutet man aber in China."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Spitzkohl gibt es beinahe das ganze Jahr über. Im Frühjahr und Frühsommer sind die Köpfe kleiner und die Blätter zarter als im Herbst und Winter. Von Mai bis Dezember kommt Spitzkohl aus heimischer Ernte und ab April ist dann der besonders zarte frühe Spitzkohl aus Frankreich auf dem Markt.                "
+            }
+        ]
+    },
+    {
+        "name": "Süßkartoffel",
+        "seasons": ["September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Bei Süßkartoffeln ist der Name nur zum Teil Programm: Sie sehen von der Form her zwar den Kartoffeln ähnlich und können auch genauso zubereitet werden. Botanisch ist die Süßkartoffel allerdings nicht mal entfernt mit den Nachtschattengewächsen verwandt, sondern gehört zu den Windengewächsen. Die auch Bataten genannten Wurzelknollen schmecken nicht nach Kartoffel, sondern überraschend süß, was ihrem hohen Stärkegehalt zu verdanken ist.\n\nAmerikaner lieben sie als Beilage zum Thanksgiving-Truthahn, in vielen tropischen und subtropischen Ländern der Welt sind die länglichen Knollen ein Grundnahrungsmittel und auch hierzulande erlebte das Gemüse in den letzten Jahren einen echten Durchbruch. Das ist kein Wunder, denn die leckere Knolle ist vielseitig einsetzbar und schmeckt sowohl in süßen als auch in herzhaften Gerichten sehr gut."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat von Süßkartoffeln soll in Südamerika liegen. Ganz einig sind sich Botaniker darüber aber bis heute nicht. Fest steht, dass die spanischen Eroberer die Süßkartoffel von dort erstmals mit nach Europa brachten."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Zum Gedeihen braucht die Knolle Wärme, weshalb sie vorwiegend in Ländern mit viel Sonne, mildem Klima und langen Sommern angebaut wird. Wichtige Anbaugebiete für die Batate sind vor allem die USA, die Karibik, Israel, Afrika und Brasilien.\n\nDie Ernte der Süßkartoffel läuft nur zum Teil maschinell. Da die Süßkartoffeln eine dünne und empfindliche Schale haben, sammelt man sie per Hand von den Feldern und transportiert sie in Eimern zu den großen Lagerbehältern. Sie stehen in klimatisierten Räumen, sodass man die Süßkartoffeln problemlos bis zu 12 Monate dort lagern kann. Eine echte Saison gibt es daher nicht, sie sind das ganze Jahr über zu haben."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Die Farbe der Batate variiert je nach Sorte. Es gibt Süßkartoffeln mit gelblicher, orangefarbener oder tiefroter Schale. Ihr Fruchtfleisch kann fast weiß bis gelblich, orangerot oder lachsfarben sein. Aus Italien stammt eine neuere Züchtung, die weiße Batate. Sie ähnelt mit hellbrauner Schale und weißem Fruchtfleisch rein äußerlich der klassischen Kartoffel am ehesten."
+            }
+        ]
+    },
+    {
+        "name": "Tomate",
+        "seasons": ["Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Nichts geht über Tomaten vom Feld oder aus dem Garten. Das weiß jeder, der sie einmal genossen hat. Tomaten gibts doch immer, sagen Sie? Ja, aber nicht sonnengereift und meist nicht so hinreißend aromatisch wie im Sommer. Da hilft auch die ausgefeilteste Zuchttechnologie nicht viel und kein Treibhaus kann das Reifen der \"Paradiesäpfel\" im Freien ersetzen, auch wenn speziell die Niederländer inzwischen auf diesem Gebiet durchaus ordentliche Ergebnisse erzielen.\n\nWirklich nett ist der Name für Tomaten übrigens genau genommen eigentlich nicht: \"Tomatl\" nannten die alten Azteken sie vor langer Zeit, was nichts anderes heißt als \"plumpe Frucht\". Die spanischen Eroberer vereinfachten den Namen in \"tomate\" und nahmen sie von ihren Eroberungszügen in Mexiko mit nach Europa. Im frühen 16. Jahrhundert bekamen die Spanier erstmals den Newcomer aus der Neuen Welt auf den Tisch und verkauften Pflanzen und Samen flugs an die italienischen Handelspartner.\n\nSchon damals existierten mehrere Sorten: Der italienische Kräuterheilkundige Mattioli kannte gelbe Tomatenfrüchte und nannte sie \"mala aurea\" (goldene Äpfel). Eine rote Variante beschrieb unter anderem der niederländische Kräuterexperte Dodeons um 1554. Überall, wo man die Tomate kennen- und schätzen lernte, war sie zunächst vorwiegend als Zier- sowie auch als Heilpflanze im Einsatz. Und das durchaus auf einschlägigem Gebiet: Namen wie das französische \"pomme d'amour\" oder die englische Bezeichnung \"love apple\" deuten an, dass Tomaten in früheren Jahrhunderten als wirksames Aphrodisiakum galten.\n\nDass man Tomaten auch wunderbar essen und damit hervorragend kochen kann, entdeckten unsere Vorfahren erst allmählich. Allen voran natürlich – nach den Spaniern – die Italiener. Das älteste neapolitanische Rezept für \"Tomatensoße nach spanischer Art\" stammt aus dem Jahr 1692. Während die Tomate also in den südeuropäischen Ländern schon relativ früh als kulinarische Kostbarkeit entdeckt wurde, kam sie hierzulande erst nach dem Ende des Ersten Weltkriegs zu Ehren. Aber wir haben aufgeholt. Heute ist die leckere Rote aus der Familie der Nachtschattengewächse, die botanisch gesehen gar kein Gemüse ist, sondern eine Frucht, aus der deutschen Küche gar nicht mehr wegzudenken. Mehr noch, sie führt inzwischen die Hitliste der beliebtesten \"Gemüse\" in Deutschland an."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die Ur-Heimat von Tomaten liegt in den peruanischen und ecuadorianischen Anden, wo sie wild wuchsen."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Von Juli bis September dauert die Erntezeit für einheimische Tomaten. Aus Importen und aus dem Treibhaus bekommt man Tomaten aber das ganze Jahr hindurch."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Besonders begehrt sind bei vielen Genießern dabei Strauchtomaten (die tatsächlich oft intensiver schmecken als andere) und vor allem auch ungewöhnlichere Sorten. Während sich Kirsch- oder Cherrytomaten längst etabliert haben und der eine oder andere auch schon gelbe Tomaten gesehen und probiert hat, gelten andere wie die spanische Raf-Tomate, die fast schwarze \"Black Tula\" oder die bizarr gemusterten \"Zebras\" noch als Geheimtipp unter Gärtnern und Eingeweihten.\n\nGerade im Hochsommer lohnt es sich, auf dem Wochenmarkt oder im Gemüseladen genau hinzuschauen: Da liegen Tomaten von winzig klein bis Männerfaustgröße, von fast grün bis beinah schwarz, von glatt und rund bis hin zu gerippt in den Stiegen. Pflaumentomaten (Red Fresh und Roma Vine) sowie die gelben Tomaten (Saffron) und orange-farbene Tomaten  (Vitamora) locken den Genießer, Fleischtomaten in allen denkbaren Größen und sogenannte Flaschentomaten führen viele gut sortierte Händler im Sommer in rot und gelb.\n\nWer über so viel Auswahl staunt, ahnt wahrscheinlich nicht, dass selbst diese Vielfalt nur die Spitze des Eisbergs ist. Weltweit gibt es mehrere Tausend verschiedene Tomatensorten. Manche werden nie allgemein bekannt, andere setzen sich auf dem Markt durch. Seltene und besonders schmackhafte Sorten wie zum Beispiel die \"Marianna’s Peace\", die lange Zeit als die beste und teuerste Tomate der Welt galt,  können richtig kostspielig werden. Allein sechs Samenkörnchen haben mal über 20 US-Dollar gekostet. Heute bekommt man zehn Samen bereits für 1 Euro. Die rosarote Fleischtomate soll nach dem zweiten Weltkrieg von einer Frau namens Marianna aus Böhmen/Tschechien in die USA gebracht worden sein."
+            }
+        ]
+    },
+    {
+        "name": "Weintraube",
+        "seasons": ["September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Weintrauben (eigentlich Weinbeeren; auch Tafeltrauben oder einfach Trauben genannt) gehören zu den ältesten Obstsorten überhaupt. Die ersten Funde von nahen Verwandten der Weinrebe stammen aus dem Tertiär, also aus der ganz frühen Erdgeschichte. Die größten Anbaugebiete für Trauben liegen in Europa. Auch wenn Kalifornien neben Südafrika und anderen Ländern in Übersee zu den großen Anbaugebieten für Wein gehört, kommen ungefähr zwei Drittel der Weintrauben-Ernte aus Spanien, Frankreich, Italien, Griechenland, der Türkei und den Balkanländern. Einen kleinen Teil steuert auch Deutschland bei, allerdings sind die bei uns wachsenden Weintrauben selten süß genug zum Vernaschen. Vermutlich genau deshalb gelten die Deutschen als weltweit größter Abnehmer für Tafeltrauben.\n\nDie eigentliche Traube ist übrigens die Form, in der die Beeren rispenförmig wachsen.\n\nÜbrigens: Die Haut von Trauben enthält je nach Sorte reichlich Gerbstoffe. Sie sind zwar gesund, können aber ein leicht taubes Gefühl im Mund verursachen, wenn man große Mengen Trauben isst. Auch der manchmal vorhandene stumpfe Belag auf Weintrauben ist keineswegs ein Qualitätsmangel! Er entsteht durch den Tau beim Wechsel von Nacht zu Tag, ist also ganz natürlich und völlig unbedenklich."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die Urheimat von Weintrauben liegt in Transkaukasien und Mittelasien."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Die Ernte von einheimischen Trauben beginnt im August und endet im November. Man bekommt Trauben aber aus allen Teilen der Welt auch außerhalb der Saison."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Weintrauben gibt es von winzig klein bis walnussgroß in zahllosen Sorten. Man unterscheidet sie darum hauptsächlich nach ihrer Farbe in helle (weiße, grüne, gelbe) und in dunkle (blaue, rote, blauschwarze) Sorten. Im Geschmack unterscheiden sie sich  kaum, wohl aber in ihren Inhaltsstoffen. Außerdem haben dunkle Trauben meistens eine dickere Schale und mehr Kerne, helle Trauben sind etwas zarter. Besonders beliebt sind nicht nur bei Kindern kernlose Weintrauben und die besonders süßen Muskattrauben."
+            }
+        ]
+    },
+    {
+        "name": "Weißkohl",
+        "seasons": ["August", "September", "Oktober"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Bei uns gilt Weißkohl als die wichtigste, weil am meisten verkaufte aller sogenannten Kopfkohlarten. Rund 90 Prozent des in Deutschland verputzten Weißkohls kommt aus heimischem Anbau, den kleinen Rest importieren wir aus anderen Anbauländern und -gebieten wie Polen, Russland, Skandinavien, Großbritannien und Asien. Das größte geschlossene Anbaugebiet Europas liegt aber immer noch in Dithmarschen, wo man gemeinsam mit der Landwirtschaftskammer Kiel sogar eigene Qualitätsvorschriften für Weißkohl aufgestellt hat. Geerntet werden Weißkohlköpfe übrigens bis heute meistens noch per Hand. Nur die Verarbeitung in der Lebensmittelindustrie, zum Beispiel zu Sauerkraut, erledigen überwiegend Maschinen."
+            },
+            {
+                "order": 2,
+                "name": "Saison",
+                "value": "Weißkohl gilt zwar als eins der typischsten Wintergemüse und wird auch bevorzugt in der kalten Jahreszeit zubereitet. Tatsächlich wächst das Gemüse aber schon ab April auf unseren Feldern und ist dann je nach Sorte ganzjährig zu haben."
+            },
+        ]
+    },
+    {
+        "name": "Wirsing",
+        "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Vor noch nicht allzu langer Zeit rümpften Feinschmecker über Wirsingkohl nur die Nase. Er galt wie Kohl ganz generell als typisches Arme-Leute-Essen. Inzwischen hat aber sogar die ehemals Neue Deutsche Küche den Krauskopf für sich entdeckt und das aus gutem Grund. Denn in der Tat ist Wirsingkohl im Vergleich zu Weiß- oder Rotkohl sozusagen was Besseres, jedenfalls dann, wenn man es eher fein als robust mag: Seine Blätter sind zarter und haben ein delikateres Aroma. Das gilt für Wirsingkohl allgemein, besonders aber für den hellgrünen und besonders zarten jungen Frühwirsing und Sommerwirsing. Späte Sorten beziehungsweise sogenannter Herbst- und Dauerwirsing ist in Konsistenz, Farbe und Aroma deutlich kräftiger."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat der leckeren Krausköpfe liegt in den Ländern rund ums Mittelmeer. Inzwischen baut man Wirsingkohl aber längst auch bei uns in Deutschland sowie in Großbritannien, den Niederlanden, Frankreich, Polen und Russland an."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Der erste Wirsingkohl des Jahres heißt kurioserweise Adventswirsing und wird schon im April geerntet. Frühwirsing und Sommerwirsing kommen ab Juni auf den Markt. Die Ernte von Herbstwirsing startet im August und dauert je nach Wetter und Region bis in den Februar. Von März bis Mai ist das Angebot an Wirsingkohl etwas eingeschränkter, aber auch dann gibt es dank ausgeklügelter Lagerung noch frische Köpfe."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Den Krauskopf gibt es in unterschiedlichen Sorten: Robuster Winterwirsing ist würzig-intensiver im Geschmack und hat stärker gekräuselte, dunklere Blätter als der zarte Sommerwirsing."
+            }
+        ]
+    },
+    {
+        "name": "Zucchini",
+        "seasons": ["Juni", "Juli", "August", "September"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Fast alle mögen Zucchini, aber nur wenige wissen, dass Zucchini eine Unterart vom Gartenkürbis sind und botanisch in die Familie der Kürbisgewächse gehören. Lässt man sie wachsen, erreichen sie wie ihre Verwandten ein beeindruckendes Format, denn eine ausgewachsene Frucht kann bis zu 5 Kilogramm auf die Waage bringen! In der Regel erntet man Zucchini allerdings, wenn sie etwa 15-30 Zentimeter lang sind und ungefähr 100-300 Gramm wiegen.\n\nDie Zucchinipflanze wuchert fast wie Unkraut und trägt unermüdlich neue Früchte. Das Kürbisgewächs ist ausgesprochen anspruchslos. Es blüht und gedeiht fast überall und unter fast allen klimatischen Bedingungen. Kälte allerdings macht ihrem Wuchern ein abruptes Ende, weswegen sie hierzulande nur im Sommer unter freiem Himmel gedeiht. Die meiste Zeit des Jahres kommen Zucchini aus den Ländern rund ums Mittelmeer zu uns. "
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ersten, die Zucchini als Neuzüchtung und Unterart des Gartenkürbis anbauten, waren die Italiener. Sie feiern traditionell bis heute den 7. Mai als Tag des Zucchino, denn ab April beginnt die Aussaat des Kürbisverwandten."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Zucchini gibt es das ganze Jahr über – im Sommer auch aus heimischem Anbau, sonst hauptsächlich aus Spanien, Italien, Frankreich, der Türkei und den Niederlanden."
+            },
+            {
+                "order": 4,
+                "name": "Sorten",
+                "value": "Im Mittelmeerraum schätzt man nicht nur die bei uns besonders bekannten dunkelgrünen Sorten, sondern auch Zucchini mit hellgrüner oder gelber Haut. Sehr beliebt und inzwischen auch bei uns angesagt sind runde Zucchini, die so genannten Rondini, die sich toll zum Füllen und Schmoren eignen. In der Sternegastronomie spielen außerdem Baby-Zucchini eine Rolle. Denn Feinschmecker sind sich einig: Je kleiner die Zucchini, desto zarter."
+            }
+        ]
+    },
+    {
+        "name": "Zwiebel",
+        "seasons": ["Juli", "August", "September", "Oktober", "November"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Vor noch nicht allzu langer Zeit rümpften Feinschmecker über Wirsingkohl nur die Nase. Er galt wie Kohl ganz generell als typisches Arme-Leute-Essen. Inzwischen hat aber sogar die ehemals Neue Deutsche Küche den Krauskopf für sich entdeckt und das aus gutem Grund. Denn in der Tat ist Wirsingkohl im Vergleich zu Weiß- oder Rotkohl sozusagen was Besseres, jedenfalls dann, wenn man es eher fein als robust mag: Seine Blätter sind zarter und haben ein delikateres Aroma. Das gilt für Wirsingkohl allgemein, besonders aber für den hellgrünen und besonders zarten jungen Frühwirsing und Sommerwirsing. Späte Sorten beziehungsweise sogenannter Herbst- und Dauerwirsing ist in Konsistenz, Farbe und Aroma deutlich kräftiger."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "In ihrer ursprünglichen Heimat Zentralasien, Pakistan, Indien und dem Mittelmeerraum sind Zwiebeln seit mindestens 5.000 Jahren heimisch."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Frisch geerntete Zwiebeln erhalten Sie von Juli bis Oktober. Das restliche Jahr erhalten Sie die kleinen Knollen überwiegend als Lagerware."
+            },
+            {
+                "order": 4,
+                "name": "Speisezwiebel",
+                "value": "Sie ist robust und intensiv, auch als Küchen- oder Haushaltszwiebel bekannt und unentbehrlich für die tägliche Küche. Die braunschalige Urahnin aller heute bekannten Zwiebelsorten würzt Suppen, Eintöpfe, Schmorgerichte, Bratkartoffeln und vieles mehr. Erhältlich ist sie rund ums Jahr, allerdings schmecken junge Zwiebeln aus der ersten einheimischen Ernte im Frühjahr besonders gut. Dann eignen sie sich wunderbar zum rohen Verzehr, zum Beispiel im Salat."
+            },
+            {
+                "order": 5,
+                "name": "Rote Zwiebel",
+                "value": "Ihre dünne, dunkelrote bis violette Schale und das ebenfalls rötliche, milde Fleisch machen sie als dekorative und leckere Salatzwiebel besonders beliebt. Selbstverständlich können Sie mit roten Zwiebeln auch kochen, braten und backen. Solo oder mit anderen Zwiebeln kombiniert sorgen sie kulinarisch und optisch für das gewisse Etwas, zum Beispiel bei Zwiebelkuchen, Zwiebelsuppe oder Rührei."
+            },
+            {
+                "order": 6,
+                "name": "Weiße Zwiebel",
+                "value": "Italiener und Spanier lieben sie wegen ihres süßlichen und milden Geschmacks. Weiße Zwiebeln sind die ideale Sommerzwiebel, denn selbst Magenempfindliche können sie meist problemlos roh genießen. Einfach perfekt für mediterrane Salate. Sanft und kurz gedünstet, geben weiße Zwiebeln aber auch feineren Gerichten dezente Würze."
+            },
+            {
+                "order": 7,
+                "name": "Silberzwiebel",
+                "value": "Wer sie nur eingelegt aus dem Glas kennt, verpasst etwas! Die 15 bis 35 Millimeter kleinen weißen Zwiebelchen schmecken frisch nämlich ganz besonders köstlich. Ihr mild-würziger Geschmack machen Silber- oder Perlzwiebeln zur delikaten Beilage für Fleisch, Fisch oder Geflügel. Einfach schälen und mit Olivenöl im Ganzen bei kleiner Hitze 10 bis 20 Minuten schmoren."
+            },
+            {
+                "order": 8,
+                "name": "Gemüsezwiebel",
+                "value": "Das Schwergewicht der Zwiebelfamilie kommt vor allem aus Spanien zu uns. Form und Schale erinnern an die Küchenzwiebel, aber die Gemüsezwiebel wird bis zu 20 Zentimeter dick und schmeckt im Vergleich zur kleinen Schwester ganz besonders mild. Ihr weißes, sehr saftiges Fleisch bringt eine leichte Süße und eignet sich prima für Salate, zum Schmoren, Grillen sowie vor allem zum Füllen und anschließenden Überbacken."
+            },
+            {
+                "order": 9,
+                "name": "Schalotte",
+                "value": "Die mildeste und edelste aller Zwiebeln verdankt ihren Namen der palästinensischen Stadt Askalon, ist aber speziell in Frankreich nicht aus der feinen Küche wegzudenken. Runde Schalotten wie die "Bretonne Ronde" sehen fast aus wie Küchenzwiebeln, haben aber das für die Edelzwiebel typische Aroma. Die meisten Schalotten haben eine längliche, birnenartige Form. Die Schale schimmert rosa bis rot oder kupferfarben."
+            }
+        ]
+    }
+]

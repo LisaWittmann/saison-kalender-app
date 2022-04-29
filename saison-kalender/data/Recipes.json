@@ -1,0 +1,3918 @@
+[
+    {
+        "name": "Apfel-Sellerie-Suppe",
+        "intro": "Gleich drei starke Zutaten verbinden sich zu einem sehr effektiven Trio: Apfel, Knollensellerie und Fenchel. Es senkt zum Beispiel den Cholesterinspiegel, lindert Erkältungen und schützt die Zellen vor freien Radikalen und wirkt deshalb positiv auf den gesamten Körper.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 278,
+            "carbs": 17,
+            "fat": 19,
+            "protein": 7
+        },
+        "ingredients": [
+            {
+                "name": "Apfel",
+                "quantity": 175,
+                "unit": "g"
+            },
+            {
+                "name": "Fenchel",
+                "quantity": 1,
+                "unit": "Knolle"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 600,
+                "unit": "ml"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Sellerie",
+                "quantity": 325,
+                "unit": "g"
+            },
+            {
+                "name": "Sojacreme",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Zwiebel und Sellerie schälen und grob würfeln. Apfel schälen, vierteln, das Kerngehäuse entfernen, Apfel ebenfalls in grobe Würfel schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Die Hälfte des Öls einem großen Topf erhitzen und die Zwiebelwürfel darin 2-3 Minuten bei mittlerer Hitze glasig dünsten. Sellerie- und Apfelstücke zugeben und 1 Minute dünsten. Brühe dazugießen, alles aufkochen und bei kleiner Hitze zugedeckt etwa 45 Minuten garen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Inzwischen Fenchel putzen, waschen und abtropfen lassen. Fenchel fein würfeln. Eine Pfanne erhitzen, restliches Öl hineingeben und Fenchelwürfel darin bei mittlerer Hitze unter ständigem Rühren rösten, bis alles gut gebräunt und weich ist. Mit Salz und Pfeffer würzen und warm halten.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Suppenzutaten in der Brühe mit einem Stabmixer fein pürieren. Apfel-Sellerie-Suppe evtl. durch ein Sieb streichen (passieren) und zurück in den Topf gießen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Sojacreme dazugeben und alles nochmals ca. 1 Minute erhitzen. Apfel-Sellerie-Suppe mit Salz und Pfeffer abschmecken, in vorgewärmte Suppenteller verteilen und mit dem gerösteten Fenchel garniert servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            },
+            {
+                "name": "Fenchel",
+                "seasons": ["Juni", "Juli", "August", "September"]
+            },
+            {
+                "name": "Sellerie",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Apple Crisp",
+        "intro": "Äpfel enthalten reichlich Vitamine und Mineralstoffe. Wer regelmäßig Äpfel isst, stärkt dank Vitamin C sein Immunsystem. Besonders die Schale liefert wertvolle Ballaststoffe, wie beispielsweise Pektin. Mit Schale verzehrt und gut gekaut hilft das Kernobst daher gegen Verstopfung und regt den Stoffwechsel an. ",
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 486,
+            "carbs": 57,
+            "fat": 25,
+            "protein": 8
+        },
+        "ingredients": [
+            {
+                "name": "Ahornsirup",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Apfel",
+                "quantity": 6,
+                "unit": null
+            },
+            {
+                "name": "Backpulver",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Butter",
+                "quantity": 1000,
+                "unit": "g"
+            },
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "Mandelkerne",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "Pekannuss",
+                "quantity": 25,
+                "unit": "g"
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 80,
+                "unit": "g"
+            },
+            {
+                "name": "Vanilleeis",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Vanillepulver",
+                "quantity": 1,
+                "unit": "Msp"
+            },
+            {
+                "name": "Walnuss",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "Zimt",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Äpfel waschen, vierteln, entkernen und in mundgerechte Stücke schneiden. Zitrone heiß waschen, trocknen, Schale fein abreiben und Saft auspressen. Apfel-Stücke mit Zitronensaft, Zitronenschale, ½ TL Zimt und Ahornsirup in einen Topf geben und ca. 10 Minuten dünsten. Apfelmasse in eine große oder 8 kleine Auflaufförmchen geben.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Mehl mit Backpulver mischen und mit Zucker, restlichem Zimt, Vanille, Salz und kalter Butter zu Streuseln verarbeiten. Nüsse hacken und mit Haferflocken untermengen. Streusel auf der Apfelmasse verteilen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Apple Crisp im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) auf mittlerer Schiene ca. 25–30 Minuten backen, etwas abkühlen lassen und jeweils mit einer Kugel Vanilleeis warm servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Artischockensalat mit Quinoa",
+        "intro": null,
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" },
+            { "name": "Vegetarisch" },
+            { "name": "Vegan" }
+        ],
+        "ingredients": [
+            {
+                "name": "Artischocke",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Friséesalat",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "Harissa",
+                "quantity": 1,
+                "unit": "Msp"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Limette",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Lollo Rosso",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Minze",
+                "quantity": 6,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 6,
+                "unit": "EL"
+            },
+            {
+                "name": "Quinoa",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Gurke",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Zitronensaft mit Salz, Pfeffer und Olivenöl verrühren. Minze abbrausen, trocken schütteln und fein schneiden. Artischocken auf einem Sieb abtropfen lassen und vierteln. Artischocken mit Minze und der Vinaigrette mischen. Knoblauch pellen und dazu pressen. Durchziehen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Quinoa in die kochende Brühe geben und ca. 15 Minuten darin ausquellen lassen. Mit Salz, Pfeffer, Harissa und Limettensaft abschmecken. Abkühlen lassen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Gurke waschen, längs halbieren, entkernen und klein schneiden. Salat putzen, waschen, trockenschleudern und in mundgerechte Stücke zerpflücken. Alle Zutaten mischen und mit Minzeblätter garniert servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Artischocke",
+                "seasons": ["Juli", "August", "September"]
+            },
+            {
+                "name": "Lollo Rosso",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Gurke",
+                "seasons": ["Mai", "Juni", "Juli", "August"]
+            }
+        ]
+    },
+    {
+        "name": "Baked Oats mit Brombeeren",
+        "intro": "Anthocyane geben den Brombeeren nicht nur ihre dunkle Farbe, sondern dienen auch als Antioxidantien und fangen schädliche freie Radikale ab. Dank seiner ätherischen Öle besänftigt Zimt einen gereizten Magen und hilft bei Blähungen.",
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Vegetarisch" },
+            { "name": "Vegan" }
+        ],
+        "nutrition": {
+            "calories": 265,
+            "carbs": 30,
+            "fat": 13,
+            "protein": 7
+        },
+        "ingredients": [
+            {
+                "name": "Agavendicksaft",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Apfel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Brombeere",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Hafermilch",
+                "quantity": 180,
+                "unit": "ml"
+            },
+            {
+                "name": "Hokkaido",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Kokosöl",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Walnusskerne",
+                "quantity": 45,
+                "unit": "g"
+            },
+            {
+                "name": "Zimt",
+                "quantity": 1,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Haferflocken in eine große Schüssel geben und mit 200 ml kochendem Wasser übergießen. 1 Prise Salz und Zimt dazugeben, alles verrühren und 10 Minuten quellen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "In der Zwischenzeit Walnüsse grob hacken und Brombeeren waschen. Hokkaidokürbis waschen, entkernen und fein raspeln. Apfel waschen, halbieren, entkernen und ebenfalls fein raspeln. Haferdrink, Walnüsse, Brombeeren, Apfel- und Hokkaidoraspel zu den Haferflocken geben und gut umrühren.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Eine Auflaufform (26 x 20 cm) mit dem geschmolzenen Kokosöl auspinseln und Haferflocken-Brombeer-Masse darin verteilen. Alles mit Agavendicksaft beträufeln und im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) 20–25 Minuten backen.",
+                "info": "Wer möchte, kann statt Agavendicksaft auch Honig verwenden"
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            },
+            {
+                "name": "Brombeere",
+                "seasons": ["Juli", "August", "September"]
+            },
+            {
+                "name": "Hokkaido",
+                "seasons": ["August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Blumenkohl-Pastinaken-Suppe",
+        "intro": "Blumenkohl ist ideal zum Detoxen, denn der zarte Kohl enthält viel Kalium, welches überschüssiges Wasser aus dem Körper leitet. Zudem hält der Mineralstoff das Herz im Takt und kann so vor Herzrhythmus-Störungen schützen.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" },
+            { "name": "Vegetarisch" },
+            { "name": "Vegan" }
+        ],
+        "nutrition": {
+            "calories": 191,
+            "carbs": 13,
+            "fat": 12,
+            "protein": 7
+        },
+        "ingredients": [
+            {
+                "name": "Blumenkohl",
+                "quantity": 450,
+                "unit": "g"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 900,
+                "unit": "ml"
+            },
+            {
+                "name": "Mandelmus",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Pastinake",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Sellerie",
+                "quantity": 120,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Blumenkohl putzen, waschen und in Röschen teilen, Sellerie und Pastinaken schälen und in Scheiben oder Würfel schneiden. Zwiebel schälen und hacken.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Olivenöl in einem Topf erhitzen, Zwiebel darin bei mittlerer Hitze glasig dünsten, Blumenkohl, Sellerie und Pastinaken zugeben und etwa 3–5 Minuten anbraten. Dann mit Brühe ablöschen. Suppe etwa 20 Minuten bei kleiner Hitze köcheln lassen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Blumenkohl-Pastinaken-Suppe pürieren und bei Bedarf noch etwas Brühe zugeben oder einköcheln lassen. Mit 1 EL Mandelmus, Salz und Pfeffer abschmecken.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Rest des Mandelmus mit etwas Wasser glatt rühren und die Suppe damit dekorieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Sellerie",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Blumenkohl",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Pastinake",
+                "seasons": ["Januar", "Februar", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Boeuf Bourguignon",
+        "intro": "Dieses Rezept ist smarter als ein klassisches Boeuf Bourguignon, da wir uns auf die zwei wesentlichen Zutaten Rindfleisch und Rotwein mit jeder Menge Gemüse begrenzt haben. Speck und weiterer Alkohol wie Cognac ist nicht enthalten.\n\nRindfleisch ist die perfekte Quelle für Eiweiß, Eisen und Zink. Die Kombination hilft beim Muskelaufbau, macht munter und stärkt das Immunsystem. Zwiebeln und Knoblauch gelten als Blutdrucksenker und wirken antibakteriell. Bioaktive Phenole aus dem Rotwein schützen Herz und Gefäße.",
+        "categories": [
+            { "name": "Low Carb" }
+        ],
+        "nutrition": {
+            "calories": 447,
+            "carbs": 9,
+            "fat": 15,
+            "protein": 62
+        },
+        "ingredients": [
+            {
+                "name": "Champignons",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 3,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Lorbeer",
+                "quantity": 3,
+                "unit": "Blätter"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Perlzwiebeln",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Rindfleisch",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Rotwein",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "Thymian",
+                "quantity": 3,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 200,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Das Fleisch abspülen, mit Küchenpapier trocken tupfen und in etwa 4 cm große Würfel schneiden. Zwiebeln schälen und fein würfeln. Knoblauch schälen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "2 EL Öl in einem schweren Topf erhitzen. Das Fleisch darin portionsweise bei starker Hitze scharf anbraten. Fleisch jeweils herausnehmen und in ein Sieb geben, abtropfenden Fleischsaft dabei in einer Schüssel auffangen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Zwiebeln und ganze Knoblauchzehen in den Topf geben und bei mittlerer Hitze im Bratfett unter Rühren 5 Minuten hellbraun andünsten. Fleischwürfel wieder zugeben, mit Salz und Pfeffer würzen und Mehl überstäuben. Alles nochmals kurz braten.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Rotwein, 250 ml Wasser und den aufgefangenen Fleischsaft zugießen. Thymian waschen, trocken schütteln und mit den Lorbeerblättern zum Fleisch geben. Einmal aufkochen, eventuell zwischendurch abschäumen und zugedeckt bei kleiner Hitze etwa 2 1/4 Stunden schmoren.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Inzwischen die Champignons putzen, große Pilze eventuell halbieren. Perlzwiebeln etwa 5 Minuten in kochendem Salzwasser vorgaren, abgießen, kurz kalt abschrecken und schälen. Restliches Öl in einer Pfanne erhitzen, Champignons und Perlzwiebeln darin bei mittlerer Hitze 3–4 Minuten anbraten.",
+                "info": null
+            },
+            {
+                "order": 6,
+                "title": null,
+                "text": "Nach Ende der Garzeit Pilze und Perlzwiebeln zum Fleisch geben und alles ohne Deckel weitere 30 Minuten bei mittlerer Hitze schmoren. Inzwischen Petersilie waschen, trocken schütteln, Blätter abzupfen und hacken. Bœuf Bourguignon nochmals mit Salz und Pfeffer würzen, Petersilie dazugeben und servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Champignons",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Cheeseburger mit Black Bean Patty",
+        "intro": "Die fleischauthentischen Patties sind auf Basis von schwarzen Bohnen und die bieten Proteine pur: Mit rund 22 Gramm Eiweiß pro 100 Gramm müssen sich die Hülsenfrüchte nicht hinter einem Steak verstecken. Das macht sie zu einem der interessantesten Lebensmittel für Veganer, aber auch für Sportler.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 532,
+            "carbs": 68,
+            "fat": 19,
+            "protein": 22
+        },
+        "ingredients": [
+            {
+                "name": "Burgerbrötchen",
+                "quantity": 4
+            },
+            {
+                "name": "Champignons",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Eisbergsalat",
+                "quantity": 4,
+                "unit": "Blätter"
+            },
+            {
+                "name": "Gewürzgurke",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Hefeflocken",
+                "quantity": 4,
+                "unit": "TL"
+            },
+            {
+                "name": "Ketchup",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Käse",
+                "quantity": 4,
+                "unit": "Scheiben"
+            },
+            {
+                "name": "Leinsamenschrot",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Rote-Bete-Saft",
+                "quantity": 5,
+                "unit": "EL"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Schwarze Bohnen",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Tomate",
+                "quantity": 1,
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Leinsamen in 5 EL Rote Bete Saft quellen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Zwiebel und Knoblauch schälen und fein würfeln. Champignons putzen und in kleine Würfel schneiden. 1 EL Olivenöl in einer Pfanne erhitzen. Zwiebeln und Champignons zugeben und 5–6 Minuten bei starker Hitze anbraten. Knoblauch für eine Minute mitbraten. Mit Salz würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Bohnen abspülen und abtropfen lassen. 2/3 der Bohnen zusammen mit Haferflocken, Hefeflocken, Paprikapulver und Kreuzkümmel im Multizerkleinerer fein pürieren. Herausnehmen und beiseitestellen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Leinsamen, Champignon-Mix und restliche Bohnen im Multizerkleinerer kurz hacken, unter den Püree-Mix heben und mit Pfeffer und Sojasauce würzen. Vier Patties formen und bis zum Braten beiseitestellen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Salat und Tomate waschen und trocken tupfen. Tomate und Gurke in Scheiben schneiden.",
+                "info": null
+            },
+            {
+                "order": 6,
+                "title": null,
+                "text": "Restliches Öl in eine heiße Pfanne geben, Patties bei mittlerer Hitze 5 Minuten pro Seite braten, herausnehmen und warm halten. Brötchen aufschneiden, mit der Schnittseite nach unten in der heißen Pfanne ohne Öl 1 Minute anrösten.",
+                "info": null
+            },
+            {
+                "order": 7,
+                "title": null,
+                "text": "Black Bean Patties jeweils mit 1 TL Rote Bete Saft beträufeln. Burger Buns jeweils mit 1 EL Ketchup bestreichen und mit Salatblatt, Black Bean Patty, Käseersatz, Tomaten- und Gewürzgurkenscheiben belegen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Eisbergsalat",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Rote Bete",
+                "seasons": ["September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Tomate",
+                "seasons": ["Juli", "August", "September"]
+            },
+            {
+                "name": "Champignons",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Frühlings-Risotto mit grünem Spargel",
+        "intro": "Der knackige grüne Spargel bringt viel Kalium ins Frühlings-Risotto und hilft so, den Flüssigkeitshaushalt des Körpers im Gleichgewicht zu halten. Auch das B-Vitamin Folsäure steckt im Spargel – das ist für die Zellerneuerung und die Blutbildung von großer Bedeutung. Auch die Verdauung kommt nicht zu kurz: Der Frühlingsbote Radieschen punktet mit Senfölen, welche die Produktion von Verdauungssäften anregen und für eine gute Darmtätigkeit sorgen.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 575,
+            "carbs": 76,
+            "fat": 20,
+            "protein": 21
+        },
+        "ingredients": [
+            {
+                "name": "Dill",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 650,
+                "unit": "ml"
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Kapern",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Risottoreis",
+                "quantity": 180,
+                "unit": "g"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 0.5,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Halbe Zwiebel schälen und in Streifen schneiden. 1 EL Olivenöl in einem Topf erhitzen, Zwiebel und Risotto-Reis darin für 1 Minute bei mittlerer Hitze andünsten. Kapern zugeben und mit etwas Gemüsebrühe ablöschen. Unter gelegentlichem Rühren für ca. 20 Minuten nach und nach die Gemüsebrühe zugeben, bis der Reis die Flüssigkeit komplett aufgenommen hat.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Spargel und Radieschen putzen und waschen. Die holzigen Enden des Spargels abschneiden und die Radieschen vierteln. Restliches Öl in einer Pfanne erhitzen und das Gemüse darin bei mittlerer Hitze für 3 Minuten unter Wenden anbraten und salzen. Dill waschen, trocken schütteln und grob hacken.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Hartkäse reiben und die Hälfte unter das Risotto rühren. Mit Pfeffer und Zitronensaft würzen und mit geschlossenem Deckel beiseitestellen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Risotto auf Tellern anrichten, Gemüse darübergeben und mit restlichem Hartkäse und Dill bestreut servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Spargel",
+                "seasons": ["April", "Mai", "Juni"]
+            },
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Gebratener Reis mit Chinakohl",
+        "intro": "Die im Reis und Gemüse enthaltenen komplexen Kohlenhydrate sowie Ballaststoffe und die Proteine aus den Eiern sorgen für eine langanhaltende Sättigung und einen konstanten Blutzuckerspiegel.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 390,
+            "carbs": 50,
+            "fat": 15,
+            "protein": 12
+        },
+        "ingredients": [
+            {
+                "name": "Cashewkerne",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Chinakohl",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Eier",
+                "quantity": 3
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Ingwer",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 3
+            },
+            {
+                "name": "Naturreis",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Sesamöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 3,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Reis mit der doppelten Menge Salzwasser zum Kochen bringen und ca. 25 Minuten bei mittlerer bis kleiner Hitze garen. Abgießen und abtropfen lassen. Inzwischen Chinakohl putzen, waschen und in breite Streifen schneiden. Möhren schälen und in dünne Stifte schneiden. Knoblauchzehe schälen und fein hacken. ingwer schälen und in feine Scheiben schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Rapsöl in einer großen Pfanne oder einem Wok erhitzen. Chinakohl und Möhrenstifte darin bei mittlerer Hitze ca. 5 Minuten unter Rühren braten. Ingwer und Knoblauch zugeben und kurz mitdünsten. Reis zugeben und unter Rühren erhitzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Eier mit Pfeffer, Sojasauce und Sesamöl verquirlen und über die Reis-Gemüse-Mischung gießen. Eier stocken lassen, dabei ständig weiterrühren. Bei Bedarf mit Salz und Pfeffer abschmecken.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Cashewkerne grob hacken. Frühlingszwiebeln putzen, waschen und schräg in Streifen schneiden. Gebratenen Reis auf Teller geben und mit Cashewkernen, Frühlingszwiebeln sowie Sesam bestreut servieren.",
+                "info": null
+            }
+            
+        ],
+        "seasonals": [
+            {
+                "name": "Chinakohl",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Gedünsteter Lauch",
+        "intro": "Lauch und Zitrusfrüchte gehen eine stabile Allianz ein und werden mit 10 Sternen im ES-Food-Check belohnt. Die Vorspeise enthält nur wenig Fett, und die Fettsäuren, die vorhanden sind, wirken positiv auf Blutfette und senken einen erhöhten Cholesterinspiegel.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 156,
+            "carbs": 13,
+            "fat": 8,
+            "protein": 4
+        },
+        "ingredients": [
+            {
+                "name": "Senf",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 300,
+                "unit": "ml"
+            },
+            {
+                "name": "Grapefruit",
+                "quantity": 1
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Orange",
+                "quantity": 2
+            },
+            {
+                "name": "Porree",
+                "quantity": 4,
+                "unit": "Stangen"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Lauch putzen, dabei die Wurzelenden sehr knapp abschneiden, damit die Stangen beim Garen nicht auseinanderfallen. Längs einschneiden und waschen. Gemüsebrühe und etwas Olivenöl in einem breiten Topf zum Kochen bringen. Lauch hineingeben und zugedeckt bei mittlerer Hitze 10-12 Minuten garen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Topf vom Herd nehmen und Lauch im Sud auskühlen lassen (das dauert ca. 30 Minuten). Grapefruit und 1 Orange so schälen, dass die gesamte weiße Innenhaut entfernt wird. Früchte in Scheiben schneiden. Die 2. Orange auspressen und 125 ml Saft abmessen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Orangensaft in einem kleinen Topf sirupartig einkochen lassen. 2 EL des abgekühlten Gemüsesuds und Senf zugeben, alles verrühren. Langsam das restliche Olivenöl einrühren und alles zu einer Vinaigrette rühren. Mit Salz und Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Lauch mit einer Schaumkelle aus dem Sud heben und gut abtropfen lassen. Mit den Fruchtscheiben dekorativ auf eine Platte geben und mit der Vinaigrette begießen. 10 Minuten ziehen lassen (marinieren). Mit etwas Kerbel und eventuell einigen Friséesalatblättchen garniert servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]               
+            }
+        ]
+    },
+    {
+        "name": "Gefüllte Champignons auf Tomaten",
+        "intro": "Die gefüllten Champignons sind eine gute Quelle für Folsäure: Wir benötigen das B-Vitamin für gesunde Nerven, ein gutes Gedächtnis, die Blutbildung und eine ausgeglichene Stimmung. Der Käse bringt darüber hinaus knochenstärkendes Calcium in das Gericht.",
+        "categories": [
+            { "name": "Low Carb" }
+        ],
+        "nutrition": {
+            "calories": 351,
+            "carbs": 18,
+            "fat": 19,
+            "protein": 26
+        },
+        "ingredients": [
+            {
+                "name": "Champignons",
+                "quantity": 8,
+                "unit": "große"
+            },
+            {
+                "name": "Gehackte Tomaten",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Goji-Beeren",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Gorgonzola",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "",
+                "quantity": 0,
+                "unit": ""
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Goji-Beeren mit heißem Wasser übergießen und einweichen lassen. Gorgonzola zerbröseln.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Champignons putzen, Stiele herausdrehen und diese sehr fein hacken. Schalotte schälen, ebenfalls fein hacken und mit mit Pilzstielen, Frischkäse, Gemüsebrühe, etwa 50 g Gorgonzola und Haferflocken in eine Schüssel geben und mischen. Goji-Beeren abgießen, einige beiseitelegen, restliche zum Frischkäse geben. Mit Salz und Pfeffer abschmecken.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Thymian waschen, trocken schütteln, Blättchen abstreifen, etwa die Hälfte davon mit Tomaten in eine Schüssel geben, mit Salz, Pfeffer und Basilikum würzen und dann in eine Auflaufform gießen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Pilze mit der Frischkäsemasse füllen, auf die Tomatensauce setzen und mit restlichem Gorgonzola überbröckeln.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Gefüllte Champignons im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 25 Minuten überbacken. Herausnehmen und mit restlichem Thymian und übrigen Goji-Beeren bestreut servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Champignons",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Gemüselasagne",
+        "intro": "Grüne Bohnen wirken durch ihre Ballaststoffe verdauungsfördernd – zusammen mit den Vollkorn-Lasagneblättern wird die Gemüselasagne mit Béchamelsauce zum echten Sattmacher. Ätherische Öle aus dem Lauch stärken die Darmflora und eliminieren krankmachende Erreger.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 620,
+            "carbs": 58,
+            "fat": 33,
+            "protein": 23
+        },
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Grüne Bohnen",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Kräuter der Provence",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Milch",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Porree",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Spinat",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Tomate",
+                "quantity": 5,
+                "unit": null
+            },
+            {
+                "name": "Vollkorn-Lasagneblätter",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Weizen-Vollkornmehl",
+                "quantity": 40,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Bohnen putzen, waschen und in Stücke schneiden. In kochendem Wasser 6–8 Minuten garen. Abgießen, abschrecken und abtropfen lassen. Inzwischen Spinat putzen, waschen, abtropfen lassen und grob hacken. Lauch putzen, längs halbieren, waschen und in Ringe schneiden. Tomaten putzen, waschen und würfeln. Knoblauch schälen und fein hacken. Öl in einem Topf erhitzen. Die Gemüse darin bei mittlerer Hitze für 7–10 Minuten dünsten. Mit Kräutern, Salz und Pfeffer würzen. Topf vom Herd nehmen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "In einem zweiten Topf 50 g Butter bei mittlerer Hitze schmelzen, Mehl zufügen und unter ständigem Rühren darin hell anschwitzen. Nun die gesamte Milch daraufgießen und gut glatt rühren, dabei langsam erhitzen, bis die Sauce leicht köchelt. Etwa 5 Minuten sanft weiterköcheln lassen. Hartkäse in die Sauce rühren. Topf vom Herd ziehen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Eine ofenfeste Form mit der restlichen Butter einstreichen, den Boden mit Lasagneblättern auslegen und diese mit der Hälfte des Gemüses bedecken. Nun etwas von der Sauce darüber gießen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Das Ganze wieder mit Nudelblättern bedecken und diese wiederum mit dem Rest des Gemüses auffüllen. Zuletzt alles mit Lasagneblättern abdecken und mit der restlichen Sauce begießen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) für etwa 40 Minuten im Backofen garen.",
+                "info": null
+            }  
+        ],
+        "seasonals": [
+            {
+                "name": "Spinat",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Tomate",
+                "seasons": ["Juli", "August", "September"]
+            },
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
+            }
+        ]
+    },
+    {
+        "name": "Gemüsenudeln mit Pilzen und Tofu",
+        "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+
+        ],
+        "nutrition": {
+            "calories": 383,
+            "carbs": 18,
+            "fat": 26,
+            "protein": 21
+        },
+        "ingredients": [
+            {
+                "name": "Bunte Möhren",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Champignons",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 5,
+                "unit": "g"
+            },
+            {
+                "name": "Schalotte",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Sojacreme",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "Tofu",
+                "quantity": 300,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Pilze putzen und in Scheiben schneiden. Schalotten und Knoblauch schälen und fein würfeln. Tofu ebenfalls in Würfel schneiden. 2 EL Öl in einer Pfanne erhitzen, Schalotte, Knoblauch und Tofu darin bei mittlerer Hitze 5 Minuten anbraten.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Pilze zugeben und bei starker Hitze unter gelegentlichem Schwenken weitere 5 Minuten anbraten. Mit Salz und Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Nebenher Petersilie waschen, trocken schütteln und hacken. Käse reiben. Möhren putzen, waschen und mit einem Spiralschneider zu Nudeln verarbeiten.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Pilze mit Gemüsebrühe und Sojacreme ablöschen, etwa 5 Minuten einköcheln lassen, mit Salz, Pfeffer und Cayennepfeffer abschmecken.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Champignons",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Geschmortes Kaninchen mit Rotwein",
+        "intro": "Das edle Kaninchenfleisch punktet durch seinen geringen Fettgehalt und hohen Proteinanteil. Dieser ist vergleichbar mit dem vom Hähnchen- oder Putenfleisch. Außerdem bringt das Fleisch erstaunliche 3,5 Gramm Eisen pro 100 Gramm mit sich und auch 29 Milligramm Magnesium können sich sehen lassen.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" }
+        ],
+        "nutrition": {
+            "calories": 399,
+            "carbs": 10,
+            "fat": 23,
+            "protein": 37
+        },
+        "ingredients": [
+            {
+                "name": "Fleischbrühe",
+                "quantity": 150,
+                "unit": "ml"
+            },
+            {
+                "name": "Kaninchen",
+                "quantity": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 3,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 3,
+                "unit": null
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Paprika",
+                "quantity": 1.5,
+                "unit": null
+            },
+            {
+                "name": "Porree",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Rosmarin",
+                "quantity": 2,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Rotwein",
+                "quantity": 180,
+                "unit": "ml"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 200,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Kaninchen unter kaltem Wasser abspülen, trocken tupfen und in Stücke teilen. 4 EL Olivenöl mit Pfeffer verrühren. Knoblauch schälen und zum Öl pressen. Rosmarin waschen, und trocken schütteln; von 2 Zweigen die Nadeln fein hacken und unter das Öl mischen. Kaninchenteile darin zugedeckt 4 Stunden marinieren.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Paprika",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Gratinierter Chinakohl",
+        "intro": "Mit einer ganzen Reihe an sekundären Pflanzenstoffen wie Chlorophyll, Flavonoiden und Phenolen kann der Chinakohl jung und gesund halten, denn diese Stoffe schützen die Zellen und beugen so einer vorzeitigen Alterung vor. Das Kohlgemüse unterstützt zudem den Darm mit Ballaststoffen.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 307,
+            "carbs": 19,
+            "fat": 20,
+            "protein": 11
+        },
+        "ingredients": [
+            {
+                "name": "Chinakohl",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Emmentaler",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Schlagsahne",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Den Kohl jeweils längs halbieren, waschen, putzen und in kochendem Salzwasser ca. 3 Minuten garen (blanchieren), herausnehmen und abschrecken. Gut abtropfen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Die Zwiebel und den Knoblauch schälen, fein würfeln und im heißen Öl glasig dünsten. Die Haferflocken 1 Minute mitbraten und vom Herd ziehen. Emmentaler reiben und mit der Haferflocken-Mischung vermengen, salzen und pfeffern.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Die Kohlhälften mit der Schnittfläche nach oben in eine Auflaufform legen. Die Sahne und die Gemüsebrühe vermischen und über den Chinakohl gießen. Die Haferflockenmischung darauf setzen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft: 160 °C; Gas: Stufe 2–3 ca. 25 überbacken und mit der Petersilie garniert servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Chinakohl",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Griechisches Gemüse mit Feta",
+        "intro": "Hier kommen reichlich Vitamine und Mineralstoffe auf den Tisch: Insbesondere Kalium, Calcium und Phosphor stecken in den Fruchtgemüsen Zucchini und Aubergine. Die kräftig riechenden schwefelhaltigen Bestandteile der Knoblauchzehen, sogenannte Phytonzide, wirken als natürliche Antibiotika. Sie können krank machende Mikroorganismen abtöten, ohne dabei den Menschen mit Nebenwirkungen zu belasten.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 357,
+            "carbs": 32,
+            "fat": 19,
+            "protein": 12
+        },
+        "ingredients": [
+            {
+                "name": "Aubergine",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Feta",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 450,
+                "unit": "g"
+            },
+            {
+                "name": "Kirschtomaten",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Knolle"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 5,
+                "unit": "EL"
+            },
+            {
+                "name": "Paprika",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Thymian",
+                "quantity": 2,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Zucchini",
+                "quantity": 2,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Zucchini und Aubergine putzen, waschen und quer in Scheiben schneiden. Zwiebeln schälen und in Achtel schneiden. Knoblauch von den äußeren Hüllblättern befreien und quer halbieren. Paprikaschote halbieren, entkernen, waschen und längs in Streifen schneiden. Kirschtomaten vorsichtig waschen und abtropfen lassen. Kartoffeln gründlich waschen und halbieren. Thymian waschen, trocken schütteln und Blättchen abzupfen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Auberginenscheiben in einer großen Auflaufform oder in einem tiefen Backblech verteilen. Paprikastreifen, Zucchinischeiben, Zwiebeln, Knoblauch, Tomaten und Kartoffeln darauf verteilen, alles mit Salz, Pfeffer und Thymian würzen und Öl darüberträufeln.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Gemüse im vorgeheizten Backofen bei 220 °C (Umluft 200 °C; Gas: Stufe 3) 35–45 Minuten backen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Inzwischen Kräuter waschen, trocken schütteln und Blättchen abzupfen. Gemüse aus dem Ofen nehmen, Feta darüberbröckeln und mit Kräutern bestreuen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Paprika",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Aubergine",
+                "seasons": ["Juni","Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Tomate",
+                "seasons": ["Juli", "August", "September"]
+            },
+            {
+                "name": "Zucchini",
+                "seasons": ["Juni", "Juli", "August", "September"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Kartoffel-Lauch-Kuchen",
+        "intro": "Kämpferolreiche Lebensmittel wirken positiv auf das Herz-Kreislauf-System. Kartoffeln, Lauch sowie Äpfel enthalten dieses nützliche Flavonoid und schützen daher unsere Pumpe.",
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 537,
+            "carbs": 26,
+            "fat": 23,
+            "protein": 11
+        },
+        "ingredients": [
+            {
+                "name": "Apfel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Apfelsaft",
+                "quantity": 80,
+                "unit": "ml"
+            },
+            {
+                "name": "Bergkäse",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Butter",
+                "quantity": 130,
+                "unit": "g"
+            },
+            {
+                "name": "Eier",
+                "quantity": 3,
+                "unit": null
+            },
+            {
+                "name": "Haselnusskerne",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Porree",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Schlagsahne",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Thymian",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Weizen-Vollkornmehl",
+                "quantity": 300,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Mehl mit 1 TL Salz mischen. 125 g Butter in kleine Würfel schneiden und mit Apfelsaft zu einem glatten geschmeidigen Teig verkneten. Zu einer Kugel formen, in ein feuchtes Tuch wickeln und für mindestens 30 Minuten in den Kühlschrank legen. Boden der Springform mit Backpapier auslegen und den Rand mit der restlichen Butter einfetten.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "nzwischen Lauch putzen, gründlich waschen und in feine Streifen schneiden. Apfel waschen, vierteln, Kerngehäuse entfernen, Viertel in dünne Scheiben schneiden. Thymian waschen, trocken schütteln, Blättchen abzupfen. Öl in einer Pfanne erhitzen. Lauch darin bei mittlerer Hitze unter Rühren etwa 5 Minuten dünsten. Apfelscheiben zugeben und 3 Minuten mitdünsten. Lauch-Apfel-Mischung mit Salz, Pfeffer und Thymian abschmecken. Bergkäse grob raspeln. Kartoffeln pellen und in dünne Scheiben schneiden.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Aus 2/3 des Teigs eine Kugel formen und auf einer bemehlten Arbeitsfläche rund (32 cm Ø) ausrollen. Die Springform damit auslegen, dabei einen 3–4 cm hohen Rand formen. Die Hälfte der Kartoffeln einschichten, mit Salz würzen und mit etwas Käse bestreuen. Lauch-Apfel-Mischung darauf verteilen und ebenfalls mit Käse bestreuen. Restliche Kartoffeln einschichten und mit restlichem Käse bestreuen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Eier mit der Sahne verrühren, mit Salz und Pfeffer würzen und über die Füllung gießen. Haselnüsse grob hacken und mit dem restlichen Teig zu Streuseln verkneten. Streusel über den Kuchen verteilen und leicht andrücken. Kartoffel-Lauch-Kuchen im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 45 Minuten backen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            },
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
+            }
+        ]
+    },
+    {
+        "name": "Kartoffel-Radieschen-Salat",
+        "intro": "Der Salat lässt sich auch super schon am Vortag zubereiten – zum Beispiel, wenn Sie ihn mit zur Arbeit nehmen möchten. Dann sollten Sie Rucola, Radieschen, Schnittlauch und Rapsöl am besten erst kurz vor dem Verzehr untermengen.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegan" }
+        ],
+        "nutrition": {
+            "calories": 241,
+            "carbs": 22,
+            "fat": 8,
+            "protein": 6
+        },
+        "ingredients": [
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "Obstessig",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Rucola",
+                "quantity": 80,
+                "unit": "g"
+            },
+            {
+                "name": "Schnittlauch",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Kartoffeln waschen und im Dämpfeinsatz im geschlossenen Topf ca. 30 Minuten gar dämpfen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Zwiebel schälen und fein würfeln. Brühe zum Kochen bringen und Zwiebel dazugeben. Vom Herd nehmen und ca. 5 Minuten ziehen lassen. Essig und Senf unterrühren und Marinade mit Salz und Pfeffer abschmecken. Radieschen waschen, putzen und in Scheiben schneiden. Rucola waschen, putzen und trocken schütteln. Nach Belieben etwas kleiner zupfen. Schnittlauch waschen und in Röllchen schneiden.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Kartoffeln ausdampfen lassen, noch warm pellen und in Scheiben schneiden. Mit der Marinade vermengen und ca. 30 Minuten durchziehen lassen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Radieschen, Rucola, Schnittlauch und Öl unter den Salat mengen, nochmal abschmecken und servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Rucola",
+                "seasons": ["März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]                
+            }
+        ]
+    },
+    {
+        "name": "Kohlrabi-Tofu-Curry",
+        "intro": "Kohlrabi ist ein richtiges Power-Gemüse und liefert mit 67 Milligramm pro 100 Gramm knapp drei Viertel des täglichen Bedarfs an Vitamin C. Außerdem enthält die Knolle sogenannte Glucosinolate – diese Senföle stärken neben der Abwehrkraft insbesondere die Immunzellen im Darm.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": null,
+        "ingredients": [
+            {
+                "name": "Apfel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Apfelsaft",
+                "quantity": 50,
+                "unit": "ml"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 600,
+                "unit": "ml"
+            },
+            {
+                "name": "Haselnusskerne",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Kerbel",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Kohlrabi",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Kokosmilch",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Naturreis",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Rote Currypaste",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Tofu",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Zwiebel und Knoblauch schälen und hacken. Kohlrabi putzen und schälen; die Kohlrabiblätter waschen, trocken schütteln und beiseitelegen. Kohlrabi in mundgerechte Stücke schneiden. Kartoffeln gründlich waschen, ggf. schälen und in etwa 5mm breite Scheiben schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "1 EL Öl in einem großen Topf erhitzen und Zwiebel, Knoblauch, Kohlrabi und Kartoffeln darin bei mittlerer Hitze 4–5 Minuten dünsten. Currypaste zugeben und weitere 3–4 Minuten anrösten. Apfelsaft, Brühe und Kokosmilch zugießen und abgedeckt 15 Minuten köcheln lassen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Inzwischen 500 ml Wasser mit knapp ½ TL Salz zum Kochen bringen. Natur-Reis hinzugeben und einmal umrühren. Bei kleiner Hitze im geschlossenen Topf 8–10 Minuten köcheln lassen, bis der Reis das Wasser aufgenommen hat. Den Reis im Topf kurz auflockern und einige Minuten im geschlossenen Topf auf der ausgeschalteten Herdplatte nachziehen lassen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Währenddessen Tofu in Würfel schneiden. Restliches Öl in einer Pfanne erhitzen und Tofuwürfel darin bei mittlerer bis starker Hitze rundherum 4–5 Minuten knusprig anbraten. Beiseitegelegte Kohlrabiblätter in Streifen schneiden und mit den Tofuwürfeln zum Curry geben. Curry weitere 5 Minuten garen und mit Salz und Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Apfel waschen, vierteln, entkernen und das Fruchtfleisch in Scheiben schneiden. Kräuter waschen, trocken schütteln und hacken. Apfelscheiben mit Kräutern und Reis vermengen. Haselnüsse grob hacken. Kohlrabi-Tofu-Curry und Kräuter-Apfel-Reis auf 4 Teller verteilen und mit Haselnüssen garniert servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            },
+            {
+                "name": "Kohlrabi",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            }
+        ]
+    },
+    {
+        "name": "Kohlrabischnitzel",
+        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo "Empfohlen von IN FORM" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen. Weitere Informationen zum Projekt \"Geprüfte IN FORM-Rezepte\" gibt es hier.\n\nDurch die ätherischen Öle und Mineralstoffe im knoblauchähnlich schmeckenden Bärlauch wirkt das Kraut darmregulierend, blutbildend, basisch und anregend. Kohlrabi liefern reichlich Ballaststoffe, die die Verdauung anregen. Die Milchprodukte punkten mit viel knochenstärkendem Calcium.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 379,
+            "carbs": 36,
+            "fat": 13,
+            "protein": 26
+        },
+        "ingredients": [
+            {
+                "name": "Bärlauch",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Eier",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Joghurt",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Kohlrabi",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 350,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 25,
+                "unit": "g"
+            },
+            {
+                "name": "Vollkorn-Semmelbrösel",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Weizen-Vollkornmehl",
+                "quantity": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Kohlrabi putzen, schälen und in ca. 1 cm dicke Scheiben schneiden. In kochendem Salzwasser 5 Minuten kochen, herausnehmen, kalt abschrecken und trocken tupfen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Frühlingszwiebel putzen, waschen und in feine Ringe schneiden. Bärlauch und Petersilie waschen, trocken schütteln und beides fein hacken. Quark mit Joghurt verrühren. Zwiebel und Kräuter untermischen und mit Salz, Pfeffer und Zitronensaft abschmecken.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Mehl auf einen Teller streuen. Eier in einem Teller aufschlagen, verquirlen, salzen und pfeffern. Sesam und Semmelbrösel auf einen Teller geben.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Kohlrabischeiben erst in Mehl, dann im Ei und in den Bröseln wenden. Eine beschichtete Pfanne erhitzen, mit 1 EL Öl einpinseln und die Hälfte der Kohlrabischeiben von beiden Seiten in je etwa 3 Minuten bei mittlerer Hitze goldbraun braten; warm halten. Die andere Hälfte mit restlichem Öl braten. Kohlrabischnitzel mit dem Quark reichen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Kohlrabi",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]               
+            }
+        ]
+    },
+    {
+        "name": "Kokos-Curry mit Lachs",
+        "intro": "Die tropische Kokosnuss ist reich an Ballast- und Mineralstoffen wie Magnesium, Phosphor, Kalium und Kalzium sowie den Spurenelementen Zink, Eisen und Kupfer.",
+        "categories": [
+            { "name": "Glutenfrei" }
+        ],
+        "nutrition": {
+            "calories": 549,
+            "carbs": 68,
+            "fat": 17,
+            "protein": 27
+        },
+        "ingredients": [
+            {
+                "name": "Basmati-Reis",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Fischsoße",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 300,
+                "unit": "ml"
+            },
+            {
+                "name": "Ingwer",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 3,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Kokosmilch",
+                "quantity": 150,
+                "unit": "ml"
+            },
+            {
+                "name": "Koriander",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Kreuzkümmel",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Kurkuma",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Lachsfilet",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Sellerie",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Sesamöl",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Süßkartoffel",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Reis in der 2,5-fachen Menge kochendem Salzwasser nach Packungsanweisung etwa 35 Minuten kochen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Zwiebel und Knoblauch schälen und in kleine Würfel schneiden. Chilischote längs halbieren, entkernen, waschen und hacken. Ingwer schälen und fein hacken. Süßkartoffeln schälen und in Würfel schneiden. Sellerie putzen, gegebenfalls entfädeln, waschen und klein schneiden. Koriander waschen, trocken schütteln und Blätter abzupfen. Lachsfilet abspülen, trocken tupfen und grob würfeln.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Öl in einem Topf erhitzen. Zwiebel, Knoblauch, Ingwer und Chili darin bei mittlerer Hitze 2–3 Minuten andünsten. Gewürze zugeben und mit andünsten. Mit Kokosmilch und Brühe ablöschen und aufkochen lassen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Sellerie und Süßkartoffelwürfel dazugeben und bei kleiner Hitze 10 Minuten garen. Lachs hinzufügen und weitere 4–5 Minuten garen. Kokos-Curry mit Fischsauce würzen und mit Reis und Koriander servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Süßkartoffel",
+                "seasons": ["September", "Oktober"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Sellerie",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            }
+        ]
+    },
+    {
+        "name": "Lachskotelett auf Kohlrabi-Salat",
+        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo "Empfohlen von IN FORM" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen.\n\nRoher Kohlrabi schmeckt klasse – und sorgt für eine dicke Ration Vitamin C. In diesem Fall zum Beispiel deckt eine Portion, zusammen mit der angenehm scharfen Brunnenkresse und dem magenfreundlichen Fenchel, den gesamten Tagesbedarf.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Low Carb" }
+        ],
+        "nutrition": {
+            "calories": 334,
+            "carbs": 9,
+            "fat": 22,
+            "protein": 23
+        },
+        "ingredients": [
+            {
+                "name": "Apfelessig",
+                "quantity": 6,
+                "unit": "EL"
+            },
+            {
+                "name": "Brunnenkresse",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Fenchel",
+                "quantity": 2,
+                "unit": "Knollen"
+            },
+            {
+                "name": "Honig",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Kohlrabi",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Lachskotelett",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 8,
+                "unit": "TL"
+            },
+            {
+                "name": "Schalotte",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Senf",
+                "quantity": 1,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Schalotte schälen, fein würfeln. In ein feines Sieb geben und mit kochendem Wasser überbrühen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Kohlrabi schälen und putzen, Fenchel waschen und putzen. Beides in kleine Würfel schneiden.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Brunnenkresse waschen und trockenschütteln, nach Belieben mundgerecht zerteilen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Lachskoteletts abspülen, trockentupfen, mit Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "2 TL Öl in einer beschichteten Pfanne erhitzen. Lachskoteletts darin von jeder Seite 3-4 Minuten braten und leicht salzen.",
+                "info": null
+            },
+            {
+                "order": 6,
+                "title": null,
+                "text": "Essig, Senf, Honig und restliches Öl in einer kleinen Schüssel verrühren. Kohlrabi, Fenchel, Schalotte und Brunnenkresse mit der Sauce mischen. Mit den Lachskoteletts anrichten.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Kohlrabi",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Fenchel",
+                "seasons": ["Juni", "Juli", "August", "September"]
+            }
+        ]
+    },
+    {
+        "name": "Möhren auf Pastinaken-Kartoffel-Püree",
+        "intro": "Da freut sich der Darm: Kartoffeln und Pastinaken sind leicht verdaulich und liefern reichlich Ballaststoffe. Aufgrund der in den Kartoffeln enthaltenen Stärke können Säuren und Gifte gebunden werden; die Erdäpfel wirken dadurch beruhigend. Die Alpha-Linolensäure in Leinöl stärkt das Denkvermögen und erhöht die Konzentrationsfähigkeit. Zudem schützt die Omega-3-Fettsäure das Herz und reguliert einen erhöhten Blutfettspiegel.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 516,
+            "carbs": 50,
+            "fat": 25,
+            "protein": 21
+        },
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Hafermilch",
+                "quantity": 200,
+                "unit": "ml"
+            },
+            {
+                "name": "Honig",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Joghurt",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Kresse",
+                "quantity": 1,
+                "unit": "Kästchen"
+            },
+            {
+                "name": "Leinsamen",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Leinöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Muskatnuss",
+                "quantity": 1,
+                "unit": "Prise"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Pastinake",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Quark",
+                "quantity": 400,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Möhren putzen, dabei etwas Grün stehen lassen, waschen und je nach Größe halbieren. Möhren in eine Auflaufform geben, mit Honig und Olivenöl beträufeln und mit Salz, Pfeffer sowie Kräuter würzen. Möhren im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) ca. 25 Minuten backen. Dabei gelegentlich wenden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Währenddessen Kartoffeln und Pastinaken putzen, schälen, waschen, klein schneiden und zusammen in kochendem Salzwasser ca. 15–20 Minuten garen.",
+                "info": "Am besten eigenen sich dazu mehligkochende Kartoffeln"
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Nebenher Quark mit Joghurt und 1–2 EL Wasser glatt rühren. Kresse vom Beet schneiden. 3 EL Leinöl untermischen und Quark mit Salz und Pfeffer würzen. Quark in eine Schüssel füllen, mit Kresse bestreuen und mit restlichem Leinöl beträufeln.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Dann Kartoffeln und Pastinaken abgießen und abtropfen lassen. Beides zerstampfen und Haferdrink sowie Butter untermengen. Mit Salz, Pfeffer und Muskat würzen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Anschließend Möhren aus dem Backofen nehmen. Kartoffel-Pastinaken-Püree auf 4 Teller geben, Möhren auf dem Mus anrichten, mit den Leinsamen bestreuen und mit dem Leinölquark servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Pastinake",
+                "seasons": ["Januar", "Februar", "November", "Dezember"]
+            },
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Nudelauflauf mit Fenchel",
+        "intro": null,
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": null,
+        "ingredients": [
+            {
+                "name": "Eier",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Fenchel",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Feta",
+                "quantity": 75,
+                "unit": "g"
+            },
+            {
+                "name": "Milch",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Oregano",
+                "quantity": 1,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Pinienkerne",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Porree",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Ricotta",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Rigatoni",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Thymian",
+                "quantity": 2,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Den Fenchel waschen, harte Stiele und Strunk entfernen und in feine Scheiben schneiden. Den Lauch längs vierteln, waschen und in ca. 6 cm lange Streifen schneiden. Die Nudeln in kochendem Salzwasser ca. 8 Minuten bissfest kochen. Nach ca. 5 Minuten den Fenchel dazu geben und in der letzten Minute den Lauch ergänzen. Die Nudelmischung abgießen und abtropfen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Den Backofen auf 200°C Ober- und Unterhitze vorheizen. Eine Auflaufform mit Öl auspinseln.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Den Zitronensaft und -abrieb mit dem Ricotta, der Milch und den Eiern verquirlen. Den Thymian und Oregano abbrausen, trocken schütteln, die Blätter abstreifen, hacken und unterrühren. Mit Salz und Pfeffer kräftig würzen. Die Gemüsenudeln in die Form geben und die Eiermilch darüber gießen. Den Feta darauf krümeln und mit den Pinienkernen bestreuen. Im Ofen ca. 30 Minuten gratinieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Fenchel",
+                "seasons": ["Juni", "Juli", "August", "September"]
+            }
+        ]
+    },
+    {
+        "name": "Ofenkartoffeln mit Brokkoli",
+        "intro": "Die Ofenkartoffeln mit Brokkoli schmecken auch kalt als Salat oder als Snack für die Arbeit und das Büro unwiderstehlich gut.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 471,
+            "carbs": 37,
+            "fat": 29,
+            "protein": 16
+        },
+        "ingredients": [
+            {
+                "name": "Brokkoli",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Cashewmus",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Cashewkerne",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Gartenkresse",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 0.5,
+                "unit": "Bund"
+            },
+            {
+                "name": "Rosmarin",
+                "quantity": 3,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Brokkoli putzen, waschen, in mundgerechte Röschen schneiden und mit restlichem Olivenöl, Salz und Pfeffer mischen. Brokkoliröschen zu den Kartoffeln geben und in weitere 15 Minuten backen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Kresse vom Beet schneiden und mit Zitronensaft und Cashewmus mit einem Stabmixer pürieren; dabei nach und nach Wasser zugießen, bis die Sauce eine cremige Konsistenz hat. Mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Kartoffeln gründlich abbürsten, waschen und halbieren. Rosmarin waschen, trocken schütteln und Nadeln abzupfen. Alles mit 2 EL Olivenöl, Salz und Pfeffer mischen. Kartoffeln auf ein mit Backpapier ausgelegtes Backblech geben und im vorgeheizten Backofen bei 200°C (Umluft: 180°C; Gas: Stufe 3) etwa 30 Minuten backen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Kartoffeln und Brokkoli aus dem Ofen nehmen und auf Tellern anrichten. Cashewsauce darauf verteilen und mit Cashewkernen, Radieschen und Frühlingszwiebeln anrichten.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Währenddessen Cashewkerne in einer Pfanne 3 Minuten bei mittlerer Hitze anrösten, sodass sie leicht gebräunt sind. Herausnehmen und beiseitestellen. Radieschen putzen, waschen und in feine Stifte schneiden. Frühlingszwiebeln putzen, waschen und in Ringe schneiden.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Brokkoli",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Pasta mit Linsen-Bolognese",
+        "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 733,
+            "carbs": 102,
+            "fat": 13,
+            "protein": 44
+        },
+        "ingredients": [
+            {
+                "name": "Champignons",
+                "quantity": 350,
+                "unit": "g"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 3,
+                "unit": null
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Oregano",
+                "quantity": 4,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Passierte Tomaten",
+                "quantity": 700,
+                "unit": "g"
+            },
+            {
+                "name": "Rosmarin",
+                "quantity": 4,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Rote Linsen",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Rotwein",
+                "quantity": 125,
+                "unit": "ml"
+            },
+            {
+                "name": "Salbei",
+                "quantity": 4,
+                "unit": "Blätter"
+            },
+            {
+                "name": "Sellerie",
+                "quantity": 3,
+                "unit": "Stangen"
+            },
+            {
+                "name": "Tomatenmark",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Vollkornnudeln",
+                "quantity": 320,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 2,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Pilze putzen und klein schneiden. Zwiebeln und Knoblauch schälen und getrennt in feine Würfel schneiden. Möhren waschen, putzen und grob raspeln. Sellerie waschen und klein schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Linsen in einem Sieb abspülen. Linsen in einen kleinen Topf geben und in der doppelten Menge Wasser nach Packungsanleitung garen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Inzwischen Öl in einem großen Topf erhitzen. Pilze und Zwiebeln darin bei starker Hitze 3 Minuten anbraten. Möhren und Sellerie zugeben und weitere 3 Minuten braten. Hitze reduzieren. Mit Rotwein ablöschen, Knoblauch und Tomatenmark zugeben und bei mittlerer Hitze 1–2 anrösten. Linsen und passierte Tomaten zur Sauce geben, umrühren und weitere 5–8 Minuten offen ziehen lassen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "In der Zwischenzeit Pasta nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen. Käse reiben. Kräuter waschen, trocken schütteln und Blätter bzw. Nadeln fein hacken. Kräuter in die Linsen-Bolognese geben und mit Salz und Pfeffer abschmecken.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Champignons",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Zwiebel",
+                "seasons": ["Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Sellerie",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            }
+        ]
+    },
+    {
+        "name": "Pikante Waffeln mit Dip",
+        "intro": "Vollkornmehl sättigt durch langkettige Kohlenhydrate und Ballaststoffe nachhaltig. Die Quellstoffe unterstützen eine ausgeglichene Darmflora. Tolle Knöllchen: Dank schwefelhaltiger Öle sowie Vitamin C stärken Radieschen effektiv die körpereigenen Abwehrkräfte.",
+        "categories": [
+            { "name": "Low Carb" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 623,
+            "carbs": 47,
+            "fat": 37,
+            "protein": 24
+        },
+        "ingredients": [
+            {
+                "name": "Apfel",
+                "quantity": 0.5,
+                "unit": null
+            },
+            {
+                "name": "Butter",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Eier",
+                "quantity": 3,
+                "unit": null
+            },
+            {
+                "name": "Feta",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Joghurt",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Weizen-Vollkornmehl",
+                "quantity": 250,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip ",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Apfel",
+                "seasons": ["August", "September", "Oktober"]
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]                
+            }
+        ]
+    },
+    {
+        "name": "Porreesuppe",
+        "intro": "Der Lauch in der Porreesuppe gibt hier den Ton an und ist ein Geheimtipp für die Abwehrkräfte: Die enthaltenen ätherischen Öle stärken die Darmflora, was sich positiv auf das Immunsystem auswirkt. Sie haben außerdem eine schleimlösende Wirkung und lindern Erkältungsbeschwerden.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 331,
+            "carbs": 22,
+            "fat": 24,
+            "protein": 5
+        },
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": 2.5,
+                "unit": "EL"
+            },
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 2.5,
+                "unit": "EL"
+            },
+            {
+                "name": "Kartoffel",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Porree",
+                "quantity": 2,
+                "unit": "Stangen"
+            },
+            {
+                "name": "Schlagsahne",
+                "quantity": 200,
+                "unit": "ml"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Den Lauch der Länge nach einschneiden, waschen, putzen, trocken schütteln und in Ringe schneiden. In kochendem Salzwasser 3–4 Minuten garen (blanchieren), herausnehmen, kalt abschrecken und gut abtropfen lassen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "In einem weiteren Topf die Butter zerlassen, mit dem Mehl bestauben, kurz Farbe nehmen lassen und mit 600 ml Lauchfond ablöschen. Mit einem Schneebesen kräftig verrühren, damit sich keine Klumpen bilden und die Sahne angießen. Mit Salz, Pfeffer und Muskat würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Die Kartoffeln schälen, in kleine Würfel schneiden und ca. 15 Minuten in der Suppe gar köcheln. Den Lauch und die gehackte Petersilie wieder dazu geben und die abgeschmeckte Suppe servieren.",
+                "info": "Am Besten eigenen sich hierfür mehligkochende Kartoffeln"
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Porree",
+                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Kartoffel",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Rote Bete mit Radieschen und Walnüssen",
+        "intro": "Radieschen enthalten reichlich sekundäre Pflanzenstoffe wie Flavonoide, Glucosinolate und ätherische Öle. Für den scharfen Geschmack sind die Senföle verantwortlich, die antibakteriell, entgiftend, krampflösend und appetitanregend wirken. Der Schafskäse spendet viel knochenstärkendes Calcium und sattmachendes Eiweiß.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegetarisch" },
+            { "name": "Low Carb" }
+        ],
+        "nutrition": {
+            "calories": 411,
+            "carbs": 20,
+            "fat": 31,
+            "protein": 13
+        },
+        "ingredients": [
+            {
+                "name": "Balsamessig",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Feta",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Kardamom",
+                "quantity": 0.5,
+                "unit": "TL"
+            },
+            {
+                "name": "Kreuzkümmel",
+                "quantity": 0.5,
+                "unit": "TL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 1,
+                "unit": "Bumd"
+            },
+            {
+                "name": "Rote Bete",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Walnusskerne",
+                "quantity": 80,
+                "unit": "g"
+            },
+            {
+                "name": "Zimt",
+                "quantity": 1,
+                "unit": "Msp"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Rote Bete putzen, mit geölten Händen oder Einweghandschuhen schälen und in mundgerechte Stücke schneiden. Mit Öl mischen und mit Salz, Pfeffer, Kardamom, Zimt und Kreuzkümmel würzen. In eine Auflaufform geben und im vorgeheizten Backofen bei 200 °C (Umluft: 180 °C; Gas: Stufe 3) 35–40 Minuten backen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen Walnüsse grob hacken. Radieschen putzen, waschen und je nach Größe ganz lassen oder halbieren bzw. vierteln. Feta zerbröckeln. Kräuter waschen, trocken schütteln und klein hacken.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Rote Bete aus dem Ofen nehmen und mit Balsamessig beträufeln. Mit Nüssen, Feta, Radieschen und Kräutern bestreut reichen.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Rote Bete",
+                "seasons": ["September", "Oktober", "November", "Dezember"]
+            }
+        ]
+    },
+    {
+        "name": "Rüblitorte",
+        "intro": "Betacarotin aus Möhren kann im Körper zu Vitamin A umgewandelt werden. So verhilft das Wurzelgemüse tatsächlich zu gesünderen Augen und einer starken Sehkraft.",
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 371,
+            "carbs": 25,
+            "fat": 26,
+            "protein": 10
+        },
+        "ingredients": [
+            {
+                "name": "Rohrzucker",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Pistazienkerne",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Orange",
+                "quantity": 0.5,
+                "unit": null
+            },
+            {
+                "name": "Möhre",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Gemahlene Haselnüsse",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Frischkäse",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Eier",
+                "quantity": 4,
+                "unit": null
+            },
+            {
+                "name": "Dinkelmehl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Butter",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Backpulver",
+                "quantity": 2,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Möhren putzen, waschen und fein raspeln. Orange heiß abwaschen, trocken reiben, 1 TL Schale abreiben und Saft auspressen. Eier trennen und Eiweiße steif schlagen. Zucker mit Butter und Eigelb schaumig schlagen und 2 EL Orangensaft sowie Orangenabrieb unterheben.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Mehl, gemahlene Haselnüsse, Backpulver und Salz vermengen und unter die Buttermasse mischen. Zuletzt Möhrenraspel und Eischnee vorsichtig unterheben.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Teig in die gefettete Springform geben und glatt streichen. Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) 60 Minuten backen (Stäbchenprobe).  Anschließend auf einem Kuchengitter auskühlen lassen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Inzwischen Frischkäse mit 1 EL Orangensaft cremig rühren. Pistazien grob hacken. Die ausgekühlte Rüblitorte mit der Frischkäsecreme bestreichen, mit Pistazien bestreuen und sofort servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Sandwich mit gegrilltem Gemüse",
+        "categories": [
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 413,
+            "carbs": 60,
+            "fat": 12,
+            "protein": 14
+        },
+        "ingredients": [
+            {
+                "name": "Aubergine",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Basilikum",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Ciabatta",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Lollo Rosso",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Paprika",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Zucchini",
+                "quantity": 2,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Die Auberginen und Zucchinis waschen und in Scheiben schneiden. Die Paprika ebenfalls waschen, halbieren, von den Kernen und weißen Innenwänden befreien und in Streifen schneiden. Den Salat verlesen, waschen, trocken schleudern und in mundgerechte Stücke zupfen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "In einer Grillpfanne 2 EL Öl erhitzen und das Gemüse nacheinander 3-5 Minuten unter Wenden grillen. Herausnehmen, auf einem Küchenkrepp abtropfen lassen und mit Salz und Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Die Ciabatta im vorgeheizten Ofen 3-4 Minuten anrösten. Herausnehmen, kurz auskühlen lassen, halbieren, aufschneiden und die eine Hälfte mit dem Salat und dem gegrilltem Gemüse belegen, mit Basilikumblättern bestreuen und mit etwas Olivenöl beträufeln. Die 2 Brothälfte daraufklappen und in Servietten gewickelt servieren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Aubergine",
+                "seasons": ["Juni","Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Lollo Rosso",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Paprika",
+                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Zucchini",
+                "seasons": ["Juni", "Juli", "August", "September"]
+            }
+        ]
+    },
+    {
+        "name": "Sommerrollen-Bowl mit asiatischem Gurkensalat",
+        "intro": "Diese bunte Bowl bietet eine ganze Menge Vitamine, gesunde Fette und Mineralstoffe! Avocado liefert dem Körper wichtige Omega-3-Fettsäuren, die u.a. den Cholesterinspiegel senken können. Radieschen versorgen den Körper zudem mit B-Vitaminen, Kalium, Eisen und Magnesium und Mango liefert reichlich Vitamin C und Provitamin A.",
+        "categories": [
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 326,
+            "carbs": 41,
+            "fat": 13,
+            "protein": 9
+        },
+        "ingredients": [
+            {
+                "name": "Spinat",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 5,
+                "unit": "EL"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Gurke",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Reisnudeln",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Reisessig",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 6,
+                "unit": null
+            },
+            {
+                "name": "Möhre",
+                "quantity": 4,
+                "unit": null
+            },
+            {
+                "name": "Mungobohnensprossen",
+                "quantity": 80,
+                "unit": "g"
+            },
+            {
+                "name": "Minze",
+                "quantity": 2,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Mango",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Limette",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Erdnusskerne",
+                "quantity": 30,
+                "unit": null
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Avocado",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Agavendicksaft",
+                "quantity": 4,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Alle vorbereiteten Zutaten in 4 Schalen verteilen, Kräuter und Dressing unterheben. Erdnüsse grob hacken, Limette vierteln, ebenfalls portionsweise in die Schalen geben und mit Gurkensalat servieren.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Für den Gurkensalat Gurke waschen und in sehr feine Scheiben schneiden. Wasser mit den Händen aus der Gurke drücken. 2 TL Agavendicksaft, 1 EL Sojasauce und 2 EL Reisessig mischen, Gurke und Sesam unterheben. In 4 kleine Schüsseln geben.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Minze waschen, trocken schütteln, Blätter grob hacken. Für das Dressing Chilischote längs halbieren, entkernen, waschen, hacken und mit restlichem Essig, Agavendicksaft und restlicher Sojasauce mischen.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Möhren schälen und in feine Stifte schneiden. Mango schälen, Fruchtfleisch vom Kern lösen und würfeln. Avocado halbieren, entkernen, Fruchtfleisch aus der Schale heben, in Würfel schneiden. Sprossen und Limette waschen und trocknen.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Nudeln nach Packungsanleitung in kochendem Salzwasser bissfest garen; mit kaltem Wasser ab- schrecken. Inzwischen Spinat und Radieschen putzen und waschen, Radieschen in Scheiben schneiden.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Radieschen",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]               
+            },
+            {
+                "name": "Gurke",
+                "seasons": ["Mai", "Juni", "Juli", "August"]
+            },
+            {
+                "name": "Spinat",
+                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Spargel-Linsen-Bowl",
+        "intro": "Die mineralstoffreiche Kohlrabiknolle ist reich an Calcium, Kalium, Magnesium, Phosphor und Eisen; insbesondere in den Blättern sind viele Mineralstoffe enthalten. Deswegen ist es viel zu schade, diese wegzuwerfen. Verarbeiten Sie sie gerne mit! Die vorhandenen Senföle wirken im Körper antioxidativ, immunstärkend und darmregulierend. In den Sonnenblumenkernen steckt richtig viel Power. Sie liefern viele gute Fette, Eiweiße, Ballaststoffe und B-Vitamine.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 362,
+            "carbs": 32,
+            "fat": 14,
+            "protein": 26
+        },
+        "ingredients": [
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Weinessig",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Sonnenblumenkerne",
+                "quantity": 25,
+                "unit": "g"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 25,
+                "unit": "g"
+            },
+            {
+                "name": "Senf",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Kohlrabi",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Honig",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Eier",
+                "quantity": 4,
+                "unit": null
+            },
+            {
+                "name": "Beluga-Linsen",
+                "quantity": 200,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Linsen waschen und mit der doppelten Menge kochendem Wasser bei kleiner Hitze zugedeckt etwa 25 Minuten garen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Inzwischen das untere Drittel vom Spargel schälen, holzige Enden abschneiden, die Stangen längs halbieren. Spargel für 4–5 Minuten in kochendes Salzwasser geben. Dann kalt abschrecken und abtropfen lassen. Kohlrabi putzen, schälen, halbieren und in schmale Spalten schneiden, zarte Blätter klein schneiden und beiseitelegen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Parmesan grob raspeln. Für das Dressing Zitronensaft, Senf, Honig, Öl und Gemüsebrühe verquirlen und mit Salz sowie Pfeffer würzen. Samen und Kerne in einer kleinen Pfanne ohne Fett bei mittlerer Hitze etwa 4–5 Minuten rösten, bis sie duften.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Etwa 1 l Wasser mit Salz und Essig zum Kochen bringen. Eier nacheinander einzeln in eine Suppenkelle aufschlagen und vorsichtig in den Sud gleiten lassen. In etwa 4–5 Minuten darin bei kleiner Hitze gar ziehen lassen. Dann mit einer Schaumkelle aus dem Sud heben und abgetropft auf dem Gemüse mit Linsen und Kohlrabiblättern anrichten. Mit Samen, Kernen und Parmesan bestreuen und mit dem Dressing beträufeln.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Spargel",
+                "seasons": ["April", "Mai", "Juni"]
+            },
+            {
+                "name": "Kohlrabi",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            }
+        ]
+    },
+    {
+        "name": "Spargel-Möhren-Salat",
+        "intro": "Spargel ist ein richtiges Superfood: Das kalorienarme Stangengemüse punktet mit viel von dem Mineralstoff Kalium, der entwässernd und blutdrucksenkend wirkt. Besonders der grüne Spargel enthält viel Folsäure. Dieses B-Vitamin ist wichtig für die Blutbildung und Zellerneuerung. Zudem steckt in dem Frühlingsgemüse eine gute Portion Zink, das den Körper strafft und die Wundheilung fördert. Der italienische Frischkäse Burrata bringt reichlich knochenstärkendes Calcium mit und versorgt unsere Muskeln mit Eiweiß.",
+        "categories": [
+            { "name": "Glutenfrei" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 671,
+            "carbs": 26,
+            "fat": 48,
+            "protein": 34
+        },
+        "ingredients": [
+            {
+                "name": "Burrata",
+                "quantity": 2,
+                "unit": "Kugeln"
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Kirschtomaten",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Rucola",
+                "quantity": 1,
+                "unit": "Handvoll"
+            },
+            {
+                "name": "Sonnenblumenkerne",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Spargel",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Spargel schälen und die unteren Enden abschneiden. Grüner Spargel waschen und ebenfalls die holzigen Enden abschneiden. Spargel in Stücke schneiden. Möhren putzen, schälen und in Stifte schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "Öl in einer Pfanne erhitzen, Spargel und Möhren darin bei mittlerer Hitze 5 Minuten anbraten. Sonnenblumenkerne zu geben und 3 Minuten anrösten. Mit Zitronensaft ablöschen und Spargel-Möhren-Mix mit Salz und Pfeffer würzen. Anschließend vom Herd nehmen und abkühlen lassen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Nebenher Tomaten waschen und vierteln. Rucola waschen und trocken schütteln. Frühlingszwiebeln putzen, waschen und in Stücke schneiden.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Spargel mit Tomaten, Rucola und Frühlingszwiebeln vermengen, auf Tellern anrichten und mit je einer Kugel Burrata servieren.",
+                "info": null
+            } 
+        ],
+        "seasonals": [
+            {
+                "name": "Spargel",
+                "seasons": ["April", "Mai", "Juni"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
+            },
+            {
+                "name": "Rucola",
+                "seasons": ["März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
+            },
+            {
+                "name": "Tomate",
+                "seasons": ["Juli", "August", "September"]
+            }
+        ]
+    },
+    {
+        "name": "Spargel-Zitronen-Pasta mit Feta",
+        "intro": "Grüner Spargel enthält viel Folsäure. Das B-Vitamin ist unter anderem an der Blutbildung beteiligt. Feta bringt Würze und reichlich knochenstärkendes Calcium.",
+        "categories": [
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 527,
+            "carbs": 63,
+            "fat": 19,
+            "protein": 23
+        },
+        "ingredients": [
+            {
+                "name": "Zitrone",
+                "quantity": 1,
+                "unit": null
+            },
+            {
+                "name": "Spaghetti",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 6,
+                "unit": "TL"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 4,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Feta",
+                "quantity": 200,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten.",
+                "info": null
+            },
+            {
+                "order": 5,
+                "title": null,
+                "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Spargel",
+                "seasons": ["April", "Mai", "Juni"]
+            }
+        ]
+    },
+    {
+        "name": "Vegane Wan-Tans",
+        "intro": "Chinakohl, der in die veganen Wan-Tans gefüllt wird, tut dem Magen gut. Denn die Ballaststoffe im Chinakohl bringen einen trägen Darm in Schwung und putzen bei ihrem Weg durch den Körper auch gleich größere Mengen an Schadstoffen und Fetten weg. Zudem ist der Eiweißbaustein Methylmethionin aus Chinakohl in der Lage, unseren Magen und Darm vor Geschwüren zu schützen.",
+        "categories": [
+            { "name": "Vegan" },
+            { "name": "Vegetarisch" }
+        ],
+        "nutrition": {
+            "calories": 248,
+            "carbs": 36,
+            "fat": 7,
+            "protein": 10
+        },
+        "ingredients": [
+            {
+                "name": "Austernpilze",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Bambusspossen",
+                "quantity": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Cashewkerne",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Chinakohl",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Mungobohnensprossen",
+                "quantity": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 2,
+                "unit": null
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 5,
+                "unit": "EL"
+            },
+            {
+                "name": "Wan-Tan-Teigblätter",
+                "quantity": 25,
+                "unit": null
+            },
+            {
+                "name": "Zuckerschoten",
+                "quantity": 60,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "title": null,
+                "text": "Pilze mit heißem Wasser übergießen und 2–3 Stunden einweichen lassen. Anschließend Pilze in feine Streifen schneiden.",
+                "info": null
+            },
+            {
+                "order": 2,
+                "title": null,
+                "text": "nzwischen Zuckerschoten auftauen lassen und anschließend in dünne Streifen schneiden. Möhren putzen, schälen und in sehr kleine Würfel schneiden. Chinakohl putzen, waschen und in sehr feine Streifen schneiden. Sprossen abtropfen lassen und fein hacken. Mungobohnenkeimlinge waschen, trocken schütteln, Knoblauch schälen und beides hacken.",
+                "info": null
+            },
+            {
+                "order": 3,
+                "title": null,
+                "text": "Cashewkerne hacken, in einer Pfanne ohne Fett 3 Minuten bei mittlerer Hitze anrösten und beiseitelegen. Öl in der Pfanne erhitzen. Alle Gemüse darin für etwa 5 Minuten bei mittlerer Hitze andünsten. Mit Sojasauce, 5-Gewürze-Pulver, 1–2 EL Wasser und Sambal Oelek zufügen und noch 3–5 Minuten köcheln lassen. Dann Kerne zugeben.",
+                "info": null
+            },
+            {
+                "order": 4,
+                "title": null,
+                "text": "Wan-Tan-Blätter an allen vier Rändern mit Wasser bepinseln, jeweils 1–2 TL Gemüsefüllung in die Mitte setzen und Ränder darüber zusammendrücken. In einem Dampfgarer Salzwasser zum Kochen bringen. Wan-Tans darübersetzen (dürfen sich nicht berühren) und 5–7 Minuten dampfgaren.",
+                "info": null
+            }
+        ],
+        "seasonals": [
+            {
+                "name": "Chinakohl",
+                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
+            },
+            {
+                "name": "Möhre",
+                "seasons": ["Juli", "August", "September", "Oktober"]
+            }
+        ]
+    }
+]
