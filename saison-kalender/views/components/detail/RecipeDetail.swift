@@ -10,7 +10,7 @@ import PartialSheet
 
 struct RecipeDetail: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
     
     @StateObject var manager = CollectionManager()
     @ObservedObject var recipe: Recipe
@@ -160,7 +160,7 @@ struct RecipeDetail: View {
     }
     
     private var icon: String {
-        if !user.isPresent { return "" }
+        if !user.isAuthenticated { return "" }
         if user.favorites.contains(recipe) { return "heart.fill" }
         return "heart"
     }

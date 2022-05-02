@@ -43,7 +43,7 @@ struct RecipeCard_Previews: PreviewProvider {
         
         NavigationView {
             RecipeTeaser(calendar.recipes.first!)
-                .environmentObject(LoggedInUser())
+                .environmentObject(AppUser())
                 .environmentObject(calendar)
         }
     }

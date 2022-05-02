@@ -36,7 +36,7 @@ struct CollectionDetail_Previews: PreviewProvider {
         let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
         CollectionDetail(collections.first!, close: {})
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(calendar)
     }
 }

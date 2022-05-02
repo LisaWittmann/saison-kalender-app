@@ -40,7 +40,7 @@ struct RecipeMasonry_Previews: PreviewProvider {
 
         NavigationView {
             RecipeMasonry(calendar.recipes)
-                .environmentObject(LoggedInUser())
+                .environmentObject(AppUser())
                 .environmentObject(calendar)
                 .frame(width: contentWidth)
         }

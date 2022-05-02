@@ -66,7 +66,7 @@ struct CollectionTeaser_Previews: PreviewProvider {
         
         NavigationView {
             CollectionTeaser(collections.first!)
-                .environmentObject(LoggedInUser())
+                .environmentObject(AppUser())
                 .environmentObject(calendar)
         }
     }

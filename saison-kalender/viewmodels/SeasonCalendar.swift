@@ -51,10 +51,11 @@ class SeasonCalendar: ObservableObject {
         return seasonals.filter { $0.seasons.contains(season) }
     }
     
-    func filterRecipes(by category: RecipeCategory?) -> [Recipe] {
+    func filterRecipes(by category: RecipeCategory?, for diets: Set<Diet>) -> [Recipe] {
+        let dietRecipes = recipes.filter{ diets.allSatisfy($0.diets.contains) }
         if let filter = category {
-            return recipes.filter { $0.categories.contains(filter) }
+            return dietRecipes.filter { $0.categories.contains(filter) }
         }
-        return recipes
+        return dietRecipes
     }
 }

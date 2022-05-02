@@ -9,6 +9,11 @@ import CoreData
 
 extension Recipe {
     
+    var diets: [Diet] {
+        get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
+        set { diets_ = newValue.map { $0.rawValue } }
+    }
+    
     var ingredients: Array<Ingredient> {
         get { (ingredients_ as? Set<Ingredient>)?.sorted() ?? [] }
         set { ingredients_ = Set(newValue) as NSSet }

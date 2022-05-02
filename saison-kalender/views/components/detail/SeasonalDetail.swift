@@ -57,7 +57,7 @@ struct SeasonalDetail_Previews: PreviewProvider {
         let calendar = SeasonCalendar.preview
         
         SeasonalDetail(calendar.seasonals.randomElement()!, close: {})
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(calendar)
     }
 }

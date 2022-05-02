@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
@@ -69,7 +69,7 @@ struct HomeView_Previews: PreviewProvider {
         
         HomeView()
             .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }

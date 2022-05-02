@@ -38,7 +38,7 @@ struct SeasonalTeaser_Previews: PreviewProvider {
         
         NavigationView {
             SeasonalTeaser(calendar.seasonals.randomElement()!)
-                .environmentObject(LoggedInUser())
+                .environmentObject(AppUser())
                 .environmentObject(calendar)
         }
     }

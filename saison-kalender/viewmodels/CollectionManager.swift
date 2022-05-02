@@ -43,7 +43,7 @@ class CollectionManager: ObservableObject {
         self.isPresented = false
     }
     
-    func add(to collection: Collection, of user: LoggedInUser) {
+    func add(to collection: Collection, of user: AppUser) {
         if let recipe = self.recipe {
             user.add(recipe: recipe, to: collection)
             if collection.recipes.contains(recipe) {
@@ -55,7 +55,7 @@ class CollectionManager: ObservableObject {
         }
     }
     
-    func createCollection(_ name: String, for user: LoggedInUser) {
+    func createCollection(_ name: String, for user: AppUser) {
         if let recipe = self.recipe {
             let context = recipe.managedObjectContext!
             let createdCollection = Collection(context: context)
@@ -72,14 +72,14 @@ class CollectionManager: ObservableObject {
         }
     }
     
-    func remove(for user: LoggedInUser) {
+    func remove(for user: AppUser) {
         if recipe != nil {
             user.remove(recipe: recipe!)
             isPresented = false
         }
     }
     
-    func removeFromCollection(for user: LoggedInUser) {
+    func removeFromCollection(for user: AppUser) {
         if collection != nil && recipe != nil {
             user.remove(recipe: recipe!, from: collection!)
             collection = nil

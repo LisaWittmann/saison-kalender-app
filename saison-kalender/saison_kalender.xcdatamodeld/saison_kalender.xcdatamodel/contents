@@ -32,6 +32,7 @@
         <relationship name="recipe_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="preparations_" inverseEntity="Recipe"/>
     </entity>
     <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="diets_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="intro" optional="YES" attributeType="String" defaultValueString=""/>
         <attribute name="name_" optional="YES" attributeType="String"/>
         <relationship name="categories_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeCategory" inverseName="recipes_" inverseEntity="RecipeCategory"/>
@@ -53,6 +54,7 @@
         <relationship name="recipes_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Recipe" inverseName="seasonals_" inverseEntity="Recipe"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="diets_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="email_" attributeType="String" defaultValueString=""/>
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="password_" attributeType="String" defaultValueString=""/>
@@ -65,9 +67,9 @@
         <element name="Ingredient" positionX="0" positionY="45" width="128" height="89"/>
         <element name="Nutrition" positionX="-36" positionY="27" width="128" height="104"/>
         <element name="Preparation" positionX="-18" positionY="36" width="128" height="104"/>
-        <element name="Recipe" positionX="36" positionY="90" width="128" height="164"/>
+        <element name="Recipe" positionX="36" positionY="90" width="128" height="179"/>
         <element name="RecipeCategory" positionX="-9" positionY="63" width="128" height="59"/>
         <element name="Seasonal" positionX="-63" positionY="-9" width="128" height="89"/>
-        <element name="User" positionX="0" positionY="117" width="128" height="104"/>
+        <element name="User" positionX="0" positionY="117" width="128" height="119"/>
     </elements>
 </model>

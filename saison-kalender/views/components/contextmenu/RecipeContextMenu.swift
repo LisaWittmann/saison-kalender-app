@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecipeContextMenu: View {
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
     @ObservedObject var manager: CollectionManager
     @State var newCollectionName: String = ""
     
@@ -115,7 +115,7 @@ struct SaveRecipeContextMenu_Previews: PreviewProvider {
         let manager = CollectionManager(recipe: calendar.recipes.randomElement())
         
         RecipeContextMenu(manager: manager)
-            .environmentObject(LoggedInUser(users.first))
+            .environmentObject(AppUser(users.first))
             .onAppear {
                 manager.mode = .save
                 manager.isPresented = true

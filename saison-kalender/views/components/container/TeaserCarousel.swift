@@ -62,7 +62,7 @@ struct TeaserCarousel_Previews: PreviewProvider {
             RecipeTeaser(recipe)
         }
         .environment(\.managedObjectContext, calendar.context)
-        .environmentObject(LoggedInUser())
+        .environmentObject(AppUser())
         .environmentObject(ViewRouter())
         .environmentObject(calendar)
         

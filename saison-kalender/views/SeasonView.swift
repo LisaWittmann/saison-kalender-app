@@ -25,7 +25,7 @@ struct SeasonView: View {
 }
 
 struct SeasonItem: View {
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     @ObservedObject var seasonal: Seasonal
@@ -75,8 +75,6 @@ struct SeasonItem: View {
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
         SeasonalDetail(seasonal, close: { showDetail.toggle() })
-            .environmentObject(user)
-            .environmentObject(seasonCalendar)
             .navigationBarHidden(true)
     }
     
@@ -94,7 +92,7 @@ struct SeasonView_Previews: PreviewProvider {
         
         SeasonView()
             .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }

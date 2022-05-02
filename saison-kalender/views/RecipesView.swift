@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecipesView: View {
     @Environment(\.managedObjectContext) var viewContext
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     @FetchRequest(entity: RecipeCategory.entity(), sortDescriptors: [ NSSortDescriptor(key: "name_", ascending: true) ])
@@ -31,7 +31,7 @@ struct RecipesView: View {
                 )
             }
             
-            RecipeMasonry(seasonCalendar.filterRecipes(by: selectedCategory))
+            RecipeMasonry(seasonCalendar.filterRecipes(by: selectedCategory, for: user.diets))
             Spacer()
         }
     }
@@ -43,7 +43,7 @@ struct RecipesView_Previews: PreviewProvider {
         
         RecipesView()
             .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }

@@ -13,7 +13,7 @@ import PartialSheet
 @main
 struct SaisonKalenderApp: App {
     @StateObject var viewRouter = ViewRouter()
-    @StateObject var user = LoggedInUser()
+    @StateObject var user = AppUser()
     @StateObject var seasonCalendar = SeasonCalendar.shared
 
     var body: some Scene {

@@ -11,7 +11,7 @@ import PartialSheet
 
 struct ContentView: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
 
     var body: some View {
         ZStack {
@@ -24,16 +24,15 @@ struct ContentView: View {
                 case .recipes:
                     RecipesView().navigationItem("Recipes")
                 case .account:
-                    if user.isPresent {
-                        AccountView().navigationItem("Account")
-                    } else {
-                        LoginView().navigationItem("Login")
-                    }
+                    AccountView().navigationItem("Account")
                 }
             }
             Menu()
         }
         .edgesIgnoringSafeArea(.all)
+        .fullScreenCover(isPresented: $user.requiresAuthorization) {
+            AuthorizationView()
+        }
     }
 
 }
@@ -45,7 +44,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environment(\.managedObjectContext, calendar.context)
             .attachPartialSheetToRoot()
-            .environmentObject(LoggedInUser())
+            .environmentObject(AppUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
             

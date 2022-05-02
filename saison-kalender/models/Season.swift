@@ -9,7 +9,18 @@ import UIKit
 
 public enum Season: String, CaseIterable {
     
-    case Januar, Feburar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember
+    case January = "Januar",
+         February = "Februar",
+         March = "März",
+         April = "April",
+         May = "Mai",
+         June = "Juni",
+         July = "Juli",
+         August = "August",
+         September = "September",
+         October = "Oktober",
+         November = "November",
+         December = "Dezember"
     
     var month: Int {
         return Season.allCases.firstIndex(of: self)! + 1

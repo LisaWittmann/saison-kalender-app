@@ -13,7 +13,8 @@ enum Tab: String, CaseIterable {
 }
 
 struct AccountView: View {
-    @EnvironmentObject var user: LoggedInUser
+    @EnvironmentObject var user: AppUser
+    @EnvironmentObject var viewRouter: ViewRouter
     @State var selectedTab: Tab = .Favoriten
     
     var body: some View {
@@ -33,6 +34,11 @@ struct AccountView: View {
             }
             
             Spacer()
+        }.onAppear {
+            user.requireAuthorization()
+            if !user.isAuthenticated {
+                viewRouter.currentView = .home
+            }
         }
     }
     
@@ -60,7 +66,7 @@ struct AccountView_Previews: PreviewProvider {
             
         AccountView()
             .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(LoggedInUser(users.first))
+            .environmentObject(AppUser(users.first))
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }

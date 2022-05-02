@@ -68,64 +68,64 @@ struct PersistenceController {
     }
     
     static func seed(in context: NSManagedObjectContext) {
-        let apfel = Seasonal.create(name: "Apfel", seasons: [.August, .September, .Oktober], in: context)
-        let aprikose = Seasonal.create(name: "Aprikose", seasons: [.Juli, .August], in: context)
-        let artischocke = Seasonal.create(name: "Artischocke", seasons: [.Juli, .August, .September], in: context)
-        let aubergine = Seasonal.create(name: "Aubergine", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let birne = Seasonal.create(name: "Birne", seasons: [.Juli, .August, .September, .Oktober], in: context)
-        let blumenkohl = Seasonal.create(name: "Blumenkohl", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let brokkoli = Seasonal.create(name: "Brokkoli", seasons: [.Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let brombeere = Seasonal.create(name: "Brombeere", seasons: [.Juli, .August, .September], in: context)
-        let butternut = Seasonal.create(name: "Butternut Kürbis", seasons: [.September, .Oktober], in: context)
-        let champignons = Seasonal.create(name: "Champignons", seasons: [.Januar, .Feburar, .März, .April, .Mai, .Juni, .Juli, .August, .September, .Oktober, .November, .Dezember], in: context)
-        let chinakohl = Seasonal.create(name: "Chinakohl", seasons: [.Januar, .Feburar, .März, .April, .Mai, .Juni, .Juli, .August, .September, .Oktober, .November, .Dezember], in: context)
-        let eisbergsalat = Seasonal.create(name: "Eisbergsalat", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let endiviensalat = Seasonal.create(name: "Endiviensalat", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let erbsen = Seasonal.create(name: "Erbsen", seasons: [.Juni, .Juli, .August], in: context)
-        let erbeere = Seasonal.create(name: "Erdbeere", seasons: [.Mai, .Juni, .Juli], in: context)
-        let feldsalat = Seasonal.create(name: "Feldsalat", seasons: [.Januar, .Feburar, .März, .Oktober, .November, .Dezember], in: context)
-        let fenchel = Seasonal.create(name: "Fenchel", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let fruehlingszwiebel = Seasonal.create(name: "Frühlingszwiebel", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let gruenkohl = Seasonal.create(name: "Grünkohl", seasons: [.Januar, .Oktober, .November, .Dezember], in: context)
-        let heidelbeere = Seasonal.create(name: "Heidelbeere", seasons: [.Juni, .Juli, .August, .September], in: context)
-        let hokkaido = Seasonal.create(name: "Hokkaido", seasons: [.August, .September, .Oktober], in: context)
+        let apfel = Seasonal.create(name: "Apfel", seasons: [.August, .September, .October], in: context)
+        let aprikose = Seasonal.create(name: "Aprikose", seasons: [.July, .August], in: context)
+        let artischocke = Seasonal.create(name: "Artischocke", seasons: [.July, .August, .September], in: context)
+        let aubergine = Seasonal.create(name: "Aubergine", seasons: [.June, .July, .August, .September, .October], in: context)
+        let birne = Seasonal.create(name: "Birne", seasons: [.July, .August, .September, .October], in: context)
+        let blumenkohl = Seasonal.create(name: "Blumenkohl", seasons: [.May, .June, .July, .August, .September, .October, .November], in: context)
+        let brokkoli = Seasonal.create(name: "Brokkoli", seasons: [.June, .July, .August, .September, .October, .November], in: context)
+        let brombeere = Seasonal.create(name: "Brombeere", seasons: [.July, .August, .September], in: context)
+        let butternut = Seasonal.create(name: "Butternut Kürbis", seasons: [.September, .October], in: context)
+        let champignons = Seasonal.create(name: "Champignons", seasons: [.January, .February, .March, .April, .May, .June, .July, .August, .September, .October, .November, .December], in: context)
+        let chinakohl = Seasonal.create(name: "Chinakohl", seasons: [.January, .February, .March, .April, .May, .June, .July, .August, .September, .October, .November, .December], in: context)
+        let eisbergsalat = Seasonal.create(name: "Eisbergsalat", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let endiviensalat = Seasonal.create(name: "Endiviensalat", seasons: [.May, .June, .July, .August, .September, .October, .November], in: context)
+        let erbsen = Seasonal.create(name: "Erbsen", seasons: [.June, .July, .August], in: context)
+        let erbeere = Seasonal.create(name: "Erdbeere", seasons: [.May, .June, .July], in: context)
+        let feldsalat = Seasonal.create(name: "Feldsalat", seasons: [.January, .February, .March, .October, .November, .December], in: context)
+        let fenchel = Seasonal.create(name: "Fenchel", seasons: [.June, .July, .August, .September, .October], in: context)
+        let fruehlingszwiebel = Seasonal.create(name: "Frühlingszwiebel", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let gruenkohl = Seasonal.create(name: "Grünkohl", seasons: [.January, .October, .November, .December], in: context)
+        let heidelbeere = Seasonal.create(name: "Heidelbeere", seasons: [.June, .July, .August, .September], in: context)
+        let hokkaido = Seasonal.create(name: "Hokkaido", seasons: [.August, .September, .October], in: context)
         let holunderbeere = Seasonal.create(name: "Holunderbeere", seasons: [.August, .September], in: context)
-        let kartoffeln = Seasonal.create(name: "Kartoffeln", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let kirsche = Seasonal.create(name: "Kirsche", seasons: [.Juni, .Juli, .August], in: context)
-        let kohlrabi = Seasonal.create(name: "Kohlrabi", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let kopfsalat = Seasonal.create(name: "Kopfsalat", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let lollorosso = Seasonal.create(name: "Lollo Rosso", seasons: [.April, .Mai, .Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let mais = Seasonal.create(name: "Mais", seasons: [.Oktober, .Juli, .August, .September], in: context)
-        let mangold = Seasonal.create(name: "Mangold", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let mirabelle = Seasonal.create(name: "Mirabelle", seasons: [.Juli, .August, .September], in: context)
-        let moehre = Seasonal.create(name: "Möhre", seasons: [.Oktober, .Juli, .August, .September], in: context)
-        let nektarine = Seasonal.create(name: "Nektarine", seasons: [.Juli, .August, .September], in: context)
-        let pakchoi = Seasonal.create(name: "Pak Choi", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let paprika = Seasonal.create(name: "Paprika", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let pastinake = Seasonal.create(name: "Pastinake", seasons: [.Januar, .Feburar, .November, .Dezember], in: context)
-        let pfirsich = Seasonal.create(name: "Pfirsich", seasons: [.Juli, .August, .September], in: context)
-        let pflaume = Seasonal.create(name: "Plaume", seasons: [.Juli, .August, .September], in: context)
-        let poree = Seasonal.create(name: "Poree", seasons: [.August, .September, .November, .Dezember], in: context)
-        let quitte = Seasonal.create(name: "Quitte", seasons: [.November, .Dezember], in: context)
-        let radicchio = Seasonal.create(name: "Radicchio", seasons: [.Juni, .Juli, .August, .September, .Oktober], in: context)
-        let radieschen = Seasonal.create(name: "Radieschen", seasons: [.April, .Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let rhabarber = Seasonal.create(name: "Rhabarber", seasons: [.März, .April, .Mai, .Juni, .Juli], in: context)
-        let rosenkohl = Seasonal.create(name: "Rosenkohl", seasons: [.Januar, .Oktober, .November, .Dezember], in: context)
-        let rotebete = Seasonal.create(name: "Rote Bete", seasons: [.September, .Oktober, .November, .Dezember], in: context)
-        let rotkohl = Seasonal.create(name: "Rotkohl", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let rucola = Seasonal.create(name: "Rucola", seasons: [.März, .April, .Mai, .Juni, .Juli, .August, .September, .Oktober, .November], in: context)
-        let gurke = Seasonal.create(name: "Gurke", seasons: [.Mai, .Juni, .Juli, .August], in: context)
-        let sellerie = Seasonal.create(name: "Sellerie", seasons: [.Juni, .Juli, .August, .September, .Oktober, .November, .Dezember], in: context)
-        let spargel = Seasonal.create(name: "Spargel", seasons: [.April, .Mai, .Juni], in: context)
-        let spinat = Seasonal.create(name: "Spinat", seasons: [.April, .Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let spitzkohl = Seasonal.create(name: "Spitzkohl", seasons: [.Mai, .Juni, .Juli, .August, .September, .Oktober], in: context)
-        let suesskartoffel = Seasonal.create(name: "Süßkartoffel", seasons: [.September, .Oktober], in: context)
-        let tomate = Seasonal.create(name: "Tomate", seasons: [.Juli, .August, .September], in: context)
-        let weintraube = Seasonal.create(name: "Weintraube", seasons: [.September, .Oktober], in: context)
-        let weisskohl = Seasonal.create(name: "Weißkohl", seasons: [.August, .September, .Oktober], in: context)
-        let wirsing = Seasonal.create(name: "Wirsing", seasons: [.Januar, .Feburar, .Juni, .Juli, .August, .September, .Oktober, .November, .Dezember], in: context)
-        let zucchini = Seasonal.create(name: "Zucchini", seasons: [.Juni, .Juli, .August, .September], in: context)
-        let zwiebel = Seasonal.create(name: "Zwiebel", seasons: [.Juli, .August, .September, .Oktober, .November], in: context)
+        let kartoffeln = Seasonal.create(name: "Kartoffeln", seasons: [.June, .July, .August, .September, .October], in: context)
+        let kirsche = Seasonal.create(name: "Kirsche", seasons: [.June, .July, .August], in: context)
+        let kohlrabi = Seasonal.create(name: "Kohlrabi", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let kopfsalat = Seasonal.create(name: "Kopfsalat", seasons: [.June, .July, .August, .September, .October], in: context)
+        let lollorosso = Seasonal.create(name: "Lollo Rosso", seasons: [.April, .May, .June, .July, .August, .September, .October, .November], in: context)
+        let mais = Seasonal.create(name: "Mais", seasons: [.October, .July, .August, .September], in: context)
+        let mangold = Seasonal.create(name: "Mangold", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let mirabelle = Seasonal.create(name: "Mirabelle", seasons: [.July, .August, .September], in: context)
+        let moehre = Seasonal.create(name: "Möhre", seasons: [.October, .July, .August, .September], in: context)
+        let nektarine = Seasonal.create(name: "Nektarine", seasons: [.July, .August, .September], in: context)
+        let pakchoi = Seasonal.create(name: "Pak Choi", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let paprika = Seasonal.create(name: "Paprika", seasons: [.June, .July, .August, .September, .October], in: context)
+        let pastinake = Seasonal.create(name: "Pastinake", seasons: [.January, .February, .November, .December], in: context)
+        let pfirsich = Seasonal.create(name: "Pfirsich", seasons: [.July, .August, .September], in: context)
+        let pflaume = Seasonal.create(name: "Plaume", seasons: [.July, .August, .September], in: context)
+        let poree = Seasonal.create(name: "Poree", seasons: [.August, .September, .November, .December], in: context)
+        let quitte = Seasonal.create(name: "Quitte", seasons: [.November, .December], in: context)
+        let radicchio = Seasonal.create(name: "Radicchio", seasons: [.June, .July, .August, .September, .October], in: context)
+        let radieschen = Seasonal.create(name: "Radieschen", seasons: [.April, .May, .June, .July, .August, .September, .October], in: context)
+        let rhabarber = Seasonal.create(name: "Rhabarber", seasons: [.March, .April, .May, .June, .July], in: context)
+        let rosenkohl = Seasonal.create(name: "Rosenkohl", seasons: [.January, .October, .November, .December], in: context)
+        let rotebete = Seasonal.create(name: "Rote Bete", seasons: [.September, .October, .November, .December], in: context)
+        let rotkohl = Seasonal.create(name: "Rotkohl", seasons: [.May, .June, .July, .August, .September, .October, .November], in: context)
+        let rucola = Seasonal.create(name: "Rucola", seasons: [.March, .April, .May, .June, .July, .August, .September, .October, .November], in: context)
+        let gurke = Seasonal.create(name: "Gurke", seasons: [.May, .June, .July, .August], in: context)
+        let sellerie = Seasonal.create(name: "Sellerie", seasons: [.June, .July, .August, .September, .October, .November, .December], in: context)
+        let spargel = Seasonal.create(name: "Spargel", seasons: [.April, .May, .June], in: context)
+        let spinat = Seasonal.create(name: "Spinat", seasons: [.April, .May, .June, .July, .August, .September, .October], in: context)
+        let spitzkohl = Seasonal.create(name: "Spitzkohl", seasons: [.May, .June, .July, .August, .September, .October], in: context)
+        let suesskartoffel = Seasonal.create(name: "Süßkartoffel", seasons: [.September, .October], in: context)
+        let tomate = Seasonal.create(name: "Tomate", seasons: [.July, .August, .September], in: context)
+        let weintraube = Seasonal.create(name: "Weintraube", seasons: [.September, .October], in: context)
+        let weisskohl = Seasonal.create(name: "Weißkohl", seasons: [.August, .September, .October], in: context)
+        let wirsing = Seasonal.create(name: "Wirsing", seasons: [.January, .February, .June, .July, .August, .September, .October, .November, .December], in: context)
+        let zucchini = Seasonal.create(name: "Zucchini", seasons: [.June, .July, .August, .September], in: context)
+        let zwiebel = Seasonal.create(name: "Zwiebel", seasons: [.July, .August, .September, .October, .November], in: context)
         
         apfel.createCharacteristic(1, name: "Wissenswertes", value: "Als Urahn des Apfels gilt unter Botanikern der sogenannte Holzapfel – auch Wilder Apfel genannt – aus Zentral- und Westasien. Aus seinen sehr kleinen und herben Früchten entstanden im Lauf vieler Jahrhunderte weltweit mehrere tausend verschiedene Sorten. Die ersten kultivierten Äpfel gab es im antiken Griechenland und im alten Rom; aber erst im 16. Jahrhundert wurden Äpfel in Europa allmählich zum Volksnahrungsmittel. Gut zu wissen: Mit dem Granatapfel ist er trotz Namensvetterschaft botanisch nicht verwandt.")
         apfel.createCharacteristic(2, name: "Herkunft", value: "Als Urahn des Apfels gilt unter Botanikern der sogenannte Holzapfel – auch Wilder Apfel genannt – aus Zentral- und Westasien. Aus seinen sehr kleinen und herben Früchten entstanden im Lauf vieler Jahrhunderte weltweit mehrere tausend verschiedene Sorten. Die ersten kultivierten Äpfel gab es im antiken Griechenland und im alten Rom; aber erst im 16. Jahrhundert wurden Äpfel in Europa allmählich zum Volksnahrungsmittel. Gut zu wissen: Mit dem Granatapfel ist er trotz Namensvetterschaft botanisch nicht verwandt.")
@@ -243,6 +243,7 @@ struct PersistenceController {
         r1.createIngredient(name: "Zwiebel", quantity: 1)
         r1.seasonals = [apfel, fenchel, sellerie, zwiebel]
         r1.categories = [vegan, vegetarisch, glutenfrei]
+        r1.diets = [.Vegan, .GlutenFree, .Vegetarian]
         r1.createPreparation(text: "Zwiebel und Sellerie schälen und grob würfeln. Apfel schälen, vierteln, das Kerngehäuse entfernen, Apfel ebenfalls in grobe Würfel schneiden.", order: 1)
         r1.createPreparation(text: "Die Hälfte des Öls einem großen Topf erhitzen und die Zwiebelwürfel darin 2-3 Minuten bei mittlerer Hitze glasig dünsten. Sellerie- und Apfelstücke zugeben und 1 Minute dünsten. Brühe dazugießen, alles aufkochen und bei kleiner Hitze zugedeckt etwa 45 Minuten garen.", order: 2)
         r1.createPreparation(text: "Inzwischen Fenchel putzen, waschen und abtropfen lassen. Fenchel fein würfeln. Eine Pfanne erhitzen, restliches Öl hineingeben und Fenchelwürfel darin bei mittlerer Hitze unter ständigem Rühren rösten, bis alles gut gebräunt und weich ist. Mit Salz und Pfeffer würzen und warm halten.", order: 3)
@@ -263,6 +264,7 @@ struct PersistenceController {
         r2.createIngredient(name: "Zwiebel", quantity: 0.5)
         r2.seasonals = [spargel, radieschen, zwiebel]
         r2.categories = [vegetarisch]
+        r2.diets = [.Vegetarian]
         r2.createPreparation(text: "Halbe Zwiebel schälen und in Streifen schneiden. 1 EL Olivenöl in einem Topf erhitzen, Zwiebel und Risotto-Reis darin für 1 Minute bei mittlerer Hitze andünsten. Kapern zugeben und mit etwas Gemüsebrühe ablöschen. Unter gelegentlichem Rühren für ca. 20 Minuten nach und nach die Gemüsebrühe zugeben, bis der Reis die Flüssigkeit komplett aufgenommen hat.", order: 1)
         r2.createPreparation(text: "Inzwischen Spargel und Radieschen putzen und waschen. Die holzigen Enden des Spargels abschneiden und die Radieschen vierteln. Restliches Öl in einer Pfanne erhitzen und das Gemüse darin bei mittlerer Hitze für 3 Minuten unter Wenden anbraten und salzen. Dill waschen, trocken schütteln und grob hacken.", order: 2)
         r2.createPreparation(text: "Parmesan reiben und die Hälfte unter das Risotto rühren. Mit Pfeffer und Zitronensaft würzen und mit geschlossenem Deckel beiseitestellen.", order: 3)
@@ -282,6 +284,7 @@ struct PersistenceController {
         r3.createIngredient(name: "Zwiebel", quantity: 2)
         r3.seasonals = [aubergine, kartoffeln, tomate, paprika, zucchini, zwiebel]
         r3.categories = [vegetarisch, glutenfrei]
+        r3.diets = [.Vegetarian, .GlutenFree]
         r3.createPreparation(text: "Zucchini und Aubergine putzen, waschen und quer in Scheiben schneiden. Zwiebeln schälen und in Achtel schneiden. Knoblauch von den äußeren Hüllblättern befreien und quer halbieren. Paprikaschote halbieren, entkernen, waschen und längs in Streifen schneiden. Kirschtomaten vorsichtig waschen und abtropfen lassen. Kartoffeln gründlich waschen und halbieren. Thymian waschen, trocken schütteln und Blättchen abzupfen.", order: 1)
         r3.createPreparation(text: "Auberginenscheiben in einer großen Auflaufform oder in einem tiefen Backblech verteilen. Paprikastreifen, Zucchinischeiben, Zwiebeln, Knoblauch, Tomaten und Kartoffeln darauf verteilen, alles mit Salz, Pfeffer und Thymian würzen und Öl darüberträufeln.", order: 2)
         r3.createPreparation(text: "Gemüse im vorgeheizten Backofen bei 220 °C (Umluft 200 °C; Gas: Stufe 3) 35–45 Minuten backen.", order: 3)
@@ -299,6 +302,7 @@ struct PersistenceController {
         r4.createIngredient(name: "Zwiebel", quantity: 1)
         r4.seasonals = [kartoffeln, radieschen, rucola, zwiebel]
         r4.categories = [glutenfrei, vegetarisch, vegan]
+        r4.diets = [.GlutenFree, .Vegetarian, .Vegan]
         r4.createPreparation(text: "Kartoffeln waschen und im Dämpfeinsatz im geschlossenen Topf ca. 30 Minuten gar dämpfen.", order: 1)
         r4.createPreparation(text: "Inzwischen Zwiebel schälen und fein würfeln. Brühe zum Kochen bringen und Zwiebel dazugeben. Vom Herd nehmen und ca. 5 Minuten ziehen lassen. Essig und Senf unterrühren und Marinade mit Salz und Pfeffer abschmecken. Radieschen waschen, putzen und in Scheiben schneiden. Rucola waschen, putzen und trocken schütteln. Nach Belieben etwas kleiner zupfen. Schnittlauch waschen und in Röllchen schneiden.", order: 2)
         r4.createPreparation(text: "Kartoffeln ausdampfen lassen, noch warm pellen und in Scheiben schneiden. Mit der Marinade vermengen und ca. 30 Minuten durchziehen lassen.", order: 3)
@@ -318,6 +322,7 @@ struct PersistenceController {
         r5.createIngredient(name: "Zitronensaft", quantity: 1, unit: "TL")
         r5.seasonals = [brokkoli, fruehlingszwiebel, kartoffeln, radieschen]
         r5.categories = [glutenfrei, vegan, vegetarisch]
+        r5.diets = [.GlutenFree, .Vegan, .Vegetarian]
         r5.createPreparation(text: "Brokkoli putzen, waschen, in mundgerechte Röschen schneiden und mit restlichem Olivenöl, Salz und Pfeffer mischen. Brokkoliröschen zu den Kartoffeln geben und in weitere 15 Minuten backen.", order: 1)
         r5.createPreparation(text: "Inzwischen Kresse vom Beet schneiden und mit Zitronensaft und Cashewmus mit einem Stabmixer pürieren; dabei nach und nach Wasser zugießen, bis die Sauce eine cremige Konsistenz hat. Mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen.", order: 2)
         r5.createPreparation(text: "Kartoffeln gründlich abbürsten, waschen und halbieren. Rosmarin waschen, trocken schütteln und Nadeln abzupfen. Alles mit 2 EL Olivenöl, Salz und Pfeffer mischen. Kartoffeln auf ein mit Backpapier ausgelegtes Backblech geben und im vorgeheizten Backofen bei 200°C (Umluft: 180°C; Gas: Stufe 3) etwa 30 Minuten backen.", order: 3)
@@ -336,6 +341,7 @@ struct PersistenceController {
         r6.createIngredient(name: "Radieschen", quantity: 100, unit: "g")
         r6.seasonals = [apfel, radieschen]
         r6.categories = [backen, vegetarisch]
+        r6.diets = [.Vegetarian]
         r6.createPreparation(text: "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen.", order: 1)
         r6.createPreparation(text: "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen.", order: 2)
         r6.createPreparation(text: "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip ", order: 3)
@@ -353,6 +359,7 @@ struct PersistenceController {
         r7.createIngredient(name: "Zimt", quantity: 1, unit: "Msp")
         r7.seasonals = [radieschen, rotebete]
         r7.categories = [lowcarb, vegetarisch]
+        r7.diets = [.Vegetarian]
         r7.createPreparation(text: "Rote Bete putzen, mit geölten Händen oder Einweghandschuhen schälen und in mundgerechte Stücke schneiden. Mit Öl mischen und mit Salz, Pfeffer, Kardamom, Zimt und Kreuzkümmel würzen. In eine Auflaufform geben und im vorgeheizten Backofen bei 200 °C (Umluft: 180 °C; Gas: Stufe 3) 35–40 Minuten backen.", order: 1)
         r7.createPreparation(text: "Inzwischen Walnüsse grob hacken. Radieschen putzen, waschen und je nach Größe ganz lassen oder halbieren bzw. vierteln. Feta zerbröckeln. Kräuter waschen, trocken schütteln und klein hacken.", order: 2)
         r7.createPreparation(text: "Rote Bete aus dem Ofen nehmen und mit Balsamessig beträufeln. Mit Nüssen, Feta, Radieschen und Kräutern bestreut reichen.", order: 3)
@@ -368,6 +375,7 @@ struct PersistenceController {
         r8.createIngredient(name: "Zucchini", quantity: 2)
         r8.seasonals = [aubergine, paprika, lollorosso, zucchini]
         r8.categories = [vegetarisch]
+        r8.diets = [.Vegetarian]
         r8.createPreparation(text: "Die Auberginen und Zucchinis waschen und in Scheiben schneiden. Die Paprika ebenfalls waschen, halbieren, von den Kernen und weißen Innenwänden befreien und in Streifen schneiden. Den Salat verlesen, waschen, trocken schleudern und in mundgerechte Stücke zupfen.", order: 1)
         r8.createPreparation(text: "In einer Grillpfanne 2 EL Öl erhitzen und das Gemüse nacheinander 3-5 Minuten unter Wenden grillen. Herausnehmen, auf einem Küchenkrepp abtropfen lassen und mit Salz und Pfeffer würzen.", order: 2)
         r8.createPreparation(text: "Die Ciabatta im vorgeheizten Ofen 3-4 Minuten anrösten. Herausnehmen, kurz auskühlen lassen, halbieren, aufschneiden und die eine Hälfte mit dem Salat und dem gegrilltem Gemüse belegen, mit Basilikumblättern bestreuen und mit etwas Olivenöl beträufeln. Die 2 Brothälfte daraufklappen und in Servietten gewickelt servieren.", order: 3)
@@ -392,6 +400,7 @@ struct PersistenceController {
         r9.createIngredient(name: "Spinat", quantity: 100, unit: "g")
         r9.seasonals = [moehre, radieschen, gurke, spinat]
         r9.categories = [lowcarb, vegan, vegetarisch, glutenfrei]
+        r9.diets = [.Vegan, .Vegetarian, .GlutenFree]
         r9.createPreparation(text: "Alle vorbereiteten Zutaten in 4 Schalen verteilen, Kräuter und Dressing unterheben. Erdnüsse grob hacken, Limette vierteln, ebenfalls portionsweise in die Schalen geben und mit Gurkensalat servieren.", order: 1)
         r9.createPreparation(text: "Für den Gurkensalat Gurke waschen und in sehr feine Scheiben schneiden. Wasser mit den Händen aus der Gurke drücken. 2 TL Agavendicksaft, 1 EL Sojasauce und 2 EL Reisessig mischen, Gurke und Sesam unterheben. In 4 kleine Schüsseln geben.", order: 2)
         r9.createPreparation(text: "Minze waschen, trocken schütteln, Blätter grob hacken. Für das Dressing Chilischote längs halbieren, entkernen, waschen, hacken und mit restlichem Essig, Agavendicksaft und restlicher Sojasauce mischen.", order: 3)

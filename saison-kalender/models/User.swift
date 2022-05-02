@@ -9,6 +9,11 @@ import CoreData
 
 extension User {
     
+    var diets: [Diet] {
+        get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
+        set { diets_ = newValue.map { $0.rawValue } }
+    }
+    
     var favorites: Set<Recipe> {
         get { (favorites_ as? Set<Recipe>) ?? [] }
         set { favorites_ = newValue as NSSet }
@@ -60,7 +65,7 @@ extension User {
 extension User {
     
     static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User {
-        let predicate = NSPredicate(format: "name_ = %@", name)
+        let predicate = NSPredicate(format: "email_ = %@", email)
         let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         if let user = users.first {
             return user
@@ -73,33 +78,15 @@ extension User {
         return newUser
     }
     
-    static func with(name: String, password: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "name_ = %@ AND password_ = %@", name, password)
+    static func with(email: String, password: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "email_ = %@ AND password_ = %@", email, password)
         let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         return matchingUsers.first
     }
     
-    static func with(name: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "name_ = %@", name)
+    static func with(email: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "email_ = %@", email)
         let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
         return matchingUsers.first
-    }
-    
-    static func register(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "name_ = %@", name)
-        let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        if users.first != nil {
-            return nil
-        }
-        let newUser = User(context: context)
-        newUser.name = name
-        newUser.email = email
-        newUser.password = password
-        do {
-            try context.save()
-        } catch {
-            return nil
-        }
-        return newUser
     }
 }
