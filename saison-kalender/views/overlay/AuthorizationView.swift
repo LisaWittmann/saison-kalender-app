@@ -119,7 +119,7 @@ struct RegistrationForm: View {
                     validate: AppUser.isValidEmail
                 )
                 InputField(
-                    "Nutzername",
+                    "Name",
                     text: $name,
                     icon: "person.fill",
                     validate: AppUser.isValidName
@@ -163,10 +163,10 @@ struct RegistrationForm: View {
     @ViewBuilder
     private func icon(for diet: Diet) -> some View {
         VStack(alignment: .center) {
-            Image(diet.rawValue.lowercased())
+            Image(diet.name.lowercased())
                 .resizable()
                 .scaledToFit()
-            Text(diet.rawValue.lowercased())
+            Text(diet.name.lowercased())
         }
         .padding(spacingExtraSmall)
         .opacity(user.diets.contains(diet) ? 1 : inactiveOpacity)

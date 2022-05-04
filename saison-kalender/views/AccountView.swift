@@ -15,11 +15,19 @@ enum Tab: String, CaseIterable {
 struct AccountView: View {
     @EnvironmentObject var user: AppUser
     @EnvironmentObject var viewRouter: ViewRouter
+    
     @State var selectedTab: Tab = .Favoriten
+    @State var openSettings = false
     
     var body: some View {
         Page {
-            Headline("\(user.name ?? "")", "Dein Bereich")
+            HStack {
+                Headline("\(user.name ?? "")", "Dein Bereich")
+                Image(systemName: "gearshape.fill")
+                    .font(.custom(fontBold, size: fontSizeHeadline1))
+                    .foregroundColor(colorGreen)
+                    .onTapGesture { openSettings.toggle() }
+            }
             
             HStack {
                 ForEach(Tab.allCases, id: \.self.name) { tab in
@@ -34,11 +42,15 @@ struct AccountView: View {
             }
             
             Spacer()
-        }.onAppear {
+        }
+        .onAppear {
             user.requireAuthorization()
             if !user.isAuthenticated {
                 viewRouter.currentView = .home
             }
+        }
+        .fullScreenCover(isPresented: $openSettings) {
+            AccountSettingsView(close: { openSettings = false })
         }
     }
     

@@ -12,4 +12,6 @@ enum Diet: String, CaseIterable {
         DairyFree = "Laktosefrei",
         Vegetarian = "Vegetarisch",
         Vegan = "Vegan"
+    
+    var name: String { rawValue }
 }

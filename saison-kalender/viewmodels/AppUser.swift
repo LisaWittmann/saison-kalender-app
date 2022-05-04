@@ -12,14 +12,14 @@ class AppUser: ObservableObject {
     @Published var user: User?
     @Published var requiresAuthorization: Bool
     
+    var name: String? { user?.name }
+    var email: String? { user?.email }
     var isAuthenticated: Bool { user != nil }
     
     init(_ user: User? = nil) {
         self.user = user
         self.requiresAuthorization = false
     }
-    
-    var name: String? { user?.name }
     
     var favorites: Set<Recipe> {
         get { Set(user?.favorites ?? []) }
@@ -128,6 +128,28 @@ extension AppUser {
     
     func requireAuthorization() {
         requiresAuthorization = !isAuthenticated
+    }
+}
+
+extension AppUser {
+    
+    func checkPassword(_ password: String) -> Bool {
+        user?.password == password
+    }
+    
+    func changePassword(_ newPassword: String) {
+        user?.password = newPassword
+        save()
+    }
+    
+    func change(email: String, name: String) {
+        if email != "" {
+            user?.email = email
+        }
+        if name != "" {
+            user?.name = name
+        }
+        save()
     }
 }
 
