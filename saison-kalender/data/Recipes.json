@@ -2,17 +2,15 @@
     {
         "name": "Apfel-Sellerie-Suppe",
         "intro": "Gleich drei starke Zutaten verbinden sich zu einem sehr effektiven Trio: Apfel, Knollensellerie und Fenchel. Es senkt zum Beispiel den Cholesterinspiegel, lindert Erkältungen und schützt die Zellen vor freien Radikalen und wirkt deshalb positiv auf den gesamten Körper.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Suppen" }
         ],
         "nutrition": {
-            "calories": 278,
-            "carbs": 17,
-            "fat": 19,
-            "protein": 7
+            "calories": 278.0,
+            "carbs": 17.0,
+            "fat": 19.0,
+            "protein": 7.0
         },
         "ingredients": [
             {
@@ -83,37 +81,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            },
-            {
-                "name": "Fenchel",
-                "seasons": ["Juni", "Juli", "August", "September"]
-            },
-            {
-                "name": "Sellerie",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Apfel", "Fenchel", "Sellerie", "Zwiebel"]
     },
     {
         "name": "Apple Crisp",
         "intro": "Äpfel enthalten reichlich Vitamine und Mineralstoffe. Wer regelmäßig Äpfel isst, stärkt dank Vitamin C sein Immunsystem. Besonders die Schale liefert wertvolle Ballaststoffe, wie beispielsweise Pektin. Mit Schale verzehrt und gut gekaut hilft das Kernobst daher gegen Verstopfung und regt den Stoffwechsel an. ",
+        "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Backen" },
-            { "name": "Vegetarisch" }
+            { "name": "Frühstück" }
         ],
         "nutrition": {
-            "calories": 486,
-            "carbs": 57,
-            "fat": 25,
-            "protein": 8
+            "calories": 486.0,
+            "carbs": 57.0,
+            "fat": 25.0,
+            "protein": 8.0
         },
         "ingredients": [
             {
@@ -206,21 +188,15 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Apfel"]
     },
     {
         "name": "Artischockensalat mit Quinoa",
         "intro": null,
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" },
-            { "name": "Vegetarisch" },
-            { "name": "Vegan" }
+            { "name": "Salate" },
+            { "name": "Mittagessen" }
         ],
         "ingredients": [
             {
@@ -304,34 +280,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Artischocke",
-                "seasons": ["Juli", "August", "September"]
-            },
-            {
-                "name": "Lollo Rosso",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Gurke",
-                "seasons": ["Mai", "Juni", "Juli", "August"]
-            }
-        ]
+        "seasonals": ["Artischocke", "Lollo Rosso", "Gurke"]
     },
     {
         "name": "Baked Oats mit Brombeeren",
         "intro": "Anthocyane geben den Brombeeren nicht nur ihre dunkle Farbe, sondern dienen auch als Antioxidantien und fangen schädliche freie Radikale ab. Dank seiner ätherischen Öle besänftigt Zimt einen gereizten Magen und hilft bei Blähungen.",
+        "diets": ["Laktosefrei", "Glutenfrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Backen" },
-            { "name": "Vegetarisch" },
-            { "name": "Vegan" }
+            { "name": "Frühstück" }
         ],
         "nutrition": {
-            "calories": 265,
-            "carbs": 30,
-            "fat": 13,
-            "protein": 7
+            "calories": 265.0,
+            "carbs": 30.0,
+            "fat": 13.0,
+            "protein": 7.0
         },
         "ingredients": [
             {
@@ -400,35 +363,20 @@
                 "info": "Wer möchte, kann statt Agavendicksaft auch Honig verwenden"
             }
         ],
-        "seasonals": [
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            },
-            {
-                "name": "Brombeere",
-                "seasons": ["Juli", "August", "September"]
-            },
-            {
-                "name": "Hokkaido",
-                "seasons": ["August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Apfel", "Brombeere", "Hokkaido"]
     },
     {
         "name": "Blumenkohl-Pastinaken-Suppe",
         "intro": "Blumenkohl ist ideal zum Detoxen, denn der zarte Kohl enthält viel Kalium, welches überschüssiges Wasser aus dem Körper leitet. Zudem hält der Mineralstoff das Herz im Takt und kann so vor Herzrhythmus-Störungen schützen.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" },
-            { "name": "Vegetarisch" },
-            { "name": "Vegan" }
+            { "name": "Suppen" }
         ],
         "nutrition": {
-            "calories": 191,
-            "carbs": 13,
-            "fat": 12,
-            "protein": 7
+            "calories": 191.0,
+            "carbs": 13.0,
+            "fat": 12.0,
+            "protein": 7.0
         },
         "ingredients": [
             {
@@ -493,36 +441,19 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Sellerie",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Blumenkohl",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Pastinake",
-                "seasons": ["Januar", "Februar", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Sellerie", "Blumenkohl", "Pastinake", "Zwiebel"]
     },
     {
         "name": "Boeuf Bourguignon",
         "intro": "Dieses Rezept ist smarter als ein klassisches Boeuf Bourguignon, da wir uns auf die zwei wesentlichen Zutaten Rindfleisch und Rotwein mit jeder Menge Gemüse begrenzt haben. Speck und weiterer Alkohol wie Cognac ist nicht enthalten.\n\nRindfleisch ist die perfekte Quelle für Eiweiß, Eisen und Zink. Die Kombination hilft beim Muskelaufbau, macht munter und stärkt das Immunsystem. Zwiebeln und Knoblauch gelten als Blutdrucksenker und wirken antibakteriell. Bioaktive Phenole aus dem Rotwein schützen Herz und Gefäße.",
         "categories": [
-            { "name": "Low Carb" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 447,
-            "carbs": 9,
-            "fat": 15,
-            "protein": 62
+            "calories": 447.0,
+            "carbs": 9.0,
+            "fat": 15.0,
+            "protein": 62.0
         },
         "ingredients": [
             {
@@ -619,33 +550,26 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Champignons",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Champignons", "Zwiebel"]
     },
     {
         "name": "Cheeseburger mit Black Bean Patty",
         "intro": "Die fleischauthentischen Patties sind auf Basis von schwarzen Bohnen und die bieten Proteine pur: Mit rund 22 Gramm Eiweiß pro 100 Gramm müssen sich die Hülsenfrüchte nicht hinter einem Steak verstecken. Das macht sie zu einem der interessantesten Lebensmittel für Veganer, aber auch für Sportler.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 532,
-            "carbs": 68,
-            "fat": 19,
-            "protein": 22
+            "calories": 532.0,
+            "carbs": 68.0,
+            "fat": 19.0,
+            "protein": 22.0
         },
         "ingredients": [
             {
                 "name": "Burgerbrötchen",
-                "quantity": 4
+                "quantity": 4,
+                "unit": null
             },
             {
                 "name": "Champignons",
@@ -720,6 +644,7 @@
             {
                 "name": "Tomate",
                 "quantity": 1,
+                "unit": null
             }
         ],
         "preparations": [
@@ -766,40 +691,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Eisbergsalat",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Rote Bete",
-                "seasons": ["September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Tomate",
-                "seasons": ["Juli", "August", "September"]
-            },
-            {
-                "name": "Champignons",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Eisbergsalat", "Rote Bete", "Tomate", "Champignons", "Zwiebel"]
     },
     {
         "name": "Frühlings-Risotto mit grünem Spargel",
         "intro": "Der knackige grüne Spargel bringt viel Kalium ins Frühlings-Risotto und hilft so, den Flüssigkeitshaushalt des Körpers im Gleichgewicht zu halten. Auch das B-Vitamin Folsäure steckt im Spargel – das ist für die Zellerneuerung und die Blutbildung von großer Bedeutung. Auch die Verdauung kommt nicht zu kurz: Der Frühlingsbote Radieschen punktet mit Senfölen, welche die Produktion von Verdauungssäften anregen und für eine gute Darmtätigkeit sorgen.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 575,
-            "carbs": 76,
-            "fat": 20,
-            "protein": 21
+            "calories": 575.0,
+            "carbs": 76.0,
+            "fat": 20.0,
+            "protein": 21.0
         },
         "ingredients": [
             {
@@ -879,34 +785,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Spargel",
-                "seasons": ["April", "Mai", "Juni"]
-            },
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Spargel","Radieschen",  "Zwiebel"]
     },
     {
         "name": "Gebratener Reis mit Chinakohl",
         "intro": "Die im Reis und Gemüse enthaltenen komplexen Kohlenhydrate sowie Ballaststoffe und die Proteine aus den Eiern sorgen für eine langanhaltende Sättigung und einen konstanten Blutzuckerspiegel.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Asiatisch" }
         ],
         "nutrition": {
-            "calories": 390,
-            "carbs": 50,
-            "fat": 15,
-            "protein": 12
+            "calories": 390.0,
+            "carbs": 50.0,
+            "fat": 15.0,
+            "protein": 12.0
         },
         "ingredients": [
             {
@@ -994,35 +887,21 @@
             }
             
         ],
-        "seasonals": [
-            {
-                "name": "Chinakohl",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Frühlingszwiebel",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Chinakohl", "Möhre", "Frühlingszwiebel"]
     },
     {
         "name": "Gedünsteter Lauch",
         "intro": "Lauch und Zitrusfrüchte gehen eine stabile Allianz ein und werden mit 10 Sternen im ES-Food-Check belohnt. Die Vorspeise enthält nur wenig Fett, und die Fettsäuren, die vorhanden sind, wirken positiv auf Blutfette und senken einen erhöhten Cholesterinspiegel.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Beilagen" },
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 156,
-            "carbs": 13,
-            "fat": 8,
-            "protein": 4
+            "calories": 156.0,
+            "carbs": 13.0,
+            "fat": 8.0,
+            "protein": 4.0
         },
         "ingredients": [
             {
@@ -1080,24 +959,21 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]               
-            }
-        ]
+        "seasonals": ["Porree"]
     },
     {
         "name": "Gefüllte Champignons auf Tomaten",
         "intro": "Die gefüllten Champignons sind eine gute Quelle für Folsäure: Wir benötigen das B-Vitamin für gesunde Nerven, ein gutes Gedächtnis, die Blutbildung und eine ausgeglichene Stimmung. Der Käse bringt darüber hinaus knochenstärkendes Calcium in das Gericht.",
+        "diets": ["Glutenfrei"],
         "categories": [
-            { "name": "Low Carb" }
+            { "name": "Beilagen" },
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 351,
-            "carbs": 18,
-            "fat": 19,
-            "protein": 26
+            "calories": 351.0,
+            "carbs": 18.0,
+            "fat": 19.0,
+            "protein": 26.0
         },
         "ingredients": [
             {
@@ -1129,11 +1005,6 @@
                 "name": "Haferflocken",
                 "quantity": 40,
                 "unit": "g"
-            },
-            {
-                "name": "",
-                "quantity": 0,
-                "unit": ""
             }
         ],
         "preparations": [
@@ -1168,28 +1039,20 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Champignons",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Champignons", "Zwiebel"]
     },
     {
         "name": "Gemüselasagne",
         "intro": "Grüne Bohnen wirken durch ihre Ballaststoffe verdauungsfördernd – zusammen mit den Vollkorn-Lasagneblättern wird die Gemüselasagne mit Béchamelsauce zum echten Sattmacher. Ätherische Öle aus dem Lauch stärken die Darmflora und eliminieren krankmachende Erreger.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 620,
-            "carbs": 58,
-            "fat": 33,
-            "protein": 23
+            "calories": 620.0,
+            "carbs": 58.0,
+            "fat": 33.0,
+            "protein": 23.0
         },
         "ingredients": [
             {
@@ -1285,35 +1148,20 @@
                 "info": null
             }  
         ],
-        "seasonals": [
-            {
-                "name": "Spinat",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Tomate",
-                "seasons": ["Juli", "August", "September"]
-            },
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
-            }
-        ]
+        "seasonals": ["Spinat", "Tomate", "Porree"]
     },
     {
         "name": "Gemüsenudeln mit Pilzen und Tofu",
         "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
-
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 383,
-            "carbs": 18,
-            "fat": 26,
-            "protein": 21
+            "calories": 383.0,
+            "carbs": 18.0,
+            "fat": 26.0,
+            "protein": 21.0
         },
         "ingredients": [
             {
@@ -1399,33 +1247,20 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Champignons",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Champignons", "Zwiebel", "Möhre"]
     },
     {
         "name": "Geschmortes Kaninchen mit Rotwein",
         "intro": "Das edle Kaninchenfleisch punktet durch seinen geringen Fettgehalt und hohen Proteinanteil. Dieser ist vergleichbar mit dem vom Hähnchen- oder Putenfleisch. Außerdem bringt das Fleisch erstaunliche 3,5 Gramm Eisen pro 100 Gramm mit sich und auch 29 Milligramm Magnesium können sich sehen lassen.",
+        "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 399,
-            "carbs": 10,
-            "fat": 23,
-            "protein": 37
+            "calories": 399.0,
+            "carbs": 10.0,
+            "fat": 23.0,
+            "protein": 37.0
         },
         "ingredients": [
             {
@@ -1499,36 +1334,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Paprika",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Porree", "Möhre", "Paprika", "Zwiebel"]
     },
     {
         "name": "Gratinierter Chinakohl",
         "intro": "Mit einer ganzen Reihe an sekundären Pflanzenstoffen wie Chlorophyll, Flavonoiden und Phenolen kann der Chinakohl jung und gesund halten, denn diese Stoffe schützen die Zellen und beugen so einer vorzeitigen Alterung vor. Das Kohlgemüse unterstützt zudem den Darm mit Ballaststoffen.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Beilagen" }
         ],
         "nutrition": {
-            "calories": 307,
-            "carbs": 19,
-            "fat": 20,
-            "protein": 11
+            "calories": 307.0,
+            "carbs": 19.0,
+            "fat": 20.0,
+            "protein": 11.0
         },
         "ingredients": [
             {
@@ -1598,29 +1417,21 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Chinakohl",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Chinakohl", "Zwiebel"]
     },
     {
         "name": "Griechisches Gemüse mit Feta",
         "intro": "Hier kommen reichlich Vitamine und Mineralstoffe auf den Tisch: Insbesondere Kalium, Calcium und Phosphor stecken in den Fruchtgemüsen Zucchini und Aubergine. Die kräftig riechenden schwefelhaltigen Bestandteile der Knoblauchzehen, sogenannte Phytonzide, wirken als natürliche Antibiotika. Sie können krank machende Mikroorganismen abtöten, ohne dabei den Menschen mit Nebenwirkungen zu belasten.",
+        "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 357,
-            "carbs": 32,
-            "fat": 19,
-            "protein": 12
+            "calories": 357.0,
+            "carbs": 32.0,
+            "fat": 19.0,
+            "protein": 12.0
         },
         "ingredients": [
             {
@@ -1695,45 +1506,22 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Paprika",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Aubergine",
-                "seasons": ["Juni","Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Tomate",
-                "seasons": ["Juli", "August", "September"]
-            },
-            {
-                "name": "Zucchini",
-                "seasons": ["Juni", "Juli", "August", "September"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Paprika", "Aubergine", "Kartoffel", "Tomate", "Zucchini", "Zwiebel"]
     },
     {
         "name": "Kartoffel-Lauch-Kuchen",
         "intro": "Kämpferolreiche Lebensmittel wirken positiv auf das Herz-Kreislauf-System. Kartoffeln, Lauch sowie Äpfel enthalten dieses nützliche Flavonoid und schützen daher unsere Pumpe.",
+        "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Backen" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 537,
-            "carbs": 26,
-            "fat": 23,
-            "protein": 11
+            "calories": 537.0,
+            "carbs": 26.0,
+            "fat": 23.0,
+            "protein": 11.0
         },
         "ingredients": [
             {
@@ -1823,33 +1611,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            },
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
-            }
-        ]
+        "seasonals": [ "Kartoffel", "Apfel", "Porree" ]
     },
     {
         "name": "Kartoffel-Radieschen-Salat",
         "intro": "Der Salat lässt sich auch super schon am Vortag zubereiten – zum Beispiel, wenn Sie ihn mit zur Arbeit nehmen möchten. Dann sollten Sie Rucola, Radieschen, Schnittlauch und Rapsöl am besten erst kurz vor dem Verzehr untermengen.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegan" }
+            { "name": "Salate" },
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 241,
-            "carbs": 22,
-            "fat": 8,
-            "protein": 6
+            "calories": 241.0,
+            "carbs": 22.0,
+            "fat": 8.0,
+            "protein": 6.0
         },
         "ingredients": [
             {
@@ -1919,30 +1695,17 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Rucola",
-                "seasons": ["März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]                
-            }
-        ]
+        "seasonals": ["Kartoffel", "Radieschen", "Rucola"]
     },
     {
         "name": "Kohlrabi-Tofu-Curry",
         "intro": "Kohlrabi ist ein richtiges Power-Gemüse und liefert mit 67 Milligramm pro 100 Gramm knapp drei Viertel des täglichen Bedarfs an Vitamin C. Außerdem enthält die Knolle sogenannte Glucosinolate – diese Senföle stärken neben der Abwehrkraft insbesondere die Immunzellen im Darm.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Asiatisch" },
+            { "name": "Mittagessen" },
+            { "name": "Abendessen" }
         ],
-        "nutrition": null,
         "ingredients": [
             {
                 "name": "Apfel",
@@ -2052,32 +1815,20 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            },
-            {
-                "name": "Kohlrabi",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            }
-        ]
+        "seasonals": ["Apfel", "Kohlrabi", "Zwiebel"]
     },
     {
         "name": "Kohlrabischnitzel",
-        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo "Empfohlen von IN FORM" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen. Weitere Informationen zum Projekt \"Geprüfte IN FORM-Rezepte\" gibt es hier.\n\nDurch die ätherischen Öle und Mineralstoffe im knoblauchähnlich schmeckenden Bärlauch wirkt das Kraut darmregulierend, blutbildend, basisch und anregend. Kohlrabi liefern reichlich Ballaststoffe, die die Verdauung anregen. Die Milchprodukte punkten mit viel knochenstärkendem Calcium.",
+        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen. Weitere Informationen zum Projekt \"Geprüfte IN FORM-Rezepte\" gibt es hier.\n\nDurch die ätherischen Öle und Mineralstoffe im knoblauchähnlich schmeckenden Bärlauch wirkt das Kraut darmregulierend, blutbildend, basisch und anregend. Kohlrabi liefern reichlich Ballaststoffe, die die Verdauung anregen. Die Milchprodukte punkten mit viel knochenstärkendem Calcium.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 379,
-            "carbs": 36,
-            "fat": 13,
-            "protein": 26
+            "calories": 379.0,
+            "carbs": 36.0,
+            "fat": 13.0,
+            "protein": 26.0
         },
         "ingredients": [
             {
@@ -2167,28 +1918,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Kohlrabi",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Frühlingszwiebel",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]               
-            }
-        ]
+        "seasonals": ["Kohlrabi", "Frühlingszwiebel"]
     },
     {
         "name": "Kokos-Curry mit Lachs",
         "intro": "Die tropische Kokosnuss ist reich an Ballast- und Mineralstoffen wie Magnesium, Phosphor, Kalium und Kalzium sowie den Spurenelementen Zink, Eisen und Kupfer.",
+        "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Glutenfrei" }
+            { "name": "Abendessen" },
+            { "name": "Asiatisch" }
         ],
         "nutrition": {
-            "calories": 549,
-            "carbs": 68,
-            "fat": 17,
-            "protein": 27
+            "calories": 549.0,
+            "carbs": 68.0,
+            "fat": 17.0,
+            "protein": 27.0
         },
         "ingredients": [
             {
@@ -2293,27 +2037,14 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Süßkartoffel",
-                "seasons": ["September", "Oktober"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Sellerie",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            }
-        ]
+        "seasonals": ["Süßkartoffel", "Zwiebel", "Sellerie"]
     },
     {
         "name": "Lachskotelett auf Kohlrabi-Salat",
-        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo "Empfohlen von IN FORM" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen.\n\nRoher Kohlrabi schmeckt klasse – und sorgt für eine dicke Ration Vitamin C. In diesem Fall zum Beispiel deckt eine Portion, zusammen mit der angenehm scharfen Brunnenkresse und dem magenfreundlichen Fenchel, den gesamten Tagesbedarf.",
+        "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen.\n\nRoher Kohlrabi schmeckt klasse – und sorgt für eine dicke Ration Vitamin C. In diesem Fall zum Beispiel deckt eine Portion, zusammen mit der angenehm scharfen Brunnenkresse und dem magenfreundlichen Fenchel, den gesamten Tagesbedarf.",
+        "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Low Carb" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
             "calories": 334,
@@ -2406,33 +2137,21 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Kohlrabi",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Fenchel",
-                "seasons": ["Juni", "Juli", "August", "September"]
-            }
-        ]
+        "seasonals": ["Zwiebel", "Kohlrabi", "Fenchel"]
     },
     {
         "name": "Möhren auf Pastinaken-Kartoffel-Püree",
         "intro": "Da freut sich der Darm: Kartoffeln und Pastinaken sind leicht verdaulich und liefern reichlich Ballaststoffe. Aufgrund der in den Kartoffeln enthaltenen Stärke können Säuren und Gifte gebunden werden; die Erdäpfel wirken dadurch beruhigend. Die Alpha-Linolensäure in Leinöl stärkt das Denkvermögen und erhöht die Konzentrationsfähigkeit. Zudem schützt die Omega-3-Fettsäure das Herz und reguliert einen erhöhten Blutfettspiegel.",
+        "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Beilagen" }
         ],
         "nutrition": {
-            "calories": 516,
-            "carbs": 50,
-            "fat": 25,
-            "protein": 21
+            "calories": 516.0,
+            "carbs": 50.0,
+            "fat": 25.0,
+            "protein": 21.0
         },
         "ingredients": [
             {
@@ -2533,28 +2252,15 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Pastinake",
-                "seasons": ["Januar", "Februar", "November", "Dezember"]
-            },
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Möhre", "Pastinake", "Kartoffel"]
     },
     {
         "name": "Nudelauflauf mit Fenchel",
         "intro": null,
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
-        "nutrition": null,
         "ingredients": [
             {
                 "name": "Eier",
@@ -2632,30 +2338,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Fenchel",
-                "seasons": ["Juni", "Juli", "August", "September"]
-            }
-        ]
+        "seasonals": ["Porree", "Fenchel"]
     },
     {
         "name": "Ofenkartoffeln mit Brokkoli",
         "intro": "Die Ofenkartoffeln mit Brokkoli schmecken auch kalt als Salat oder als Snack für die Arbeit und das Büro unwiderstehlich gut.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" },
+            { "name": "Beilagen" }
         ],
         "nutrition": {
-            "calories": 471,
-            "carbs": 37,
-            "fat": 29,
-            "protein": 16
+            "calories": 471.0,
+            "carbs": 37.0,
+            "fat": 29.0,
+            "protein": 16.0
         },
         "ingredients": [
             {
@@ -2741,36 +2438,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Brokkoli",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Frühlingszwiebel",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Brokkoli", "Frühlingszwiebel", "Kartoffel", "Radieschen"]
     },
     {
         "name": "Pasta mit Linsen-Bolognese",
         "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
+        "diets": ["Laktosefrei", "Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 733,
-            "carbs": 102,
-            "fat": 13,
-            "protein": 44
+            "calories": 733.0,
+            "carbs": 102.0,
+            "fat": 13.0,
+            "protein": 44.0
         },
         "ingredients": [
             {
@@ -2881,37 +2562,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Champignons",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Zwiebel",
-                "seasons": ["Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Sellerie",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            }
-        ]
+        "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
     },
     {
         "name": "Pikante Waffeln mit Dip",
         "intro": "Vollkornmehl sättigt durch langkettige Kohlenhydrate und Ballaststoffe nachhaltig. Die Quellstoffe unterstützen eine ausgeglichene Darmflora. Tolle Knöllchen: Dank schwefelhaltiger Öle sowie Vitamin C stärken Radieschen effektiv die körpereigenen Abwehrkräfte.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Low Carb" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 623,
-            "carbs": 47,
-            "fat": 37,
-            "protein": 24
+            "calories": 623.0,
+            "carbs": 47.0,
+            "fat": 37.0,
+            "protein": 24.0
         },
         "ingredients": [
             {
@@ -2980,32 +2644,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Apfel",
-                "seasons": ["August", "September", "Oktober"]
-            },
-            {
-                "name": "Frühlingszwiebel",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]                
-            }
-        ]
+        "seasonals": ["Apfel", "Frühlingszwiebel", "Radieschen"]
     },
     {
         "name": "Porreesuppe",
         "intro": "Der Lauch in der Porreesuppe gibt hier den Ton an und ist ein Geheimtipp für die Abwehrkräfte: Die enthaltenen ätherischen Öle stärken die Darmflora, was sich positiv auf das Immunsystem auswirkt. Sie haben außerdem eine schleimlösende Wirkung und lindern Erkältungsbeschwerden.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Suppen" }
         ],
         "nutrition": {
-            "calories": 331,
-            "carbs": 22,
-            "fat": 24,
-            "protein": 5
+            "calories": 331.0,
+            "carbs": 22.0,
+            "fat": 24.0,
+            "protein": 5.0
         },
         "ingredients": [
             {
@@ -3059,30 +2711,21 @@
                 "info": "Am Besten eigenen sich hierfür mehligkochende Kartoffeln"
             }
         ],
-        "seasonals": [
-            {
-                "name": "Porree",
-                "seasons": ["August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Kartoffel",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Porree", "Kartoffel"]
     },
     {
         "name": "Rote Bete mit Radieschen und Walnüssen",
         "intro": "Radieschen enthalten reichlich sekundäre Pflanzenstoffe wie Flavonoide, Glucosinolate und ätherische Öle. Für den scharfen Geschmack sind die Senföle verantwortlich, die antibakteriell, entgiftend, krampflösend und appetitanregend wirken. Der Schafskäse spendet viel knochenstärkendes Calcium und sattmachendes Eiweiß.",
+        "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegetarisch" },
-            { "name": "Low Carb" }
+            { "name": "Mittagessen" },
+            { "name": "Beilagen" }
         ],
         "nutrition": {
-            "calories": 411,
-            "carbs": 20,
-            "fat": 31,
-            "protein": 13
+            "calories": 411.0,
+            "carbs": 20.0,
+            "fat": 31.0,
+            "protein": 13.0
         },
         "ingredients": [
             {
@@ -3151,29 +2794,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Rote Bete",
-                "seasons": ["September", "Oktober", "November", "Dezember"]
-            }
-        ]
+        "seasonals": ["Radieschen", "Rote Bete"]
     },
     {
         "name": "Rüblitorte",
         "intro": "Betacarotin aus Möhren kann im Körper zu Vitamin A umgewandelt werden. So verhilft das Wurzelgemüse tatsächlich zu gesünderen Augen und einer starken Sehkraft.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Backen" },
-            { "name": "Vegetarisch" }
+            { "name": "Backen" }
         ],
         "nutrition": {
-            "calories": 371,
-            "carbs": 25,
-            "fat": 26,
-            "protein": 10
+            "calories": 371.0,
+            "carbs": 25.0,
+            "fat": 26.0,
+            "protein": 10.0
         },
         "ingredients": [
             {
@@ -3253,24 +2887,20 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Möhre"]
     },
     {
         "name": "Sandwich mit gegrilltem Gemüse",
+        "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Frühstück" },
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 413,
-            "carbs": 60,
-            "fat": 12,
-            "protein": 14
+            "calories": 413.0,
+            "carbs": 60.0,
+            "fat": 12.0,
+            "protein": 14.0
         },
         "ingredients": [
             {
@@ -3329,37 +2959,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Aubergine",
-                "seasons": ["Juni","Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Lollo Rosso",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Paprika",
-                "seasons": ["Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Zucchini",
-                "seasons": ["Juni", "Juli", "August", "September"]
-            }
-        ]
+        "seasonals": ["Aubergine", "Lollo Rosso", "Paprika", "Zucchini"]
     },
     {
         "name": "Sommerrollen-Bowl mit asiatischem Gurkensalat",
         "intro": "Diese bunte Bowl bietet eine ganze Menge Vitamine, gesunde Fette und Mineralstoffe! Avocado liefert dem Körper wichtige Omega-3-Fettsäuren, die u.a. den Cholesterinspiegel senken können. Radieschen versorgen den Körper zudem mit B-Vitaminen, Kalium, Eisen und Magnesium und Mango liefert reichlich Vitamin C und Provitamin A.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Asiatisch" },
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 326,
-            "carbs": 41,
-            "fat": 13,
-            "protein": 9
+            "calories": 326.0,
+            "carbs": 41.0,
+            "fat": 13.0,
+            "protein": 9.0
         },
         "ingredients": [
             {
@@ -3475,37 +3089,20 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Radieschen",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]               
-            },
-            {
-                "name": "Gurke",
-                "seasons": ["Mai", "Juni", "Juli", "August"]
-            },
-            {
-                "name": "Spinat",
-                "seasons": ["April", "Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Möhre", "Radieschen", "Gurke", "Spinat"]
     },
     {
         "name": "Spargel-Linsen-Bowl",
         "intro": "Die mineralstoffreiche Kohlrabiknolle ist reich an Calcium, Kalium, Magnesium, Phosphor und Eisen; insbesondere in den Blättern sind viele Mineralstoffe enthalten. Deswegen ist es viel zu schade, diese wegzuwerfen. Verarbeiten Sie sie gerne mit! Die vorhandenen Senföle wirken im Körper antioxidativ, immunstärkend und darmregulierend. In den Sonnenblumenkernen steckt richtig viel Power. Sie liefern viele gute Fette, Eiweiße, Ballaststoffe und B-Vitamine.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegetarisch" }
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 362,
-            "carbs": 32,
-            "fat": 14,
-            "protein": 26
+            "calories": 362.0,
+            "carbs": 32.0,
+            "fat": 14.0,
+            "protein": 26.0
         },
         "ingredients": [
             {
@@ -3600,29 +3197,21 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Spargel",
-                "seasons": ["April", "Mai", "Juni"]
-            },
-            {
-                "name": "Kohlrabi",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Spargel", "Kohlrabi"]
     },
     {
         "name": "Spargel-Möhren-Salat",
         "intro": "Spargel ist ein richtiges Superfood: Das kalorienarme Stangengemüse punktet mit viel von dem Mineralstoff Kalium, der entwässernd und blutdrucksenkend wirkt. Besonders der grüne Spargel enthält viel Folsäure. Dieses B-Vitamin ist wichtig für die Blutbildung und Zellerneuerung. Zudem steckt in dem Frühlingsgemüse eine gute Portion Zink, das den Körper strafft und die Wundheilung fördert. Der italienische Frischkäse Burrata bringt reichlich knochenstärkendes Calcium mit und versorgt unsere Muskeln mit Eiweiß.",
+        "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Glutenfrei" },
-            { "name": "Vegetarisch" }
+            { "name": "Salate" },
+            { "name": "Mittagessen" }
         ],
         "nutrition": {
-            "calories": 671,
-            "carbs": 26,
-            "fat": 48,
-            "protein": 34
+            "calories": 671.0,
+            "carbs": 26.0,
+            "fat": 48.0,
+            "protein": 34.0
         },
         "ingredients": [
             {
@@ -3702,40 +3291,20 @@
                 "info": null
             } 
         ],
-        "seasonals": [
-            {
-                "name": "Spargel",
-                "seasons": ["April", "Mai", "Juni"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Frühlingszwiebel",
-                "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"]
-            },
-            {
-                "name": "Rucola",
-                "seasons": ["März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November"]
-            },
-            {
-                "name": "Tomate",
-                "seasons": ["Juli", "August", "September"]
-            }
-        ]
+        "seasonals": ["Spargel", "Möhre", "Frühlingszwiebel", "Rucola", "Tomate"]
     },
     {
         "name": "Spargel-Zitronen-Pasta mit Feta",
         "intro": "Grüner Spargel enthält viel Folsäure. Das B-Vitamin ist unter anderem an der Blutbildung beteiligt. Feta bringt Würze und reichlich knochenstärkendes Calcium.",
+        "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Vegetarisch" }
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 527,
-            "carbs": 63,
-            "fat": 19,
-            "protein": 23
+            "calories": 527.0,
+            "carbs": 63.0,
+            "fat": 19.0,
+            "protein": 23.0
         },
         "ingredients": [
             {
@@ -3801,25 +3370,21 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Spargel",
-                "seasons": ["April", "Mai", "Juni"]
-            }
-        ]
+        "seasonals": ["Spargel"]
     },
     {
         "name": "Vegane Wan-Tans",
         "intro": "Chinakohl, der in die veganen Wan-Tans gefüllt wird, tut dem Magen gut. Denn die Ballaststoffe im Chinakohl bringen einen trägen Darm in Schwung und putzen bei ihrem Weg durch den Körper auch gleich größere Mengen an Schadstoffen und Fetten weg. Zudem ist der Eiweißbaustein Methylmethionin aus Chinakohl in der Lage, unseren Magen und Darm vor Geschwüren zu schützen.",
+        "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Vegan" },
-            { "name": "Vegetarisch" }
+            { "name": "Asiatisch" },
+            { "name": "Abendessen" }
         ],
         "nutrition": {
-            "calories": 248,
-            "carbs": 36,
-            "fat": 7,
-            "protein": 10
+            "calories": 248.0,
+            "carbs": 36.0,
+            "fat": 7.0,
+            "protein": 10.0
         },
         "ingredients": [
             {
@@ -3904,15 +3469,6 @@
                 "info": null
             }
         ],
-        "seasonals": [
-            {
-                "name": "Chinakohl",
-                "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-            },
-            {
-                "name": "Möhre",
-                "seasons": ["Juli", "August", "September", "Oktober"]
-            }
-        ]
+        "seasonals": ["Chinakohl", "Möhre"]
     }
 ]

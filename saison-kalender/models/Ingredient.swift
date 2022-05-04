@@ -7,6 +7,17 @@
 
 import CoreData
 
+@objc(Ingredient)
+public class Ingredient: NSManagedObject {
+    
+    public convenience init(from schema: IngredientSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+        quantity = schema.quantity
+        unit = schema.unit
+    }
+}
+
 extension Ingredient: Representable {
 
     public var id: String { recipe.name + name }
@@ -50,20 +61,16 @@ extension Ingredient {
 
 extension Ingredient {
     
-    static func create(name: String, quanity: Float, unit: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
-        if let ingredient = recipe.ingredients.filter { $0.name == name }.first {
-            ingredient.quantity = quanity
-            ingredient.unit = unit
+    static func create(from schema: IngredientSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
+        if let ingredient = recipe.ingredients.filter({ $0.name == schema.name }).first {
+            ingredient.quantity = schema.quantity
+            ingredient.unit = schema.unit
             try? context.save()
             return ingredient
         }
-        let ingredient = Ingredient(context: context)
-        ingredient.name = name
-        ingredient.quantity = quanity
-        ingredient.unit = unit
+        let ingredient = Ingredient(from: schema, in: context)
         ingredient.recipe = recipe
         try? context.save()
         return ingredient
     }
 }
-

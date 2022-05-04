@@ -7,6 +7,18 @@
 
 import CoreData
 
+@objc(Nutrition)
+public class Nutrition: NSManagedObject {
+    
+    public convenience init(from schema: NutritionSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        calories = schema.calories
+        carbs = schema.carbs
+        protein = schema.protein
+        fat = schema.fat
+    }
+}
+
 extension Nutrition {
     
     public var id: String { recipe.name }
@@ -29,22 +41,17 @@ extension Nutrition {
 
 extension Nutrition {
     
-    static func create(calories: Float, protein: Float, fat: Float, carbs: Float, recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition {
+    static func create(from schema: NutritionSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition {
         if let nutrition = recipe.nutrition {
-            nutrition.calories = calories
-            nutrition.carbs = carbs
-            nutrition.protein = protein
-            nutrition.fat = fat
+            nutrition.calories = schema.calories
+            nutrition.carbs = schema.carbs
+            nutrition.protein = schema.protein
+            nutrition.fat = schema.fat
             try? context.save()
             return nutrition
         }
-        let nutrition = Nutrition(context: context)
-        nutrition.calories = calories
-        nutrition.carbs = carbs
-        nutrition.fat = fat
-        nutrition.protein = protein
+        let nutrition = Nutrition(from: schema, in: context)
         nutrition.recipe = recipe
-        try? context.save()
         return nutrition
     }
 }

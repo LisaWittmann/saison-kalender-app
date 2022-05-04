@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailPage<Content: View>: View {
+    @GestureState var press = false
     var images: [String]
     var headline: String?
     var subline: String?
@@ -16,8 +17,6 @@ struct DetailPage<Content: View>: View {
     var onIconTap: () -> Void
     var onIconPressed: () -> Void
     var content: () -> Content
-    
-    @GestureState var press = false
     
     init(
         images: [String],

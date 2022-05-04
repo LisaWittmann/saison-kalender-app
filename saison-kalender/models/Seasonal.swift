@@ -8,6 +8,17 @@
 import Foundation
 import CoreData
 
+@objc(Seasonal)
+public class Seasonal: NSManagedObject {
+    
+    public convenience init(from schema: SeasonalSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+        seasons_ = schema.seasons
+        characteristics = schema.characteristics.map { Characteristic.create(from: $0, for: self, in: context) }
+    }
+}
+
 extension Seasonal {
     
     var seasons: [Season] {
@@ -64,23 +75,18 @@ extension Seasonal {
 
 extension Seasonal {
     
-    static func create(name: String, seasons: [Season], in context: NSManagedObjectContext) -> Seasonal {
+    static func with(name: String, from context: NSManagedObjectContext) -> Seasonal? {
         let predicate = NSPredicate(format: "name_ = %@", name)
         let seasonals = (try? context.fetch(Seasonal.fetchRequest(predicate))) ?? []
-        if let seasonal = seasonals.first {
-            seasonal.seasons = seasons
-            try? context.save()
-            return seasonal
-        }
-        let newSeasonal = Seasonal(context: context)
-        newSeasonal.name = name
-        newSeasonal.seasons = seasons
-        try? context.save()
-        return newSeasonal
+        return seasonals.first
     }
     
-    func createCharacteristic(_ order: Int16, name: String, value: String) {
-        let characteristic = Characteristic.create(name: name, value: value, order: order, seasonal: self, in: self.managedObjectContext!)
-        self.characteristics.append(characteristic)
+    static func create(from schema: SeasonalSchema, in context: NSManagedObjectContext) -> Seasonal {
+        if let seasonal = with(name: schema.name, from: context) {
+            seasonal.seasons_ = schema.seasons
+            seasonal.characteristics = schema.characteristics.map { Characteristic.create(from: $0, for: seasonal, in: context) }
+            return seasonal
+        }
+        return Seasonal(from: schema, in: context)
     }
 }

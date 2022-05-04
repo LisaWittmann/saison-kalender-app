@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WrappingHStack
 
 struct SeasonalDetail: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
@@ -25,7 +26,8 @@ struct SeasonalDetail: View {
             close: close
         ) {
             Text("Steckbrief").modifier(FontH1())
-            TagList(seasonal.seasons)
+            
+            body(for: seasonal.seasons)
             
             if !seasonal.characteristics.isEmpty {
                 body(for: seasonal.characteristics)
@@ -33,6 +35,17 @@ struct SeasonalDetail: View {
             
             if !seasonal.recipes.isEmpty {
                 body(for: Array(seasonal.recipes))
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func body(for seasons: Array<Season>) -> some View {
+        Section("Saisonübersicht") {
+            WrappingHStack(seasons) { season in
+                Circle()
+                    .fill(Color(season.name))
+                    .frame(width: 15, height: 15)
             }
         }
     }

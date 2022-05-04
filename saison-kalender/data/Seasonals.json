@@ -974,7 +974,7 @@
             {
                 "order": 1,
                 "name": "Wissenswertes",
-                "value": "Eine besonders große Rolle spielt Rote Bete in der nord- und osteuropäischen und in etwas geringerem Ausmaß teilweise auch in der norddeutschen Küche. Die berühmte polnische Suppe Borschtsch hat das auch Rote Rübe genannte Gemüse als Basis; das Hamburger Gericht Labskaus kommt nicht ohne Rote Bete aus, und dem klassischen roten Heringssalat gibt sie ebenfalls Farbe und Geschmack.\n\nApropos Farbe: Wegen seiner intensiven Färbekraft wird der in Roter Bete enthaltene natürliche Stoff Betanin auch seit langem als "E 162" bei der Lebensmittelherstellung eingesetzt und macht unter anderem Eis, Süßspeisen, Konfitüren und Nektare attraktiver.\n\nBesonders beliebt ist sauer eingelegte Rote Bete aus dem Glas. Große Rüben werden dafür in Scheiben oder Streifen geschnitten; kleine Exemplare bekommt man auch im Ganzen eingemacht. Viel Zeit lässt sich mit vakuumverpackter Rote Bete sparen, denn sie ist bereits vorgegart. Man bekommt sie in der Gemüseabteilung von praktisch jedem Super- und Discountermarkt."
+                "value": "Eine besonders große Rolle spielt Rote Bete in der nord- und osteuropäischen und in etwas geringerem Ausmaß teilweise auch in der norddeutschen Küche. Die berühmte polnische Suppe Borschtsch hat das auch Rote Rübe genannte Gemüse als Basis; das Hamburger Gericht Labskaus kommt nicht ohne Rote Bete aus, und dem klassischen roten Heringssalat gibt sie ebenfalls Farbe und Geschmack.\n\nApropos Farbe: Wegen seiner intensiven Färbekraft wird der in Roter Bete enthaltene natürliche Stoff Betanin auch seit langem als \"E 162\" bei der Lebensmittelherstellung eingesetzt und macht unter anderem Eis, Süßspeisen, Konfitüren und Nektare attraktiver.\n\nBesonders beliebt ist sauer eingelegte Rote Bete aus dem Glas. Große Rüben werden dafür in Scheiben oder Streifen geschnitten; kleine Exemplare bekommt man auch im Ganzen eingemacht. Viel Zeit lässt sich mit vakuumverpackter Rote Bete sparen, denn sie ist bereits vorgegart. Man bekommt sie in der Gemüseabteilung von praktisch jedem Super- und Discountermarkt."
             },
             {
                 "order": 2,
@@ -1205,7 +1205,7 @@
                 "order": 2,
                 "name": "Saison",
                 "value": "Weißkohl gilt zwar als eins der typischsten Wintergemüse und wird auch bevorzugt in der kalten Jahreszeit zubereitet. Tatsächlich wächst das Gemüse aber schon ab April auf unseren Feldern und ist dann je nach Sorte ganzjährig zu haben."
-            },
+            }
         ]
     },
     {
@@ -1307,7 +1307,7 @@
             {
                 "order": 9,
                 "name": "Schalotte",
-                "value": "Die mildeste und edelste aller Zwiebeln verdankt ihren Namen der palästinensischen Stadt Askalon, ist aber speziell in Frankreich nicht aus der feinen Küche wegzudenken. Runde Schalotten wie die "Bretonne Ronde" sehen fast aus wie Küchenzwiebeln, haben aber das für die Edelzwiebel typische Aroma. Die meisten Schalotten haben eine längliche, birnenartige Form. Die Schale schimmert rosa bis rot oder kupferfarben."
+                "value": "Die mildeste und edelste aller Zwiebeln verdankt ihren Namen der palästinensischen Stadt Askalon, ist aber speziell in Frankreich nicht aus der feinen Küche wegzudenken. Runde Schalotten wie die \"Bretonne Ronde\" sehen fast aus wie Küchenzwiebeln, haben aber das für die Edelzwiebel typische Aroma. Die meisten Schalotten haben eine längliche, birnenartige Form. Die Schale schimmert rosa bis rot oder kupferfarben."
             }
         ]
     }

@@ -7,6 +7,15 @@
 
 import CoreData
 
+@objc(RecipeCategory)
+public class RecipeCategory: NSManagedObject {
+    
+    public convenience init(from schema: RecipeCategorySchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+    }
+}
+
 extension RecipeCategory {
     
     var recipes: Set<Recipe> {
@@ -40,16 +49,17 @@ extension RecipeCategory {
         request.predicate = predicate
         return request
     }
+}
+
+extension RecipeCategory {
     
-    static func create(name: String, in context: NSManagedObjectContext) -> RecipeCategory {
-        let predicate = NSPredicate(format: "name_ = %@", name)
+    static func create(from schema: RecipeCategorySchema, in context: NSManagedObjectContext) -> RecipeCategory {
+        let predicate = NSPredicate(format: "name_ = %@", schema.name)
         let categories = (try? context.fetch(RecipeCategory.fetchRequest(predicate))) ?? []
         if let category = categories.first {
             return category
         }
-        let newCategory = RecipeCategory(context: context)
-        newCategory.name = name
-        try? context.save()
+        let newCategory = RecipeCategory(from: schema, in: context)
         return newCategory
         
     }

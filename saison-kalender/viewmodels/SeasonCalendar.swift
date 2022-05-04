@@ -46,12 +46,12 @@ class SeasonCalendar: ObservableObject {
     
     private static func getRecipes(for season: Season, from context: NSManagedObjectContext) -> [Recipe] {
         let recipes: [Recipe] = (try? context.fetch(Recipe.fetchRequest())) ?? []
-        return recipes.filter { $0.seasons.contains(season) }
+        return recipes.filter { $0.seasons.contains(season) }.sorted()
     }
     
     private static func getSeasonals(for season: Season, from context: NSManagedObjectContext) -> [Seasonal] {
         let seasonals: [Seasonal] = (try? context.fetch(Seasonal.fetchRequest())) ?? []
-        return seasonals.filter { $0.seasons.contains(season) }
+        return seasonals.filter { $0.seasons.contains(season) }.sorted()
     }
     
     func filterRecipes(by category: RecipeCategory?, for diets: Set<Diet>) -> [Recipe] {

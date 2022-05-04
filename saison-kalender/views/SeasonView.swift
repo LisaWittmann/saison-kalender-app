@@ -67,7 +67,6 @@ struct SeasonItem: View {
                     height: imageHeight,
                     alignment: .center
                 )
-                .opacity(imageOpacity)
                 .clipped()
                 .shadow(radius: shadowRadius)
         }
@@ -81,7 +80,6 @@ struct SeasonItem: View {
     
     let circleSize: CGFloat = contentWidth
     let imageHeight: CGFloat = contentWidth
-    let imageOpacity: Double = 0.9
     let headerHeight: CGFloat = 250
     let buttonSize: CGFloat = 60
     let animationDuration: Double = 1

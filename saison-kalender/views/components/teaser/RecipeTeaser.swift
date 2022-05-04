@@ -17,6 +17,7 @@ struct RecipeTeaser: View {
     
     init(_ recipe: Recipe, collection: Collection? = nil, rect: Bool = false) {
         self.recipe = recipe
+        self.collection = collection
         self.rect = rect
     }
     

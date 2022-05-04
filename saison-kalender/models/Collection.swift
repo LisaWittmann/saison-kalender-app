@@ -8,6 +8,16 @@
 import CoreData
 import SwiftUI
 
+@objc(Collection)
+public class Collection: NSManagedObject {
+    
+    public convenience init(from schema: CollectionSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+        recipes = Set(schema.recipes.map { Recipe.create(from: $0, in: context) })
+    }
+}
+
 extension Collection {
     
     var recipes: Set<Recipe> {
@@ -46,9 +56,12 @@ extension Collection {
         request.predicate = predicate
         return request
     }
-    
+}
+
+extension Collection {
+
     static func create(name: String, user: User, recipes: Set<Recipe>, in context: NSManagedObjectContext) -> Collection {
-        if let collection = user.collections.filter { $0.name == name }.first {
+        if let collection = user.collections.filter({ $0.name == name }).first {
             collection.recipes = recipes
             try? context.save()
             return collection
@@ -59,5 +72,16 @@ extension Collection {
         newCollection.recipes = recipes
         try? context.save()
         return newCollection
+    }
+    
+    static func create(from schema: CollectionSchema, for user: User, in context: NSManagedObjectContext) -> Collection {
+        if let collection = user.collections.filter({ $0.name == schema.name }).first {
+            collection.recipes = Set(schema.recipes.map { Recipe.create(from: $0, in: context) })
+            try? context.save()
+            return collection
+        }
+        let collection = Collection(from: schema, in: context)
+        collection.user = user
+        return collection
     }
 }

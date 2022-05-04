@@ -6,6 +6,22 @@
 //
 
 import CoreData
+import SwiftUI
+
+@objc(Recipe)
+public class Recipe: NSManagedObject {
+
+    public convenience init(from schema: RecipeSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+        intro = schema.intro
+        diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
+        categories = schema.categories.map { RecipeCategory.create(from: $0, in: context) }
+        ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: self, in: context) }
+        preparations = schema.preparations.map { Preparation.create(from: $0, for: self, in: context) }
+        seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
+    }
+}
 
 extension Recipe {
     
@@ -89,32 +105,18 @@ extension Recipe {
     
 extension Recipe {
     
-    static func create(name: String, intro: String? = nil, in context: NSManagedObjectContext) -> Recipe {
-        let predicate = NSPredicate(format: "name_ = %@", name)
+    static func create(from schema: RecipeSchema, in context: NSManagedObjectContext) -> Recipe {
+        let predicate = NSPredicate(format: "name_ = %@", schema.name)
         let recipes = (try? context.fetch(Recipe.fetchRequest(predicate))) ?? []
         if let recipe = recipes.first {
-            recipe.intro = intro
-            try? context.save()
+            recipe.intro = schema.intro
+            recipe.diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
+            recipe.categories = schema.categories.map { RecipeCategory.create(from: $0, in: context) }
+            recipe.ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: recipe, in: context) }
+            recipe.preparations = schema.preparations.map { Preparation.create(from: $0, for: recipe, in: context) }
+            recipe.seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
             return recipe
         }
-        let newRecipe = Recipe(context: context)
-        newRecipe.name = name
-        newRecipe.intro = intro
-        try? context.save()
-        return newRecipe
-    }
-    
-    func createPreparation(title: String? = nil, text: String, info: String? = nil, order: Int16) {
-        let preparation = Preparation.create(order, title: title, text: text, info: info, recipe: self, in: self.managedObjectContext!)
-        self.preparations.append(preparation)
-    }
-    
-    func createNutrition(calories: Float, protein: Float, fat: Float, carbs: Float) {
-        self.nutrition = Nutrition.create(calories: calories, protein: protein, fat: fat, carbs: carbs, recipe: self, in: self.managedObjectContext!)
-    }
-    
-    func createIngredient(name: String, quantity: Float, unit: String? = nil) {
-        let ingredient = Ingredient.create(name: name, quanity: quantity, unit: unit, recipe: self, in: self.managedObjectContext!)
-        self.ingredients.append(ingredient)
+        return Recipe(from: schema, in: context)
     }
 }

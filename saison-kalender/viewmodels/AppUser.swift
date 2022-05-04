@@ -22,8 +22,8 @@ class AppUser: ObservableObject {
     var name: String? { user?.name }
     
     var favorites: Set<Recipe> {
-        get { user?.favorites ?? [] }
-        set { user?.favorites = newValue }
+        get { Set(user?.favorites ?? []) }
+        set { user?.favorites = Array(newValue) }
     }
     
     var collections: Set<Collection> {
@@ -106,7 +106,7 @@ extension AppUser {
     func login(_ user: User?) {
         self.user = user
         if user != nil {
-            UserDefaults.standard.set(user?.name, forKey: "user")
+            UserDefaults.standard.set(user?.email, forKey: "user")
             authorizationCompleted()
         }
     }

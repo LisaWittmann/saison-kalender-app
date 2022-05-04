@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Characteristic" representedClassName="Characteristic" syncable="YES" codeGenerationType="class">
+    <entity name="Characteristic" representedClassName="Characteristic" syncable="YES" codeGenerationType="category">
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="value_" optional="YES" attributeType="String"/>
         <relationship name="seasonal_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Seasonal" inverseName="characteristics_" inverseEntity="Seasonal"/>
     </entity>
-    <entity name="Collection" representedClassName="Collection" syncable="YES" codeGenerationType="class">
+    <entity name="Collection" representedClassName="Collection" syncable="YES" codeGenerationType="category">
         <attribute name="name_" optional="YES" attributeType="String"/>
         <relationship name="recipes_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="collections_" inverseEntity="Recipe"/>
         <relationship name="user_" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="collections_" inverseEntity="User"/>
     </entity>
-    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="category">
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="quantity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="unit" optional="YES" attributeType="String"/>
         <relationship name="recipe_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="ingredients_" inverseEntity="Recipe"/>
     </entity>
-    <entity name="Nutrition" representedClassName="Nutrition" syncable="YES" codeGenerationType="class">
+    <entity name="Nutrition" representedClassName="Nutrition" syncable="YES" codeGenerationType="category">
         <attribute name="calories" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="carbs" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="fat" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="protein" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="recipe_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="nutrition" inverseEntity="Recipe"/>
     </entity>
-    <entity name="Preparation" representedClassName="Preparation" syncable="YES" codeGenerationType="class">
+    <entity name="Preparation" representedClassName="Preparation" syncable="YES" codeGenerationType="category">
         <attribute name="info" optional="YES" attributeType="String"/>
         <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="text_" attributeType="String" defaultValueString=""/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="recipe_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Recipe" inverseName="preparations_" inverseEntity="Recipe"/>
     </entity>
-    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="category">
         <attribute name="diets_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="intro" optional="YES" attributeType="String" defaultValueString=""/>
         <attribute name="name_" optional="YES" attributeType="String"/>
@@ -43,17 +43,17 @@
         <relationship name="preparations_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Preparation" inverseName="recipe_" inverseEntity="Preparation"/>
         <relationship name="seasonals_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Seasonal" inverseName="recipes_" inverseEntity="Seasonal"/>
     </entity>
-    <entity name="RecipeCategory" representedClassName="RecipeCategory" syncable="YES" codeGenerationType="class">
+    <entity name="RecipeCategory" representedClassName="RecipeCategory" syncable="YES" codeGenerationType="category">
         <attribute name="name_" attributeType="String" defaultValueString=""/>
         <relationship name="recipes_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Recipe" inverseName="categories_" inverseEntity="Recipe"/>
     </entity>
-    <entity name="Seasonal" representedClassName="Seasonal" syncable="YES" codeGenerationType="class">
+    <entity name="Seasonal" representedClassName="Seasonal" syncable="YES" codeGenerationType="category">
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="seasons_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <relationship name="characteristics_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Characteristic" inverseName="seasonal_" inverseEntity="Characteristic"/>
         <relationship name="recipes_" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Recipe" inverseName="seasonals_" inverseEntity="Recipe"/>
     </entity>
-    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="category">
         <attribute name="diets_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="email_" attributeType="String" defaultValueString=""/>
         <attribute name="name_" optional="YES" attributeType="String"/>

@@ -8,6 +8,18 @@
 import Foundation
 import CoreData
 
+@objc(Preparation)
+public class Preparation: NSManagedObject {
+    
+    public convenience init(from schema: PreparationSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        title = schema.title
+        text = schema.text
+        info = schema.info
+        order = schema.order
+    }
+}
+
 extension Preparation {
     
     public var id: String { recipe.name + "\(order)" }
@@ -42,21 +54,16 @@ extension Preparation {
 
 extension Preparation {
     
-    static func create(_ order: Int16, title: String? = nil, text: String, info: String? = nil, recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
-        if let preparation = recipe.preparations.filter { $0.order == order }.first {
-            preparation.title = title
-            preparation.text = text
-            preparation.info = info
+    static func create(from schema: PreparationSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
+        if let preparation = recipe.preparations.filter({ $0.order == schema.order }).first {
+            preparation.title = schema.title
+            preparation.text = schema.text
+            preparation.info = schema.info
             try? context.save()
             return preparation
         }
-        let newPreparation = Preparation(context: context)
-        newPreparation.title = title
-        newPreparation.order = order
-        newPreparation.info = info
-        newPreparation.text = text
-        newPreparation.recipe = recipe
-        try? context.save()
-        return newPreparation
+        let preparation = Preparation(from: schema, in: context)
+        preparation.recipe = recipe
+        return preparation
     }
 }

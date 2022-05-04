@@ -8,6 +8,17 @@
 import Foundation
 import CoreData
 
+@objc(Characteristic)
+public class Characteristic: NSManagedObject {
+    
+    public convenience init(from schema: CharacteristicSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        order = schema.order
+        name = schema.name
+        value = schema.value
+    }
+}
+
 extension Characteristic: Representable {
     
     public var id: String { seasonal.name + name }
@@ -33,7 +44,6 @@ extension Characteristic: Comparable {
     public static func < (lhs: Characteristic, rhs: Characteristic) -> Bool {
         return lhs.order < rhs.order
     }
-    
 }
 
 extension Characteristic {
@@ -44,20 +54,19 @@ extension Characteristic {
         request.predicate = predicate
         return request
     }
+}
+
+extension Characteristic {
     
-    static func create(name: String, value: String, order: Int16, seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
-        if let characteristic = seasonal.characteristics.filter { $0.order == order }.first {
-            characteristic.name = name
-            characteristic.value = value
+    static func create(from schema: CharacteristicSchema, for seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
+        if let characteristic = seasonal.characteristics.filter({ $0.order == schema.order }).first {
+            characteristic.name = schema.name
+            characteristic.value = schema.value
             try? context.save()
             return characteristic
         }
-        let characteristic = Characteristic(context: context)
-        characteristic.name = name
-        characteristic.value = value
-        characteristic.order = order
+        let characteristic = Characteristic(from: schema, in: context)
         characteristic.seasonal = seasonal
-        try? context.save()
         return characteristic
     }
 }

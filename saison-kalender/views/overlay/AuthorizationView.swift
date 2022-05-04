@@ -62,7 +62,8 @@ struct LoginForm: View {
             InputField(
                 "E-Mail",
                 text: $email,
-                icon: "envelope.fill"
+                icon: "envelope.fill",
+                validate: AppUser.isValidEmail
             )
             InputField(
                 "Passwort",

@@ -7,16 +7,30 @@
 
 import CoreData
 
+@objc(User)
+public class User: NSManagedObject {
+
+    public convenience init(from schema: UserSchema, in context: NSManagedObjectContext) {
+        self.init(context: context)
+        name = schema.name
+        email = schema.email
+        password = schema.password
+        diets = schema.diets.map({ Diet(rawValue: $0) }).compactMap { $0 }
+        favorites = schema.favorites.map { Recipe.create(from: $0, in: context) }
+        collections = schema.collections.map { Collection.create(from: $0, for: self, in: context) }
+    }
+}
+
 extension User {
     
     var diets: [Diet] {
-        get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
+        get { diets_?.map({ Diet(rawValue: $0) }).compactMap { $0 } ?? [] }
         set { diets_ = newValue.map { $0.rawValue } }
     }
     
-    var favorites: Set<Recipe> {
-        get { (favorites_ as? Set<Recipe>) ?? [] }
-        set { favorites_ = newValue as NSSet }
+    var favorites: Array<Recipe> {
+        get { (favorites_ as? Set<Recipe>)?.sorted() ?? [] }
+        set { favorites_ = Set(newValue) as NSSet }
     }
     
     var collections: Array<Collection> {
@@ -65,17 +79,21 @@ extension User {
 extension User {
     
     static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User {
-        let predicate = NSPredicate(format: "email_ = %@", email)
-        let users = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        if let user = users.first {
+        if let user = User.with(email: email, from: context) {
             return user
         }
         let newUser = User(context: context)
         newUser.name = name
         newUser.email = email
         newUser.password = password
-        try? context.save()
         return newUser
+    }
+    
+    static func create(from schema: UserSchema, in context: NSManagedObjectContext) -> User {
+        if let user = User.with(email: schema.email, from: context) {
+            return user
+        }
+        return User(from: schema, in: context)
     }
     
     static func with(email: String, password: String, from context: NSManagedObjectContext) -> User? {

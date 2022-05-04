@@ -61,6 +61,7 @@ class CollectionManager: ObservableObject {
             let createdCollection = Collection(context: context)
             createdCollection.name = name
             createdCollection.addToRecipes_(recipe)
+            user.favor(recipe: recipe)
             user.add(collection: createdCollection)
             do {
                 try context.save()
