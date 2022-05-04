@@ -21,6 +21,11 @@ public enum Season: String, CaseIterable {
          October = "Oktober",
          November = "November",
          December = "Dezember"
+}
+
+extension Season: Representable {
+    
+    public var id: Int { month }
     
     var month: Int {
         return Season.allCases.firstIndex(of: self)! + 1

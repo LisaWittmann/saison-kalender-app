@@ -38,6 +38,7 @@ struct SeasonItem: View {
                 "Saisonal im \(seasonCalendar.season.name)"
             )
             .modifier(SectionLayout())
+            .frame(height: headerHeight, alignment: .topLeading)
             
             NavigationLink(
                 destination: detail(for: seasonal),
@@ -56,7 +57,7 @@ struct SeasonItem: View {
     private func hightlight() -> some View {
         ZStack {
             Circle()
-                .fill(colorGreen)
+                .fill(seasonCalendar.color)
                 .frame(width: circleSize, height: circleSize)
             Image(seasonal.slug)
                 .resizable()
@@ -79,8 +80,9 @@ struct SeasonItem: View {
     }
     
     let circleSize: CGFloat = contentWidth
-    let imageHeight: CGFloat = contentWidth * 1.5
+    let imageHeight: CGFloat = contentWidth
     let imageOpacity: Double = 0.9
+    let headerHeight: CGFloat = 250
     let buttonSize: CGFloat = 60
     let animationDuration: Double = 1
     let shadowRadius: CGFloat = 40

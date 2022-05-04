@@ -24,6 +24,9 @@ struct SeasonalDetail: View {
             subline: "Saisonal im \(seasonCalendar.season.name)",
             close: close
         ) {
+            Text("Steckbrief").modifier(FontH1())
+            TagList(seasonal.seasons)
+            
             if !seasonal.characteristics.isEmpty {
                 body(for: seasonal.characteristics)
             }
@@ -36,7 +39,6 @@ struct SeasonalDetail: View {
     
     @ViewBuilder
     private func body(for characteristics: Array<Characteristic>) -> some View {
-        Text("Steckbrief").modifier(FontH1())
         ForEach(characteristics) { characteristic in
             Section(characteristic.name) {
                 Text(characteristic.value).modifier(FontParagraph())

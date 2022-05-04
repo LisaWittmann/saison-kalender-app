@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 class SeasonCalendar: ObservableObject {
     
@@ -18,7 +19,9 @@ class SeasonCalendar: ObservableObject {
     @Published private(set) var seasonals: [Seasonal]
     
     private let persistenceController: PersistenceController
+    
     var context: NSManagedObjectContext { persistenceController.container.viewContext }
+    var color: Color { Color(season.name) }
     
     private init(controller: PersistenceController) {
         persistenceController = controller
