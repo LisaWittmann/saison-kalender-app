@@ -13,6 +13,7 @@ struct PersistenceController {
         let result = PersistenceController()
         let viewContext = result.container.viewContext
         
+        resetAllRecords(in: viewContext)
         try? fetchData(in: viewContext)
     
         do {

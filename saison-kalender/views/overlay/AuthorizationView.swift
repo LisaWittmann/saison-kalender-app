@@ -21,7 +21,7 @@ struct AuthorizationView: View {
                 Image(systemName: "xmark")
                     .font(.custom(fontBold, size: fontSizeHeadline1))
                     .foregroundColor(colorGreen)
-                    .onTapGesture { user.requiresAuthorization = false }
+                    .onTapGesture { user.dismissAuthorization() }
             }
             Spacer()
             if registration {
@@ -49,6 +49,7 @@ struct AuthorizationView: View {
 
 struct LoginForm: View {
     @Environment(\.managedObjectContext) var viewContext
+    @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: AppUser
     
     @State var email = ""
@@ -89,8 +90,9 @@ struct LoginForm: View {
     private func login() {
         user.login(User.with(email: email, password: password, from: viewContext))
         
-        if user.isAuthenticated {
+        if user.isAuthorized {
             errorMessage = nil
+            viewRouter.currentView = .account
         } else {
             errorMessage = "Login fehlgeschlagen"
         }
@@ -99,6 +101,7 @@ struct LoginForm: View {
 
 struct RegistrationForm: View {
     @Environment(\.managedObjectContext) var viewContext
+    @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: AppUser
     
     @State var name = ""
@@ -110,7 +113,7 @@ struct RegistrationForm: View {
     var toLogin: () -> Void = {}
     
     var body: some View {
-        if !user.isAuthenticated {
+        if !user.isAuthorized {
             VStack(spacing: spacingMedium) {
                 InputField(
                     "E-Mail",
@@ -153,7 +156,7 @@ struct RegistrationForm: View {
                     icon(for: diet)
                 }
             }
-            Button("Bestätigen", action: { user.authorizationCompleted() })
+            Button("Bestätigen", action: user.authorized)
                 .frame(width: itemWidth * CGFloat(columns))
                 .modifier(ButtonStyle())
                 .padding(.top, spacingExtraLarge)
@@ -186,7 +189,7 @@ struct RegistrationForm: View {
     
     private func register() {
         user.register(name: name, email: email, password: password, in: viewContext)
-        if user.isAuthenticated {
+        if user.isAuthorized {
             errorMessage = nil
         } else {
             errorMessage = "Registrierung fehlgeschlagen"

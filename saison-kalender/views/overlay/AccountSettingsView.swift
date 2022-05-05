@@ -33,7 +33,7 @@ struct AccountSettingsView: View {
             editDiet()
             editUserData()
             editPassword()
-            Button("Ausloggen", action: user.logout)
+            Button("Ausloggen", action: logout)
                 .modifier(TextButtonStyle())
         }
     }

@@ -41,7 +41,7 @@ struct ContextNavigation: View {
                 )
         }
         .frame(width: screenWidth)
-        .underlineView()
+        .underline()
     }
 }
 

@@ -10,15 +10,17 @@ import CoreData
 class AppUser: ObservableObject {
     
     @Published var user: User?
-    @Published var requiresAuthorization: Bool
+    @Published var authRequired: Bool
+    
+    private var authCallback: () -> Void = {}
     
     var name: String? { user?.name }
     var email: String? { user?.email }
-    var isAuthenticated: Bool { user != nil }
+    var isAuthorized: Bool { user != nil }
     
     init(_ user: User? = nil) {
         self.user = user
-        self.requiresAuthorization = false
+        self.authRequired = false
     }
     
     var favorites: Set<Recipe> {
@@ -39,7 +41,33 @@ class AppUser: ObservableObject {
 
 extension AppUser {
     
+    func requireAuthorization(for function: (() -> Void)? = nil) {
+        if let callback = function {
+            authCallback = callback
+        }
+        authRequired = true
+    }
+    
+    func authorized() {
+        authRequired = false
+        authCallback()
+        authCallback = {}
+    }
+    
+    func dismissAuthorization() {
+        authRequired = false
+        authCallback = {}
+    }
+}
+
+extension AppUser {
+    
     func update(diet: Diet) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.update(diet: diet) })
+            objectWillChange.send()
+            return
+        }
         if diets.contains(diet) {
             diets.remove(diet)
         } else {
@@ -49,22 +77,40 @@ extension AppUser {
     }
     
     func favor(recipe: Recipe) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.favor(recipe: recipe) })
+            objectWillChange.send()
+            return
+        }
         user?.addToFavorites_(recipe)
         save()
     }
     
     func add(recipe: Recipe, to collection: Collection) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.add(recipe: recipe, to: collection) })
+            objectWillChange.send()
+            return
+        }
         favor(recipe: recipe)
         collection.addToRecipes_(recipe)
         save()
     }
     
     func add(collection: Collection) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.add(collection: collection) })
+            return
+        }
         user?.addToCollections_(collection)
         save()
     }
         
     func remove(recipe: Recipe, from collection: Collection) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.remove(recipe: recipe, from: collection) })
+            return
+        }
         if (collection.recipes.contains(recipe)) {
             collection.recipes.remove(recipe)
             // remove empty collections
@@ -76,6 +122,10 @@ extension AppUser {
     }
         
     func remove(recipe: Recipe) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.remove(recipe: recipe) })
+            return
+        }
         for collection in collections {
             remove(recipe: recipe, from: collection)
         }
@@ -84,6 +134,10 @@ extension AppUser {
     }
         
     func remove(collection: Collection) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.remove(collection: collection) })
+            return
+        }
         collections.remove(collection)
         save()
     }
@@ -107,7 +161,7 @@ extension AppUser {
         self.user = user
         if user != nil {
             UserDefaults.standard.set(user?.email, forKey: "user")
-            authorizationCompleted()
+            authorized()
         }
     }
     
@@ -120,14 +174,6 @@ extension AppUser {
         if User.with(email: email, from: context) == nil {
             user = User.create(name: name, email: email, password: password, in: context)
         }
-    }
-    
-    func authorizationCompleted() {
-        requiresAuthorization = false
-    }
-    
-    func requireAuthorization() {
-        requiresAuthorization = !isAuthenticated
     }
 }
 

@@ -119,7 +119,7 @@ struct RecipeDetail: View {
             Spacer()
             Text("\(ingredient.quantity.description) \(ingredient.unit ?? "")")
                 .modifier(FontText())
-        }.underlineView(opacity: 0.8)
+        }.underline(opacity: 0.8)
     }
     
     @ViewBuilder
@@ -160,7 +160,6 @@ struct RecipeDetail: View {
     }
     
     private var icon: String {
-        if !user.isAuthenticated { return "" }
         if user.favorites.contains(recipe) { return "heart.fill" }
         return "heart"
     }

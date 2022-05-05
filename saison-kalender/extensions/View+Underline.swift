@@ -1,8 +1,8 @@
 //
-//  View+UnderlineView.swift
+//  View+Underline.swift
 //  saison-kalender
 //
-//  Created by Lisa Wittmann on 20.04.22.
+//  Created by Lisa Wittmann on 05.05.22.
 //
 
 import Foundation
@@ -10,9 +10,8 @@ import SwiftUI
 
 extension View {
     
-    func underlineView(color: Color = colorGreen, opacity: Double = 0.5) -> some View {
-        self
-            .overlay(
+    func underline(color: Color = colorGreen, opacity: Double = 0.5) -> some View {
+        self.overlay(
                 Rectangle()
                     .frame(height: 2)
                     .padding(.top, 55)

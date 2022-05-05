@@ -30,7 +30,7 @@ struct ContentView: View {
             Menu()
         }
         .edgesIgnoringSafeArea(.all)
-        .fullScreenCover(isPresented: $user.requiresAuthorization) {
+        .fullScreenCover(isPresented: $user.authRequired) {
             AuthorizationView()
         }
     }

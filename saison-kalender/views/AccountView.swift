@@ -43,12 +43,7 @@ struct AccountView: View {
             
             Spacer()
         }
-        .onAppear {
-            user.requireAuthorization()
-            if !user.isAuthenticated {
-                viewRouter.currentView = .home
-            }
-        }
+        .onAppear { requireAuthorizarion() }
         .fullScreenCover(isPresented: $openSettings) {
             AccountSettingsView(close: { openSettings = false })
         }
@@ -67,6 +62,14 @@ struct AccountView: View {
             ForEach(Array(user.collections)) { collection in
                 CollectionTeaser(collection)
             }
+        }
+    }
+    
+    private func requireAuthorizarion() {
+        guard user.isAuthorized else {
+            user.requireAuthorization(for: { viewRouter.currentView = .account })
+            viewRouter.currentView = .home
+            return
         }
     }
 }

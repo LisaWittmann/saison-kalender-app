@@ -27,7 +27,6 @@ struct Headline: View {
             Text(headline)
                 .modifier(FontTitle())
                 .foregroundColor(color)
-                
         }
     }
 }
