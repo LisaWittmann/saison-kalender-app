@@ -15,6 +15,7 @@ public class Ingredient: NSManagedObject {
         name = schema.name
         quantity = schema.quantity
         unit = schema.unit
+        group = schema.group
     }
 }
 
@@ -56,6 +57,7 @@ extension Ingredient {
         if let ingredient = recipe.ingredients.filter({ $0.name == schema.name }).first {
             ingredient.quantity = schema.quantity
             ingredient.unit = schema.unit
+            ingredient.group = schema.group
             try? context.save()
             return ingredient
         }

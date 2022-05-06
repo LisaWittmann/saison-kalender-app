@@ -101,7 +101,7 @@ struct RecipeDetailView: View {
     @ViewBuilder
     private func detail(for ingredient: Ingredient) -> some View {
         HStack(spacing: spacingSmall) {
-            Image(ingredient.name.normalize())
+            Image(ingredient.group?.normalize() ?? ingredient.name.normalize())
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 30)

@@ -12,6 +12,7 @@
         <relationship name="user_" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="collections_" inverseEntity="User"/>
     </entity>
     <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="category">
+        <attribute name="group" optional="YES" attributeType="String"/>
         <attribute name="name_" optional="YES" attributeType="String"/>
         <attribute name="quantity" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="unit" optional="YES" attributeType="String"/>
@@ -64,7 +65,7 @@
     <elements>
         <element name="Characteristic" positionX="-9" positionY="108" width="128" height="89"/>
         <element name="Collection" positionX="-9" positionY="108" width="128" height="74"/>
-        <element name="Ingredient" positionX="0" positionY="45" width="128" height="89"/>
+        <element name="Ingredient" positionX="0" positionY="45" width="128" height="104"/>
         <element name="Nutrition" positionX="-36" positionY="27" width="128" height="104"/>
         <element name="Preparation" positionX="-18" positionY="36" width="128" height="104"/>
         <element name="Recipe" positionX="36" positionY="90" width="128" height="179"/>

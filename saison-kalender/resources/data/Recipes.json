@@ -31,7 +31,8 @@
             {
                 "name": "Rapsöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Sellerie",
@@ -41,44 +42,34 @@
             {
                 "name": "Sojacreme",
                 "quantity": 100,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Sahne"
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Zwiebel und Sellerie schälen und grob würfeln. Apfel schälen, vierteln, das Kerngehäuse entfernen, Apfel ebenfalls in grobe Würfel schneiden.",
-                "info": null
+                "text": "Zwiebel und Sellerie schälen und grob würfeln. Apfel schälen, vierteln, das Kerngehäuse entfernen, Apfel ebenfalls in grobe Würfel schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Die Hälfte des Öls einem großen Topf erhitzen und die Zwiebelwürfel darin 2-3 Minuten bei mittlerer Hitze glasig dünsten. Sellerie- und Apfelstücke zugeben und 1 Minute dünsten. Brühe dazugießen, alles aufkochen und bei kleiner Hitze zugedeckt etwa 45 Minuten garen.",
-                "info": null
+                "text": "Die Hälfte des Öls einem großen Topf erhitzen und die Zwiebelwürfel darin 2-3 Minuten bei mittlerer Hitze glasig dünsten. Sellerie- und Apfelstücke zugeben und 1 Minute dünsten. Brühe dazugießen, alles aufkochen und bei kleiner Hitze zugedeckt etwa 45 Minuten garen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Inzwischen Fenchel putzen, waschen und abtropfen lassen. Fenchel fein würfeln. Eine Pfanne erhitzen, restliches Öl hineingeben und Fenchelwürfel darin bei mittlerer Hitze unter ständigem Rühren rösten, bis alles gut gebräunt und weich ist. Mit Salz und Pfeffer würzen und warm halten.",
-                "info": null
+                "text": "Inzwischen Fenchel putzen, waschen und abtropfen lassen. Fenchel fein würfeln. Eine Pfanne erhitzen, restliches Öl hineingeben und Fenchelwürfel darin bei mittlerer Hitze unter ständigem Rühren rösten, bis alles gut gebräunt und weich ist. Mit Salz und Pfeffer würzen und warm halten."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Suppenzutaten in der Brühe mit einem Stabmixer fein pürieren. Apfel-Sellerie-Suppe evtl. durch ein Sieb streichen (passieren) und zurück in den Topf gießen.",
-                "info": null
+                "text": "Suppenzutaten in der Brühe mit einem Stabmixer fein pürieren. Apfel-Sellerie-Suppe evtl. durch ein Sieb streichen (passieren) und zurück in den Topf gießen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Sojacreme dazugeben und alles nochmals ca. 1 Minute erhitzen. Apfel-Sellerie-Suppe mit Salz und Pfeffer abschmecken, in vorgewärmte Suppenteller verteilen und mit dem gerösteten Fenchel garniert servieren.",
-                "info": null
+                "text": "Sojacreme dazugeben und alles nochmals ca. 1 Minute erhitzen. Apfel-Sellerie-Suppe mit Salz und Pfeffer abschmecken, in vorgewärmte Suppenteller verteilen und mit dem gerösteten Fenchel garniert servieren."
             }
         ],
         "seasonals": ["Apfel", "Fenchel", "Sellerie", "Zwiebel"]
@@ -105,8 +96,7 @@
             },
             {
                 "name": "Apfel",
-                "quantity": 6,
-                "unit": null
+                "quantity": 6
             },
             {
                 "name": "Backpulver",
@@ -121,7 +111,8 @@
             {
                 "name": "Dinkel-Vollkornmehl",
                 "quantity": 150,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             },
             {
                 "name": "Haferflocken",
@@ -131,7 +122,8 @@
             {
                 "name": "Mandelkerne",
                 "quantity": 40,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mandel"
             },
             {
                 "name": "Pekannuss",
@@ -151,7 +143,8 @@
             {
                 "name": "Vanillepulver",
                 "quantity": 1,
-                "unit": "Msp"
+                "unit": "Msp",
+                "group": "Vanille"
             },
             {
                 "name": "Walnuss",
@@ -171,21 +164,15 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Äpfel waschen, vierteln, entkernen und in mundgerechte Stücke schneiden. Zitrone heiß waschen, trocknen, Schale fein abreiben und Saft auspressen. Apfel-Stücke mit Zitronensaft, Zitronenschale, ½ TL Zimt und Ahornsirup in einen Topf geben und ca. 10 Minuten dünsten. Apfelmasse in eine große oder 8 kleine Auflaufförmchen geben.",
-                "info": null
+                "text": "Äpfel waschen, vierteln, entkernen und in mundgerechte Stücke schneiden. Zitrone heiß waschen, trocknen, Schale fein abreiben und Saft auspressen. Apfel-Stücke mit Zitronensaft, Zitronenschale, ½ TL Zimt und Ahornsirup in einen Topf geben und ca. 10 Minuten dünsten. Apfelmasse in eine große oder 8 kleine Auflaufförmchen geben."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Mehl mit Backpulver mischen und mit Zucker, restlichem Zimt, Vanille, Salz und kalter Butter zu Streuseln verarbeiten. Nüsse hacken und mit Haferflocken untermengen. Streusel auf der Apfelmasse verteilen.",
-                "info": null
+                "text": "Mehl mit Backpulver mischen und mit Zucker, restlichem Zimt, Vanille, Salz und kalter Butter zu Streuseln verarbeiten. Nüsse hacken und mit Haferflocken untermengen. Streusel auf der Apfelmasse verteilen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Apple Crisp im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) auf mittlerer Schiene ca. 25–30 Minuten backen, etwas abkühlen lassen und jeweils mit einer Kugel Vanilleeis warm servieren.",
-                "info": null
+                "text": "Apple Crisp im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) auf mittlerer Schiene ca. 25–30 Minuten backen, etwas abkühlen lassen und jeweils mit einer Kugel Vanilleeis warm servieren."
             } 
         ],
         "seasonals": ["Apfel"]
@@ -201,13 +188,11 @@
         "ingredients": [
             {
                 "name": "Artischocke",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Friséesalat",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Gemüsebrühe",
@@ -226,13 +211,11 @@
             },
             {
                 "name": "Limette",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Lollo Rosso",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Minze",
@@ -242,7 +225,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 6,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Quinoa",
@@ -251,33 +235,25 @@
             },
             {
                 "name": "Gurke",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Zitronensaft mit Salz, Pfeffer und Olivenöl verrühren. Minze abbrausen, trocken schütteln und fein schneiden. Artischocken auf einem Sieb abtropfen lassen und vierteln. Artischocken mit Minze und der Vinaigrette mischen. Knoblauch pellen und dazu pressen. Durchziehen lassen.",
-                "info": null
+                "text": "Zitronensaft mit Salz, Pfeffer und Olivenöl verrühren. Minze abbrausen, trocken schütteln und fein schneiden. Artischocken auf einem Sieb abtropfen lassen und vierteln. Artischocken mit Minze und der Vinaigrette mischen. Knoblauch pellen und dazu pressen. Durchziehen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Quinoa in die kochende Brühe geben und ca. 15 Minuten darin ausquellen lassen. Mit Salz, Pfeffer, Harissa und Limettensaft abschmecken. Abkühlen lassen.",
-                "info": null
+                "text": "Quinoa in die kochende Brühe geben und ca. 15 Minuten darin ausquellen lassen. Mit Salz, Pfeffer, Harissa und Limettensaft abschmecken. Abkühlen lassen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Gurke waschen, längs halbieren, entkernen und klein schneiden. Salat putzen, waschen, trockenschleudern und in mundgerechte Stücke zerpflücken. Alle Zutaten mischen und mit Minzeblätter garniert servieren.",
-                "info": null
+                "text": "Gurke waschen, längs halbieren, entkernen und klein schneiden. Salat putzen, waschen, trockenschleudern und in mundgerechte Stücke zerpflücken. Alle Zutaten mischen und mit Minzeblätter garniert servieren."
             }
         ],
         "seasonals": ["Artischocke", "Lollo Rosso", "Gurke"]
@@ -304,8 +280,7 @@
             },
             {
                 "name": "Apfel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Brombeere",
@@ -320,7 +295,8 @@
             {
                 "name": "Hafermilch",
                 "quantity": 180,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Milch"
             },
             {
                 "name": "Hokkaido",
@@ -335,7 +311,8 @@
             {
                 "name": "Walnusskerne",
                 "quantity": 45,
-                "unit": "g"
+                "unit": "g",
+                "group": "Walnuss"
             },
             {
                 "name": "Zimt",
@@ -346,19 +323,14 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Haferflocken in eine große Schüssel geben und mit 200 ml kochendem Wasser übergießen. 1 Prise Salz und Zimt dazugeben, alles verrühren und 10 Minuten quellen lassen.",
-                "info": null
+                "text": "Haferflocken in eine große Schüssel geben und mit 200 ml kochendem Wasser übergießen. 1 Prise Salz und Zimt dazugeben, alles verrühren und 10 Minuten quellen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "In der Zwischenzeit Walnüsse grob hacken und Brombeeren waschen. Hokkaidokürbis waschen, entkernen und fein raspeln. Apfel waschen, halbieren, entkernen und ebenfalls fein raspeln. Haferdrink, Walnüsse, Brombeeren, Apfel- und Hokkaidoraspel zu den Haferflocken geben und gut umrühren.",
-                "info": null
+                "text": "In der Zwischenzeit Walnüsse grob hacken und Brombeeren waschen. Hokkaidokürbis waschen, entkernen und fein raspeln. Apfel waschen, halbieren, entkernen und ebenfalls fein raspeln. Haferdrink, Walnüsse, Brombeeren, Apfel- und Hokkaidoraspel zu den Haferflocken geben und gut umrühren."
             },
             {
                 "order": 3,
-                "title": null,
                 "text": "Eine Auflaufform (26 x 20 cm) mit dem geschmolzenen Kokosöl auspinseln und Haferflocken-Brombeer-Masse darin verteilen. Alles mit Agavendicksaft beträufeln und im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) 20–25 Minuten backen.",
                 "info": "Wer möchte, kann statt Agavendicksaft auch Honig verwenden"
             }
@@ -397,7 +369,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Pastinake",
@@ -411,34 +384,25 @@
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Blumenkohl putzen, waschen und in Röschen teilen, Sellerie und Pastinaken schälen und in Scheiben oder Würfel schneiden. Zwiebel schälen und hacken.",
-                "info": null
+                "text": "Blumenkohl putzen, waschen und in Röschen teilen, Sellerie und Pastinaken schälen und in Scheiben oder Würfel schneiden. Zwiebel schälen und hacken."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Olivenöl in einem Topf erhitzen, Zwiebel darin bei mittlerer Hitze glasig dünsten, Blumenkohl, Sellerie und Pastinaken zugeben und etwa 3–5 Minuten anbraten. Dann mit Brühe ablöschen. Suppe etwa 20 Minuten bei kleiner Hitze köcheln lassen.",
-                "info": null
+                "text": "Olivenöl in einem Topf erhitzen, Zwiebel darin bei mittlerer Hitze glasig dünsten, Blumenkohl, Sellerie und Pastinaken zugeben und etwa 3–5 Minuten anbraten. Dann mit Brühe ablöschen. Suppe etwa 20 Minuten bei kleiner Hitze köcheln lassen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Blumenkohl-Pastinaken-Suppe pürieren und bei Bedarf noch etwas Brühe zugeben oder einköcheln lassen. Mit 1 EL Mandelmus, Salz und Pfeffer abschmecken.",
-                "info": null
+                "text": "Blumenkohl-Pastinaken-Suppe pürieren und bei Bedarf noch etwas Brühe zugeben oder einköcheln lassen. Mit 1 EL Mandelmus, Salz und Pfeffer abschmecken."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Rest des Mandelmus mit etwas Wasser glatt rühren und die Suppe damit dekorieren.",
-                "info": null
+                "text": "Rest des Mandelmus mit etwas Wasser glatt rühren und die Suppe damit dekorieren."
             }
         ],
         "seasonals": ["Sellerie", "Blumenkohl", "Pastinake", "Zwiebel"]
@@ -464,7 +428,8 @@
             {
                 "name": "Dinkel-Vollkornmehl",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Mehl"
             },
             {
                 "name": "Knoblauch",
@@ -479,12 +444,14 @@
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Perlzwiebeln",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Zwiebel"
             },
             {
                 "name": "Petersilie",
@@ -515,39 +482,27 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Das Fleisch abspülen, mit Küchenpapier trocken tupfen und in etwa 4 cm große Würfel schneiden. Zwiebeln schälen und fein würfeln. Knoblauch schälen.",
-                "info": null
+                "text": "Das Fleisch abspülen, mit Küchenpapier trocken tupfen und in etwa 4 cm große Würfel schneiden. Zwiebeln schälen und fein würfeln. Knoblauch schälen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "2 EL Öl in einem schweren Topf erhitzen. Das Fleisch darin portionsweise bei starker Hitze scharf anbraten. Fleisch jeweils herausnehmen und in ein Sieb geben, abtropfenden Fleischsaft dabei in einer Schüssel auffangen.",
-                "info": null
+                "text": "2 EL Öl in einem schweren Topf erhitzen. Das Fleisch darin portionsweise bei starker Hitze scharf anbraten. Fleisch jeweils herausnehmen und in ein Sieb geben, abtropfenden Fleischsaft dabei in einer Schüssel auffangen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Zwiebeln und ganze Knoblauchzehen in den Topf geben und bei mittlerer Hitze im Bratfett unter Rühren 5 Minuten hellbraun andünsten. Fleischwürfel wieder zugeben, mit Salz und Pfeffer würzen und Mehl überstäuben. Alles nochmals kurz braten.",
-                "info": null
+                "text": "Zwiebeln und ganze Knoblauchzehen in den Topf geben und bei mittlerer Hitze im Bratfett unter Rühren 5 Minuten hellbraun andünsten. Fleischwürfel wieder zugeben, mit Salz und Pfeffer würzen und Mehl überstäuben. Alles nochmals kurz braten."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Rotwein, 250 ml Wasser und den aufgefangenen Fleischsaft zugießen. Thymian waschen, trocken schütteln und mit den Lorbeerblättern zum Fleisch geben. Einmal aufkochen, eventuell zwischendurch abschäumen und zugedeckt bei kleiner Hitze etwa 2 1/4 Stunden schmoren.",
-                "info": null
+                "text": "Rotwein, 250 ml Wasser und den aufgefangenen Fleischsaft zugießen. Thymian waschen, trocken schütteln und mit den Lorbeerblättern zum Fleisch geben. Einmal aufkochen, eventuell zwischendurch abschäumen und zugedeckt bei kleiner Hitze etwa 2 1/4 Stunden schmoren."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Inzwischen die Champignons putzen, große Pilze eventuell halbieren. Perlzwiebeln etwa 5 Minuten in kochendem Salzwasser vorgaren, abgießen, kurz kalt abschrecken und schälen. Restliches Öl in einer Pfanne erhitzen, Champignons und Perlzwiebeln darin bei mittlerer Hitze 3–4 Minuten anbraten.",
-                "info": null
+                "text": "Inzwischen die Champignons putzen, große Pilze eventuell halbieren. Perlzwiebeln etwa 5 Minuten in kochendem Salzwasser vorgaren, abgießen, kurz kalt abschrecken und schälen. Restliches Öl in einer Pfanne erhitzen, Champignons und Perlzwiebeln darin bei mittlerer Hitze 3–4 Minuten anbraten."
             },
             {
                 "order": 6,
-                "title": null,
-                "text": "Nach Ende der Garzeit Pilze und Perlzwiebeln zum Fleisch geben und alles ohne Deckel weitere 30 Minuten bei mittlerer Hitze schmoren. Inzwischen Petersilie waschen, trocken schütteln, Blätter abzupfen und hacken. Bœuf Bourguignon nochmals mit Salz und Pfeffer würzen, Petersilie dazugeben und servieren.",
-                "info": null
+                "text": "Nach Ende der Garzeit Pilze und Perlzwiebeln zum Fleisch geben und alles ohne Deckel weitere 30 Minuten bei mittlerer Hitze schmoren. Inzwischen Petersilie waschen, trocken schütteln, Blätter abzupfen und hacken. Bœuf Bourguignon nochmals mit Salz und Pfeffer würzen, Petersilie dazugeben und servieren."
             }
         ],
         "seasonals": ["Champignons", "Zwiebel"]
@@ -584,7 +539,8 @@
             {
                 "name": "Gewürzgurke",
                 "quantity": 100,
-                "unit": "g"
+                "unit": "g",
+                "group": "Gurke"
             },
             {
                 "name": "Haferflocken",
@@ -614,17 +570,20 @@
             {
                 "name": "Leinsamenschrot",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Leinsamen"
             },
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Rote-Bete-Saft",
                 "quantity": 5,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Rote Bete"
             },
             {
                 "name": "Zwiebel",
@@ -643,52 +602,37 @@
             },
             {
                 "name": "Tomate",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Leinsamen in 5 EL Rote Bete Saft quellen lassen.",
-                "info": null
+                "text": "Leinsamen in 5 EL Rote Bete Saft quellen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Zwiebel und Knoblauch schälen und fein würfeln. Champignons putzen und in kleine Würfel schneiden. 1 EL Olivenöl in einer Pfanne erhitzen. Zwiebeln und Champignons zugeben und 5–6 Minuten bei starker Hitze anbraten. Knoblauch für eine Minute mitbraten. Mit Salz würzen.",
-                "info": null
+                "text": "Zwiebel und Knoblauch schälen und fein würfeln. Champignons putzen und in kleine Würfel schneiden. 1 EL Olivenöl in einer Pfanne erhitzen. Zwiebeln und Champignons zugeben und 5–6 Minuten bei starker Hitze anbraten. Knoblauch für eine Minute mitbraten. Mit Salz würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Bohnen abspülen und abtropfen lassen. 2/3 der Bohnen zusammen mit Haferflocken, Hefeflocken, Paprikapulver und Kreuzkümmel im Multizerkleinerer fein pürieren. Herausnehmen und beiseitestellen.",
-                "info": null
+                "text": "Bohnen abspülen und abtropfen lassen. 2/3 der Bohnen zusammen mit Haferflocken, Hefeflocken, Paprikapulver und Kreuzkümmel im Multizerkleinerer fein pürieren. Herausnehmen und beiseitestellen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Leinsamen, Champignon-Mix und restliche Bohnen im Multizerkleinerer kurz hacken, unter den Püree-Mix heben und mit Pfeffer und Sojasauce würzen. Vier Patties formen und bis zum Braten beiseitestellen.",
-                "info": null
+                "text": "Leinsamen, Champignon-Mix und restliche Bohnen im Multizerkleinerer kurz hacken, unter den Püree-Mix heben und mit Pfeffer und Sojasauce würzen. Vier Patties formen und bis zum Braten beiseitestellen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Salat und Tomate waschen und trocken tupfen. Tomate und Gurke in Scheiben schneiden.",
-                "info": null
+                "text": "Salat und Tomate waschen und trocken tupfen. Tomate und Gurke in Scheiben schneiden."
             },
             {
                 "order": 6,
-                "title": null,
-                "text": "Restliches Öl in eine heiße Pfanne geben, Patties bei mittlerer Hitze 5 Minuten pro Seite braten, herausnehmen und warm halten. Brötchen aufschneiden, mit der Schnittseite nach unten in der heißen Pfanne ohne Öl 1 Minute anrösten.",
-                "info": null
+                "text": "Restliches Öl in eine heiße Pfanne geben, Patties bei mittlerer Hitze 5 Minuten pro Seite braten, herausnehmen und warm halten. Brötchen aufschneiden, mit der Schnittseite nach unten in der heißen Pfanne ohne Öl 1 Minute anrösten."
             },
             {
                 "order": 7,
-                "title": null,
-                "text": "Black Bean Patties jeweils mit 1 TL Rote Bete Saft beträufeln. Burger Buns jeweils mit 1 EL Ketchup bestreichen und mit Salatblatt, Black Bean Patty, Käseersatz, Tomaten- und Gewürzgurkenscheiben belegen.",
-                "info": null
+                "text": "Black Bean Patties jeweils mit 1 TL Rote Bete Saft beträufeln. Burger Buns jeweils mit 1 EL Ketchup bestreichen und mit Salatblatt, Black Bean Patty, Käseersatz, Tomaten- und Gewürzgurkenscheiben belegen."
             }
         ],
         "seasonals": ["Eisbergsalat", "Rote Bete", "Tomate", "Champignons", "Zwiebel"]
@@ -721,7 +665,8 @@
             {
                 "name": "Grüner Spargel",
                 "quantity": 400,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spargel"
             },
             {
                 "name": "Hartkäse",
@@ -736,7 +681,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Radieschen",
@@ -750,39 +696,29 @@
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Zwiebel",
-                "quantity": 0.5,
-                "unit": null
+                "quantity": 0.5
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Halbe Zwiebel schälen und in Streifen schneiden. 1 EL Olivenöl in einem Topf erhitzen, Zwiebel und Risotto-Reis darin für 1 Minute bei mittlerer Hitze andünsten. Kapern zugeben und mit etwas Gemüsebrühe ablöschen. Unter gelegentlichem Rühren für ca. 20 Minuten nach und nach die Gemüsebrühe zugeben, bis der Reis die Flüssigkeit komplett aufgenommen hat.",
-                "info": null
+                "text": "Halbe Zwiebel schälen und in Streifen schneiden. 1 EL Olivenöl in einem Topf erhitzen, Zwiebel und Risotto-Reis darin für 1 Minute bei mittlerer Hitze andünsten. Kapern zugeben und mit etwas Gemüsebrühe ablöschen. Unter gelegentlichem Rühren für ca. 20 Minuten nach und nach die Gemüsebrühe zugeben, bis der Reis die Flüssigkeit komplett aufgenommen hat."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Spargel und Radieschen putzen und waschen. Die holzigen Enden des Spargels abschneiden und die Radieschen vierteln. Restliches Öl in einer Pfanne erhitzen und das Gemüse darin bei mittlerer Hitze für 3 Minuten unter Wenden anbraten und salzen. Dill waschen, trocken schütteln und grob hacken.",
-                "info": null
+                "text": "Inzwischen Spargel und Radieschen putzen und waschen. Die holzigen Enden des Spargels abschneiden und die Radieschen vierteln. Restliches Öl in einer Pfanne erhitzen und das Gemüse darin bei mittlerer Hitze für 3 Minuten unter Wenden anbraten und salzen. Dill waschen, trocken schütteln und grob hacken."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Hartkäse reiben und die Hälfte unter das Risotto rühren. Mit Pfeffer und Zitronensaft würzen und mit geschlossenem Deckel beiseitestellen.",
-                "info": null
+                "text": "Hartkäse reiben und die Hälfte unter das Risotto rühren. Mit Pfeffer und Zitronensaft würzen und mit geschlossenem Deckel beiseitestellen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Risotto auf Tellern anrichten, Gemüse darübergeben und mit restlichem Hartkäse und Dill bestreut servieren.",
-                "info": null
+                "text": "Risotto auf Tellern anrichten, Gemüse darübergeben und mit restlichem Hartkäse und Dill bestreut servieren."
             }
         ],
         "seasonals": ["Spargel","Radieschen",  "Zwiebel"]
@@ -837,12 +773,14 @@
             {
                 "name": "Naturreis",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Reis"
             },
             {
                 "name": "Rapsöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Sesam",
@@ -852,7 +790,8 @@
             {
                 "name": "Sesamöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Sojasoße",
@@ -863,27 +802,19 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Reis mit der doppelten Menge Salzwasser zum Kochen bringen und ca. 25 Minuten bei mittlerer bis kleiner Hitze garen. Abgießen und abtropfen lassen. Inzwischen Chinakohl putzen, waschen und in breite Streifen schneiden. Möhren schälen und in dünne Stifte schneiden. Knoblauchzehe schälen und fein hacken. ingwer schälen und in feine Scheiben schneiden.",
-                "info": null
+                "text": "Reis mit der doppelten Menge Salzwasser zum Kochen bringen und ca. 25 Minuten bei mittlerer bis kleiner Hitze garen. Abgießen und abtropfen lassen. Inzwischen Chinakohl putzen, waschen und in breite Streifen schneiden. Möhren schälen und in dünne Stifte schneiden. Knoblauchzehe schälen und fein hacken. ingwer schälen und in feine Scheiben schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Rapsöl in einer großen Pfanne oder einem Wok erhitzen. Chinakohl und Möhrenstifte darin bei mittlerer Hitze ca. 5 Minuten unter Rühren braten. Ingwer und Knoblauch zugeben und kurz mitdünsten. Reis zugeben und unter Rühren erhitzen.",
-                "info": null
+                "text": "Rapsöl in einer großen Pfanne oder einem Wok erhitzen. Chinakohl und Möhrenstifte darin bei mittlerer Hitze ca. 5 Minuten unter Rühren braten. Ingwer und Knoblauch zugeben und kurz mitdünsten. Reis zugeben und unter Rühren erhitzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Eier mit Pfeffer, Sojasauce und Sesamöl verquirlen und über die Reis-Gemüse-Mischung gießen. Eier stocken lassen, dabei ständig weiterrühren. Bei Bedarf mit Salz und Pfeffer abschmecken.",
-                "info": null
+                "text": "Eier mit Pfeffer, Sojasauce und Sesamöl verquirlen und über die Reis-Gemüse-Mischung gießen. Eier stocken lassen, dabei ständig weiterrühren. Bei Bedarf mit Salz und Pfeffer abschmecken."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Cashewkerne grob hacken. Frühlingszwiebeln putzen, waschen und schräg in Streifen schneiden. Gebratenen Reis auf Teller geben und mit Cashewkernen, Frühlingszwiebeln sowie Sesam bestreut servieren.",
-                "info": null
+                "text": "Cashewkerne grob hacken. Frühlingszwiebeln putzen, waschen und schräg in Streifen schneiden. Gebratenen Reis auf Teller geben und mit Cashewkernen, Frühlingszwiebeln sowie Sesam bestreut servieren."
             }
             
         ],
@@ -921,7 +852,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Orange",
@@ -936,27 +868,19 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Lauch putzen, dabei die Wurzelenden sehr knapp abschneiden, damit die Stangen beim Garen nicht auseinanderfallen. Längs einschneiden und waschen. Gemüsebrühe und etwas Olivenöl in einem breiten Topf zum Kochen bringen. Lauch hineingeben und zugedeckt bei mittlerer Hitze 10-12 Minuten garen.",
-                "info": null
+                "text": "Lauch putzen, dabei die Wurzelenden sehr knapp abschneiden, damit die Stangen beim Garen nicht auseinanderfallen. Längs einschneiden und waschen. Gemüsebrühe und etwas Olivenöl in einem breiten Topf zum Kochen bringen. Lauch hineingeben und zugedeckt bei mittlerer Hitze 10-12 Minuten garen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Topf vom Herd nehmen und Lauch im Sud auskühlen lassen (das dauert ca. 30 Minuten). Grapefruit und 1 Orange so schälen, dass die gesamte weiße Innenhaut entfernt wird. Früchte in Scheiben schneiden. Die 2. Orange auspressen und 125 ml Saft abmessen.",
-                "info": null
+                "text": "Topf vom Herd nehmen und Lauch im Sud auskühlen lassen (das dauert ca. 30 Minuten). Grapefruit und 1 Orange so schälen, dass die gesamte weiße Innenhaut entfernt wird. Früchte in Scheiben schneiden. Die 2. Orange auspressen und 125 ml Saft abmessen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Orangensaft in einem kleinen Topf sirupartig einkochen lassen. 2 EL des abgekühlten Gemüsesuds und Senf zugeben, alles verrühren. Langsam das restliche Olivenöl einrühren und alles zu einer Vinaigrette rühren. Mit Salz und Pfeffer würzen.",
-                "info": null
+                "text": "Orangensaft in einem kleinen Topf sirupartig einkochen lassen. 2 EL des abgekühlten Gemüsesuds und Senf zugeben, alles verrühren. Langsam das restliche Olivenöl einrühren und alles zu einer Vinaigrette rühren. Mit Salz und Pfeffer würzen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Lauch mit einer Schaumkelle aus dem Sud heben und gut abtropfen lassen. Mit den Fruchtscheiben dekorativ auf eine Platte geben und mit der Vinaigrette begießen. 10 Minuten ziehen lassen (marinieren). Mit etwas Kerbel und eventuell einigen Friséesalatblättchen garniert servieren.",
-                "info": null
+                "text": "Lauch mit einer Schaumkelle aus dem Sud heben und gut abtropfen lassen. Mit den Fruchtscheiben dekorativ auf eine Platte geben und mit der Vinaigrette begießen. 10 Minuten ziehen lassen (marinieren). Mit etwas Kerbel und eventuell einigen Friséesalatblättchen garniert servieren."
             } 
         ],
         "seasonals": ["Porree"]
@@ -984,7 +908,8 @@
             {
                 "name": "Gehackte Tomaten",
                 "quantity": 400,
-                "unit": "g"
+                "unit": "g",
+                "group": "Tomate"
             },
             {
                 "name": "Gemüsebrühe",
@@ -1010,33 +935,23 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Goji-Beeren mit heißem Wasser übergießen und einweichen lassen. Gorgonzola zerbröseln.",
-                "info": null
+                "text": "Goji-Beeren mit heißem Wasser übergießen und einweichen lassen. Gorgonzola zerbröseln."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Champignons putzen, Stiele herausdrehen und diese sehr fein hacken. Schalotte schälen, ebenfalls fein hacken und mit mit Pilzstielen, Frischkäse, Gemüsebrühe, etwa 50 g Gorgonzola und Haferflocken in eine Schüssel geben und mischen. Goji-Beeren abgießen, einige beiseitelegen, restliche zum Frischkäse geben. Mit Salz und Pfeffer abschmecken.",
-                "info": null
+                "text": "Champignons putzen, Stiele herausdrehen und diese sehr fein hacken. Schalotte schälen, ebenfalls fein hacken und mit mit Pilzstielen, Frischkäse, Gemüsebrühe, etwa 50 g Gorgonzola und Haferflocken in eine Schüssel geben und mischen. Goji-Beeren abgießen, einige beiseitelegen, restliche zum Frischkäse geben. Mit Salz und Pfeffer abschmecken."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Thymian waschen, trocken schütteln, Blättchen abstreifen, etwa die Hälfte davon mit Tomaten in eine Schüssel geben, mit Salz, Pfeffer und Basilikum würzen und dann in eine Auflaufform gießen.",
-                "info": null
+                "text": "Thymian waschen, trocken schütteln, Blättchen abstreifen, etwa die Hälfte davon mit Tomaten in eine Schüssel geben, mit Salz, Pfeffer und Basilikum würzen und dann in eine Auflaufform gießen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Pilze mit der Frischkäsemasse füllen, auf die Tomatensauce setzen und mit restlichem Gorgonzola überbröckeln.",
-                "info": null
+                "text": "Pilze mit der Frischkäsemasse füllen, auf die Tomatensauce setzen und mit restlichem Gorgonzola überbröckeln."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Gefüllte Champignons im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 25 Minuten überbacken. Herausnehmen und mit restlichem Thymian und übrigen Goji-Beeren bestreut servieren.",
-                "info": null
+                "text": "Gefüllte Champignons im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 25 Minuten überbacken. Herausnehmen und mit restlichem Thymian und übrigen Goji-Beeren bestreut servieren."
             } 
         ],
         "seasonals": ["Champignons", "Zwiebel"]
@@ -1088,12 +1003,12 @@
             {
                 "name": "Olivenöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Porree",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Spinat",
@@ -1102,50 +1017,41 @@
             },
             {
                 "name": "Tomate",
-                "quantity": 5,
-                "unit": null
+                "quantity": 5
             },
             {
                 "name": "Vollkorn-Lasagneblätter",
                 "quantity": 250,
-                "unit": "g"
+                "unit": "g",
+                "group": "Lasagnblätter"
             },
             {
                 "name": "Weizen-Vollkornmehl",
                 "quantity": 40,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Bohnen putzen, waschen und in Stücke schneiden. In kochendem Wasser 6–8 Minuten garen. Abgießen, abschrecken und abtropfen lassen. Inzwischen Spinat putzen, waschen, abtropfen lassen und grob hacken. Lauch putzen, längs halbieren, waschen und in Ringe schneiden. Tomaten putzen, waschen und würfeln. Knoblauch schälen und fein hacken. Öl in einem Topf erhitzen. Die Gemüse darin bei mittlerer Hitze für 7–10 Minuten dünsten. Mit Kräutern, Salz und Pfeffer würzen. Topf vom Herd nehmen.",
-                "info": null
+                "text": "Bohnen putzen, waschen und in Stücke schneiden. In kochendem Wasser 6–8 Minuten garen. Abgießen, abschrecken und abtropfen lassen. Inzwischen Spinat putzen, waschen, abtropfen lassen und grob hacken. Lauch putzen, längs halbieren, waschen und in Ringe schneiden. Tomaten putzen, waschen und würfeln. Knoblauch schälen und fein hacken. Öl in einem Topf erhitzen. Die Gemüse darin bei mittlerer Hitze für 7–10 Minuten dünsten. Mit Kräutern, Salz und Pfeffer würzen. Topf vom Herd nehmen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "In einem zweiten Topf 50 g Butter bei mittlerer Hitze schmelzen, Mehl zufügen und unter ständigem Rühren darin hell anschwitzen. Nun die gesamte Milch daraufgießen und gut glatt rühren, dabei langsam erhitzen, bis die Sauce leicht köchelt. Etwa 5 Minuten sanft weiterköcheln lassen. Hartkäse in die Sauce rühren. Topf vom Herd ziehen.",
-                "info": null
+                "text": "In einem zweiten Topf 50 g Butter bei mittlerer Hitze schmelzen, Mehl zufügen und unter ständigem Rühren darin hell anschwitzen. Nun die gesamte Milch daraufgießen und gut glatt rühren, dabei langsam erhitzen, bis die Sauce leicht köchelt. Etwa 5 Minuten sanft weiterköcheln lassen. Hartkäse in die Sauce rühren. Topf vom Herd ziehen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Eine ofenfeste Form mit der restlichen Butter einstreichen, den Boden mit Lasagneblättern auslegen und diese mit der Hälfte des Gemüses bedecken. Nun etwas von der Sauce darüber gießen.",
-                "info": null
+                "text": "Eine ofenfeste Form mit der restlichen Butter einstreichen, den Boden mit Lasagneblättern auslegen und diese mit der Hälfte des Gemüses bedecken. Nun etwas von der Sauce darüber gießen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Das Ganze wieder mit Nudelblättern bedecken und diese wiederum mit dem Rest des Gemüses auffüllen. Zuletzt alles mit Lasagneblättern abdecken und mit der restlichen Sauce begießen.",
-                "info": null
+                "text": "Das Ganze wieder mit Nudelblättern bedecken und diese wiederum mit dem Rest des Gemüses auffüllen. Zuletzt alles mit Lasagneblättern abdecken und mit der restlichen Sauce begießen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) für etwa 40 Minuten im Backofen garen.",
-                "info": null
+                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) für etwa 40 Minuten im Backofen garen."
             }  
         ],
         "seasonals": ["Spinat", "Tomate", "Porree"]
@@ -1167,7 +1073,8 @@
             {
                 "name": "Bunte Möhren",
                 "quantity": 800,
-                "unit": "g"
+                "unit": "g",
+                "group": "Möhre"
             },
             {
                 "name": "Champignons",
@@ -1192,7 +1099,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Petersilie",
@@ -1201,13 +1109,13 @@
             },
             {
                 "name": "Schalotte",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Sojacreme",
                 "quantity": 200,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Sahne"
             },
             {
                 "name": "Tofu",
@@ -1218,33 +1126,23 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Pilze putzen und in Scheiben schneiden. Schalotten und Knoblauch schälen und fein würfeln. Tofu ebenfalls in Würfel schneiden. 2 EL Öl in einer Pfanne erhitzen, Schalotte, Knoblauch und Tofu darin bei mittlerer Hitze 5 Minuten anbraten.",
-                "info": null
+                "text": "Pilze putzen und in Scheiben schneiden. Schalotten und Knoblauch schälen und fein würfeln. Tofu ebenfalls in Würfel schneiden. 2 EL Öl in einer Pfanne erhitzen, Schalotte, Knoblauch und Tofu darin bei mittlerer Hitze 5 Minuten anbraten."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Pilze zugeben und bei starker Hitze unter gelegentlichem Schwenken weitere 5 Minuten anbraten. Mit Salz und Pfeffer würzen.",
-                "info": null
+                "text": "Pilze zugeben und bei starker Hitze unter gelegentlichem Schwenken weitere 5 Minuten anbraten. Mit Salz und Pfeffer würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Nebenher Petersilie waschen, trocken schütteln und hacken. Käse reiben. Möhren putzen, waschen und mit einem Spiralschneider zu Nudeln verarbeiten.",
-                "info": null
+                "text": "Nebenher Petersilie waschen, trocken schütteln und hacken. Käse reiben. Möhren putzen, waschen und mit einem Spiralschneider zu Nudeln verarbeiten."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Pilze mit Gemüsebrühe und Sojacreme ablöschen, etwa 5 Minuten einköcheln lassen, mit Salz, Pfeffer und Cayennepfeffer abschmecken.",
-                "info": null
+                "text": "Pilze mit Gemüsebrühe und Sojacreme ablöschen, etwa 5 Minuten einköcheln lassen, mit Salz, Pfeffer und Cayennepfeffer abschmecken."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen.",
-                "info": null
+                "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
             } 
         ],
         "seasonals": ["Champignons", "Zwiebel", "Möhre"]
@@ -1280,23 +1178,21 @@
             },
             {
                 "name": "Möhre",
-                "quantity": 3,
-                "unit": null
+                "quantity": 3
             },
             {
                 "name": "Olivenöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Paprika",
-                "quantity": 1.5,
-                "unit": null
+                "quantity": 1.5
             },
             {
                 "name": "Porree",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Rosmarin",
@@ -1317,21 +1213,15 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Kaninchen unter kaltem Wasser abspülen, trocken tupfen und in Stücke teilen. 4 EL Olivenöl mit Pfeffer verrühren. Knoblauch schälen und zum Öl pressen. Rosmarin waschen, und trocken schütteln; von 2 Zweigen die Nadeln fein hacken und unter das Öl mischen. Kaninchenteile darin zugedeckt 4 Stunden marinieren.",
-                "info": null
+                "text": "Kaninchen unter kaltem Wasser abspülen, trocken tupfen und in Stücke teilen. 4 EL Olivenöl mit Pfeffer verrühren. Knoblauch schälen und zum Öl pressen. Rosmarin waschen, und trocken schütteln; von 2 Zweigen die Nadeln fein hacken und unter das Öl mischen. Kaninchenteile darin zugedeckt 4 Stunden marinieren."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln.",
-                "info": null
+                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln.",
-                "info": null
+                "text": "Inzwischen Möhren schälen und in Scheiben schneiden. Lauch waschen, putzen und in Ringe schneiden. Paprikaschoten waschen, halbieren, entkernen und fein würfeln."
             }
         ],
         "seasonals": ["Porree", "Möhre", "Paprika", "Zwiebel"]
@@ -1352,13 +1242,13 @@
         "ingredients": [
             {
                 "name": "Chinakohl",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Emmentaler",
                 "quantity": 70,
-                "unit": "g"
+                "unit": "g",
+                "group": "Käse"
             },
             {
                 "name": "Gemüsebrühe",
@@ -1378,43 +1268,36 @@
             {
                 "name": "Rapsöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Schlagsahne",
                 "quantity": 100,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Sahne"
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Den Kohl jeweils längs halbieren, waschen, putzen und in kochendem Salzwasser ca. 3 Minuten garen (blanchieren), herausnehmen und abschrecken. Gut abtropfen lassen.",
-                "info": null
+                "text": "Den Kohl jeweils längs halbieren, waschen, putzen und in kochendem Salzwasser ca. 3 Minuten garen (blanchieren), herausnehmen und abschrecken. Gut abtropfen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Die Zwiebel und den Knoblauch schälen, fein würfeln und im heißen Öl glasig dünsten. Die Haferflocken 1 Minute mitbraten und vom Herd ziehen. Emmentaler reiben und mit der Haferflocken-Mischung vermengen, salzen und pfeffern.",
-                "info": null
+                "text": "Die Zwiebel und den Knoblauch schälen, fein würfeln und im heißen Öl glasig dünsten. Die Haferflocken 1 Minute mitbraten und vom Herd ziehen. Emmentaler reiben und mit der Haferflocken-Mischung vermengen, salzen und pfeffern."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Die Kohlhälften mit der Schnittfläche nach oben in eine Auflaufform legen. Die Sahne und die Gemüsebrühe vermischen und über den Chinakohl gießen. Die Haferflockenmischung darauf setzen.",
-                "info": null
+                "text": "Die Kohlhälften mit der Schnittfläche nach oben in eine Auflaufform legen. Die Sahne und die Gemüsebrühe vermischen und über den Chinakohl gießen. Die Haferflockenmischung darauf setzen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft: 160 °C; Gas: Stufe 2–3 ca. 25 überbacken und mit der Petersilie garniert servieren.",
-                "info": null
+                "text": "Im vorgeheizten Backofen bei 180 °C (Umluft: 160 °C; Gas: Stufe 2–3 ca. 25 überbacken und mit der Petersilie garniert servieren."
             } 
         ],
         "seasonals": ["Chinakohl", "Zwiebel"]
@@ -1436,8 +1319,7 @@
         "ingredients": [
             {
                 "name": "Aubergine",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Feta",
@@ -1462,12 +1344,12 @@
             {
                 "name": "Olivenöl",
                 "quantity": 5,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Paprika",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Thymian",
@@ -1476,34 +1358,25 @@
             },
             {
                 "name": "Zucchini",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Zucchini und Aubergine putzen, waschen und quer in Scheiben schneiden. Zwiebeln schälen und in Achtel schneiden. Knoblauch von den äußeren Hüllblättern befreien und quer halbieren. Paprikaschote halbieren, entkernen, waschen und längs in Streifen schneiden. Kirschtomaten vorsichtig waschen und abtropfen lassen. Kartoffeln gründlich waschen und halbieren. Thymian waschen, trocken schütteln und Blättchen abzupfen.",
-                "info": null
+                "text": "Zucchini und Aubergine putzen, waschen und quer in Scheiben schneiden. Zwiebeln schälen und in Achtel schneiden. Knoblauch von den äußeren Hüllblättern befreien und quer halbieren. Paprikaschote halbieren, entkernen, waschen und längs in Streifen schneiden. Kirschtomaten vorsichtig waschen und abtropfen lassen. Kartoffeln gründlich waschen und halbieren. Thymian waschen, trocken schütteln und Blättchen abzupfen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Auberginenscheiben in einer großen Auflaufform oder in einem tiefen Backblech verteilen. Paprikastreifen, Zucchinischeiben, Zwiebeln, Knoblauch, Tomaten und Kartoffeln darauf verteilen, alles mit Salz, Pfeffer und Thymian würzen und Öl darüberträufeln.",
-                "info": null
+                "text": "Auberginenscheiben in einer großen Auflaufform oder in einem tiefen Backblech verteilen. Paprikastreifen, Zucchinischeiben, Zwiebeln, Knoblauch, Tomaten und Kartoffeln darauf verteilen, alles mit Salz, Pfeffer und Thymian würzen und Öl darüberträufeln."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Gemüse im vorgeheizten Backofen bei 220 °C (Umluft 200 °C; Gas: Stufe 3) 35–45 Minuten backen.",
-                "info": null
+                "text": "Gemüse im vorgeheizten Backofen bei 220 °C (Umluft 200 °C; Gas: Stufe 3) 35–45 Minuten backen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Inzwischen Kräuter waschen, trocken schütteln und Blättchen abzupfen. Gemüse aus dem Ofen nehmen, Feta darüberbröckeln und mit Kräutern bestreuen.",
-                "info": null
+                "text": "Inzwischen Kräuter waschen, trocken schütteln und Blättchen abzupfen. Gemüse aus dem Ofen nehmen, Feta darüberbröckeln und mit Kräutern bestreuen."
             }
         ],
         "seasonals": ["Paprika", "Aubergine", "Kartoffel", "Tomate", "Zucchini", "Zwiebel"]
@@ -1526,8 +1399,7 @@
         "ingredients": [
             {
                 "name": "Apfel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Apfelsaft",
@@ -1537,7 +1409,8 @@
             {
                 "name": "Bergkäse",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Käse"
             },
             {
                 "name": "Butter",
@@ -1546,13 +1419,13 @@
             },
             {
                 "name": "Eier",
-                "quantity": 3,
-                "unit": null
+                "quantity": 3
             },
             {
                 "name": "Haselnusskerne",
                 "quantity": 30,
-                "unit": "g"
+                "unit": "g",
+                "group": "Haselnuss"
             },
             {
                 "name": "Kartoffel",
@@ -1562,17 +1435,18 @@
             {
                 "name": "Olivenöl",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Porree",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Schlagsahne",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Sahne"
             },
             {
                 "name": "Thymian",
@@ -1582,33 +1456,26 @@
             {
                 "name": "Weizen-Vollkornmehl",
                 "quantity": 300,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Mehl mit 1 TL Salz mischen. 125 g Butter in kleine Würfel schneiden und mit Apfelsaft zu einem glatten geschmeidigen Teig verkneten. Zu einer Kugel formen, in ein feuchtes Tuch wickeln und für mindestens 30 Minuten in den Kühlschrank legen. Boden der Springform mit Backpapier auslegen und den Rand mit der restlichen Butter einfetten.",
-                "info": null
+                "text": "Mehl mit 1 TL Salz mischen. 125 g Butter in kleine Würfel schneiden und mit Apfelsaft zu einem glatten geschmeidigen Teig verkneten. Zu einer Kugel formen, in ein feuchtes Tuch wickeln und für mindestens 30 Minuten in den Kühlschrank legen. Boden der Springform mit Backpapier auslegen und den Rand mit der restlichen Butter einfetten."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "nzwischen Lauch putzen, gründlich waschen und in feine Streifen schneiden. Apfel waschen, vierteln, Kerngehäuse entfernen, Viertel in dünne Scheiben schneiden. Thymian waschen, trocken schütteln, Blättchen abzupfen. Öl in einer Pfanne erhitzen. Lauch darin bei mittlerer Hitze unter Rühren etwa 5 Minuten dünsten. Apfelscheiben zugeben und 3 Minuten mitdünsten. Lauch-Apfel-Mischung mit Salz, Pfeffer und Thymian abschmecken. Bergkäse grob raspeln. Kartoffeln pellen und in dünne Scheiben schneiden.",
-                "info": null
+                "text": "Inzwischen Lauch putzen, gründlich waschen und in feine Streifen schneiden. Apfel waschen, vierteln, Kerngehäuse entfernen, Viertel in dünne Scheiben schneiden. Thymian waschen, trocken schütteln, Blättchen abzupfen. Öl in einer Pfanne erhitzen. Lauch darin bei mittlerer Hitze unter Rühren etwa 5 Minuten dünsten. Apfelscheiben zugeben und 3 Minuten mitdünsten. Lauch-Apfel-Mischung mit Salz, Pfeffer und Thymian abschmecken. Bergkäse grob raspeln. Kartoffeln pellen und in dünne Scheiben schneiden."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Aus 2/3 des Teigs eine Kugel formen und auf einer bemehlten Arbeitsfläche rund (32 cm Ø) ausrollen. Die Springform damit auslegen, dabei einen 3–4 cm hohen Rand formen. Die Hälfte der Kartoffeln einschichten, mit Salz würzen und mit etwas Käse bestreuen. Lauch-Apfel-Mischung darauf verteilen und ebenfalls mit Käse bestreuen. Restliche Kartoffeln einschichten und mit restlichem Käse bestreuen.",
-                "info": null
+                "text": "Aus 2/3 des Teigs eine Kugel formen und auf einer bemehlten Arbeitsfläche rund (32 cm Ø) ausrollen. Die Springform damit auslegen, dabei einen 3–4 cm hohen Rand formen. Die Hälfte der Kartoffeln einschichten, mit Salz würzen und mit etwas Käse bestreuen. Lauch-Apfel-Mischung darauf verteilen und ebenfalls mit Käse bestreuen. Restliche Kartoffeln einschichten und mit restlichem Käse bestreuen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Eier mit der Sahne verrühren, mit Salz und Pfeffer würzen und über die Füllung gießen. Haselnüsse grob hacken und mit dem restlichen Teig zu Streuseln verkneten. Streusel über den Kuchen verteilen und leicht andrücken. Kartoffel-Lauch-Kuchen im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 45 Minuten backen.",
-                "info": null
+                "text": "Eier mit der Sahne verrühren, mit Salz und Pfeffer würzen und über die Füllung gießen. Haselnüsse grob hacken und mit dem restlichen Teig zu Streuseln verkneten. Streusel über den Kuchen verteilen und leicht andrücken. Kartoffel-Lauch-Kuchen im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 45 Minuten backen."
             }
         ],
         "seasonals": [ "Kartoffel", "Apfel", "Porree" ]
@@ -1641,7 +1508,8 @@
             {
                 "name": "Obstessig",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Essig"
             },
             {
                 "name": "Radieschen",
@@ -1651,7 +1519,8 @@
             {
                 "name": "Rapsöl",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Rucola",
@@ -1665,34 +1534,25 @@
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Kartoffeln waschen und im Dämpfeinsatz im geschlossenen Topf ca. 30 Minuten gar dämpfen.",
-                "info": null
+                "text": "Kartoffeln waschen und im Dämpfeinsatz im geschlossenen Topf ca. 30 Minuten gar dämpfen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Zwiebel schälen und fein würfeln. Brühe zum Kochen bringen und Zwiebel dazugeben. Vom Herd nehmen und ca. 5 Minuten ziehen lassen. Essig und Senf unterrühren und Marinade mit Salz und Pfeffer abschmecken. Radieschen waschen, putzen und in Scheiben schneiden. Rucola waschen, putzen und trocken schütteln. Nach Belieben etwas kleiner zupfen. Schnittlauch waschen und in Röllchen schneiden.",
-                "info": null
+                "text": "Inzwischen Zwiebel schälen und fein würfeln. Brühe zum Kochen bringen und Zwiebel dazugeben. Vom Herd nehmen und ca. 5 Minuten ziehen lassen. Essig und Senf unterrühren und Marinade mit Salz und Pfeffer abschmecken. Radieschen waschen, putzen und in Scheiben schneiden. Rucola waschen, putzen und trocken schütteln. Nach Belieben etwas kleiner zupfen. Schnittlauch waschen und in Röllchen schneiden."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Kartoffeln ausdampfen lassen, noch warm pellen und in Scheiben schneiden. Mit der Marinade vermengen und ca. 30 Minuten durchziehen lassen.",
-                "info": null
+                "text": "Kartoffeln ausdampfen lassen, noch warm pellen und in Scheiben schneiden. Mit der Marinade vermengen und ca. 30 Minuten durchziehen lassen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Radieschen, Rucola, Schnittlauch und Öl unter den Salat mengen, nochmal abschmecken und servieren.",
-                "info": null
+                "text": "Radieschen, Rucola, Schnittlauch und Öl unter den Salat mengen, nochmal abschmecken und servieren."
             }
         ],
         "seasonals": ["Kartoffel", "Radieschen", "Rucola"]
@@ -1725,7 +1585,8 @@
             {
                 "name": "Haselnusskerne",
                 "quantity": 50,
-                "unit": "g"
+                "unit": "g",
+                "group": "Haselnuss"
             },
             {
                 "name": "Kartoffel",
@@ -1750,12 +1611,14 @@
             {
                 "name": "Kokosmilch",
                 "quantity": 100,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Kokosnuss"
             },
             {
                 "name": "Naturreis",
                 "quantity": 250,
-                "unit": "g"
+                "unit": "g",
+                "group": "Reis"
             },
             {
                 "name": "Petersilie",
@@ -1765,7 +1628,8 @@
             {
                 "name": "Rapsöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Rote Currypaste",
@@ -1779,40 +1643,29 @@
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Zwiebel und Knoblauch schälen und hacken. Kohlrabi putzen und schälen; die Kohlrabiblätter waschen, trocken schütteln und beiseitelegen. Kohlrabi in mundgerechte Stücke schneiden. Kartoffeln gründlich waschen, ggf. schälen und in etwa 5mm breite Scheiben schneiden.",
-                "info": null
+                "text": "Zwiebel und Knoblauch schälen und hacken. Kohlrabi putzen und schälen; die Kohlrabiblätter waschen, trocken schütteln und beiseitelegen. Kohlrabi in mundgerechte Stücke schneiden. Kartoffeln gründlich waschen, ggf. schälen und in etwa 5mm breite Scheiben schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "1 EL Öl in einem großen Topf erhitzen und Zwiebel, Knoblauch, Kohlrabi und Kartoffeln darin bei mittlerer Hitze 4–5 Minuten dünsten. Currypaste zugeben und weitere 3–4 Minuten anrösten. Apfelsaft, Brühe und Kokosmilch zugießen und abgedeckt 15 Minuten köcheln lassen.",
-                "info": null
+                "text": "1 EL Öl in einem großen Topf erhitzen und Zwiebel, Knoblauch, Kohlrabi und Kartoffeln darin bei mittlerer Hitze 4–5 Minuten dünsten. Currypaste zugeben und weitere 3–4 Minuten anrösten. Apfelsaft, Brühe und Kokosmilch zugießen und abgedeckt 15 Minuten köcheln lassen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Inzwischen 500 ml Wasser mit knapp ½ TL Salz zum Kochen bringen. Natur-Reis hinzugeben und einmal umrühren. Bei kleiner Hitze im geschlossenen Topf 8–10 Minuten köcheln lassen, bis der Reis das Wasser aufgenommen hat. Den Reis im Topf kurz auflockern und einige Minuten im geschlossenen Topf auf der ausgeschalteten Herdplatte nachziehen lassen.",
-                "info": null
+                "text": "Inzwischen 500 ml Wasser mit knapp ½ TL Salz zum Kochen bringen. Natur-Reis hinzugeben und einmal umrühren. Bei kleiner Hitze im geschlossenen Topf 8–10 Minuten köcheln lassen, bis der Reis das Wasser aufgenommen hat. Den Reis im Topf kurz auflockern und einige Minuten im geschlossenen Topf auf der ausgeschalteten Herdplatte nachziehen lassen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Währenddessen Tofu in Würfel schneiden. Restliches Öl in einer Pfanne erhitzen und Tofuwürfel darin bei mittlerer bis starker Hitze rundherum 4–5 Minuten knusprig anbraten. Beiseitegelegte Kohlrabiblätter in Streifen schneiden und mit den Tofuwürfeln zum Curry geben. Curry weitere 5 Minuten garen und mit Salz und Pfeffer würzen.",
-                "info": null
+                "text": "Währenddessen Tofu in Würfel schneiden. Restliches Öl in einer Pfanne erhitzen und Tofuwürfel darin bei mittlerer bis starker Hitze rundherum 4–5 Minuten knusprig anbraten. Beiseitegelegte Kohlrabiblätter in Streifen schneiden und mit den Tofuwürfeln zum Curry geben. Curry weitere 5 Minuten garen und mit Salz und Pfeffer würzen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Apfel waschen, vierteln, entkernen und das Fruchtfleisch in Scheiben schneiden. Kräuter waschen, trocken schütteln und hacken. Apfelscheiben mit Kräutern und Reis vermengen. Haselnüsse grob hacken. Kohlrabi-Tofu-Curry und Kräuter-Apfel-Reis auf 4 Teller verteilen und mit Haselnüssen garniert servieren.",
-                "info": null
+                "text": "Apfel waschen, vierteln, entkernen und das Fruchtfleisch in Scheiben schneiden. Kräuter waschen, trocken schütteln und hacken. Apfelscheiben mit Kräutern und Reis vermengen. Haselnüsse grob hacken. Kohlrabi-Tofu-Curry und Kräuter-Apfel-Reis auf 4 Teller verteilen und mit Haselnüssen garniert servieren."
             } 
         ],
         "seasonals": ["Apfel", "Kohlrabi", "Zwiebel"]
@@ -1838,13 +1691,11 @@
             },
             {
                 "name": "Eier",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Frühlingszwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Joghurt",
@@ -1859,12 +1710,14 @@
             {
                 "name": "Magerquark",
                 "quantity": 350,
-                "unit": "g"
+                "unit": "g",
+                "group": "Quark"
             },
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Petersilie",
@@ -1879,43 +1732,36 @@
             {
                 "name": "Vollkorn-Semmelbrösel",
                 "quantity": 100,
-                "unit": "g"
+                "unit": "g",
+                "group": "Semmelbrösel"
             },
             {
                 "name": "Weizen-Vollkornmehl",
                 "quantity": 60,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Kohlrabi putzen, schälen und in ca. 1 cm dicke Scheiben schneiden. In kochendem Salzwasser 5 Minuten kochen, herausnehmen, kalt abschrecken und trocken tupfen.",
-                "info": null
+                "text": "Kohlrabi putzen, schälen und in ca. 1 cm dicke Scheiben schneiden. In kochendem Salzwasser 5 Minuten kochen, herausnehmen, kalt abschrecken und trocken tupfen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Frühlingszwiebel putzen, waschen und in feine Ringe schneiden. Bärlauch und Petersilie waschen, trocken schütteln und beides fein hacken. Quark mit Joghurt verrühren. Zwiebel und Kräuter untermischen und mit Salz, Pfeffer und Zitronensaft abschmecken.",
-                "info": null
+                "text": "Inzwischen Frühlingszwiebel putzen, waschen und in feine Ringe schneiden. Bärlauch und Petersilie waschen, trocken schütteln und beides fein hacken. Quark mit Joghurt verrühren. Zwiebel und Kräuter untermischen und mit Salz, Pfeffer und Zitronensaft abschmecken."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Mehl auf einen Teller streuen. Eier in einem Teller aufschlagen, verquirlen, salzen und pfeffern. Sesam und Semmelbrösel auf einen Teller geben.",
-                "info": null
+                "text": "Mehl auf einen Teller streuen. Eier in einem Teller aufschlagen, verquirlen, salzen und pfeffern. Sesam und Semmelbrösel auf einen Teller geben."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Kohlrabischeiben erst in Mehl, dann im Ei und in den Bröseln wenden. Eine beschichtete Pfanne erhitzen, mit 1 EL Öl einpinseln und die Hälfte der Kohlrabischeiben von beiden Seiten in je etwa 3 Minuten bei mittlerer Hitze goldbraun braten; warm halten. Die andere Hälfte mit restlichem Öl braten. Kohlrabischnitzel mit dem Quark reichen.",
-                "info": null
+                "text": "Kohlrabischeiben erst in Mehl, dann im Ei und in den Bröseln wenden. Eine beschichtete Pfanne erhitzen, mit 1 EL Öl einpinseln und die Hälfte der Kohlrabischeiben von beiden Seiten in je etwa 3 Minuten bei mittlerer Hitze goldbraun braten; warm halten. Die andere Hälfte mit restlichem Öl braten. Kohlrabischnitzel mit dem Quark reichen."
             }
         ],
         "seasonals": ["Kohlrabi", "Frühlingszwiebel"]
@@ -1938,12 +1784,12 @@
             {
                 "name": "Basmati-Reis",
                 "quantity": 150,
-                "unit": "g"
+                "unit": "g",
+                "group": "Reis"
             },
             {
                 "name": "Chilischote",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Fischsoße",
@@ -1968,7 +1814,8 @@
             {
                 "name": "Kokosmilch",
                 "quantity": 150,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Kokosnuss"
             },
             {
                 "name": "Koriander",
@@ -1988,7 +1835,8 @@
             {
                 "name": "Lachsfilet",
                 "quantity": 400,
-                "unit": "g"
+                "unit": "g",
+                "group": "Lachs"
             },
             {
                 "name": "Sellerie",
@@ -1998,7 +1846,8 @@
             {
                 "name": "Sesamöl",
                 "quantity": 1,
-                "unit": "TL"
+                "unit": "TL",
+                "group": "Öl"
             },
             {
                 "name": "Süßkartoffel",
@@ -2007,34 +1856,25 @@
             },
             {
                 "name": "Zwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Reis in der 2,5-fachen Menge kochendem Salzwasser nach Packungsanweisung etwa 35 Minuten kochen.",
-                "info": null
+                "text": "Reis in der 2,5-fachen Menge kochendem Salzwasser nach Packungsanweisung etwa 35 Minuten kochen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Zwiebel und Knoblauch schälen und in kleine Würfel schneiden. Chilischote längs halbieren, entkernen, waschen und hacken. Ingwer schälen und fein hacken. Süßkartoffeln schälen und in Würfel schneiden. Sellerie putzen, gegebenfalls entfädeln, waschen und klein schneiden. Koriander waschen, trocken schütteln und Blätter abzupfen. Lachsfilet abspülen, trocken tupfen und grob würfeln.",
-                "info": null
+                "text": "Inzwischen Zwiebel und Knoblauch schälen und in kleine Würfel schneiden. Chilischote längs halbieren, entkernen, waschen und hacken. Ingwer schälen und fein hacken. Süßkartoffeln schälen und in Würfel schneiden. Sellerie putzen, gegebenfalls entfädeln, waschen und klein schneiden. Koriander waschen, trocken schütteln und Blätter abzupfen. Lachsfilet abspülen, trocken tupfen und grob würfeln."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Öl in einem Topf erhitzen. Zwiebel, Knoblauch, Ingwer und Chili darin bei mittlerer Hitze 2–3 Minuten andünsten. Gewürze zugeben und mit andünsten. Mit Kokosmilch und Brühe ablöschen und aufkochen lassen.",
-                "info": null
+                "text": "Öl in einem Topf erhitzen. Zwiebel, Knoblauch, Ingwer und Chili darin bei mittlerer Hitze 2–3 Minuten andünsten. Gewürze zugeben und mit andünsten. Mit Kokosmilch und Brühe ablöschen und aufkochen lassen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Sellerie und Süßkartoffelwürfel dazugeben und bei kleiner Hitze 10 Minuten garen. Lachs hinzufügen und weitere 4–5 Minuten garen. Kokos-Curry mit Fischsauce würzen und mit Reis und Koriander servieren.",
-                "info": null
+                "text": "Sellerie und Süßkartoffelwürfel dazugeben und bei kleiner Hitze 10 Minuten garen. Lachs hinzufügen und weitere 4–5 Minuten garen. Kokos-Curry mit Fischsauce würzen und mit Reis und Koriander servieren."
             }
         ],
         "seasonals": ["Süßkartoffel", "Zwiebel", "Sellerie"]
@@ -2056,7 +1896,8 @@
             {
                 "name": "Apfelessig",
                 "quantity": 6,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Essig"
             },
             {
                 "name": "Brunnenkresse",
@@ -2081,17 +1922,18 @@
             {
                 "name": "Lachskotelett",
                 "quantity": 400,
-                "unit": "g"
+                "unit": "g",
+                "group": "Lachs"
             },
             {
                 "name": "Olivenöl",
                 "quantity": 8,
-                "unit": "TL"
+                "unit": "TL",
+                "group": "Öl"
             },
             {
                 "name": "Schalotte",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Senf",
@@ -2102,39 +1944,27 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Schalotte schälen, fein würfeln. In ein feines Sieb geben und mit kochendem Wasser überbrühen.",
-                "info": null
+                "text": "Schalotte schälen, fein würfeln. In ein feines Sieb geben und mit kochendem Wasser überbrühen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Kohlrabi schälen und putzen, Fenchel waschen und putzen. Beides in kleine Würfel schneiden.",
-                "info": null
+                "text": "Kohlrabi schälen und putzen, Fenchel waschen und putzen. Beides in kleine Würfel schneiden."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Brunnenkresse waschen und trockenschütteln, nach Belieben mundgerecht zerteilen.",
-                "info": null
+                "text": "Brunnenkresse waschen und trockenschütteln, nach Belieben mundgerecht zerteilen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Lachskoteletts abspülen, trockentupfen, mit Pfeffer würzen.",
-                "info": null
+                "text": "Lachskoteletts abspülen, trockentupfen, mit Pfeffer würzen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "2 TL Öl in einer beschichteten Pfanne erhitzen. Lachskoteletts darin von jeder Seite 3-4 Minuten braten und leicht salzen.",
-                "info": null
+                "text": "2 TL Öl in einer beschichteten Pfanne erhitzen. Lachskoteletts darin von jeder Seite 3-4 Minuten braten und leicht salzen."
             },
             {
                 "order": 6,
-                "title": null,
-                "text": "Essig, Senf, Honig und restliches Öl in einer kleinen Schüssel verrühren. Kohlrabi, Fenchel, Schalotte und Brunnenkresse mit der Sauce mischen. Mit den Lachskoteletts anrichten.",
-                "info": null
+                "text": "Essig, Senf, Honig und restliches Öl in einer kleinen Schüssel verrühren. Kohlrabi, Fenchel, Schalotte und Brunnenkresse mit der Sauce mischen. Mit den Lachskoteletts anrichten."
             } 
         ],
         "seasonals": ["Zwiebel", "Kohlrabi", "Fenchel"]
@@ -2162,7 +1992,8 @@
             {
                 "name": "Hafermilch",
                 "quantity": 200,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Milch"
             },
             {
                 "name": "Honig",
@@ -2180,7 +2011,7 @@
                 "unit": "g"
             },
             {
-                "name": "Kresse",
+                "name": "Gartenkresse",
                 "quantity": 1,
                 "unit": "Kästchen"
             },
@@ -2192,7 +2023,8 @@
             {
                 "name": "Leinöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Muskatnuss",
@@ -2207,12 +2039,12 @@
             {
                 "name": "Olivenöl",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Pastinake",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Quark",
@@ -2223,33 +2055,24 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Möhren putzen, dabei etwas Grün stehen lassen, waschen und je nach Größe halbieren. Möhren in eine Auflaufform geben, mit Honig und Olivenöl beträufeln und mit Salz, Pfeffer sowie Kräuter würzen. Möhren im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) ca. 25 Minuten backen. Dabei gelegentlich wenden.",
-                "info": null
+                "text": "Möhren putzen, dabei etwas Grün stehen lassen, waschen und je nach Größe halbieren. Möhren in eine Auflaufform geben, mit Honig und Olivenöl beträufeln und mit Salz, Pfeffer sowie Kräuter würzen. Möhren im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) ca. 25 Minuten backen. Dabei gelegentlich wenden."
             },
             {
                 "order": 2,
-                "title": null,
                 "text": "Währenddessen Kartoffeln und Pastinaken putzen, schälen, waschen, klein schneiden und zusammen in kochendem Salzwasser ca. 15–20 Minuten garen.",
                 "info": "Am besten eigenen sich dazu mehligkochende Kartoffeln"
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Nebenher Quark mit Joghurt und 1–2 EL Wasser glatt rühren. Kresse vom Beet schneiden. 3 EL Leinöl untermischen und Quark mit Salz und Pfeffer würzen. Quark in eine Schüssel füllen, mit Kresse bestreuen und mit restlichem Leinöl beträufeln.",
-                "info": null
+                "text": "Nebenher Quark mit Joghurt und 1–2 EL Wasser glatt rühren. Kresse vom Beet schneiden. 3 EL Leinöl untermischen und Quark mit Salz und Pfeffer würzen. Quark in eine Schüssel füllen, mit Kresse bestreuen und mit restlichem Leinöl beträufeln."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Dann Kartoffeln und Pastinaken abgießen und abtropfen lassen. Beides zerstampfen und Haferdrink sowie Butter untermengen. Mit Salz, Pfeffer und Muskat würzen.",
-                "info": null
+                "text": "Dann Kartoffeln und Pastinaken abgießen und abtropfen lassen. Beides zerstampfen und Hafermilch sowie Butter untermengen. Mit Salz, Pfeffer und Muskat würzen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Anschließend Möhren aus dem Backofen nehmen. Kartoffel-Pastinaken-Püree auf 4 Teller geben, Möhren auf dem Mus anrichten, mit den Leinsamen bestreuen und mit dem Leinölquark servieren.",
-                "info": null
+                "text": "Anschließend Möhren aus dem Backofen nehmen. Kartoffel-Pastinaken-Püree auf 4 Teller geben, Möhren auf dem Mus anrichten, mit den Leinsamen bestreuen und mit dem Leinölquark servieren."
             } 
         ],
         "seasonals": ["Möhre", "Pastinake", "Kartoffel"]
@@ -2264,8 +2087,7 @@
         "ingredients": [
             {
                 "name": "Eier",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Fenchel",
@@ -2294,8 +2116,7 @@
             },
             {
                 "name": "Porree",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Ricotta",
@@ -2314,28 +2135,21 @@
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Den Fenchel waschen, harte Stiele und Strunk entfernen und in feine Scheiben schneiden. Den Lauch längs vierteln, waschen und in ca. 6 cm lange Streifen schneiden. Die Nudeln in kochendem Salzwasser ca. 8 Minuten bissfest kochen. Nach ca. 5 Minuten den Fenchel dazu geben und in der letzten Minute den Lauch ergänzen. Die Nudelmischung abgießen und abtropfen lassen.",
-                "info": null
+                "text": "Den Fenchel waschen, harte Stiele und Strunk entfernen und in feine Scheiben schneiden. Den Lauch längs vierteln, waschen und in ca. 6 cm lange Streifen schneiden. Die Nudeln in kochendem Salzwasser ca. 8 Minuten bissfest kochen. Nach ca. 5 Minuten den Fenchel dazu geben und in der letzten Minute den Lauch ergänzen. Die Nudelmischung abgießen und abtropfen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Den Backofen auf 200°C Ober- und Unterhitze vorheizen. Eine Auflaufform mit Öl auspinseln.",
-                "info": null
+                "text": "Den Backofen auf 200°C Ober- und Unterhitze vorheizen. Eine Auflaufform mit Öl auspinseln."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Den Zitronensaft und -abrieb mit dem Ricotta, der Milch und den Eiern verquirlen. Den Thymian und Oregano abbrausen, trocken schütteln, die Blätter abstreifen, hacken und unterrühren. Mit Salz und Pfeffer kräftig würzen. Die Gemüsenudeln in die Form geben und die Eiermilch darüber gießen. Den Feta darauf krümeln und mit den Pinienkernen bestreuen. Im Ofen ca. 30 Minuten gratinieren.",
-                "info": null
+                "text": "Den Zitronensaft und -abrieb mit dem Ricotta, der Milch und den Eiern verquirlen. Den Thymian und Oregano abbrausen, trocken schütteln, die Blätter abstreifen, hacken und unterrühren. Mit Salz und Pfeffer kräftig würzen. Die Gemüsenudeln in die Form geben und die Eiermilch darüber gießen. Den Feta darauf krümeln und mit den Pinienkernen bestreuen. Im Ofen ca. 30 Minuten gratinieren."
             }
         ],
         "seasonals": ["Porree", "Fenchel"]
@@ -2372,8 +2186,7 @@
             },
             {
                 "name": "Frühlingszwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Gartenkresse",
@@ -2388,7 +2201,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Radieschen",
@@ -2402,40 +2216,29 @@
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Brokkoli putzen, waschen, in mundgerechte Röschen schneiden und mit restlichem Olivenöl, Salz und Pfeffer mischen. Brokkoliröschen zu den Kartoffeln geben und in weitere 15 Minuten backen.",
-                "info": null
+                "text": "Brokkoli putzen, waschen, in mundgerechte Röschen schneiden und mit restlichem Olivenöl, Salz und Pfeffer mischen. Brokkoliröschen zu den Kartoffeln geben und in weitere 15 Minuten backen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Kresse vom Beet schneiden und mit Zitronensaft und Cashewmus mit einem Stabmixer pürieren; dabei nach und nach Wasser zugießen, bis die Sauce eine cremige Konsistenz hat. Mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen.",
-                "info": null
+                "text": "Inzwischen Kresse vom Beet schneiden und mit Zitronensaft und Cashewmus mit einem Stabmixer pürieren; dabei nach und nach Wasser zugießen, bis die Sauce eine cremige Konsistenz hat. Mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Kartoffeln gründlich abbürsten, waschen und halbieren. Rosmarin waschen, trocken schütteln und Nadeln abzupfen. Alles mit 2 EL Olivenöl, Salz und Pfeffer mischen. Kartoffeln auf ein mit Backpapier ausgelegtes Backblech geben und im vorgeheizten Backofen bei 200°C (Umluft: 180°C; Gas: Stufe 3) etwa 30 Minuten backen.",
-                "info": null
+                "text": "Kartoffeln gründlich abbürsten, waschen und halbieren. Rosmarin waschen, trocken schütteln und Nadeln abzupfen. Alles mit 2 EL Olivenöl, Salz und Pfeffer mischen. Kartoffeln auf ein mit Backpapier ausgelegtes Backblech geben und im vorgeheizten Backofen bei 200°C (Umluft: 180°C; Gas: Stufe 3) etwa 30 Minuten backen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Kartoffeln und Brokkoli aus dem Ofen nehmen und auf Tellern anrichten. Cashewsauce darauf verteilen und mit Cashewkernen, Radieschen und Frühlingszwiebeln anrichten.",
-                "info": null
+                "text": "Kartoffeln und Brokkoli aus dem Ofen nehmen und auf Tellern anrichten. Cashewsauce darauf verteilen und mit Cashewkernen, Radieschen und Frühlingszwiebeln anrichten."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Währenddessen Cashewkerne in einer Pfanne 3 Minuten bei mittlerer Hitze anrösten, sodass sie leicht gebräunt sind. Herausnehmen und beiseitestellen. Radieschen putzen, waschen und in feine Stifte schneiden. Frühlingszwiebeln putzen, waschen und in Ringe schneiden.",
-                "info": null
+                "text": "Währenddessen Cashewkerne in einer Pfanne 3 Minuten bei mittlerer Hitze anrösten, sodass sie leicht gebräunt sind. Herausnehmen und beiseitestellen. Radieschen putzen, waschen und in feine Stifte schneiden. Frühlingszwiebeln putzen, waschen und in Ringe schneiden."
             }
         ],
         "seasonals": ["Brokkoli", "Frühlingszwiebel", "Kartoffel", "Radieschen"]
@@ -2462,7 +2265,8 @@
             {
                 "name": "Hartkäse",
                 "quantity": 100,
-                "unit": "g"
+                "unit": "g",
+                "group": "Par"
             },
             {
                 "name": "Knoblauch",
@@ -2471,13 +2275,13 @@
             },
             {
                 "name": "Möhre",
-                "quantity": 3,
-                "unit": null
+                "quantity": 3
             },
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Oregano",
@@ -2522,44 +2326,34 @@
             {
                 "name": "Vollkornnudeln",
                 "quantity": 320,
-                "unit": "g"
+                "unit": "g",
+                "group": "Pasta"
             },
             {
                 "name": "Zwiebel",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Pilze putzen und klein schneiden. Zwiebeln und Knoblauch schälen und getrennt in feine Würfel schneiden. Möhren waschen, putzen und grob raspeln. Sellerie waschen und klein schneiden.",
-                "info": null
+                "text": "Pilze putzen und klein schneiden. Zwiebeln und Knoblauch schälen und getrennt in feine Würfel schneiden. Möhren waschen, putzen und grob raspeln. Sellerie waschen und klein schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Linsen in einem Sieb abspülen. Linsen in einen kleinen Topf geben und in der doppelten Menge Wasser nach Packungsanleitung garen.",
-                "info": null
+                "text": "Linsen in einem Sieb abspülen. Linsen in einen kleinen Topf geben und in der doppelten Menge Wasser nach Packungsanleitung garen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Inzwischen Öl in einem großen Topf erhitzen. Pilze und Zwiebeln darin bei starker Hitze 3 Minuten anbraten. Möhren und Sellerie zugeben und weitere 3 Minuten braten. Hitze reduzieren. Mit Rotwein ablöschen, Knoblauch und Tomatenmark zugeben und bei mittlerer Hitze 1–2 anrösten. Linsen und passierte Tomaten zur Sauce geben, umrühren und weitere 5–8 Minuten offen ziehen lassen.",
-                "info": null
+                "text": "Inzwischen Öl in einem großen Topf erhitzen. Pilze und Zwiebeln darin bei starker Hitze 3 Minuten anbraten. Möhren und Sellerie zugeben und weitere 3 Minuten braten. Hitze reduzieren. Mit Rotwein ablöschen, Knoblauch und Tomatenmark zugeben und bei mittlerer Hitze 1–2 anrösten. Linsen und passierte Tomaten zur Sauce geben, umrühren und weitere 5–8 Minuten offen ziehen lassen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "In der Zwischenzeit Pasta nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen. Käse reiben. Kräuter waschen, trocken schütteln und Blätter bzw. Nadeln fein hacken. Kräuter in die Linsen-Bolognese geben und mit Salz und Pfeffer abschmecken.",
-                "info": null
+                "text": "In der Zwischenzeit Pasta nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen. Käse reiben. Kräuter waschen, trocken schütteln und Blätter bzw. Nadeln fein hacken. Kräuter in die Linsen-Bolognese geben und mit Salz und Pfeffer abschmecken."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen.",
-                "info": null
+                "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen."
             }
         ],
         "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
@@ -2581,7 +2375,6 @@
             {
                 "name": "Apfel",
                 "quantity": 0.5,
-                "unit": null
             },
             {
                 "name": "Butter",
@@ -2590,8 +2383,7 @@
             },
             {
                 "name": "Eier",
-                "quantity": 3,
-                "unit": null
+                "quantity": 3
             },
             {
                 "name": "Feta",
@@ -2600,8 +2392,7 @@
             },
             {
                 "name": "Frühlingszwiebel",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Joghurt",
@@ -2611,7 +2402,8 @@
             {
                 "name": "Magerquark",
                 "quantity": 100,
-                "unit": "g"
+                "unit": "g",
+                "group": "Quark"
             },
             {
                 "name": "Radieschen",
@@ -2621,27 +2413,22 @@
             {
                 "name": "Weizen-Vollkornmehl",
                 "quantity": 250,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen.",
-                "info": null
+                "text": "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen.",
-                "info": null
+                "text": "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip ",
-                "info": null
+                "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip servieren."
             }
         ],
         "seasonals": ["Apfel", "Frühlingszwiebel", "Radieschen"]
@@ -2668,7 +2455,8 @@
             {
                 "name": "Dinkel-Vollkornmehl",
                 "quantity": 2.5,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Mehl"
             },
             {
                 "name": "Kartoffel",
@@ -2688,25 +2476,21 @@
             {
                 "name": "Schlagsahne",
                 "quantity": 200,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Sahne"
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Den Lauch der Länge nach einschneiden, waschen, putzen, trocken schütteln und in Ringe schneiden. In kochendem Salzwasser 3–4 Minuten garen (blanchieren), herausnehmen, kalt abschrecken und gut abtropfen lassen.",
-                "info": null
+                "text": "Den Lauch der Länge nach einschneiden, waschen, putzen, trocken schütteln und in Ringe schneiden. In kochendem Salzwasser 3–4 Minuten garen (blanchieren), herausnehmen, kalt abschrecken und gut abtropfen lassen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "In einem weiteren Topf die Butter zerlassen, mit dem Mehl bestauben, kurz Farbe nehmen lassen und mit 600 ml Lauchfond ablöschen. Mit einem Schneebesen kräftig verrühren, damit sich keine Klumpen bilden und die Sahne angießen. Mit Salz, Pfeffer und Muskat würzen.",
-                "info": null
+                "text": "In einem weiteren Topf die Butter zerlassen, mit dem Mehl bestauben, kurz Farbe nehmen lassen und mit 600 ml Lauchfond ablöschen. Mit einem Schneebesen kräftig verrühren, damit sich keine Klumpen bilden und die Sahne angießen. Mit Salz, Pfeffer und Muskat würzen."
             },
             {
                 "order": 3,
-                "title": null,
                 "text": "Die Kartoffeln schälen, in kleine Würfel schneiden und ca. 15 Minuten in der Suppe gar köcheln. Den Lauch und die gehackte Petersilie wieder dazu geben und die abgeschmeckte Suppe servieren.",
                 "info": "Am Besten eigenen sich hierfür mehligkochende Kartoffeln"
             }
@@ -2731,7 +2515,8 @@
             {
                 "name": "Balsamessig",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Essig"
             },
             {
                 "name": "Feta",
@@ -2751,7 +2536,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Radieschen",
@@ -2766,7 +2552,8 @@
             {
                 "name": "Walnusskerne",
                 "quantity": 80,
-                "unit": "g"
+                "unit": "g",
+                "group": "Walnuss"
             },
             {
                 "name": "Zimt",
@@ -2777,21 +2564,15 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Rote Bete putzen, mit geölten Händen oder Einweghandschuhen schälen und in mundgerechte Stücke schneiden. Mit Öl mischen und mit Salz, Pfeffer, Kardamom, Zimt und Kreuzkümmel würzen. In eine Auflaufform geben und im vorgeheizten Backofen bei 200 °C (Umluft: 180 °C; Gas: Stufe 3) 35–40 Minuten backen.",
-                "info": null
+                "text": "Rote Bete putzen, mit geölten Händen oder Einweghandschuhen schälen und in mundgerechte Stücke schneiden. Mit Öl mischen und mit Salz, Pfeffer, Kardamom, Zimt und Kreuzkümmel würzen. In eine Auflaufform geben und im vorgeheizten Backofen bei 200 °C (Umluft: 180 °C; Gas: Stufe 3) 35–40 Minuten backen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen Walnüsse grob hacken. Radieschen putzen, waschen und je nach Größe ganz lassen oder halbieren bzw. vierteln. Feta zerbröckeln. Kräuter waschen, trocken schütteln und klein hacken.",
-                "info": null
+                "text": "Inzwischen Walnüsse grob hacken. Radieschen putzen, waschen und je nach Größe ganz lassen oder halbieren bzw. vierteln. Feta zerbröckeln. Kräuter waschen, trocken schütteln und klein hacken."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Rote Bete aus dem Ofen nehmen und mit Balsamessig beträufeln. Mit Nüssen, Feta, Radieschen und Kräutern bestreut reichen.",
-                "info": null
+                "text": "Rote Bete aus dem Ofen nehmen und mit Balsamessig beträufeln. Mit Nüssen, Feta, Radieschen und Kräutern bestreut reichen."
             }
         ],
         "seasonals": ["Radieschen", "Rote Bete"]
@@ -2818,12 +2599,12 @@
             {
                 "name": "Pistazienkerne",
                 "quantity": 30,
-                "unit": "g"
+                "unit": "g",
+                "group": "Pistazie"
             },
             {
                 "name": "Orange",
-                "quantity": 0.5,
-                "unit": null
+                "quantity": 0.5
             },
             {
                 "name": "Möhre",
@@ -2833,7 +2614,8 @@
             {
                 "name": "Gemahlene Haselnüsse",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Haselnuss"
             },
             {
                 "name": "Frischkäse",
@@ -2842,13 +2624,13 @@
             },
             {
                 "name": "Eier",
-                "quantity": 4,
-                "unit": null
+                "quantity": 4
             },
             {
                 "name": "Dinkelmehl",
                 "quantity": 200,
-                "unit": "g"
+                "unit": "g",
+                "group": "Mehl"
             },
             {
                 "name": "Butter",
@@ -2864,27 +2646,19 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Möhren putzen, waschen und fein raspeln. Orange heiß abwaschen, trocken reiben, 1 TL Schale abreiben und Saft auspressen. Eier trennen und Eiweiße steif schlagen. Zucker mit Butter und Eigelb schaumig schlagen und 2 EL Orangensaft sowie Orangenabrieb unterheben.",
-                "info": null
+                "text": "Möhren putzen, waschen und fein raspeln. Orange heiß abwaschen, trocken reiben, 1 TL Schale abreiben und Saft auspressen. Eier trennen und Eiweiße steif schlagen. Zucker mit Butter und Eigelb schaumig schlagen und 2 EL Orangensaft sowie Orangenabrieb unterheben."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Mehl, gemahlene Haselnüsse, Backpulver und Salz vermengen und unter die Buttermasse mischen. Zuletzt Möhrenraspel und Eischnee vorsichtig unterheben.",
-                "info": null
+                "text": "Mehl, gemahlene Haselnüsse, Backpulver und Salz vermengen und unter die Buttermasse mischen. Zuletzt Möhrenraspel und Eischnee vorsichtig unterheben."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Teig in die gefettete Springform geben und glatt streichen. Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) 60 Minuten backen (Stäbchenprobe).  Anschließend auf einem Kuchengitter auskühlen lassen.",
-                "info": null
+                "text": "Teig in die gefettete Springform geben und glatt streichen. Im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) 60 Minuten backen (Stäbchenprobe).  Anschließend auf einem Kuchengitter auskühlen lassen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Inzwischen Frischkäse mit 1 EL Orangensaft cremig rühren. Pistazien grob hacken. Die ausgekühlte Rüblitorte mit der Frischkäsecreme bestreichen, mit Pistazien bestreuen und sofort servieren.",
-                "info": null
+                "text": "Inzwischen Frischkäse mit 1 EL Orangensaft cremig rühren. Pistazien grob hacken. Die ausgekühlte Rüblitorte mit der Frischkäsecreme bestreichen, mit Pistazien bestreuen und sofort servieren."
             }
         ],
         "seasonals": ["Möhre"]
@@ -2905,8 +2679,7 @@
         "ingredients": [
             {
                 "name": "Aubergine",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Basilikum",
@@ -2915,8 +2688,7 @@
             },
             {
                 "name": "Ciabatta",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Lollo Rosso",
@@ -2926,7 +2698,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Paprika",
@@ -2935,28 +2708,21 @@
             },
             {
                 "name": "Zucchini",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Die Auberginen und Zucchinis waschen und in Scheiben schneiden. Die Paprika ebenfalls waschen, halbieren, von den Kernen und weißen Innenwänden befreien und in Streifen schneiden. Den Salat verlesen, waschen, trocken schleudern und in mundgerechte Stücke zupfen.",
-                "info": null
+                "text": "Die Auberginen und Zucchinis waschen und in Scheiben schneiden. Die Paprika ebenfalls waschen, halbieren, von den Kernen und weißen Innenwänden befreien und in Streifen schneiden. Den Salat verlesen, waschen, trocken schleudern und in mundgerechte Stücke zupfen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "In einer Grillpfanne 2 EL Öl erhitzen und das Gemüse nacheinander 3-5 Minuten unter Wenden grillen. Herausnehmen, auf einem Küchenkrepp abtropfen lassen und mit Salz und Pfeffer würzen.",
-                "info": null
+                "text": "In einer Grillpfanne 2 EL Öl erhitzen und das Gemüse nacheinander 3-5 Minuten unter Wenden grillen. Herausnehmen, auf einem Küchenkrepp abtropfen lassen und mit Salz und Pfeffer würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Die Ciabatta im vorgeheizten Ofen 3-4 Minuten anrösten. Herausnehmen, kurz auskühlen lassen, halbieren, aufschneiden und die eine Hälfte mit dem Salat und dem gegrilltem Gemüse belegen, mit Basilikumblättern bestreuen und mit etwas Olivenöl beträufeln. Die 2 Brothälfte daraufklappen und in Servietten gewickelt servieren.",
-                "info": null
+                "text": "Die Ciabatta im vorgeheizten Ofen 3-4 Minuten anrösten. Herausnehmen, kurz auskühlen lassen, halbieren, aufschneiden und die eine Hälfte mit dem Salat und dem gegrilltem Gemüse belegen, mit Basilikumblättern bestreuen und mit etwas Olivenöl beträufeln. Die 2 Brothälfte daraufklappen und in Servietten gewickelt servieren."
             }
         ],
         "seasonals": ["Aubergine", "Lollo Rosso", "Paprika", "Zucchini"]
@@ -2993,8 +2759,7 @@
             },
             {
                 "name": "Gurke",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Reisnudeln",
@@ -3004,17 +2769,16 @@
             {
                 "name": "Reisessig",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Essig"
             },
             {
                 "name": "Radieschen",
-                "quantity": 6,
-                "unit": null
+                "quantity": 6
             },
             {
                 "name": "Möhre",
-                "quantity": 4,
-                "unit": null
+                "quantity": 4
             },
             {
                 "name": "Mungobohnensprossen",
@@ -3028,28 +2792,24 @@
             },
             {
                 "name": "Mango",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Limette",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Erdnusskerne",
                 "quantity": 30,
-                "unit": null
+                "group": "Erdnuss"
             },
             {
                 "name": "Chilischote",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Avocado",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Agavendicksaft",
@@ -3060,33 +2820,23 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Alle vorbereiteten Zutaten in 4 Schalen verteilen, Kräuter und Dressing unterheben. Erdnüsse grob hacken, Limette vierteln, ebenfalls portionsweise in die Schalen geben und mit Gurkensalat servieren.",
-                "info": null
+                "text": "Alle vorbereiteten Zutaten in 4 Schalen verteilen, Kräuter und Dressing unterheben. Erdnüsse grob hacken, Limette vierteln, ebenfalls portionsweise in die Schalen geben und mit Gurkensalat servieren."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Für den Gurkensalat Gurke waschen und in sehr feine Scheiben schneiden. Wasser mit den Händen aus der Gurke drücken. 2 TL Agavendicksaft, 1 EL Sojasauce und 2 EL Reisessig mischen, Gurke und Sesam unterheben. In 4 kleine Schüsseln geben.",
-                "info": null
+                "text": "Für den Gurkensalat Gurke waschen und in sehr feine Scheiben schneiden. Wasser mit den Händen aus der Gurke drücken. 2 TL Agavendicksaft, 1 EL Sojasauce und 2 EL Reisessig mischen, Gurke und Sesam unterheben. In 4 kleine Schüsseln geben."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Minze waschen, trocken schütteln, Blätter grob hacken. Für das Dressing Chilischote längs halbieren, entkernen, waschen, hacken und mit restlichem Essig, Agavendicksaft und restlicher Sojasauce mischen.",
-                "info": null
+                "text": "Minze waschen, trocken schütteln, Blätter grob hacken. Für das Dressing Chilischote längs halbieren, entkernen, waschen, hacken und mit restlichem Essig, Agavendicksaft und restlicher Sojasauce mischen."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Möhren schälen und in feine Stifte schneiden. Mango schälen, Fruchtfleisch vom Kern lösen und würfeln. Avocado halbieren, entkernen, Fruchtfleisch aus der Schale heben, in Würfel schneiden. Sprossen und Limette waschen und trocknen.",
-                "info": null
+                "text": "Möhren schälen und in feine Stifte schneiden. Mango schälen, Fruchtfleisch vom Kern lösen und würfeln. Avocado halbieren, entkernen, Fruchtfleisch aus der Schale heben, in Würfel schneiden. Sprossen und Limette waschen und trocknen."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Nudeln nach Packungsanleitung in kochendem Salzwasser bissfest garen; mit kaltem Wasser ab- schrecken. Inzwischen Spinat und Radieschen putzen und waschen, Radieschen in Scheiben schneiden.",
-                "info": null
+                "text": "Nudeln nach Packungsanleitung in kochendem Salzwasser bissfest garen; mit kaltem Wasser ab- schrecken. Inzwischen Spinat und Radieschen putzen und waschen, Radieschen in Scheiben schneiden."
             } 
         ],
         "seasonals": ["Möhre", "Radieschen", "Gurke", "Spinat"]
@@ -3113,7 +2863,8 @@
             {
                 "name": "Weinessig",
                 "quantity": 4,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Essig"
             },
             {
                 "name": "Sonnenblumenkerne",
@@ -3133,7 +2884,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 2,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Kohlrabi",
@@ -3153,7 +2905,8 @@
             {
                 "name": "Grüner Spargel",
                 "quantity": 500,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spargel"
             },
             {
                 "name": "Gemüsebrühe",
@@ -3162,8 +2915,7 @@
             },
             {
                 "name": "Eier",
-                "quantity": 4,
-                "unit": null
+                "quantity": 4
             },
             {
                 "name": "Beluga-Linsen",
@@ -3174,27 +2926,19 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Linsen waschen und mit der doppelten Menge kochendem Wasser bei kleiner Hitze zugedeckt etwa 25 Minuten garen.",
-                "info": null
+                "text": "Linsen waschen und mit der doppelten Menge kochendem Wasser bei kleiner Hitze zugedeckt etwa 25 Minuten garen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Inzwischen das untere Drittel vom Spargel schälen, holzige Enden abschneiden, die Stangen längs halbieren. Spargel für 4–5 Minuten in kochendes Salzwasser geben. Dann kalt abschrecken und abtropfen lassen. Kohlrabi putzen, schälen, halbieren und in schmale Spalten schneiden, zarte Blätter klein schneiden und beiseitelegen.",
-                "info": null
+                "text": "Inzwischen das untere Drittel vom Spargel schälen, holzige Enden abschneiden, die Stangen längs halbieren. Spargel für 4–5 Minuten in kochendes Salzwasser geben. Dann kalt abschrecken und abtropfen lassen. Kohlrabi putzen, schälen, halbieren und in schmale Spalten schneiden, zarte Blätter klein schneiden und beiseitelegen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Parmesan grob raspeln. Für das Dressing Zitronensaft, Senf, Honig, Öl und Gemüsebrühe verquirlen und mit Salz sowie Pfeffer würzen. Samen und Kerne in einer kleinen Pfanne ohne Fett bei mittlerer Hitze etwa 4–5 Minuten rösten, bis sie duften.",
-                "info": null
+                "text": "Hartkäse grob raspeln. Für das Dressing Zitronensaft, Senf, Honig, Öl und Gemüsebrühe verquirlen und mit Salz sowie Pfeffer würzen. Samen und Kerne in einer kleinen Pfanne ohne Fett bei mittlerer Hitze etwa 4–5 Minuten rösten, bis sie duften."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Etwa 1 l Wasser mit Salz und Essig zum Kochen bringen. Eier nacheinander einzeln in eine Suppenkelle aufschlagen und vorsichtig in den Sud gleiten lassen. In etwa 4–5 Minuten darin bei kleiner Hitze gar ziehen lassen. Dann mit einer Schaumkelle aus dem Sud heben und abgetropft auf dem Gemüse mit Linsen und Kohlrabiblättern anrichten. Mit Samen, Kernen und Parmesan bestreuen und mit dem Dressing beträufeln.",
-                "info": null
+                "text": "Etwa 1 l Wasser mit Salz und Essig zum Kochen bringen. Eier nacheinander einzeln in eine Suppenkelle aufschlagen und vorsichtig in den Sud gleiten lassen. In etwa 4–5 Minuten darin bei kleiner Hitze gar ziehen lassen. Dann mit einer Schaumkelle aus dem Sud heben und abgetropft auf dem Gemüse mit Linsen und Kohlrabiblättern anrichten. Mit Samen, Kernen und Parmesan bestreuen und mit dem Dressing beträufeln."
             } 
         ],
         "seasonals": ["Spargel", "Kohlrabi"]
@@ -3221,13 +2965,13 @@
             },
             {
                 "name": "Frühlingszwiebel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Grüner Spargel",
                 "quantity": 250,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spargel"
             },
             {
                 "name": "Kirschtomaten",
@@ -3236,8 +2980,7 @@
             },
             {
                 "name": "Möhre",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Olivenöl",
@@ -3255,40 +2998,32 @@
                 "unit": "EL"
             },
             {
-                "name": "Spargel",
+                "name": "Weißer Spargel",
                 "quantity": 250,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spargel"
             },
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             }
         ],
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Spargel schälen und die unteren Enden abschneiden. Grüner Spargel waschen und ebenfalls die holzigen Enden abschneiden. Spargel in Stücke schneiden. Möhren putzen, schälen und in Stifte schneiden.",
-                "info": null
+                "text": "Spargel schälen und die unteren Enden abschneiden. Grüner Spargel waschen und ebenfalls die holzigen Enden abschneiden. Spargel in Stücke schneiden. Möhren putzen, schälen und in Stifte schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "Öl in einer Pfanne erhitzen, Spargel und Möhren darin bei mittlerer Hitze 5 Minuten anbraten. Sonnenblumenkerne zu geben und 3 Minuten anrösten. Mit Zitronensaft ablöschen und Spargel-Möhren-Mix mit Salz und Pfeffer würzen. Anschließend vom Herd nehmen und abkühlen lassen.",
-                "info": null
+                "text": "Öl in einer Pfanne erhitzen, Spargel und Möhren darin bei mittlerer Hitze 5 Minuten anbraten. Sonnenblumenkerne zu geben und 3 Minuten anrösten. Mit Zitronensaft ablöschen und Spargel-Möhren-Mix mit Salz und Pfeffer würzen. Anschließend vom Herd nehmen und abkühlen lassen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Nebenher Tomaten waschen und vierteln. Rucola waschen und trocken schütteln. Frühlingszwiebeln putzen, waschen und in Stücke schneiden.",
-                "info": null
+                "text": "Nebenher Tomaten waschen und vierteln. Rucola waschen und trocken schütteln. Frühlingszwiebeln putzen, waschen und in Stücke schneiden."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Spargel mit Tomaten, Rucola und Frühlingszwiebeln vermengen, auf Tellern anrichten und mit je einer Kugel Burrata servieren.",
-                "info": null
+                "text": "Spargel mit Tomaten, Rucola und Frühlingszwiebeln vermengen, auf Tellern anrichten und mit je einer Kugel Burrata servieren."
             } 
         ],
         "seasonals": ["Spargel", "Möhre", "Frühlingszwiebel", "Rucola", "Tomate"]
@@ -3309,18 +3044,19 @@
         "ingredients": [
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Spaghetti",
                 "quantity": 400,
-                "unit": "g"
+                "unit": "g",
+                "group": "Linguine"
             },
             {
                 "name": "Olivenöl",
                 "quantity": 6,
-                "unit": "TL"
+                "unit": "TL",
+                "group": "Öl"
             },
             {
                 "name": "Knoblauch",
@@ -3330,7 +3066,8 @@
             {
                 "name": "Grüner Spargel",
                 "quantity": 300,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spargel"
             },
             {
                 "name": "Feta",
@@ -3341,33 +3078,23 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen.",
-                "info": null
+                "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen.",
-                "info": null
+                "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken.",
-                "info": null
+                "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten.",
-                "info": null
+                "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten."
             },
             {
                 "order": 5,
-                "title": null,
-                "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken.",
-                "info": null
+                "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken."
             }
         ],
         "seasonals": ["Spargel"]
@@ -3419,13 +3146,13 @@
             },
             {
                 "name": "Möhre",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Rapsöl",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Sojasoße",
@@ -3434,8 +3161,7 @@
             },
             {
                 "name": "Wan-Tan-Teigblätter",
-                "quantity": 25,
-                "unit": null
+                "quantity": 25
             },
             {
                 "name": "Zuckerschoten",
@@ -3446,27 +3172,19 @@
         "preparations": [
             {
                 "order": 1,
-                "title": null,
-                "text": "Pilze mit heißem Wasser übergießen und 2–3 Stunden einweichen lassen. Anschließend Pilze in feine Streifen schneiden.",
-                "info": null
+                "text": "Pilze mit heißem Wasser übergießen und 2–3 Stunden einweichen lassen. Anschließend Pilze in feine Streifen schneiden."
             },
             {
                 "order": 2,
-                "title": null,
-                "text": "nzwischen Zuckerschoten auftauen lassen und anschließend in dünne Streifen schneiden. Möhren putzen, schälen und in sehr kleine Würfel schneiden. Chinakohl putzen, waschen und in sehr feine Streifen schneiden. Sprossen abtropfen lassen und fein hacken. Mungobohnenkeimlinge waschen, trocken schütteln, Knoblauch schälen und beides hacken.",
-                "info": null
+                "text": "Inzwischen Zuckerschoten auftauen lassen und anschließend in dünne Streifen schneiden. Möhren putzen, schälen und in sehr kleine Würfel schneiden. Chinakohl putzen, waschen und in sehr feine Streifen schneiden. Sprossen abtropfen lassen und fein hacken. Mungobohnenkeimlinge waschen, trocken schütteln, Knoblauch schälen und beides hacken."
             },
             {
                 "order": 3,
-                "title": null,
-                "text": "Cashewkerne hacken, in einer Pfanne ohne Fett 3 Minuten bei mittlerer Hitze anrösten und beiseitelegen. Öl in der Pfanne erhitzen. Alle Gemüse darin für etwa 5 Minuten bei mittlerer Hitze andünsten. Mit Sojasauce, 5-Gewürze-Pulver, 1–2 EL Wasser und Sambal Oelek zufügen und noch 3–5 Minuten köcheln lassen. Dann Kerne zugeben.",
-                "info": null
+                "text": "Cashewkerne hacken, in einer Pfanne ohne Fett 3 Minuten bei mittlerer Hitze anrösten und beiseitelegen. Öl in der Pfanne erhitzen. Alle Gemüse darin für etwa 5 Minuten bei mittlerer Hitze andünsten. Mit Sojasauce, 5-Gewürze-Pulver, 1–2 EL Wasser und Sambal Oelek zufügen und noch 3–5 Minuten köcheln lassen. Dann Kerne zugeben."
             },
             {
                 "order": 4,
-                "title": null,
-                "text": "Wan-Tan-Blätter an allen vier Rändern mit Wasser bepinseln, jeweils 1–2 TL Gemüsefüllung in die Mitte setzen und Ränder darüber zusammendrücken. In einem Dampfgarer Salzwasser zum Kochen bringen. Wan-Tans darübersetzen (dürfen sich nicht berühren) und 5–7 Minuten dampfgaren.",
-                "info": null
+                "text": "Wan-Tan-Blätter an allen vier Rändern mit Wasser bepinseln, jeweils 1–2 TL Gemüsefüllung in die Mitte setzen und Ränder darüber zusammendrücken. In einem Dampfgarer Salzwasser zum Kochen bringen. Wan-Tans darübersetzen (dürfen sich nicht berühren) und 5–7 Minuten dampfgaren."
             }
         ],
         "seasonals": ["Chinakohl", "Möhre"]

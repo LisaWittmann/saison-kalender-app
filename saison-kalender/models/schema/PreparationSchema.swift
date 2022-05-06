@@ -24,7 +24,7 @@ extension PreparationSchema: Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         order = try values.decode(Int16.self, forKey: .order)
         text = try values.decode(String.self, forKey: .text)
-        title = (try? values.decode(String.self, forKey: .title)) ?? nil
-        info = (try? values.decode(String.self, forKey: .info)) ?? nil
+        title = try? values.decodeIfPresent(String.self, forKey: .title)
+        info = try values.decodeIfPresent(String.self, forKey: .info)
     }
 }

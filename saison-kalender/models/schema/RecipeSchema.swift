@@ -27,8 +27,8 @@ extension RecipeSchema: Decodable {
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
-        intro = (try? values.decode(String.self, forKey: .intro)) ?? nil
-        nutrition = (try? values.decode(NutritionSchema.self, forKey: .nutrition)) ?? nil
+        intro = try values.decodeIfPresent(String.self, forKey: .intro)
+        nutrition = try values.decodeIfPresent(NutritionSchema.self, forKey: .nutrition)
         diets = (try? values.decode([String].self, forKey: .diets)) ?? []
         categories = (try? values.decode([RecipeCategorySchema].self, forKey: .categories)) ?? []
         ingredients = (try? values.decode([IngredientSchema].self, forKey: .ingredients)) ?? []
