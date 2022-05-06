@@ -80,20 +80,20 @@ struct RecipeDetailView: View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4)) {
             ContentCard(
                 description: "Kalorien",
-                value: "\(nutrition.calories.description)"
-            ).frame(height: 100)
+                value: "\(nutrition.calories.toString())"
+            ).frame(height: 110)
             ContentCard(
                 description: "Eiweiß",
-                value: "\(nutrition.protein.description) g"
-            ).frame(height: 100)
+                value: "\(nutrition.protein.toString())g"
+            ).frame(height: 110)
             ContentCard(
                 description: "Fett",
-                value: "\(nutrition.fat.description) g"
-            ).frame(height: 100)
+                value: "\(nutrition.fat.toString())g"
+            ).frame(height: 110)
             ContentCard(
                 description: "Kohlenhydrate",
-                value: "\(nutrition.carbs.description) g"
-            ).frame(height: 100)
+                value: "\(nutrition.carbs.toString())g"
+            ).frame(height: 110)
         }
     }
     
@@ -117,7 +117,7 @@ struct RecipeDetailView: View {
                 .font(.custom(fontSemiBold, size: fontSizeLabel))
                 .foregroundColor(colorBlack)
             Spacer()
-            Text("\(ingredient.quantity.description) \(ingredient.unit ?? "")")
+            Text("\(ingredient.quantity.toString()) \(ingredient.unit ?? "")")
                 .modifier(FontText())
         }.underline(opacity: 0.8)
     }
