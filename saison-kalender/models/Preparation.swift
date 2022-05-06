@@ -38,7 +38,10 @@ extension Preparation {
 extension Preparation: Comparable {
     
     public static func < (lhs: Preparation, rhs: Preparation) -> Bool {
-        return lhs.order < rhs.order
+        if lhs.recipe == rhs.recipe {
+            return lhs.order < rhs.order
+        }
+        return lhs.recipe < rhs.recipe
     }
 }
 
@@ -50,9 +53,6 @@ extension Preparation {
         request.predicate = predicate
         return request
     }
-}
-
-extension Preparation {
     
     static func create(from schema: PreparationSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
         if let preparation = recipe.preparations.filter({ $0.order == schema.order }).first {

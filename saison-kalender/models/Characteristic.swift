@@ -42,7 +42,10 @@ extension Characteristic: Representable {
 extension Characteristic: Comparable {
     
     public static func < (lhs: Characteristic, rhs: Characteristic) -> Bool {
-        return lhs.order < rhs.order
+        if lhs.seasonal == rhs.seasonal {
+            return lhs.order < rhs.order
+        }
+        return lhs.seasonal < rhs.seasonal
     }
 }
 
@@ -54,9 +57,6 @@ extension Characteristic {
         request.predicate = predicate
         return request
     }
-}
-
-extension Characteristic {
     
     static func create(from schema: CharacteristicSchema, for seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
         if let characteristic = seasonal.characteristics.filter({ $0.order == schema.order }).first {

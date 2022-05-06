@@ -19,7 +19,14 @@ public class Seasonal: NSManagedObject {
     }
 }
 
-extension Seasonal {
+extension Seasonal: Representable {
+    
+    public var id: String { name }
+    
+    var name: String {
+        get { name_! }
+        set { name_ = newValue }
+    }
     
     var seasons: [Season] {
         get { seasons_?.map { Season(rawValue: $0)! } ?? [] }
@@ -34,25 +41,6 @@ extension Seasonal {
     var characteristics: Array<Characteristic> {
         get { (characteristics_ as? Set<Characteristic>)?.sorted() ?? [] }
         set { characteristics_ = Set(newValue) as NSSet }
-    }
-}
-
-extension Seasonal: Representable {
-    
-    public var id: String { name }
-    
-    var name: String {
-        get { name_! }
-        set { name_ = newValue }
-    }
-    
-    var slug: String {
-        return name.replacingOccurrences(of: "ö", with: "oe")
-            .replacingOccurrences(of: "ä", with: "ae")
-            .replacingOccurrences(of: "ü", with: "ue")
-            .replacingOccurrences(of: "ß", with: "ss")
-            .replacingOccurrences(of: " ", with: "-")
-            .lowercased()
     }
 }
 
@@ -71,9 +59,6 @@ extension Seasonal {
         request.predicate = predicate
         return request
     }
-}
-
-extension Seasonal {
     
     static func with(name: String, from context: NSManagedObjectContext) -> Seasonal? {
         let predicate = NSPredicate(format: "name_ = %@", name)

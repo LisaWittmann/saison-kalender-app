@@ -21,27 +21,9 @@ public class User: NSManagedObject {
     }
 }
 
-extension User {
-    
-    var diets: [Diet] {
-        get { diets_?.map({ Diet(rawValue: $0) }).compactMap { $0 } ?? [] }
-        set { diets_ = newValue.map { $0.rawValue } }
-    }
-    
-    var favorites: Array<Recipe> {
-        get { (favorites_ as? Set<Recipe>)?.sorted() ?? [] }
-        set { favorites_ = Set(newValue) as NSSet }
-    }
-    
-    var collections: Array<Collection> {
-        get { (collections_ as? Set<Collection>)?.sorted() ?? [] }
-        set { collections_ = Set(newValue) as NSSet }
-    }
-}
-
 extension User: Representable {
     
-    public var id: String { name }
+    public var id: String { email }
     
     var email: String {
         get { email_! }
@@ -56,6 +38,21 @@ extension User: Representable {
     var password: String {
         get { password_! }
         set { password_ = newValue }
+    }
+    
+    var diets: [Diet] {
+        get { diets_?.map({ Diet(rawValue: $0) }).compactMap { $0 } ?? [] }
+        set { diets_ = newValue.map { $0.rawValue } }
+    }
+    
+    var favorites: Array<Recipe> {
+        get { (favorites_ as? Set<Recipe>)?.sorted() ?? [] }
+        set { favorites_ = Set(newValue) as NSSet }
+    }
+    
+    var collections: Array<Collection> {
+        get { (collections_ as? Set<Collection>)?.sorted() ?? [] }
+        set { collections_ = Set(newValue) as NSSet }
     }
 }
 
@@ -74,10 +71,22 @@ extension User {
         request.predicate = predicate
         return request
     }
-}
- 
-extension User {
     
+    static func with(email: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "email_ = %@", email)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
+    
+    static func with(email: String, password: String, from context: NSManagedObjectContext) -> User? {
+        let predicate = NSPredicate(format: "email_ = %@ AND password_ = %@", email, password)
+        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
+        return matchingUsers.first
+    }
+}
+
+extension User {
+
     static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User {
         if let user = User.with(email: email, from: context) {
             return user
@@ -94,17 +103,5 @@ extension User {
             return user
         }
         return User(from: schema, in: context)
-    }
-    
-    static func with(email: String, password: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "email_ = %@ AND password_ = %@", email, password)
-        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        return matchingUsers.first
-    }
-    
-    static func with(email: String, from context: NSManagedObjectContext) -> User? {
-        let predicate = NSPredicate(format: "email_ = %@", email)
-        let matchingUsers = (try? context.fetch(User.fetchRequest(predicate))) ?? []
-        return matchingUsers.first
     }
 }

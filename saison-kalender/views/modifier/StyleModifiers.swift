@@ -58,6 +58,7 @@ struct BlurredImageStyle: ViewModifier {
                     .opacity(0.3)
             )
             .cornerRadius(cornerRadiusSmall)
+            .clipped()
     }
 }
 

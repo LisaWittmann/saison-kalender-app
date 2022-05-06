@@ -1,5 +1,5 @@
 //
-//  RecipeDetail.swift
+//  RecipeDetailView.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 28.03.22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import PartialSheet
 
-struct RecipeDetail: View {
+struct RecipeDetailView: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     @EnvironmentObject var user: AppUser
     
@@ -28,7 +28,7 @@ struct RecipeDetail: View {
     var body: some View {
         ZStack {
             DetailPage(
-                images: [recipe.slug],
+                images: [recipe.name.normalize()],
                 headline: recipe.name,
                 close: close,
                 icon: icon,
@@ -78,22 +78,22 @@ struct RecipeDetail: View {
     @ViewBuilder
     private func body(for nutrition: Nutrition) -> some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4)) {
-            ContentPill(
+            ContentCard(
                 description: "Kalorien",
                 value: "\(nutrition.calories.description)"
-            )
-            ContentPill(
+            ).frame(height: 100)
+            ContentCard(
                 description: "Eiweiß",
                 value: "\(nutrition.protein.description) g"
-            )
-            ContentPill(
+            ).frame(height: 100)
+            ContentCard(
                 description: "Fett",
                 value: "\(nutrition.fat.description) g"
-            )
-            ContentPill(
+            ).frame(height: 100)
+            ContentCard(
                 description: "Kohlenhydrate",
                 value: "\(nutrition.carbs.description) g"
-            )
+            ).frame(height: 100)
         }
     }
     
@@ -109,7 +109,7 @@ struct RecipeDetail: View {
     @ViewBuilder
     private func detail(for ingredient: Ingredient) -> some View {
         HStack(spacing: spacingSmall) {
-            Image(ingredient.slug)
+            Image(ingredient.name.normalize())
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 30)
@@ -155,40 +155,42 @@ struct RecipeDetail: View {
         Section("Saisonale Stars") {
             Carousel(seasonals) { seasonal in
                 SeasonalTeaser(seasonal)
+                    .frame(width: halfContentWidth, height: halfContentWidth)
             }
         }
     }
     
     private var icon: String {
-        if user.favorites.contains(recipe) { return "heart.fill" }
-        return "heart"
-    }
-    
-    private func onIconTap() {
-        if user.favorites.contains(recipe) {
-            if collection != nil {
-                manager.open(with: .delete)
-            } else {
-                user.remove(recipe: recipe)
-            }
-        } else {
-            user.favor(recipe: recipe)
-        }
+        user.favorites.contains(recipe) ? "heart.fill" : "heart"
     }
     
     private func onIconPressed() {
         manager.open(with: .save)
     }
+    
+    private func onIconTap() {
+        if user.favorites.contains(recipe) {
+            guard collection == nil else {
+                manager.open(with: .delete)
+                return
+            }
+            user.remove(recipe: recipe)
+        } else {
+            user.favor(recipe: recipe)
+        }
+    }
 }
 
-/*struct RecipeDetail_Previews: PreviewProvider {
+/*struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         let recipe = calendar.recipes.randomElement()
         
-        RecipeDetail(recipe!, close: {})
-            .attachPartialSheetToRoot()
-            .environmentObject(LoggedInUser())
-            .environmentObject(calendar)
+        RecipeDetailView(recipe!, close: {})
+             .environment(\.managedObjectContext, calendar.context)
+             .attachPartialSheetToRoot()
+             .environmentObject(AppUser())
+             .environmentObject(ViewRouter())
+             .environmentObject(calendar)
     }
 }*/

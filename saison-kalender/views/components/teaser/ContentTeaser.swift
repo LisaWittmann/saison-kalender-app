@@ -10,53 +10,48 @@ import SwiftUI
 struct ContentTeaser: View {
     var image: String
     var title: String
-    var rect: Bool
     
-    init(_ title: String, image: String? = nil, rect: Bool = false) {
+    init(_ title: String, image: String? = nil) {
         self.title = title
         self.image = image ?? title
-        self.rect = rect
     }
     
     var body: some View {
-        ZStack {
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .opacity(0.7)
-                .blur(radius: 0.5)
-                .frame(
-                    width: halfContentWidth,
-                    height: contentHeight
-                )
-                .background(colorLightGreen)
-                .modifier(BlurredImageStyle())
-            Text(title)
-                .font(.custom(fontExtraBold, size: fontSizeHeadline2))
-                .foregroundColor(colorWhite)
-                .shadow(color: colorGrey, radius: 15, x: 1, y: 1)
-                .multilineTextAlignment(.leading)
-                .padding(
-                    EdgeInsets(
-                        top: 0,
-                        leading: spacingSmall,
-                        bottom: spacingSmall,
-                        trailing: spacingSmall
+        GeometryReader { geometry in
+            ZStack {
+                Image(image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .opacity(imageOpacity)
+                    .background(colorLightGreen)
+                    .modifier(BlurredImageStyle())
+                    
+                Text(title)
+                    .font(.custom(fontExtraBold, size: fontSizeHeadline2))
+                    .foregroundColor(colorWhite)
+                    .shadow(color: colorGrey, radius: shadowRadius, x: 1, y: 1)
+                    .multilineTextAlignment(.leading)
+                    .padding(
+                        EdgeInsets(
+                            top: 0,
+                            leading: spacingSmall,
+                            bottom: spacingSmall,
+                            trailing: spacingSmall
+                        )
                     )
-                )
-                .frame(
-                    width: halfContentWidth,
-                    height: contentHeight,
-                    alignment: .bottomLeading
-                )
-                
+                    .frame(
+                        width: geometry.globalWidth,
+                        height: geometry.globalHeight,
+                        alignment: .bottomLeading
+                    )
+                    
+            }
         }
     }
     
-    let imageOpacity: Double = 0.4
-    var contentHeight: CGFloat {
-        rect ? halfContentWidth + 30 : halfContentWidth
-    }
+    let imageOpacity: Double = 0.7
+    let shadowRadius: Double = 15
 }
 
 
@@ -64,7 +59,9 @@ struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
             ContentTeaser("Mangold", image: "mangold")
-            ContentTeaser("Linguine mit Mangold", image: "linguine-mit-mangold", rect: true)
+                .frame(width: halfContentWidth, height: halfContentWidth)
+            ContentTeaser("Linguine mit Mangold", image: "linguine-mit-mangold")
+                .frame(width: halfContentWidth, height: halfContentWidth + 30)
         }.frame(alignment: .bottom)
     }
 }

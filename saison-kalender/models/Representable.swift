@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Representable: Identifiable {
+protocol Representable: Identifiable, Hashable {
     
     var name: String { get }
 }

@@ -62,24 +62,9 @@ extension AppUser {
 
 extension AppUser {
     
-    func update(diet: Diet) {
-        guard isAuthorized else {
-            requireAuthorization(for: { self.update(diet: diet) })
-            objectWillChange.send()
-            return
-        }
-        if diets.contains(diet) {
-            diets.remove(diet)
-        } else {
-            diets.insert(diet)
-        }
-        save()
-    }
-    
     func favor(recipe: Recipe) {
         guard isAuthorized else {
             requireAuthorization(for: { self.favor(recipe: recipe) })
-            objectWillChange.send()
             return
         }
         user?.addToFavorites_(recipe)
@@ -89,7 +74,6 @@ extension AppUser {
     func add(recipe: Recipe, to collection: Collection) {
         guard isAuthorized else {
             requireAuthorization(for: { self.add(recipe: recipe, to: collection) })
-            objectWillChange.send()
             return
         }
         favor(recipe: recipe)
@@ -113,6 +97,7 @@ extension AppUser {
         }
         if (collection.recipes.contains(recipe)) {
             collection.recipes.remove(recipe)
+            
             // remove empty collections
             if collection.recipes.count < 1 {
                 remove(collection: collection)
@@ -184,17 +169,31 @@ extension AppUser {
     }
     
     func changePassword(_ newPassword: String) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.changePassword(newPassword) })
+            return
+        }
         user?.password = newPassword
         save()
     }
     
     func change(email: String, name: String) {
-        if email != "" {
-            user?.email = email
+        guard isAuthorized else {
+            requireAuthorization(for: { self.change(email: email, name: name) })
+            return
         }
-        if name != "" {
-            user?.name = name
+        if email != "" { user?.email = email }
+        if name != "" { user?.name = name }
+        save()
+    }
+    
+    func change(diet: Diet) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.change(diet: diet) })
+            return
         }
+        if diets.contains(diet) { diets.remove(diet) }
+        else { diets.insert(diet) }
         save()
     }
 }

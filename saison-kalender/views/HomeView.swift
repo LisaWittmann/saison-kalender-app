@@ -34,7 +34,7 @@ struct HomeView: View {
                 
                 if !seasonCalendar.recipes.isEmpty {
                     Section("Entdecke die neusten Rezepte") {
-                        teasers(for: seasonCalendar.recipes)
+                        teasers(for: seasonCalendar.filterRecipes(for: user.diets))
                     }
                 }
             }

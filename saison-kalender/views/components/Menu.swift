@@ -35,11 +35,6 @@ struct Menu: View {
     }
     
     @ViewBuilder
-    private func background() -> some View {
-        
-    }
-    
-    @ViewBuilder
     private func menuItem(for route: Route) -> some View {
         Button(action: { viewRouter.currentView = route }) {
             Image(systemName: viewRouter.imageName(route: route))

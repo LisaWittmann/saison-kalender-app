@@ -24,7 +24,7 @@ struct RecipeContextMenu: View {
                     header: "Neue Collection"
                 )
                 VStack {
-                    Image(manager.recipe!.slug)
+                    Image(manager.recipe?.name.normalize() ?? "")
                         .resizable()
                         .scaledToFill()
                         .opacity(imageOpacity)
@@ -82,7 +82,7 @@ struct RecipeContextMenu: View {
     @ViewBuilder
     func preview(for collection: Collection) -> some View {
         VStack {
-            Image(collection.recipes.randomElement()?.slug ?? "")
+            Image(collection.recipes.randomElement()?.name.normalize() ?? "")
                 .resizable()
                 .scaledToFill()
                 .opacity(imageOpacity)

@@ -18,7 +18,14 @@ public class Collection: NSManagedObject {
     }
 }
 
-extension Collection {
+extension Collection: Representable {
+    
+    public var id: String { user.id + name }
+    
+    var name: String {
+        get { name_! }
+        set { name_ = newValue }
+    }
     
     var recipes: Set<Recipe> {
         get { (recipes_ as? Set<Recipe>) ?? [] }
@@ -31,20 +38,13 @@ extension Collection {
     }
 }
 
-extension Collection: Representable {
-    
-    public var id: String { user.name + name }
-    
-    var name: String {
-        get { name_! }
-        set { name_ = newValue }
-    }
-}
-
 extension Collection: Comparable {
     
     public static func < (lhs: Collection, rhs: Collection) -> Bool {
-        lhs.id < rhs.id
+        if lhs.user == rhs.user {
+            return lhs.name < rhs.name
+        }
+        return lhs.user < rhs.user
     }
 }
 

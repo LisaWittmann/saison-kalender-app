@@ -18,7 +18,7 @@ struct SeasonView: View {
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            .frame(height: UIScreen.main.bounds.height)
+            .frame(height: screenHeight)
         }
         .modifier(PageLayout())
     }
@@ -59,7 +59,7 @@ struct SeasonItem: View {
             Circle()
                 .fill(seasonCalendar.color)
                 .frame(width: circleSize, height: circleSize)
-            Image(seasonal.slug)
+            Image(seasonal.name.normalize())
                 .resizable()
                 .scaledToFill()
                 .frame(
@@ -74,7 +74,7 @@ struct SeasonItem: View {
     
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
-        SeasonalDetail(seasonal, close: { showDetail.toggle() })
+        SeasonalDetailView(seasonal, close: { showDetail.toggle() })
             .navigationBarHidden(true)
     }
     

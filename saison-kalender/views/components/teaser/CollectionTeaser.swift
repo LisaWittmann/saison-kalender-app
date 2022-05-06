@@ -22,7 +22,7 @@ struct CollectionTeaser: View {
         ) {
             ZStack {
                 ImageGroup(
-                    collection.recipes.map { $0.slug },
+                    collection.recipes.map { $0.name.normalize() },
                     width: contentWidth,
                     height: contentHeight
                 )
@@ -52,7 +52,7 @@ struct CollectionTeaser: View {
     
     @ViewBuilder
     private func detail(for collection: Collection) -> some View {
-        CollectionDetail(collection, close: { showDetail.toggle() })
+        CollectionDetailView(collection, close: { showDetail.toggle() })
             .navigationBarHidden(true)
     }
     

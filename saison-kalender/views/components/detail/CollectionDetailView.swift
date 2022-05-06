@@ -1,5 +1,5 @@
 //
-//  CollectionDetail.swift
+//  CollectionDetailView.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 31.03.22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CollectionDetail: View {
+struct CollectionDetailView: View {
     @ObservedObject var collection: Collection
     var close: () -> ()
     
@@ -18,24 +18,24 @@ struct CollectionDetail: View {
     
     var body: some View {
         DetailPage(
-            images: collection.recipes.map { $0.slug },
+            images: collection.recipes.map { $0.name.normalize() },
             headline: collection.name,
             subline: "\(collection.recipes.count) Rezepte",
             close: close
         ) {
-            if !collection.recipes.isEmpty {
-                RecipeMasonry(Array(collection.recipes), in: collection)
+            Masonry(Array(collection.recipes)) { recipe in
+                RecipeTeaser(recipe)
             }
         }
     }
 }
 
-struct CollectionDetail_Previews: PreviewProvider {
+struct CollectionDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
-        CollectionDetail(collections.first!, close: {})
+        CollectionDetailView(collections.first!, close: {})
             .environmentObject(AppUser())
             .environmentObject(calendar)
     }

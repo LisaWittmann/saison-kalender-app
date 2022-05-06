@@ -31,21 +31,15 @@ extension Ingredient: Representable {
         get { recipe_! }
         set { recipe_ = newValue }
     }
-    
-    var slug: String {
-        return name.replacingOccurrences(of: "ö", with: "oe")
-            .replacingOccurrences(of: "ä", with: "ae")
-            .replacingOccurrences(of: "ü", with: "ue")
-            .replacingOccurrences(of: "ß", with: "ss")
-            .replacingOccurrences(of: " ", with: "-")
-            .lowercased()
-    }
 }
 
 extension Ingredient: Comparable {
     
     public static func < (lhs: Ingredient, rhs: Ingredient) -> Bool {
-        lhs.id < rhs.id
+        if lhs.recipe == rhs.recipe {
+            return lhs.id < rhs.id
+        }
+        return lhs.recipe < rhs.recipe
     }
 }
 
@@ -57,9 +51,6 @@ extension Ingredient {
         request.predicate = predicate
         return request
     }
-}
-
-extension Ingredient {
     
     static func create(from schema: IngredientSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
         if let ingredient = recipe.ingredients.filter({ $0.name == schema.name }).first {

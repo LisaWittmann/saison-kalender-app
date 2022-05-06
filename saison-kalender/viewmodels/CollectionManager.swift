@@ -12,17 +12,11 @@ class CollectionManager: ObservableObject {
     
     @Published var recipe: Recipe?
     @Published var collection: Collection?
-    
-    @Published var isPresented: Bool
     @Published var mode: ManagerMode?
     
-    init() {
-        self.recipe = nil
-        self.mode = nil
-        self.isPresented = false
-    }
+    @Published var isPresented: Bool
     
-    init(recipe: Recipe?) {
+    init(recipe: Recipe? = nil) {
         self.recipe = recipe
         self.mode = nil
         self.isPresented = false
@@ -42,6 +36,26 @@ class CollectionManager: ObservableObject {
         self.mode = nil
         self.isPresented = false
     }
+}
+
+extension CollectionManager {
+    
+    func createCollection(_ name: String, for user: AppUser) {
+        if let recipe = self.recipe {
+            let context = recipe.managedObjectContext!
+            let createdCollection = Collection(context: context)
+            createdCollection.name = name
+            user.add(collection: createdCollection)
+            user.add(recipe: recipe, to: createdCollection)
+            do {
+                try context.save()
+            } catch {
+                mode = .add
+                isPresented = true
+            }
+            isPresented = false
+        }
+    }
     
     func add(to collection: Collection, of user: AppUser) {
         if let recipe = self.recipe {
@@ -52,24 +66,6 @@ class CollectionManager: ObservableObject {
                 mode = .save
                 isPresented = true
             }
-        }
-    }
-    
-    func createCollection(_ name: String, for user: AppUser) {
-        if let recipe = self.recipe {
-            let context = recipe.managedObjectContext!
-            let createdCollection = Collection(context: context)
-            createdCollection.name = name
-            createdCollection.addToRecipes_(recipe)
-            user.favor(recipe: recipe)
-            user.add(collection: createdCollection)
-            do {
-                try context.save()
-            } catch {
-                mode = .add
-                isPresented = true
-            }
-            isPresented = false
         }
     }
     

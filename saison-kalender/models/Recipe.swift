@@ -20,10 +20,22 @@ public class Recipe: NSManagedObject {
         ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: self, in: context) }
         preparations = schema.preparations.map { Preparation.create(from: $0, for: self, in: context) }
         seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
+        if let nutritionSchema = schema.nutrition {
+            nutrition = Nutrition.create(from: nutritionSchema, for: self, in: context)
+        }
     }
 }
 
-extension Recipe {
+extension Recipe: Representable {
+    
+    public var id: String { name }
+    
+    var name: String {
+        get { name_! }
+        set { name_ = newValue }
+    }
+    
+    var favors: Int { (favoredBy as? Set<User> ?? []).count }
     
     var diets: [Diet] {
         get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
@@ -49,32 +61,7 @@ extension Recipe {
         get { (categories_ as? Set<RecipeCategory>)?.sorted() ?? [] }
         set { categories_ = Set(newValue) as NSSet }
     }
-}
-
-extension Recipe: Representable {
     
-    public var id: String { name }
-    
-    var name: String {
-        get { name_! }
-        set { name_ = newValue }
-    }
-    
-    var slug: String {
-        return name.replacingOccurrences(of: "ö", with: "oe")
-            .replacingOccurrences(of: "ä", with: "ae")
-            .replacingOccurrences(of: "ü", with: "ue")
-            .replacingOccurrences(of: "ß", with: "ss")
-            .replacingOccurrences(of: " ", with: "-")
-            .lowercased()
-    }
-}
-
-extension Recipe: Comparable {
-    
-    public static func < (lhs: Recipe, rhs: Recipe) -> Bool {
-        lhs.id < rhs.id
-    }
 }
 
 extension Recipe {
@@ -92,6 +79,15 @@ extension Recipe {
     }
 }
 
+extension Recipe: Comparable {
+    
+    public static func < (lhs: Recipe, rhs: Recipe) -> Bool {
+        if lhs.favors == rhs.favors {
+            return lhs.id < rhs.id
+        }
+        return lhs.favors < rhs.favors
+    }
+}
 
 extension Recipe {
     
@@ -101,9 +97,6 @@ extension Recipe {
         request.predicate = predicate
         return request
     }
-}
-    
-extension Recipe {
     
     static func create(from schema: RecipeSchema, in context: NSManagedObjectContext) -> Recipe {
         let predicate = NSPredicate(format: "name_ = %@", schema.name)
@@ -115,6 +108,9 @@ extension Recipe {
             recipe.ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: recipe, in: context) }
             recipe.preparations = schema.preparations.map { Preparation.create(from: $0, for: recipe, in: context) }
             recipe.seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
+            if let nutritionSchema = schema.nutrition {
+                recipe.nutrition = Nutrition.create(from: nutritionSchema, for: recipe, in: context)
+            }
             return recipe
         }
         return Recipe(from: schema, in: context)

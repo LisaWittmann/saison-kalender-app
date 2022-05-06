@@ -58,8 +58,6 @@ struct FontParagraph: ViewModifier {
     }
 }
 
-
-
 struct FontError: ViewModifier {
     func body(content: Content) -> some View {
         content

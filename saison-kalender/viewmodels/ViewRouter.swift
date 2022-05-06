@@ -26,5 +26,5 @@ class ViewRouter: ObservableObject {
 }
 
 enum Route: CaseIterable {
-    case home, recipes, season, account
+    case home, season, recipes, account
 }

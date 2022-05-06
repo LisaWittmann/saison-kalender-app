@@ -32,6 +32,7 @@ struct TeaserCarousel<Data, Content, Teaser> : View
             HStack(spacing: spacing) {
                 ForEach(data) { data in
                     content(data)
+                        .frame(width: halfContentWidth, height: halfContentWidth)
                         .padding(.leading, getPadding(data))
                 }
                 teaser()

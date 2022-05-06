@@ -19,60 +19,48 @@ struct ImageGroup: View {
     }
     
     var body: some View {
-        HStack(spacing: 0) {
-            Image(images.first ?? "")
-                .resizable()
-                .scaledToFill()
-                .opacity(imageOpacity)
-                .frame(
-                    width: firstImageWidth,
-                    height: height,
-                    alignment: firstImageAlignment
+        GeometryReader { geometry in
+            HStack(spacing: 0) {
+                image(images.first ?? "",
+                      width: firstImageWidth(geometry: geometry),
+                      height: geometry.globalHeight,
+                      alignment: firstImageAlignment
                 )
-                .clipped()
-            if images.count >= 3 {
-                VStack(spacing: 0) {
-                    
-                    Image(images[1])
-                        .resizable()
-                        .scaledToFill()
-                        .opacity(imageOpacity)
-                        .frame(
-                            width: screenWidth / 3 * 1,
-                            height: height / 2,
-                            alignment: .leading
+                if images.count >= 3 {
+                    VStack(spacing: 0) {
+                        image(images[1],
+                              width: geometry.globalWidth / 3,
+                              height: geometry.globalHeight / 2,
+                              alignment: .leading
                         )
-                        .clipped()
-                    
-                    Image(images[2])
-                        .resizable()
-                        .scaledToFill()
-                        .opacity(imageOpacity)
-                        .frame(
-                            width: screenWidth / 3 * 1,
-                            height: height / 2,
-                            alignment: .leading
+                        image(images[2],
+                              width: geometry.globalWidth / 3,
+                              height: geometry.globalHeight / 2,
+                              alignment: .leading
                         )
-                        .clipped()
-                    
+                    }
                 }
             }
+            .background(colorLightGreen)
         }
-        .background(colorLightGreen)        
     }
     
-    var firstImageWidth: CGFloat {
-        if images.count >= 3 {
-            return width / 3 * 2
-        }
-        return width
+    @ViewBuilder
+    private func image(_ name: String, width: CGFloat, height: CGFloat, alignment: Alignment) -> some View {
+        Image(name)
+            .resizable()
+            .scaledToFill()
+            .opacity(imageOpacity)
+            .frame(width: width, height: height, alignment: alignment)
+            .clipped()
     }
     
-    var firstImageAlignment: Alignment {
-        if images.count >= 3 {
-            return .trailing
-        }
-        return .center
+    private func firstImageWidth(geometry: GeometryProxy) -> CGFloat {
+        images.count >= 3 ? geometry.globalWidth / 3 * 2 : geometry.globalWidth
+    }
+    
+    private var firstImageAlignment: Alignment {
+        images.count >= 3 ? .trailing : .center
     }
     
     let imageOpacity: Double = 0.7
@@ -82,12 +70,14 @@ struct ImageGroup: View {
 struct ImageGroup_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
-        let images = calendar.recipes.map { $0.slug }
+        let images = calendar.recipes.map { $0.name.normalize() }
         
         ScrollView {
             VStack {
                 ImageGroup(images)
+                    .frame(width: screenWidth, height: 300)
                 ImageGroup(Array(images[0...1]))
+                    .frame(width: screenWidth, height: 300)
             }
         }
     }

@@ -52,7 +52,9 @@ struct AccountView: View {
     @ViewBuilder
     private func favorites() -> some View {
         if !user.favorites.isEmpty {
-            RecipeMasonry(Array(user.favorites))
+            Masonry(Array(user.favorites)) { recipe in
+                RecipeTeaser(recipe)
+            }
         }
     }
     

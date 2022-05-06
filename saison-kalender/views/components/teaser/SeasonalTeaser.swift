@@ -16,18 +16,21 @@ struct SeasonalTeaser: View {
     }
     
     var body: some View {
-        NavigationLink(
-            destination: detail(for: seasonal),
-            isActive: $showDetail
-        ) {
-            ContentTeaser(seasonal.name, image: seasonal.slug)
-                .onTapGesture { showDetail.toggle() }
-        }.isDetailLink(false)
+        GeometryReader { geometry in
+            NavigationLink(
+                destination: detail(for: seasonal),
+                isActive: $showDetail
+            ) {
+                ContentTeaser(seasonal.name, image: seasonal.name.normalize() )
+                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .onTapGesture { showDetail.toggle() }
+            }.isDetailLink(false)
+        }
     }
     
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
-        SeasonalDetail(seasonal, close: { showDetail.toggle() })
+        SeasonalDetailView(seasonal, close: { showDetail.toggle() })
             .navigationBarHidden(true)
     }
 }
@@ -38,6 +41,7 @@ struct SeasonalTeaser_Previews: PreviewProvider {
         
         NavigationView {
             SeasonalTeaser(calendar.seasonals.randomElement()!)
+                .frame(width: halfContentWidth, height: halfContentWidth)
                 .environmentObject(AppUser())
                 .environmentObject(calendar)
         }

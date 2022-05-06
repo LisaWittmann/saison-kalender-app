@@ -13,27 +13,25 @@ struct RecipeTeaser: View {
     
     @ObservedObject var recipe: Recipe
     var collection: Collection?
-    var rect: Bool
     
-    init(_ recipe: Recipe, collection: Collection? = nil, rect: Bool = false) {
+    init(_ recipe: Recipe, collection: Collection? = nil) {
         self.recipe = recipe
         self.collection = collection
-        self.rect = rect
     }
     
     var body: some View {
-        NavigationLink(
-            destination: detail(for: recipe),
-            isActive: $showDetail
-        ) {
-            ContentTeaser(recipe.name, image: recipe.slug, rect: rect)
-                .onTapGesture { showDetail.toggle() }
-        }.isDetailLink(false)
+        GeometryReader { geometry in
+            NavigationLink(destination: detail(for: recipe), isActive: $showDetail) {
+                ContentTeaser(recipe.name, image: recipe.name.normalize())
+                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .onTapGesture { showDetail.toggle() }
+            }.isDetailLink(false)
+        }
     }
     
     @ViewBuilder
     private func detail(for recipe: Recipe) -> some View {
-        RecipeDetail(recipe, collection: collection, close: { showDetail.toggle() })
+        RecipeDetailView(recipe, collection: collection, close: { showDetail.toggle() })
             .navigationBarHidden(true)
     }
 }
@@ -44,6 +42,7 @@ struct RecipeCard_Previews: PreviewProvider {
         
         NavigationView {
             RecipeTeaser(calendar.recipes.first!)
+                .frame(width: halfContentWidth, height: halfContentWidth)
                 .environmentObject(AppUser())
                 .environmentObject(calendar)
         }

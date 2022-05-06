@@ -1,5 +1,5 @@
 //
-//  SeasonalDetail.swift
+//  SeasonalDetailView.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 30.03.22.
@@ -8,7 +8,7 @@
 import SwiftUI
 import WrappingHStack
 
-struct SeasonalDetail: View {
+struct SeasonalDetailView: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     @ObservedObject var seasonal: Seasonal
     var close: () -> ()
@@ -20,7 +20,7 @@ struct SeasonalDetail: View {
     
     var body: some View {
         DetailPage(
-            images: [seasonal.slug],
+            images: [seasonal.name.normalize()],
             headline: seasonal.name,
             subline: "Saisonal im \(seasonCalendar.season.name)",
             close: close
@@ -63,15 +63,17 @@ struct SeasonalDetail: View {
     private func body(for recipes: Array<Recipe>) -> some View {
         Text("Rezepte mit \(seasonal.name)")
             .modifier(FontH1())
-        RecipeMasonry(recipes)
+        Masonry(Array(seasonal.recipes)) { recipe in
+            RecipeTeaser(recipe)
+        }
     }
 }
 
-struct SeasonalDetail_Previews: PreviewProvider {
+struct SeasonalDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        SeasonalDetail(calendar.seasonals.randomElement()!, close: {})
+        SeasonalDetailView(calendar.seasonals.randomElement()!, close: {})
             .environmentObject(AppUser())
             .environmentObject(calendar)
     }

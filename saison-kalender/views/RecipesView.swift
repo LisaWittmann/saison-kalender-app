@@ -31,7 +31,9 @@ struct RecipesView: View {
                 )
             }
             
-            RecipeMasonry(seasonCalendar.filterRecipes(by: selectedCategory, for: user.diets))
+            Masonry(seasonCalendar.filterRecipes(by: selectedCategory, for: user.diets)) { recipe in
+                RecipeTeaser(recipe)
+            }
             Spacer()
         }
     }

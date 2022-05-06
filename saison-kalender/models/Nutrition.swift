@@ -37,9 +37,6 @@ extension Nutrition {
         request.predicate = predicate
         return request
     }
-}
-
-extension Nutrition {
     
     static func create(from schema: NutritionSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition {
         if let nutrition = recipe.nutrition {
