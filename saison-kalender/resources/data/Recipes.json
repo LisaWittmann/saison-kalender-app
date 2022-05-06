@@ -179,7 +179,6 @@
     },
     {
         "name": "Artischockensalat mit Quinoa",
-        "intro": null,
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Salate" },
@@ -523,8 +522,7 @@
         "ingredients": [
             {
                 "name": "Burgerbrötchen",
-                "quantity": 4,
-                "unit": null
+                "quantity": 4
             },
             {
                 "name": "Champignons",
@@ -692,7 +690,8 @@
             {
                 "name": "Risottoreis",
                 "quantity": 180,
-                "unit": "g"
+                "unit": "g",
+                "group": "Reis"
             },
             {
                 "name": "Zitrone",
@@ -749,7 +748,7 @@
                 "unit": "g"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 3
             },
             {
@@ -1418,7 +1417,7 @@
                 "unit": "g"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 3
             },
             {
@@ -1569,8 +1568,7 @@
         "ingredients": [
             {
                 "name": "Apfel",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Apfelsaft",
@@ -1690,7 +1688,7 @@
                 "unit": "Bund"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 2
             },
             {
@@ -2079,14 +2077,13 @@
     },
     {
         "name": "Nudelauflauf mit Fenchel",
-        "intro": null,
         "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Abendessen" }
         ],
         "ingredients": [
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 2
             },
             {
@@ -2291,7 +2288,8 @@
             {
                 "name": "Passierte Tomaten",
                 "quantity": 700,
-                "unit": "g"
+                "unit": "g",
+                "group": "Tomate"
             },
             {
                 "name": "Rosmarin",
@@ -2382,7 +2380,7 @@
                 "unit": "g"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 3
             },
             {
@@ -2623,7 +2621,7 @@
                 "unit": "g"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 4
             },
             {
@@ -2692,8 +2690,7 @@
             },
             {
                 "name": "Lollo Rosso",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Olivenöl",
@@ -2703,8 +2700,7 @@
             },
             {
                 "name": "Paprika",
-                "quantity": 2,
-                "unit": null
+                "quantity": 2
             },
             {
                 "name": "Zucchini",
@@ -2857,8 +2853,7 @@
         "ingredients": [
             {
                 "name": "Zitrone",
-                "quantity": 1,
-                "unit": null
+                "quantity": 1
             },
             {
                 "name": "Weinessig",
@@ -2914,7 +2909,7 @@
                 "unit": "EL"
             },
             {
-                "name": "Eier",
+                "name": "Ei",
                 "quantity": 4
             },
             {
