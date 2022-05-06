@@ -9,24 +9,23 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     var name: String { rawValue }
-    case Favoriten, Sammlungen
+    case Favorites = "Favoriten", Collections = "Sammlungen"
 }
 
 struct AccountView: View {
     @EnvironmentObject var user: AppUser
     @EnvironmentObject var viewRouter: ViewRouter
     
-    @State var selectedTab: Tab = .Favoriten
+    @State var selectedTab: Tab = .Favorites
     @State var openSettings = false
     
     var body: some View {
         Page {
             HStack {
                 Headline("\(user.name ?? "")", "Dein Bereich")
-                Image(systemName: "gearshape.fill")
-                    .font(.custom(fontBold, size: fontSizeHeadline1))
+                Icon("gearshape.fill", onTap: { openSettings.toggle() })
                     .foregroundColor(colorGreen)
-                    .onTapGesture { openSettings.toggle() }
+                    .frame(width: iconSize, height: iconSize)
             }
             
             HStack {
@@ -37,8 +36,8 @@ struct AccountView: View {
             }.frame(width: contentWidth, alignment: .leading)
             
             switch(selectedTab) {
-            case .Favoriten: favorites()
-            case .Sammlungen: collections()
+            case .Favorites: favorites()
+            case .Collections: collections()
             }
             
             Spacer()
@@ -74,6 +73,8 @@ struct AccountView: View {
             return
         }
     }
+    
+    let iconSize: CGFloat = 25
 }
 
 struct AccountView_Previews: PreviewProvider {

@@ -18,8 +18,8 @@ struct AccountSettingsView: View {
         Page {
             HStack {
                 Headline("Bearbeiten", "Dein Bereich")
-                Image(systemName: "xmark")
-                    .font(.custom(fontBold, size: fontSizeHeadline1))
+                Icon("xmark", onTap: close)
+                    .frame(width: iconSize, height: iconSize)
                     .foregroundColor(colorGreen)
                     .onTapGesture { close() }
             }
@@ -42,15 +42,20 @@ struct AccountSettingsView: View {
         GeometryReader { geometry in
             HStack(spacing: spacingSmall) {
                 ForEach(Diet.allCases, id: \.self) { diet in
-                        Image(diet.name.lowercased())
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: iconSize(geometry), height: iconSize(geometry))
-                            .opacity(iconOpacity(diet))
-                            .onTapGesture { user.change(diet: diet) }
+                    icon(diet, size: iconSize(geometry))
+                        .onTapGesture { user.change(diet: diet) }
                 }
             }.frame(width: contentWidth, alignment: .leading)
         }.padding(.bottom, spacingExtraLarge)
+    }
+    
+    @ViewBuilder
+    private func icon(_ diet: Diet, size: CGFloat) -> some View {
+        Image(diet.name.normalize())
+            .resizable()
+            .scaledToFit()
+            .frame(width: size, height: size)
+            .opacity(iconOpacity(diet))
     }
     
     private func iconSize(_ geometry: GeometryProxy) -> CGFloat {
@@ -67,6 +72,7 @@ struct AccountSettingsView: View {
     }
     
     let inactiveOpacity: Double = 0.5
+    let iconSize: CGFloat = 25
 }
 
 struct AccountSettingsView_Previews: PreviewProvider {

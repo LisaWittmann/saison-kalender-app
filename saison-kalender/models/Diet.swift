@@ -8,8 +8,11 @@
 import Foundation
 
 enum Diet: String, CaseIterable {
-
-    var name: String { rawValue }
-    
     case GlutenFree = "Glutenfrei", DairyFree = "Laktosefrei", Vegetarian = "Vegetarisch", Vegan = "Vegan"
+}
+
+extension Diet: Representable {
+    
+    public var id: String { name }
+    var name: String { rawValue }
 }

@@ -23,37 +23,11 @@ struct RegistrationForm: View {
     var body: some View {
         if !user.isAuthorized {
             VStack(spacing: spacingMedium) {
-                InputField(
-                    "E-Mail",
-                    text: $email,
-                    icon: "envelope.fill",
-                    validate: AppUser.isValidEmail
-                )
-                InputField(
-                    "Name",
-                    text: $name,
-                    icon: "person.fill",
-                    validate: AppUser.isValidName
-                )
-                InputField(
-                    "Passwort",
-                    text: $password,
-                    icon: "lock.fill",
-                    secure: true,
-                    validate: AppUser.isValidPassword
-                )
-                InputField(
-                    "Passwort wiederholen",
-                    text: $passwordRepeat,
-                    icon: "lock.fill",
-                    secure: true,
-                    validate: equalPasswords
-                )
-                SubmitButton(
-                    "Registrieren",
-                    onSubmit: register,
-                    disabled: !isValid
-                )
+                InputField("E-Mail", text: $email, icon: "envelope.fill", validate: AppUser.isValidEmail)
+                InputField("Name", text: $name, icon: "person.fill", validate: AppUser.isValidName)
+                InputField("Passwort",text: $password, icon: "lock.fill", secure: true, validate: AppUser.isValidPassword)
+                InputField("Passwort wiederholen", text: $passwordRepeat, icon: "lock.fill", secure: true, validate: equalPasswords)
+                SubmitButton("Registrieren", onSubmit: register, disabled: !isValid)
                 Button("Jetzt anmelden", action: toLogin)
                     .frame(width: contentWidth, alignment: .trailing)
                     .modifier(TextButtonStyle())
@@ -98,11 +72,11 @@ struct RegistrationForm: View {
     
     private func register() {
         user.register(name: name, email: email, password: password, in: viewContext)
-        if user.isAuthorized {
-            errorMessage = nil
-        } else {
+        guard user.isAuthorized else {
             errorMessage = "Registrierung fehlgeschlagen"
+            return
         }
+        errorMessage = nil
     }
     
     let columns = 2
@@ -113,6 +87,12 @@ struct RegistrationForm: View {
 
 struct RegistrationForm_Previews: PreviewProvider {
     static var previews: some View {
+        let calendar = SeasonCalendar.preview
+        
         RegistrationForm(errorMessage: .constant(""))
+            .environment(\.managedObjectContext, calendar.context)
+            .environmentObject(AppUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

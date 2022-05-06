@@ -20,23 +20,9 @@ struct LoginForm: View {
     
     var body: some View {
         VStack(spacing: spacingMedium) {
-            InputField(
-                "E-Mail",
-                text: $email,
-                icon: "envelope.fill",
-                validate: AppUser.isValidEmail
-            )
-            InputField(
-                "Passwort",
-                text: $password,
-                icon: "lock.fill",
-                secure: true
-            )
-            SubmitButton(
-                "Anmelden",
-                onSubmit: login,
-                disabled: !isValid
-            )
+            InputField("E-Mail", text: $email, icon: "envelope.fill", validate: AppUser.isValidEmail)
+            InputField("Passwort", text: $password, icon: "lock.fill", secure: true)
+            SubmitButton("Anmelden", onSubmit: login, disabled: !isValid)
             Button("Noch kein Konto?", action: toRegistration)
                 .frame(width: contentWidth, alignment: .trailing)
                 .modifier(TextButtonStyle())
@@ -49,18 +35,22 @@ struct LoginForm: View {
     
     private func login() {
         user.login(User.with(email: email, password: password, from: viewContext))
-        
-        if user.isAuthorized {
-            errorMessage = nil
-            viewRouter.currentView = .account
-        } else {
+        guard user.isAuthorized else {
             errorMessage = "Login fehlgeschlagen"
+            return
         }
+        errorMessage = nil
     }
 }
 
 struct LoginForm_Previews: PreviewProvider {
     static var previews: some View {
+        let calendar = SeasonCalendar.preview
+        
         LoginForm(errorMessage: .constant(""))
+            .environment(\.managedObjectContext, calendar.context)
+            .environmentObject(AppUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

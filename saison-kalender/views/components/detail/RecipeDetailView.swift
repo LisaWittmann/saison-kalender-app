@@ -78,22 +78,14 @@ struct RecipeDetailView: View {
     @ViewBuilder
     private func body(for nutrition: Nutrition) -> some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4)) {
-            ContentCard(
-                description: "Kalorien",
-                value: "\(nutrition.calories.toString())"
-            ).frame(height: 110)
-            ContentCard(
-                description: "Eiweiß",
-                value: "\(nutrition.protein.toString())g"
-            ).frame(height: 110)
-            ContentCard(
-                description: "Fett",
-                value: "\(nutrition.fat.toString())g"
-            ).frame(height: 110)
-            ContentCard(
-                description: "Kohlenhydrate",
-                value: "\(nutrition.carbs.toString())g"
-            ).frame(height: 110)
+            ContentCard(description: "Kalorien", value: "\(nutrition.calories.toString())")
+                .frame(height: 110)
+            ContentCard(description: "Eiweiß", value: "\(nutrition.protein.toString())g")
+                .frame(height: 110)
+            ContentCard(description: "Fett", value: "\(nutrition.fat.toString())g")
+                .frame(height: 110)
+            ContentCard(description: "Kohlenhydrate", value: "\(nutrition.carbs.toString())g")
+                .frame(height: 110)
         }
     }
     
@@ -165,6 +157,10 @@ struct RecipeDetailView: View {
     }
     
     private func onIconPressed() {
+        guard user.isAuthorized else {
+            user.requireAuthorization(for: { self.onIconPressed() })
+            return
+        }
         manager.open(with: .save)
     }
     
@@ -180,17 +176,3 @@ struct RecipeDetailView: View {
         }
     }
 }
-
-/*struct RecipeDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let recipe = calendar.recipes.randomElement()
-        
-        RecipeDetailView(recipe!, close: {})
-             .environment(\.managedObjectContext, calendar.context)
-             .attachPartialSheetToRoot()
-             .environmentObject(AppUser())
-             .environmentObject(ViewRouter())
-             .environmentObject(calendar)
-    }
-}*/

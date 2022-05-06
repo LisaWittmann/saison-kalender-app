@@ -13,39 +13,36 @@ struct ContentCard: View {
     
     var body: some View {
         GeometryReader { geometry in
-            ZStack {
-                RoundedRectangle(cornerRadius: cornerRadiusSmall)
-                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
-                    .foregroundColor(colorLightGreen)
-                VStack(alignment: .center) {
-                    Text(description)
-                        .padding(.leading, padding)
-                        .padding(.trailing, padding)
-                        .frame(width: geometry.globalWidth, alignment: .center)
-                        .frame(minHeight: textHeight)
-                        .modifier(FontText())
-                        .multilineTextAlignment(.center)
-                        .padding(.top, spacingExtraSmall)
-                        
-                    Text(value)
-                        .padding(.leading, padding)
-                        .padding(.trailing, padding)
-                        .frame(width: geometry.globalWidth, alignment: .center)
-                        .frame(minHeight: textHeight)
-                        .font(.custom(fontBold, size: fontSizeHeadline2))
-                        .foregroundColor(colorBlack)
-                }
+            VStack(alignment: .center) {
+                text(description, width: geometry.globalWidth)
+                    .modifier(FontText())
+                    .multilineTextAlignment(.center)
+                    .padding(.top, spacingExtraSmall)
+                text(value, width: geometry.globalWidth)
+                    .font(.custom(fontBold, size: fontSizeHeadline2))
             }
+            .background(colorLightGreen)
+            .cornerRadius(cornerRadiusSmall)
         }
     }
     
+    @ViewBuilder
+    private func text(_ text: String, width: CGFloat) -> some View {
+        Text(text)
+            .padding(.leading, padding)
+            .padding(.trailing, padding)
+            .frame(width: width, alignment: .center)
+            .frame(minHeight: textHeight)
+            .foregroundColor(colorBlack)
+    }
+    
     let textHeight: CGFloat = 40
-    let padding: CGFloat = 5
+    let padding: CGFloat = 7
 }
 
 struct ContentPill_Previews: PreviewProvider {
     static var previews: some View {
         ContentCard(description: "Kohlenhydrate", value: "0.2g")
-            .frame(width: quarterContentWidth, height: 100)
+            .frame(width: quarterContentWidth)
     }
 }

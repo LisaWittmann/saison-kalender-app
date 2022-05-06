@@ -48,8 +48,7 @@ struct DetailPage<Content: View>: View {
             
                 Group {
                     VStack {
-                        VStack(spacing: spacingLarge, content: content)
-                            .modifier(ContentLayout())
+                        VStack(spacing: spacingLarge, content: content) .modifier(ContentLayout())
                         Spacer()
                     }
                 }
@@ -66,8 +65,7 @@ struct DetailPage<Content: View>: View {
     var header: some View {
         ZStack {
             VStack {
-                ImageGroup(images, height: imageHeight)
-                    .modifier(BlurredImageStyle())
+                ImageGroup(images, height: imageHeight).modifier(BlurredImageStyle())
                 Spacer()
             }
             VStack {
@@ -77,22 +75,15 @@ struct DetailPage<Content: View>: View {
             }
             .modifier(SectionLayout())
         }
-        .frame(
-            width: screenWidth,
-            height: imageHeight,
-            alignment: .topLeading
-        )
+        .frame(width: screenWidth, height: imageHeight, alignment: .topLeading)
     }
     
     @ViewBuilder
     private func navigationBar() -> some View {
         HStack {
-            Image(systemName: "arrow.left")
-                .resizable()
-                .scaledToFit()
-                .frame(height: iconWidth)
+            Icon("arrow.left", onTap: close)
                 .foregroundColor(colorWhite)
-                .onTapGesture { close() }
+                .frame(width: iconWidth, height: iconWidth)
             Spacer()
         }
     }
@@ -112,26 +103,14 @@ struct DetailPage<Content: View>: View {
                         .modifier(FontTitle())
                         .foregroundColor(colorWhite)
                 }
-                    
             }.frame(height: textHeight, alignment: .bottom)
             
             if let systemName = icon {
                 VStack {
-                    Image(systemName: systemName)
-                        .resizable()
-                        .scaledToFit()
+                    Spacer()
+                    Icon(systemName, onTap: onIconTap, onPress: onIconPressed)
                         .foregroundColor(colorWhite)
-                        .onTapGesture { onIconTap() }
-                        .frame(width: iconWidth)
-                        .gesture(
-                           LongPressGesture(minimumDuration: 0.5)
-                               .updating($press) { currentState, gestureState, transaction in
-                                   gestureState = currentState
-                               }
-                               .onEnded { value in
-                                   onIconPressed()
-                               }
-                       )
+                        .frame(width: iconWidth, height: iconWidth)
                 }
                 .frame(height: textHeight, alignment: .bottom)
                 .padding(.bottom, spacingMedium)

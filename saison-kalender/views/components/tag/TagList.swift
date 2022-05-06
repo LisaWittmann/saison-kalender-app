@@ -8,10 +8,10 @@
 import SwiftUI
 import WrappingHStack
 
-struct TagList<Content: Representable>: View {
-    var items: [Content]
+struct TagList<Element: Representable>: View {
+    var items: [Element]
     
-    init(_ items: [Content]) {
+    init(_ items: [Element]) {
         self.items = items
     }
     

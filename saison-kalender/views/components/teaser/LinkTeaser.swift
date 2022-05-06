@@ -22,17 +22,9 @@ struct LinkTeaser: View {
                 .frame(width: halfContentWidth)
                 .aspectRatio(1/1, contentMode: .fit)
             
-            Button(action: { viewRouter.currentView = route }) {
-                Image(systemName: "arrow.right")
-                    .resizable()
-                    .scaledToFill()
-                    .aspectRatio(1/1, contentMode: .fit)
-                    .foregroundColor(colorGreen)
-                    .frame(
-                        width: quarterContentWidth,
-                        alignment: .center
-                    )
-            }
+            Icon("arrow.right", onTap: { viewRouter.currentView = route })
+                .foregroundColor(colorGreen)
+                .frame(width: quarterContentWidth, height: quarterContentWidth)
         }
     }
 }

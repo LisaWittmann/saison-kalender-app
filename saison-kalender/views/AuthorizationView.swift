@@ -18,10 +18,9 @@ struct AuthorizationView: View {
         Page {
             HStack {
                 Headline(headline, "Dein Bereich")
-                Image(systemName: "xmark")
-                    .font(.custom(fontBold, size: fontSizeHeadline1))
+                Icon("xmark", onTap: user.dismissAuthorization)
                     .foregroundColor(colorGreen)
-                    .onTapGesture { user.dismissAuthorization() }
+                    .frame(width: iconSize, height: iconSize)
             }
             Spacer()
             if registration {
@@ -45,6 +44,8 @@ struct AuthorizationView: View {
         registration.toggle()
         errorMessage = nil
     }
+    
+    let iconSize: CGFloat = 25
 }
 
 struct AuthorizationView_Previews: PreviewProvider {

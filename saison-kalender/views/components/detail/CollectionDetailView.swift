@@ -24,7 +24,7 @@ struct CollectionDetailView: View {
             close: close
         ) {
             Masonry(Array(collection.recipes)) { recipe in
-                RecipeTeaser(recipe)
+                RecipeTeaser(recipe, collection: collection)
             }
         }
     }

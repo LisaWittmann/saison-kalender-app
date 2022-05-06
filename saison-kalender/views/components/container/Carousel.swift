@@ -1,5 +1,5 @@
 //
-//  Slider.swift
+//  Carousel.swift
 //  saison-kalender
 //
 //  Created by Lisa Wittmann on 31.03.22.
@@ -7,48 +7,44 @@
 
 import SwiftUI
 
-struct Carousel<Data, Content> : View where Data : Identifiable, Content: View {
+struct Carousel<Element, Content> : View where Element : Identifiable, Content: View {
     var spacing: CGFloat
-    var data: [Data]
-    var content: (Data) -> Content
+    var elements: [Element]
+    var content: (Element) -> Content
     
     init(
-        _ data: [Data],
+        _ elements: [Element],
         spacing: CGFloat = spacingMedium,
-        @ViewBuilder content: @escaping (Data) -> Content
+        @ViewBuilder content: @escaping (Element) -> Content
     ) {
         self.spacing = spacing
-        self.data = data
+        self.elements = elements
         self.content = content
     }
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: spacing) {
-                ForEach(data) { data in
-                    content(data)
-                        .padding(.leading, getPaddingLeft(data))
-                        .padding(.trailing, getPaddingRight(data))
+                ForEach(elements) { element in
+                    content(element)
+                        .padding(.leading, paddingLeft(element))
+                        .padding(.trailing, paddingRight(element))
                 }
             }
         }
         .padding(.top, spacingExtraSmall)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.leading, -spacingLarge)
-        .padding(.trailing, -spacingLarge)
+        .padding(.leading, -padding)
+        .padding(.trailing, -padding)
     }
     
-    private func getPaddingLeft(_ data: Data) -> CGFloat {
-        if self.data.first?.id == data.id {
-            return spacingLarge
-        }
-        return 0
+    private func paddingLeft(_ element: Element) -> CGFloat {
+        self.elements.first?.id == element.id ? padding : 0
     }
     
-    private func getPaddingRight(_ data: Data) -> CGFloat{
-        if self.data.last?.id == data.id {
-            return spacingLarge
-        }
-        return 0
+    private func paddingRight(_ element: Element) -> CGFloat{
+        elements.last?.id == element.id ? padding : 0
     }
+    
+    let padding = spacingLarge
 }

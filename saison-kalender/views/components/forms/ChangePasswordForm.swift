@@ -24,7 +24,9 @@ struct ChangePasswordForm: View {
     }
     
     private var validPasswordChange: Bool {
-        AppUser.isValidPassword(newPassword) && user.checkPassword(password) && newPassword == newPasswordRepeat
+        AppUser.isValidPassword(newPassword) &&
+        user.checkPassword(password) &&
+        newPassword == newPasswordRepeat
     }
     
     private func validPassword(_ password: String) -> Bool {

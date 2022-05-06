@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct TagSlider<Content: Representable>: View {
-    var items: [Content]
-    var onSelect: (Content?) -> ()
-    @State var selectedItem: Content?
+struct TagSlider<Element: Representable>: View {
+    var items: [Element]
+    var onSelect: (Element?) -> ()
+    @State var selectedItem: Element?
     
-    init(_ items: [Content], onSelect: @escaping (Content?) -> () = {_ in }) {
+    init(_ items: [Element], onSelect: @escaping (Element?) -> () = {_ in }) {
         self.items = items
         self.onSelect = onSelect
     }
@@ -24,11 +24,11 @@ struct TagSlider<Content: Representable>: View {
         }
     }
     
-    private func isSelected(_ item: Content) -> Bool {
+    private func isSelected(_ item: Element) -> Bool {
         return selectedItem?.name == item.name
     }
     
-    private func select(item: Content?) {
+    private func select(item: Element?) {
         if selectedItem?.name != item?.name {
             selectedItem = item
             onSelect(item)

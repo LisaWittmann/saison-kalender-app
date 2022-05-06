@@ -15,17 +15,14 @@ struct Menu: View {
             Spacer()
             ZStack {
                 RoundedRectangle(cornerRadius: cornerRadiusSmall)
-                    .frame(
-                        width: tabSizeWidth,
-                        height: tabSizeHeight
-                    )
+                    .frame(width: tabSizeWidth, height: tabSizeHeight)
                     .foregroundColor(colorBeige)
                     .shadow(
                         radius: shadowRadius,
                         x: shadowOffsetX,
                         y: shadowOffsetY
                     )
-                HStack(spacing: getIconSpacing()) {
+                HStack(spacing: iconSpacing) {
                     ForEach(Route.allCases, id: \.self) { route in
                         menuItem(for: route)
                     }
@@ -36,24 +33,17 @@ struct Menu: View {
     
     @ViewBuilder
     private func menuItem(for route: Route) -> some View {
-        Button(action: { viewRouter.currentView = route }) {
-            Image(systemName: viewRouter.imageName(route: route))
-                .resizable()
-                .foregroundColor(getIconColor(route: route))
-                .frame(
-                    width: tabItemSize,
-                    height: tabItemSize,
-                    alignment: .center
-                )
-        }
+        Icon(viewRouter.imageName(route: route), onTap: { viewRouter.currentView = route })
+            .foregroundColor(iconColor(route))
+            .frame(width: tabItemSize, height: tabItemSize)
     }
     
-    private func getIconSpacing() -> CGFloat {
+    private var iconSpacing: CGFloat {
         return (tabSizeWidth - tabItemSize * CGFloat(Route.allCases.count))
             / CGFloat(Route.allCases.count)
     }
     
-    private func getIconColor(route: Route) -> Color {
+    private func iconColor(_ route: Route) -> Color {
         if route == viewRouter.currentView {
             return colorIconActive
         }

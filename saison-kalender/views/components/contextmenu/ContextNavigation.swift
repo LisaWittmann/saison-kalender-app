@@ -18,30 +18,26 @@ struct ContextNavigation: View {
     
     var body: some View {
         ZStack {
-            Image(systemName: iconLeft)
-                .modifier(FontLabel())
+            icon(iconLeft, alignment: .leading, edge: .leading)
                 .onTapGesture { functionLeft() }
-                .padding(.leading, spacingSmall)
-                .foregroundColor(colorBlack)
-                .frame(
-                    width: screenWidth,
-                    alignment: .leading
-                )
             Text(header)
                 .modifier(FontLabel())
                 .foregroundColor(colorBlack)
-            Image(systemName: iconRight)
+            icon(iconRight, alignment: .trailing, edge: .trailing)
                 .modifier(FontLabel())
                 .onTapGesture { functionRight() }
-                .padding(.trailing, spacingSmall)
-                .foregroundColor(colorBlack)
-                .frame(
-                    width: screenWidth,
-                    alignment: .trailing
-                )
         }
         .frame(width: screenWidth)
         .underline()
+    }
+    
+    @ViewBuilder
+    private func icon(_ name: String, alignment: Alignment, edge: Edge.Set) -> some View {
+        Image(systemName: name)
+            .modifier(FontLabel())
+            .padding(edge, spacingSmall)
+            .foregroundColor(colorBlack)
+            .frame(width: screenWidth, alignment: alignment)
     }
 }
 

@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-struct TeaserCarousel<Data, Content, Teaser> : View
-    where Data : Identifiable, Content : View, Teaser : View {
+struct TeaserCarousel<Element, Content, Teaser> : View
+    where Element : Identifiable, Content : View, Teaser : View {
     
     var spacing: CGFloat
-    var data: Array<Data>
-    var content: (Data) -> Content
+    var elements: Array<Element>
+    var content: (Element) -> Content
     var teaser: () -> Teaser
     
     init(
-        _ data: Array<Data>,
+        _ elements: Array<Element>,
         spacing: CGFloat = spacingMedium,
         @ViewBuilder teaser: @escaping () -> Teaser,
-        @ViewBuilder content: @escaping (Data) -> Content
+        @ViewBuilder content: @escaping (Element) -> Content
     ) {
         self.spacing = spacing
-        self.data = data
+        self.elements = elements
         self.content = content
         self.teaser = teaser
     }
@@ -30,13 +30,15 @@ struct TeaserCarousel<Data, Content, Teaser> : View
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: spacing) {
-                ForEach(data) { data in
+                ForEach(elements) { data in
                     content(data)
                         .frame(width: halfContentWidth, height: halfContentWidth)
-                        .padding(.leading, getPadding(data))
+                        .padding(.leading, padding(data))
                 }
                 teaser()
+                    .frame(width: halfContentWidth, height: halfContentWidth)
                     .padding(.trailing, spacingLarge)
+                    
             }
         }
         .padding(.top, spacingExtraSmall)
@@ -45,11 +47,8 @@ struct TeaserCarousel<Data, Content, Teaser> : View
         .padding(.trailing, -spacingLarge)
     }
     
-    private func getPadding(_ data: Data) -> CGFloat {
-        if self.data.first?.id == data.id {
-            return spacingLarge
-        }
-        return 0
+    private func padding(_ element: Element) -> CGFloat {
+        elements.first?.id == element.id ? spacingLarge : 0
     }
 }
 
@@ -57,9 +56,7 @@ struct TeaserCarousel_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        TeaserCarousel(calendar.recipes.teaser(3), teaser: {
-            LinkTeaser(to: .recipes)
-        }) { recipe in
+        TeaserCarousel(calendar.recipes.teaser(3), teaser: { LinkTeaser(to: .recipes) }) { recipe in
             RecipeTeaser(recipe)
         }
         .environment(\.managedObjectContext, calendar.context)

@@ -24,17 +24,13 @@ struct RecipeContextMenu: View {
                     header: "Neue Collection"
                 )
                 VStack {
-                    Image(manager.recipe?.name.normalize() ?? "")
-                        .resizable()
-                        .scaledToFill()
-                        .opacity(imageOpacity)
-                        .frame(width: previewWidth, height: previewHeight)
-                        .background(colorGreen)
-                        .modifier(BlurredImageStyle())
+                    previewImage(manager.recipe?.name.normalize() ?? "")
                     TextField("Name", text: $newCollectionName)
                         .frame(width: previewWidth, alignment: .center)
                         .modifier(FontText())
-                }.padding(spacingExtraSmall)
+                }
+                .padding(spacingExtraSmall)
+                
             case .save:
                 ContextNavigation(
                     iconRight: "plus",
@@ -46,15 +42,17 @@ struct RecipeContextMenu: View {
                         ForEach(Array(user.collections)) { collection in
                             preview(for: collection)
                         }
-                    }.padding(spacingSmall)
+                    }
+                    .padding(spacingSmall)
                 }
+                
             case .delete:
                 ContextNavigation(
                     iconRight: "xmark",
                     functionRight: manager.close,
                     header: "Rezept entfernen"
                 )
-                VStack(spacing: spacingSmall) {
+                VStack(spacing: spacingMedium) {
                     if manager.collection != nil {
                         Text("Aus Sammlungen entfernen")
                             .modifier(FontLabel())
@@ -70,7 +68,9 @@ struct RecipeContextMenu: View {
                             manager.remove(for: user)
                             manager.close()
                         }
-                }.padding(.top, spacingSmall)
+                }
+                .padding(.top, spacingSmall)
+                
             case .none:
                 EmptyView()
             }
@@ -80,15 +80,9 @@ struct RecipeContextMenu: View {
     }
     
     @ViewBuilder
-    func preview(for collection: Collection) -> some View {
+    private func preview(for collection: Collection) -> some View {
         VStack {
-            Image(collection.recipes.randomElement()?.name.normalize() ?? "")
-                .resizable()
-                .scaledToFill()
-                .opacity(imageOpacity)
-                .frame(width: previewWidth, height: previewHeight)
-                .background(colorGreen)
-                .modifier(BlurredImageStyle())
+            previewImage(collection.recipes.randomElement()?.name.normalize() ?? "")
             Text(collection.name)
                 .frame(width: previewWidth, alignment: .center)
                 .multilineTextAlignment(.center)
@@ -96,6 +90,17 @@ struct RecipeContextMenu: View {
         }
         .frame(width: previewWidth)
         .onTapGesture { manager.add(to: collection, of: user) }
+    }
+    
+    @ViewBuilder
+    private func previewImage(_ name: String) -> some View {
+        Image(name)
+            .resizable()
+            .scaledToFill()
+            .opacity(imageOpacity)
+            .frame(width: previewWidth, height: previewHeight)
+            .background(colorGreen)
+            .modifier(BlurredImageStyle())
     }
     
     private var saveIcon: String {
