@@ -17,6 +17,7 @@ public class Recipe: NSManagedObject {
         intro = schema.intro
         diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
         categories = schema.categories.map { RecipeCategory.create(from: $0, in: context) }
+        portions = Int(schema.portions)
         ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: self, in: context) }
         preparations = schema.preparations.map { Preparation.create(from: $0, for: self, in: context) }
         seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
@@ -40,6 +41,11 @@ extension Recipe: Representable {
     var diets: [Diet] {
         get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
         set { diets_ = newValue.map { $0.rawValue } }
+    }
+    
+    var portions: Int {
+        get { Int(portions_) }
+        set { portions_ = Int16(newValue) }
     }
     
     var ingredients: Array<Ingredient> {
@@ -105,6 +111,7 @@ extension Recipe {
             recipe.intro = schema.intro
             recipe.diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
             recipe.categories = schema.categories.map { RecipeCategory.create(from: $0, in: context) }
+            recipe.portions = Int(schema.portions)
             recipe.ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: recipe, in: context) }
             recipe.preparations = schema.preparations.map { Preparation.create(from: $0, for: recipe, in: context) }
             recipe.seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }

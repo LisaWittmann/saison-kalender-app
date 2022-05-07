@@ -10,7 +10,7 @@
                 "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
                 "diets": ["Laktosefrei", "Vegetarisch"],
                 "categories": [
-                    { "name": "Abendessen" }
+                    { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
                     "calories": 733.0,
@@ -134,7 +134,7 @@
                 "intro": "Grüner Spargel enthält viel Folsäure. Das B-Vitamin ist unter anderem an der Blutbildung beteiligt. Feta bringt Würze und reichlich knochenstärkendes Calcium.",
                 "diets": ["Vegetarisch"],
                 "categories": [
-                    { "name": "Abendessen" }
+                    { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
                     "calories": 527.0,
@@ -214,7 +214,7 @@
                 "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
                 "categories": [
                     { "name": "Asiatisch" },
-                    { "name": "Abendessen" }
+                    { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
                     "calories": 248.0,
@@ -317,7 +317,7 @@
                         "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
                         "diets": ["Laktosefrei", "Vegetarisch"],
                         "categories": [
-                            { "name": "Abendessen" }
+                            { "name": "Hauptspeise" }
                         ],
                         "nutrition": {
                             "calories": 733.0,
@@ -441,7 +441,7 @@
                         "intro": "Grüner Spargel enthält viel Folsäure. Das B-Vitamin ist unter anderem an der Blutbildung beteiligt. Feta bringt Würze und reichlich knochenstärkendes Calcium.",
                         "diets": ["Vegetarisch"],
                         "categories": [
-                            { "name": "Abendessen" }
+                            { "name": "Hauptspeise" }
                         ],
                         "nutrition": {
                             "calories": 527.0,

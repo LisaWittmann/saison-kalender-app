@@ -34,7 +34,7 @@ struct Tag_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
             Tag("Frühstück")
-            Tag("Abendessen", selected: true)
+            Tag("Hauptspeise", selected: true)
         }
     }
 }

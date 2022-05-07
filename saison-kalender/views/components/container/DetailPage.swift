@@ -126,7 +126,7 @@ struct SplitScreen_Previews: PreviewProvider {
             images: ["mangold"],
             headline: "Mangold",
             subline: "Saisonal im Mai",
-            icon: "heart"
+            icon: { Icon("heart") }
         ) {
             
             Text("Steckbrief")

@@ -13,6 +13,7 @@ public struct RecipeSchema {
     var diets: [String]
     var categories: [RecipeCategorySchema]
     var nutrition: NutritionSchema?
+    var portions: Int16
     var ingredients: [IngredientSchema]
     var preparations: [PreparationSchema]
     var seasonals: [String]
@@ -21,7 +22,7 @@ public struct RecipeSchema {
 extension RecipeSchema: Decodable {
     
     enum CodingKeys: String, CodingKey, CaseIterable {
-        case name, intro, diets, categories, nutrition, ingredients, preparations, seasonals
+        case name, intro, diets, categories, nutrition, portions, ingredients, preparations, seasonals
     }
     
     public init(from decoder: Decoder) throws {
@@ -31,6 +32,7 @@ extension RecipeSchema: Decodable {
         nutrition = try values.decodeIfPresent(NutritionSchema.self, forKey: .nutrition)
         diets = (try? values.decode([String].self, forKey: .diets)) ?? []
         categories = (try? values.decode([RecipeCategorySchema].self, forKey: .categories)) ?? []
+        portions = (try? values.decode(Int16.self, forKey: .portions)) ?? 4
         ingredients = (try? values.decode([IngredientSchema].self, forKey: .ingredients)) ?? []
         preparations = (try? values.decode([PreparationSchema].self, forKey: .preparations)) ?? []
         seasonals = (try? values.decode([String].self, forKey: .seasonals)) ?? []

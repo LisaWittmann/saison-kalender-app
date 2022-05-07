@@ -12,6 +12,7 @@
             "fat": 19,
             "protein": 7
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Apfel",
@@ -88,6 +89,7 @@
             "fat": 25,
             "protein": 8
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Ahornsirup",
@@ -182,8 +184,9 @@
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Salate" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Artischocke",
@@ -271,6 +274,7 @@
             "fat": 13,
             "protein": 7
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Agavendicksaft",
@@ -349,6 +353,7 @@
             "fat": 12,
             "protein": 7
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Blumenkohl",
@@ -410,7 +415,7 @@
         "name": "Boeuf Bourguignon",
         "intro": "Dieses Rezept ist smarter als ein klassisches Boeuf Bourguignon, da wir uns auf die zwei wesentlichen Zutaten Rindfleisch und Rotwein mit jeder Menge Gemüse begrenzt haben. Speck und weiterer Alkohol wie Cognac ist nicht enthalten.\n\nRindfleisch ist die perfekte Quelle für Eiweiß, Eisen und Zink. Die Kombination hilft beim Muskelaufbau, macht munter und stärkt das Immunsystem. Zwiebeln und Knoblauch gelten als Blutdrucksenker und wirken antibakteriell. Bioaktive Phenole aus dem Rotwein schützen Herz und Gefäße.",
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 447,
@@ -418,6 +423,7 @@
             "fat": 15,
             "protein": 62
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Champignons",
@@ -511,7 +517,7 @@
         "intro": "Die fleischauthentischen Patties sind auf Basis von schwarzen Bohnen und die bieten Proteine pur: Mit rund 22 Gramm Eiweiß pro 100 Gramm müssen sich die Hülsenfrüchte nicht hinter einem Steak verstecken. Das macht sie zu einem der interessantesten Lebensmittel für Veganer, aber auch für Sportler.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 532,
@@ -519,6 +525,7 @@
             "fat": 19,
             "protein": 22
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Burgerbrötchen",
@@ -640,8 +647,7 @@
         "intro": "Der knackige grüne Spargel bringt viel Kalium ins Frühlings-Risotto und hilft so, den Flüssigkeitshaushalt des Körpers im Gleichgewicht zu halten. Auch das B-Vitamin Folsäure steckt im Spargel – das ist für die Zellerneuerung und die Blutbildung von großer Bedeutung. Auch die Verdauung kommt nicht zu kurz: Der Frühlingsbote Radieschen punktet mit Senfölen, welche die Produktion von Verdauungssäften anregen und für eine gute Darmtätigkeit sorgen.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 575,
@@ -649,6 +655,7 @@
             "fat": 20,
             "protein": 21
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Dill",
@@ -727,7 +734,7 @@
         "intro": "Die im Reis und Gemüse enthaltenen komplexen Kohlenhydrate sowie Ballaststoffe und die Proteine aus den Eiern sorgen für eine langanhaltende Sättigung und einen konstanten Blutzuckerspiegel.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
+            { "name": "Hauptspeise" },
             { "name": "Asiatisch" }
         ],
         "nutrition": {
@@ -736,6 +743,7 @@
             "fat": 15,
             "protein": 12
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Cashewkerne",
@@ -825,7 +833,7 @@
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Beilagen" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 156,
@@ -833,6 +841,7 @@
             "fat": 8,
             "protein": 4
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Senf",
@@ -890,7 +899,7 @@
         "diets": ["Glutenfrei"],
         "categories": [
             { "name": "Beilagen" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 351,
@@ -898,6 +907,7 @@
             "fat": 19,
             "protein": 26
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Champignons",
@@ -960,7 +970,7 @@
         "intro": "Grüne Bohnen wirken durch ihre Ballaststoffe verdauungsfördernd – zusammen mit den Vollkorn-Lasagneblättern wird die Gemüselasagne mit Béchamelsauce zum echten Sattmacher. Ätherische Öle aus dem Lauch stärken die Darmflora und eliminieren krankmachende Erreger.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 620,
@@ -968,6 +978,7 @@
             "fat": 33,
             "protein": 23
         },
+        "portions": 6,
         "ingredients": [
             {
                 "name": "Butter",
@@ -1060,7 +1071,7 @@
         "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 383,
@@ -1068,6 +1079,7 @@
             "fat": 26,
             "protein": 21
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Bunte Möhren",
@@ -1151,7 +1163,7 @@
         "intro": "Das edle Kaninchenfleisch punktet durch seinen geringen Fettgehalt und hohen Proteinanteil. Dieser ist vergleichbar mit dem vom Hähnchen- oder Putenfleisch. Außerdem bringt das Fleisch erstaunliche 3,5 Gramm Eisen pro 100 Gramm mit sich und auch 29 Milligramm Magnesium können sich sehen lassen.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 399,
@@ -1159,35 +1171,37 @@
             "fat": 23,
             "protein": 37
         },
+        "portions": 6,
         "ingredients": [
             {
                 "name": "Fleischbrühe",
-                "quantity": 150,
-                "unit": "ml"
+                "quantity": 200,
+                "unit": "ml",
+                "group": "Brühe"
             },
             {
                 "name": "Kaninchen",
-                "quantity": 1,
+                "quantity": 1.5,
                 "unit": "kg"
             },
             {
                 "name": "Knoblauch",
-                "quantity": 3,
+                "quantity": 4,
                 "unit": "Zehen"
             },
             {
                 "name": "Möhre",
-                "quantity": 3
+                "quantity": 4
             },
             {
                 "name": "Olivenöl",
-                "quantity": 4,
+                "quantity": 6,
                 "unit": "EL",
                 "group": "Öl"
             },
             {
                 "name": "Paprika",
-                "quantity": 1.5
+                "quantity": 2
             },
             {
                 "name": "Porree",
@@ -1195,17 +1209,17 @@
             },
             {
                 "name": "Rosmarin",
-                "quantity": 2,
+                "quantity": 4,
                 "unit": "Zweige"
             },
             {
                 "name": "Rotwein",
-                "quantity": 180,
+                "quantity": 250,
                 "unit": "ml"
             },
             {
                 "name": "Zwiebel",
-                "quantity": 200,
+                "quantity": 300,
                 "unit": "g"
             }
         ],
@@ -1238,6 +1252,7 @@
             "fat": 20,
             "protein": 11
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Chinakohl",
@@ -1306,8 +1321,7 @@
         "intro": "Hier kommen reichlich Vitamine und Mineralstoffe auf den Tisch: Insbesondere Kalium, Calcium und Phosphor stecken in den Fruchtgemüsen Zucchini und Aubergine. Die kräftig riechenden schwefelhaltigen Bestandteile der Knoblauchzehen, sogenannte Phytonzide, wirken als natürliche Antibiotika. Sie können krank machende Mikroorganismen abtöten, ohne dabei den Menschen mit Nebenwirkungen zu belasten.",
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 357,
@@ -1315,6 +1329,7 @@
             "fat": 19,
             "protein": 12
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Aubergine",
@@ -1386,8 +1401,7 @@
         "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Backen" },
-            { "name": "Mittagessen" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 537,
@@ -1395,6 +1409,7 @@
             "fat": 23,
             "protein": 11
         },
+        "portions": 12,
         "ingredients": [
             {
                 "name": "Apfel",
@@ -1485,7 +1500,7 @@
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Salate" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 241,
@@ -1493,6 +1508,7 @@
             "fat": 8,
             "protein": 6
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Gemüsebrühe",
@@ -1562,9 +1578,9 @@
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Asiatisch" },
-            { "name": "Mittagessen" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Apfel",
@@ -1673,7 +1689,7 @@
         "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen. Weitere Informationen zum Projekt \"Geprüfte IN FORM-Rezepte\" gibt es hier.\n\nDurch die ätherischen Öle und Mineralstoffe im knoblauchähnlich schmeckenden Bärlauch wirkt das Kraut darmregulierend, blutbildend, basisch und anregend. Kohlrabi liefern reichlich Ballaststoffe, die die Verdauung anregen. Die Milchprodukte punkten mit viel knochenstärkendem Calcium.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 379,
@@ -1681,6 +1697,7 @@
             "fat": 13,
             "protein": 26
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Bärlauch",
@@ -1769,7 +1786,7 @@
         "intro": "Die tropische Kokosnuss ist reich an Ballast- und Mineralstoffen wie Magnesium, Phosphor, Kalium und Kalzium sowie den Spurenelementen Zink, Eisen und Kupfer.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Abendessen" },
+            { "name": "Hauptspeise" },
             { "name": "Asiatisch" }
         ],
         "nutrition": {
@@ -1778,6 +1795,7 @@
             "fat": 17,
             "protein": 27
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Basmati-Reis",
@@ -1882,7 +1900,7 @@
         "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen.\n\nRoher Kohlrabi schmeckt klasse – und sorgt für eine dicke Ration Vitamin C. In diesem Fall zum Beispiel deckt eine Portion, zusammen mit der angenehm scharfen Brunnenkresse und dem magenfreundlichen Fenchel, den gesamten Tagesbedarf.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 334,
@@ -1890,6 +1908,7 @@
             "fat": 22,
             "protein": 23
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Apfelessig",
@@ -1972,7 +1991,7 @@
         "intro": "Da freut sich der Darm: Kartoffeln und Pastinaken sind leicht verdaulich und liefern reichlich Ballaststoffe. Aufgrund der in den Kartoffeln enthaltenen Stärke können Säuren und Gifte gebunden werden; die Erdäpfel wirken dadurch beruhigend. Die Alpha-Linolensäure in Leinöl stärkt das Denkvermögen und erhöht die Konzentrationsfähigkeit. Zudem schützt die Omega-3-Fettsäure das Herz und reguliert einen erhöhten Blutfettspiegel.",
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
+            { "name": "Hauptspeise" },
             { "name": "Beilagen" }
         ],
         "nutrition": {
@@ -1981,6 +2000,7 @@
             "fat": 25.0,
             "protein": 21.0
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Butter",
@@ -2079,8 +2099,9 @@
         "name": "Nudelauflauf mit Fenchel",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Ei",
@@ -2156,7 +2177,7 @@
         "intro": "Die Ofenkartoffeln mit Brokkoli schmecken auch kalt als Salat oder als Snack für die Arbeit und das Büro unwiderstehlich gut.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
+            { "name": "Hauptspeise" },
             { "name": "Beilagen" }
         ],
         "nutrition": {
@@ -2165,6 +2186,7 @@
             "fat": 29,
             "protein": 16
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Brokkoli",
@@ -2245,7 +2267,7 @@
         "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
         "diets": ["Laktosefrei", "Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 733,
@@ -2253,6 +2275,7 @@
             "fat": 13,
             "protein": 44
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Champignons",
@@ -2361,7 +2384,7 @@
         "intro": "Vollkornmehl sättigt durch langkettige Kohlenhydrate und Ballaststoffe nachhaltig. Die Quellstoffe unterstützen eine ausgeglichene Darmflora. Tolle Knöllchen: Dank schwefelhaltiger Öle sowie Vitamin C stärken Radieschen effektiv die körpereigenen Abwehrkräfte.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 623,
@@ -2369,6 +2392,7 @@
             "fat": 37,
             "protein": 24
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Apfel",
@@ -2444,6 +2468,7 @@
             "fat": 24,
             "protein": 5
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Butter",
@@ -2500,7 +2525,7 @@
         "intro": "Radieschen enthalten reichlich sekundäre Pflanzenstoffe wie Flavonoide, Glucosinolate und ätherische Öle. Für den scharfen Geschmack sind die Senföle verantwortlich, die antibakteriell, entgiftend, krampflösend und appetitanregend wirken. Der Schafskäse spendet viel knochenstärkendes Calcium und sattmachendes Eiweiß.",
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" },
+            { "name": "Hauptspeise" },
             { "name": "Beilagen" }
         ],
         "nutrition": {
@@ -2509,6 +2534,7 @@
             "fat": 31,
             "protein": 13
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Balsamessig",
@@ -2588,6 +2614,7 @@
             "fat": 26,
             "protein": 10
         },
+        "portions": 12,
         "ingredients": [
             {
                 "name": "Rohrzucker",
@@ -2666,7 +2693,7 @@
         "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Frühstück" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 413,
@@ -2674,6 +2701,7 @@
             "fat": 12,
             "protein": 14
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Aubergine",
@@ -2729,7 +2757,7 @@
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Asiatisch" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 326,
@@ -2737,6 +2765,7 @@
             "fat": 13,
             "protein": 9
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Spinat",
@@ -2842,7 +2871,7 @@
         "intro": "Die mineralstoffreiche Kohlrabiknolle ist reich an Calcium, Kalium, Magnesium, Phosphor und Eisen; insbesondere in den Blättern sind viele Mineralstoffe enthalten. Deswegen ist es viel zu schade, diese wegzuwerfen. Verarbeiten Sie sie gerne mit! Die vorhandenen Senföle wirken im Körper antioxidativ, immunstärkend und darmregulierend. In den Sonnenblumenkernen steckt richtig viel Power. Sie liefern viele gute Fette, Eiweiße, Ballaststoffe und B-Vitamine.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
         "categories": [
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 362,
@@ -2850,6 +2879,7 @@
             "fat": 14,
             "protein": 26
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Zitrone",
@@ -2944,7 +2974,7 @@
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
             { "name": "Salate" },
-            { "name": "Mittagessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 671,
@@ -2952,6 +2982,7 @@
             "fat": 48,
             "protein": 34
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Burrata",
@@ -3028,7 +3059,7 @@
         "intro": "Grüner Spargel enthält viel Folsäure. Das B-Vitamin ist unter anderem an der Blutbildung beteiligt. Feta bringt Würze und reichlich knochenstärkendes Calcium.",
         "diets": ["Vegetarisch"],
         "categories": [
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 527,
@@ -3036,6 +3067,7 @@
             "fat": 19,
             "protein": 23
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Zitrone",
@@ -3100,7 +3132,7 @@
         "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Asiatisch" },
-            { "name": "Abendessen" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 248,
@@ -3108,6 +3140,7 @@
             "fat": 7,
             "protein": 10
         },
+        "portions": 4,
         "ingredients": [
             {
                 "name": "Austernpilze",

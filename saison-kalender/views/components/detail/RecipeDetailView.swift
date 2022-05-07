@@ -87,26 +87,8 @@ struct RecipeDetailView: View {
     @ViewBuilder
     private func body(for ingredients: Array<Ingredient>) -> some View {
         Section("Zutaten") {
-            ForEach(ingredients) { ingredient in
-                detail(for: ingredient)
-            }
+            IngredientList(ingredients, for: recipe.portions)
         }
-    }
-    
-    @ViewBuilder
-    private func detail(for ingredient: Ingredient) -> some View {
-        HStack(spacing: spacingSmall) {
-            Image(ingredient.group?.normalize() ?? ingredient.name.normalize())
-                .resizable()
-                .scaledToFill()
-                .frame(width: 40, height: 30)
-            Text(ingredient.name)
-                .font(.custom(fontSemiBold, size: fontSizeLabel))
-                .foregroundColor(colorBlack)
-            Spacer()
-            Text("\(ingredient.quantity.toString()) \(ingredient.unit ?? "")")
-                .modifier(FontText())
-        }.underline(opacity: 0.8)
     }
     
     @ViewBuilder
@@ -169,5 +151,19 @@ struct RecipeDetailView: View {
         } else {
             user.favor(recipe: recipe)
         }
+    }
+}
+
+struct RecipeDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        let calendar = SeasonCalendar.preview
+        let recipes = try! calendar.context.fetch(Recipe.fetchRequest())
+        let recipe = recipes.first!
+        
+        RecipeDetailView(recipe)
+            .environment(\.managedObjectContext, calendar.context)
+            .environmentObject(AppUser())
+            .environmentObject(ViewRouter())
+            .environmentObject(calendar)
     }
 }

@@ -36,6 +36,7 @@
         <attribute name="diets_" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformer" customClassName="[String]"/>
         <attribute name="intro" optional="YES" attributeType="String" defaultValueString=""/>
         <attribute name="name_" optional="YES" attributeType="String"/>
+        <attribute name="portions_" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="categories_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeCategory" inverseName="recipes_" inverseEntity="RecipeCategory"/>
         <relationship name="collections_" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Collection" inverseName="recipes_" inverseEntity="Collection"/>
         <relationship name="favoredBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="favorites_" inverseEntity="User"/>
@@ -68,7 +69,7 @@
         <element name="Ingredient" positionX="0" positionY="45" width="128" height="104"/>
         <element name="Nutrition" positionX="-36" positionY="27" width="128" height="104"/>
         <element name="Preparation" positionX="-18" positionY="36" width="128" height="104"/>
-        <element name="Recipe" positionX="36" positionY="90" width="128" height="179"/>
+        <element name="Recipe" positionX="36" positionY="90" width="128" height="194"/>
         <element name="RecipeCategory" positionX="-9" positionY="63" width="128" height="59"/>
         <element name="Seasonal" positionX="-63" positionY="-9" width="128" height="89"/>
         <element name="User" positionX="0" positionY="117" width="128" height="119"/>

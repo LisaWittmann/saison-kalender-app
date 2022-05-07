@@ -32,11 +32,13 @@ struct HomeView: View {
                     }
                 }
                 
+                
                 if !seasonCalendar.recipes.isEmpty {
-                    Section("Entdecke die neusten Rezepte") {
+                    Section("Entdecke alle \(seasonCalendar.season.name) Rezepte") {
                         teasers(for: seasonCalendar.filterRecipes(for: user.diets))
                     }
                 }
+                
             }
             Spacer()
         }
