@@ -22,6 +22,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Viele Äpfel, besonders aus Importen, schmecken hauptsächlich leicht süß und sonst wenig typisch; heimische und alte Sorten haben häufig einen kräftigen bis sehr intensiven Geschmack. Zu den alten Sorten gehören Boskop, Cox Orange, Goldparmäne oder der Danziger Kantapfel. Manche Apfelsorten wie z.B. Granny Smith oder Boskop schmecken leicht bis deutlich säuerlich und wieder andere (etwa Red Delicious oder Starking) haben ein parfümartiges Aroma. Alte Sorten sind wegen der sekundären Pflanzenstoffe, der Polyphenole, sogar ein Geheimtipp für Allergiker: Die Polyphenole binden die Allergene, deshalb werden sie oft besser vertragen. Sie sind aus den neuen Sorten herausgezüchtet, sodass diese süßer schmecken."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Äpfel halten sich generell ziemlich lange. In kühlen, dunklen Räumen mit hoher Luftfeuchtigkeit wie dem Keller, Dachboden oder in einer kühlen Speisekammer bleiben die meisten Sorten bis zu mehrere Wochen knackig und frisch. Wer viele Äpfel isst, kann seine Tagesration auch bei Zimmertemperatur lagern.\n\nAber Achtung: Äpfel verströmen das gasförmige Ethylen - legt man sie zusammen mit anderen Früchten in die Obstschale, können Äpfel darum deren Reifeprozess ungewollt beschleunigen. Natürlich kann man diesen Effekt umgekehrt auch bewusst nutzen, wenn er erwünscht ist: Wer z.B. möchte, dass unreife Früchte schneller nachreifen, lagert sie idealerweise zusammen mit Äpfeln."
             }
         ]
     },
@@ -43,6 +48,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die Saison für Aprikosen beginnt in den Ländern rund ums Mittelmeer im Mai, in Deutschland erntet man dann Aprikosen ab Juli. Frische Aprikosen bekommen Sie bis in den Spätherbst hinein."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Frische Aprikosen halten sich im Gemüsefach des Kühlschranks etwa eine Woche, werden dabei aber nicht unbedingt besser. Am leckersten schmeckt die Aprikose, wenn sie bei Zimmertemperatur liegen darf und entsprechend schnell gegessen wird."
             }
         ]
     },
@@ -64,6 +74,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Irgendwo in einem der Erzeugerländer ist immer gerade Erntezeit, sodass man Artischocken fast das ganze Jahr über bekommt."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Wer Artischocken nicht gleich zubereiten will, schlägt die Artischocke samt Stiel locker in ein feuchtes Küchentuch ein und legt sie ins Gemüsefach des Kühlschranks. So halten sie sich bis zu eine Woche frisch. Wollen Sie nur zwei oder drei Artischocken aufbewahren? Dann einfach die Stiele jeweils frisch anschneiden und wie Blumen in Wassergläser stellen – das hält sie frisch und sieht dazu noch toll aus."
             }
         ]
     },
@@ -90,6 +105,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "In Südeuropa und Asien kommen übrigens keineswegs nur die bei uns bekannten violetten Auberginen auf den Tisch. Dort kennt man schlanke, lange, hellgrüne oder gestreifte Exemplare ebenso wie kleine eiförmige, die in weiß, gelb, orangerot oder grün-weiß gestreift zu haben sind. Entsprechend existieren weltweit auch die verschiedensten Arten der Zubereitung."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Im Kühlschrank verlieren Auberginen rasch ihre feste Konsistenz und werden \"pappig\". Sie sollten daher nur 1-2 Tage bei Zimmertemperatur aufbewahrt werden. Auch das Lagern zusammen mit anderen Gemüsen oder Früchten tut Auberginen nicht gut."
             }
         ]
     },
@@ -106,6 +126,11 @@
                 "order": 2,
                 "name": "Herkunft",
                 "value": "Weltmeister im Anbau von Birnen ist China, das etwa 40 % der gesamten Welternte liefert. Die ursprüngliche Heimat der Birne liegt aber vermutlich in Anatolien und im Kaukasus."
+            },
+            {
+                "order": 3,
+                "name": "Lagerung",
+                "value": "Haben Sie reife Birnen gekauft, sollten Sie mit dem Vernaschen nicht länger als 1-2 Tage warten und die Früchte evtl. im Kühlschrank aufbewahren. Unreife Birnen können Sie bei Zimmertemperatur nachreifen lassen."
             }
         ]
     },
@@ -127,6 +152,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Blumenkohl frisch vom Feld aus deutschen Landen bekommt man bei uns von Mai bis November. Aber auch andere Länder bauen das Gemüse an, sodass Blumenkohl inzwischen das ganze Jahr über erhältlich ist."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Im Ganzen bleibt Blumenkohl im Gemüsefach des Kühlschranks vier bis fünf Tage frisch und knackig. Auch Einfrieren ist möglich. Dafür zerteilt man die Köpfe aber vorher besser in Röschen und blanchiert sie kurz in Salzwasser.\n\nBei vielen hat Blumenkohl einen im wahrsten Sinn des Wortes anrüchigen Ruf. Tatsächlich kann das Gemüse \"müffeln\", doch ist das immer ein Hinweis auf Überlagerung und mangelnde Frische. Den verpönten Kohlgeruch, der bei Blumenkohl sowieso nicht sonderlich ausgeprägt ist, können Sie ganz einfach vermeiden: Geben Sie zum Kochwasser etwas Zitronensaft – es erhält außerdem die weiße Farbe besonders gut. Manche schwören auch auf ein mit gegartes Lorbeerblatt oder einen Schuss Milch im Kochwasser."
             }
         ]
     },
@@ -148,6 +178,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Haupterntezeit für Brokkoli aus Deutschland ist der Sommer: Von Ende Juli bis Oktober kommt Brokkoli vom Freiland, zum Beispiel aus den Vierlanden bei Hamburg. Zum Glück ist aber mit dem Herbst nicht Schluss, denn dann exportiert besonders Italien bis ins später Frühjahr Brokkoli zu uns."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Bereiten Sie frischen Brokkoli so frisch wie möglich zu. Im Gemüsefach des Kühlschranks hält er sich zwar 1-2 Tage, in Folie gewickelt auch etwas länger. Aber Geschmack und Vitamine gehen schnell verloren und statt knackig grün wird der Brokkoli schnell gelb und schlapp."
             }
         ]
     },
@@ -169,6 +204,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die ersten Brombeeren reifen bei uns im Juli, die letzten werden dann je nach Wetterlage Mitte bis Ende Oktober geerntet. In guten Jahren kann man sogar noch bis zu den ersten Frostnächten Brombeeren pflücken."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Weil sie so leicht schimmeln, ist Kühlen bei Brombeeren ein Muss. Aber auch im Kühlschrank bleiben sie nur für maximal 2 Tage frisch und sollten besser nur so lange wie unbedingt nötig aufbewahren und lieber möglichst bald nach dem Einkauf oder dem Sammeln gegessen werden.\n\nWer Brombeeren ganzjährig genießen möchte, sollte sie einzeln nebeneinander auf ein Tablett gelegt für eine Stunde vorfrieren. Anschließend geht es im Gefrierbeutel zurück in den Froster."
             }
         ]
     },
@@ -190,6 +230,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "In Europa ist die Haupterntezeit für Butternusskürbis im Herbst. Wer mag, kann das beliebte Herbstgemüse das ganze Jahr über kaufen – Importe kommen auch außerhalb unserer Saison zum Beispiel aus Uruguay, Argentinien und Südafrika."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Lassen Sie den Stiel unbedingt dran, dann hält sich ein ganzer Butternut-Kürbis bei kühler und trockener Lagerung, zum Beispiel im Keller, in der Speisekammer oder im Gemüsefach des Kühlschranks, mehrere Monate. Angeschnittenen Butternut-Kürbis können Sie in Frischhaltefolie gewickelt drei bis vier Tage im Kühlschrank aufbewahren. Wenn Sie den Butternut-Kürbis einfrieren möchten, müssen Sie ihn ein bis zwei Minuten in kochendem Salzwasser blanchieren, abtropfen und abkühlen lassen und anschließend in Dosen oder gut verschlossenen Beuteln einfrieren."
             }
         ]
     },
@@ -221,6 +266,11 @@
                 "order": 5,
                 "name": "Riesenchampignons",
                 "value": "Damit diese Sorte ihrem Namen alle Ehre macht, lässt man weiße Champignons länger wachsen, sodass ihr Hut einen Durchmesser von etwa 12 Centimeter erreicht. Die Maxi-Version in braun heißt Portobello, weil sie in England besonders begehrt ist. Beide Varianten eignen sich mit ihrer Größe perfekt zum Füllen und Überbacken. Ein leckeres Beispiel sind gefüllte Portobello-Pilze oder gefüllte Riesenchampignons. Man kann Riesenchampignons beziehungsweise Portobello-Pilze aber auch prima wie ein vegetarisches \"Schnitzel\" braten."
+            },
+            {
+                "order": 6,
+                "name": "Lagerung",
+                "value": "Längeres Lagern bekommt Champignons nicht gut, sie werden dadurch leicht schwammig und verlieren ihre feste Konsistenz. Mehr als etwa 2-3 Tage sollten sie daher nicht im Kühlschrank liegen. Sie können die Champignons im Schälchen lassen, sollten aber die Kunststofffolie abnehmen und nur locker auflegen, damit Luft an die Pilze kommt. Falls Sie Champignons lose kaufen, können Sie sie einfach in der Papiertüte aufbewahren.\n\nChampignons nehmen leicht den Geruch und Geschmack anderer Lebensmittel an, deshalb sollte man sie nicht neben stark riechenden Gemüsesorten wie zum B Zwiebeln oder Knoblauch aufbewahren. Auch Früchte eignen sich nicht als Nachbarschaft, denn ihre Gase lassen Champignons schneller altern und schrumpelig werden."
             }
         ]
     },
@@ -247,6 +297,11 @@
                 "order": 4,
                 "name": "Verwendung",
                 "value": "Die Blattrippen von Chinakohl sind so zart, dass man sie problemlos mitessen kann. Das Putzen und Vorbereiten geht darum ganz fix. Welke äußere Blätter entfernen, den Chinakohl kurz waschen und in einem Sieb abtropfen lassen. Anschließend je nach Rezept zerkleinern."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Frisch eingekauft, bleibt Chinakohl im Gemüsefach des Kühlschranks problemlos eine Woche frisch."
             }
         ]
     },
@@ -273,6 +328,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Es gibt übrigens diverse Sorten beim Eisbergsalat. Besonders bemerkenswert sind darunter roter Eisbergsalat und der aus niederländischen Züchtungen entstandene Crisp-Salat. Er hat im Unterschied zu anderen Eisbergsalaten gekräuselte Außenblätter und eine intensiver grüne Farbe."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Eisbergsalat lässt sich, in Folie gewickelt, problemlos 1 Woche oder etwas länger im Kühlschrank lagern."
             }
         ]
     },
@@ -294,6 +354,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Endivien gibt es inzwischen aus dem Gewächshaus das ganze Jahr hindurch. Im Spätsommer beginnt bei uns die Erntezeit vom Freiland; da Endivien bei Frost nicht gleich schlappmachen, läuft die Ernte bis etwa Mitte Dezember."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Langes Lagern tut weder der glatten noch der krausen Variante gut. Bewahren Sie Endivien darum möglichst kurz im Gemüsefach des Kühlschranks auf, am besten in ein feuchtes Küchentuch oder locker in Papier gewickelt."
             }
         ]
     },
@@ -315,6 +380,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die Zeit für frische junge Erbsen ist kurz und reicht nur von Juni bis Ende August."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Die frischen Erbsenschoten bleiben im Gemüsefach des Kühlschranks einige Tage lang knackig."
             }
         ]
     },
@@ -341,6 +411,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Allein in Deutschland gibt es rund 1.000 verschiedene Sorten Erdbeeren mit teilweise kuriosen Namen wie \"Mieze Schindler\", \"Pegasus\", \"Lambada\" oder \"Polka\". Je nach Sorte sind sie hell- bis dunkelrot gefärbt und rundlich oder oval bis spitz geformt. Von Bedeutung sind die Sorten meist nur für Leute mit Garten, die ihre Erdbeeren selbst züchten – im Verkauf spielen die unzähligen Sortennamen oft keine Rolle."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Reife Erdbeeren reagieren auf Druck, Nässe und Kälte mit Aroma-, Nährstoff- und Formverlusten. Daher empfehlen Experten, die feinen Früchtchen am besten gleich nach dem Einkauf oder Pflücken zu genießen und sie nur im Ausnahmefall länger aufzubewahren. Im Kühlschrank halten sich Erdbeeren 1-2 Tage am besten, wenn man sie gleich nach dem Waschen und Putzen auf einem mit Küchenpapier ausgelegten Tablett verteilt.\n\nWichtig: Angeschimmelte Beeren oder solche mit größeren Druckstellen sortiert man am besten sofort aus, denn sie sorgen dafür, dass auch die übrigen Früchte sehr schnell verderben. Keinesfalls sollten Sie angeschimmelte Erdbeeren noch essen!\n\nEinfrieren lassen sich Erdbeeren übrigens gut, allerdings werden sie nach dem späteren Auftauen wegen des hohen Wassergehalts sehr weich. Für Kuchen oder Torten sowie Obstsalate eignen sich Erdbeeren aus dem "Kälteschlaf" also nicht, wohl aber für Cremes, Quarkspeisen, Eis und Smoothies. Zum Einfrieren lässt man die geputzten, trockenen und makellosen Erdbeeren flach nebeneinander auf einem Tablett ausgebreitet vorgefrieren. So kleben sie nicht zusammen und lassen sich perfekt portionsweise entnehmen, wenn man sie danach in Beuteln oder Dosen endgültig einfriert."
             }
         ]
     },
@@ -367,6 +442,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Generell unterscheidet man bei Feldsalat zwei Sortengruppen: Die eine besteht aus Sorten mit relativ großen Blättern, die andere – von Kennern am meisten geschätzt – hat kleine Blättchen und häufig eine besonders intensiv dunkelgrüne Farbe."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "So robust er Minustemperaturen auf dem Freiland erträgt – nach der Ernte wird Feldsalat sensibel und welkt relativ schnell. Wenn Sie ihn nicht gleich nach dem Kauf verwenden, sollten Sie ihn putzen, waschen und leicht feucht locker in einen Gefrierbeutel geben. So vorbereitet, bleibt Feldsalat im Gemüsefach des Kühlschranks noch etwa zwei bis drei Tage frisch."
             }
         ]
     },
@@ -388,6 +468,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Fenchel vom Freiland kommt von Oktober bis Mai aus in Italien, Spanien und Frankreich zu uns. Ab Mai bis in den November hinein exportieren vor allem die Niederlande frischen Fenchel."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Im Gegensatz zu den meisten anderen Gemüsesorten nimmt Fenchel eine längere Lagerzeit nicht übel. Bis zu zwei Wochen können Sie ihn – in Frischhaltefolie verpackt – im Kühlschrank problemlos aufbewahren. Achten Sie darauf, ihn nach Anschnitt zügig zu verbrauchen, da über die Schnittstellen ätherische Öle und Vitamin C verloren gehen können."
             }
         ]
     },
@@ -404,6 +489,11 @@
                 "order": 2,
                 "name": "Saison",
                 "value": "Frühlingszwiebeln beziehungsweise Lauchzwiebeln schmecken zwar vielen am besten, wenn sie von April bis September aus Freilandanbau kommen, aber sie sind das ganze Jahr über erhältlich. Im Herbst und Winter wachsen sie dann im Treibhaus."
+            },
+            {
+                "order": 3,
+                "name": "Lagerung",
+                "value": "Frische Frühlingszwiebeln halten sich mit Grün im Gemüsefach des Kühlschranks etwa 2-3 Tage. Schneidet man das Grün ab, bleiben Lauchzwiebeln auch 4-5 Tage frisch. Man kann sie übrigens auch einfrieren, doch verändert sich dadurch der Geschmack nicht unbedingt zum Positiven."
             }
         ]
     },
@@ -425,6 +515,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Am aromatischsten schmecken Freilandgurken, diese werden im Sommer von Mai bis September geerntet"
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Im Gemüsefach des Kühlschranks bleibt das Kürbisgewächs etwa eine Woche lang frisch. Angeschnittene Gurken sollte man fest in Frischhaltefolie wickeln in innerhalb von 2-3 Tagen essen."
             }
         ]
     },
@@ -446,6 +541,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Frisch vom Feld kommt Grünkohl etwa von Ende September bis in den Februar hinein. In der übrigen Zeit des Jahres kann man auf tief gefrorenen Grünkohl oder auf Grünkohl aus der Konserve zurückgreifen. Guter Grünkohl wird nach dem ersten Frost geerntet, weil sich durch die Kälte sein Zuckergehalt erhöht und so der Geschmack noch intensiviert wird."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Wer den vollen Gehalt an Vitamin C möchte, lässt Grünkohl besser nicht länger als höchstens 4-5 Tage im Gemüsefach des Kühlschranks lagern. Sie können frischen Grünkohl natürlich auch einfrieren."
             }
         ]
     },
@@ -467,6 +567,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Heidelbeeren bekommt man zwar das ganze Jahr über als Importware, die heimische Saison dauert aber von Juli bis September."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Heidelbeeren sind druckempfindlich, schimmeln leicht und können bei zu langem Lagern bitter werden. Am besten verbraucht man frische Heidelbeeren also möglichst bald und lagert sie bis dahin maximal 2-3 Tage locker auf einem großen Teller ausgebreitet und kühl."
             }
         ]
     },
@@ -488,6 +593,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Schon Ende August lassen sich die ersten Kürbisse blicken, die eigentliche Saison startet dann ab September und reicht bis weit in den Winter. Selbst wenn die Erntezeit vorbei ist, kann man frischen Hokkaido-Kürbis finden, da er sich bei optimaler Lagerung bis zu einem Jahr hält."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Bei kühler und trockener Lagerung, zum Beispiel im Keller, in der Speisekammer oder im Gemüsefach des Kühlschranks, hält sich ein ganzer Hokkaido-Kürbis mit unversehrtem Stielansatz mindestens zwei Monate. Wenn Sie nur einen halben Hokkaido-Kürbis verbraucht haben, können Sie den Rest mit Frischhaltefolie bedeckt gut bis zu vier Tage im Kühlschrank aufbewahren. Wer mag, kann in Würfel geschnittenen rohen Hokkaido-Kürbis übrigens auch einfrieren."
             }
         ]
     },
@@ -509,6 +619,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die Zeit für Holunderbeeren beginnt im September und dauert rund einen Monat."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Frische Holunderbeeren sind empfindlich und sollten nur so lange wie nötig im Kühlschrank lagern."
             }
         ]
     },
@@ -535,6 +650,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Viel Farbe bringen exotische Neulinge auf unseren Teller. Da sind die fast schwarze Trüffelkartoffel, der blaue Schwede, Highland Red Burgundy oder Pink Fir Apple. Sie verlieren allerdings etwas Farbe beim Kochen. Wer das vermeiden möchte, kann zur Vitelotte, Violetta und der Roten Emma greifen. Ein bunter Kartoffelsalat bringt Ihre Gäste garantiert zum Staunen."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Für die Lagerung von Kartoffeln eignen sich kühle, frostfreie, trockene, abgedunkelte Keller oder Vorratsräume und eine Temperatur von 4–8 Grad Celsius. Kleine grüne Stellen an den Kartoffeln sollten Sie großzügig abschneiden und stark verfärbte Exemplare wegwerfen, denn durchs Kochen lässt sich das nervenschädigende Solanin nicht entfernen."
             }
         ]
     },
@@ -582,6 +702,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Den ersten jungen Kopfsalat vom Feld bekommt man bei uns ab Mai und dann den ganzen Sommer über. Kopfsalat aus dem Treibhaus ist das ganze Jahr über zu haben."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Frischen Kohlrabi können Sie problemlos etwa eine Woche im Kühlschrank aufbewahren. Die Blätter aber besser abtrennen! Wer sie später mitessen möchte, lagert sie am besten getrennt von den Knollen in einem Beutel im Kühlschrank."
             }
         ]
     },
@@ -603,6 +728,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Den ersten jungen Kopfsalat vom Feld bekommt man bei uns ab Mai und dann den ganzen Sommer über. Kopfsalat aus dem Treibhaus ist das ganze Jahr über zu haben."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Am besten verbrauchen Sie frischen Kopfsalat möglichst schnell. Wollen Sie ihn ein paar Tage aufbewahren, können Sie es so versuchen: Den Kopfsalat leicht mit Wasser besprühen, locker in Papier einwickeln und ins Gemüsefach des Kühlschranks legen."
             }
         ]
     },
@@ -624,6 +754,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die Saison für Lollo rosso vom Freiland ist erfreulich lang: sie dauert von Mai bis Oktober. In den übrigen Monaten können Sie Lollo rosso aber auch aus Treibhausanbau bekommen."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Wenn Sie den Lollo rosso in ein feuchtes Küchenpapier wickeln, bleibt er im Gemüsefach des Kühlschranks drei bis vier Tage frisch."
             }
         ]
     },
@@ -650,6 +785,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Für Mais gibt es die zwei Hauptkategorien: Gemüsemais beziehungsweise Zuckermais und Körnermais beziehungsweise Feldmais. Der bei uns so beliebte gelbe Mais ist nur eine von den weltweit etwa 300 bekannten Sorten. In den Anbauländern, vor allem in Südamerika, kennt man auch Maissorten mit weißen, orangefarbenen, roten, blauen oder sogar violetten bis schwarzen Körnern. Der angesagte Baby-Mais ist übrigens keine spezielle Sorte: Um das Miniformat zu bekommen, erntet man den ganz normalen Zuckermais einfach schon in einem frühen Wachstumsstadium."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Verbrauchen Sie frischen Mais so schnell wie möglich. Er verliert rasend schnell seinen typischen süßen Geschmack, denn schon zwei Stunden nach der Ernte haben sich bis zu 50 Prozent des Zuckers in Stärke umgewandelt und dieser Prozess geht sogar bei 0 Grad Celsius Kühlung ständig weiter. Länger als ein, zwei Tage sollten Sie Mais darum nicht im Kühlschrank aufbewahren."
             }
         ]
     },
@@ -666,6 +806,11 @@
                 "order": 2,
                 "name": "Herkunft",
                 "value": "Mangold wuchs schon im Altertum wild in den Küstengebieten rund ums Mittelmeer. Seit einigen Jahrhunderten baut man das Gemüse aber auch in Kultur an, und das nicht mehr nur in seiner Heimat Südeuropa: Inzwischen wächst Mangold unter anderem auch in den Niederlanden und in der Schweiz. Bei uns gibt es nur sehr kleine Anbauflächen für Mangold, weshalb die deutsche Statistik die Ernte kurioserweise auch einfach unter dem Stichwort \"Spargel\" mit erfasst und verbucht."
+            },
+            {
+                "order": 3,
+                "name": "Lagerung",
+                "value": "Ob mit weißem oder mit rotem Stiel, ob Stiel- oder Blatt- bzw. Schnittmangold: Schnippeln Sie Mangold immer möglichst frisch vom Markt in Topf oder Pfanne! Länger als 1-2 Tage sollten Sie das Gemüse nicht im Gemüsefach des Kühlschranks aufbewahren, sonst wird es schlapp und verliert rasant an nützlichen Nährstoffen."
             }
         ]
     },
@@ -687,6 +832,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die Zeit für Mirabellen ist relativ kurz und dauert von Juli bis maximal Mitte September."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Da Mirabellen sehr empfindlich sind und schnell verderben, besser keine überreifen Früchte kaufen und bis zum Verbrauch im Kühlschrank (maximal 2-3 Tage) aufbewahren. Wer die eher raren, süßen Früchtchen ergattert, kann sie übrigens problemlos einfrieren: Waschen, mit oder ohne Stein in Beutel füllen, gut verschließen und innerhalb eines Jahres verbrauchen."
             }
         ]
     },
@@ -708,6 +858,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Möhren sind das ganze Jahr über aus einheimischem Anbau erhältlich; zwischen Oktober und Dezember ist das Angebot besonders groß. Im Frühjahr und Sommer sind die sogenannten Bundmöhren erhältlich. Ab dem Sommer bis in den Winter hinein gibt es dann die Waschmöhren, die nach der Ernte in Waschanlagen vorgewaschen werden und dann verpackt im Handel liegen. Waschmöhren enthalten mehr Ballaststoffe und weniger Zucker als die etwas süßeren Bundmöhren. "
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Ein weiterer von vielen Vorzügen der Möhre ist, dass sie sich im kühlen Keller oder im Gemüsefach des Kühlschranks lange hält. Bei Bundmöhren allerdings wichtig: Schneiden Sie das Grün ab, falls Sie das Gemüse länger aufheben wollen, es sorgt sonst für schnelleres Welkwerden. So lassen sie sich etwa zwei Wochen lagern."
             }
         ]
     },
@@ -729,6 +884,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die ersten frischen Nektarinen kommen schon ab April aus Spanien und Italien zu uns. Richtig los geht es aber mit der Ernte auch in südlichen Ländern erst im Sommer: Von Juli bis September dauert die Hochsaison. Wer danach noch frischen Nektarine möchte, kann im Winter auch Früchte aus Südafrika, Chile und Argentinien bekommen."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Noch nicht ganz reife Nektarinen können Sie gut ein paar Tage bei Zimmertemperatur lagern und nachreifen lassen. Ausgereifte Nektarinen allerdings am besten zügig verzehren, denn sie faulen schnell!"
             }
         ]
     },
@@ -755,6 +915,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "In Asien kennt man verschiedene Varianten von Pak Choi, zum Beispiel auch Sorten mit hellgrünen statt weißen Blattrippen. Ziemlich beliebt sind auch der sogenannte Baby Pak Choi und der Shanghai Pak Choi – beide Sorten sind sehr viel kleiner und zarter als der herkömmliche Pak Choi, aber während Baby Pak Choi besonders mild schmeckt, hat Shanghai Pak Choi einen besonders würzigen Geschmack."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Im Gemüsefach des Kühlschranks bleibt frischer Pak Choi 1-2 Tage frisch und knackig. Wickeln Sie ihn zum Lagern wie Spargel in ein feuchtes Küchentuch oder geben Sie ihn in eine Plastiktüte, in die Sie ein paar kleine Luftlöcher stechen."
             }
         ]
     },
@@ -776,6 +941,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Aus einheimischem Anbau kommen Paprikaschoten bei uns von Juli bis Oktober. In den übrigen Monaten herrscht aber auch kein Mangel, denn dann importieren wir sie unter anderem aus den Ländern rund ums Mittelmeer, vor allem Spanien und aus den Niederlanden."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Paprikaschoten sind keine Sensibelchen und vertragen bis zu eine Woche Kühlschrank-Dasein in der Regel gut. Schauen Sie aber nach längerem Lagern beim Putzen genau hin. Falls sich in den Schoten Schimmelstellen zeigen, sollten Sie die betroffene Paprika wegwerfen.\n\nBei Zimmertemperatur bleibt die Paprika etwa drei Tage frisch."
             }
         ]
     },
@@ -797,6 +967,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Pastinaken gehören zu den typischen Herbst- und Wintergemüsen; man bekommt sie ab Oktober bis Mitte März."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Früher wurde die eigene Ernte vom Herbst den ganzen Winter über im Garten eingegraben oder im kühlen Keller gelagert. Doch die meisten von uns haben heute entweder zu warme Kellerräume oder nicht den entsprechenden Lagerplatz im Garten. Pastinaken wandern also am besten ins Gemüsefach des Kühlschranks, und zwar ungewaschen und ohne Verpackung. Geben Sie darüber ein leicht feuchtes, aber nicht nasses Küchentuch, damit das Gemüse nicht austrocknet oder schimmelt. Apropos Schimmel: Machen Sie sicherheitshalber bei längerer Lagerung von Pastinaken immer eine Geruchsprobe und achten Sie auf schwarze Stellen. Werfen Sie im Zweifelsfall die Wurzeln bei Schimmelverdacht lieber weg.\n\nZum Einfrieren Pastinaken waschen, putzen und schälen wie unten beschrieben, nach Wunsch zerkleinern und dann 1-2 Minuten in reichlich kochendem Salzwasser blanchieren. Anschließend in einem Sieb gut abtropfen lassen und in Gefrierbeutel oder -dosen füllen. Haltbarkeit: etwa 1 Jahr."
             }
         ]
     },
@@ -823,6 +998,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Die Zahl der verschiedenen Sorten bei Pfirsichen ist dermaßen groß, dass selbst die meisten Fachleute sie nicht genau nennen können. Gemeinsam haben die meisten davon ihre rundliche, manchmal auch leicht spitz zulaufende Form mit einer Längsfurche und einem vertieften Stielansatz. Unabhängig von der Sorte verbirgt sich im Inneren immer ein sehr harter, ungenießbarer Stein. Aber schon bei der Farbe von Schale und Fruchtfleisch wird es schnell unübersichtlich: Pfirsiche können eine grün-gelbe, kräftig gelbe oder rote Schale haben, das Fruchtfleisch variiert farblich von fast weiß über zartgelb bis hin zu dunklem Orange oder sogar hellem Rot."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Frische Pfirsiche reagieren extrem empfindlich auf Druck. Behandeln Sie reife Pfirsiche darum behutsam und lagern Sie die Früchte maximal 4-5 Tage im Gemüsefach des Kühlschranks. Leider kommen die meisten Pfirsiche wegen ihrer Empfindlichkeit noch unreif zu uns – mit etwas Glück reifen sie aber nach, wenn man sie einige Tage bei Zimmertemperatur liegen lässt."
             }
         ]
     },
@@ -844,6 +1024,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Porree aus Freilandanbau hat von Juni bis März Saison. In der kurzen Zwischenzeit kommt er aus Frühkulturen, die unter Glas oder Folie liegen."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Porree ist ziemlich robust, verträgt also auch mal eine etwas längere Zeit im Kühlschrank. Behalten Sie aber im Blick: Je länger er lagert, desto mehr Vitamine verliert er."
             }
         ]
     },
@@ -870,6 +1055,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Bei uns sind die etwas weichere Birnenquitte und die sehr harte Apfelquitte sehr bekannt, die ihren Namen jeweils von der Form haben. Beide können bis zu einem Kilogramm schwer werden und die Farbe der Schale variiert je nach Sorte von hellgelb bis dunkelgelb."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Trotz der harten Schale sind Quitten ziemlich empfindlich. Bekommen sie Druckstellen, verderben sie sehr schnell. Richtig gelagert – an einem kühlen, luftigen Ort und getrennt von Äpfeln, Birnen und Gemüse – bleiben Quitten jedoch bis zu zwei Monate frisch und aromatisch."
             }
         ]
     },
@@ -896,6 +1086,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Bekannt sind zahlreiche verschiedene Sorten, als besonders gut gelten unter anderem Radicchio di Verona und der Radicchio di Trevese."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "anges Lagern tut weder dem Geschmack noch der Knackigkeit von Radicchio gut. Bewahren Sie ihn darum möglichst kurz im Gemüsefach des Kühlschranks auf, am besten locker in Papier gewickelt."
             }
         ]
     },
@@ -922,6 +1117,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Ob rund und rot, zylindrisch und weiß oder oval und zweifarbig – gerade auf dem Wochenmarkt finden sich viele verschiedene Radieschensorten. Das Fleisch ist allerdings stets weiß."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Vernaschen Sie Radieschen so schnell wie möglich. Radieschen können Sie aber bis zu einer Woche im Kühlschrank lagern, wenn sie in ein feuchtes Tuch gewickelt werden. Entfernen Sie vorher die Blätter, da diese sonst schnell schleimig werden."
             }
         ]
     },
@@ -943,6 +1143,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Den ersten jungen Rhabarber bekommt man schon Ende März oder – je nach Wetter – Anfang April. Von da an dauert seine Saison rund drei Monate. Spätestens Ende Juni ist Schluss. Dann brauchen die Pflanzen eine Ruhephase, um sich für die Ernte im nächsten Jahr zu erholen."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Am besten bewahren Sie Rhabarber ähnlich wie Spargel auf. Einfach in ein feuchtes Tuch wickeln und ins Gemüsefach des Kühlschranks legen. Dort bleibt er mehrere Tage frisch und knackig.\n\nRhabarber kann man außerdem gut einfrieren: Entweder küchenfertig vorbereitet und roh oder aber schon zubereitet (zum Beispiel als Kompott) einfrieren."
             }
         ]
     },
@@ -964,6 +1169,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Seine Hochsaison hat Rosenkohl von Oktober bis Januar, aber man bekommt ihn auch noch bis in frühen Frühling hinein. Ähnlich wie beim Grünkohl entfaltet sich der Geschmack von Rosenkohl übrigens nach dem ersten Nachtfrost am besten, darum genießen ihn viele am liebsten ab November."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "rischer Rosenkohl hält sich ungewaschen und ungeputzt im Gemüsefach des Kühlschranks vier bis fünf Tage. Lagern Sie ihn aber nicht zusammen mit Äpfeln oder Tomaten, denn beide enthalten ein Reifungsgas namens Ethylen, das Rosenkohl schneller welken lässt.\n\nSie können frischen Rosenkohl natürlich auch einfrieren, allerdings verliert er durch den Kälteschlaf an Festigkeit. Nach dem Putzen vier bis fünf Minuten in kochendem Salzwasser garen, abgießen, abkühlen lassen und in Gefrierdosen oder -beutel verpacken."
             }
         ]
     },
@@ -985,6 +1195,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Frische Rote Bete findet man im Spätherbst und Winter bis weit ins Frühjahr hinein in jedem Supermarkt, beim Gemüsehändler oder auf dem Wochenmarkt."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "ote Bete hält sich im Gemüsefach des Kühlschranks oder an einem anderen kühlen Ort wie Speisekammer oder Keller bis zu zwei Wochen."
             }
         ]
     },
@@ -1006,6 +1221,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Frischen Rotkohl kann man das ganze Jahr über kaufen, denn frühe Sorten werden schon ab Juni geerntet. Die Hauptsaison für Rotkohl startet dann im Herbst: Von August bis November kommt der sogenannte Dauerkohl frisch von den Feldern und wird anschließend als Lagerware verkauft."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Frischer Rotkohl im Ganzen hält sich im Gemüsefach des Kühlschranks problemlos bis zu drei Wochen. Auch angeschnittene Köpfe bleiben wochenlang frisch, wenn man sie mit Frischhaltefolie abdeckt, allerdings sinkt der hohe Vitamin-C-Gehalt sehr schnell, weshalb langes Aufbewahren von angeschnittenem Rotkohl nicht empfehlenswert ist. Lagern Sie Rotkohl nicht zusammen mit Äpfeln oder Tomaten, denn diese Gemüsesorten enthalten ein Reifungsgas namens Ethylen, das ihn schneller welken lässt."
             }
         ]
     },
@@ -1027,6 +1247,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Mittlerweile bekommen wir, dank des Anbaus unter Glas, Rucola zu jeder Jahreszeit im Supermarkt oder im Gemüseladen. Normalerweise ist frischer Rucola ist von Mai bis Oktober erhältlich. Besonders aromatisch schmeckt das Kraut allerdings, wenn es im Sommer richtig Sonne tanken konnte."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Rucola welkt ziemlich rasch, darum sollten Sie ihn möglichst schnell zubereiten. Notfalls hält sich Rucola 1-2 Tage im Kühlschrank, wenn Sie ihn in einem Gefrierbeutel verpacken oder ihn lose im Gemüsefach mit einem feuchten Tuch bedecken. Alternativ können Sie die Stielenden in ein Wasserglas stellen."
             }
         ]
     },
@@ -1064,6 +1289,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Die traditionelle Saison für Spargel beginnt hierzulande je nach Wetterlage Anfang bis Mitte Mai und endet nach dem Motto \"Kirschen rot, Spargel tot\" Ende Juni. Da aber inzwischen auch aus anderen Ländern Spargelimporte kommen, hat sich die Saison verlängert und beginnt schon Ende März."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Am besten schmeckt Spargel, wenn er ganz frisch gestochen vom Feld kommt. Bewahren Sie ihn also nur so lange wie nötig im Gemüsefach des Kühlschranks auf und wickeln Sie ihn dafür in ein feuchtes Küchentuch. Nach spätestens zwei Tagen sollten Sie den Spargel kochen, denn sonst verliert das Stangengemüse sein feines Aroma. Wenn Sie Spargel das ganze Jahr über genießen möchten, können Sie die Stangen auch einfrieren. Dazu schälen Sie sie, schneiden sie nach Belieben in Stücke und frieren den Spargel in einem Plastikbeutel oder einem geeigneten Gefäß ein. So aufbewahrt lässt er sich etwa 6–8 Monate lagern. Vor dem Kochen müssen Sie das Gemüse nicht auftauen, sondern können es einfach gefroren ins kochende Wasser geben."
             }
         ]
     },
@@ -1090,6 +1320,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Grundsätzlich existieren zwar rund 50 verschiedene, in der Praxis unterteilt man aber nur in Frühjahrs-, Sommer- und Winterspinat. Junger Frühjahrs- und Sommerspinat hat kleinere, zarte und hellgrüne Blätter. Spinat aus später Ernte dagegen ist dunkelgrün, hat große und feste, fleischige Blätter.\n\nBesonders beliebt ist momentan der sogenannte Baby-Spinat mit seinen kleinen, zarten Blättchen und einem milderen Geschmack."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Wenn Sie den ganzen Nutzen aus den gesundheitlichen Pluspunkten von frischem Spinat haben möchten, heben Sie ihn maximal zwei Tage im Kühlschrank auf. Denn sein Vitamingehalt sinkt sonst rasant und der Nitritgehalt steigt bei längerer Lagerung an. Tiefgekühlter Spinat hält sich im Gefrierfach problemlos ein Jahr und länger ohne Vitaminverluste."
             }
         ]
     },
@@ -1111,6 +1346,11 @@
                 "order": 3,
                 "name": "Saison",
                 "value": "Spitzkohl gibt es beinahe das ganze Jahr über. Im Frühjahr und Frühsommer sind die Köpfe kleiner und die Blätter zarter als im Herbst und Winter. Von Mai bis Dezember kommt Spitzkohl aus heimischer Ernte und ab April ist dann der besonders zarte frühe Spitzkohl aus Frankreich auf dem Markt.                "
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Verbrauchen Sie frischen Spitzkohl so schnell wie möglich, denn wegen seiner zarten Struktur ist er nur 2-3 Tage haltbar. Zum Aufbewahren wickeln Sie den Kopf am besten wie frischen Spargel in ein feuchtes Küchentuch und geben ihn ins Gemüsefach des Kühlschranks."
             }
         ]
     },
@@ -1137,6 +1377,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Die Farbe der Batate variiert je nach Sorte. Es gibt Süßkartoffeln mit gelblicher, orangefarbener oder tiefroter Schale. Ihr Fruchtfleisch kann fast weiß bis gelblich, orangerot oder lachsfarben sein. Aus Italien stammt eine neuere Züchtung, die weiße Batate. Sie ähnelt mit hellbrauner Schale und weißem Fruchtfleisch rein äußerlich der klassischen Kartoffel am ehesten."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Kälte bekommt den süßen Knollen nicht. Im Kühlschrank haben sie daher nichts zu suchen. Falls Sie Süßkartoffeln nicht gleich verbrauchen, bleiben sie in einem trockenen Raum bei etwa 18 bis 22 Grad am besten frisch."
             }
         ]
     },
@@ -1163,6 +1408,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Besonders begehrt sind bei vielen Genießern dabei Strauchtomaten (die tatsächlich oft intensiver schmecken als andere) und vor allem auch ungewöhnlichere Sorten. Während sich Kirsch- oder Cherrytomaten längst etabliert haben und der eine oder andere auch schon gelbe Tomaten gesehen und probiert hat, gelten andere wie die spanische Raf-Tomate, die fast schwarze \"Black Tula\" oder die bizarr gemusterten \"Zebras\" noch als Geheimtipp unter Gärtnern und Eingeweihten.\n\nGerade im Hochsommer lohnt es sich, auf dem Wochenmarkt oder im Gemüseladen genau hinzuschauen: Da liegen Tomaten von winzig klein bis Männerfaustgröße, von fast grün bis beinah schwarz, von glatt und rund bis hin zu gerippt in den Stiegen. Pflaumentomaten (Red Fresh und Roma Vine) sowie die gelben Tomaten (Saffron) und orange-farbene Tomaten  (Vitamora) locken den Genießer, Fleischtomaten in allen denkbaren Größen und sogenannte Flaschentomaten führen viele gut sortierte Händler im Sommer in rot und gelb.\n\nWer über so viel Auswahl staunt, ahnt wahrscheinlich nicht, dass selbst diese Vielfalt nur die Spitze des Eisbergs ist. Weltweit gibt es mehrere Tausend verschiedene Tomatensorten. Manche werden nie allgemein bekannt, andere setzen sich auf dem Markt durch. Seltene und besonders schmackhafte Sorten wie zum Beispiel die \"Marianna’s Peace\", die lange Zeit als die beste und teuerste Tomate der Welt galt,  können richtig kostspielig werden. Allein sechs Samenkörnchen haben mal über 20 US-Dollar gekostet. Heute bekommt man zehn Samen bereits für 1 Euro. Die rosarote Fleischtomate soll nach dem zweiten Weltkrieg von einer Frau namens Marianna aus Böhmen/Tschechien in die USA gebracht worden sein."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Lagern Sie Tomaten bei Zimmertemperatur auf. Bitte nie in den Kühlschrank legen, die Kälte ist ein absoluter Aroma-Killer!\n\nTomaten verströmen das Reifegas Ethylen. Bereits Genießbares verdirbt dadurch rascher, noch Unreifes wird schneller verzehrfertig. Lagern Sie Tomaten also entsprechend separat oder in der Nähe von anderem Obst und Gemüse.\n\nWichtig: Werfen Sie Tomaten mit Faul- und Schimmelstellen grundsätzlich weg. Es reicht nicht, schlechte Stellen herauszuschneiden, um mögliche Schimmelgifte zu entfernen."
             }
         ]
     },
@@ -1189,6 +1439,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Weintrauben gibt es von winzig klein bis walnussgroß in zahllosen Sorten. Man unterscheidet sie darum hauptsächlich nach ihrer Farbe in helle (weiße, grüne, gelbe) und in dunkle (blaue, rote, blauschwarze) Sorten. Im Geschmack unterscheiden sie sich  kaum, wohl aber in ihren Inhaltsstoffen. Außerdem haben dunkle Trauben meistens eine dickere Schale und mehr Kerne, helle Trauben sind etwas zarter. Besonders beliebt sind nicht nur bei Kindern kernlose Weintrauben und die besonders süßen Muskattrauben."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Trauben, die bald gegessen werden, können bei Zimmertemperatur aufs Vernaschtwerden warten. Will man größere Mengen auf Vorrat haben, legt man die Trauben aber besser in den Kühlschrank."
             }
         ]
     },
@@ -1205,6 +1460,11 @@
                 "order": 2,
                 "name": "Saison",
                 "value": "Weißkohl gilt zwar als eins der typischsten Wintergemüse und wird auch bevorzugt in der kalten Jahreszeit zubereitet. Tatsächlich wächst das Gemüse aber schon ab April auf unseren Feldern und ist dann je nach Sorte ganzjährig zu haben."
+            },
+            {
+                "order": 3,
+                "name": "Lagerung",
+                "value": "Richtig gelagert hält sich frisch geernteter Weißkohl im Ganzen bis zu zwei Monate. Am besten lagern Sie ihn im kühlen Keller, aber zur Not tut es natürlich auch das Gemüsefach des Kühlschranks. Auch angeschnittener Weißkohl bleibt dort etwa 3 Wochen knackig, wenn man ihn in ein feuchtes Tuch wickelt."
             }
         ]
     },
@@ -1232,6 +1492,12 @@
                 "name": "Sorten",
                 "value": "Den Krauskopf gibt es in unterschiedlichen Sorten: Robuster Winterwirsing ist würzig-intensiver im Geschmack und hat stärker gekräuselte, dunklere Blätter als der zarte Sommerwirsing."
             }
+            ,
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Im Gemüsefach des Kühlschranks bleibt frischer Sommerwirsing gut zwei bis drei Tage frisch und knackig. Die Wintersorte bleibt dort sogar ein bis zwei Wochen knack-frisch. Auch Einfrieren ist, mit leichten Geschmackseinbußen, möglich. Dafür blanchiert man den Kohl aber besser vorher kurz in kochendem Salzwasser und lässt ihn gut abtropfen."
+            }
         ]
     },
     {
@@ -1257,6 +1523,11 @@
                 "order": 4,
                 "name": "Sorten",
                 "value": "Im Mittelmeerraum schätzt man nicht nur die bei uns besonders bekannten dunkelgrünen Sorten, sondern auch Zucchini mit hellgrüner oder gelber Haut. Sehr beliebt und inzwischen auch bei uns angesagt sind runde Zucchini, die so genannten Rondini, die sich toll zum Füllen und Schmoren eignen. In der Sternegastronomie spielen außerdem Baby-Zucchini eine Rolle. Denn Feinschmecker sind sich einig: Je kleiner die Zucchini, desto zarter."
+            },
+            {
+                "order": 5,
+                "name": "Lagerung",
+                "value": "Frische Zucchini halten sich bei einer Temperatur von mindestens 8 Grad Celsius im Gemüsefach des Kühlschranks bis zu zehn Tage. Lagern Sie Zucchini nicht zusammen mit Äpfeln oder Tomaten, denn beide enthalten ein Gas namens Ethylen, das Zucchini schnell schlapp statt knackig werden lässt."
             }
         ]
     },
@@ -1308,6 +1579,11 @@
                 "order": 9,
                 "name": "Schalotte",
                 "value": "Die mildeste und edelste aller Zwiebeln verdankt ihren Namen der palästinensischen Stadt Askalon, ist aber speziell in Frankreich nicht aus der feinen Küche wegzudenken. Runde Schalotten wie die \"Bretonne Ronde\" sehen fast aus wie Küchenzwiebeln, haben aber das für die Edelzwiebel typische Aroma. Die meisten Schalotten haben eine längliche, birnenartige Form. Die Schale schimmert rosa bis rot oder kupferfarben."
+            },
+            {
+                "order": 10,
+                "name": "Lagerung",
+                "value": "Bewahren Sie Zwiebeln am besten in einem Korb auf, sodass sie Luft bekommen. Im Kühlschrank sollte man sie nicht lagern, denn bei der hohen Luftfeuchtigkeit können sie schnell schimmeln oder faulen."
             }
         ]
     }
