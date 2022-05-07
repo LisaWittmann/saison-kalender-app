@@ -9,19 +9,16 @@ import SwiftUI
 
 struct CollectionDetailView: View {
     @ObservedObject var collection: Collection
-    var close: () -> ()
     
-    init(_ collection: Collection, close: @escaping () -> ()) {
+    init(_ collection: Collection) {
         self.collection = collection
-        self.close = close
     }
     
     var body: some View {
         DetailPage(
             images: collection.recipes.map { $0.name.normalize() },
             headline: collection.name,
-            subline: "\(collection.recipes.count) Rezepte",
-            close: close
+            subline: "\(collection.recipes.count) Rezepte"
         ) {
             Masonry(Array(collection.recipes)) { recipe in
                 RecipeTeaser(recipe, collection: collection)
@@ -35,7 +32,7 @@ struct CollectionDetailView_Previews: PreviewProvider {
         let calendar = SeasonCalendar.preview
         let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
         
-        CollectionDetailView(collections.first!, close: {})
+        CollectionDetailView(collections.first!)
             .environmentObject(AppUser())
             .environmentObject(calendar)
     }

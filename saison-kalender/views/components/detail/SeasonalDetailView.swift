@@ -11,19 +11,16 @@ import WrappingHStack
 struct SeasonalDetailView: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     @ObservedObject var seasonal: Seasonal
-    var close: () -> ()
     
-    init(_ seasonal: Seasonal, close: @escaping () -> ()) {
+    init(_ seasonal: Seasonal) {
         self.seasonal = seasonal
-        self.close = close
     }
     
     var body: some View {
         DetailPage(
             images: [seasonal.name.normalize()],
             headline: seasonal.name,
-            subline: "Saisonal im \(seasonCalendar.season.name)",
-            close: close
+            subline: "Saisonal im \(seasonCalendar.season.name)"
         ) {
             Text("Steckbrief").modifier(FontH1())
             
@@ -73,7 +70,7 @@ struct SeasonalDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        SeasonalDetailView(calendar.seasonals.randomElement()!, close: {})
+        SeasonalDetailView(calendar.seasonals.randomElement()!)
             .environmentObject(AppUser())
             .environmentObject(calendar)
     }

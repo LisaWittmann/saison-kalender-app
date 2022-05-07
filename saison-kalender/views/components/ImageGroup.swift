@@ -9,13 +9,9 @@ import SwiftUI
 
 struct ImageGroup: View {
     var images: [String]
-    var width: CGFloat
-    var height: CGFloat
     
-    init(_ images: [String], width: CGFloat = screenWidth, height: CGFloat = 300) {
+    init(_ images: [String]) {
         self.images = images
-        self.width = width
-        self.height = height
     }
     
     var body: some View {

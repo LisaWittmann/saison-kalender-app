@@ -9,8 +9,6 @@ import SwiftUI
 import PartialSheet
 
 struct RecipeTeaser: View {
-    @State private var showDetail = false
-    
     @ObservedObject var recipe: Recipe
     var collection: Collection?
     
@@ -21,17 +19,16 @@ struct RecipeTeaser: View {
     
     var body: some View {
         GeometryReader { geometry in
-            NavigationLink(destination: detail(for: recipe), isActive: $showDetail) {
+            NavigationLink(destination: detail(for: recipe)) {
                 ContentTeaser(recipe.name, image: recipe.name.normalize())
                     .frame(width: geometry.globalWidth, height: geometry.globalHeight)
-                    .onTapGesture { showDetail.toggle() }
             }.isDetailLink(false)
         }
     }
     
     @ViewBuilder
     private func detail(for recipe: Recipe) -> some View {
-        RecipeDetailView(recipe, collection: collection, close: { showDetail.toggle() })
+        RecipeDetailView(recipe, collection: collection)
             .navigationBarHidden(true)
     }
 }

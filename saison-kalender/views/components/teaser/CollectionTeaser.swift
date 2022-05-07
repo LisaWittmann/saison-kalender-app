@@ -9,24 +9,17 @@ import SwiftUI
 
 struct CollectionTeaser: View {
     @ObservedObject var collection: Collection
-    @State var showDetail = false
     
     init(_ collection: Collection) {
         self.collection = collection
     }
     
     var body: some View {
-        NavigationLink(
-            destination: detail(for: collection),
-            isActive: $showDetail
-        ) {
+        NavigationLink(destination: detail(for: collection)) {
             ZStack {
-                ImageGroup(
-                    collection.recipes.map { $0.name.normalize() },
-                    width: contentWidth,
-                    height: contentHeight
-                )
-                .modifier(BlurredImageStyle())
+                ImageGroup(collection.recipes.map { $0.name.normalize() })
+                    .modifier(BlurredImageStyle())
+                    .frame(width: contentWidth, height: contentHeight)
                 Text(collection.name)
                     .font(.custom(fontExtraBold, size: 30))
                     .foregroundColor(colorWhite)
@@ -43,16 +36,13 @@ struct CollectionTeaser: View {
                         height: contentHeight,
                         alignment: .bottomLeading
                     )
-            }
-            .frame(width: contentWidth)
-            .cornerRadius(cornerRadiusSmall)
-            .onTapGesture { showDetail.toggle() }
+            }.cornerRadius(cornerRadiusSmall)
         }.isDetailLink(false)
     }
     
     @ViewBuilder
     private func detail(for collection: Collection) -> some View {
-        CollectionDetailView(collection, close: { showDetail.toggle() })
+        CollectionDetailView(collection)
             .navigationBarHidden(true)
     }
     

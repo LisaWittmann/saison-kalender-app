@@ -8,33 +8,25 @@
 import SwiftUI
 
 struct DetailPage<Content: View>: View {
-    @GestureState var press = false
+    @Environment(\.dismiss) var dismiss
+
     var images: [String]
     var headline: String?
     var subline: String?
-    var close: () -> ()
-    var icon: String?
-    var onIconTap: () -> Void
-    var onIconPressed: () -> Void
+    var icon: (() -> Icon)?
     var content: () -> Content
     
     init(
         images: [String],
         headline: String? = nil,
         subline: String? = nil,
-        close: @escaping () -> Void,
-        icon: String? = nil,
-        onIconTap: @escaping () -> Void = {},
-        onIconPressed: @escaping () -> Void = {},
+        icon: (() -> Icon)? = nil,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.images = images
         self.headline = headline
         self.subline = subline
-        self.close = close
         self.icon = icon
-        self.onIconTap = onIconTap
-        self.onIconPressed = onIconPressed
         self.content = content
     }
     
@@ -65,7 +57,9 @@ struct DetailPage<Content: View>: View {
     var header: some View {
         ZStack {
             VStack {
-                ImageGroup(images, height: imageHeight).modifier(BlurredImageStyle())
+                ImageGroup(images)
+                    .modifier(BlurredImageStyle())
+                    .frame(width: screenWidth, height: imageHeight)
                 Spacer()
             }
             VStack {
@@ -81,7 +75,7 @@ struct DetailPage<Content: View>: View {
     @ViewBuilder
     private func navigationBar() -> some View {
         HStack {
-            Icon("arrow.left", onTap: close)
+            Icon("arrow.left", onTap: { dismiss() })
                 .foregroundColor(colorWhite)
                 .frame(width: iconWidth, height: iconWidth)
             Spacer()
@@ -105,10 +99,10 @@ struct DetailPage<Content: View>: View {
                 }
             }.frame(height: textHeight, alignment: .bottom)
             
-            if let systemName = icon {
+            if let headerIcon = icon {
                 VStack {
                     Spacer()
-                    Icon(systemName, onTap: onIconTap, onPress: onIconPressed)
+                    headerIcon()
                         .foregroundColor(colorWhite)
                         .frame(width: iconWidth, height: iconWidth)
                 }
@@ -132,7 +126,6 @@ struct SplitScreen_Previews: PreviewProvider {
             images: ["mangold"],
             headline: "Mangold",
             subline: "Saisonal im Mai",
-            close: {},
             icon: "heart"
         ) {
             

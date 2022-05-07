@@ -15,14 +15,12 @@ struct RecipeDetailView: View {
     @StateObject var manager = CollectionManager()
     @ObservedObject var recipe: Recipe
     var collection: Collection?
-    var close: () -> ()
-    
+
     @State var isPresented = false
     
-    init(_ recipe: Recipe, collection: Collection? = nil, close: @escaping () -> ()) {
+    init(_ recipe: Recipe, collection: Collection? = nil) {
         self.recipe = recipe
         self.collection = collection
-        self.close = close
     }
     
     var body: some View {
@@ -30,10 +28,7 @@ struct RecipeDetailView: View {
             DetailPage(
                 images: [recipe.name.normalize()],
                 headline: recipe.name,
-                close: close,
-                icon: icon,
-                onIconTap: onIconTap,
-                onIconPressed: onIconPressed
+                icon: { Icon(icon, onTap: onIconTap, onPress: onIconPressed) }
             ) {
                 Text(recipe.name).modifier(FontH1())
                 

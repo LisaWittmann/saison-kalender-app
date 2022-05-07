@@ -74,7 +74,7 @@ struct SeasonItem: View {
     
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
-        SeasonalDetailView(seasonal, close: { showDetail.toggle() })
+        SeasonalDetailView(seasonal)
             .navigationBarHidden(true)
     }
     
