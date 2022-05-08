@@ -14,16 +14,10 @@ struct HomeView: View {
     
     let teaserLength = 3
     
-    var greeting: String {
-        return user.name != nil ? "Hallo \(user.name!)" : "Willkommen"
-    }
-    
     var body: some View {
         Page {
-            Headline(
-                greeting,
-                "Saisonal im \(seasonCalendar.season.name)"
-            )
+            Headline(greeting, "Saisonal im \(seasonCalendar.season.name)")
+                .foregroundColor(colorBlack)
             
             VStack(spacing: spacingLarge) {
                 if !seasonCalendar.seasonals.isEmpty {
@@ -32,37 +26,33 @@ struct HomeView: View {
                     }
                 }
                 
-                
                 if !seasonCalendar.recipes.isEmpty {
                     Section("Entdecke alle \(seasonCalendar.season.name) Rezepte") {
                         teasers(for: seasonCalendar.filterRecipes(for: user.diets))
                     }
                 }
-                
             }
             Spacer()
         }
-
     }
     
     @ViewBuilder
     private func teasers(for recipes: [Recipe]) -> some View {
-        TeaserCarousel(recipes.teaser(teaserLength), teaser: {
-            LinkTeaser(to: .recipes)
-        }) { recipe in
+        TeaserCarousel(recipes.teaser(teaserLength), teaser: { LinkTeaser(to: .recipes) }) { recipe in
             RecipeTeaser(recipe)
         }
     }
     
     @ViewBuilder
     private func teasers(for seasonals: [Seasonal]) -> some View {
-        TeaserCarousel(seasonals.teaser(teaserLength), teaser: {
-            LinkTeaser(to: .season)
-        }) { seasonal in
+        TeaserCarousel(seasonals.teaser(teaserLength), teaser: { LinkTeaser(to: .season) }) { seasonal in
             SeasonalTeaser(seasonal)
         }
     }
-
+    
+    private var greeting: String {
+        user.name != nil ? "Hallo \(user.name!)" : "Willkommen"
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {

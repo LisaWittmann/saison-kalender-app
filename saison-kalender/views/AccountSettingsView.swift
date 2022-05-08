@@ -18,6 +18,7 @@ struct AccountSettingsView: View {
         Page {
             HStack {
                 Headline("Bearbeiten", "Dein Bereich")
+                    .foregroundColor(colorBlack)
                 Icon("xmark", onTap: close)
                     .frame(width: iconSize, height: iconSize)
                     .foregroundColor(colorGreen)

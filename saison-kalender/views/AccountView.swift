@@ -23,6 +23,7 @@ struct AccountView: View {
         Page {
             HStack {
                 Headline("\(user.name ?? "")", "Dein Bereich")
+                    .foregroundColor(colorBlack)
                 Icon("gearshape.fill", onTap: { openSettings.toggle() })
                     .foregroundColor(colorGreen)
                     .frame(width: iconSize, height: iconSize)

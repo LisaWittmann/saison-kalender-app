@@ -29,28 +29,20 @@ struct SeasonItem: View {
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     
     @ObservedObject var seasonal: Seasonal
-    @State private var showDetail: Bool = false
     
     var body: some View {
         VStack {
-            Headline(
-                seasonal.name,
-                "Saisonal im \(seasonCalendar.season.name)"
-            )
-            .modifier(SectionLayout())
-            .frame(height: headerHeight, alignment: .topLeading)
+            Headline(seasonal.name, "Saisonal im \(seasonCalendar.season.name)")
+                .foregroundColor(colorBlack)
+                .modifier(SectionLayout())
+                .frame(height: headerHeight, alignment: .topLeading)
             
-            NavigationLink(
-                destination: detail(for: seasonal),
-                isActive: $showDetail
-            ) {
+            NavigationLink(destination: detail(for: seasonal)) {
                 hightlight()
-            }
-            .isDetailLink(false)
+            }.isDetailLink(false)
            
             Spacer()
         }
-        .onTapGesture { showDetail.toggle() }
     }
     
     @ViewBuilder

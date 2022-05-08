@@ -18,6 +18,7 @@ struct AuthorizationView: View {
         Page {
             HStack {
                 Headline(headline, "Dein Bereich")
+                    .foregroundColor(colorBlack)
                 Icon("xmark", onTap: user.dismissAuthorization)
                     .foregroundColor(colorGreen)
                     .frame(width: iconSize, height: iconSize)

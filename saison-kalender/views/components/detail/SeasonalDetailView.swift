@@ -19,8 +19,7 @@ struct SeasonalDetailView: View {
     var body: some View {
         DetailPage(
             images: [seasonal.name.normalize()],
-            headline: seasonal.name,
-            subline: "Saisonal im \(seasonCalendar.season.name)"
+            title: { Headline(seasonal.name, "Saisonal im \(seasonCalendar.season.name)")}
         ) {
             Text("Steckbrief").modifier(FontH1())
             

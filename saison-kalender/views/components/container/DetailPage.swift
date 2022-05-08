@@ -7,25 +7,23 @@
 
 import SwiftUI
 
-struct DetailPage<Content: View>: View {
+struct DetailPage<Title: View, Content: View>: View {
     @Environment(\.dismiss) var dismiss
 
     var images: [String]
-    var headline: String?
-    var subline: String?
+    
+    var title: () -> Title
     var icon: (() -> Icon)?
     var content: () -> Content
     
     init(
         images: [String],
-        headline: String? = nil,
-        subline: String? = nil,
+        title: @escaping () -> Title,
         icon: (() -> Icon)? = nil,
         @ViewBuilder content: @escaping () -> Content
     ) {
         self.images = images
-        self.headline = headline
-        self.subline = subline
+        self.title = title
         self.icon = icon
         self.content = content
     }
@@ -85,19 +83,9 @@ struct DetailPage<Content: View>: View {
     @ViewBuilder
     private func headerContent() -> some View {
         HStack {
-            VStack {
-                if let subtitle = subline {
-                    Text(subtitle)
-                        .modifier(FontSubtitle())
-                        .foregroundColor(colorWhite)
-                        .padding(.bottom, -spacingMedium)
-                }
-                if let title = headline {
-                    Text(title)
-                        .modifier(FontTitle())
-                        .foregroundColor(colorWhite)
-                }
-            }.frame(height: textHeight, alignment: .bottom)
+            title()
+                .frame(height: textHeight, alignment: .bottom)
+                .foregroundColor(colorWhite)
             
             if let headerIcon = icon {
                 VStack {
@@ -124,8 +112,7 @@ struct SplitScreen_Previews: PreviewProvider {
     static var previews: some View {
         DetailPage(
             images: ["mangold"],
-            headline: "Mangold",
-            subline: "Saisonal im Mai",
+            title: { Headline("Mangold", "Saisonal im Mai") },
             icon: { Icon("heart") }
         ) {
             

@@ -27,7 +27,7 @@ struct RecipeDetailView: View {
         ZStack {
             DetailPage(
                 images: [recipe.name.normalize()],
-                headline: recipe.name,
+                title: { Text(recipe.name).modifier(FontTitle()) },
                 icon: { Icon(icon, onTap: onIconTap, onPress: onIconPressed) }
             ) {
                 Text(recipe.name).modifier(FontH1())

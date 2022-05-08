@@ -14,7 +14,7 @@ public class Collection: NSManagedObject {
     public convenience init(from schema: CollectionSchema, in context: NSManagedObjectContext) {
         self.init(context: context)
         name = schema.name
-        recipes = Set(schema.recipes.map { Recipe.create(from: $0, in: context) })
+        recipes = schema.recipes.map { Recipe.create(from: $0, in: context) }
     }
 }
 
@@ -27,9 +27,9 @@ extension Collection: Representable {
         set { name_ = newValue }
     }
     
-    var recipes: Set<Recipe> {
-        get { (recipes_ as? Set<Recipe>) ?? [] }
-        set { recipes_ = newValue as NSSet }
+    var recipes: Array<Recipe> {
+        get { (recipes_ as? Set<Recipe>)?.sorted() ?? [] }
+        set { recipes_ = Set(newValue) as NSSet }
     }
     
     var user: User {
@@ -60,7 +60,7 @@ extension Collection {
 
 extension Collection {
 
-    static func create(name: String, user: User, recipes: Set<Recipe>, in context: NSManagedObjectContext) -> Collection {
+    static func create(name: String, user: User, recipes: [Recipe], in context: NSManagedObjectContext) -> Collection {
         if let collection = user.collections.filter({ $0.name == name }).first {
             collection.recipes = recipes
             try? context.save()
@@ -76,7 +76,7 @@ extension Collection {
     
     static func create(from schema: CollectionSchema, for user: User, in context: NSManagedObjectContext) -> Collection {
         if let collection = user.collections.filter({ $0.name == schema.name }).first {
-            collection.recipes = Set(schema.recipes.map { Recipe.create(from: $0, in: context) })
+            collection.recipes = schema.recipes.map { Recipe.create(from: $0, in: context) }
             try? context.save()
             return collection
         }

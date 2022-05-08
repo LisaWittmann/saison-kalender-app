@@ -80,15 +80,6 @@ extension AppUser {
         collection.addToRecipes_(recipe)
         save()
     }
-    
-    func add(collection: Collection) {
-        guard isAuthorized else {
-            requireAuthorization(for: { self.add(collection: collection) })
-            return
-        }
-        user?.addToCollections_(collection)
-        save()
-    }
         
     func remove(recipe: Recipe, from collection: Collection) {
         guard isAuthorized else {
@@ -96,7 +87,7 @@ extension AppUser {
             return
         }
         if (collection.recipes.contains(recipe)) {
-            collection.recipes.remove(recipe)
+            collection.recipes = collection.recipes.filter { $0 != recipe }
             
             // remove empty collections
             if collection.recipes.count < 1 {
@@ -117,7 +108,24 @@ extension AppUser {
         favorites.remove(recipe)
         save()
     }
-        
+    
+    func save() {
+        try? user?.managedObjectContext?.save()
+        objectWillChange.send()
+    }
+}
+
+extension AppUser {
+    
+    func add(collection: Collection) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.add(collection: collection) })
+            return
+        }
+        user?.addToCollections_(collection)
+        save()
+    }
+    
     func remove(collection: Collection) {
         guard isAuthorized else {
             requireAuthorization(for: { self.remove(collection: collection) })
@@ -126,10 +134,10 @@ extension AppUser {
         collections.remove(collection)
         save()
     }
-    
-    func save() {
-        try? user?.managedObjectContext?.save()
-        objectWillChange.send()
+
+    func rename(_ collection: Collection, to name: String) {
+        collection.name = name
+        save()
     }
 }
 

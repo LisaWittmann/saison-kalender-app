@@ -11,13 +11,15 @@ struct Icon: View {
     var systemName: String
     var onTap: (() -> Void)?
     var onPress: (() -> Void)?
+    var disabled: Bool
     
     @GestureState var press = false
     
-    init(_ systemName: String, onTap: (() -> Void)? = nil, onPress: (() -> Void)? = nil) {
+    init(_ systemName: String, onTap: (() -> Void)? = nil, onPress: (() -> Void)? = nil, disabled: Bool = false) {
         self.systemName = systemName
         self.onTap = onTap
         self.onPress = onPress
+        self.disabled = disabled
     }
     
     var body: some View {
@@ -26,8 +28,9 @@ struct Icon: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: geometry.globalWidth, height: geometry.globalHeight, alignment: .center)
+                .opacity(disabled ? 0.5 : 1)
                 .onTapGesture {
-                    if let function = onTap {
+                    if let function = onTap, !disabled {
                         function()
                     }
                 }
@@ -37,7 +40,7 @@ struct Icon: View {
                            gestureState = currentState
                        }
                        .onEnded { value in
-                           if let function = onPress {
+                           if let function = onPress, !disabled {
                                function()
                            }
                        }

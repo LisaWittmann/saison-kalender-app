@@ -19,10 +19,8 @@ struct RecipesView: View {
 
     var body: some View {
         Page {
-            Headline(
-                "Rezepte",
-                "Saisonal im \(seasonCalendar.season.name)"
-            )
+            Headline("Rezepte", "Saisonal im \(seasonCalendar.season.name)")
+                .foregroundColor(colorBlack)
 
             if !categories.isEmpty {
                 TagSlider(
