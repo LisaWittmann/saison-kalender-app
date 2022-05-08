@@ -18,7 +18,7 @@ struct SeasonalTeaser: View {
         GeometryReader { geometry in
             NavigationLink(destination: detail(for: seasonal)) {
                 ContentTeaser(seasonal.name, image: seasonal.name.normalize() )
-                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
             }.isDetailLink(false)
         }
     }
@@ -26,7 +26,7 @@ struct SeasonalTeaser: View {
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
         SeasonalDetailView(seasonal)
-            .navigationBarHidden(true)
+            .navigationLink()
     }
 }
 

@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-enum Tab: String, CaseIterable {
-    var name: String { rawValue }
-    case Favorites = "Favoriten", Collections = "Sammlungen"
-}
-
 struct AccountView: View {
     @EnvironmentObject var user: AppUser
     @EnvironmentObject var viewRouter: ViewRouter
@@ -37,12 +32,15 @@ struct AccountView: View {
             }.frame(width: contentWidth, alignment: .leading)
             
             switch(selectedTab) {
-            case .Favorites: favorites()
-            case .Collections: collections()
+                
+            case .Favorites:
+                favorites()
+        
+            case .Collections:
+                collections()
             }
-            
-            Spacer()
         }
+        .onSwipe(left: swipeLeft, right: swipeRight)
         .onAppear { requireAuthorizarion() }
         .fullScreenCover(isPresented: $openSettings) {
             AccountSettingsView(close: { openSettings = false })
@@ -55,6 +53,7 @@ struct AccountView: View {
             Masonry(Array(user.favorites)) { recipe in
                 RecipeTeaser(recipe)
             }
+            Spacer()
         }
     }
     
@@ -64,18 +63,38 @@ struct AccountView: View {
             ForEach(Array(user.collections)) { collection in
                 CollectionTeaser(collection)
             }
+            Spacer()
         }
     }
     
     private func requireAuthorizarion() {
         guard user.isAuthorized else {
             user.requireAuthorization(for: { viewRouter.navigate(to: .account) })
-            viewRouter.navigate(to: .home)
+            viewRouter.back()
             return
         }
     }
     
+    private func swipeLeft() {
+        if selectedTab == .Collections {
+            selectedTab = .Favorites
+        }
+    }
+    
+    private func swipeRight() {
+        if selectedTab == .Favorites {
+            selectedTab = .Collections
+        }
+    }
+    
     let iconSize: CGFloat = 25
+    
+    enum Tab: String, CaseIterable, Representable {
+        case Favorites = "Favoriten", Collections = "Sammlungen"
+        
+        var id: String { rawValue }
+        var name: String { rawValue }
+    }
 }
 
 struct AccountView_Previews: PreviewProvider {

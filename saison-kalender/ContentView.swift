@@ -12,6 +12,16 @@ import PartialSheet
 struct ContentView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     @EnvironmentObject var user: AppUser
+    
+    init() {
+        let transparentAppearence = UINavigationBarAppearance()
+        transparentAppearence.configureWithTransparentBackground()
+        
+        let appearance = UINavigationBar.appearance()
+        appearance.standardAppearance = transparentAppearence
+        appearance.scrollEdgeAppearance = transparentAppearence
+        appearance.compactAppearance = transparentAppearence
+    }
 
     var body: some View {
         ZStack {
@@ -33,6 +43,11 @@ struct ContentView: View {
         .fullScreenCover(isPresented: $user.authRequired) {
             AuthorizationView()
         }
+        
+    }
+    
+    private var swipeDiretion: Edge {
+        viewRouter.lastView.index < viewRouter.currentView.index ? .trailing : .leading
     }
 
 }

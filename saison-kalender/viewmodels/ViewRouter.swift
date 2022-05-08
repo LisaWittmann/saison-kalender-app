@@ -9,7 +9,8 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
 
-    @Published var currentView: Route = Route.home
+    @Published private(set) var currentView: Route = Route.home
+    @Published private(set) var lastView: Route = Route.home
     
     func imageName(route: Route) -> String {
         switch route {
@@ -25,10 +26,19 @@ class ViewRouter: ObservableObject {
     }
     
     func navigate(to route: Route) {
+        lastView = currentView
         currentView = route
+    }
+    
+    func back() {
+        currentView = lastView
     }
 }
 
 enum Route: CaseIterable {
     case home, season, recipes, account
+    
+    var index: Int {
+        Route.allCases.firstIndex(of: self)!
+    }
 }

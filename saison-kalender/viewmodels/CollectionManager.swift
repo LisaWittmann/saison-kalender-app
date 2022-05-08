@@ -10,9 +10,9 @@ import CoreData
 
 class CollectionManager: ObservableObject {
     
-    @Published var recipe: Recipe?
-    @Published var collection: Collection?
-    @Published var mode: ManagerMode?
+    @Published private(set) var recipe: Recipe?
+    @Published private(set) var collection: Collection?
+    @Published private(set) var mode: ManagerMode?
     
     @Published var isPresented: Bool
     

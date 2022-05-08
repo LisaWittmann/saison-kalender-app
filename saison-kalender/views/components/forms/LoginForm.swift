@@ -15,7 +15,7 @@ struct LoginForm: View {
     @State var email = ""
     @State var password = ""
     
-    @Binding var errorMessage: String?
+    @State var errorMessage: String? = nil
     var toRegistration: () -> Void = {}
     
     var body: some View {
@@ -26,6 +26,11 @@ struct LoginForm: View {
             Button("Noch kein Konto?", action: toRegistration)
                 .frame(width: contentWidth, alignment: .trailing)
                 .modifier(TextButtonStyle())
+            Spacer()
+            if let error = errorMessage {
+                Text(error).modifier(FontError())
+            }
+            Spacer()
         }
     }
     
@@ -47,7 +52,7 @@ struct LoginForm_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        LoginForm(errorMessage: .constant(""))
+        LoginForm()
             .environment(\.managedObjectContext, calendar.context)
             .environmentObject(AppUser())
             .environmentObject(ViewRouter())

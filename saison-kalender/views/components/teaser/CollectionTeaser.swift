@@ -23,8 +23,7 @@ struct CollectionTeaser: View {
                 Text(collection.name)
                     .font(.custom(fontExtraBold, size: 30))
                     .foregroundColor(colorWhite)
-                    .paddingHorizontal(spacingSmall)
-                    .padding(.bottom, spacingSmall)
+                    .padding([.leading, .trailing, .bottom], spacingSmall)
                     .frame(
                         width: contentWidth,
                         height: contentHeight,
@@ -37,7 +36,7 @@ struct CollectionTeaser: View {
     @ViewBuilder
     private func detail(for collection: Collection) -> some View {
         CollectionDetailView(collection)
-            .navigationBarHidden(true)
+            .navigationLink()
     }
     
     let contentHeight: CGFloat = 215

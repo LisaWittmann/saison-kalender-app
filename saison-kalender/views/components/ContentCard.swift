@@ -14,11 +14,11 @@ struct ContentCard: View {
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .center) {
-                text(description, width: geometry.globalWidth)
+                text(description, width: geometry.size.width)
                     .modifier(FontText())
                     .multilineTextAlignment(.center)
                     .padding(.top, spacingExtraSmall)
-                text(value, width: geometry.globalWidth)
+                text(value, width: geometry.size.width)
                     .font(.custom(fontBold, size: fontSizeHeadline2))
             }
             .background(colorLightGreen)
@@ -29,7 +29,7 @@ struct ContentCard: View {
     @ViewBuilder
     private func text(_ text: String, width: CGFloat) -> some View {
         Text(text)
-            .paddingHorizontal(padding)
+            .padding([.leading, .trailing], padding)
             .frame(width: width, alignment: .center)
             .frame(minHeight: textHeight)
             .foregroundColor(colorBlack)

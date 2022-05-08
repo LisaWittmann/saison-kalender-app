@@ -15,7 +15,7 @@ struct SaisonKalenderApp: App {
     @StateObject var viewRouter = ViewRouter()
     @StateObject var user = AppUser()
     @StateObject var seasonCalendar = SeasonCalendar.shared
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

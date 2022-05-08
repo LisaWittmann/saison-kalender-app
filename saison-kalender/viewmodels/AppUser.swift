@@ -9,7 +9,7 @@ import CoreData
 
 class AppUser: ObservableObject {
     
-    @Published var user: User?
+    @Published private(set) var user: User?
     @Published var authRequired: Bool
     
     private var authCallback: () -> Void = {}

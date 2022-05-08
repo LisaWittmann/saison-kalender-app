@@ -27,8 +27,8 @@ struct Stepper: View {
             Image(systemName: icon)
                 .foregroundColor(colorBlack)
                 .font(.custom(fontSemiBold, size: fontSizeText))
-                .paddingVertical(spacingExtraSmall)
-                .paddingHorizontal(paddingHorizontal)
+                .padding([.top, .bottom], spacingExtraSmall)
+                .padding([.leading, .trailing], paddingHorizontal)
         }
     }
     

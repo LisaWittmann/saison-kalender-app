@@ -19,19 +19,19 @@ struct ImageGroup: View {
             HStack(spacing: 0) {
                 image(images.first ?? "",
                       width: firstImageWidth(geometry: geometry),
-                      height: geometry.globalHeight,
+                      height: geometry.size.height,
                       alignment: firstImageAlignment
                 )
                 if images.count >= 3 {
                     VStack(spacing: 0) {
                         image(images[1],
-                              width: geometry.globalWidth / 3,
-                              height: geometry.globalHeight / 2,
+                              width: geometry.size.width / 3,
+                              height: geometry.size.height / 2,
                               alignment: .leading
                         )
                         image(images[2],
-                              width: geometry.globalWidth / 3,
-                              height: geometry.globalHeight / 2,
+                              width: geometry.size.height / 3,
+                              height: geometry.size.width / 2,
                               alignment: .leading
                         )
                     }
@@ -52,7 +52,7 @@ struct ImageGroup: View {
     }
     
     private func firstImageWidth(geometry: GeometryProxy) -> CGFloat {
-        images.count >= 3 ? geometry.globalWidth / 3 * 2 : geometry.globalWidth
+        images.count >= 3 ? geometry.size.width / 3 * 2 : geometry.size.width
     }
     
     private var firstImageAlignment: Alignment {

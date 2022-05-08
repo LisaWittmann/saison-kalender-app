@@ -20,7 +20,11 @@ struct TagSlider<Element: Representable>: View {
     var body: some View {
         Carousel(Array(items), spacing: spacingExtraSmall) { item in
             Tag(item.name, selected: isSelected(item))
-                .onTapGesture { select(item: item)}
+                .onTapGesture {
+                    withAnimation {
+                        select(item: item)
+                    }
+                }
         }
     }
     

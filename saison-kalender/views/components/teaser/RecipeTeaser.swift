@@ -21,7 +21,7 @@ struct RecipeTeaser: View {
         GeometryReader { geometry in
             NavigationLink(destination: detail(for: recipe)) {
                 ContentTeaser(recipe.name, image: recipe.name.normalize())
-                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
             }.isDetailLink(false)
         }
     }
@@ -29,7 +29,7 @@ struct RecipeTeaser: View {
     @ViewBuilder
     private func detail(for recipe: Recipe) -> some View {
         RecipeDetailView(recipe, collection: collection)
-            .navigationBarHidden(true)
+            .navigationLink()
     }
 }
 
@@ -40,6 +40,8 @@ struct RecipeCard_Previews: PreviewProvider {
         NavigationView {
             RecipeTeaser(calendar.recipes.first!)
                 .frame(width: halfContentWidth, height: halfContentWidth)
+                .environment(\.managedObjectContext, calendar.context)
+                .environmentObject(ViewRouter())
                 .environmentObject(AppUser())
                 .environmentObject(calendar)
         }

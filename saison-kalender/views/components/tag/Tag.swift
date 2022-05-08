@@ -18,8 +18,8 @@ struct Tag: View {
     
     var body: some View {
         Text(name)
-            .paddingHorizontal(spacingSmall)
-            .paddingVertical(5)
+            .padding([.leading, .trailing], spacingSmall)
+            .padding([.top, .bottom], 5)
             .modifier(FontText())
             .background(selected ? colorGreen : colorLightGreen)
             .cornerRadius(cornerRadiusMedium)

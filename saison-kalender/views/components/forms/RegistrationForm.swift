@@ -16,8 +16,8 @@ struct RegistrationForm: View {
     @State var email = ""
     @State var password = ""
     @State var passwordRepeat = ""
+    @State var errorMessage: String? = nil
     
-    @Binding var errorMessage: String?
     var toLogin: () -> Void = {}
     
     var body: some View {
@@ -31,6 +31,11 @@ struct RegistrationForm: View {
                 Button("Jetzt anmelden", action: toLogin)
                     .frame(width: contentWidth, alignment: .trailing)
                     .modifier(TextButtonStyle())
+                Spacer()
+                if let error = errorMessage {
+                    Text(error).modifier(FontError())
+                }
+                Spacer()
             }
         }
         else {
@@ -89,7 +94,7 @@ struct RegistrationForm_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
         
-        RegistrationForm(errorMessage: .constant(""))
+        RegistrationForm()
             .environment(\.managedObjectContext, calendar.context)
             .environmentObject(AppUser())
             .environmentObject(ViewRouter())

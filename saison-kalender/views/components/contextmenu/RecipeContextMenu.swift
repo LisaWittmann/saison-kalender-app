@@ -19,7 +19,7 @@ struct RecipeContextMenu: View {
                 ContextNavigation(
                     iconLeft: "chevron.left",
                     iconRight: saveIcon,
-                    functionLeft: { manager.mode = .save },
+                    functionLeft: { manager.open(with: .save) },
                     functionRight: { manager.createCollection(newCollectionName, for: user) },
                     header: "Neue Collection"
                 )
@@ -34,7 +34,7 @@ struct RecipeContextMenu: View {
             case .save:
                 ContextNavigation(
                     iconRight: "plus",
-                    functionRight: { manager.mode = .add },
+                    functionRight: { manager.open(with: .add) },
                     header: "Speichern in"
                 )
                 ScrollView(.horizontal) {
@@ -122,8 +122,7 @@ struct SaveRecipeContextMenu_Previews: PreviewProvider {
         RecipeContextMenu(manager: manager)
             .environmentObject(AppUser(users.first))
             .onAppear {
-                manager.mode = .save
-                manager.isPresented = true
+                manager.open(with: .save)
             }
     }
 }

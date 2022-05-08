@@ -9,6 +9,7 @@ import SwiftUI
 import WrappingHStack
 
 struct SeasonalDetailView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     @ObservedObject var seasonal: Seasonal
     
@@ -33,6 +34,7 @@ struct SeasonalDetailView: View {
                 body(for: Array(seasonal.recipes))
             }
         }
+        .onSwipe(left: { dismiss() })
     }
     
     @ViewBuilder

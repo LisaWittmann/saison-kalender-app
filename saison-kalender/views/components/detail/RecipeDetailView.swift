@@ -9,6 +9,7 @@ import SwiftUI
 import PartialSheet
 
 struct RecipeDetailView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var seasonCalendar: SeasonCalendar
     @EnvironmentObject var user: AppUser
     
@@ -24,41 +25,40 @@ struct RecipeDetailView: View {
     }
     
     var body: some View {
-        ZStack {
-            DetailPage(
-                images: [recipe.name.normalize()],
-                title: { Text(recipe.name).modifier(FontTitle()) },
-                icon: { Icon(icon, onTap: onIconTap, onPress: onIconPressed) }
-            ) {
-                Text(recipe.name).modifier(FontH1())
-                
-                if !recipe.categories.isEmpty {
-                    TagList(recipe.categories)
-                }
-                                
-                if let intro = recipe.intro {
-                    Text(intro).modifier(FontParagraph())
-                }
+        DetailPage(
+            images: [recipe.name.normalize()],
+            title: { Text(recipe.name).modifier(FontTitle()) },
+            icon: { Icon(icon, onTap: onIconTap, onPress: onIconPressed) }
+        ) {
+            Text(recipe.name).modifier(FontH1())
             
-                if let nutrition = recipe.nutrition {
-                    body(for: nutrition)
-                }
-                
-                if !recipe.ingredients.isEmpty {
-                    IngredientList(recipe.ingredients, for: recipe.portions)
-                }
-                
-                if !recipe.preparations.isEmpty {
-                    body(for: recipe.preparations)
-                }
-                
-                if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
-                    body(for: seasonals)
-                }
+            if !recipe.categories.isEmpty {
+                TagList(recipe.categories)
+            }
+                            
+            if let intro = recipe.intro {
+                Text(intro).modifier(FontParagraph())
+            }
+        
+            if let nutrition = recipe.nutrition {
+                body(for: nutrition)
+            }
+            
+            if !recipe.ingredients.isEmpty {
+                IngredientList(recipe.ingredients, for: recipe.portions)
+            }
+            
+            if !recipe.preparations.isEmpty {
+                body(for: recipe.preparations)
+            }
+            
+            if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
+                body(for: seasonals)
             }
         }
         .edgesIgnoringSafeArea(.all)
         .onAppear { manager.set(recipe: recipe, with: collection) }
+        .onSwipe(left: { dismiss() })
         .partialSheet(
             isPresented: $manager.isPresented,
             type: .dynamic,
@@ -150,12 +150,13 @@ struct RecipeDetailView: View {
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
+        let users = try! calendar.context.fetch(User.fetchRequest())
         let recipes = try! calendar.context.fetch(Recipe.fetchRequest())
         let recipe = recipes.first!
         
         RecipeDetailView(recipe)
             .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser())
+            .environmentObject(AppUser(users.first))
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
     }

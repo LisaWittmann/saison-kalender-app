@@ -27,7 +27,7 @@ struct Icon: View {
             Image(systemName: systemName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: geometry.globalWidth, height: geometry.globalHeight, alignment: .center)
+                .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
                 .opacity(disabled ? 0.5 : 1)
                 .onTapGesture {
                     if let function = onTap, !disabled {

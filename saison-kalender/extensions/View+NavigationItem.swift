@@ -16,4 +16,10 @@ extension View {
             .navigationBarTitle(Text(name))
             .edgesIgnoringSafeArea(.all)
     }
+    
+    func navigationLink() -> some View {
+        self
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: BackButton())
+    }
 }

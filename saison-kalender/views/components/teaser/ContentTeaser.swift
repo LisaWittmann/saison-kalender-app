@@ -22,7 +22,7 @@ struct ContentTeaser: View {
                 Image(image)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: geometry.globalWidth, height: geometry.globalHeight)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                     .opacity(imageOpacity)
                     .background(colorLightGreen)
                     .modifier(BlurredImageStyle())
@@ -32,11 +32,10 @@ struct ContentTeaser: View {
                     .foregroundColor(colorWhite)
                     .shadow(color: colorGrey, radius: shadowRadius, x: 1, y: 1)
                     .multilineTextAlignment(.leading)
-                    .paddingHorizontal(spacingSmall)
-                    .padding(.bottom, spacingSmall)
+                    .padding([.leading, .trailing, .bottom], spacingSmall)
                     .frame(
-                        width: geometry.globalWidth,
-                        height: geometry.globalHeight,
+                        width: geometry.size.width,
+                        height: geometry.size.height,
                         alignment: .bottomLeading
                     )
                     

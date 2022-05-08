@@ -67,7 +67,7 @@ struct SeasonItem: View {
     @ViewBuilder
     private func detail(for seasonal: Seasonal) -> some View {
         SeasonalDetailView(seasonal)
-            .navigationBarHidden(true)
+            .navigationLink()
     }
     
     let circleSize: CGFloat = contentWidth
@@ -81,11 +81,12 @@ struct SeasonItem: View {
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
         let calendar = SeasonCalendar.preview
-        
-        SeasonView()
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser())
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+        NavigationView {
+            SeasonView()
+                .environment(\.managedObjectContext, calendar.context)
+                .environmentObject(AppUser())
+                .environmentObject(ViewRouter())
+                .environmentObject(calendar)
+        }
     }
 }

@@ -60,7 +60,7 @@ struct AccountSettingsView: View {
     }
     
     private func iconSize(_ geometry: GeometryProxy) -> CGFloat {
-        geometry.globalWidth / CGFloat(Diet.allCases.count) - spacingSmall
+        geometry.size.width / CGFloat(Diet.allCases.count) - spacingSmall
     }
     
     private func iconOpacity(_ diet: Diet) -> Double {

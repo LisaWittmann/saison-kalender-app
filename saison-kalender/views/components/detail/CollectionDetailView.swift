@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct CollectionDetailView: View {
+    @Environment(\.dismiss) var dismiss
     @EnvironmentObject var user: AppUser
     @ObservedObject var collection: Collection
     
-    @State var editing: Bool
-    @State var collectionName: String
-    @State var error: Bool
+    @State var editing: Bool = false
+    @State var collectionName: String = ""
+    @State var error: Bool = false
     
     init(_ collection: Collection) {
         self.collection = collection
@@ -31,7 +32,7 @@ struct CollectionDetailView: View {
             Masonry(Array(collection.recipes)) { recipe in
                 RecipeTeaser(recipe, collection: collection)
             }
-        }
+        }.onSwipe(left: { dismiss() })
     }
     
     @ViewBuilder
