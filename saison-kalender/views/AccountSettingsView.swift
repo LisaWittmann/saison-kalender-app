@@ -68,7 +68,7 @@ struct AccountSettingsView: View {
     
     private func logout() {
         user.logout()
-        viewRouter.currentView = .home
+        viewRouter.navigate(to: .home)
     }
     
     let inactiveOpacity: Double = 0.5

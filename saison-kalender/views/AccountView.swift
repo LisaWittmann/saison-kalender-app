@@ -68,8 +68,8 @@ struct AccountView: View {
     
     private func requireAuthorizarion() {
         guard user.isAuthorized else {
-            user.requireAuthorization(for: { viewRouter.currentView = .account })
-            viewRouter.currentView = .home
+            user.requireAuthorization(for: { viewRouter.navigate(to: .account) })
+            viewRouter.navigate(to: .home)
             return
         }
     }

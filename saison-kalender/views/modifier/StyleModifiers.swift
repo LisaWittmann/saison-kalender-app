@@ -31,8 +31,7 @@ struct ButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .foregroundColor(colorWhite)
-            .padding(.top, spacingSmall)
-            .padding(.bottom, spacingSmall)
+            .paddingVertical(spacingSmall)
             .background(colorGreen)
             .cornerRadius(cornerRadiusMedium)
             .font(.custom(fontBold, size: fontSizeHeadline2))

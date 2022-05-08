@@ -36,8 +36,6 @@ extension Recipe: Representable {
         set { name_ = newValue }
     }
     
-    var favors: Int { (favoredBy as? Set<User> ?? []).count }
-    
     var diets: [Diet] {
         get { diets_?.map { Diet(rawValue: $0)! } ?? [] }
         set { diets_ = newValue.map { $0.rawValue } }
@@ -88,10 +86,7 @@ extension Recipe {
 extension Recipe: Comparable {
     
     public static func < (lhs: Recipe, rhs: Recipe) -> Bool {
-        if lhs.favors == rhs.favors {
-            return lhs.id < rhs.id
-        }
-        return lhs.favors < rhs.favors
+        lhs.id < rhs.id
     }
 }
 

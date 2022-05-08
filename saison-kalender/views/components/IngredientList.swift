@@ -25,7 +25,6 @@ struct IngredientList: View {
         VStack {
             HStack {
                 Text("\(displayedPortions) \(displayedPortions > 1 ? "Portionen" : "Portion")")
-                    .foregroundColor(colorBlack)
                     .modifier(FontH2())
                 Stepper(remove: removePortion, add: addPortion)
             }.padding(.bottom, spacingSmall)

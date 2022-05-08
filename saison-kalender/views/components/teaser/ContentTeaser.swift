@@ -32,14 +32,8 @@ struct ContentTeaser: View {
                     .foregroundColor(colorWhite)
                     .shadow(color: colorGrey, radius: shadowRadius, x: 1, y: 1)
                     .multilineTextAlignment(.leading)
-                    .padding(
-                        EdgeInsets(
-                            top: 0,
-                            leading: spacingSmall,
-                            bottom: spacingSmall,
-                            trailing: spacingSmall
-                        )
-                    )
+                    .paddingHorizontal(spacingSmall)
+                    .padding(.bottom, spacingSmall)
                     .frame(
                         width: geometry.globalWidth,
                         height: geometry.globalHeight,

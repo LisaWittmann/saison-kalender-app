@@ -29,8 +29,7 @@ struct ContentCard: View {
     @ViewBuilder
     private func text(_ text: String, width: CGFloat) -> some View {
         Text(text)
-            .padding(.leading, padding)
-            .padding(.trailing, padding)
+            .paddingHorizontal(padding)
             .frame(width: width, alignment: .center)
             .frame(minHeight: textHeight)
             .foregroundColor(colorBlack)

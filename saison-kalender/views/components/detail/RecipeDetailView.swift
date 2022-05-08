@@ -45,7 +45,7 @@ struct RecipeDetailView: View {
                 }
                 
                 if !recipe.ingredients.isEmpty {
-                    body(for: recipe.ingredients)
+                    IngredientList(recipe.ingredients, for: recipe.portions)
                 }
                 
                 if !recipe.preparations.isEmpty {
@@ -81,13 +81,6 @@ struct RecipeDetailView: View {
                 .frame(height: 110)
             ContentCard(description: "Kohlenhydrate", value: "\(nutrition.carbs.toString())g")
                 .frame(height: 110)
-        }
-    }
-    
-    @ViewBuilder
-    private func body(for ingredients: Array<Ingredient>) -> some View {
-        Section("Zutaten") {
-            IngredientList(ingredients, for: recipe.portions)
         }
     }
     

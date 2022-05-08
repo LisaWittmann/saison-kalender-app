@@ -64,10 +64,4 @@ extension SeasonCalendar {
         }
         return dietRecipes
     }
-    
-    var popularRecipes: [Recipe] {
-        recipes.sorted { (r1, r2) -> Bool in
-            r1.favors > r2.favors
-        }.filter { $0.favors > 0 }
-    }
 }

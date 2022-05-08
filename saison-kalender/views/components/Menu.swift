@@ -33,7 +33,7 @@ struct Menu: View {
     
     @ViewBuilder
     private func menuItem(for route: Route) -> some View {
-        Icon(viewRouter.imageName(route: route), onTap: { viewRouter.currentView = route })
+        Icon(viewRouter.imageName(route: route), onTap: { viewRouter.navigate(to: route) })
             .foregroundColor(iconColor(route))
             .frame(width: tabItemSize, height: tabItemSize)
     }

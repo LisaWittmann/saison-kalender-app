@@ -22,7 +22,7 @@ struct LinkTeaser: View {
                 .frame(width: halfContentWidth)
                 .aspectRatio(1/1, contentMode: .fit)
             
-            Icon("arrow.right", onTap: { viewRouter.currentView = route })
+            Icon("arrow.right", onTap: { viewRouter.navigate(to: route) })
                 .foregroundColor(colorGreen)
                 .frame(width: quarterContentWidth, height: quarterContentWidth)
         }

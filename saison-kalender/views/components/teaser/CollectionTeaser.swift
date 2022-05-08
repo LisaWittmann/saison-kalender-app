@@ -23,14 +23,8 @@ struct CollectionTeaser: View {
                 Text(collection.name)
                     .font(.custom(fontExtraBold, size: 30))
                     .foregroundColor(colorWhite)
-                    .padding(
-                        EdgeInsets(
-                            top: 0,
-                            leading: spacingSmall,
-                            bottom: spacingSmall,
-                            trailing: spacingSmall
-                        )
-                    )
+                    .paddingHorizontal(spacingSmall)
+                    .padding(.bottom, spacingSmall)
                     .frame(
                         width: contentWidth,
                         height: contentHeight,

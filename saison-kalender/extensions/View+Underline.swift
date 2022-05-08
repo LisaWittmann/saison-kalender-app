@@ -18,7 +18,6 @@ extension View {
                     .opacity(opacity)
             )
             .foregroundColor(color)
-            .padding(.top, spacingExtraSmall)
-            .padding(.bottom, spacingExtraSmall)
+            .paddingVertical(spacingExtraSmall)
     }
 }

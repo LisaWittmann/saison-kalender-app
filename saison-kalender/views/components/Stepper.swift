@@ -13,25 +13,26 @@ struct Stepper: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            Button(action: remove) {
-                Image(systemName: "minus")
-            }
-            .padding(padding)
-            .foregroundColor(colorBlack)
-            
+            button("minus", action: remove)
             Text("|").foregroundColor(colorGreen)
-            
-            Button(action: add) {
-                Image(systemName: "plus")
-            }
-            .padding(padding)
-            .foregroundColor(colorBlack)
+            button("plus", action: add)
         }
         .background(colorLightGreen)
         .cornerRadius(cornerRadius)
     }
     
-    let padding: CGFloat = 8
+    @ViewBuilder
+    private func button(_ icon: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: icon)
+                .foregroundColor(colorBlack)
+                .font(.custom(fontSemiBold, size: fontSizeText))
+                .paddingVertical(spacingExtraSmall)
+                .paddingHorizontal(paddingHorizontal)
+        }
+    }
+    
+    let paddingHorizontal: CGFloat = 8
     let cornerRadius: CGFloat = 10
 }
 

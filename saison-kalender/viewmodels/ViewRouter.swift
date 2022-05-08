@@ -23,6 +23,10 @@ class ViewRouter: ObservableObject {
             return "person.fill"
         }
     }
+    
+    func navigate(to route: Route) {
+        currentView = route
+    }
 }
 
 enum Route: CaseIterable {
