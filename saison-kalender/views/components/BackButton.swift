@@ -12,12 +12,18 @@ struct BackButton: View {
     
     var body: some View {
         Button(action: { dismiss() }) {
-            Image(systemName: "arrow.left")
-                .foregroundColor(colorWhite)
-                .modifier(FontH1())
+            ZStack {
+                Circle().fill(colorBeige)
+                Image(systemName: "arrow.left")
+                    .foregroundColor(colorBlack)
+                    .font(.custom(fontSemiBold, size: fontSizeHeadline2))
+                    .padding(spacingExtraSmall)
+            }
+                
         }
-        .shadow(color: colorBlack, radius: 20, x: 1, y: 1)
+        .shadow(color: colorGrey, radius: 10, x: 1, y: 1)
         .padding(.leading, spacingMedium)
+        
     }
 }
 
