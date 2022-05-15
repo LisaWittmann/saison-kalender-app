@@ -306,6 +306,98 @@
                     }
                 ],
                 "seasonals": ["Chinakohl", "Möhre"]
+            },
+            {
+                "name": "Gemüsenudeln mit Pilzen und Tofu",
+                "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
+                "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+                "categories": [
+                    { "name": "Hauptspeise" }
+                ],
+                "nutrition": {
+                    "calories": 383,
+                    "carbs": 18,
+                    "fat": 26,
+                    "protein": 21
+                },
+                "portions": 4,
+                "ingredients": [
+                    {
+                        "name": "Bunte Möhren",
+                        "quantity": 800,
+                        "unit": "g",
+                        "group": "Möhre"
+                    },
+                    {
+                        "name": "Champignons",
+                        "quantity": 200,
+                        "unit": "g"
+                    },
+                    {
+                        "name": "Gemüsebrühe",
+                        "quantity": 100,
+                        "unit": "ml"
+                    },
+                    {
+                        "name": "Hartkäse",
+                        "quantity": 500,
+                        "unit": "g"
+                    },
+                    {
+                        "name": "Knoblauch",
+                        "quantity": 2,
+                        "unit": "Zehen"
+                    },
+                    {
+                        "name": "Olivenöl",
+                        "quantity": 4,
+                        "unit": "EL",
+                        "group": "Öl"
+                    },
+                    {
+                        "name": "Petersilie",
+                        "quantity": 5,
+                        "unit": "g"
+                    },
+                    {
+                        "name": "Schalotte",
+                        "quantity": 2
+                    },
+                    {
+                        "name": "Sojacreme",
+                        "quantity": 200,
+                        "unit": "ml",
+                        "group": "Sahne"
+                    },
+                    {
+                        "name": "Tofu",
+                        "quantity": 300,
+                        "unit": "g"
+                    }
+                ],
+                "preparations": [
+                    {
+                        "order": 1,
+                        "text": "Pilze putzen und in Scheiben schneiden. Schalotten und Knoblauch schälen und fein würfeln. Tofu ebenfalls in Würfel schneiden. 2 EL Öl in einer Pfanne erhitzen, Schalotte, Knoblauch und Tofu darin bei mittlerer Hitze 5 Minuten anbraten."
+                    },
+                    {
+                        "order": 2,
+                        "text": "Pilze zugeben und bei starker Hitze unter gelegentlichem Schwenken weitere 5 Minuten anbraten. Mit Salz und Pfeffer würzen."
+                    },
+                    {
+                        "order": 3,
+                        "text": "Nebenher Petersilie waschen, trocken schütteln und hacken. Käse reiben. Möhren putzen, waschen und mit einem Spiralschneider zu Nudeln verarbeiten."
+                    },
+                    {
+                        "order": 4,
+                        "text": "Pilze mit Gemüsebrühe und Sojacreme ablöschen, etwa 5 Minuten einköcheln lassen, mit Salz, Pfeffer und Cayennepfeffer abschmecken."
+                    },
+                    {
+                        "order": 5,
+                        "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
+                    } 
+                ],
+                "seasonals": ["Champignons", "Zwiebel", "Möhre"]
             }
         ],
         "collections": [
@@ -514,6 +606,98 @@
                             }
                         ],
                         "seasonals": ["Spargel"]
+                    },
+                    {
+                        "name": "Gemüsenudeln mit Pilzen und Tofu",
+                        "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
+                        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+                        "categories": [
+                            { "name": "Hauptspeise" }
+                        ],
+                        "nutrition": {
+                            "calories": 383,
+                            "carbs": 18,
+                            "fat": 26,
+                            "protein": 21
+                        },
+                        "portions": 4,
+                        "ingredients": [
+                            {
+                                "name": "Bunte Möhren",
+                                "quantity": 800,
+                                "unit": "g",
+                                "group": "Möhre"
+                            },
+                            {
+                                "name": "Champignons",
+                                "quantity": 200,
+                                "unit": "g"
+                            },
+                            {
+                                "name": "Gemüsebrühe",
+                                "quantity": 100,
+                                "unit": "ml"
+                            },
+                            {
+                                "name": "Hartkäse",
+                                "quantity": 500,
+                                "unit": "g"
+                            },
+                            {
+                                "name": "Knoblauch",
+                                "quantity": 2,
+                                "unit": "Zehen"
+                            },
+                            {
+                                "name": "Olivenöl",
+                                "quantity": 4,
+                                "unit": "EL",
+                                "group": "Öl"
+                            },
+                            {
+                                "name": "Petersilie",
+                                "quantity": 5,
+                                "unit": "g"
+                            },
+                            {
+                                "name": "Schalotte",
+                                "quantity": 2
+                            },
+                            {
+                                "name": "Sojacreme",
+                                "quantity": 200,
+                                "unit": "ml",
+                                "group": "Sahne"
+                            },
+                            {
+                                "name": "Tofu",
+                                "quantity": 300,
+                                "unit": "g"
+                            }
+                        ],
+                        "preparations": [
+                            {
+                                "order": 1,
+                                "text": "Pilze putzen und in Scheiben schneiden. Schalotten und Knoblauch schälen und fein würfeln. Tofu ebenfalls in Würfel schneiden. 2 EL Öl in einer Pfanne erhitzen, Schalotte, Knoblauch und Tofu darin bei mittlerer Hitze 5 Minuten anbraten."
+                            },
+                            {
+                                "order": 2,
+                                "text": "Pilze zugeben und bei starker Hitze unter gelegentlichem Schwenken weitere 5 Minuten anbraten. Mit Salz und Pfeffer würzen."
+                            },
+                            {
+                                "order": 3,
+                                "text": "Nebenher Petersilie waschen, trocken schütteln und hacken. Käse reiben. Möhren putzen, waschen und mit einem Spiralschneider zu Nudeln verarbeiten."
+                            },
+                            {
+                                "order": 4,
+                                "text": "Pilze mit Gemüsebrühe und Sojacreme ablöschen, etwa 5 Minuten einköcheln lassen, mit Salz, Pfeffer und Cayennepfeffer abschmecken."
+                            },
+                            {
+                                "order": 5,
+                                "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
+                            } 
+                        ],
+                        "seasonals": ["Champignons", "Zwiebel", "Möhre"]
                     }
                 ]
             }

@@ -550,6 +550,33 @@
         ]
     },
     {
+        "name": "Himbeere",
+        "seasons": ["Juni", "Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Himbeere ist nicht gleich Himbeere. Wer im Wald die inzwischen seltenen kleinen, unvergleichlich aromatischen Wild-Exemplare erwischt, kann sich glücklich schätzen. Alle anderen müssen sich mit der kultivierten Gartenversion trösten. Geschmacklich unterliegen sie ihren köstlichen Verwandten zwar, dennoch gehören sie nicht ohne Grund zu den heiß begehrten Beerensorten!\n\nLeuchtend rote Farbe, betörender Duft und jede Menge Dornen an den Zweigen. Die Ähnlichkeiten von Himbeeren mit Rosen sind keineswegs zufällig, sondern beruhen auf einer direkten botanischer Verwandtschaft. Apropos Botanik: Mit ihren vielen kleinen, eng aneinander liegenden Früchtchen gehört die Himbeere eigentlich gar nicht zu den Beeren, sondern zu den sogenannten Sammelsteinfrüchten.\n\nIhre heutige Größe verdanken Himbeeren modernen Zuchtmethoden und den daraus entstandenen Sorten. In früheren Zeiten kannte man ausschließlich Waldhimbeeren, die sehr viel kleiner sind. Eins haben aber große Himbeeren aus Kulturen mit ihren vergleichsweise winzigen Urahnen aus dem Wald gemeinsam: Weil sie auf Druck extrem empfindlich reagieren, muss man sie per Hand ernten.\n\nWichtig: Wer im Wald auf die Suche nach wilden Himbeeren geht, sollte nur in Gegenden sammeln, die wenig von Umweltgiften wie Industrie- oder Autoabgasen belastet sind!"
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat der Himbeere liegt in Nord-, Mittel- und Osteuropa sowie in Teilen Asiens."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Himbeeren kommen das ganze Jahr entweder aus Übersee oder aus dem Treibhaus über auf den Markt. Am besten schmecken sie aber, wenn sie bei uns Saison haben, also in der Zeit von Juni bis August."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Beim Umgang mit reifen Himbeeren brauchen Sie viel Fingerspitzengefühl. Auf Wärme reagieren sie rasch mit Schimmel, zu viel Druck macht sie schnell matschig. Am besten verbraucht man frische Himbeeren also möglichst bald und lagert sie bis dahin kühl und locker ausgebreitet auf einem großen Teller."
+            }
+        ]
+
+    },
+    {
         "name": "Heidelbeere",
         "seasons": ["Juni", "Juli", "August", "September"],
         "characteristics": [
@@ -624,6 +651,32 @@
                 "order": 4,
                 "name": "Lagerung",
                 "value": "Frische Holunderbeeren sind empfindlich und sollten nur so lange wie nötig im Kühlschrank lagern."
+            }
+        ]
+    },
+    {
+        "name": "Johannisbeere",
+        "seasons": ["Juni", "Juli", "August"],
+        "characteristics": [
+            {
+                "order": 1,
+                "name": "Wissenswertes",
+                "value": "Woher Johannisbeeren ihren Namen haben? Ganz einfach: Sie erreichen ab ungefähr dem Johannistag im Juni ihre optimale Reife. Andere, je nach Region und Land verschiedene Bezeichnungen von Johannisbeeren wie Ribiseln, Träuble oder Ahlbeeren lassen sich schwieriger erklären. Doch wie immer sie auch heißen, Johannisbeeren gehören zu den typischen Sommerfrüchten, die man in ganz Europa in mehr als 50 Sorten kennt.\n\nAllen Johannisbeeren gemeinsam ist, dass sie in Traubenform an kurzen Stielen beziehungsweise Rispen wachsen und sich in ihrem Fruchtfleisch unzählige kleine Kernchen verbergen. Unterschiede bestehen vor allem in den jeweilige Farben, die sich in drei Hauptgruppen einteilen lassen: Johannisbeeren können hell- bis dunkelrot, fast weiß oder nachtblau bis schwarz sein. Je nach ihrer Farbe haben Johannisbeeren auch einen anderen Geschmack und eignen sich jeweils für ganz unterschiedliche Zubereitungsarten und Spezialitäten. Die wohl berühmteste Leckerei aus schwarzen Johannisbeeren dürfte zum Beispiel der aus Frankreich stammende Cassis sein, ein dunkler und fruchtig-aromatischer Likör.\n\nIn den Alpen findet man noch die wild wachsende Alpen-Johannisbeere, die Ribes alpinum genannt wird. Ihre Früchte schmecken aber ziemlich fade und spielen darum kulinarisch keine Rolle."
+            },
+            {
+                "order": 2,
+                "name": "Herkunft",
+                "value": "Die ursprüngliche Heimat der Johannisbeeren liegt in Nord-, Mittel- und Osteuropa sowie in Teilen Asiens."
+            },
+            {
+                "order": 3,
+                "name": "Saison",
+                "value": "Rote und weiße Johannisbeeren erntet man ab Mitte bis Ende Juni, schwarze Johannisbeeren reifen etwa einen Monat später."
+            },
+            {
+                "order": 4,
+                "name": "Lagerung",
+                "value": "Johannisbeeren haben eine relativ dicke Haut, die ihr Fruchtfleisch zuverlässig schützt. Dennoch sollte man sie im Gemüsefach des Kühlschranks nicht länger als zwei bis drei Tage aufbewahren."
             }
         ]
     },

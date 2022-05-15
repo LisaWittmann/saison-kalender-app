@@ -2808,7 +2808,8 @@
             {
                 "name": "Mungobohnensprossen",
                 "quantity": 80,
-                "unit": "g"
+                "unit": "g",
+                "group": "Sprossen"
             },
             {
                 "name": "Minze",
@@ -3170,7 +3171,8 @@
             {
                 "name": "Mungobohnensprossen",
                 "quantity": 60,
-                "unit": "g"
+                "unit": "g",
+                "group": "Spossen"
             },
             {
                 "name": "Möhre",
@@ -3216,5 +3218,3125 @@
             }
         ],
         "seasonals": ["Chinakohl", "Möhre"]
+    },
+    {
+        "name": "Waffeln mit Pfirsich-Beeren-Topping",
+        "intro": "Die Heidelbeeren bringen abwehrstärkendes Vitamin C mit, das auch für den Aufbau von Bindegewebe, Knochen und Zähnen wichtig ist. Die Gerbstoffe aus den Früchten helfen zudem der Leber beim Abbau schädlicher Stoffe und fördern damit die Entgiftungsarbeit.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Frühstück" }
+        ],
+        "nutrition": {
+            "calories": 356,
+            "carbs": 41,
+            "fat": 16,
+            "protein": 11
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 125,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 45,
+                "unit": "g"
+            },
+            {
+                "name": "Butter",
+                "quantity": 35,
+                "unit": "g"
+            },
+            {
+                "name": "Ei",
+                "quantity": 2
+            },
+            {
+                "name": "Milch",
+                "quantity": 225,
+                "unit": "ml"
+            },
+            {
+                "name": "Pfirsich",
+                "quantity": 2
+            },
+            {
+                "name": "Heidelbeere",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Vanilleschote",
+                "quantity": 0.5,
+                "group": "Vanille"
+            },
+            {
+                "name": "Ahornsirup",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Zitronensaft",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Zitrone"
+            },
+            {
+                "name": "Minze",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Kokosöl",
+                "quantity": 1,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Mehl, Haferflocken, Backpulver und 1 Prise Salz in einer Schüssel mischen. Butter und Eier in einer weiteren Schüssel schaumig schlagen. Mehlmischung und Milch abwechselnd zugeben und alles zu einem glatten Teig verrühren."
+            },
+            {
+                "order": 2,
+                "text": "Pfirsiche waschen, trocken tupfen, halbieren, Kerne entfernen, Pfirsiche in feine Scheiben schneiden. Heidelbeeren waschen und trocken tupfen."
+            },
+            {
+                "order": 3,
+                "text": "Vanilleschote längs halbieren und das Mark herauskratzen. Ahornsirup, Zitronensaft und Vanillemark verrühren. Minze waschen, trocken schütteln und Blätter abzupfen. Pfirsichscheiben und Heidelbeeren mit dem Vanille-Dressing mischen, Minzeblätter unterheben."
+            },
+            {
+                "order": 4,
+                "text": "Etwas Kokosöl auf einem Waffeleisen verteilen, 1 Kelle Teig hineingeben und ca. 3 Minuten ausbacken. So mit dem gesamten Teig verfahren; gebackene Waffeln bei Bedarf im Backofen warm halten. Waffeln mit dem Pfirsich-Topping belegen und servieren."
+            }
+        ],
+        "seasonals": ["Pfirsich", "Heidelbeere"]
+    },
+    {
+        "name": "Gegrillter Halloumi und Zucchini mit Beeren-Salsa",
+        "intro": "Die Pflanzenfarbstoffe aus den Beeren lassen nicht nur die Salsa gut aussehen, sondern auch uns, denn sie halten die Haut straff und frisch. Somit sind die Früchte ein echter Anti-Falten-Tipp für den Sommer.",
+        "diets": ["Vegetarisch", "Glutenfrei", "Laktosefrei"],
+        "categories": [
+            { "name": "Beilagen" }
+        ],
+        "nutrition": {
+            "calories": 354,
+            "carbs": 15,
+            "fat": 22,
+            "protein": 22
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Heidelbeere",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Brombeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Johannisbeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Rosmarin",
+                "quantity": 2,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Balsamessig",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Essig"
+            },
+            {
+                "name": "Honig",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Zucchini",
+                "quantity": 2
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "TL",
+                "group": "Öl"
+            },
+            {
+                "name": "Halloumi",
+                "quantity": 300,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Beeren verlesen, waschen und je nach Größe halbieren. Chilischote waschen, längs halbieren, entkernen und in feine Streifen schneiden. Frühlingszwiebel putzen, waschen, trocken schütteln und in feine Ringe schneiden. Rosmarin waschen, trocken schütteln und Nadeln abzupfen."
+            },
+            {
+                "order": 1,
+                "text": "Balsamessig mit Honig, Chilistreifen, Rosmarinnadeln, 1 Prise Salz und Pfeffer verrühren. Beeren und Frühlingszwiebeln unterheben. Salsa etwa 30 Minuten ziehen lassen."
+            },
+            {
+                "order": 1,
+                "text": "Zwischenzeitlich Zucchini putzen, waschen, schräg in Streifen schneiden und mit etwas Öl bestreichen. Halloumi in etwa 5 mm dicke Streifen schneiden. Beides auf dem heißen Grill von beiden Seiten jeweils 4–5 Minuten grillen."
+            },
+            {
+                "order": 1,
+                "text": "Zucchini mit grobem Meersalz und Pfeffer bestreuen und zusammen mit Halloumi und der Salsa servieren."
+            }
+        ],
+        "seasonals": ["Heidelbeere", "Brombeere", "Johannisbeere", "Zucchini", "Frühlingszwiebel"]
+    },
+    {
+        "name": "",
+        "intro": "",
+        "diets": [],
+        "categories": {},
+        "nutrition": {
+            "calories": 0,
+            "carbs": 0,
+            "fat": 0,
+            "protein": 0
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "",
+                "quantity": 1,
+                "unit": "",
+                "group": ""
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": ""
+            }
+        ],
+        "seasonals": []
+    },
+    {
+        "name": "Beeren-Bowle",
+        "intro": "Mit alkoholfreiem Sekt bleibt die Bowle in Sachen Prozente im grünen Bereich, und auch in Sachen Kalorien ist sie ein Genuss ohne Reue. Die Beeren geben dem Getränk nicht nur einen tollen Geschmack und das schöne Aussehen, sondern bringen auch jede Menge Stoffe ins Spiel, die unsere Zellen schützen.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+        "categories": [
+            { "name": "Drinks" }
+        ],
+        "nutrition": {
+            "calories": 135,
+            "carbs": 20,
+            "fat": 0,
+            "protein": 1
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Himbeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Heidelbeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Johannisbeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Mineralwasser",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "Limette",
+                "quantity": 1
+            },
+            {
+                "name": "Puderzucker",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Orangenlikör",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Zitronenmelisse",
+                "quantity": 3,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Tonic Water",
+                "quantity": 350,
+                "unit": "ml"
+            },
+            {
+                "name": "(alkoholfreier) Sekt",
+                "quantity": 200,
+                "unit": "ml",
+                "group": "Sekt"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Die Beeren verlesen, eventuell vorsichtig in einer Schüssel waschen, trockentupfen und jeweils etwa 100 g davon zusammen beiseitestellen."
+            },
+            {
+                "order": 2,
+                "text": "Restliche Beeren in 2 Eiswürfelbereitern verteilen und mit etwas Mineralwasser auffüllen. Restliches Mineralwasser wieder kalt stellen. Eiswürfelbereiter in den Gefrierschrank stellen und etwa 2 Stunden gefrieren lassen. Inzwischen die Limette halbieren, auspressen und den Saft in ein Bowlengefäß geben."
+            },
+            {
+                "order": 3,
+                "text": "Die beiseitegestellten Beeren ebenfalls in das Bowlengefäß geben. Puderzucker darüberstäuben und mit Likör beträufeln."
+            },
+            {
+                "order": 4,
+                "text": "Zitronenmelisse waschen, trockenschütteln und die Blättchen abzupfen; einige zum Garnieren beiseitelegen. Den Rest fein hacken, zu den Beeren geben und alles im Kühlschrank etwa 40 Minuten ziehen lassen."
+            },
+            {
+                "order": 5,
+                "text": "Restliches Mineralwasser und Tonic Water zu den Beeren geben. Mit dem eiskalten Sekt aufgießen."
+            },
+            {
+                "order": 6,
+                "text": "Die Beeren-Eiswürfel vorsichtig aus den Eiswürfelbereitern lösen und zur Bowle geben. Mit Melisseblättchen garnieren und sofort servieren."
+            }
+        ],
+        "seasonals": ["Himbeere", "Heidelbeere", "Johannisbeere"]
+    },
+    {
+        "name": "Erdbeer-Rhabarber-Proats",
+        "intro": "Beta-Glucane machen Haferflocken so interessant: Die löslichen Ballaststoffe werden von Darmbakterien zu Acetat, Butyrat und Propionat abgebaut. Diese kurzkettigen Fettsäuren schmeicheln unserem Bauch, da sie Entzündungen eindämmen und den Schleimhautzellen als Treibstoff dienen. Ungesättigte Fettsäuren aus Mandeln können das ungünstige LDL-Cholesterin im Blut senken und gleichzeitig das gute HDL-Cholesterin erhöhen. Das hält die Gefäße elastisch und kann damit vor Herz-Kreislauf-Erkrankungen schützen.",
+        "diets": ["Vegetarisch", "Glutenfrei"],
+        "categories": [
+            { "name": "Frühstück" }
+        ],
+        "nutrition": {
+            "calories": 467,
+            "carbs": 52,
+            "fat": 14,
+            "protein": 30
+        },
+        "portions": 2,
+        "ingredients": [
+            {
+                "name": "Rhabarber",
+                "quantity": 1,
+                "unit": "Stange"
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Vanillepulver",
+                "quantity": 2,
+                "unit": "Msp",
+                "group": "Vanille"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 80,
+                "unit": "g"
+            },
+            {
+                "name": "Buttermilch",
+                "quantity": 180,
+                "unit": "ml"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 0.5
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 250,
+                "unit": "g",
+                "group": "Quark"
+            },
+            {
+                "name": "Erdbeere",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Mandelmus",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Mandelblättchen",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Mandel"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Rhabarber putzen, waschen und in kleine Stücke schneiden. Rhabarber mit Zucker, Vanillepulver und 5 EL Wasser in einen kleinen Topf geben, aufkochen und bei kleiner Hitze in etwa 5 Minuten bissfest garen. Dann vom Herd nehmen und kalt stellen."
+            },
+            {
+                "order": 2,
+                "text": "Haferflocken mit der Buttermilch in eine Schüssel geben. Zitronenhälfte heiß abwaschen, trocken reiben, etwas Schale abreiben und Saft auspressen. Zitronenschale und -saft mit Haferflocken-Buttermilch-Mix verrühren."
+            },
+            {
+                "order": 3,
+                "text": "Haferflocken mit der Buttermilch in eine Schüssel geben. Zitronenhälfte heiß abwaschen, trocken reiben, etwas Schale abreiben und Saft auspressen. Zitronenschale und -saft mit Haferflocken-Buttermilch-Mix verrühren."
+            },
+            {
+                "order": 4,
+                "text": "Am nächsten Morgen Erdbeeren putzen, waschen und in Scheiben schneiden."
+            },
+            {
+                "order": 5,
+                "text": "Proats aus dem Kühlschrank nehmen und vorsichtig umrühren. Rhabarber, Erdbeeren und Mandelmus auf die Gläser verteilen. Erdbeer-Rhabarber-Proats mit Mandelblättchen bestreuen."
+            }
+        ],
+        "seasonals": ["Rhabarber", "Erdbeere"]
+    },
+    {
+        "name": "Pancakes mit Heidelbeeren",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Backen" },
+            { "name": "Frühstück" }
+        ],
+        "nutrition": {
+            "calories": 700,
+            "carbs": 90,
+            "fat": 28,
+            "protein": 20
+        },
+        "portions": 2,
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "Vanilleschote",
+                "quantity": 1,
+                "group": "Vanille"
+            },
+            {
+                "name": "Ei",
+                "quantity": 3
+            },
+            {
+                "name": "Puderzucker",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Buttermilch",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Mehl",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Natron",
+                "quantity": 0.5,
+                "unit": "TL"
+            },
+            {
+                "name": "Backpulver",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Heidelbeere",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Ahornsirup",
+                "quantity": 3,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für den Teig die Hälfte der Butter in einer Pfanne zerlassen und abkühlen lassen. Die Vanilleschote der Länge nach halbieren und das Mark herauskratzen. Ein Ei trennen und das Eiweiß anderweitig verwenden. Das Eigelb mit den übrigen Eiern, dem Puderzucker und dem Vanillemark verrühren. Die Buttermilch, das Natron, die zerlassenen Butter, das Mehl sowie das Backpulver zugeben und alles zu einem glatten Teig verrühren."
+            },
+            {
+                "order": 2,
+                "text": "Die übrige Butter in der Pfanne erhitzen, den Teig hineingeben und bei milder Hitze etwa 12 Min. goldbraun backen. Wenden und weitere 5 Min. garen. Inzwischen die Heidelbeeren putzen. Den Pfannkuchen halbieren, auf Tellern anrichten, mit Ahornsirup beträufeln und mit den Heidelbeeren servieren."
+            }
+        ],
+        "seasonals": ["Heidelbeere"]
+    },
+    {
+        "name": "Spargelsalat mit Himbeer-Dressing",
+        "intro": "Durch die Antioxidantien in den Himbeeren werden die Blutgefäße gestärkt und geschützt, die Durchblutung gefördert und der Körper besser mit Nährstoffen versorgt. Schon Popeye wusste, dass Spinat stark macht. Er liefert viele Mineralstoffe wie das Spurenelement Zink, das an der Regulation vieler Stoffwechselmechanismen beteiligt ist, außerdem blutbildendes Eisen, knochenstärkendes Calium und zellschützendes Betacarotin.",
+        "diets": ["Vegetarisch", "Vegan", "Laktosefrei", "Glutenfrei"],
+        "categories": [
+            { "name": "Salate" }
+        ],
+        "nutrition": {
+            "calories": 165,
+            "carbs": 10,
+            "fat": 10,
+            "protein": 8
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Spargel",
+                "quantity": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Spinat",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Radieschen",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Zitronensaft",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Zitrone"
+            },
+            {
+                "name": "Senf",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Agavendicksaft",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Kurkuma",
+                "quantity": 0.25,
+                "unit": "TL"
+            },
+            {
+                "name": "Himbeere",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Gartenkresse",
+                "quantity": 1,
+                "unit": "Kästchen"
+            },
+            {
+                "name": "Pistazienkerne",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Pistazie"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Spargel schälen, die holzigen Enden abschneiden und schräg in Stücke schneiden. 1 TL Öl in einer Pfanne erhitzen. Spargel darin etwa 10 Minuten bei mittlerer Hitze anbraten, dabei gelegentlich umrühren und mit Thymian, Salz und Pfeffer würzen. Aus der Pfanne nehmen und abkühlen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Inzwischen Spinat waschen und trocken schütteln. Radieschen putzen, waschen und in Scheiben schneiden. Für das Dressing restliches Öl mit Zitronensaft, Senf, Honig und Kurkuma verquirlen und mit Salz und Pfeffer würzen. Die Hälfte der Himbeeren untermischen und leicht zerdrücken."
+            },
+            {
+                "order": 3,
+                "text": "Spargel mit Spinat und Radieschen anrichten, restliche Himbeeren darübergeben und mit dem Dressing beträufeln. Kresse vom Beet schneiden, Pistazien hacken und beides über den Salat streuen."
+            }
+        ],
+        "seasonals": ["Spargel", "Spinat", "Radieschen", "Himbeere"]
+    },
+    {
+        "name": "Gnocchi-Blech mit Kichererbsen",
+        "intro": "Protein-Power: Erdnüsse haben von allen Nüssen den höchsten Gehalt an Eiweiß. Außerdem punkten sie mit reichlich B-Vitaminen sowie den wichtigen Mineralstoffen Fluor und Jod.",
+        "diets": ["Vegan", "Vegetarisch", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 630,
+            "carbs": 68,
+            "fat": 26,
+            "protein": 28
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Kartoffel",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Dinkelmehl",
+                "quantity": 150,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Brokkoli",
+                "quantity": 1
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 2
+            },
+            {
+                "name": "Kichererbsen",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Erdnussmus",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Rote Currypaste",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Ahornsirup",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Erdnusskerne",
+                "quantity": 60,
+                "unit": "g",
+                "group": "Erdnuss"
+            },
+            {
+                "name": "Koriander",
+                "quantity": 2,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Limette",
+                "quantity": 2
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für die Gnocchi Kartoffeln pellen, durch die Kartoffelpresse drücken, mit Mehl, Salz und Pfeffer zu einem geschmeidigen Teig verkneten und 5 Minuten ruhen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Reichlich Salzwasser aufkochen. Aus dem Teig etwa gleich große Gnocchi formen und im leicht siedenden Wasser in 2–3 Minuten gar ziehen lassen. Abgießen und abtropfen lassen."
+            },
+            {
+                "order": 3,
+                "text": "Brokkoli putzen, waschen und in Röschen teilen. Zwiebeln schälen und in Spalten schneiden. Kichererbsen abspülen, abtropfen lassen. Brokkoli, Zwiebeln, Kichererbsen und Gnocchi auf ein Backblech geben. Knoblauch schälen, fein würfeln, mit Erdnussmus, Currypaste, 50 ml heißem Wasser, Öl, Sojasauce und Sirup verrühren und über die Zutaten auf dem Blech geben."
+            },
+            {
+                "order": 4,
+                "text": "Gnocchi-Blech im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) ca. 30 Minuten backen, dabei 1- bis 2-mal wenden. Derweil Erdnüsse grob hacken. Koriander waschen, trocken schütteln und klein schneiden. Limetten abspülen und in Spalten schneiden."
+            },
+            {
+                "order": 5,
+                "text": "Gnocchi-Blech aus dem Ofen nehmen, mit Nüssen und Koriander bestreuen, Limettenspalten dazulegen und servieren."
+            }
+        ],
+        "seasonals": ["Brokkoli", "Kartoffel", "Zwiebel"]
+    },
+    {
+        "name": "Kokos-Gemüsesuppe",
+        "intro": "In der Kokosmilch sind wichtige B Vitamine, wie die Pantothensäure, diese spielt eine wichtige Rolle bei der Herstellung des roten Blutfarbstoffs und des Nervenbotenstoffs Acetylcholin. Angeblich soll die Kokosmilch auch in der Lage sein uns vor Herzinfarkten zu schützen, dies ergab zumindest eine schwedische Studie, welche Tropenvölker untersuchte und dort keine Infarkte oder Schlaganfälle bemerkten. Verantwortlich machten die Forscher hierfür die Kokosmilch, wegen ihrer Beeinflussung des Cholesterinspiegels.",
+        "diets": ["Glutenfrei", "Vegan", "Vegetarisch", "Laktosefrei"],
+        "categories": [
+            { "name": "Suppen" }
+        ],
+        "nutrition": {
+            "calories": 290,
+            "carbs": 7,
+            "fat": 27,
+            "protein": 5
+        },
+        "portions": 2,
+        "ingredients": [
+            {
+                "name": "Mangold",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 1
+            },
+            {
+                "name": "Ingwer",
+                "quantity": 5,
+                "unit": "g"
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 500,
+                "unit": "ml"
+            },
+            {
+                "name": "Kokosmilch",
+                "quantity": 200,
+                "unit": "g",
+                "group": "Kokosnuss"
+            },
+            {
+                "name": "Currypaste",
+                "quantity": 1,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Mangold waschen, putzen, weiße Blattrippe herausschneiden und sehr klein würfeln, Grün grob hacken. Möhren waschen, schälen und in kleine Würfel schneiden. Ingwer schälen, Chilischote waschen, längs aufschneiden, entkernen, weiße Innenhaut entfernen und beides sehr fein würfeln."
+            },
+            {
+                "order": 2,
+                "text": "Öl im Wok erhitzen, Ingwer und Chili andünsten, Möhre und Mangoldwürfel zugeben, kurz mitdünsten und mit der Brühe angießen. Alles bei starker Hitze etwa 5 Minuten kochen, Kokosmilch zugießen und Mangoldgrün zufügen, kurz köcheln lassen, mit Meersalz und Currypaste abschmecken."
+            }
+        ],
+        "seasonals": ["Mangold", "Möhre"]
+    },
+    {
+        "name": "Vegane Shakshuka",
+        "intro": "Sie haben einen empfindlichen Bauch? Spitzkohl wird Ihnen dennoch bekommen, denn im Gegensatz zu anderen Kohlsorten ist seine Struktur fein und daher relativ leicht verdaulich.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 431,
+            "carbs": 59,
+            "fat": 14,
+            "protein": 16
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Spitzkohl",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Grünkohl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 3,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Stückige Tomaten",
+                "quantity": 400,
+                "unit": "g",
+                "group": "Tomate"
+            },
+            {
+                "name": "Paprikapulver",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Harissa",
+                "quantity": 3,
+                "unit": "TL"
+            },
+            {
+                "name": "Kürbispüree",
+                "quantity": 80,
+                "unit": "g",
+                "group": "Hokkaido"
+            },
+            {
+                "name": "Speisestärke",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Seidentofu",
+                "quantity": 200,
+                "unit": "g",
+                "group": "Tofu"
+            },
+            {
+                "name": "Majoran",
+                "quantity": 2,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Sumach",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Naturreis",
+                "quantity": 250,
+                "unit": "g",
+                "group": "Reis"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Spitz- und Grünkohl putzen, waschen, vom Grünkohl das Grün von den Rippen zupfen. Spitz- und Grünkohl in Streifen schneiden. Zwiebel und Knoblauch schälen, klein schneiden."
+            },
+            {
+                "order": 2,
+                "text": "Reis mit der doppelten Menge Salzwasser zum Kochen bringen und bei kleiner Hitze zugedeckt 25–30 Minuten garen. Vom Herd nehmen, auflockern und 5 Minuten quellen lassen."
+            },
+            {
+                "order": 3,
+                "text": "Inzwischen in einer tiefen Pfanne 2 EL Öl erhitzen. Zwiebel und Knoblauch zugeben und bei mittlerer Hitze in 3 Minuten glasig andünsten. Spitz- und Grünkohl zugeben und in 3–5 Minuten goldbraun braten. Mit etwas Wasser ablöschen, Tomaten zufügen und etwa 10 Minuten einkochen lassen; dann mit Paprika, Harissa, Salz und Pfeffer abschmecken."
+            },
+            {
+                "order": 4,
+                "text": "Nebenher Kürbispüree mit restlichem Öl, 1/2 TL Stärke, 1–2 EL Wasser und 1 Prise Salz verrühren. Tofu mit übriger Stärke verrühren und salzen. Im Pfannengemüse 4 Mulden formen, Tofucreme hineinsetzen und mittig Kürbiscreme daraufgeben. Pfanne zudecken und Shakshuka bei kleiner Hitze ca. 10 Minuten stocken lassen. Majoran waschen, trocken schütteln, klein zupfen. Vegane Shakshuka mit Majoran, Sumach und Sesam bestreuen und mit Reis servieren."
+            }
+        ],
+        "seasonals": ["Spitzkohl", "Grünkohl", "Zwiebel", "Hokkaido"]
+    },
+    {
+        "name": "Pulled Jackfruit-Burger",
+        "intro": "Das Fruchtfleisch der Jackfruit ähnelt in der Konsistenz Hähnchenfleisch, ist dabei aber sehr ballaststoffreich und sorgt somit für eine lange anhaltende Sättigung und regt die Verdauung an.",
+        "diets": ["Vegetarisch", "Vegan", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 672,
+            "carbs": 99,
+            "fat": 23,
+            "protein": 15
+        },
+        "portions": 2,
+        "ingredients": [
+            {
+                "name": "Spitzkohl",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Schwarzkümmel",
+                "quantity": 0.5,
+                "unit": "TL"
+            },
+            {
+                "name": "Kokosblütenzucker",
+                "quantity": 1,
+                "unit": "Prise",
+                "group": "Rohrzucker"
+            },
+            {
+                "name": "Weißweinessig",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Essig"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Apfel",
+                "quantity": 1
+            },
+            {
+                "name": "Jackfruit",
+                "quantity": 280,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 2,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Barbecuesoße",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Radicchio",
+                "quantity": 1
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Roggenbrötchen",
+                "quantity": 2,
+                "group": "Burgerbrötchen"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für den Krautsalat Kohl putzen, waschen und in sehr feine Streifen schneiden. Mit 2 TL Salz, Pfeffer, Schwarzkümmel und Kokosblütenzucker würzen und mit den Händen kräftig 5 Minuten kneten. Essig und 2 EL Öl zugeben. Apfel waschen, entkernen, raspeln und unter den Kohl mischen."
+            },
+            {
+                "order": 2,
+                "text": "Jackfruit-Stücke abspülen und abtropfen lassen. Zwiebel und Knoblauch schälen. Zwiebel in feine Streifen schneiden, Knoblauch fein würfeln. Restliches Öl mit Zwiebel und Jackfruit in eine Edelstahlgrillschale geben und auf dem heißen Grill 4–5 Minuten grillen. Knoblauch zugeben und 1 Minute mitgaren."
+            },
+            {
+                "order": 3,
+                "text": "BBQ-Soße und 50 ml Wasser zur Jackfruit geben, Grillrost hochstellen und 10–15 Minuten bei niedriger Hitze einköcheln lassen."
+            },
+            {
+                "order": 4,
+                "text": "Radicchio waschen, trocken schütteln, Blätter ablösen. Brötchen halbieren und auf dem heißen Grill toasten. Jackfruit aus der Pfanne nehmen und mit Gabeln klein zupfen. Brötchen mit Radicchio, Jackfruit und Spitzkohlsalat belegen."
+            }
+        ],
+        "seasonals": ["Spitzkohl", "Radicchio", "Apfel", "Zwiebel"]
+    },
+    {
+        "name": "Bunter Reissalat mit Hähnchen Spießen",
+        "intro": "Das Papain aus der Papaya stärkt das Bindegewebe und kann darüber hinaus die Einlagerung von Depotfett verhindern. Die Frucht enthält außerdem Vitamin A für eine schöne Haut und Vitamin C für ein starkes Immunsystem. Neben Hähnchenfleisch bieten auch Erdnusskerne reichlich muskelaufbauendes Eiweiß.",
+        "diets": ["Glutenfrei", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" },
+            { "name": "Asiatisch" }
+        ],
+        "nutrition": {
+            "calories": 613,
+            "carbs": 70,
+            "fat": 18,
+            "protein": 42
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Hähchenbrustfilet",
+                "quantity": 500,
+                "unit": "g",
+                "group": "Hähnchenbrust"
+            },
+            {
+                "name": "Ingwer",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Sesamöl",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Möhre",
+                "quantity": 2
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Spitzkohl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Rotkohl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Papaya",
+                "quantity": 1
+            },
+            {
+                "name": "Erdnussmus",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Limettensaft",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Limette"
+            },
+            {
+                "name": "Reissirup",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Erdnusskerne",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Erdnuss"
+            },
+            {
+                "name": "Jasminreis",
+                "quantity": 250,
+                "unit": "g",
+                "group": "Reis"
+            },
+            {
+                "name": "Thai-Basilikum",
+                "quantity": 1,
+                "unit": "Handvoll"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Hähnchenbrustfilet abspülen, trocken tupfen und in Stücke schneiden. Stücke auf Holzspieße stecken. Ingwer und Knoblauch schälen und fein hacken. 2 EL Sesamöl, 2 EL Sojasauce mit Ingwer und Knoblauch vermischen und die Spieße damit marinieren. Spieße etwa 30 Minuten im Kühlschrank ziehen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Reis mit der doppelten Menge kaltem Salzwasser in einen Topf geben, einmal umrühren. Anschließend das Wasser zum Kochen bringen und Reis im kochenden Wasser bei mittlerer Hitze 12–15 Minuten köcheln lassen. Anschließend vom Herd nehmen, Reis auflockern und 10 Minuten abkühlen lassen."
+            },
+            {
+                "order": 3,
+                "text": "Währenddessen Möhren, Frühlingszwiebeln, Spitz- und Rotkohl putzen, waschen und in feine Streifen hobeln. Papaya schälen, halbieren, Kerne entfernen, Papaya in feine Streifen schneiden. Gemüse mit Reis und Papaya vermengen."
+            },
+            {
+                "order": 4,
+                "text": "Für das Dressing restliches Öl, restliche Sojasauce, 2 EL Wasser mit Erdnussmus, Limettensaft sowie Reissirup verquirlen und mit Cayennepfeffer würzen. Erdnusskerne hacken. Basilikum waschen und trocken schütteln."
+            },
+            {
+                "order": 5,
+                "text": "Eine beschichtete Pfanne erhitzen und die Spieße bei mittlerer Hitze von allen Seiten etwa 7–10 Minuten anbraten. Den Salat auf vier Teller anrichten, das Dressing darüberträufeln, die Spieße darübergeben, mit den Erdnüssen und den Basilikumblättern bestreuen."
+            }
+        ],
+        "seasonals": ["Möhre", "Spitzkohl", "Frühlingszwiebel", "Rotkohl"]
+    },
+    {
+        "name": "Spitzkohl-Pilz-Teigtaschen",
+        "intro": "Ätherische Öle, zum Beispiel Allicin aus Schalotten, gelten als Wohltat für die Darmschleimhaut. Für die Spitzkohl-Pilz-Teigtaschen wird Dinkelmehl Type 1050 verwendet. Dieses enthält deutlich mehr Ballaststoffe, Mineralstoffe und Vitamine als Weißmehl.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 670,
+            "carbs": 91,
+            "fat": 23,
+            "protein": 23
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Dinkelmehl",
+                "quantity": 375,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Ei",
+                "quantity": 2
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Thymian",
+                "quantity": 3,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Schalotten",
+                "quantity": 6
+            },
+            {
+                "name": "Butter",
+                "quantity": 4,
+                "unit": "EL"
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 15,
+                "unit": "g"
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Champignons",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Balsamessig",
+                "quantity": 100,
+                "unit": "ml",
+                "group": "Essig"
+            },
+            {
+                "name": "Spitzkohl",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Gegarte Kartoffel",
+                "quantity": 2,
+                "group": "Kartoffel"
+            },
+            {
+                "name": "Schmand",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Vollkorn-Semmelbrösel",
+                "quantity": 3,
+                "unit": "EL",
+                "group": "Semmelbrösel"
+            },
+            {
+                "name": "Schnittlauch",
+                "quantity": 0.25,
+                "unit": "Bund"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Mehl, 1/2 TL Salz, Eier und Öl in einer Schüssel zu einem glatten Teig verkneten, bei Bedarf noch etwas Wasser oder Mehl zufügen. Teig zugedeckt ca. 30 Minuten ruhen lassen."
+            },
+            {
+                "order": 2,
+                "text": "nzwischen Thymian waschen und trocken schütteln, von 1 Zweig Blättchen abzupfen und zur Seite legen. Schalotten schälen und samt Strünken längs in Spalten schneiden. 1 EL Butter in einem Topf erhitzen. Schalotten darin bei mittlerer Hitze 3–4 Minuten dünsten. Mit Zucker bestreuen und 1–2 Minuten karamellisieren lassen. Mit Essig und 3 EL Wasser ablöschen. Thymianzweige zugeben und etwa 10 Minuten bei kleiner Hitze einköcheln lassen, salzen und pfeffern."
+            },
+            {
+                "order": 3,
+                "text": "Für die Füllung Zwiebel schälen und fein würfeln. Pilze und Spitzkohl putzen, waschen, jeweils die Hälfte fein hacken. Restliche Pilze halbieren, übrigen Kohl in grobe Streifen schneiden. 1 EL Butter in einer Pfanne erhitzen. Feine Zwiebel-, Pilz- und Kohlwürfel darin bei mittlerer Hitze 4 Minuten dünsten. Mit Salz, Pfeffer und beiseitegelegten Thymianblättchen würzen und in eine Schüssel geben. Kartoffeln zerstampfen und mit Schmand dazugeben, alles gut mischen."
+            },
+            {
+                "order": 4,
+                "text": "Nach Ablauf der Ruhezeit Teig auf einer bemehlten Arbeitsfläche dünn ausrollen, Kreise (7–8 cm Durchmesser) ausstechen. In die Mitte je 1 gehäuften TL Füllung geben, Teig zu Halbmonden zusammenklappen und Ränder mit einer Gabel fest andrücken. Salzwasser in einem Topf aufkochen und Teigtaschen darin 2–3 Minuten bei mittlerer Hitze garen, bis sie an der Oberfläche schwimmen. Herd ausschalten und Teigtaschen 3 Minuten ziehen lassen."
+            },
+            {
+                "order": 5,
+                "text": "1 EL Butter in einer großen Pfanne erhitzen. Brösel darin bei mittlerer Hitze 2 Minuten bräunen, dann herausnehmen. Restliche Butter in der Pfanne erhitzen. Übrigen Spitzkohl und halbierte Pilze darin bei mittlerer Hitze 3–4 Minuten braten, Teigtaschen hinzugeben und etwa 2 Minuten mitbraten."
+            },
+            {
+                "order": 6,
+                "text": "Schnittlauch waschen, trocken schütteln und hacken. Schalotten in ein Schälchen füllen und separat reichen. Teigtaschen auf Teller geben und mit Butterbröseln und Schnittlauch toppen."
+            }
+        ],
+        "seasonals": ["Kartoffel", "Zwiebel", "Champignons", "Spitzkohl"]
+    },
+    {
+        "name": "Würzige Wirsing-Chips",
+        "intro": "Die krausen Blätter des Wirsingkohls enthalten eine ordentliche Portion an Vitamin C. Dieses ist für den Aufbau des Bindegewebes wichtig und sorgt somit für straffe Haut. Aber auch der Gehalt an Folsäure und Ballaststoffen sollte nicht vernachlässigt werden. Die Wirsing-Chips unterstützen Zellteilungs- und Wachstumsprozesse im Körper und halten die Verdauung in Schwung.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+        "categories": [
+            { "name": "Snacks" }
+        ],
+        "nutrition": {
+            "calories": 92,
+            "carbs": 8,
+            "fat": 3,
+            "protein": 7
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Wirsing",
+                "quantity": 1
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Harissapulver",
+                "quantity": 0.5,
+                "unit": "TL",
+                "group": "Harissa"
+            },
+            {
+                "name": "Limettensaft",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Limette"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Äußere Blätter den Wirsings entfernen. Wirsing waschen, Strunk entfernen, Blätter abzupfen, in ungefähr gleich große Stücke zerteilen und in eine Schüssel geben."
+            },
+            {
+                "order": 2,
+                "text": "Olivenöl, Salz, Harissapulver und Limettensaft über die Blätter verteilen und mit den Händen einmassieren."
+            },
+            {
+                "order": 3,
+                "text": "Marinierten Wirsing ohne Überlappungen auf ein mit Backpapier belegtes Backblech verteilen und im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) für ca. 8 Minuten knusprig backen. In eine große Schüssel füllen oder als Topping auf einem Gericht servieren."
+            }
+        ],
+        "seasonals": ["Wirsing"]
+    },
+    {
+        "name": "Beeren-Käsekuchen mit Mandeln",
+        "intro": "Enthalten Mandeln viel Fett? Ja, und zwar zu mehr als 50 Prozent. Aber dieses Fett setzt sich aus wertvollen ungesättigten Fettsäuren zusammen und tut dem Körper daher gut. Mehrere Studien zeigen, dass Mandeln dadurch sogar einen erhöhten Cholesterinspiegel senken und so das Risiko für Herz-Kreislauf-Erkrankungen mindern können.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Backen" }
+        ],
+        "nutrition": {
+            "calories": 314,
+            "carbs": 24,
+            "fat": 16,
+            "protein": 17
+        },
+        "portions": 12,
+        "ingredients": [
+            {
+                "name": "Weizen-Vollkornmehl",
+                "quantity": 100,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Gemahlene Mandelkerne",
+                "quantity": 70,
+                "unit": "g",
+                "group": "Mandel"
+            },
+            {
+                "name": "Gehackte Mandelkerne",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Mandel"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 0.5
+            },
+            {
+                "name": "Honig",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Ei",
+                "quantity": 4
+            },
+            {
+                "name": "Butter",
+                "quantity": 140,
+                "unit": "g"
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 1,
+                "unit": "kg",
+                "group": "Quark"
+            },
+            {
+                "name": "Vanillepuddingpulver",
+                "quantity": 1,
+                "unit": "Päckchen"
+            },
+            {
+                "name": "Himbeere",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Erdbeere",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Kirsche",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Puderzucker",
+                "quantity": 1,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für den Boden Mehl, gemahlene sowie gehackte Mandeln, Zitronenschale, Zitronensaft, 50 Honig, eine Prise Salz, 1 Ei und Butter in Stückchen in eine Schüssel geben. Alles zügig zu einem geschmeidigen Mürbeteig kneten. In Frischhaltefolie gewickelt ca. 30 Minuten kalt stellen."
+            },
+            {
+                "order": 2,
+                "text": "Die restlichen Eier trennen und die Eigelbe mit dem Quark, Puddingpulver und restlichem Honig verrühren. Die Eiweiße mit einer Prise Salz zu Eischnee steif schlagen und unter die Quarkmasse heben."
+            },
+            {
+                "order": 3,
+                "text": "Teig ausrollen und die Springform damit auskleiden. Quarkmasse in die Form geben, glatt streichen und Käsekuchen im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 50 Minuten backen. Käsekuchen rechtzeitig abdecken, damit die Oberfläche nicht zu stark bräunt."
+            },
+            {
+                "order": 4,
+                "text": "Die Beeren waschen, putzen und bei Bedarf längs halbieren. Die Kirschen waschen und trocken tupfen."
+            },
+            {
+                "order": 5,
+                "text": "Den fertig gebackenen Käsekuchen aus dem Backofen nehmen, abkühlen lassen, aus der Form lösen und vollständig erkalten lassen. Auf einen Kuchenteller setzen, mittig die Beeren und Kirschen auf dem Käsekuchen verteilen und mit Puderzucker bestaubt servieren."
+            }
+        ],
+        "seasonals": ["Erdbeere", "Kische", "Himbeere"]
+    },
+    {
+        "name": "Hähnchenbrust mit Rhabarber-Kirsch-Chutney",
+        "diets": ["Glutenfrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 336,
+            "carbs": 22,
+            "fat": 5,
+            "protein": 48
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Schalotte",
+                "quantity": 1
+            },
+            {
+                "name": "Ingwer",
+                "quantity": 10,
+                "unit": "g"
+            },
+            {
+                "name": "Koriandersamen",
+                "quantity": 0.5,
+                "unit": "TL",
+                "group": "Koriander"
+            },
+            {
+                "name": "Pimentkörner",
+                "quantity": 4
+            },
+            {
+                "name": "Rotweinessig",
+                "quantity": 50,
+                "unit": "ml",
+                "group": "Essig"
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Rhabarber",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Kirschen",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Hähnchenbrustfilets",
+                "quantity": 4,
+                "group": "Hähnchenbrust"
+            },
+            {
+                "name": "Butterschmalz",
+                "quantity": 1,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Die Schalotte und den Ingwer schälen und fein hacken. Den Koriander und den Piment in einem Mörser zerstoßen. Die Gewürze mit der Schalotte, dem Ingwer, dem Essig, 2-3 EL Wasser und dem Zucker aufkochen und etwa 5 Minuten leise köcheln lassen. Nach Bedarf noch etwas Wasser zugeben. Den Rhabarber waschen, putzen in ca. 1 cm große Stücke schneiden. Die Kirschen waschen und entsteinen. Beides zum Gewürzsud geben und unter gelegentlichem Rühren 10-15 Minuten dicklich einköcheln lassen. Mit Salz und Pfeffer abschmecken, von der Hitze nehmen und abkühlen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Den Ofen auf 140°C Unter- und Oberhitze vorheizen."
+            },
+            {
+                "order": 3,
+                "text": "Die Hähnchenbrüste abbrausen und trocken tupfen. Mit Salz und Pfeffer würzen und im heißen Schmalz in einer ofenfesten Pfanne auf der Hautseite 2-3 Minuten goldbraun braten. Anschließend wenden und mit der Pfanne im Ofen ca. 10 Minuten fertig garen."
+            },
+            {
+                "order": 4,
+                "text": "Mit dem Chutney servieren."
+            }
+        ],
+        "seasonals": ["Kirsche", "Rhabarber", "Zwiebel"]
+    },
+    {
+        "name": "Rotkohlsalat mit Radicchio",
+        "intro": "Der in Radicchio enthaltene Bitterstoff Intybin fördert eine gesunde Verdauung, denn er regt die Produktion von Verdauungssäften in Magen, Leber und Galle an. Das in Rotkohl steckende Vitamin K ist am Knochenstoffwechsel beteiligt.",
+        "diets": ["Vegan", "Laktosefrei", "Vegetarisch"],
+        "categories": [
+            { "name": "Salate" }
+        ],
+        "nutrition": {
+            "calories": 390,
+            "carbs": 43,
+            "fat": 17,
+            "protein": 10
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Getrocknete Kirsche",
+                "quantity": 50,
+                "unit": "g",
+                "group": "Kirsche"
+            },
+            {
+                "name": "Apfelessig",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Essig"
+            },
+            {
+                "name": "Leinöl",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Zitronensaft",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Zitrone"
+            },
+            {
+                "name": "Rotkohl",
+                "quantity": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Radicchio",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Apfel",
+                "quantity": 1
+            },
+            {
+                "name": "Zwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 5,
+                "unit": "g"
+            },
+            {
+                "name": "Dill",
+                "quantity": 5,
+                "unit": "g"
+            },
+            {
+                "name": "Nusskerne",
+                "quantity": 30,
+                "unit": "g"
+            },
+            {
+                "name": "Vollkornbrötchen",
+                "quantity": 4
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für das Dressing Kirschen klein hacken und mit Essig, Öl und Zitronensaft vermengen, mit Salz und Pfeffer abschmecken."
+            },
+            {
+                "order": 2,
+                "text": "Rotkohl und Radicchio putzen, waschen, halbieren, Strünke herausschneiden, Kohl und Radicchio in feine Streifen schneiden oder hobeln. Apfel waschen, vierteln, entkernen und in feine Scheiben schneiden. Zwiebel schälen und in Streifen schneiden."
+            },
+            {
+                "order": 3,
+                "text": "Kräuter waschen, trocken schütteln und Blätter abzupfen; etwas Dill zum Garnieren beiseitelegen, Rest hacken. Kräuter in einer Schüssel mit Rotkohl, Radicchio, Apfel und Zwiebeln mit der Hälfte des Dressings mischen. Auf Tellern oder einer großen Platte anrichten und mit restlichem Dressing beträufeln."
+            },
+            {
+                "order": 4,
+                "text": "Nüsse hacken, über den Salat streuen und mit restlichem Dill garnieren. Vollkornbrötchen dazu reichen."
+            }
+        ],
+        "seasonals": ["Apfel", "Rotkohl", "Radicchio", "Zwiebel", "Kirsche"]
+    },
+    {
+        "name": "Club-Sandwiches mit Ziegenkäse-Pesto-Creme",
+        "intro": "Viele Vitamine und Mineralstoffe nehmen Sie mit diesem üppig gefüllten Brot zu sich: B-Vitamine sorgen dafür, dass die Nährstoffe optimal verstoffwechselt werden. Die volle Tagesdosis an Vitamin C begünstigt die Eisenaufnahme aus den vegetarischen Zutaten. Und Magnesium tut Ihren Muskeln gut.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 487,
+            "carbs": 46,
+            "fat": 25,
+            "protein": 16
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Paprika",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Zucchini",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Champignons",
+                "quantity": 4
+            },
+            {
+                "name": "Tomate",
+                "quantity": 4
+            },
+            {
+                "name": "Kopfsalat",
+                "quantity": 4,
+                "unit": "Blätter"
+            },
+            {
+                "name": "Shisokresse",
+                "quantity": 1,
+                "unit": "Kästchen"
+            },
+            {
+                "name": "Ziegenfrischkäse",
+                "quantity": 75,
+                "unit": "g",
+                "group": "Frischkäse"
+            },
+            {
+                "name": "Pesto",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Vollkorntoast",
+                "quantity": 5,
+                "unit": "Scheiben",
+                "group": "Toast"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Paprikaschote vierteln, entkernen und waschen. Zucchini waschen, quer halbieren und der Länge nach in 5 mm dünne Scheiben schneiden."
+            },
+            {
+                "order": 2,
+                "text": "Öl in einer Grillpfanne erhitzen. Paprikastücke darin 2-3 Minuten, Zucchinischeiben 1-2 Minuten bei starker Hitze von jeder Seite braten. Mit Salz und Pfeffer würzen."
+            },
+            {
+                "order": 3,
+                "text": "Champignons putzen, die Stielenden abschneiden und die Köpfe in dünne Scheiben schneiden. Tomate waschen, den Stielansatz keilförmig herausschneiden, die Tomate in 4 Scheiben schneiden. Salatblätter putzen, waschen und trockenschleudern. Kresse vom Beet schneiden, gegebenenfalls waschen und trockentupfen. Ziegenfrischkäse und Pesto verrühren."
+            },
+            {
+                "order": 4,
+                "text": "Die Toastscheiben unter dem vorgeheizten Grill goldbraun rösten. Jede Toastscheibe auf einer Seite mit Frischkäse bestreichen."
+            },
+            {
+                "order": 5,
+                "text": "2 Toastscheiben mit Salatblättern belegen, Zucchini und Champignons darauf verteilen. 2 Toastscheiben mit Paprikastücken, Tomatenscheiben und Kresse belegen, auf die Toastscheiben mit Zucchini setzen. Darauf als Deckel die restlichen beiden Toastscheiben mit dem Käse nach unten setzen. Die Brote mit jeweils 2 Holzspießen befestigen und in Dreiecke schneiden."
+            }
+        ],
+        "seasonals": ["Paprika", "Zucchini", "Tomate", "Kopfsalat", "Champignons"]
+    },
+    {
+        "name": "Veggie-Buletten mit Ofengemüse",
+        "intro": "Bei den Veggie-Buletten mit Ofengemüse verwandeln sich Blumenkohl, Eier und Quark in einen saftigen Fleischersatz. Diese Kombi überzeugt mit viel Eiweiß, das durch die Zugabe von Kartoffeln und Getreide noch an Qualität gewinnt. Nicht zuletzt punktet der gut bekömmliche Kohl mit einer Extraportion verdauungsfördernden Ballaststoffen.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 517,
+            "carbs": 42,
+            "fat": 29,
+            "protein": 19
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Kartoffel",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Blumenkohl",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Mangold",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Rote Zwiebel",
+                "quantity": 1
+            },
+            {
+                "name": "Zitronensaft",
+                "quantity": 3,
+                "unit": "EL",
+                "group" : "Zitrone"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 2
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 100,
+                "unit": "g",
+                "group": "Quark"
+            },
+            {
+                "name": "Vollkorn-Semmelbrösel",
+                "quantity": 40,
+                "unit": "g",
+                "group": "Semmelbrösel"
+            },
+            {
+                "name": "Haferflocken",
+                "quantity": 40,
+                "unit": "g"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Ei",
+                "quantity": 1
+            },
+            {
+                "name": "Schmand",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Meerrettich",
+                "quantity": 15,
+                "unit": "g"
+            },
+            {
+                "name": "Petersilie",
+                "quantity": 2,
+                "unit": "Stiele"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Kartoffeln in kochendem Wasser 15 Minuten bei mittlerer Hitze garen. Anschließend abgießen, abtropfen lassen und halbieren."
+            },
+            {
+                "order": 2,
+                "text": "Währenddessen für die Buletten Blumenkohl putzen, waschen, in Röschen teilen und in Salzwasser in 10 Minuten weich garen. Abschrecken, gut abtropfen lassen, fein zerkleinern und abkühlen lassen."
+            },
+            {
+                "order": 3,
+                "text": "Nebenher Mangold putzen, waschen, Blätter und Stiele in Streifen schneiden. Zwiebel schälen und in schmale Spalten schneiden. Gemüse und Kartoffeln in eine Auflaufform geben, mit Piment d'Espelette und Salz würzen, mit 2 EL Zitronensaft und 2 EL Öl beträufeln und im vorgeheizten Backofen bei 200 °C (Umluft 180 °C; Gas: Stufe 3) in 15–20 Minuten goldbraun backen, dabei gelegentlich wenden."
+            },
+            {
+                "order": 4,
+                "text": "Inzwischen Frühlingszwiebeln putzen, waschen und in feine Ringe schneiden. Mit Quark, Semmelbröseln, Haferflocken, Käse und Ei unter den Blumenkohl mengen und mit Salz und Pfeffer würzen. Aus der Masse 8 Frikadellen formen und in einer großen heißen Pfanne im restlichen Öl auf beiden Seiten in 8–10 Minuten bei mittlerer Hitze goldbraun braten."
+            },
+            {
+                "order": 5,
+                "text": "Schmand mit Meerrettich verrühren und mit Salz und restlichem Zitronensaft abschmecken. Petersilie waschen, trocken schütteln und hacken. Gemüse aus dem Ofen nehmen, an den Rand schieben und die Buletten in die Form legen. Etwas Schmand darüber verteilen und mit Petersilie bestreuen. Restlichen Schmand separat dazu reichen."
+            }
+        ],
+        "seasonals": ["Mangold", "Kartoffel", "Blumenkohl", "Zwiebel", "Frühlingszwiebel"]
+    },
+    {
+        "name": "Rhabarber Limonade",
+        "intro": "Die hohe Konzentration von Apfel- und Oxalsäure im Rhabarber macht ihn nicht nur so sauer – sie ist auch in der Lage, krank machenden Bakterien in Magen und Darm das Handwerk zu legen.",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
+        "categories": [
+            { "name": "Drinks" }
+        ],
+        "nutrition": {
+            "calories": 81,
+            "carbs": 16,
+            "fat": 1,
+            "protein": 1
+        },
+        "portions": 5,
+        "ingredients": [
+            {
+                "name": "Rhabarber",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Limette",
+                "quantity": 2
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 75,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Den Rhabarber waschen, putzen und in kleine Stücke schneiden. Limetten halbieren und Saft auspressen. Rhabarber, Limettensaft, Zucker und 600 ml Wasser in einem Topf geben und aufkochen."
+            },
+            {
+                "order": 2,
+                "text": "Rhabarber bei mittlerer Hitze ca. 15 Minuten köcheln lassen, vom Herd nehmen und mit einem Stabmixer fein pürieren. Püree in ein Tuch geben, ausdrücken und den Saft auffangen. "
+            },
+            {
+                "order": 3,
+                "text": "Die Rhabarberlimonade in einen Krug geben und auskühlen lassen. Rhabarberlimonade in Gläser gefüllt servieren."
+            }
+        ],
+        "seasonals": ["Rhabarber"]
+    },
+    {
+        "name": "Rhabarber-Baiser-Kuchen",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Backen" }
+        ],
+        "nutrition": {
+            "calories": 268,
+            "carbs": 30,
+            "fat": 9,
+            "protein": 7
+        },
+        "portions": 12,
+        "ingredients": [
+            {
+                "name": "Mehl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Zucker",
+                "quantity": 70,
+                "unit": "g"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1
+            },
+            {
+                "name": "Butter",
+                "quantity": 125,
+                "unit": "g"
+            },
+            {
+                "name": "Ei",
+                "quantity": 4
+            },
+            {
+                "name": "Quark",
+                "quantity": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Vanilleschote",
+                "quantity": 0.5,
+                "group": "Vanille"
+            },
+            {
+                "name": "Puderzucker",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Speisestärke",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Rhabarber",
+                "quantity": 400,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Für den Teig das Mehl mit dem Salz, Zucker und Zitronenabrieb mischen, auf eine Arbeitsfläche häufeln, in die Mitte eine Mulde drücken, das Ei hineinschlagen und die Butter in Flöckchen um die Mulde herum verteilen. Mit einem großen Messer sämtliche Zutaten krümelig hacken und mit den Händen rasch zu einem glatten Teig verkneten. Zu einer Kugel formen und in Frischhaltefolie gewickelt für 30 Minuten in den Kühlschrank stellen."
+            },
+            {
+                "order": 2,
+                "text": "Den Backofen auf 180°C Ober-und Unterhitze vorheizen."
+            },
+            {
+                "order": 3,
+                "text": "Die Eier trennen und die Eigelbe mit dem Quark, der Hälfte des Puderzuckers, Vanillemark, der Stärke und dem Zitronensaft verrühren. Den Rhabarber waschen, putzen, gegebenenfalls schälen und in 2 cm große Stücke schneiden. Den Teig auf einer bemehlten Arbeitsfläche etwas größer als die Form ausrollen, die gebutterte Pieform damit auskleiden und dabei einen Rand hochformen. Die Quarkmasse auf dem Boden verstreichen und mit dem Rhabarber belegen. Diesen leicht mit Puderzucker bestauben. Den Kuchen in den vorgeheizten Ofen schieben und ca. 25 Minuten backen."
+            },
+            {
+                "order": 4,
+                "text": "Das Eiweiß mit einer Prise Salz steif schlagen, den restlichen Puderzucker einrieseln lassen, weiterschlagen, bis die Masse glänzt und Spitzen zieht. Den Eischnee in einen Spritzbeutel mit Sternentülle füllen und gitterartig auf den Kuchenspritzen. Den Backofen auf 160°C Ober-und Unterhitze runterschalten und den Kuchen weitere 15 Minuten backen, bis der Eischnee anfängt goldbraun zu werden. Die fertige Pie aus den Ofen nehmen, abkühlen lassen und servieren."
+            }
+        ],
+        "seasonals": ["Rhabarber"]
+    },
+    {
+        "name": "Süßkartoffel-Curry",
+        "intro": "Scharfstoffe aus Currypaste und Chili heizen dem Körper ordentlich ein und bringen den gesamten Stoffwechsel in Schwung. Die Süßkartoffeln punkten mit reichlich Betacarotin, einer Vorstufe von Vitamin A. Das fettlösliche Vitamin ist für gesunde Augen wichtig.",
+        "diets": ["Vegan", "Vegetarisch", "Glutenfrei", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" },
+            { "name": "Asiatisch" }
+        ],
+        "nutrition": {
+            "calories": 398,
+            "carbs": 55,
+            "fat": 14,
+            "protein": 13
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Rote Zwiebel",
+                "quantity": 3
+            },
+            {
+                "name": "Ingwerwurzel",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Ingwer"
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1
+            },
+            {
+                "name": "Currypaste",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Süßkartoffel",
+                "quantity": 1
+            },
+            {
+                "name": "Möhre",
+                "quantity": 2
+            },
+            {
+                "name": "Kokosöl",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 400,
+                "unit": "ml"
+            },
+            {
+                "name": "Kokosmilch",
+                "quantity": 450,
+                "unit": "ml",
+                "group": "Kokosnuss"
+            },
+            {
+                "name": "Sternanis",
+                "quantity": 1
+            },
+            {
+                "name": "Brokkoli",
+                "quantity": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Pak Choi",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Mango",
+                "quantity": 1
+            },
+            {
+                "name": "Tofu",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Limettensaft",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Limette"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 2,
+                "unit": "TL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Zwiebeln und Ingwer schälen und würfeln. Chilischote waschen, klein schneiden und mit Zwiebeln, Ingwer und Currypaste in einem Blitzhacker zu einer Paste zerkleinern. Süßkartoffel und Möhren putzen, schälen und klein schneiden."
+            },
+            {
+                "order": 2,
+                "text": "Kokosöl in einem Topf erhitzen. Gewürzpaste darin 3–4 Minuten bei kleiner Hitze rösten. Süßkartoffel und Möhren zugeben und salzen. Brühe, Kokosmilch und Sternanis zugeben. Aufkochen und bei kleiner Hitze 10 Minuten köcheln lassen."
+            },
+            {
+                "order": 3,
+                "text": "Inzwischen Brokkoli und Pak Choi putzen, waschen und klein schneiden. Mango schälen, Fruchtfleisch vom Kern lösen und mit Tofu klein würfeln."
+            },
+            {
+                "order": 4,
+                "text": "Brokkoli und Pak Choi in den Topf geben und 5 Minuten mitköcheln lassen. Dann Sojasauce, Limettensaft, Mango und Tofu zugeben und 5 Minuten bei kleiner Hitze erwärmen."
+            },
+            {
+                "order": 5,
+                "text": "Süßkartoffelcurry in Schüsseln füllen und mit Sesam bestreut servieren."
+            }
+        ],
+        "seasonals": ["Süßkartoffel", "Pak Choi", "Zwiebel", "Möhre", "Brokkoli"]
+    },
+    {
+        "name": "Gebratener Lachs mit Pak Choi",
+        "intro": "Da Gurke zu etwa 97 Prozent aus Wasser besteht, hilft sie, auf ganz einfache Weise das Tagessoll an Flüssigkeit zu erreichen. Pak Choi ist im Gegensatz zu den meisten seiner Kohlverwandten gut verdaulich und daher auch für sensible Mägen geeignet.",
+        "diets": ["Laktosefrei", "Glutenfrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 293,
+            "carbs": 12,
+            "fat": 13,
+            "protein": 32
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Gurke",
+                "quantity": 1
+            },
+            {
+                "name": "Frühlingszwiebel",
+                "quantity": 2
+            },
+            {
+                "name": "Tofu",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Reisessig",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Essig"
+            },
+            {
+                "name": "Honig",
+                "quantity": 2,
+                "unit": "TL"
+            },
+            {
+                "name": "Chilischote",
+                "quantity": 1
+            },
+            {
+                "name": "Limette",
+                "quantity": 0.5
+            },
+            {
+                "name": "Erdnusskerne",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Erdnuss"
+            },
+            {
+                "name": "Koriander",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Pak Choi",
+                "quantity": 4
+            },
+            {
+                "name": "Lachsfilet",
+                "quantity": 500,
+                "unit": "g",
+                "group": "Lachs"
+            },
+            {
+                "name": "Kokosöl",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Sesam",
+                "quantity": 25,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Gurke putzen, waschen, längs vierteln und in Stücke schneiden. Frühlingszwiebeln putzen, waschen und schräg in feine Ringe schneiden. Tofu würfeln. Alles in eine Schüssel geben."
+            },
+            {
+                "order": 2,
+                "text": "Für das Dressing Reisessig mit Honig verquirlen. Chilischote längs halbieren, entkernen, waschen und in feine Ringe schneiden. Limettensaft und Chili zum Reisessig geben, gut mischen und beiseitestellen."
+            },
+            {
+                "order": 3,
+                "text": "Nüsse in einer heißen Pfanne ohne Fett bei mittlerer Hitze 3 Minuten anrösten. Dann in ein Schälchen geben. Koriander waschen, trocken schütteln und Blättchen abzupfen."
+            },
+            {
+                "order": 4,
+                "text": "Pak Choi putzen, waschen, nach Belieben halbieren und im Dämpfeinsatz eines Kochtopfes in kochendem Wasser 5–10 Minuten dämpfen."
+            },
+            {
+                "order": 5,
+                "text": "Inzwischen Lachsfilets abspülen, trocken tupfen, mit Salz und Pfeffer würzen. Kokosöl in einer Pfanne erhitzen. Lachsfilets auf beiden Seiten insgesamt 6 Minuten bei mittlerer Hitze braten. Sesam auf einen Teller geben und die Lachsfilets nach dem Braten darin wälzen."
+            },
+            {
+                "order": 6,
+                "text": "Koriander und das Dressing mit dem Gurkensalat mischen. Lachsfilets mit dem Salat und Pak Choi auf Tellern anrichten und mit gerösteten Erdnüssen bestreuen."
+            }
+        ],
+        "seasonals": ["Gurke", "Frühlingszwiebel", "Pak Choi"]
+    },
+    {
+        "name": "Schupfnudeln mit Gemüse",
+        "intro": "Der Mineralstoff-Booster Lauch ist zwar deftig im Geschmack, kann aber in der Kombination aus Calcium, Magnesium, Phosphat und Silizium bei Knochen- und Gelenkerkrankungen positive Effekte haben. Haut und Sehkraft werden durch Provitamin A aus den Zuckerschoten gut versorgt.",
+        "diets": ["Vegan", "Vegetarisch", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 402,
+            "carbs": 49,
+            "fat": 15,
+            "protein": 17
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Erbsen",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 350,
+                "unit": "g",
+                "group": "Spargel"
+            },
+            {
+                "name": "Porree",
+                "quantity": 1,
+                "unit": "Stange"
+            },
+            {
+                "name": "Zuckerschoten",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Schupfnudeln",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Dinkelmehl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Mehl"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 300,
+                "unit": "ml"
+            },
+            {
+                "name": "Sojacreme",
+                "quantity": 100,
+                "unit": "g",
+                "group": "Sahne"
+            },
+            {
+                "name": "Reismilch",
+                "quantity": 200,
+                "unit": "ml",
+                "group": "Milch"
+            },
+            {
+                "name": "Kerbel",
+                "quantity": 1,
+                "unit": "Handvoll"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 3,
+                "unit": "EL",
+                "group": "Öl"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Spargel waschen, Enden abschneiden und unteres Drittel schälen. Lauch putzen, längs halbieren, waschen, nochmals längs halbieren und quer in Blättchen schneiden. Zuckerschoten waschen, putzen und nach Belieben schräg halbieren."
+            },
+            {
+                "order": 2,
+                "text": "Öl in einer tiefen Pfanne erhitzen. Schupfnudeln darin bei mittlerer Hitze in 6–7 Minuten knusprig braten. Schupfnudeln herausnehmen, Spargel in die Pfanne geben und 3 Minuten garen. Sämtliches restliches Gemüse zugeben und 3 Minuten mitgaren."
+            },
+            {
+                "order": 3,
+                "text": "Mehl darüberstäuben, 1 Minute rühren, dann Brühe, Sojacreme und Reisdrink zugeben. Alles aufkochen und 5 Minuten bei kleiner Hitze köcheln lassen."
+            },
+            {
+                "order": 4,
+                "text": "Kerbel waschen, trocken schütteln und Blätter abzupfen. Schupfnudeln zum Gemüse geben und kurz unterschwenken. Schupfnudeln mit Gemüse salzen und pfeffern, in Schalen anrichten und mit Kerbel bestreuen."
+            }
+        ],
+        "seasonals": ["Spargel", "Erbsen", "Porree"]
+    },
+    {
+        "name": "Kabeljau auf Brokkoli-Erbsen-Püree",
+        "intro": "Besonders beachtlich ist der Anteil an Jod im Kabeljau. Dieses Spurenelement benötigt der Körper für den Aufbau von Schilddrüsenhormonen. Ein Mangel kann daher den Stoffwechsel negativ beeinflussen. Greifen Sie öfter mal zu Brokkoli. Das Kohlgemüse ist reich an zellschützenden Glucosinolen und blutdrucksenkendem Kalium.",
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 283,
+            "carbs": 13,
+            "fat": 11,
+            "protein": 31
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Brokkoli",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Schalotte",
+                "quantity": 1
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Rapsöl",
+                "quantity": 3,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 125,
+                "unit": "ml"
+            },
+            {
+                "name": "Erbsen",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Kabeljaufilet",
+                "quantity": 500,
+                "unit": "g",
+                "group": "Kabeljau"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 0.5
+            },
+            {
+                "name": "Fenchelsamen",
+                "quantity": 0.5,
+                "unit": "TL",
+                "group": "Fenchel"
+            },
+            {
+                "name": "Koriandersamen",
+                "quantity": 0.5,
+                "unit": "TL",
+                "group": "Koriander"
+            },
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 10,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Minze",
+                "quantity": 2,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Schmand",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Milch",
+                "quantity": 150,
+                "unit": "ml"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Brokkoli putzen, waschen und in Röschen schneiden. Schalotte und Knoblauch schälen und hacken. 1 EL Öl in einem Topf erhitzen. Schalotte und Knoblauch 2 Minuten bei mittlerer Hitze andünsten. Brokkoli zugeben und 3 Minuten mitdünsten. Brühe zugießen und zugedeckt 8 Minuten bei kleiner Hitze garen. Erbsen zufügen und 5 Minuten zugedeckt köcheln lassen."
+            },
+            {
+                "order": 2,
+                "text": "Inzwischen Fisch abspülen, trocken tupfen, mit Zitronensaft beträufeln und 5 Minuten ziehen lassen. Restliches Öl in einer Pfanne erhitzen. Fenchel- und Koriandersamen in einem Mörser grob zerdrücken und im heißen Öl 2 Minuten bei mittlerer Hitze anbraten. Fisch trocken tupfen, im Mehl wenden und im Öl 3 Minuten braten. Wenden und weitere 3 Minuten braten. Fisch mit Zitronenschale, Salz, Pfeffer würzen und zugedeckt bei kleiner Hitze in 5 Minuten gar ziehen lassen."
+            },
+            {
+                "order": 3,
+                "text": "Zwischenzeitlich Minze waschen, trocken schütteln, hacken und mit Schmand unter den Brokkoli mischen. Fein pürieren und mit Salz und Pfeffer abschmecken."
+            },
+            {
+                "order": 4,
+                "text": "Für das Schäumchen Milch mit Salz, Pfeffer und frisch abgeriebenem Muskat würzen und erhitzen. Gemüsepüree mit dem Fisch auf Tellern anrichten. Die gewürzte Milch gut aufschäumen und je etwas Schaum über den Fisch geben."
+            }
+        ],
+        "seasonals": ["Brokkoli", "Zwiebel", "Erbsen", "Fenchel"]
+    },
+    {
+        "name": "Hähnchen-Wrap mit Erdnuss-Kokos-Sauce",
+        "intro": "Clever gerollt und gesund getoppt: Hähnchenbrustfilet enthält beachtliche Mengen Niacin. Das B-Vitamin ist ein Bestandteil wichtiger Coenzyme für Reaktionen in allen Körperzellen – so ist es am Energiestoffwechsel, an der Zellteilung und der Signalweiterleitung beteiligt. Und mit der Erdnuss kommt noch Brain Food in den Hähnchen-Wrap: Der hohe Gehalt an Magnesium (180 Milligramm) macht Erdnussmus zur perfekten Nervennahrung in Stresssituationen und bei geistigen Anstrengungen.",
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 349,
+            "carbs": 24,
+            "fat": 20,
+            "protein": 29
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Hähnchenbrustfilets",
+                "quantity": 2,
+                "group": "Hähnchenbrust"
+            },
+            {
+                "name": "Honig",
+                "quantity": 3,
+                "unit": "TL"
+            },
+            {
+                "name": "Sojasoße",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Gurke",
+                "quantity": 0.5
+            },
+            {
+                "name": "Möhre",
+                "quantity": 2
+            },
+            {
+                "name": "Koriander",
+                "quantity": 4,
+                "unit": "Stiele"
+            },
+            {
+                "name": "Eisbergsalat",
+                "quantity": 8,
+                "unit": "Blätter"
+            },
+            {
+                "name": "Erdnussmus",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Kokosmilch",
+                "quantity": 6,
+                "unit": "EL",
+                "group": "Kokosnuss"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 1,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Tortilla",
+                "quantity": 4
+            },
+            {
+                "name": "Saure Sahne",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Sahne"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Hähnchenbrust waschen, trocken tupfen und in Streifen schneiden. 2 TL Honig und 1 EL Sojasauce in einer Schüssel verrühren, mit Salz und Pfeffer kräftig würzen und Hähnchenbrust darin marinieren und etwa 10 Minuten ziehen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Derweil Salatgurke und Möhre waschen und beides in feine Stifte schneiden. Koriander waschen, trocken schütteln und Blätter grob hacken. Eisbergsalat waschen, trocken tupfen und in dünne Streifen schneiden."
+            },
+            {
+                "order": 3,
+                "text": "Für die Erdnuss-Kokos-Sauce Erdnussmus und Kokosmilch in einen Topf geben und erhitzen. Mit Cayennepfeffer, restlicher Sojasauce und restlichem Honig abschmecken."
+            },
+            {
+                "order": 4,
+                "text": "Öl in einer beschichteten Pfanne erhitzen, Hähnchenbrust aus der Marinade nehmen und von allen Seiten bei mittlerer Hitze goldbraun braten. Herausnehmen, Hähnchen beiseitelegen und Pfanne auswischen."
+            },
+            {
+                "order": 5,
+                "text": "Wraps in der Pfanne ohne Fett auf jeder Seite ca. 30 Sekunden rösten. Anschließend jeden Wrap mit 1 EL saurer Sahne bestreichen und auf einer Teighälfte mit Hähnchen, Salatgurke, Möhre und Salat belegen. Erdnuss-Kokos-Sauce darüber träufeln und mit Koriander bestreuen. Hähnchen-Wrap von unten einschlagen und zusammenrollen."
+            }
+        ],
+        "seasonals": ["Möhre", "Gurke", "Eisbergsalat"]
+    },
+    {
+        "name": "Bunter Blattsalat mit Orangen, Sprossen und Gorgonzola",
+        "diets": ["Glutenfrei"],
+        "categories": [
+            { "name": "Salate" }
+        ],
+        "nutrition": {
+            "calories": 302,
+            "carbs": 13,
+            "fat": 23,
+            "protein": 10
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Eichblattsalat",
+                "quantity": 1
+            },
+            {
+                "name": "Endiviensalat",
+                "quantity": 1
+            },
+            {
+                "name": "Rucola",
+                "quantity": 1,
+                "unit": "Bund"
+            },
+            {
+                "name": "Alfalfasprossen",
+                "quantity": 50,
+                "unit": "g",
+                "group": "Sprossen"
+            },
+            {
+                "name": "Orange",
+                "quantity": 2
+            },
+            {
+                "name": "Rotweinessig",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Essig"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Gorgonzola",
+                "quantity": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Joghurt",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Schlagsahne",
+                "quantity": 3,
+                "unit": "EL"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Die Salatsorten waschen, trocken schütteln und in mundgerechte Stücke zupfen. Die Mandarinen dick schälen, dabei auch die weiße Haut entfernen und die Fruchtfilets aus den Trennwänden lösen. Rucola und Salat auf Tellern anrichten, die Sprossen und die Mandarinenfilets darauf verteilen. Essig mit Olivenöl, Salz und Pfeffer vermischen und darüberträufeln."
+            },
+            {
+                "order": 2,
+                "text": "Für die Sauce den Gorgonzola zerbröckeln und im Mixer mit Joghurt, Sahne, Salz und Pfeffer pürieren. Mit Zitronensaft abschmecken. Die Sauce getrennt mit Kräckern zum Salat reichen."
+            }
+        ],
+        "seasonals": ["Endiviensalat", "Rucola"]
+    },
+    {
+        "name": "Erdbeer-Eistee",
+        "intro": "Gerade im Sommer fällt es uns nicht immer leicht, ausreichend zu trinken. Dies ist jedoch sehr wichtig, denn ein Flüssigkeitsmangel lässt uns müde werden, verschlechtert unsere Konzentration und kann Kopfschmerzen verursachen. Der frische Erdbeer-Eistee kann mit seinem fruchtigen Geschmack helfen, auf die empfohlene Flüssigkeitsmenge von etwa zwei Litern pro Tag zu kommen und ist dabei noch kalorienarm.",
+        "diets": ["Vegetarisch", "Laktosefrei", "Glutenfrei"],
+        "categories": [
+            { "name": "Drinks" }
+        ],
+        "nutrition": {
+            "calories": 49,
+            "carbs": 9,
+            "fat": 0,
+            "protein": 1
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Minze",
+                "quantity": 2,
+                "unit": "Handvoll"
+            },
+            {
+                "name": "Erdbeertee",
+                "quantity": 4,
+                "unit": "Beutel"
+            },
+            {
+                "name": "Zimtstange",
+                "quantity": 1,
+                "group": "Zimt"
+            },
+            {
+                "name": "Honig",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Erdbeere",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 0.5
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Minze waschen, trocken schütteln und Blätter abzupfen. Teebeutel mit der Hälfte der Minze und dem Zimt in eine Kanne geben. Mit 1 l kochendem Wasser übergießen, etwa 5 Minuten abkühlen lassen, dann Honig einrühren. Tee für mindestens 2 Stunden kühl stellen."
+            },
+            {
+                "order": 2,
+                "text": "Erdbeeren putzen, waschen und halbieren. Zitrone heiß abspülen, trocken reiben, Schale abreiben und Saft auspressen. Eistee durch ein Sieb gießen. Erdbeeren, 1 TL Zitronenschale, Zitronensaft nach Geschmack, Eiswürfel und restliche Minze dazu geben und kalt servieren."
+            }
+        ],
+        "seasonals": ["Erdbeere"]
+    },
+    {
+        "name": "Rhabarber-Erdbeer-Stieleis",
+        "intro": "Rhabarber entgiftet mit seinen Gerbstoffen sanft den Körper und bringt dank Fruchtsäuren die Verdauung in Schwung. Erdbeeren punkten mit reichlich Vitamin C, das für starke Abwehrkräfte wichtig ist.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Snacks" }
+        ],
+        "nutrition": {
+            "calories": 128,
+            "carbs": 14,
+            "fat": 6,
+            "protein": 3
+        },
+        "portions": 8,
+        "ingredients": [
+            {
+                "name": "Rhabarber",
+                "quantity": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Erdbeere",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Rhabarbersaft",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 50,
+                "unit": "g"
+            },
+            {
+                "name": "Honig",
+                "quantity": 1,
+                "unit": "EL"
+            },
+            {
+                "name": "Griechischer Joghurt",
+                "quantity": 400,
+                "unit": "g",
+                "group": "Joghurt"
+            },
+            {
+                "name": "Hafer-Vollkornkeks",
+                "quantity": 50,
+                "unit": "g",
+                "group": "Haferkekse"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Rhabarber putzen, waschen, schälen und klein schneiden. Erdbeeren putzen, waschen und halbieren. Beides in einem Topf mit Saft und Zucker 5–6 Minuten bei kleiner Hitze köcheln lassen, bis der Rhabarber zerfällt."
+            },
+            {
+                "order": 2,
+                "text": "Anschließend alles fein pürieren und durch ein Sieb streichen. In ein Metallgefäß füllen und etwa 1 Stunde anfrieren, dabei ab und zu umrühren."
+            },
+            {
+                "order": 3,
+                "text": "Honig zum Joghurt geben und glatt rühren. Abwechselnd mit dem Fruchtpüree auf 8 Eisförmchen verteilen, Holzstiele einstecken und mindestens 4 Stunden gefrieren lassen."
+            },
+            {
+                "order": 4,
+                "text": "Zum Servieren das Eis aus den Förmchen lösen, Kekse fein zerbröseln und das Eis damit bestreuen."
+            }
+        ],
+        "seasonals": ["Rhabarber", "Erdbeere"]
+    },
+    {
+        "name": "Schokokuchen mit Vanillecreme",
+        "intro": "Die Zartbitterschokolade gibt dem Schokokuchen mit Vanillecreme nicht nur das perfekte Finish, sondern kann auch mit einem hohen Anteil an Flavonoiden punkten. Diese sekundären Pflanzenstoffe bringen den Blutdruck ins Gleichgewicht und kann vor schädlichen Ablagerungen in den Gefäßen schützen. Ebenfalls enthaltenes Magnesium kann in stressigen Zeiten beruhigend wirken.",
+        "diets": ["Vegetarisch"],
+        "categories": [
+            { "name": "Backen" }
+        ],
+        "nutrition": {
+            "calories": 133,
+            "carbs": 10,
+            "fat": 7,
+            "protein": 6
+        },
+        "portions": 10,
+        "ingredients": [
+            {
+                "name": "Ei",
+                "quantity": 2
+            },
+            {
+                "name": "Rohrzucker",
+                "quantity": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Dinkel-Vollkornmehl",
+                "quantity": 60,
+                "unit": "g",
+                "group": "Mehl"
+            },
+            {
+                "name": "Gemahlene Mandeln",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Mandel"
+            },
+            {
+                "name": "Kakaopulver",
+                "quantity": 20,
+                "unit": "g"
+            },
+            {
+                "name": "Backpulver",
+                "quantity": 0.5,
+                "unit": "TL"
+            },
+            {
+                "name": "Schlagsahne",
+                "quantity": 100,
+                "unit": "g",
+                "group": "Sahne"
+            },
+            {
+                "name": "Magerquark",
+                "quantity": 250,
+                "unit": "g",
+                "group": "Quark"
+            },
+            {
+                "name": "Vanillepulver",
+                "quantity": 2,
+                "unit": "Msp",
+                "group": "Vanille"
+            },
+            {
+                "name": "Honig",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Zartbitterschokolade",
+                "quantity": 30,
+                "unit": "g",
+                "group": "Schokolade"
+            },
+            {
+                "name": "Erdbeere",
+                "quantity": 100,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Die Eier trennen, die Eiweiße mit Salz zu einem steifen Schnee schlagen. Die Eigelbe mit 2 EL Wasser und Zucker schaumig schlagen, Mehl, gemahlene Mandeln, Backpulver und Kakao unterrühren. Gegebenenfalls noch 3–4 EL Wasser zugeben, unterrühren und den Eischnee unterheben. Den Teig in eine mit Backpapier ausgelegte Kastenform füllen und  im vorgeheizten Backofen bei 200 °C (Umluft: 180 °C; Gas: Stufe 3) ca. 25 Minuten backen. Den Kuchen aus der Form stürzen, das Backpapier abziehen und auskühlen lassen."
+            },
+            {
+                "order": 2,
+                "text": "In der Zwischenzeit die Sahne steif schlagen. Den Quark mit Vanillepulver und Honig glatt rühren. Die Sahne unterheben und kalt stellen."
+            },
+            {
+                "order": 3,
+                "text": "Den Kuchen einmal quer durchschneiden, sodass 2 Böden entstehen. Den unteren Boden mit der Hälfte der Quarkcreme bestreichen, den oberen Boden darauf legen und mit der restlichen Creme bestreichen. Für 1 Stunde in den Kühlschrank stellen. Inzwischen die Schokolade fein hacken. Zur Seite stellen. Erdbeeren putzen, waschen und halbieren. Den Kuchen aus dem Kühlschrank nehmen und mit gehackter Schokolade sowie Erdbeeren verzieren. In Scheiben geschnitten servieren."
+            }
+        ],
+        "seasonals": ["Erdbeere"]
+    },
+    {
+        "name": "Fruchtiger Mangoldsalat",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
+        "categories": [
+            { "name": "Salate" }
+        ],
+        "nutrition": {
+            "calories": 395,
+            "carbs": 18,
+            "fat": 28,
+            "protein": 16
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Mangold",
+                "quantity": 4,
+                "unit": "Handvoll"
+            },
+            {
+                "name": "Orange",
+                "quantity": 4
+            },
+            {
+                "name": "Apfelessig",
+                "quantity": 1,
+                "unit": "El",
+                "group": "Essig"
+            },
+            {
+                "name": "Walnussöl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Walnusskerne",
+                "quantity": 60,
+                "unit": "g",
+                "group": "Walnuss"
+            },
+            {
+                "name": "Blauschimmelkäse",
+                "quantity": 200,
+                "unit": "g",
+                "group": "Gorgonzola"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Den Mangold waschen, putzen, trocken schleudern und auf vier großen Tellern ausbreiten. Die Orangen rundherum mit einem scharfen Messer abschälen, so dass nur noch das Fruchtfleisch zu sehen ist. Die Orangen quer in dünne Scheiben schneiden und auf den Mangold legen."
+            },
+            {
+                "order": 2,
+                "text": "Pfefferkörner in einem Mörser fein zermahlen. Den Essig und das Öl angießen und mit Salz würzen."
+            },
+            {
+                "order": 3,
+                "text": "Die Walnüsse klein hacken. Den Blauschimmelkäse zerkrümeln. Das Pfeffer-Dressing auf den Salat träufeln, die Walnüsse und den Käse darüber streuen und servieren."
+            }
+        ],
+        "seasonals": ["Mangold"]
+    },
+    {
+        "name": "Gebratene Pastinaken mit Endivien-Rote-Bete-Salat",
+        "diets": [],
+        "categories": [
+            { "name": "" }
+        ],
+        "nutrition": {
+            "calories": 695,
+            "carbs": 30,
+            "fat": 61,
+            "protein": 9
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Pastinake",
+                "quantity": 8,
+                "unit": "mittelgroße"
+            },
+            {
+                "name": "Endiviensalat",
+                "quantity": 1
+            },
+            {
+                "name": "Rote Bete",
+                "quantity": 1,
+                "unit": "Knolle"
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 3,
+                "unit": "Zehen"
+            },
+            {
+                "name": "Eigelb",
+                "quantity": 2,
+                "group": "Ei"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 200,
+                "unit": "ml",
+                "group": "Öl"
+            },
+            {
+                "name": "Zitronensaft",
+                "quantity": 1,
+                "unit": "TL",
+                "group": "Zitrone"
+            },
+            {
+                "name": "Geschälte Walnusskerne",
+                "quantity": 4,
+                "unit": "EL",
+                "group": "Walnuss"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Die Pastinaken schälen und der Länge nach vierteln. 5 EL Öl in einer Pfanne erhitzen und die Pastinaken zugedeckt, bei mittlerer Hitze goldbraun braten. Immer wieder umrühren. Mit Salz und Pfeffer würzen. Die Rote Beete schälen und in sehr kleine Würfel schneiden. Den Blätter von dem Salat abtrennen, verlesen, waschen, trocken schleudern und in mundgerechte Stücke zupfen. Den Knoblauch schälen und mit der Knoblauchpresse in eine Schüssel pressen. Das Eigelbe, Salz und Pfeffer gründlich unterrühren."
+            },
+            {
+                "order": 2,
+                "text": "Das Olivenöl mit dem Schneebesen zuerst tropfenweise, dann in einem dünnen Strahl unterrühren. Wenn die Sauce dick-cremig ist, den Zitronensaft unterrühren und noch einmal abschmecken. Die Pastinaken mit dem Endiviensalat auf Teller anrichten und mit Rote Beete-Würfel und Walnusshälften bestreuen. Mit Aioli beträufeln und sofort servieren."
+            }
+        ],
+        "seasonals": ["Pastinake", "Endiviensalat", "Rote Bete"]
+    },
+    {
+        "name": "Wildreis mit Rosenkohl und Pastinake",
+        "intro": "Rosenkohl und Pastinaken enthalten Senföle, die die Verdauung anregen und krankmachende Bakterien abtöten. Wer unter Blähungen leidet, kann mit Gewürzen wie Kümmel und Thymian die Beschwerden lindern.",
+        "diets": ["Vegetarisch", "Vegan", "Laktosefrei", "Glutenfrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 393,
+            "carbs": 55,
+            "fat": 16,
+            "protein": 31
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Wildreis",
+                "quantity": 100,
+                "unit": "g",
+                "group": "Reis"
+            },
+            {
+                "name": "Orange",
+                "quantity": 4
+            },
+            {
+                "name": "Zitrone",
+                "quantity": 1
+            },
+            {
+                "name": "Agavendicksaft",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Thymian",
+                "quantity": 1,
+                "unit": "TL"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 5,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Rosenkohl",
+                "quantity": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Pastinake",
+                "quantity": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Apfelsaft",
+                "quantity": 50,
+                "unit": "ml"
+            },
+            {
+                "name": "Gemüsebrühe",
+                "quantity": 100,
+                "unit": "ml"
+            },
+            {
+                "name": "Currypulver",
+                "quantity": 2,
+                "unit": "Msp"
+            },
+            {
+                "name": "Feldsalat",
+                "quantity": 1
+            },
+            {
+                "name": "Sesam",
+                "quantity": 15,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Wildreis nach Packungsanleitung in kochendem Salzwasser 40–45 Minuten bissfest garen. Anschließend abgießen, abspülen und abtropfen lassen."
+            },
+            {
+                "order": 2,
+                "text": "Inzwischen Orangen so schälen, dass alles Weiße entfernt wird. Fruchtfilets zwischen den Trennhäuten herausschneiden, dabei Saft auffangen; Orangenreste auspressen. Saft mit Zitronen- und Agavendicksaft, Thymian und 4 EL Öl zu einem Dressing rühren und beiseitestellen."
+            },
+            {
+                "order": 3,
+                "text": "Rosenkohl putzen, waschen und halbieren. Pastinaken putzen, schälen, waschen und längs vierteln."
+            },
+            {
+                "order": 4,
+                "text": "Etwa 15 Minuten bevor der Reis fertig ist, restliches Öl in einer Pfanne erhitzen. Rosenkohl und Pastinaken darin 5 Minuten bei mittlerer Hitze anbraten. Apfelsaft und Brühe zugeben und mit Salz, Gewürzmischung und Pfeffer würzen. Gemüse weitere 5 Minuten schmoren, bis die Flüssigkeit fast verdampft ist, dabei öfter umrühren. Dann Reis zufügen und noch 3 Minuten garen."
+            },
+            {
+                "order": 5,
+                "text": "Feldsalat putzen, gründlich waschen und trocken schütteln. Pfanneninhalt auf Tellern anrichten, Orangenfilets darübergeben, mit Sesam bestreuen und mit Feldsalat garnieren. Das Dressing extra dazu reichen."
+            }
+        ],
+        "seasonals": ["Rosenkohl", "Pastinake", "Feldsalat"]
+    },
+    {
+        "name": "Camembert mit Walnüssen und Rosenkohl",
+        "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
+        "categories": [
+            { "name": "Beilage" }
+        ],
+        "nutrition": {
+            "calories": 573,
+            "carbs": 6,
+            "fat": 44,
+            "protein": 39
+        },
+        "portions": 4,
+        "ingredients": [
+            {
+                "name": "Camembert",
+                "quantity": 4
+            },
+            {
+                "name": "Rosenkohl",
+                "quantity": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Butter",
+                "quantity": 2,
+                "unit": "EL"
+            }
+            {
+                "name": "Muskat",
+                "quantity": 1,
+                "unit": "Prise"
+            }
+            {
+                "name": "Walnuss",
+                "quantity": 1,
+                "unit": "EL"
+            }
+            {
+                "name": "Petersilie",
+                "quantity": 2,
+                "unit": "EL"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Den Backofen auf 180°C Ober- und Unterhitze vorheizen."
+            },
+            {
+                "order": 2,
+                "text": "Den Camembert aus den Verpackungen nehmen, in ofenfeste Schalen setzen und im vorgeheizten Ofen ca. 20 Minuten backen."
+            },
+            {
+                "order": 3,
+                "text": "Zwischenzeitlich den Rosenkohl waschen, putzen, die äußeren Blättchen entfernen, die Stiele kreuzweise einschneiden und den Kohl in kochendem Salzwasser 10-15 Minuten blanchieren. Abgießen, kalt abschrecken, abtropfen lassen und halbieren."
+            },
+            {
+                "order": 4,
+                "text": "In einer Pfanne die Butter zerlassen und den Rosenkohl ca. 2-3 Minuten darin schwenken. Mit Salz, Pfeffer und einer Prise Muskat würzen."
+            },
+            {
+                "order": 5,
+                "text": "Die Nüsse in einer heißen Pfanne ohne Fett rösten, herausnehmen, abkühlen lassen und grob hacken."
+            },
+            {
+                "order": 6,
+                "text": "Den Rosenkohl um den Käse herum verteilen, die Nüsse und die Petersilie darüber streuen und sofort servieren."
+            }
+        ],
+        "seasonals": ["Rosenkohl"]
+    },
+    {
+        "name": "Casarecce mit Rosenkohl",
+        "intro": "Das Vitamin C aus dem Rosenkohl ist für eine glatte Haut und straffes Bindegewebe verantwortlich. Der Rosmarin macht mit seinen ätherischen Ölen Kohl besser bekömmlich.",
+        "diets": ["Vegetarisch", "Laktosefrei"],
+        "categories": [
+            { "name": "Hauptspeise" }
+        ],
+        "nutrition": {
+            "calories": 632,
+            "carbs": 75,
+            "fat": 23,
+            "protein": 25
+        },
+        "portions": 2,
+        "ingredients": [
+            {
+                "name": "Schalotte",
+                "quantity": 1
+            },
+            {
+                "name": "Knoblauch",
+                "quantity": 1,
+                "unit": "Zehe"
+            },
+            {
+                "name": "Rosenkohl",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Walnusskerne",
+                "quantity": 15,
+                "unit": "g",
+                "group": "Walnuss"
+            },
+            {
+                "name": "Rosmarin",
+                "quantity": 2,
+                "unit": "Zweige"
+            },
+            {
+                "name": "Casarecce",
+                "quantity": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Olivenöl",
+                "quantity": 2,
+                "unit": "EL",
+                "group": "Öl"
+            },
+            {
+                "name": "Weißwein",
+                "quantity": 2,
+                "unit": "EL"
+            },
+            {
+                "name": "Hartkäse",
+                "quantity": 50,
+                "unit": "g"
+            }
+        ],
+        "preparations": [
+            {
+                "order": 1,
+                "text": "Schalotte und Knoblauch schälen, Schalotte fein würfeln, Knoblauch in feine Scheiben schneiden."
+            },
+            {
+                "order": 2,
+                "text": "Rosenkohl putzen, von den Hüllblättern befreien und die Röschen in Scheiben schneiden oder die Blätter einzeln ablösen."
+            },
+            {
+                "order": 3,
+                "text": "Walnüsse grob hacken. Rosmarin waschen, trocken schütteln und Nadeln abzupfen."
+            },
+            {
+                "order": 4,
+                "text": "Nudeln nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen."
+            },
+            {
+                "order": 5,
+                "text": "Inzwischen in einer großen Pfanne Öl erhitzen. Schalotte, Knoblauch und Rosmarinnadeln unter Rühren 3–4 Minuten bei mittlerer Hitze anbraten und leicht Farbe annehmen lassen. Rosenkohl zufügen und 5 Minuten mitbraten. Alles salzen, pfeffern und Weißwein sowie Rosenkohl zugeben und noch 3 Minuten köcheln lassen."
+            },
+            {
+                "order": 6,
+                "text": "Nudeln abgießen, dabei etwas Kochwasser auffangen. Nudeln unter den Rosenkohl mischen und etwas Nudelwasser zugießen. Pasta anrichten, Parmesan darüberreiben und mit Walnüssen bestreuen."
+            }
+        ],
+        "seasonals": ["Zwiebel", "Rosenkohl"]
     }
 ]
