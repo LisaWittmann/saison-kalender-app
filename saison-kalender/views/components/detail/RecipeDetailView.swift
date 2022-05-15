@@ -79,7 +79,7 @@ struct RecipeDetailView: View {
                 .frame(height: 110)
             ContentCard(description: "Fett", value: "\(nutrition.fat.toString())g")
                 .frame(height: 110)
-            ContentCard(description: "Kohlenhydrate", value: "\(nutrition.carbs.toString())g")
+            ContentCard(description: "Kohlen\u{00AD}hydrate", value: "\(nutrition.carbs.toString())g")
                 .frame(height: 110)
         }
     }

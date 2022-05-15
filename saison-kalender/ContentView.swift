@@ -62,6 +62,5 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(AppUser())
             .environmentObject(ViewRouter())
             .environmentObject(calendar)
-            
     }
 }

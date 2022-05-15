@@ -23,19 +23,19 @@ class AppUser: ObservableObject {
         self.authRequired = false
     }
     
-    var favorites: Set<Recipe> {
-        get { Set(user?.favorites ?? []) }
-        set { user?.favorites = Array(newValue) }
+    var favorites: Array<Recipe> {
+        get { user?.favorites ?? [] }
+        set { user?.favorites = newValue }
     }
     
-    var collections: Set<Collection> {
-        get { Set(user?.collections ?? []) }
-        set { user?.collections = Array(newValue) }
+    var collections: Array<Collection> {
+        get { user?.collections ?? [] }
+        set { user?.collections = newValue }
     }
     
-    var diets: Set<Diet> {
-        get { Set(user?.diets ?? []) }
-        set { user?.diets = Array(newValue) }
+    var diets: Array<Diet> {
+        get { user?.diets ?? [] }
+        set { user?.diets = newValue }
     }
 }
 
@@ -105,7 +105,7 @@ extension AppUser {
         for collection in collections {
             remove(recipe: recipe, from: collection)
         }
-        favorites.remove(recipe)
+        favorites = favorites.filter { $0 != recipe }
         save()
     }
     
@@ -131,7 +131,7 @@ extension AppUser {
             requireAuthorization(for: { self.remove(collection: collection) })
             return
         }
-        collections.remove(collection)
+        collections = collections.filter { $0 != collection }
         save()
     }
 
@@ -200,8 +200,11 @@ extension AppUser {
             requireAuthorization(for: { self.change(diet: diet) })
             return
         }
-        if diets.contains(diet) { diets.remove(diet) }
-        else { diets.insert(diet) }
+        if diets.contains(diet) {
+            diets = diets.filter { $0 != diet }
+        } else {
+            diets.append(diet)
+        }
         save()
     }
 }

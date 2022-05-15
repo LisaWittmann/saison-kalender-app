@@ -30,8 +30,8 @@ struct ImageGroup: View {
                               alignment: .leading
                         )
                         image(images[2],
-                              width: geometry.size.height / 3,
-                              height: geometry.size.width / 2,
+                              width: geometry.size.width / 3,
+                              height: geometry.size.height / 2,
                               alignment: .leading
                         )
                     }

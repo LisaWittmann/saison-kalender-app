@@ -21,10 +21,12 @@ struct BackButton: View {
             }
                 
         }
-        .shadow(color: colorGrey, radius: 10, x: 1, y: 1)
-        .padding(.leading, spacingMedium)
-        
+        .shadow(color: colorGrey, radius: shadowRadius)
+        .padding(.leading, spacingSmall)
+        .padding([.top, .bottom], shadowRadius)
     }
+    
+    let shadowRadius: CGFloat = 10
 }
 
 struct BackButton_Previews: PreviewProvider {

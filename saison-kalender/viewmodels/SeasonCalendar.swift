@@ -57,7 +57,7 @@ class SeasonCalendar: ObservableObject {
 
 extension SeasonCalendar {
     
-    func filterRecipes(by category: RecipeCategory? = nil, for diets: Set<Diet> = Set()) -> [Recipe] {
+    func filterRecipes(by category: RecipeCategory? = nil, for diets: [Diet] = []) -> [Recipe] {
         let dietRecipes = recipes.filter{ diets.allSatisfy($0.diets.contains) }
         if let filter = category {
             return dietRecipes.filter { $0.categories.contains(filter) }

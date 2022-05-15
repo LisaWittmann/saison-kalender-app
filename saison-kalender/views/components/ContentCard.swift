@@ -41,7 +41,7 @@ struct ContentCard: View {
 
 struct ContentPill_Previews: PreviewProvider {
     static var previews: some View {
-        ContentCard(description: "Kohlenhydrate", value: "0.2g")
+        ContentCard(description: "Kohlen\u{00AD}hydrate", value: "0.2g")
             .frame(width: quarterContentWidth)
     }
 }

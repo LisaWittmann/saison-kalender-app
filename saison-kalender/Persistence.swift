@@ -12,7 +12,7 @@ struct PersistenceController {
     static var shared: PersistenceController = {
         let result = PersistenceController()
         let viewContext = result.container.viewContext
-        
+
         try? fetchData(in: viewContext)
     
         do {
