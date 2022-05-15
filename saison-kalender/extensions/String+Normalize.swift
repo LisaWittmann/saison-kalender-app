@@ -14,6 +14,8 @@ extension String {
             .replacingOccurrences(of: "ü", with: "ue")
             .replacingOccurrences(of: "ß", with: "ss")
             .replacingOccurrences(of: " ", with: "-")
+            .replacingOccurrences(of: "\u{00AD}", with: "", options: NSString.CompareOptions.literal, range: nil)
+            .trimmingCharacters(in: .whitespaces)
             .lowercased()
     }
 }

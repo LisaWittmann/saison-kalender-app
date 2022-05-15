@@ -308,7 +308,7 @@
                 "seasonals": ["Chinakohl", "Möhre"]
             },
             {
-                "name": "Gemüsenudeln mit Pilzen und Tofu",
+                "name": "Gemüse\u00ADnudeln mit Pilzen und Tofu",
                 "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
                 "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
                 "categories": [
@@ -608,7 +608,7 @@
                         "seasonals": ["Spargel"]
                     },
                     {
-                        "name": "Gemüsenudeln mit Pilzen und Tofu",
+                        "name": "Gemüse\u00ADnudeln mit Pilzen und Tofu",
                         "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
                         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
                         "categories": [

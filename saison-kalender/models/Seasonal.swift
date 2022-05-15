@@ -28,14 +28,14 @@ extension Seasonal: Representable {
         set { name_ = newValue }
     }
     
-    var seasons: [Season] {
+    var seasons: Array<Season> {
         get { seasons_?.map { Season(rawValue: $0)! } ?? [] }
         set { seasons_ = newValue.map { $0.rawValue } }
     }
     
-    var recipes: Set<Recipe> {
-        get { (recipes_ as? Set<Recipe>) ?? [] }
-        set { recipes_ = newValue as NSSet }
+    var recipes: Array<Recipe> {
+        get { (recipes_ as? Set<Recipe>)?.sorted() ?? [] }
+        set { recipes_ = Set(newValue) as NSSet }
     }
     
     var characteristics: Array<Characteristic> {
