@@ -32,6 +32,7 @@ struct CollectionDetailView: View {
             Masonry(Array(collection.recipes)) { recipe in
                 RecipeTeaser(recipe, collection: collection)
             }
+            Spacer()
         }.onSwipe(left: { dismiss() })
     }
     

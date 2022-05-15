@@ -14,19 +14,18 @@ struct BackButton: View {
         Button(action: { dismiss() }) {
             ZStack {
                 Circle().fill(colorBeige)
+                    .shadow(color: colorGrey, radius: shadowRadius)
                 Image(systemName: "arrow.left")
                     .foregroundColor(colorBlack)
                     .font(.custom(fontSemiBold, size: fontSizeHeadline2))
                     .padding(spacingExtraSmall)
             }
-                
         }
-        .shadow(color: colorGrey, radius: shadowRadius)
+        .padding([.top, .bottom], shadowRadius * 2)
         .padding(.leading, spacingSmall)
-        .padding([.top, .bottom], shadowRadius)
     }
     
-    let shadowRadius: CGFloat = 10
+    let shadowRadius: CGFloat = 1
 }
 
 struct BackButton_Previews: PreviewProvider {
