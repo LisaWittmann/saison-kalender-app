@@ -20,7 +20,7 @@ struct CollectionTeaser: View {
                 ImageGroup(collection.recipes.map { $0.name.normalize() })
                     .modifier(BlurredImageStyle())
                     .frame(width: contentWidth, height: contentHeight)
-                Text(collection.name)
+                Text(collection.name.syllable())
                     .font(.custom(fontExtraBold, size: 30))
                     .foregroundColor(colorWhite)
                     .padding([.leading, .trailing, .bottom], spacingSmall)

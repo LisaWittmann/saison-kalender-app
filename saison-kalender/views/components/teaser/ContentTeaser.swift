@@ -13,7 +13,7 @@ struct ContentTeaser: View {
     
     init(_ title: String, image: String? = nil) {
         self.title = title
-        self.image = image ?? title
+        self.image = image ?? title.normalize()
     }
     
     var body: some View {
@@ -27,7 +27,7 @@ struct ContentTeaser: View {
                     .background(colorLightGreen)
                     .modifier(BlurredImageStyle())
                     
-                Text(title)
+                Text(title.syllable())
                     .font(.custom(fontExtraBold, size: fontSizeHeadline2))
                     .foregroundColor(colorWhite)
                     .shadow(color: colorGrey, radius: shadowRadius, x: 1, y: 1)
@@ -51,9 +51,9 @@ struct ContentTeaser: View {
 struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
-            ContentTeaser("Mangold", image: "mangold")
+            ContentTeaser("Mangold")
                 .frame(width: halfContentWidth, height: halfContentWidth)
-            ContentTeaser("Linguine mit Mangold", image: "linguine-mit-mangold")
+            ContentTeaser("Linguine mit Mangold")
                 .frame(width: halfContentWidth, height: halfContentWidth + 30)
         }.frame(alignment: .bottom)
     }

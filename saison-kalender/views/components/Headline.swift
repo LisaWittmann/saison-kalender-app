@@ -21,7 +21,7 @@ struct Headline: View {
             Text(subline)
                 .modifier(FontSubtitle())
                 .padding(.bottom, -spacingMedium)
-            Text(headline)
+            Text(headline.syllable())
                 .modifier(FontTitle())
         }
     }

@@ -20,7 +20,7 @@ struct RecipeTeaser: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationLink(destination: detail(for: recipe)) {
-                ContentTeaser(recipe.name, image: recipe.name.normalize())
+                ContentTeaser(recipe.name)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }.isDetailLink(false)
         }

@@ -43,7 +43,7 @@ struct SeasonItem: View {
     
     var body: some View {
         VStack {
-            Headline(seasonal.name, "Saisonal im \(Season.current.name)")
+            Headline(seasonal.name.syllable(), "Saisonal im \(Season.current.name)")
                 .foregroundColor(colorBlack)
                 .modifier(SectionLayout())
                 .frame(height: headerHeight, alignment: .topLeading)

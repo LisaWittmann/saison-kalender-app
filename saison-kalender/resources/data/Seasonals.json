@@ -239,7 +239,7 @@
         ]
     },
     {
-        "name": "Champig\u00ADnons",
+        "name": "Champignons",
         "seasons": ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"],
         "characteristics": [
             {
@@ -477,7 +477,7 @@
         ]
     },
     {
-        "name": "Frühlings\u00ADzwiebel",
+        "name": "Frühlingszwiebel",
         "seasons": ["Mai", "Juni", "Juli", "August", "September", "Oktober"],
         "characteristics": [
             {

@@ -17,7 +17,7 @@ struct SeasonalTeaser: View {
     var body: some View {
         GeometryReader { geometry in
             NavigationLink(destination: detail(for: seasonal)) {
-                ContentTeaser(seasonal.name, image: seasonal.name.normalize() )
+                ContentTeaser(seasonal.name)
                     .frame(width: geometry.size.width, height: geometry.size.height)
             }.isDetailLink(false)
         }

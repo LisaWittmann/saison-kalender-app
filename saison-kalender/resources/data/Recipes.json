@@ -180,7 +180,7 @@
         "seasonals": ["Apfel"]
     },
     {
-        "name": "Arti\u00ADschocken\u00ADsalat mit Quinoa",
+        "name": "Artischockensalat mit Quinoa",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Salate" },
@@ -510,10 +510,10 @@
                 "text": "Nach Ende der Garzeit Pilze und Perlzwiebeln zum Fleisch geben und alles ohne Deckel weitere 30 Minuten bei mittlerer Hitze schmoren. Inzwischen Petersilie waschen, trocken schütteln, Blätter abzupfen und hacken. Bœuf Bourguignon nochmals mit Salz und Pfeffer würzen, Petersilie dazugeben und servieren."
             }
         ],
-        "seasonals": ["Champig\u00ADnons", "Zwiebel"]
+        "seasonals": ["Champignons", "Zwiebel"]
     },
     {
-        "name": "Cheese\u00ADburger mit Black Bean Patty",
+        "name": "Cheeseburger mit Black Bean Patty",
         "intro": "Die fleischauthentischen Patties sind auf Basis von schwarzen Bohnen und die bieten Proteine pur: Mit rund 22 Gramm Eiweiß pro 100 Gramm müssen sich die Hülsenfrüchte nicht hinter einem Steak verstecken. Das macht sie zu einem der interessantesten Lebensmittel für Veganer, aber auch für Sportler.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -640,10 +640,10 @@
                 "text": "Black Bean Patties jeweils mit 1 TL Rote Bete Saft beträufeln. Burger Buns jeweils mit 1 EL Ketchup bestreichen und mit Salatblatt, Black Bean Patty, Käseersatz, Tomaten- und Gewürzgurkenscheiben belegen."
             }
         ],
-        "seasonals": ["Eisbergsalat", "Rote Bete", "Tomate", "Champig\u00ADnons", "Zwiebel"]
+        "seasonals": ["Eisbergsalat", "Rote Bete", "Tomate", "Champignons", "Zwiebel"]
     },
     {
-        "name": "Frühlings-Risotto mit grün\u00ADem Spargel",
+        "name": "Frühlings-Risotto mit grünem Spargel",
         "intro": "Der knackige grüne Spargel bringt viel Kalium ins Frühlings-Risotto und hilft so, den Flüssigkeitshaushalt des Körpers im Gleichgewicht zu halten. Auch das B-Vitamin Folsäure steckt im Spargel – das ist für die Zellerneuerung und die Blutbildung von großer Bedeutung. Auch die Verdauung kommt nicht zu kurz: Der Frühlingsbote Radieschen punktet mit Senfölen, welche die Produktion von Verdauungssäften anregen und für eine gute Darmtätigkeit sorgen.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -730,12 +730,11 @@
         "seasonals": ["Spargel","Radieschen",  "Zwiebel"]
     },
     {
-        "name": "Gebra\u00ADtener Reis mit China\u00ADkohl",
+        "name": "Gebratener Reis mit Chinakohl",
         "intro": "Die im Reis und Gemüse enthaltenen komplexen Kohlenhydrate sowie Ballaststoffe und die Proteine aus den Eiern sorgen für eine langanhaltende Sättigung und einen konstanten Blutzuckerspiegel.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Hauptspeise" },
-            { "name": "Asiatisch" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 390,
@@ -825,7 +824,7 @@
             }
             
         ],
-        "seasonals": ["Chinakohl", "Möhre", "Frühlings\u00ADzwiebel"]
+        "seasonals": ["Chinakohl", "Möhre", "Frühlingszwiebel"]
     },
     {
         "name": "Gedünsteter Lauch",
@@ -894,7 +893,7 @@
         "seasonals": ["Porree"]
     },
     {
-        "name": "Gefüllte Cham\u00ADpig\u00ADnons auf Tomaten",
+        "name": "Gefüllte Champignons auf Tomaten",
         "intro": "Die gefüllten Champignons sind eine gute Quelle für Folsäure: Wir benötigen das B-Vitamin für gesunde Nerven, ein gutes Gedächtnis, die Blutbildung und eine ausgeglichene Stimmung. Der Käse bringt darüber hinaus knochenstärkendes Calcium in das Gericht.",
         "diets": ["Glutenfrei"],
         "categories": [
@@ -963,10 +962,10 @@
                 "text": "Gefüllte Champignons im vorgeheizten Backofen bei 180 °C (Umluft 160 °C; Gas: Stufe 2–3) etwa 25 Minuten überbacken. Herausnehmen und mit restlichem Thymian und übrigen Goji-Beeren bestreut servieren."
             } 
         ],
-        "seasonals": ["Champig\u00ADnons", "Zwiebel"]
+        "seasonals": ["Champignons", "Zwiebel"]
     },
     {
-        "name": "Gemüse\u00ADlasagne",
+        "name": "Gemüselasagne",
         "intro": "Grüne Bohnen wirken durch ihre Ballaststoffe verdauungsfördernd – zusammen mit den Vollkorn-Lasagneblättern wird die Gemüselasagne mit Béchamelsauce zum echten Sattmacher. Ätherische Öle aus dem Lauch stärken die Darmflora und eliminieren krankmachende Erreger.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -1067,7 +1066,7 @@
         "seasonals": ["Spinat", "Tomate", "Porree"]
     },
     {
-        "name": "Gemüse\u00ADnudeln mit Pilzen und Tofu",
+        "name": "Gemüsenudeln mit Pilzen und Tofu",
         "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
@@ -1156,7 +1155,7 @@
                 "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
             } 
         ],
-        "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre"]
+        "seasonals": ["Champignons", "Zwiebel", "Möhre"]
     },
     {
         "name": "Geschmortes Kaninchen mit Rotwein",
@@ -1577,7 +1576,6 @@
         "intro": "Kohlrabi ist ein richtiges Power-Gemüse und liefert mit 67 Milligramm pro 100 Gramm knapp drei Viertel des täglichen Bedarfs an Vitamin C. Außerdem enthält die Knolle sogenannte Glucosinolate – diese Senföle stärken neben der Abwehrkraft insbesondere die Immunzellen im Darm.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Asiatisch" },
             { "name": "Hauptspeise" }
         ],
         "portions": 4,
@@ -1685,7 +1683,7 @@
         "seasonals": ["Apfel", "Kohlrabi", "Zwiebel"]
     },
     {
-        "name": "Kohlrabi\u00ADschnitzel",
+        "name": "Kohlrabischnitzel",
         "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen. Weitere Informationen zum Projekt \"Geprüfte IN FORM-Rezepte\" gibt es hier.\n\nDurch die ätherischen Öle und Mineralstoffe im knoblauchähnlich schmeckenden Bärlauch wirkt das Kraut darmregulierend, blutbildend, basisch und anregend. Kohlrabi liefern reichlich Ballaststoffe, die die Verdauung anregen. Die Milchprodukte punkten mit viel knochenstärkendem Calcium.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -1779,15 +1777,14 @@
                 "text": "Kohlrabischeiben erst in Mehl, dann im Ei und in den Bröseln wenden. Eine beschichtete Pfanne erhitzen, mit 1 EL Öl einpinseln und die Hälfte der Kohlrabischeiben von beiden Seiten in je etwa 3 Minuten bei mittlerer Hitze goldbraun braten; warm halten. Die andere Hälfte mit restlichem Öl braten. Kohlrabischnitzel mit dem Quark reichen."
             }
         ],
-        "seasonals": ["Kohlrabi", "Frühlings\u00ADzwiebel"]
+        "seasonals": ["Kohlrabi", "Frühlingszwiebel"]
     },
     {
         "name": "Kokos-Curry mit Lachs",
         "intro": "Die tropische Kokosnuss ist reich an Ballast- und Mineralstoffen wie Magnesium, Phosphor, Kalium und Kalzium sowie den Spurenelementen Zink, Eisen und Kupfer.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Hauptspeise" },
-            { "name": "Asiatisch" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 549,
@@ -1896,7 +1893,7 @@
         "seasonals": ["Süßkartoffel", "Zwiebel", "Sellerie"]
     },
     {
-        "name": "Lachs\u00ADkotelett auf Kohlrabi-Salat",
+        "name": "Lachskotelett auf Kohlrabi-Salat",
         "intro": "IN FORM und die Deutsche Gesellschaft für Ernährung (DGE) haben dieses Rezept mit dem Logo \"Empfohlen von IN FORM\" versehen. Dieses Logo bietet Verbrauchern eine Orientierung für eine ausgewogene Ernährung an. Nur gesunde Rezepte, die alle festgelegten Kriterien erfüllen, dürfen dieses Logo tragen.\n\nRoher Kohlrabi schmeckt klasse – und sorgt für eine dicke Ration Vitamin C. In diesem Fall zum Beispiel deckt eine Portion, zusammen mit der angenehm scharfen Brunnenkresse und dem magenfreundlichen Fenchel, den gesamten Tagesbedarf.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
@@ -1987,7 +1984,7 @@
         "seasonals": ["Zwiebel", "Kohlrabi", "Fenchel"]
     },
     {
-        "name": "Möhren auf Pas\u00ADtinaken-Kartoffel-Püree",
+        "name": "Möhren auf Pastinaken-Kartoffel-Püree",
         "intro": "Da freut sich der Darm: Kartoffeln und Pastinaken sind leicht verdaulich und liefern reichlich Ballaststoffe. Aufgrund der in den Kartoffeln enthaltenen Stärke können Säuren und Gifte gebunden werden; die Erdäpfel wirken dadurch beruhigend. Die Alpha-Linolensäure in Leinöl stärkt das Denkvermögen und erhöht die Konzentrationsfähigkeit. Zudem schützt die Omega-3-Fettsäure das Herz und reguliert einen erhöhten Blutfettspiegel.",
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
@@ -2096,7 +2093,7 @@
         "seasonals": ["Möhre", "Pastinake", "Kartoffel"]
     },
     {
-        "name": "Nudel\u00ADauflauf mit Fenchel",
+        "name": "Nudelauflauf mit Fenchel",
         "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Hauptspeise" }
@@ -2173,7 +2170,7 @@
         "seasonals": ["Porree", "Fenchel"]
     },
     {
-        "name": "Ofen\u00ADkartoffeln mit Brokkoli",
+        "name": "Ofenkartoffeln mit Brokkoli",
         "intro": "Die Ofenkartoffeln mit Brokkoli schmecken auch kalt als Salat oder als Snack für die Arbeit und das Büro unwiderstehlich gut.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
@@ -2260,7 +2257,7 @@
                 "text": "Währenddessen Cashewkerne in einer Pfanne 3 Minuten bei mittlerer Hitze anrösten, sodass sie leicht gebräunt sind. Herausnehmen und beiseitestellen. Radieschen putzen, waschen und in feine Stifte schneiden. Frühlingszwiebeln putzen, waschen und in Ringe schneiden."
             }
         ],
-        "seasonals": ["Brokkoli", "Frühlings\u00ADzwiebel", "Kartoffel", "Radieschen"]
+        "seasonals": ["Brokkoli", "Frühlingszwiebel", "Kartoffel", "Radieschen"]
     },
     {
         "name": "Pasta mit Linsen-Bolognese",
@@ -2377,7 +2374,7 @@
                 "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen."
             }
         ],
-        "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre", "Sellerie"]
+        "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
     },
     {
         "name": "Pikante Waffeln mit Dip",
@@ -2453,10 +2450,10 @@
                 "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip servieren."
             }
         ],
-        "seasonals": ["Apfel", "Frühlings\u00ADzwiebel", "Radieschen"]
+        "seasonals": ["Apfel", "Frühlingszwiebel", "Radieschen"]
     },
     {
-        "name": "Porree\u00ADsuppe",
+        "name": "Porreesuppe",
         "intro": "Der Lauch in der Porreesuppe gibt hier den Ton an und ist ein Geheimtipp für die Abwehrkräfte: Die enthaltenen ätherischen Öle stärken die Darmflora, was sich positiv auf das Immunsystem auswirkt. Sie haben außerdem eine schleimlösende Wirkung und lindern Erkältungsbeschwerden.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -2521,7 +2518,7 @@
         "seasonals": ["Porree", "Kartoffel"]
     },
     {
-        "name": "Rote Bete mit Radieschen und Wal\u00ADnüssen",
+        "name": "Rote Bete mit Radieschen und Walnüssen",
         "intro": "Radieschen enthalten reichlich sekundäre Pflanzenstoffe wie Flavonoide, Glucosinolate und ätherische Öle. Für den scharfen Geschmack sind die Senföle verantwortlich, die antibakteriell, entgiftend, krampflösend und appetitanregend wirken. Der Schafskäse spendet viel knochenstärkendes Calcium und sattmachendes Eiweiß.",
         "diets": ["Glutenfrei", "Vegetarisch"],
         "categories": [
@@ -2602,7 +2599,7 @@
         "seasonals": ["Radieschen", "Rote Bete"]
     },
     {
-        "name": "Rübli\u00ADtorte",
+        "name": "Rüblitorte",
         "intro": "Betacarotin aus Möhren kann im Körper zu Vitamin A umgewandelt werden. So verhilft das Wurzelgemüse tatsächlich zu gesünderen Augen und einer starken Sehkraft.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -2689,7 +2686,7 @@
         "seasonals": ["Möhre"]
     },
     {
-        "name": "Sandwich mit gegrilltem Ge\u00ADmüse",
+        "name": "Sandwich mit gegrilltem Gemüse",
         "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
             { "name": "Frühstück" },
@@ -2752,11 +2749,10 @@
         "seasonals": ["Aubergine", "Lollo Rosso", "Paprika", "Zucchini"]
     },
     {
-        "name": "Sommer\u00ADrollen-Bowl mit Gurken\u00ADsalat",
+        "name": "Sommerrollen-Bowl mit Gurkensalat",
         "intro": "Diese bunte Bowl bietet eine ganze Menge Vitamine, gesunde Fette und Mineralstoffe! Avocado liefert dem Körper wichtige Omega-3-Fettsäuren, die u.a. den Cholesterinspiegel senken können. Radieschen versorgen den Körper zudem mit B-Vitaminen, Kalium, Eisen und Magnesium und Mango liefert reichlich Vitamin C und Provitamin A.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Asiatisch" },
             { "name": "Hauptspeise" }
         ],
         "nutrition": {
@@ -3053,7 +3049,7 @@
                 "text": "Spargel mit Tomaten, Rucola und Frühlingszwiebeln vermengen, auf Tellern anrichten und mit je einer Kugel Burrata servieren."
             } 
         ],
-        "seasonals": ["Spargel", "Möhre", "Frühlings\u00ADzwiebel", "Rucola", "Tomate"]
+        "seasonals": ["Spargel", "Möhre", "Frühlingszwiebel", "Rucola", "Tomate"]
     },
     {
         "name": "Spargel-Zitronen-Pasta mit Feta",
@@ -3132,7 +3128,6 @@
         "intro": "Chinakohl, der in die veganen Wan-Tans gefüllt wird, tut dem Magen gut. Denn die Ballaststoffe im Chinakohl bringen einen trägen Darm in Schwung und putzen bei ihrem Weg durch den Körper auch gleich größere Mengen an Schadstoffen und Fetten weg. Zudem ist der Eiweißbaustein Methylmethionin aus Chinakohl in der Lage, unseren Magen und Darm vor Geschwüren zu schützen.",
         "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [
-            { "name": "Asiatisch" },
             { "name": "Hauptspeise" }
         ],
         "nutrition": {
@@ -3404,7 +3399,7 @@
                 "text": "Zucchini mit grobem Meersalz und Pfeffer bestreuen und zusammen mit Halloumi und der Salsa servieren."
             }
         ],
-        "seasonals": ["Heidelbeere", "Brombeere", "Johannisbeere", "Zucchini", "Frühlings\u00ADzwiebel"]
+        "seasonals": ["Heidelbeere", "Brombeere", "Johannisbeere", "Zucchini", "Frühlingszwiebel"]
     },
     {
         "name": "Beeren-Bowle",
@@ -3593,7 +3588,7 @@
         "seasonals": ["Rhabarber", "Erdbeere"]
     },
     {
-        "name": "Pancakes mit Heidel\u00ADbeeren",
+        "name": "Pancakes mit Heidelbeeren",
         "diets": ["Vegetarisch"],
         "categories": [
             { "name": "Backen" },
@@ -3670,7 +3665,7 @@
         "seasonals": ["Heidelbeere"]
     },
     {
-        "name": "Spargel\u00ADsalat mit Him\u00ADbeer-Dressing",
+        "name": "Spargelsalat mit Himbeer-Dressing",
         "intro": "Durch die Antioxidantien in den Himbeeren werden die Blutgefäße gestärkt und geschützt, die Durchblutung gefördert und der Körper besser mit Nährstoffen versorgt. Schon Popeye wusste, dass Spinat stark macht. Er liefert viele Mineralstoffe wie das Spurenelement Zink, das an der Regulation vieler Stoffwechselmechanismen beteiligt ist, außerdem blutbildendes Eisen, knochenstärkendes Calium und zellschützendes Betacarotin.",
         "diets": ["Vegetarisch", "Vegan", "Laktosefrei", "Glutenfrei"],
         "categories": [
@@ -3760,7 +3755,7 @@
         "seasonals": ["Spargel", "Spinat", "Radieschen", "Himbeere"]
     },
     {
-        "name": "Gnocchi-Blech mit Kicher\u00ADerbsen",
+        "name": "Gnocchi-Blech mit Kichererbsen",
         "intro": "Protein-Power: Erdnüsse haben von allen Nüssen den höchsten Gehalt an Eiweiß. Außerdem punkten sie mit reichlich B-Vitaminen sowie den wichtigen Mineralstoffen Fluor und Jod.",
         "diets": ["Vegan", "Vegetarisch", "Laktosefrei"],
         "categories": [
@@ -3870,7 +3865,7 @@
         "seasonals": ["Brokkoli", "Kartoffel", "Zwiebel"]
     },
     {
-        "name": "Kokos-Ge\u00ADmüse\u00ADsuppe",
+        "name": "Kokos-Gemüsesuppe",
         "intro": "In der Kokosmilch sind wichtige B Vitamine, wie die Pantothensäure, diese spielt eine wichtige Rolle bei der Herstellung des roten Blutfarbstoffs und des Nervenbotenstoffs Acetylcholin. Angeblich soll die Kokosmilch auch in der Lage sein uns vor Herzinfarkten zu schützen, dies ergab zumindest eine schwedische Studie, welche Tropenvölker untersuchte und dort keine Infarkte oder Schlaganfälle bemerkten. Verantwortlich machten die Forscher hierfür die Kokosmilch, wegen ihrer Beeinflussung des Cholesterinspiegels.",
         "diets": ["Glutenfrei", "Vegan", "Vegetarisch", "Laktosefrei"],
         "categories": [
@@ -4149,12 +4144,11 @@
         "seasonals": ["Spitzkohl", "Radicchio", "Apfel", "Zwiebel"]
     },
     {
-        "name": "Bunter Reis\u00ADsalat mit Hähn\u00ADchen Spießen",
+        "name": "Bunter Reissalat mit Hähnchen Spießen",
         "intro": "Das Papain aus der Papaya stärkt das Bindegewebe und kann darüber hinaus die Einlagerung von Depotfett verhindern. Die Frucht enthält außerdem Vitamin A für eine schöne Haut und Vitamin C für ein starkes Immunsystem. Neben Hähnchenfleisch bieten auch Erdnusskerne reichlich muskelaufbauendes Eiweiß.",
         "diets": ["Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Hauptspeise" },
-            { "name": "Asiatisch" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 613,
@@ -4270,10 +4264,10 @@
                 "text": "Eine beschichtete Pfanne erhitzen und die Spieße bei mittlerer Hitze von allen Seiten etwa 7–10 Minuten anbraten. Den Salat auf vier Teller anrichten, das Dressing darüberträufeln, die Spieße darübergeben, mit den Erdnüssen und den Basilikumblättern bestreuen."
             }
         ],
-        "seasonals": ["Möhre", "Spitzkohl", "Frühlings\u00ADzwiebel", "Rotkohl"]
+        "seasonals": ["Möhre", "Spitzkohl", "Frühlingszwiebel", "Rotkohl"]
     },
     {
-        "name": "Spitzkohl-Pilz-Teig\u00ADtaschen",
+        "name": "Spitzkohl-Pilz-Teigtaschen",
         "intro": "Ätherische Öle, zum Beispiel Allicin aus Schalotten, gelten als Wohltat für die Darmschleimhaut. Für die Spitzkohl-Pilz-Teigtaschen wird Dinkelmehl Type 1050 verwendet. Dieses enthält deutlich mehr Ballaststoffe, Mineralstoffe und Vitamine als Weißmehl.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -4390,7 +4384,7 @@
                 "text": "Schnittlauch waschen, trocken schütteln und hacken. Schalotten in ein Schälchen füllen und separat reichen. Teigtaschen auf Teller geben und mit Butterbröseln und Schnittlauch toppen."
             }
         ],
-        "seasonals": ["Kartoffel", "Zwiebel", "Champig\u00ADnons", "Spitzkohl"]
+        "seasonals": ["Kartoffel", "Zwiebel", "Champignons", "Spitzkohl"]
     },
     {
         "name": "Würzige Wirsing-Chips",
@@ -4447,7 +4441,7 @@
         "seasonals": ["Wirsing"]
     },
     {
-        "name": "Beeren-Käse\u00ADkuchen mit Mandeln",
+        "name": "Beeren-Käsekuchen mit Mandeln",
         "intro": "Enthalten Mandeln viel Fett? Ja, und zwar zu mehr als 50 Prozent. Aber dieses Fett setzt sich aus wertvollen ungesättigten Fettsäuren zusammen und tut dem Körper daher gut. Mehrere Studien zeigen, dass Mandeln dadurch sogar einen erhöhten Cholesterinspiegel senken und so das Risiko für Herz-Kreislauf-Erkrankungen mindern können.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -4554,7 +4548,7 @@
         "seasonals": ["Erdbeere", "Kische", "Himbeere"]
     },
     {
-        "name": "Huhn mit Rha\u00ADbarber-Kirsch-Chut\u00ADney",
+        "name": "Huhn mit Rhabarber-Kirsch-Chutney",
         "diets": ["Glutenfrei"],
         "categories": [
             { "name": "Hauptspeise" }
@@ -4639,7 +4633,7 @@
         "seasonals": ["Kirsche", "Rhabarber", "Zwiebel"]
     },
     {
-        "name": "Rotkohl\u00ADsalat mit Radicchio",
+        "name": "Rotkohlsalat mit Radicchio",
         "intro": "Der in Radicchio enthaltene Bitterstoff Intybin fördert eine gesunde Verdauung, denn er regt die Produktion von Verdauungssäften in Magen, Leber und Galle an. Das in Rotkohl steckende Vitamin K ist am Knochenstoffwechsel beteiligt.",
         "diets": ["Vegan", "Laktosefrei", "Vegetarisch"],
         "categories": [
@@ -4736,7 +4730,7 @@
         "seasonals": ["Apfel", "Rotkohl", "Radicchio", "Zwiebel", "Kirsche"]
     },
     {
-        "name": "Sand\u00ADwiches mit Ziegen\u00ADkäse-Pesto-Creme",
+        "name": "Sandwiches mit Ziegenkäse-Pesto-Creme",
         "intro": "Viele Vitamine und Mineralstoffe nehmen Sie mit diesem üppig gefüllten Brot zu sich: B-Vitamine sorgen dafür, dass die Nährstoffe optimal verstoffwechselt werden. Die volle Tagesdosis an Vitamin C begünstigt die Eisenaufnahme aus den vegetarischen Zutaten. Und Magnesium tut Ihren Muskeln gut.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -4824,10 +4818,10 @@
                 "text": "2 Toastscheiben mit Salatblättern belegen, Zucchini und Champignons darauf verteilen. 2 Toastscheiben mit Paprikastücken, Tomatenscheiben und Kresse belegen, auf die Toastscheiben mit Zucchini setzen. Darauf als Deckel die restlichen beiden Toastscheiben mit dem Käse nach unten setzen. Die Brote mit jeweils 2 Holzspießen befestigen und in Dreiecke schneiden."
             }
         ],
-        "seasonals": ["Paprika", "Zucchini", "Tomate", "Kopfsalat", "Champig\u00ADnons"]
+        "seasonals": ["Paprika", "Zucchini", "Tomate", "Kopfsalat", "Champignons"]
     },
     {
-        "name": "Veggie-Buletten mit Ofen\u00ADgemüse",
+        "name": "Veggie-Buletten mit Ofengemüse",
         "intro": "Bei den Veggie-Buletten mit Ofengemüse verwandeln sich Blumenkohl, Eier und Quark in einen saftigen Fleischersatz. Diese Kombi überzeugt mit viel Eiweiß, das durch die Zugabe von Kartoffeln und Getreide noch an Qualität gewinnt. Nicht zuletzt punktet der gut bekömmliche Kohl mit einer Extraportion verdauungsfördernden Ballaststoffen.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -4940,7 +4934,7 @@
                 "text": "Schmand mit Meerrettich verrühren und mit Salz und restlichem Zitronensaft abschmecken. Petersilie waschen, trocken schütteln und hacken. Gemüse aus dem Ofen nehmen, an den Rand schieben und die Buletten in die Form legen. Etwas Schmand darüber verteilen und mit Petersilie bestreuen. Restlichen Schmand separat dazu reichen."
             }
         ],
-        "seasonals": ["Mangold", "Kartoffel", "Blumenkohl", "Zwiebel", "Frühlings\u00ADzwiebel"]
+        "seasonals": ["Mangold", "Kartoffel", "Blumenkohl", "Zwiebel", "Frühlingszwiebel"]
     },
     {
         "name": "Rhabarber Limonade",
@@ -5072,12 +5066,11 @@
         "seasonals": ["Rhabarber"]
     },
     {
-        "name": "Süß\u00ADkartoffel-Curry",
+        "name": "Süßkartoffel-Curry",
         "intro": "Scharfstoffe aus Currypaste und Chili heizen dem Körper ordentlich ein und bringen den gesamten Stoffwechsel in Schwung. Die Süßkartoffeln punkten mit reichlich Betacarotin, einer Vorstufe von Vitamin A. Das fettlösliche Vitamin ist für gesunde Augen wichtig.",
         "diets": ["Vegan", "Vegetarisch", "Glutenfrei", "Laktosefrei"],
         "categories": [
-            { "name": "Hauptspeise" },
-            { "name": "Asiatisch" }
+            { "name": "Hauptspeise" }
         ],
         "nutrition": {
             "calories": 398,
@@ -5299,10 +5292,10 @@
                 "text": "Koriander und das Dressing mit dem Gurkensalat mischen. Lachsfilets mit dem Salat und Pak Choi auf Tellern anrichten und mit gerösteten Erdnüssen bestreuen."
             }
         ],
-        "seasonals": ["Gurke", "Frühlings\u00ADzwiebel", "Pak Choi"]
+        "seasonals": ["Gurke", "Frühlingszwiebel", "Pak Choi"]
     },
     {
-        "name": "Schupf\u00ADnudeln mit Gemüse",
+        "name": "Schupfnudeln mit Gemüse",
         "intro": "Der Mineralstoff-Booster Lauch ist zwar deftig im Geschmack, kann aber in der Kombination aus Calcium, Magnesium, Phosphat und Silizium bei Knochen- und Gelenkerkrankungen positive Effekte haben. Haut und Sehkraft werden durch Provitamin A aus den Zuckerschoten gut versorgt.",
         "diets": ["Vegan", "Vegetarisch", "Laktosefrei"],
         "categories": [
@@ -5398,7 +5391,7 @@
         "seasonals": ["Spargel", "Erbsen", "Porree"]
     },
     {
-        "name": "Kabel\u00ADjau auf Brokkoli-Erbsen-Püree",
+        "name": "Kabeljau auf Brokkoli-Erbsen-Püree",
         "intro": "Besonders beachtlich ist der Anteil an Jod im Kabeljau. Dieses Spurenelement benötigt der Körper für den Aufbau von Schilddrüsenhormonen. Ein Mangel kann daher den Stoffwechsel negativ beeinflussen. Greifen Sie öfter mal zu Brokkoli. Das Kohlgemüse ist reich an zellschützenden Glucosinolen und blutdrucksenkendem Kalium.",
         "categories": [
             { "name": "Hauptspeise" }
@@ -5506,7 +5499,7 @@
         "seasonals": ["Brokkoli", "Zwiebel", "Erbsen", "Fenchel"]
     },
     {
-        "name": "Hähnchen-Wrap mit Erd\u00ADnuss-Kokos-Sauce",
+        "name": "Hähnchen-Wrap mit Erdnuss-Kokos-Sauce",
         "intro": "Clever gerollt und gesund getoppt: Hähnchenbrustfilet enthält beachtliche Mengen Niacin. Das B-Vitamin ist ein Bestandteil wichtiger Coenzyme für Reaktionen in allen Körperzellen – so ist es am Energiestoffwechsel, an der Zellteilung und der Signalweiterleitung beteiligt. Und mit der Erdnuss kommt noch Brain Food in den Hähnchen-Wrap: Der hohe Gehalt an Magnesium (180 Milligramm) macht Erdnussmus zur perfekten Nervennahrung in Stresssituationen und bei geistigen Anstrengungen.",
         "categories": [
             { "name": "Hauptspeise" }
@@ -5605,7 +5598,7 @@
         "seasonals": ["Möhre", "Gurke", "Eisbergsalat"]
     },
     {
-        "name": "Bunter Blatt\u00ADsalat mit Gorgonzola",
+        "name": "Bunter Blattsalat mit Gorgonzola",
         "diets": ["Glutenfrei"],
         "categories": [
             { "name": "Salate" }
@@ -5743,7 +5736,7 @@
         "seasonals": ["Erdbeere"]
     },
     {
-        "name": "Rhabarber-Erdbeer-Stiel\u00ADeis",
+        "name": "Rhabarber-Erdbeer-Stieleis",
         "intro": "Rhabarber entgiftet mit seinen Gerbstoffen sanft den Körper und bringt dank Fruchtsäuren die Verdauung in Schwung. Erdbeeren punkten mit reichlich Vitamin C, das für starke Abwehrkräfte wichtig ist.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -5816,7 +5809,7 @@
         "seasonals": ["Rhabarber", "Erdbeere"]
     },
     {
-        "name": "Schoko\u00ADkuchen mit Vanille\u00ADcreme",
+        "name": "Schokokuchen mit Vanillecreme",
         "intro": "Die Zartbitterschokolade gibt dem Schokokuchen mit Vanillecreme nicht nur das perfekte Finish, sondern kann auch mit einem hohen Anteil an Flavonoiden punkten. Diese sekundären Pflanzenstoffe bringen den Blutdruck ins Gleichgewicht und kann vor schädlichen Ablagerungen in den Gefäßen schützen. Ebenfalls enthaltenes Magnesium kann in stressigen Zeiten beruhigend wirken.",
         "diets": ["Vegetarisch"],
         "categories": [
@@ -5913,7 +5906,7 @@
         "seasonals": ["Erdbeere"]
     },
     {
-        "name": "Fruchtiger Mangold\u00ADsalat",
+        "name": "Fruchtiger Mangoldsalat",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
         "categories": [
             { "name": "Salate" }
@@ -5977,7 +5970,7 @@
         "seasonals": ["Mangold"]
     },
     {
-        "name": "Gebratene Pas\u00ADtina\u00ADken mit En\u00ADdivien-Rote-Bete-Salat",
+        "name": "Gebratene Pastinaken mit Endivien-Rote-Bete-Salat",
         "diets": ["Vegetarisch", "Laktosefrei", "Glutenfrei"],
         "categories": [
             { "name": "Beilagen" }
@@ -6046,7 +6039,7 @@
         "seasonals": ["Pastinake", "Endiviensalat", "Rote Bete"]
     },
     {
-        "name": "Wild\u00ADreis mit Rosen\u00ADkohl und Pasti\u00ADnake",
+        "name": "Wildreis mit Rosenkohl und Pastinake",
         "intro": "Rosenkohl und Pastinaken enthalten Senföle, die die Verdauung anregen und krankmachende Bakterien abtöten. Wer unter Blähungen leidet, kann mit Gewürzen wie Kümmel und Thymian die Beschwerden lindern.",
         "diets": ["Vegetarisch", "Vegan", "Laktosefrei", "Glutenfrei"],
         "categories": [
@@ -6150,7 +6143,7 @@
         "seasonals": ["Rosenkohl", "Pastinake", "Feldsalat"]
     },
     {
-        "name": "Camem\u00ADbert mit Rosen\u00ADkohl",
+        "name": "Camembert mit Rosenkohl",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegetarisch"],
         "categories": [
             { "name": "Beilagen" }
@@ -6222,7 +6215,7 @@
         "seasonals": ["Rosenkohl"]
     },
     {
-        "name": "Casarecce mit Rosen\u00ADkohl",
+        "name": "Casarecce mit Rosenkohl",
         "intro": "Das Vitamin C aus dem Rosenkohl ist für eine glatte Haut und straffes Bindegewebe verantwortlich. Der Rosmarin macht mit seinen ätherischen Ölen Kohl besser bekömmlich.",
         "diets": ["Vegetarisch", "Laktosefrei"],
         "categories": [

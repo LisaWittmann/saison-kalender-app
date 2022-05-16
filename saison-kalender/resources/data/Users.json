@@ -127,7 +127,7 @@
                         "info": null
                     }
                 ],
-                "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre", "Sellerie"]
+                "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
             },
             {
                 "name": "Spargel-Zitronen-Pasta mit Feta",
@@ -308,7 +308,7 @@
                 "seasonals": ["Chinakohl", "Möhre"]
             },
             {
-                "name": "Gemüse\u00ADnudeln mit Pilzen und Tofu",
+                "name": "Gemüsenudeln mit Pilzen und Tofu",
                 "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
                 "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
                 "categories": [
@@ -397,7 +397,7 @@
                         "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
                     } 
                 ],
-                "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre"]
+                "seasonals": ["Champignons", "Zwiebel", "Möhre"]
             }
         ],
         "collections": [
@@ -526,7 +526,7 @@
                                 "info": null
                             }
                         ],
-                        "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre", "Sellerie"]
+                        "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
                     },
                     {
                         "name": "Spargel-Zitronen-Pasta mit Feta",
@@ -608,7 +608,7 @@
                         "seasonals": ["Spargel"]
                     },
                     {
-                        "name": "Gemüse\u00ADnudeln mit Pilzen und Tofu",
+                        "name": "Gemüsenudeln mit Pilzen und Tofu",
                         "intro": "Möhren sind reich an Betacarotin, welches der Körper in Vitamin A umwandelt – daher auch die Bezeichnung Provitamin A. Was aber viele nicht wissen: Vitamin A stärkt nicht nur unsere Augen, sondern auch unser Immunsystem. Die biologisch aktive Form Retinsäure reguliert die Gene, die an der Immunantwort beteiligt sind.",
                         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
                         "categories": [
@@ -697,7 +697,7 @@
                                 "text": "Restliches Öl in einer zweiten Pfanne erhitzen, Gemüsenudeln darin 4 Minuten bei mittlerer Hitze anbraten und mit der Pilzsauce auf Tellern geben, mit gehackter Petersilie und mit Käse bestreuen."
                             } 
                         ],
-                        "seasonals": ["Champig\u00ADnons", "Zwiebel", "Möhre"]
+                        "seasonals": ["Champignons", "Zwiebel", "Möhre"]
                     }
                 ]
             }
