@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct SeasonView: View {
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
+    @Environment(\.managedObjectContext) var viewContext
+    
+    @FetchRequest(entity: Seasonal.entity(), sortDescriptors: [ NSSortDescriptor(key: "name_", ascending: true) ])
+    var seasonals: FetchedResults<Seasonal>
     
     var body: some View {
         ScrollView {
             TabView {
-                ForEach(Array(seasonCalendar.seasonals)) { item in
-                    SeasonItem(seasonal: item)
+                ForEach(currentSeasonals) { seasonal in
+                    SeasonItem(seasonal)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
@@ -22,17 +25,25 @@ struct SeasonView: View {
         }
         .modifier(PageLayout())
     }
+    
+    private var currentSeasonals: Array<Seasonal> {
+        seasonals
+            .filter({ $0.seasonal })
+            .sorted()
+    }
 }
 
 struct SeasonItem: View {
     @EnvironmentObject var user: AppUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
-    
     @ObservedObject var seasonal: Seasonal
+    
+    init(_ seasonal: Seasonal) {
+        self.seasonal = seasonal
+    }
     
     var body: some View {
         VStack {
-            Headline(seasonal.name, "Saisonal im \(seasonCalendar.season.name)")
+            Headline(seasonal.name, "Saisonal im \(Season.current.name)")
                 .foregroundColor(colorBlack)
                 .modifier(SectionLayout())
                 .frame(height: headerHeight, alignment: .topLeading)
@@ -49,7 +60,7 @@ struct SeasonItem: View {
     private func hightlight() -> some View {
         ZStack {
             Circle()
-                .fill(seasonCalendar.color)
+                .fill(Color(Season.current.name))
                 .frame(width: circleSize, height: circleSize)
             Image(seasonal.name.normalize())
                 .resizable()
@@ -80,13 +91,13 @@ struct SeasonItem: View {
 
 struct SeasonView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
+        
         NavigationView {
             SeasonView()
-                .environment(\.managedObjectContext, calendar.context)
-                .environmentObject(AppUser())
-                .environmentObject(ViewRouter())
-                .environmentObject(calendar)
+                .environment(\.managedObjectContext, controller.container.viewContext)
+                .environmentObject(AppUser.shared)
+                .environmentObject(ViewRouter.shared)
         }
     }
 }

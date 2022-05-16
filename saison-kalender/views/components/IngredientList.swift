@@ -72,14 +72,13 @@ struct IngredientList: View {
 
 struct IngredientList_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let recipes = try! calendar.context.fetch(Recipe.fetchRequest())
-        let recipe = recipes.first!
+        let controller = PersistenceController.preview
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
+        let recipe = recipes.randomElement()!
         
         IngredientList(recipe.ingredients, for: recipe.portions)
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser())
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(AppUser.shared)
+            .environmentObject(ViewRouter.shared)
     }
 }

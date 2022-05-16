@@ -35,15 +35,15 @@ struct RecipeTeaser: View {
 
 struct RecipeCard_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
         
         NavigationView {
-            RecipeTeaser(calendar.recipes.first!)
+            RecipeTeaser(recipes.randomElement()!)
                 .frame(width: halfContentWidth, height: halfContentWidth)
-                .environment(\.managedObjectContext, calendar.context)
-                .environmentObject(ViewRouter())
-                .environmentObject(AppUser())
-                .environmentObject(calendar)
+                .environment(\.managedObjectContext, controller.container.viewContext)
+                .environmentObject(ViewRouter.shared)
+                .environmentObject(AppUser.shared)
         }
     }
 }

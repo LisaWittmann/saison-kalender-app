@@ -58,12 +58,11 @@ struct AuthorizationView: View {
 
 struct AuthorizationView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
         
         AuthorizationView()
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser())
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(AppUser.shared)
+            .environmentObject(ViewRouter.shared)
     }
 }

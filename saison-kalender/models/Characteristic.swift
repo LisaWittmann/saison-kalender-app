@@ -62,7 +62,6 @@ extension Characteristic {
         if let characteristic = seasonal.characteristics.filter({ $0.order == schema.order }).first {
             characteristic.name = schema.name
             characteristic.value = schema.value
-            try? context.save()
             return characteristic
         }
         let characteristic = Characteristic(from: schema, in: context)

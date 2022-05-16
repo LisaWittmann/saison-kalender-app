@@ -65,8 +65,9 @@ struct ImageGroup: View {
 
 struct ImageGroup_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let images = calendar.recipes.map { $0.name.normalize() }
+        let controller = PersistenceController.preview
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
+        let images = recipes.map { $0.name.normalize() }
         
         ScrollView {
             VStack {

@@ -54,15 +54,14 @@ struct TeaserCarousel<Element, Content, Teaser> : View
 
 struct TeaserCarousel_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
         
-        TeaserCarousel(calendar.recipes.teaser(3), teaser: { LinkTeaser(to: .recipes) }) { recipe in
+        TeaserCarousel(recipes.teaser(3), teaser: { LinkTeaser(to: .recipes) }) { recipe in
             RecipeTeaser(recipe)
         }
-        .environment(\.managedObjectContext, calendar.context)
-        .environmentObject(AppUser())
-        .environmentObject(ViewRouter())
-        .environmentObject(calendar)
-        
+        .environment(\.managedObjectContext, controller.container.viewContext)
+        .environmentObject(AppUser.shared)
+        .environmentObject(ViewRouter.shared)
     }
 }

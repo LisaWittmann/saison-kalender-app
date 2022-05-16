@@ -32,13 +32,13 @@ struct SeasonalTeaser: View {
 
 struct SeasonalTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
+        let seasonals = try! controller.container.viewContext.fetch(Seasonal.fetchRequest())
         
         NavigationView {
-            SeasonalTeaser(calendar.seasonals.randomElement()!)
+            SeasonalTeaser(seasonals.randomElement()!)
                 .frame(width: halfContentWidth, height: halfContentWidth)
-                .environmentObject(AppUser())
-                .environmentObject(calendar)
+                .environmentObject(AppUser.shared)
         }
     }
 }

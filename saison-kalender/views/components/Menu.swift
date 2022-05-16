@@ -64,6 +64,6 @@ struct Menu: View {
 
 struct Menu_Previews: PreviewProvider {
     static var previews: some View {
-        Menu().environmentObject(ViewRouter())
+        Menu().environmentObject(ViewRouter.shared)
     }
 }

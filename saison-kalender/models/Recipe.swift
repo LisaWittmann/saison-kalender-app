@@ -78,6 +78,8 @@ extension Recipe {
         return seasons_
     }
     
+    var seasonal: Bool { seasons.contains(Season.current) }
+    
     func seasonalsFor(_ season: Season) -> [Seasonal] {
         return seasonals.filter { $0.seasons.contains(season) }
     }

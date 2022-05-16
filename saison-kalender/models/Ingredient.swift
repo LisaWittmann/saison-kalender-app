@@ -58,12 +58,10 @@ extension Ingredient {
             ingredient.quantity = schema.quantity
             ingredient.unit = schema.unit
             ingredient.group = schema.group
-            try? context.save()
             return ingredient
         }
         let ingredient = Ingredient(from: schema, in: context)
         ingredient.recipe = recipe
-        try? context.save()
         return ingredient
     }
 }

@@ -23,6 +23,8 @@ extension Seasonal: Representable {
     
     public var id: String { name }
     
+    var seasonal: Bool { seasons.contains(Season.current) }
+    
     var name: String {
         get { name_! }
         set { name_ = newValue }

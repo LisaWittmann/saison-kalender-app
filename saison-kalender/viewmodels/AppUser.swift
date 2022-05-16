@@ -9,6 +9,8 @@ import CoreData
 
 class AppUser: ObservableObject {
     
+    static let shared = AppUser()
+    
     @Published private(set) var user: User?
     @Published var authRequired: Bool
     
@@ -18,7 +20,7 @@ class AppUser: ObservableObject {
     var email: String? { user?.email }
     var isAuthorized: Bool { user != nil }
     
-    init(_ user: User? = nil) {
+    private init(_ user: User? = nil) {
         self.user = user
         self.authRequired = false
     }

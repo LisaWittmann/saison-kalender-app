@@ -10,7 +10,6 @@ import WrappingHStack
 
 struct SeasonalDetailView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
     @ObservedObject var seasonal: Seasonal
     
     init(_ seasonal: Seasonal) {
@@ -20,7 +19,7 @@ struct SeasonalDetailView: View {
     var body: some View {
         DetailPage(
             images: [seasonal.name.normalize()],
-            title: { Headline(seasonal.name, "Saisonal im \(seasonCalendar.season.name)")}
+            title: { Headline(seasonal.name, "Saisonal im \(Season.current.name)")}
         ) {
             Text("Steckbrief").modifier(FontH1())
             
@@ -69,10 +68,10 @@ struct SeasonalDetailView: View {
 
 struct SeasonalDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
+        let seasonals = try! controller.container.viewContext.fetch(Seasonal.fetchRequest())
         
-        SeasonalDetailView(calendar.seasonals.randomElement()!)
-            .environmentObject(AppUser())
-            .environmentObject(calendar)
+        SeasonalDetailView(seasonals.randomElement()!)
+            .environmentObject(AppUser.shared)
     }
 }

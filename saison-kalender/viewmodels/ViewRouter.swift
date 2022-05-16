@@ -8,9 +8,16 @@
 import SwiftUI
 
 class ViewRouter: ObservableObject {
-
-    @Published private(set) var currentView: Route = Route.home
-    @Published private(set) var lastView: Route = Route.home
+    
+    static let shared = ViewRouter()
+    
+    @Published private(set) var currentView: Route
+    @Published private(set) var lastView: Route
+    
+    private init() {
+        currentView = Route.home
+        lastView = Route.home
+    }
     
     func imageName(route: Route) -> String {
         switch route {

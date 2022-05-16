@@ -44,7 +44,6 @@ extension Nutrition {
             nutrition.carbs = schema.carbs
             nutrition.protein = schema.protein
             nutrition.fat = schema.fat
-            try? context.save()
             return nutrition
         }
         let nutrition = Nutrition(from: schema, in: context)

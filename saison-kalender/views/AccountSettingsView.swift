@@ -78,13 +78,15 @@ struct AccountSettingsView: View {
 
 struct AccountSettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let users: [User] = try! calendar.context.fetch(User.fetchRequest())
+        let controller = PersistenceController.preview
+        
+        let user = AppUser.shared
+        let users: [User] = try! controller.container.viewContext.fetch(User.fetchRequest())
         
         AccountSettingsView(close: {})
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser(users.first))
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(ViewRouter.shared)
+            .environmentObject(user)
+            .onAppear { user.login(users.first) }
     }
 }

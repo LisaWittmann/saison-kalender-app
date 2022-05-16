@@ -79,12 +79,14 @@ struct CollectionDetailView: View {
 
 struct CollectionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let users: [User] = try! calendar.context.fetch(User.fetchRequest())
-        let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
+        let controller = PersistenceController.preview
+        
+        let user = AppUser.shared
+        let collections: [Collection] = try! controller.container.viewContext.fetch(Collection.fetchRequest())
+        let collection = collections.randomElement()!
         
         CollectionDetailView(collections.first!)
-            .environmentObject(AppUser(users.first))
-            .environmentObject(calendar)
+            .environmentObject(user)
+            .onAppear { user.login(collection.user) }
     }
 }

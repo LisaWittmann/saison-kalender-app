@@ -43,24 +43,17 @@ struct ContentView: View {
         .fullScreenCover(isPresented: $user.authRequired) {
             AuthorizationView()
         }
-        
     }
-    
-    private var swipeDiretion: Edge {
-        viewRouter.lastView.index < viewRouter.currentView.index ? .trailing : .leading
-    }
-
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
         
         ContentView()
-            .environment(\.managedObjectContext, calendar.context)
+            .environment(\.managedObjectContext, controller.container.viewContext)
             .attachPartialSheetToRoot()
-            .environmentObject(AppUser())
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environmentObject(AppUser.shared)
+            .environmentObject(ViewRouter.shared)
     }
 }

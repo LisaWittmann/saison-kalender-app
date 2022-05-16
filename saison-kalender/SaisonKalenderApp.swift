@@ -12,19 +12,18 @@ import PartialSheet
 
 @main
 struct SaisonKalenderApp: App {
-    @StateObject var viewRouter = ViewRouter()
-    @StateObject var user = AppUser()
-    @StateObject var seasonCalendar = SeasonCalendar.shared
+    @State var persistenceController = PersistenceController.shared
+    @StateObject var viewRouter = ViewRouter.shared
+    @StateObject var user = AppUser.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, seasonCalendar.context)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .attachPartialSheetToRoot()
                 .environmentObject(user)
                 .environmentObject(viewRouter)
-                .environmentObject(seasonCalendar)
-                .onAppear { user.getStoredSession(seasonCalendar.context) }
+                .onAppear { user.getStoredSession(persistenceController.container.viewContext) }
         }
     }
 }

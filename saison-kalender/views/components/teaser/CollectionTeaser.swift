@@ -44,13 +44,13 @@ struct CollectionTeaser: View {
 
 struct CollectionTeaser_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let collections: [Collection] = try! calendar.context.fetch(Collection.fetchRequest())
+        let controller = PersistenceController.preview
+        let collections: [Collection] = try! controller.container.viewContext.fetch(Collection.fetchRequest())
         
         NavigationView {
             CollectionTeaser(collections.first!)
-                .environmentObject(AppUser())
-                .environmentObject(calendar)
+                .environment(\.managedObjectContext, controller.container.viewContext)
+                .environmentObject(AppUser.shared)
         }
     }
 }

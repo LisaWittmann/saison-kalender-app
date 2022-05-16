@@ -10,7 +10,6 @@ import PartialSheet
 
 struct RecipeDetailView: View {
     @Environment(\.dismiss) var dismiss
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
     @EnvironmentObject var user: AppUser
     
     @StateObject var manager = CollectionManager()
@@ -52,7 +51,7 @@ struct RecipeDetailView: View {
                 body(for: recipe.preparations)
             }
             
-            if let seasonals = recipe.seasonalsFor(seasonCalendar.season), !seasonals.isEmpty {
+            if let seasonals = recipe.seasonalsFor(Season.current), !seasonals.isEmpty {
                 body(for: seasonals)
             }
         }
@@ -149,15 +148,18 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
-        let users = try! calendar.context.fetch(User.fetchRequest())
-        let recipes = try! calendar.context.fetch(Recipe.fetchRequest())
-        let recipe = recipes.first!
+        let controller = PersistenceController.preview
+        
+        let user = AppUser.shared
+        let users = try! controller.container.viewContext.fetch(User.fetchRequest())
+        
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
+        let recipe = recipes.randomElement()!
         
         RecipeDetailView(recipe)
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser(users.first))
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(ViewRouter.shared)
+            .environmentObject(user)
+            .onAppear { user.login(users.first) }
     }
 }

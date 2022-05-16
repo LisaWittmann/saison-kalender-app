@@ -32,6 +32,6 @@ struct LinkTeaser: View {
 struct LinkTeaser_Previews: PreviewProvider {
     static var previews: some View {
         LinkTeaser(to: .home)
-            .environmentObject(ViewRouter())
+            .environmentObject(ViewRouter.shared)
     }
 }

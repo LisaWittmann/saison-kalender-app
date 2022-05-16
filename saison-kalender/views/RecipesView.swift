@@ -10,16 +10,18 @@ import SwiftUI
 struct RecipesView: View {
     @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: AppUser
-    @EnvironmentObject var seasonCalendar: SeasonCalendar
     
-    @FetchRequest(entity: RecipeCategory.entity(), sortDescriptors: [ NSSortDescriptor(key: "name_", ascending: true) ])
+    @FetchRequest(entity: RecipeCategory.entity(), sortDescriptors: [NSSortDescriptor(key: "name_", ascending: true)])
     var categories: FetchedResults<RecipeCategory>
+    
+    @FetchRequest(entity: Recipe.entity(), sortDescriptors: [NSSortDescriptor(key: "name_", ascending: true)])
+    var recipes: FetchedResults<Recipe>
     
     @State var selectedCategory: RecipeCategory?
 
     var body: some View {
         Page {
-            Headline("Rezepte", "Saisonal im \(seasonCalendar.season.name)")
+            Headline("Rezepte", "Saisonal im \(Season.current.name)")
                 .foregroundColor(colorBlack)
 
             if !categories.isEmpty {
@@ -29,22 +31,34 @@ struct RecipesView: View {
                 )
             }
             
-            Masonry(seasonCalendar.filterRecipes(by: selectedCategory, for: user.diets)) { recipe in
-                RecipeTeaser(recipe)
+            if !filteredRecipes.isEmpty {
+                Masonry(filteredRecipes) { recipe in
+                    RecipeTeaser(recipe)
+                }
             }
             Spacer()
         }
+    }
+    
+    private var filteredRecipes: [Recipe] {
+        let recipes = self.recipes
+            .filter({ $0.seasonal && user.diets.allSatisfy($0.diets.contains) })
+            .sorted()
+    
+        if let filter = selectedCategory {
+            return recipes.filter { $0.categories.contains(filter) }
+        }
+        return recipes
     }
 }
 
 struct RecipesView_Previews: PreviewProvider {
     static var previews: some View {
-        let calendar = SeasonCalendar.preview
+        let controller = PersistenceController.preview
         
         RecipesView()
-            .environment(\.managedObjectContext, calendar.context)
-            .environmentObject(AppUser())
-            .environmentObject(ViewRouter())
-            .environmentObject(calendar)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(AppUser.shared)
+            .environmentObject(ViewRouter.shared)
     }
 }

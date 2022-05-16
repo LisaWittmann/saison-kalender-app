@@ -59,7 +59,6 @@ extension Preparation {
             preparation.title = schema.title
             preparation.text = schema.text
             preparation.info = schema.info
-            try? context.save()
             return preparation
         }
         let preparation = Preparation(from: schema, in: context)
