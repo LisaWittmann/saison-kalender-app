@@ -31,6 +31,14 @@ struct HomeView: View {
                         teasers(for: seasonCalendar.filterRecipes(for: user.diets))
                     }
                 }
+                
+                if user.isAuthorized && !user.favorites.isEmpty {
+                    Section("Deine Favoriten") {
+                        TeaserCarousel(user.favorites.teaser(teaserLength), teaser: { LinkTeaser(to: .account) }) { recipe in
+                            RecipeTeaser(recipe)
+                        }
+                    }
+                }
             }
             Spacer()
         }

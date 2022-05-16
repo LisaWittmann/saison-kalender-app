@@ -13,7 +13,8 @@ struct PersistenceController {
         let result = PersistenceController()
         let viewContext = result.container.viewContext
 
-        try? fetchData(in: viewContext)
+        resetAllRecords(in: viewContext)
+        fetchDataFromAPI(in: viewContext)
     
         do {
             try viewContext.save()
@@ -28,7 +29,9 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         
-        try? fetchData(in: viewContext)
+        try? readSeasonalsFromJson(in: viewContext)
+        try? readRecipesFromJson(in: viewContext)
+        try? readUsersFromJson(in: viewContext)
     
         do {
             try viewContext.save()
@@ -72,20 +75,66 @@ struct PersistenceController {
         try? context.save()
     }
     
-    static func fetchData(in context: NSManagedObjectContext) throws {
+    static func fetchDataFromAPI(in context: NSManagedObjectContext) {
+        let domainUrlString = "https://8c2a-2a02-810b-54c0-1690-d857-cc1d-8949-1bf4.ngrok.io"
+        let seasonalUrl = URL(string: domainUrlString + "/api/seasonal")!
+        let recipeUrl = URL(string: domainUrlString + "/api/recipe")!
+        let userUrl = URL(string: domainUrlString + "/api/user")!
+
+        URLSession.shared.dataTask(with: seasonalUrl) {data, res, err in
+            if let data = data {
+                let decoder = JSONDecoder()
+                do {
+                    _ = try decoder.decode([SeasonalSchema].self, from: data).map { Seasonal.create(from: $0, in: context) }
+                } catch let error {
+                    print(error.localizedDescription)
+                    try? readSeasonalsFromJson(in: context)
+                }
+            }
+        }.resume()
+        
+        URLSession.shared.dataTask(with: recipeUrl) {data, res, err in
+            if let data = data {
+                let decoder = JSONDecoder()
+                do {
+                    _ = try decoder.decode([RecipeSchema].self, from: data).map { Recipe.create(from: $0, in: context) }
+                } catch let error {
+                    print(error.localizedDescription)
+                    try? readRecipesFromJson(in: context)
+                }
+            }
+        }.resume()
+        
+        URLSession.shared.dataTask(with: userUrl) {data, res, err in
+            if let data = data {
+                let decoder = JSONDecoder()
+                do {
+                    _ = try decoder.decode([UserSchema].self, from: data).map { User.create(from: $0, in: context) }
+                } catch let error {
+                    print(error.localizedDescription)
+                    try? readUsersFromJson(in: context)
+                }
+            }
+        }.resume()
+    }
+    
+    static func readSeasonalsFromJson(in context: NSManagedObjectContext) throws {
         if let seasonalsURL = Bundle.main.url(forResource: "Seasonals", withExtension: "json") {
             let data = try Data(contentsOf: seasonalsURL)
             let decoder = JSONDecoder()
             _ = try decoder.decode([SeasonalSchema].self, from: data).map { Seasonal.create(from: $0, in: context) }
         }
-        
+    }
+    
+    static func readRecipesFromJson(in context: NSManagedObjectContext) throws {
         if let recipesURL = Bundle.main.url(forResource: "Recipes", withExtension: "json") {
             let data = try Data(contentsOf: recipesURL)
             let decoder = JSONDecoder()
             _ = try decoder.decode([RecipeSchema].self, from: data).map { Recipe.create(from: $0, in: context) }
-            
         }
-        
+    }
+    
+    static func readUsersFromJson(in context: NSManagedObjectContext) throws {
         if let usersURL = Bundle.main.url(forResource: "Users", withExtension: "json") {
             let data = try Data(contentsOf: usersURL)
             let decoder = JSONDecoder()
