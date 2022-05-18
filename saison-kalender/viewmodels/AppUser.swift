@@ -209,6 +209,15 @@ extension AppUser {
         }
         save()
     }
+    
+    func delete(from context: NSManagedObjectContext) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.delete(from: context) })
+            return
+        }
+        try? User.delete(with: email!, from: context)
+        logout()
+    }
 }
 
 extension AppUser {

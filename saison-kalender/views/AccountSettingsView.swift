@@ -9,6 +9,7 @@ import SwiftUI
 import WrappingHStack
 
 struct AccountSettingsView: View {
+    @Environment(\.managedObjectContext) var viewContext
     @EnvironmentObject var user: AppUser
     @EnvironmentObject var viewRouter: ViewRouter
     
@@ -33,8 +34,16 @@ struct AccountSettingsView: View {
             Section("Passwort ändern") {
                 ChangePasswordForm()
             }
-            Button("Ausloggen", action: logout)
+            
+            VStack(spacing: spacingExtraSmall) {
+                Button("Ausloggen", action: logout)
                 .modifier(TextButtonStyle())
+            
+                Button("Account löschen", action: delete)
+                    .foregroundColor(colorRed)
+                    .modifier(TextButtonStyle())
+            }
+                
         }
     }
     
@@ -69,6 +78,11 @@ struct AccountSettingsView: View {
     
     private func logout() {
         user.logout()
+        viewRouter.navigate(to: .home)
+    }
+    
+    private func delete() {
+        user.delete(from: viewContext)
         viewRouter.navigate(to: .home)
     }
     

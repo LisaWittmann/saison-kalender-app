@@ -114,4 +114,12 @@ extension User {
         user.collections = schema.collections.map { Collection.create(from: $0, for: user, in: user.managedObjectContext!) }
         try? user.managedObjectContext?.save()
     }
+    
+    static func delete(with email: String, from context: NSManagedObjectContext) throws {
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
+        deleteFetch.predicate = NSPredicate(format: "email_ = %@", email)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        _ = try context.execute(deleteRequest)
+        try context.save()
+    }
 }
