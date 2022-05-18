@@ -40,14 +40,19 @@ extension Nutrition {
     
     static func create(from schema: NutritionSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Nutrition {
         if let nutrition = recipe.nutrition {
-            nutrition.calories = schema.calories
-            nutrition.carbs = schema.carbs
-            nutrition.protein = schema.protein
-            nutrition.fat = schema.fat
+            update(nutrition, from: schema)
             return nutrition
         }
         let nutrition = Nutrition(from: schema, in: context)
         nutrition.recipe = recipe
         return nutrition
+    }
+    
+    static func update(_ nutrition: Nutrition, from schema: NutritionSchema) {
+        nutrition.calories = schema.calories
+        nutrition.carbs = schema.carbs
+        nutrition.protein = schema.protein
+        nutrition.fat = schema.fat
+        try? nutrition.managedObjectContext?.save()
     }
 }

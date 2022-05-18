@@ -105,18 +105,23 @@ extension Recipe {
         let predicate = NSPredicate(format: "name_ = %@", schema.name)
         let recipes = (try? context.fetch(Recipe.fetchRequest(predicate))) ?? []
         if let recipe = recipes.first {
-            recipe.intro = schema.intro
-            recipe.diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
-            recipe.categories = schema.categories.map { RecipeCategory.create(from: $0, in: context) }
-            recipe.portions = Int(schema.portions)
-            recipe.ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: recipe, in: context) }
-            recipe.preparations = schema.preparations.map { Preparation.create(from: $0, for: recipe, in: context) }
-            recipe.seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: context) }).compactMap { $0 }
-            if let nutritionSchema = schema.nutrition {
-                recipe.nutrition = Nutrition.create(from: nutritionSchema, for: recipe, in: context)
-            }
+            update(recipe, from: schema)
             return recipe
         }
         return Recipe(from: schema, in: context)
+    }
+    
+    static func update(_ recipe: Recipe, from schema: RecipeSchema) {
+        recipe.intro = schema.intro
+        recipe.diets = schema.diets.map{ Diet(rawValue: $0) }.compactMap { $0 }
+        recipe.categories = schema.categories.map { RecipeCategory.create(from: $0, in: recipe.managedObjectContext!) }
+        recipe.portions = Int(schema.portions)
+        recipe.ingredients = schema.ingredients.map { Ingredient.create(from: $0, for: recipe, in: recipe.managedObjectContext!) }
+        recipe.preparations = schema.preparations.map { Preparation.create(from: $0, for: recipe, in: recipe.managedObjectContext!) }
+        recipe.seasonals = schema.seasonals.map({ Seasonal.with(name: $0, from: recipe.managedObjectContext!) }).compactMap { $0 }
+        if let nutritionSchema = schema.nutrition {
+            recipe.nutrition = Nutrition.create(from: nutritionSchema, for: recipe, in: recipe.managedObjectContext!)
+        }
+        try? recipe.managedObjectContext?.save()
     }
 }

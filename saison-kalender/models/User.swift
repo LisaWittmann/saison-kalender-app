@@ -87,9 +87,9 @@ extension User {
 
 extension User {
 
-    static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User {
-        if let user = User.with(email: email, from: context) {
-            return user
+    static func create(name: String, email: String, password: String, in context: NSManagedObjectContext) -> User? {
+        if User.with(email: email, from: context) != nil {
+            return nil
         }
         let newUser = User(context: context)
         newUser.name = name
@@ -100,13 +100,18 @@ extension User {
     
     static func create(from schema: UserSchema, in context: NSManagedObjectContext) -> User {
         if let user = User.with(email: schema.email, from: context) {
-            user.name = schema.name
-            user.password = schema.password
-            user.diets = schema.diets.map({ Diet(rawValue: $0) }).compactMap { $0 }
-            user.favorites = schema.favorites.map { Recipe.create(from: $0, in: context) }
-            user.collections = schema.collections.map { Collection.create(from: $0, for: user, in: context) }
+            update(user, from: schema)
             return user
         }
         return User(from: schema, in: context)
+    }
+    
+    static func update(_ user: User, from schema: UserSchema) {
+        user.name = schema.name
+        user.password = schema.password
+        user.diets = schema.diets.map({ Diet(rawValue: $0) }).compactMap { $0 }
+        user.favorites = schema.favorites.map { Recipe.create(from: $0, in: user.managedObjectContext!) }
+        user.collections = schema.collections.map { Collection.create(from: $0, for: user, in: user.managedObjectContext!) }
+        try? user.managedObjectContext?.save()
     }
 }

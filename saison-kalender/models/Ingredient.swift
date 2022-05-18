@@ -55,13 +55,18 @@ extension Ingredient {
     
     static func create(from schema: IngredientSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Ingredient {
         if let ingredient = recipe.ingredients.filter({ $0.name == schema.name }).first {
-            ingredient.quantity = schema.quantity
-            ingredient.unit = schema.unit
-            ingredient.group = schema.group
+            update(ingredient, from: schema)
             return ingredient
         }
         let ingredient = Ingredient(from: schema, in: context)
         ingredient.recipe = recipe
         return ingredient
+    }
+    
+    static func update(_ ingredient: Ingredient, from schema: IngredientSchema) {
+        ingredient.quantity = schema.quantity
+        ingredient.unit = schema.unit
+        ingredient.group = schema.group
+        try? ingredient.managedObjectContext?.save()
     }
 }

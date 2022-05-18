@@ -56,13 +56,18 @@ extension Preparation {
     
     static func create(from schema: PreparationSchema, for recipe: Recipe, in context: NSManagedObjectContext) -> Preparation {
         if let preparation = recipe.preparations.filter({ $0.order == schema.order }).first {
-            preparation.title = schema.title
-            preparation.text = schema.text
-            preparation.info = schema.info
+            update(preparation, from: schema)
             return preparation
         }
         let preparation = Preparation(from: schema, in: context)
         preparation.recipe = recipe
         return preparation
+    }
+    
+    static func update(_ preparation: Preparation, from schema: PreparationSchema) {
+        preparation.title = schema.title
+        preparation.text = schema.text
+        preparation.info = schema.info
+        try? preparation.managedObjectContext?.save()
     }
 }

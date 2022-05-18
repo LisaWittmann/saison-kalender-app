@@ -70,10 +70,15 @@ extension Seasonal {
     
     static func create(from schema: SeasonalSchema, in context: NSManagedObjectContext) -> Seasonal {
         if let seasonal = with(name: schema.name, from: context) {
-            seasonal.seasons_ = schema.seasons
-            seasonal.characteristics = schema.characteristics.map { Characteristic.create(from: $0, for: seasonal, in: context) }
+            update(seasonal, from: schema)
             return seasonal
         }
         return Seasonal(from: schema, in: context)
+    }
+    
+    static func update(_ seasonal: Seasonal, from schema: SeasonalSchema) {
+        seasonal.seasons_ = schema.seasons
+        seasonal.characteristics = schema.characteristics.map { Characteristic.create(from: $0, for: seasonal, in: seasonal.managedObjectContext!) }
+        try? seasonal.managedObjectContext?.save()
     }
 }

@@ -60,12 +60,17 @@ extension Characteristic {
     
     static func create(from schema: CharacteristicSchema, for seasonal: Seasonal, in context: NSManagedObjectContext) -> Characteristic {
         if let characteristic = seasonal.characteristics.filter({ $0.order == schema.order }).first {
-            characteristic.name = schema.name
-            characteristic.value = schema.value
+            update(characteristic, from: schema)
             return characteristic
         }
         let characteristic = Characteristic(from: schema, in: context)
         characteristic.seasonal = seasonal
         return characteristic
+    }
+    
+    static func update(_ characteristic: Characteristic, from schema: CharacteristicSchema) {
+        characteristic.name = schema.name
+        characteristic.value = schema.value
+        try? characteristic.managedObjectContext?.save()
     }
 }

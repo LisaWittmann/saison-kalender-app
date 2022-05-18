@@ -13,7 +13,7 @@ struct PersistenceController {
         let result = PersistenceController()
         let viewContext = result.container.viewContext
         
-        try? readDataFromJson(in: viewContext)
+        try? result.readDataFromJson()
         
         do {
             try viewContext.save()
@@ -29,7 +29,7 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         
-        try? readDataFromJson(in: viewContext)
+        try? result.readDataFromJson()
     
         do {
             try viewContext.save()
@@ -54,42 +54,48 @@ struct PersistenceController {
         })
     }
     
-    static func resetAllRecords(in context: NSManagedObjectContext) {
-        resetRecords(in: context, for: "Characteristic")
-        resetRecords(in: context, for: "RecipeCategory")
-        resetRecords(in: context, for: "Ingredient")
-        resetRecords(in: context, for: "Preparation")
-        resetRecords(in: context, for: "Nutrition")
-        resetRecords(in: context, for: "Seasonal")
-        resetRecords(in: context, for: "Recipe")
-        resetRecords(in: context, for: "Collection")
-        resetRecords(in: context, for: "User")
+    func resetAllRecords(in context: NSManagedObjectContext) {
+        resetRecords(for: "Characteristic")
+        resetRecords(for: "RecipeCategory")
+        resetRecords(for: "Ingredient")
+        resetRecords(for: "Preparation")
+        resetRecords(for: "Nutrition")
+        resetRecords(for: "Seasonal")
+        resetRecords(for: "Recipe")
+        resetRecords(for: "Collection")
+        resetRecords(for: "User")
     }
     
-    static func resetRecords(in context: NSManagedObjectContext, for entity: String) {
+    func resetRecords(for entity: String) {
         let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
-        _ = try? context.execute(deleteRequest)
-        try? context.save()
+        _ = try? container.viewContext.execute(deleteRequest)
+        try? container.viewContext.save()
     }
     
-    static func readDataFromJson(in context: NSManagedObjectContext) throws {
+    func readDataFromJson() throws {
         if let seasonalsURL = Bundle.main.url(forResource: "Seasonals", withExtension: "json") {
             let data = try Data(contentsOf: seasonalsURL)
             let decoder = JSONDecoder()
-            _ = try decoder.decode([SeasonalSchema].self, from: data).map { Seasonal.create(from: $0, in: context) }
+            _ = try decoder
+                .decode([SeasonalSchema].self, from: data)
+                .map { Seasonal.create(from: $0, in: container.viewContext) }
         }
         
         if let recipesURL = Bundle.main.url(forResource: "Recipes", withExtension: "json") {
             let data = try Data(contentsOf: recipesURL)
             let decoder = JSONDecoder()
-            _ = try decoder.decode([RecipeSchema].self, from: data).map { Recipe.create(from: $0, in: context) }
+            _ = try decoder
+                .decode([RecipeSchema].self, from: data)
+                .map { Recipe.create(from: $0, in: container.viewContext) }
         }
         
         if let usersURL = Bundle.main.url(forResource: "Users", withExtension: "json") {
             let data = try Data(contentsOf: usersURL)
             let decoder = JSONDecoder()
-            _ = try decoder.decode([UserSchema].self, from: data).map { User.create(from: $0, in: context) }
+            _ = try decoder
+                .decode([UserSchema].self, from: data)
+                .map { User.create(from: $0, in: container.viewContext) }
         }
     }
 }

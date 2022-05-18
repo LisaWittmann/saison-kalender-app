@@ -74,11 +74,16 @@ extension Collection {
     
     static func create(from schema: CollectionSchema, for user: User, in context: NSManagedObjectContext) -> Collection {
         if let collection = user.collections.filter({ $0.name == schema.name }).first {
-            collection.recipes = schema.recipes.map { Recipe.create(from: $0, in: context) }
+            update(collection, from: schema)
             return collection
         }
         let collection = Collection(from: schema, in: context)
         collection.user = user
         return collection
+    }
+    
+    static func update(_ collection: Collection, from schema: CollectionSchema) {
+        collection.recipes = schema.recipes.map { Recipe.create(from: $0, in: collection.managedObjectContext!) }
+        try? collection.managedObjectContext?.save()
     }
 }
