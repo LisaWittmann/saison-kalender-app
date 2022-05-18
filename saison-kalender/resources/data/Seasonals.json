@@ -89,7 +89,7 @@
             {
                 "order": 1,
                 "name": "Wissenswertes",
-                "value": "Rund ums Mittelmeer gehört die Aubergine so selbstverständlich zur Alltagsküche wie Tomaten oder Knoblauch. Während die Frucht eines Nachtschattengewächses hierzulande noch bis vor etwa 20 Jahren fast als Exot galt, die kaum jemand kannte, schätzt man sie in Südeuropa bereits seit dem 13. Jahrhundert. In Indien und China sind Auberginen sogar schon seit Jahrtausenden Bestandteil des Speisezettels.\n\nDass sie ihr europäisches Coming Out zuerst in Italien und anderen Mittelmeerländern hatten und vor allem dort heimisch wurden, ist leicht zu erklären: Auberginen brauchen viel Sonne und Wärme zum Gedeihen. "
+                "value": "Rund ums Mittelmeer gehört die Aubergine so selbstverständlich zur Alltagsküche wie Tomaten oder Knoblauch. Während die Frucht eines Nachtschattengewächses hierzulande noch bis vor etwa 20 Jahren fast als Exot galt, die kaum jemand kannte, schätzt man sie in Südeuropa bereits seit dem 13. Jahrhundert. In Indien und China sind Auberginen sogar schon seit Jahrtausenden Bestandteil des Speisezettels.\n\nDass sie ihr europäisches Coming Out zuerst in Italien und anderen Mittelmeerländern hatten und vor allem dort heimisch wurden, ist leicht zu erklären: Auberginen brauchen viel Sonne und Wärme zum Gedeihen."
             },
             {
                 "order": 2,
@@ -120,7 +120,7 @@
             {
                 "order": 1,
                 "name": "Wissenswertes",
-                "value": "Uralt und doch immer noch extrem aktuell: Birnen gab es schon um 3.000 v. Chr., und bis heute gehören sie zu den besonders beliebten Obstsorten. Bei uns beginnt die Birnenzeit im Frühherbst, anderswo auf der Welt gelten andere Regeln, denn zu den Hauptanbaugebieten gehören neben Italien, Spanien, Frankreich und anderen EU-Staaten Länder in Übersee und Asien. In den USA, Chile, Argentinien, China und Südafrika findet die Ernte zu anderen Jahreszeiten statt, sodass wir Birnen das ganze Jahr genießen können.\n\n"
+                "value": "Uralt und doch immer noch extrem aktuell: Birnen gab es schon um 3.000 v. Chr., und bis heute gehören sie zu den besonders beliebten Obstsorten. Bei uns beginnt die Birnenzeit im Frühherbst, anderswo auf der Welt gelten andere Regeln, denn zu den Hauptanbaugebieten gehören neben Italien, Spanien, Frankreich und anderen EU-Staaten Länder in Übersee und Asien. In den USA, Chile, Argentinien, China und Südafrika findet die Ernte zu anderen Jahreszeiten statt, sodass wir Birnen das ganze Jahr genießen können."
             },
             {
                 "order": 2,
@@ -154,7 +154,7 @@
                 "value": "Blumenkohl frisch vom Feld aus deutschen Landen bekommt man bei uns von Mai bis November. Aber auch andere Länder bauen das Gemüse an, sodass Blumenkohl inzwischen das ganze Jahr über erhältlich ist."
             },
             {
-                "order": 5,
+                "order": 4,
                 "name": "Lagerung",
                 "value": "Im Ganzen bleibt Blumenkohl im Gemüsefach des Kühlschranks vier bis fünf Tage frisch und knackig. Auch Einfrieren ist möglich. Dafür zerteilt man die Köpfe aber vorher besser in Röschen und blanchiert sie kurz in Salzwasser.\n\nBei vielen hat Blumenkohl einen im wahrsten Sinn des Wortes anrüchigen Ruf. Tatsächlich kann das Gemüse \"müffeln\", doch ist das immer ein Hinweis auf Überlagerung und mangelnde Frische. Den verpönten Kohlgeruch, der bei Blumenkohl sowieso nicht sonderlich ausgeprägt ist, können Sie ganz einfach vermeiden: Geben Sie zum Kochwasser etwas Zitronensaft – es erhält außerdem die weiße Farbe besonders gut. Manche schwören auch auf ein mit gegartes Lorbeerblatt oder einen Schuss Milch im Kochwasser."
             }
@@ -206,7 +206,7 @@
                 "value": "Die ersten Brombeeren reifen bei uns im Juli, die letzten werden dann je nach Wetterlage Mitte bis Ende Oktober geerntet. In guten Jahren kann man sogar noch bis zu den ersten Frostnächten Brombeeren pflücken."
             },
             {
-                "order": 5,
+                "order": 4,
                 "name": "Lagerung",
                 "value": "Weil sie so leicht schimmeln, ist Kühlen bei Brombeeren ein Muss. Aber auch im Kühlschrank bleiben sie nur für maximal 2 Tage frisch und sollten besser nur so lange wie unbedingt nötig aufbewahren und lieber möglichst bald nach dem Einkauf oder dem Sammeln gegessen werden.\n\nWer Brombeeren ganzjährig genießen möchte, sollte sie einzeln nebeneinander auf ein Tablett gelegt für eine Stunde vorfrieren. Anschließend geht es im Gefrierbeutel zurück in den Froster."
             }
@@ -232,7 +232,7 @@
                 "value": "In Europa ist die Haupterntezeit für Butternusskürbis im Herbst. Wer mag, kann das beliebte Herbstgemüse das ganze Jahr über kaufen – Importe kommen auch außerhalb unserer Saison zum Beispiel aus Uruguay, Argentinien und Südafrika."
             },
             {
-                "order": 5,
+                "order": 4,
                 "name": "Lagerung",
                 "value": "Lassen Sie den Stiel unbedingt dran, dann hält sich ein ganzer Butternut-Kürbis bei kühler und trockener Lagerung, zum Beispiel im Keller, in der Speisekammer oder im Gemüsefach des Kühlschranks, mehrere Monate. Angeschnittenen Butternut-Kürbis können Sie in Frischhaltefolie gewickelt drei bis vier Tage im Kühlschrank aufbewahren. Wenn Sie den Butternut-Kürbis einfrieren möchten, müssen Sie ihn ein bis zwei Minuten in kochendem Salzwasser blanchieren, abtropfen und abkühlen lassen und anschließend in Dosen oder gut verschlossenen Beuteln einfrieren."
             }
@@ -733,7 +733,7 @@
             {
                 "order": 4,
                 "name": "Sorten",
-                "value": "Die milde Süßkirsche landet meist direkt im Mund, während sich die herbere Sauerkirsche perfekt zum Kochen, Backen und Einmachen eignet – rundum smart sind sie beide.\n\nSüsskirsche-Grosse Prinzessin: Große Spätkirsche, festfleischig, süß, gelbe, rotgestreifte Frucht, alte Obstsorte\n\nSüsskirsche-Hedelfinger Riesenkirsche: Sehr große Kirsche, kleiner Stein, glänzend, dunkelrotschwarze Frucht\n\nSauerkirsche-Schattenmorelle: In der Regel kräftig rot, aber auch von hellrot bis fast schwarz erhältlich. Glänzend, große Frucht mit sehr saftreichem Fruchtfleisch, angenehm säuerlicher Geschmack"
+                "value": "Die milde Süßkirsche landet meist direkt im Mund, während sich die herbere Sauerkirsche perfekt zum Kochen, Backen und Einmachen eignet – rundum smart sind sie beide.\n\nSüsskirsche-Grosse Prinzessin: Große Spätkirsche, festfleischig, süß, gelbe, rotgestreifte Frucht, alte Obstsorte\n\nSüsskirsche-Hedelfinger Riesenkirsche: Sehr große Kirsche, kleiner Stein, glänzend, dunkelrotschwarze Frucht\n\nSauerkirsche-Schattenmorelle: In der Regel kräftig rot, aber auch von hellrot bis fast schwarz erhältlich. Glänzend, große Frucht mit sehr saftreichem Fruchtfleisch, angenehm säuerlicher Geschmack."
             }
         ]
     },
@@ -1128,7 +1128,7 @@
             {
                 "order": 2,
                 "name": "Herkunft",
-                "value": "n seiner ursprünglichen Heimat Italien verspeiste man den ersten Radicchio aus regelrechtem Anbau schon im 16. Jahrhundert. Bis heute liegt das Hauptanbaugebiet in Italien, mittlerweile baut man Radicchio aber auch in vielen anderen Ländern an – bei mildem Klima im Freiland, in kälteren Gebieten beziehungsweise zur kalten Jahreszeit auch unter Glas."
+                "value": "In seiner ursprünglichen Heimat Italien verspeiste man den ersten Radicchio aus regelrechtem Anbau schon im 16. Jahrhundert. Bis heute liegt das Hauptanbaugebiet in Italien, mittlerweile baut man Radicchio aber auch in vielen anderen Ländern an – bei mildem Klima im Freiland, in kälteren Gebieten beziehungsweise zur kalten Jahreszeit auch unter Glas."
             },
             {
                 "order": 3,
@@ -1143,7 +1143,7 @@
             {
                 "order": 5,
                 "name": "Lagerung",
-                "value": "anges Lagern tut weder dem Geschmack noch der Knackigkeit von Radicchio gut. Bewahren Sie ihn darum möglichst kurz im Gemüsefach des Kühlschranks auf, am besten locker in Papier gewickelt."
+                "value": "Langes Lagern tut weder dem Geschmack noch der Knackigkeit von Radicchio gut. Bewahren Sie ihn darum möglichst kurz im Gemüsefach des Kühlschranks auf, am besten locker in Papier gewickelt."
             }
         ]
     },
@@ -1226,7 +1226,7 @@
             {
                 "order": 4,
                 "name": "Lagerung",
-                "value": "rischer Rosenkohl hält sich ungewaschen und ungeputzt im Gemüsefach des Kühlschranks vier bis fünf Tage. Lagern Sie ihn aber nicht zusammen mit Äpfeln oder Tomaten, denn beide enthalten ein Reifungsgas namens Ethylen, das Rosenkohl schneller welken lässt.\n\nSie können frischen Rosenkohl natürlich auch einfrieren, allerdings verliert er durch den Kälteschlaf an Festigkeit. Nach dem Putzen vier bis fünf Minuten in kochendem Salzwasser garen, abgießen, abkühlen lassen und in Gefrierdosen oder -beutel verpacken."
+                "value": "Frischer Rosenkohl hält sich ungewaschen und ungeputzt im Gemüsefach des Kühlschranks vier bis fünf Tage. Lagern Sie ihn aber nicht zusammen mit Äpfeln oder Tomaten, denn beide enthalten ein Reifungsgas namens Ethylen, das Rosenkohl schneller welken lässt.\n\nSie können frischen Rosenkohl natürlich auch einfrieren, allerdings verliert er durch den Kälteschlaf an Festigkeit. Nach dem Putzen vier bis fünf Minuten in kochendem Salzwasser garen, abgießen, abkühlen lassen und in Gefrierdosen oder -beutel verpacken."
             }
         ]
     },
@@ -1252,7 +1252,7 @@
             {
                 "order": 4,
                 "name": "Lagerung",
-                "value": "ote Bete hält sich im Gemüsefach des Kühlschranks oder an einem anderen kühlen Ort wie Speisekammer oder Keller bis zu zwei Wochen."
+                "value": "Rote Bete hält sich im Gemüsefach des Kühlschranks oder an einem anderen kühlen Ort wie Speisekammer oder Keller bis zu zwei Wochen."
             }
         ]
     },
@@ -1398,7 +1398,7 @@
             {
                 "order": 3,
                 "name": "Saison",
-                "value": "Spitzkohl gibt es beinahe das ganze Jahr über. Im Frühjahr und Frühsommer sind die Köpfe kleiner und die Blätter zarter als im Herbst und Winter. Von Mai bis Dezember kommt Spitzkohl aus heimischer Ernte und ab April ist dann der besonders zarte frühe Spitzkohl aus Frankreich auf dem Markt.                "
+                "value": "Spitzkohl gibt es beinahe das ganze Jahr über. Im Frühjahr und Frühsommer sind die Köpfe kleiner und die Blätter zarter als im Herbst und Winter. Von Mai bis Dezember kommt Spitzkohl aus heimischer Ernte und ab April ist dann der besonders zarte frühe Spitzkohl aus Frankreich auf dem Markt."
             },
             {
                 "order": 4,
@@ -1560,7 +1560,7 @@
             {
                 "order": 1,
                 "name": "Wissenswertes",
-                "value": "Fast alle mögen Zucchini, aber nur wenige wissen, dass Zucchini eine Unterart vom Gartenkürbis sind und botanisch in die Familie der Kürbisgewächse gehören. Lässt man sie wachsen, erreichen sie wie ihre Verwandten ein beeindruckendes Format, denn eine ausgewachsene Frucht kann bis zu 5 Kilogramm auf die Waage bringen! In der Regel erntet man Zucchini allerdings, wenn sie etwa 15-30 Zentimeter lang sind und ungefähr 100-300 Gramm wiegen.\n\nDie Zucchinipflanze wuchert fast wie Unkraut und trägt unermüdlich neue Früchte. Das Kürbisgewächs ist ausgesprochen anspruchslos. Es blüht und gedeiht fast überall und unter fast allen klimatischen Bedingungen. Kälte allerdings macht ihrem Wuchern ein abruptes Ende, weswegen sie hierzulande nur im Sommer unter freiem Himmel gedeiht. Die meiste Zeit des Jahres kommen Zucchini aus den Ländern rund ums Mittelmeer zu uns. "
+                "value": "Fast alle mögen Zucchini, aber nur wenige wissen, dass Zucchini eine Unterart vom Gartenkürbis sind und botanisch in die Familie der Kürbisgewächse gehören. Lässt man sie wachsen, erreichen sie wie ihre Verwandten ein beeindruckendes Format, denn eine ausgewachsene Frucht kann bis zu 5 Kilogramm auf die Waage bringen! In der Regel erntet man Zucchini allerdings, wenn sie etwa 15-30 Zentimeter lang sind und ungefähr 100-300 Gramm wiegen.\n\nDie Zucchinipflanze wuchert fast wie Unkraut und trägt unermüdlich neue Früchte. Das Kürbisgewächs ist ausgesprochen anspruchslos. Es blüht und gedeiht fast überall und unter fast allen klimatischen Bedingungen. Kälte allerdings macht ihrem Wuchern ein abruptes Ende, weswegen sie hierzulande nur im Sommer unter freiem Himmel gedeiht. Die meiste Zeit des Jahres kommen Zucchini aus den Ländern rund ums Mittelmeer zu uns."
             },
             {
                 "order": 2,

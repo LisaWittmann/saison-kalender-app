@@ -6,128 +6,80 @@
         "diets": [],
         "favorites": [
             {
-                "name": "Pasta mit Linsen-Bolognese",
-                "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
-                "diets": ["Laktosefrei", "Vegetarisch"],
+                "name": "Pikante Waffeln mit Dip",
+                "intro": "Vollkornmehl sättigt durch langkettige Kohlenhydrate und Ballaststoffe nachhaltig. Die Quellstoffe unterstützen eine ausgeglichene Darmflora. Tolle Knöllchen: Dank schwefelhaltiger Öle sowie Vitamin C stärken Radieschen effektiv die körpereigenen Abwehrkräfte.",
+                "diets": ["Vegetarisch"],
                 "categories": [
                     { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
-                    "calories": 733.0,
-                    "carbs": 102.0,
-                    "fat": 13.0,
-                    "protein": 44.0
+                    "calories": 623,
+                    "carbs": 47,
+                    "fat": 37,
+                    "protein": 24
                 },
+                "portions": 4,
                 "ingredients": [
                     {
-                        "name": "Champignons",
-                        "quantity": 350,
-                        "unit": "g"
+                        "name": "Apfel",
+                        "quantity": 0.5
                     },
                     {
-                        "name": "Hartkäse",
+                        "name": "Butter",
                         "quantity": 100,
                         "unit": "g"
                     },
                     {
-                        "name": "Knoblauch",
-                        "quantity": 2,
-                        "unit": "Zehen"
+                        "name": "Ei",
+                        "quantity": 3
                     },
                     {
-                        "name": "Möhre",
-                        "quantity": 3,
-                        "unit": null
-                    },
-                    {
-                        "name": "Olivenöl",
-                        "quantity": 2,
-                        "unit": "EL"
-                    },
-                    {
-                        "name": "Oregano",
-                        "quantity": 4,
-                        "unit": "Zweige"
-                    },
-                    {
-                        "name": "Passierte Tomaten",
-                        "quantity": 700,
+                        "name": "Feta",
+                        "quantity": 150,
                         "unit": "g"
                     },
                     {
-                        "name": "Rosmarin",
-                        "quantity": 4,
-                        "unit": "Zweige"
+                        "name": "Frühlingszwiebel",
+                        "quantity": 2
                     },
                     {
-                        "name": "Rote Linsen",
+                        "name": "Joghurt",
                         "quantity": 200,
                         "unit": "g"
                     },
                     {
-                        "name": "Rotwein",
-                        "quantity": 125,
-                        "unit": "ml"
+                        "name": "Magerquark",
+                        "quantity": 100,
+                        "unit": "g",
+                        "group": "Quark"
                     },
                     {
-                        "name": "Salbei",
-                        "quantity": 4,
-                        "unit": "Blätter"
-                    },
-                    {
-                        "name": "Sellerie",
-                        "quantity": 3,
-                        "unit": "Stangen"
-                    },
-                    {
-                        "name": "Tomatenmark",
-                        "quantity": 3,
-                        "unit": "EL"
-                    },
-                    {
-                        "name": "Vollkornnudeln",
-                        "quantity": 320,
+                        "name": "Radieschen",
+                        "quantity": 100,
                         "unit": "g"
                     },
                     {
-                        "name": "Zwiebel",
-                        "quantity": 2,
-                        "unit": null
+                        "name": "Weizen-Vollkornmehl",
+                        "quantity": 250,
+                        "unit": "g",
+                        "group": "Mehl"
                     }
                 ],
                 "preparations": [
                     {
                         "order": 1,
-                        "title": null,
-                        "text": "Pilze putzen und klein schneiden. Zwiebeln und Knoblauch schälen und getrennt in feine Würfel schneiden. Möhren waschen, putzen und grob raspeln. Sellerie waschen und klein schneiden.",
-                        "info": null
+                        "text": "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen."
                     },
                     {
                         "order": 2,
-                        "title": null,
-                        "text": "Linsen in einem Sieb abspülen. Linsen in einen kleinen Topf geben und in der doppelten Menge Wasser nach Packungsanleitung garen.",
-                        "info": null
+                        "text": "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen."
                     },
                     {
                         "order": 3,
-                        "title": null,
-                        "text": "Inzwischen Öl in einem großen Topf erhitzen. Pilze und Zwiebeln darin bei starker Hitze 3 Minuten anbraten. Möhren und Sellerie zugeben und weitere 3 Minuten braten. Hitze reduzieren. Mit Rotwein ablöschen, Knoblauch und Tomatenmark zugeben und bei mittlerer Hitze 1–2 anrösten. Linsen und passierte Tomaten zur Sauce geben, umrühren und weitere 5–8 Minuten offen ziehen lassen.",
-                        "info": null
-                    },
-                    {
-                        "order": 4,
-                        "title": null,
-                        "text": "In der Zwischenzeit Pasta nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen. Käse reiben. Kräuter waschen, trocken schütteln und Blätter bzw. Nadeln fein hacken. Kräuter in die Linsen-Bolognese geben und mit Salz und Pfeffer abschmecken.",
-                        "info": null
-                    },
-                    {
-                        "order": 5,
-                        "title": null,
-                        "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen.",
-                        "info": null
+                        "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip servieren."
                     }
                 ],
-                "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
+                "seasonals": ["Apfel", "Frühlingszwiebel", "Radieschen"]
             },
             {
                 "name": "Spargel-Zitronen-Pasta mit Feta",
@@ -137,36 +89,39 @@
                     { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
-                    "calories": 527.0,
-                    "carbs": 63.0,
-                    "fat": 19.0,
-                    "protein": 23.0
+                    "calories": 527,
+                    "carbs": 63,
+                    "fat": 19,
+                    "protein": 23
                 },
+                "portions": 4,
                 "ingredients": [
                     {
+                        "name": "Olivenöl",
+                        "quantity": 6,
+                        "unit": "TL",
+                        "group": "Öl"
+                    },
+                    {
+                        "name": "Grüner Spargel",
+                        "quantity": 300,
+                        "unit": "g",
+                        "group": "Spargel"
+                    },
+                    {
                         "name": "Zitrone",
-                        "quantity": 1,
-                        "unit": null
+                        "quantity": 1
                     },
                     {
                         "name": "Spaghetti",
                         "quantity": 400,
-                        "unit": "g"
-                    },
-                    {
-                        "name": "Olivenöl",
-                        "quantity": 6,
-                        "unit": "TL"
+                        "unit": "g",
+                        "group": "Linguine"
                     },
                     {
                         "name": "Knoblauch",
                         "quantity": 4,
                         "unit": "Zehen"
-                    },
-                    {
-                        "name": "Grüner Spargel",
-                        "quantity": 300,
-                        "unit": "g"
                     },
                     {
                         "name": "Feta",
@@ -177,33 +132,23 @@
                 "preparations": [
                     {
                         "order": 1,
-                        "title": null,
-                        "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen.",
-                        "info": null
+                        "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen."
                     },
                     {
                         "order": 2,
-                        "title": null,
-                        "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen.",
-                        "info": null
+                        "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen."
                     },
                     {
                         "order": 3,
-                        "title": null,
-                        "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken.",
-                        "info": null
+                        "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken."
                     },
                     {
                         "order": 4,
-                        "title": null,
-                        "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten.",
-                        "info": null
+                        "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten."
                     },
                     {
                         "order": 5,
-                        "title": null,
-                        "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken.",
-                        "info": null
+                        "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken."
                     }
                 ],
                 "seasonals": ["Spargel"]
@@ -213,15 +158,15 @@
                 "intro": "Chinakohl, der in die veganen Wan-Tans gefüllt wird, tut dem Magen gut. Denn die Ballaststoffe im Chinakohl bringen einen trägen Darm in Schwung und putzen bei ihrem Weg durch den Körper auch gleich größere Mengen an Schadstoffen und Fetten weg. Zudem ist der Eiweißbaustein Methylmethionin aus Chinakohl in der Lage, unseren Magen und Darm vor Geschwüren zu schützen.",
                 "diets": ["Laktosefrei", "Vegan", "Vegetarisch"],
                 "categories": [
-                    { "name": "Asiatisch" },
                     { "name": "Hauptspeise" }
                 ],
                 "nutrition": {
-                    "calories": 248.0,
-                    "carbs": 36.0,
-                    "fat": 7.0,
-                    "protein": 10.0
+                    "calories": 248,
+                    "carbs": 36,
+                    "fat": 7,
+                    "protein": 10
                 },
+                "portions": 4,
                 "ingredients": [
                     {
                         "name": "Austernpilze",
@@ -251,17 +196,18 @@
                     {
                         "name": "Mungobohnensprossen",
                         "quantity": 60,
-                        "unit": "g"
+                        "unit": "g",
+                        "group": "Sprossen"
                     },
                     {
                         "name": "Möhre",
-                        "quantity": 2,
-                        "unit": null
+                        "quantity": 2
                     },
                     {
                         "name": "Rapsöl",
                         "quantity": 1,
-                        "unit": "EL"
+                        "unit": "EL",
+                        "group": "Öl"
                     },
                     {
                         "name": "Sojasoße",
@@ -270,8 +216,7 @@
                     },
                     {
                         "name": "Wan-Tan-Teigblätter",
-                        "quantity": 25,
-                        "unit": null
+                        "quantity": 25
                     },
                     {
                         "name": "Zuckerschoten",
@@ -282,27 +227,19 @@
                 "preparations": [
                     {
                         "order": 1,
-                        "title": null,
-                        "text": "Pilze mit heißem Wasser übergießen und 2–3 Stunden einweichen lassen. Anschließend Pilze in feine Streifen schneiden.",
-                        "info": null
+                        "text": "Pilze mit heißem Wasser übergießen und 2–3 Stunden einweichen lassen. Anschließend Pilze in feine Streifen schneiden."
                     },
                     {
                         "order": 2,
-                        "title": null,
-                        "text": "nzwischen Zuckerschoten auftauen lassen und anschließend in dünne Streifen schneiden. Möhren putzen, schälen und in sehr kleine Würfel schneiden. Chinakohl putzen, waschen und in sehr feine Streifen schneiden. Sprossen abtropfen lassen und fein hacken. Mungobohnenkeimlinge waschen, trocken schütteln, Knoblauch schälen und beides hacken.",
-                        "info": null
+                        "text": "Inzwischen Zuckerschoten auftauen lassen und anschließend in dünne Streifen schneiden. Möhren putzen, schälen und in sehr kleine Würfel schneiden. Chinakohl putzen, waschen und in sehr feine Streifen schneiden. Sprossen abtropfen lassen und fein hacken. Mungobohnenkeimlinge waschen, trocken schütteln, Knoblauch schälen und beides hacken."
                     },
                     {
                         "order": 3,
-                        "title": null,
-                        "text": "Cashewkerne hacken, in einer Pfanne ohne Fett 3 Minuten bei mittlerer Hitze anrösten und beiseitelegen. Öl in der Pfanne erhitzen. Alle Gemüse darin für etwa 5 Minuten bei mittlerer Hitze andünsten. Mit Sojasauce, 5-Gewürze-Pulver, 1–2 EL Wasser und Sambal Oelek zufügen und noch 3–5 Minuten köcheln lassen. Dann Kerne zugeben.",
-                        "info": null
+                        "text": "Cashewkerne hacken, in einer Pfanne ohne Fett 3 Minuten bei mittlerer Hitze anrösten und beiseitelegen. Öl in der Pfanne erhitzen. Alle Gemüse darin für etwa 5 Minuten bei mittlerer Hitze andünsten. Mit Sojasauce, 5-Gewürze-Pulver, 1–2 EL Wasser und Sambal Oelek zufügen und noch 3–5 Minuten köcheln lassen. Dann Kerne zugeben."
                     },
                     {
                         "order": 4,
-                        "title": null,
-                        "text": "Wan-Tan-Blätter an allen vier Rändern mit Wasser bepinseln, jeweils 1–2 TL Gemüsefüllung in die Mitte setzen und Ränder darüber zusammendrücken. In einem Dampfgarer Salzwasser zum Kochen bringen. Wan-Tans darübersetzen (dürfen sich nicht berühren) und 5–7 Minuten dampfgaren.",
-                        "info": null
+                        "text": "Wan-Tan-Blätter an allen vier Rändern mit Wasser bepinseln, jeweils 1–2 TL Gemüsefüllung in die Mitte setzen und Ränder darüber zusammendrücken. In einem Dampfgarer Salzwasser zum Kochen bringen. Wan-Tans darübersetzen (dürfen sich nicht berühren) und 5–7 Minuten dampfgaren."
                     }
                 ],
                 "seasonals": ["Chinakohl", "Möhre"]
@@ -405,128 +342,80 @@
                 "name": "Pasta",
                 "recipes": [
                     {
-                        "name": "Pasta mit Linsen-Bolognese",
-                        "intro": "Wer fit sein und sich eiweißreich ernähren will, kann auf Fisch und Fleisch nicht verzichten? Von wegen! Eine Portion Pasta mit Linsen-Bolognese liefert satte 45 Gramm Eiweiß! Möglich machen es die roten Linsen. Zudem liefern die kleinen Proteinpakete reichlich Magnesium und Ballaststoffe. Die unverdaulichen Nahrungsbestandteile dienen unseren Darmbakterien als Nahrung. Das sorgt für eine vielfältige und gesunde Darmflora.",
-                        "diets": ["Laktosefrei", "Vegetarisch"],
+                        "name": "Pikante Waffeln mit Dip",
+                        "intro": "Vollkornmehl sättigt durch langkettige Kohlenhydrate und Ballaststoffe nachhaltig. Die Quellstoffe unterstützen eine ausgeglichene Darmflora. Tolle Knöllchen: Dank schwefelhaltiger Öle sowie Vitamin C stärken Radieschen effektiv die körpereigenen Abwehrkräfte.",
+                        "diets": ["Vegetarisch"],
                         "categories": [
                             { "name": "Hauptspeise" }
                         ],
                         "nutrition": {
-                            "calories": 733.0,
-                            "carbs": 102.0,
-                            "fat": 13.0,
-                            "protein": 44.0
+                            "calories": 623,
+                            "carbs": 47,
+                            "fat": 37,
+                            "protein": 24
                         },
+                        "portions": 4,
                         "ingredients": [
                             {
-                                "name": "Champignons",
-                                "quantity": 350,
-                                "unit": "g"
+                                "name": "Apfel",
+                                "quantity": 0.5
                             },
                             {
-                                "name": "Hartkäse",
+                                "name": "Butter",
                                 "quantity": 100,
                                 "unit": "g"
                             },
                             {
-                                "name": "Knoblauch",
-                                "quantity": 2,
-                                "unit": "Zehen"
+                                "name": "Ei",
+                                "quantity": 3
                             },
                             {
-                                "name": "Möhre",
-                                "quantity": 3,
-                                "unit": null
-                            },
-                            {
-                                "name": "Olivenöl",
-                                "quantity": 2,
-                                "unit": "EL"
-                            },
-                            {
-                                "name": "Oregano",
-                                "quantity": 4,
-                                "unit": "Zweige"
-                            },
-                            {
-                                "name": "Passierte Tomaten",
-                                "quantity": 700,
+                                "name": "Feta",
+                                "quantity": 150,
                                 "unit": "g"
                             },
                             {
-                                "name": "Rosmarin",
-                                "quantity": 4,
-                                "unit": "Zweige"
+                                "name": "Frühlingszwiebel",
+                                "quantity": 2
                             },
                             {
-                                "name": "Rote Linsen",
+                                "name": "Joghurt",
                                 "quantity": 200,
                                 "unit": "g"
                             },
                             {
-                                "name": "Rotwein",
-                                "quantity": 125,
-                                "unit": "ml"
+                                "name": "Magerquark",
+                                "quantity": 100,
+                                "unit": "g",
+                                "group": "Quark"
                             },
                             {
-                                "name": "Salbei",
-                                "quantity": 4,
-                                "unit": "Blätter"
-                            },
-                            {
-                                "name": "Sellerie",
-                                "quantity": 3,
-                                "unit": "Stangen"
-                            },
-                            {
-                                "name": "Tomatenmark",
-                                "quantity": 3,
-                                "unit": "EL"
-                            },
-                            {
-                                "name": "Vollkornnudeln",
-                                "quantity": 320,
+                                "name": "Radieschen",
+                                "quantity": 100,
                                 "unit": "g"
                             },
                             {
-                                "name": "Zwiebel",
-                                "quantity": 2,
-                                "unit": null
+                                "name": "Weizen-Vollkornmehl",
+                                "quantity": 250,
+                                "unit": "g",
+                                "group": "Mehl"
                             }
                         ],
                         "preparations": [
                             {
                                 "order": 1,
-                                "title": null,
-                                "text": "Pilze putzen und klein schneiden. Zwiebeln und Knoblauch schälen und getrennt in feine Würfel schneiden. Möhren waschen, putzen und grob raspeln. Sellerie waschen und klein schneiden.",
-                                "info": null
+                                "text": "Für die Waffeln Butter mit 150 g Joghurt, zerbröseltem Feta und Mehl in eine große Schüssel geben. Eier und 50–80 ml Wasser zugeben und Zutaten mit den Quirlen eines Handrührers zu einem glatten Teig verrühren. Teig 5 Minuten quellen lassen. Inzwischen Frühlingszwiebeln putzen, waschen und in Ringe schneiden; das Grün für den Quark beiseitelegen, die weißen Zwiebelringe unter den Teig mischen und diesen mit Pfeffer würzen."
                             },
                             {
                                 "order": 2,
-                                "title": null,
-                                "text": "Linsen in einem Sieb abspülen. Linsen in einen kleinen Topf geben und in der doppelten Menge Wasser nach Packungsanleitung garen.",
-                                "info": null
+                                "text": "Für den Dip Apfel putzen, waschen, entkernen und grob raspeln. Radieschen putzen, waschen und in feine Streifen schneiden. Restlichen Joghurt, Quark, Apfel und Radieschen gut verrühren. Das beiseitegelegte Frühlingszwiebelgrün unterheben und den Dip mit Salz und Pfeffer würzen."
                             },
                             {
                                 "order": 3,
-                                "title": null,
-                                "text": "Inzwischen Öl in einem großen Topf erhitzen. Pilze und Zwiebeln darin bei starker Hitze 3 Minuten anbraten. Möhren und Sellerie zugeben und weitere 3 Minuten braten. Hitze reduzieren. Mit Rotwein ablöschen, Knoblauch und Tomatenmark zugeben und bei mittlerer Hitze 1–2 anrösten. Linsen und passierte Tomaten zur Sauce geben, umrühren und weitere 5–8 Minuten offen ziehen lassen.",
-                                "info": null
-                            },
-                            {
-                                "order": 4,
-                                "title": null,
-                                "text": "In der Zwischenzeit Pasta nach Packungsanleitung in reichlich kochendem Salzwasser bissfest garen. Käse reiben. Kräuter waschen, trocken schütteln und Blätter bzw. Nadeln fein hacken. Kräuter in die Linsen-Bolognese geben und mit Salz und Pfeffer abschmecken.",
-                                "info": null
-                            },
-                            {
-                                "order": 5,
-                                "title": null,
-                                "text": "Pasta abgießen, abtropfen lassen und auf Tellern anrichten. Linsen-Bolognese darüber verteilen und mit dem Käse bestreuen. Warm genießen.",
-                                "info": null
+                                "text": "Ein beschichtetes Waffeleisen vorheizen. Teig nochmals durchrühren. Nacheinander etwa 8 Waffeln backen. Dafür je Waffel 2–3 EL Teig auf die untere Backfläche geben und das Waffeleisen schließen. Die Waffel in etwa 4 Minuten goldbraun backen. Fertige Waffeln auf einen Teller geben und mit dem Dip servieren."
                             }
                         ],
-                        "seasonals": ["Champignons", "Zwiebel", "Möhre", "Sellerie"]
+                        "seasonals": ["Apfel", "Frühlingszwiebel", "Radieschen"]
                     },
                     {
                         "name": "Spargel-Zitronen-Pasta mit Feta",
@@ -536,36 +425,39 @@
                             { "name": "Hauptspeise" }
                         ],
                         "nutrition": {
-                            "calories": 527.0,
-                            "carbs": 63.0,
-                            "fat": 19.0,
-                            "protein": 23.0
+                            "calories": 527,
+                            "carbs": 63,
+                            "fat": 19,
+                            "protein": 23
                         },
+                        "portions": 4,
                         "ingredients": [
                             {
+                                "name": "Olivenöl",
+                                "quantity": 6,
+                                "unit": "TL",
+                                "group": "Öl"
+                            },
+                            {
+                                "name": "Grüner Spargel",
+                                "quantity": 300,
+                                "unit": "g",
+                                "group": "Spargel"
+                            },
+                            {
                                 "name": "Zitrone",
-                                "quantity": 1,
-                                "unit": null
+                                "quantity": 1
                             },
                             {
                                 "name": "Spaghetti",
                                 "quantity": 400,
-                                "unit": "g"
-                            },
-                            {
-                                "name": "Olivenöl",
-                                "quantity": 6,
-                                "unit": "TL"
+                                "unit": "g",
+                                "group": "Linguine"
                             },
                             {
                                 "name": "Knoblauch",
                                 "quantity": 4,
                                 "unit": "Zehen"
-                            },
-                            {
-                                "name": "Grüner Spargel",
-                                "quantity": 300,
-                                "unit": "g"
                             },
                             {
                                 "name": "Feta",
@@ -576,33 +468,23 @@
                         "preparations": [
                             {
                                 "order": 1,
-                                "title": null,
-                                "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen.",
-                                "info": null
+                                "text": "Spaghetti nach Packungsanleitung in kochendem Salzwasser bissfest garen. Anschließend abgießen."
                             },
                             {
                                 "order": 2,
-                                "title": null,
-                                "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen.",
-                                "info": null
+                                "text": "In der Zwischenzeit Zitronensaft, Zitronenabrieb und 2 TL Öl in einer Schüssel verrühren. Schafskäse zerbröseln, zugeben und kräftig verrühren. Mit Pfeffer würzen."
                             },
                             {
                                 "order": 3,
-                                "title": null,
-                                "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken.",
-                                "info": null
+                                "text": "Spargel waschen, trocken tupfen und die holzigen Enden abschneiden. Spargel in etwa 2 cm lange Stücke schneiden. Knoblauch schälen und hacken."
                             },
                             {
                                 "order": 4,
-                                "title": null,
-                                "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten.",
-                                "info": null
+                                "text": "Restliches Öl in einer Pfanne erhitzen und Knoblauch darin 1–2 Minuten bei mittlerer Hitze anrösten. Spargelstücke zugeben und 2–3 Minuten mitbraten."
                             },
                             {
                                 "order": 5,
-                                "title": null,
-                                "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken.",
-                                "info": null
+                                "text": "Spaghetti und Zitronen-Öl-Schafskäse-Masse in die Pfanne geben und bei geringer Hitze 2–3 Minuten erhitzen. Mit Salz und Pfeffer abschmecken."
                             }
                         ],
                         "seasonals": ["Spargel"]

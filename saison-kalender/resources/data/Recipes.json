@@ -1173,10 +1173,9 @@
         "portions": 6,
         "ingredients": [
             {
-                "name": "Fleischbrühe",
+                "name": "Gemüsebrühe",
                 "quantity": 200,
-                "unit": "ml",
-                "group": "Brühe"
+                "unit": "ml"
             },
             {
                 "name": "Kaninchen",
@@ -1417,7 +1416,8 @@
             {
                 "name": "Apfelsaft",
                 "quantity": 80,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Apfel"
             },
             {
                 "name": "Bergkäse",
@@ -1587,7 +1587,8 @@
             {
                 "name": "Apfelsaft",
                 "quantity": 50,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Apfel"
             },
             {
                 "name": "Gemüsebrühe",
@@ -2282,8 +2283,7 @@
             {
                 "name": "Hartkäse",
                 "quantity": 100,
-                "unit": "g",
-                "group": "Par"
+                "unit": "g"
             },
             {
                 "name": "Knoblauch",
@@ -3008,7 +3008,8 @@
             {
                 "name": "Olivenöl",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Öl"
             },
             {
                 "name": "Rucola",
@@ -3067,6 +3068,18 @@
         "portions": 4,
         "ingredients": [
             {
+                "name": "Olivenöl",
+                "quantity": 6,
+                "unit": "TL",
+                "group": "Öl"
+            },
+            {
+                "name": "Grüner Spargel",
+                "quantity": 300,
+                "unit": "g",
+                "group": "Spargel"
+            },
+            {
                 "name": "Zitrone",
                 "quantity": 1
             },
@@ -3077,21 +3090,9 @@
                 "group": "Linguine"
             },
             {
-                "name": "Olivenöl",
-                "quantity": 6,
-                "unit": "TL",
-                "group": "Öl"
-            },
-            {
                 "name": "Knoblauch",
                 "quantity": 4,
                 "unit": "Zehen"
-            },
-            {
-                "name": "Grüner Spargel",
-                "quantity": 300,
-                "unit": "g",
-                "group": "Spargel"
             },
             {
                 "name": "Feta",
@@ -3167,7 +3168,7 @@
                 "name": "Mungobohnensprossen",
                 "quantity": 60,
                 "unit": "g",
-                "group": "Spossen"
+                "group": "Sprossen"
             },
             {
                 "name": "Möhre",
@@ -3387,15 +3388,15 @@
                 "text": "Beeren verlesen, waschen und je nach Größe halbieren. Chilischote waschen, längs halbieren, entkernen und in feine Streifen schneiden. Frühlingszwiebel putzen, waschen, trocken schütteln und in feine Ringe schneiden. Rosmarin waschen, trocken schütteln und Nadeln abzupfen."
             },
             {
-                "order": 1,
+                "order": 2,
                 "text": "Balsamessig mit Honig, Chilistreifen, Rosmarinnadeln, 1 Prise Salz und Pfeffer verrühren. Beeren und Frühlingszwiebeln unterheben. Salsa etwa 30 Minuten ziehen lassen."
             },
             {
-                "order": 1,
+                "order": 3,
                 "text": "Zwischenzeitlich Zucchini putzen, waschen, schräg in Streifen schneiden und mit etwas Öl bestreichen. Halloumi in etwa 5 mm dicke Streifen schneiden. Beides auf dem heißen Grill von beiden Seiten jeweils 4–5 Minuten grillen."
             },
             {
-                "order": 1,
+                "order": 4,
                 "text": "Zucchini mit grobem Meersalz und Pfeffer bestreuen und zusammen mit Halloumi und der Salsa servieren."
             }
         ],
@@ -3434,7 +3435,8 @@
             {
                 "name": "Mineralwasser",
                 "quantity": 500,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Wasser"
             },
             {
                 "name": "Limette",
@@ -3448,7 +3450,8 @@
             {
                 "name": "Orangenlikör",
                 "quantity": 1,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Orange"
             },
             {
                 "name": "Zitronenmelisse",
@@ -3534,7 +3537,8 @@
             {
                 "name": "Buttermilch",
                 "quantity": 180,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Milch"
             },
             {
                 "name": "Zitrone",
@@ -4365,7 +4369,7 @@
             },
             {
                 "order": 2,
-                "text": "nzwischen Thymian waschen und trocken schütteln, von 1 Zweig Blättchen abzupfen und zur Seite legen. Schalotten schälen und samt Strünken längs in Spalten schneiden. 1 EL Butter in einem Topf erhitzen. Schalotten darin bei mittlerer Hitze 3–4 Minuten dünsten. Mit Zucker bestreuen und 1–2 Minuten karamellisieren lassen. Mit Essig und 3 EL Wasser ablöschen. Thymianzweige zugeben und etwa 10 Minuten bei kleiner Hitze einköcheln lassen, salzen und pfeffern."
+                "text": "Inzwischen Thymian waschen und trocken schütteln, von 1 Zweig Blättchen abzupfen und zur Seite legen. Schalotten schälen und samt Strünken längs in Spalten schneiden. 1 EL Butter in einem Topf erhitzen. Schalotten darin bei mittlerer Hitze 3–4 Minuten dünsten. Mit Zucker bestreuen und 1–2 Minuten karamellisieren lassen. Mit Essig und 3 EL Wasser ablöschen. Thymianzweige zugeben und etwa 10 Minuten bei kleiner Hitze einköcheln lassen, salzen und pfeffern."
             },
             {
                 "order": 3,
@@ -4498,9 +4502,10 @@
                 "group": "Quark"
             },
             {
-                "name": "Vanillepuddingpulver",
+                "name": "Vanillepulver",
                 "quantity": 1,
-                "unit": "Päckchen"
+                "unit": "Päckchen",
+                "group": "Vanille"
             },
             {
                 "name": "Himbeere",
@@ -4597,7 +4602,7 @@
                 "unit": "g"
             },
             {
-                "name": "Kirschen",
+                "name": "Kirsche",
                 "quantity": 250,
                 "unit": "g"
             },
@@ -4702,7 +4707,8 @@
             {
                 "name": "Nusskerne",
                 "quantity": 30,
-                "unit": "g"
+                "unit": "g",
+                "group": "Walnuss"
             },
             {
                 "name": "Vollkornbrötchen",
@@ -4791,7 +4797,7 @@
             },
             {
                 "name": "Vollkorntoast",
-                "quantity": 5,
+                "quantity": 6,
                 "unit": "Scheiben",
                 "group": "Toast"
             }
@@ -4973,7 +4979,7 @@
             },
             {
                 "order": 2,
-                "text": "Rhabarber bei mittlerer Hitze ca. 15 Minuten köcheln lassen, vom Herd nehmen und mit einem Stabmixer fein pürieren. Püree in ein Tuch geben, ausdrücken und den Saft auffangen. "
+                "text": "Rhabarber bei mittlerer Hitze ca. 15 Minuten köcheln lassen, vom Herd nehmen und mit einem Stabmixer fein pürieren. Püree in ein Tuch geben, ausdrücken und den Saft auffangen."
             },
             {
                 "order": 3,
@@ -5513,7 +5519,7 @@
         "portions": 4,
         "ingredients": [
             {
-                "name": "Hähnchenbrustfilets",
+                "name": "Hähnchenbrustfilet",
                 "quantity": 2,
                 "group": "Hähnchenbrust"
             },
@@ -5659,7 +5665,8 @@
             {
                 "name": "Schlagsahne",
                 "quantity": 3,
-                "unit": "EL"
+                "unit": "EL",
+                "group": "Sahne"
             },
             {
                 "name": "Zitrone",
@@ -5763,7 +5770,8 @@
             {
                 "name": "Rhabarbersaft",
                 "quantity": 100,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Rhabarber"
             },
             {
                 "name": "Rohrzucker",
@@ -5785,7 +5793,7 @@
                 "name": "Hafer-Vollkornkeks",
                 "quantity": 50,
                 "unit": "g",
-                "group": "Haferkekse"
+                "group": "Haferkeks"
             }
         ],
         "preparations": [
@@ -6096,7 +6104,8 @@
             {
                 "name": "Apfelsaft",
                 "quantity": 50,
-                "unit": "ml"
+                "unit": "ml",
+                "group": "Apfel"
             },
             {
                 "name": "Gemüsebrühe",
