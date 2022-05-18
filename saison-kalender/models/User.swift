@@ -100,6 +100,11 @@ extension User {
     
     static func create(from schema: UserSchema, in context: NSManagedObjectContext) -> User {
         if let user = User.with(email: schema.email, from: context) {
+            user.name = schema.name
+            user.password = schema.password
+            user.diets = schema.diets.map({ Diet(rawValue: $0) }).compactMap { $0 }
+            user.favorites = schema.favorites.map { Recipe.create(from: $0, in: context) }
+            user.collections = schema.collections.map { Collection.create(from: $0, for: user, in: context) }
             return user
         }
         return User(from: schema, in: context)

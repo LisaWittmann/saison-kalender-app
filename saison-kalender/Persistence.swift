@@ -73,34 +73,6 @@ struct PersistenceController {
         try? context.save()
     }
     
-    static func fetchDataFromAPI(in context: NSManagedObjectContext) {
-        let domainUrlString = "https://7d3e-2a02-810b-54c0-1690-f00a-dc4b-936d-3876.ngrok.io"
-        let seasonalUrl = URL(string: domainUrlString + "/api/seasonal")!
-        let recipeUrl = URL(string: domainUrlString + "/api/recipe")!
-        let userUrl = URL(string: domainUrlString + "/api/user")!
-
-        URLSession.shared.dataTask(with: seasonalUrl) {data, res, err in
-            if let data = data {
-                let decoder = JSONDecoder()
-                _ = try? decoder.decode([SeasonalSchema].self, from: data).map { Seasonal.create(from: $0, in: context) }
-            }
-        }.resume()
-        
-        URLSession.shared.dataTask(with: recipeUrl) {data, res, err in
-            if let data = data {
-                let decoder = JSONDecoder()
-                _ = try? decoder.decode([RecipeSchema].self, from: data).map { Recipe.create(from: $0, in: context) }
-            }
-        }.resume()
-        
-        URLSession.shared.dataTask(with: userUrl) {data, res, err in
-            if let data = data {
-                let decoder = JSONDecoder()
-                _ = try? decoder.decode([UserSchema].self, from: data).map { User.create(from: $0, in: context) }
-            }
-        }.resume()
-    }
-    
     static func readDataFromJson(in context: NSManagedObjectContext) throws {
         if let seasonalsURL = Bundle.main.url(forResource: "Seasonals", withExtension: "json") {
             let data = try Data(contentsOf: seasonalsURL)
