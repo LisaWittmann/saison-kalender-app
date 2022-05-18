@@ -94,9 +94,13 @@ struct RegistrationForm_Previews: PreviewProvider {
     static var previews: some View {
         let controller = PersistenceController.preview
         
-        RegistrationForm()
-            .environment(\.managedObjectContext, controller.container.viewContext)
-            .environmentObject(AppUser.shared)
-            .environmentObject(ViewRouter.shared)
+        Page {
+            Spacer()
+            RegistrationForm()
+            Spacer()
+        }
+        .environment(\.managedObjectContext, controller.container.viewContext)
+        .environmentObject(AppUser.shared)
+        .environmentObject(ViewRouter.shared)
     }
 }

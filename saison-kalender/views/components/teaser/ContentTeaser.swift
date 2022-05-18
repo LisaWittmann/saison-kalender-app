@@ -51,10 +51,10 @@ struct ContentTeaser: View {
 struct ContentTeaser_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
-            ContentTeaser("Mangold")
+            ContentTeaser("Johannisbeere")
                 .frame(width: halfContentWidth, height: halfContentWidth)
-            ContentTeaser("Linguine mit Mangold")
-                .frame(width: halfContentWidth, height: halfContentWidth + 30)
+            ContentTeaser("Beeren-Bowle")
+                .frame(width: halfContentWidth, height: halfContentWidth)
         }.frame(alignment: .bottom)
     }
 }

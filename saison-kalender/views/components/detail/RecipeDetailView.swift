@@ -26,7 +26,7 @@ struct RecipeDetailView: View {
     var body: some View {
         DetailPage(
             images: [recipe.name.normalize()],
-            title: { Text(recipe.name).modifier(FontTitle()) },
+            title: { Text(recipe.name.syllable()).modifier(FontTitle()) },
             icon: { Icon(icon, onTap: onIconTap, onPress: onIconPressed) }
         ) {
             Text(recipe.name).modifier(FontH1())

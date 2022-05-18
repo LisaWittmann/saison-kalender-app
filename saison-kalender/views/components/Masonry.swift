@@ -47,7 +47,7 @@ struct Masonry<Element, Content: View>: View where Element: Representable {
 struct ElementMasonry_Previews: PreviewProvider {
     static var previews: some View {
         let controller = PersistenceController.preview
-        let recipes = (try? controller.container.viewContext.fetch(Recipe.fetchRequest())) ?? []
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
 
         Page {
             Masonry(recipes) { recipe in

@@ -105,7 +105,6 @@ struct SplitScreen_Previews: PreviewProvider {
             title: { Headline("Mangold", "Saisonal im Mai") },
             icon: { Icon("heart") }
         ) {
-            
             Text("Steckbrief")
                 .modifier(FontH1())
             Section("Wissenswertes") {
