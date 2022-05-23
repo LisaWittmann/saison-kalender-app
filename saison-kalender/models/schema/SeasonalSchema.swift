@@ -22,7 +22,7 @@ extension SeasonalSchema: Decodable {
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
-        seasons = (try? values.decode([String].self, forKey: .seasons)) ?? []
-        characteristics = (try? values.decode([CharacteristicSchema].self, forKey: .characteristics)) ?? []
+        seasons = try values.decodeIfPresent([String].self, forKey: .seasons) ?? []
+        characteristics = try values.decodeIfPresent([CharacteristicSchema].self, forKey: .characteristics) ?? []
     }
 }

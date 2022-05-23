@@ -26,9 +26,9 @@ extension UserSchema: Decodable {
         name = try values.decode(String.self, forKey: .name)
         email = try values.decode(String.self, forKey: .email)
         password = try values.decode(String.self, forKey: .password)
-        diets = (try? values.decode([String].self, forKey: .diets)) ?? []
-        favorites = (try? values.decode([RecipeSchema].self, forKey: .favorites)) ?? []
-        collections = (try? values.decode([CollectionSchema].self, forKey: .collections)) ?? []
+        diets = try values.decodeIfPresent([String].self, forKey: .diets) ?? []
+        favorites = try values.decodeIfPresent([RecipeSchema].self, forKey: .favorites) ?? []
+        collections = try values.decodeIfPresent([CollectionSchema].self,forKey: .collections) ?? []
     }
 }
 

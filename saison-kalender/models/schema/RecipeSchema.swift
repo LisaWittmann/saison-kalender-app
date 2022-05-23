@@ -30,11 +30,11 @@ extension RecipeSchema: Decodable {
         name = try values.decode(String.self, forKey: .name)
         intro = try values.decodeIfPresent(String.self, forKey: .intro)
         nutrition = try values.decodeIfPresent(NutritionSchema.self, forKey: .nutrition)
-        diets = (try? values.decode([String].self, forKey: .diets)) ?? []
-        categories = (try? values.decode([RecipeCategorySchema].self, forKey: .categories)) ?? []
-        portions = (try? values.decode(Int16.self, forKey: .portions)) ?? 4
-        ingredients = (try? values.decode([IngredientSchema].self, forKey: .ingredients)) ?? []
-        preparations = (try? values.decode([PreparationSchema].self, forKey: .preparations)) ?? []
-        seasonals = (try? values.decode([String].self, forKey: .seasonals)) ?? []
+        diets = try values.decodeIfPresent([String].self, forKey: .diets) ?? []
+        categories = try values.decodeIfPresent([RecipeCategorySchema].self, forKey: .categories) ?? []
+        portions = try values.decodeIfPresent(Int16.self, forKey: .portions) ?? 4
+        ingredients = try values.decodeIfPresent([IngredientSchema].self, forKey: .ingredients) ?? []
+        preparations = try values.decodeIfPresent([PreparationSchema].self, forKey: .preparations) ?? []
+        seasonals = try values.decodeIfPresent([String].self, forKey: .seasonals) ?? []
     }
 }

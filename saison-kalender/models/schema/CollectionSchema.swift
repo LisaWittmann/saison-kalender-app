@@ -20,6 +20,6 @@ extension CollectionSchema: Decodable {
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
-        recipes = (try? values.decode([RecipeSchema].self, forKey: .recipes)) ?? []
+        recipes = try values.decodeIfPresent([RecipeSchema].self, forKey: .recipes) ?? []
     }
 }

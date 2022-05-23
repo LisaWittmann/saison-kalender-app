@@ -2749,7 +2749,7 @@
         "seasonals": ["Aubergine", "Lollo Rosso", "Paprika", "Zucchini"]
     },
     {
-        "name": "Sommerrollen-Bowl mit Gurkensalat",
+        "name": "Sommerrollen Bowl mit Gurkensalat",
         "intro": "Diese bunte Bowl bietet eine ganze Menge Vitamine, gesunde Fette und Mineralstoffe! Avocado liefert dem Körper wichtige Omega-3-Fettsäuren, die u.a. den Cholesterinspiegel senken können. Radieschen versorgen den Körper zudem mit B-Vitaminen, Kalium, Eisen und Magnesium und Mango liefert reichlich Vitamin C und Provitamin A.",
         "diets": ["Glutenfrei", "Laktosefrei", "Vegan", "Vegetarisch"],
         "categories": [

@@ -135,13 +135,13 @@ struct RecipeDetailView: View {
     
     private func onIconTap() {
         if user.favorites.contains(recipe) {
-            guard collection == nil else {
+            if collection != nil {
                 manager.open(with: .delete)
                 return
             }
             user.remove(recipe: recipe)
         } else {
-            user.favor(recipe: recipe)
+            user.favor(recipe)
         }
     }
 }

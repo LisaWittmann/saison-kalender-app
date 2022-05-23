@@ -23,7 +23,7 @@ struct SaisonKalenderApp: App {
                 .attachPartialSheetToRoot()
                 .environmentObject(user)
                 .environmentObject(viewRouter)
-                .onAppear { user.getStoredSession(persistenceController.container.viewContext) }
+                .onAppear { user.getStoredSession(from: persistenceController.container.viewContext) }
         }
     }
 }

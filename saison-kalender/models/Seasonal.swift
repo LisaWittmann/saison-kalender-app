@@ -14,7 +14,7 @@ public class Seasonal: NSManagedObject {
     public convenience init(from schema: SeasonalSchema, in context: NSManagedObjectContext) {
         self.init(context: context)
         name = schema.name
-        seasons_ = schema.seasons
+        seasons = schema.seasons.map({ Season(rawValue: $0) }).compactMap { $0 }
         characteristics = schema.characteristics.map { Characteristic.create(from: $0, for: self, in: context) }
     }
 }
@@ -31,7 +31,7 @@ extension Seasonal: Representable {
     }
     
     var seasons: Array<Season> {
-        get { seasons_?.map { Season(rawValue: $0)! } ?? [] }
+        get { seasons_?.map({ Season(rawValue: $0) }).compactMap { $0 } ?? [] }
         set { seasons_ = newValue.map { $0.rawValue } }
     }
     

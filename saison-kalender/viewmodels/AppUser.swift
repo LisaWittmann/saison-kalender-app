@@ -64,12 +64,12 @@ extension AppUser {
 
 extension AppUser {
     
-    func favor(recipe: Recipe) {
+    func favor(_ recipe: Recipe) {
         guard isAuthorized else {
-            requireAuthorization(for: { self.favor(recipe: recipe) })
+            requireAuthorization(for: { self.favor(recipe) })
             return
         }
-        user?.addToFavorites_(recipe)
+        user?.favorites.append(recipe)
         save()
     }
     
@@ -78,8 +78,8 @@ extension AppUser {
             requireAuthorization(for: { self.add(recipe: recipe, to: collection) })
             return
         }
-        favor(recipe: recipe)
-        collection.addToRecipes_(recipe)
+        favor(recipe)
+        collection.recipes.append(recipe)
         save()
     }
         
@@ -124,7 +124,7 @@ extension AppUser {
             requireAuthorization(for: { self.add(collection: collection) })
             return
         }
-        user?.addToCollections_(collection)
+        user?.collections.append(collection)
         save()
     }
     
@@ -138,6 +138,10 @@ extension AppUser {
     }
 
     func rename(_ collection: Collection, to name: String) {
+        guard isAuthorized else {
+            requireAuthorization(for: { self.rename(collection, to: name) })
+            return
+        }
         collection.name = name
         save()
     }
@@ -145,7 +149,7 @@ extension AppUser {
 
 extension AppUser {
     
-    func getStoredSession(_ context: NSManagedObjectContext) {
+    func getStoredSession(from context: NSManagedObjectContext) {
         let storedUser = UserDefaults.standard.object(forKey: "user") as? String
         if storedUser != nil {
             user = User.with(email: storedUser!, from: context)
@@ -154,8 +158,8 @@ extension AppUser {
     
     func login(_ user: User?) {
         self.user = user
-        if user != nil {
-            UserDefaults.standard.set(user?.email, forKey: "user")
+        if isAuthorized {
+            UserDefaults.standard.set(email, forKey: "user")
             authorized()
         }
     }
@@ -167,7 +171,7 @@ extension AppUser {
     
     func register(name: String, email: String, password: String, in context: NSManagedObjectContext) {
         if User.with(email: email, from: context) == nil {
-            user = User.create(name: name, email: email, password: password, in: context)
+            login(User.create(name: name, email: email, password: password, in: context))
         }
     }
 }
