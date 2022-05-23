@@ -46,14 +46,12 @@ struct ChangeUserDataForm_Previews: PreviewProvider {
         let users: [User] = try! controller.container.viewContext.fetch(User.fetchRequest())
         let user = AppUser.shared
         
-        Page {
-            Spacer()
-            ChangeUserDataForm()
-            Spacer()
-        }
-        .environment(\.managedObjectContext, controller.container.viewContext)
-        .environmentObject(ViewRouter.shared)
-        .environmentObject(user)
-        .onAppear { user.login(users.first) }
+
+        ChangeUserDataForm()
+            .padding(spacingLarge)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(ViewRouter.shared)
+            .environmentObject(user)
+            .onAppear { user.login(users.first) }
     }
 }

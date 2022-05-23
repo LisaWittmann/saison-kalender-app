@@ -48,3 +48,22 @@ struct Carousel<Element, Content> : View where Element : Identifiable, Content: 
     
     let padding = spacingLarge
 }
+
+struct Carousel_Previews: PreviewProvider {
+    static var previews: some View {
+        let controller = PersistenceController.preview
+        let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())
+        VStack {
+            Carousel(recipes) { recipe in
+                RecipeTeaser(recipe)
+                    .frame(width: halfContentWidth, height: halfContentWidth)
+            }
+            Carousel(recipes) { recipe in
+                RecipeTeaser(recipe)
+                    .frame(width: 300, height: 300)
+            }
+        }
+        .environmentObject(AppUser.shared)
+        .frame(width: contentWidth)
+    }
+}

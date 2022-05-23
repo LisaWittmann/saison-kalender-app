@@ -52,14 +52,12 @@ struct ChangePasswordForm_Previews: PreviewProvider {
         let user = AppUser.shared
         let users: [User] = try! controller.container.viewContext.fetch(User.fetchRequest())
         
-        Page {
-            Spacer()
-            ChangePasswordForm()
-            Spacer()
-        }
-        .environment(\.managedObjectContext, controller.container.viewContext)
-        .environmentObject(ViewRouter.shared)
-        .environmentObject(user)
-        .onAppear { user.login(users.first) }
+       
+        ChangePasswordForm()
+            .padding(spacingLarge)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(ViewRouter.shared)
+            .environmentObject(user)
+            .onAppear { user.login(users.first) }
     }
 }

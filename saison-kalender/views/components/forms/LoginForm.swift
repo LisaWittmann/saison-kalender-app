@@ -51,13 +51,11 @@ struct LoginForm: View {
 struct LoginForm_Previews: PreviewProvider {
     static var previews: some View {
         let controller = PersistenceController.preview
-        Page {
-            Spacer()
-            LoginForm()
-            Spacer()
-        }
-        .environment(\.managedObjectContext, controller.container.viewContext)
-        .environmentObject(AppUser.shared)
-        .environmentObject(ViewRouter.shared)
+    
+        LoginForm()
+            .padding(spacingLarge)
+            .environment(\.managedObjectContext, controller.container.viewContext)
+            .environmentObject(AppUser.shared)
+            .environmentObject(ViewRouter.shared)
     }
 }

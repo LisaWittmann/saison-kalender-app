@@ -113,7 +113,7 @@ struct RecipeContextMenu: View {
     let imageOpacity = 0.5
 }
 
-struct SaveRecipeContextMenu_Previews: PreviewProvider {
+struct RecipeContextMenu_Previews: PreviewProvider {
     static var previews: some View {
         let controller = PersistenceController.preview
         

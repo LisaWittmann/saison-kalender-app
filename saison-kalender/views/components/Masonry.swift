@@ -44,7 +44,7 @@ struct Masonry<Element, Content: View>: View where Element: Representable {
     let spacing = spacingMedium
 }
 
-struct ElementMasonry_Previews: PreviewProvider {
+struct Masonry_Previews: PreviewProvider {
     static var previews: some View {
         let controller = PersistenceController.preview
         let recipes = try! controller.container.viewContext.fetch(Recipe.fetchRequest())

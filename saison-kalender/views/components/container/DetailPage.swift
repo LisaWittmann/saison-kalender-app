@@ -98,7 +98,7 @@ struct DetailPage<Title: View, Content: View>: View {
     let iconWidth: CGFloat = 30
 }
 
-struct SplitScreen_Previews: PreviewProvider {
+struct DetailPage_Previews: PreviewProvider {
     static var previews: some View {
         DetailPage(
             images: ["mangold"],

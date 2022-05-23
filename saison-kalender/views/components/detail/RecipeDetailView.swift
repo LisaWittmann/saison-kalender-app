@@ -73,13 +73,13 @@ struct RecipeDetailView: View {
     private func body(for nutrition: Nutrition) -> some View {
         LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4)) {
             ContentCard(description: "Kalorien", value: "\(nutrition.calories.toString())")
-                .frame(height: 110)
+                .frame(height: 80)
             ContentCard(description: "Eiweiß", value: "\(nutrition.protein.toString())g")
-                .frame(height: 110)
+                .frame(height: 80)
             ContentCard(description: "Fett", value: "\(nutrition.fat.toString())g")
-                .frame(height: 110)
+                .frame(height: 80)
             ContentCard(description: "Kohlen\u{00AD}hydrate", value: "\(nutrition.carbs.toString())g")
-                .frame(height: 110)
+                .frame(height: 80)
         }
     }
     

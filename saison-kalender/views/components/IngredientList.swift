@@ -77,6 +77,7 @@ struct IngredientList_Previews: PreviewProvider {
         let recipe = recipes.randomElement()!
         
         IngredientList(recipe.ingredients, for: recipe.portions)
+            .padding(spacingLarge)
             .environment(\.managedObjectContext, controller.container.viewContext)
             .environmentObject(AppUser.shared)
             .environmentObject(ViewRouter.shared)
